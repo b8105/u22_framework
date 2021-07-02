@@ -48,16 +48,16 @@ bool u22::animation::SpriteAnimationController::IsEndMotion(void) const {
 }
 
 bool u22::animation::SpriteAnimationController::AddTimer(float time) {
+    if (_motion_end) {
+        return false;
+    } // if
     if (_animations.empty()) {
         return false;
     } // if
     _time += time;
-    //_time ++;
-
 
     float wait = _current_aniamtion->pattern.at(_current_pattern_no).wait;
     if (wait * _ideal_frame_time < _time) {
-    //if (wait < _time) {
         _current_pattern_no++;
         if (_current_pattern_no > _current_aniamtion->pattern.size() - 1) {
             if (_current_aniamtion->loop) {
@@ -76,6 +76,7 @@ bool u22::animation::SpriteAnimationController::AddTimer(float time) {
 bool u22::animation::SpriteAnimationController::ChangeMotion(int no) {
     _motion_end = false;
     _current_pattern_no = 0;
+    _current_motion_no = no;
     _current_aniamtion = &_animations.at(no);
     return true;
 }

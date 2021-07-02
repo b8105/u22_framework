@@ -70,6 +70,8 @@ bool u22::GameApplication::Initialize(void) {
     return true;
 }
 
+#include <iostream>
+
 bool u22::GameApplication::Update(void) {
     if (g_pInput->IsHold(u22::input::KeyCode::Escape)) {
         ::PostQuitMessage(0);
