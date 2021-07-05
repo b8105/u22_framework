@@ -19,45 +19,46 @@ bool u22::graphics::FontRenderer::RegisterCharacter(const char* str) {
             t = wstr[0];
             text[0] = str[i]; text[1] = str[i + 1];
             i++;
-        }
+        } // if
         else {
-            //半角スペース、タブ、改行などの文字はアトラスには無視
             if (!this->IsCodeValid(str[i])) {
                 continue;
-            }
+            } // if
             t = str[i];
             text[0] = str[i];
-        }
+        } // else
         if (_dest_offset_x + _font->GetSize() >= static_cast<std::uint32_t>(_texture->GetWidth())) {
             _dest_offset_x = 0;
             _dest_offset_y += _font->GetSize() + _margin;
             if (_dest_offset_y + _font->GetSize() >= static_cast<std::uint32_t>(_texture->GetHeight())) {
                 return false;
-            }
-        }
-        //Fontから取得
-        auto img = _font->CreateFontImage(t);
-        if (img == nullptr) {
+            } // if
+        } // if
+        auto image = _font->CreateFontImage(t);
+        if (image == nullptr) {
             continue;
-        }
-        //データをRGPAの形式に変更
-        uint8_t* b4Pixels = new uint8_t[img->width * img->height * 4];
-        for (int y = 0; y < img->height; y++) {
-            for (int x = 0; x < img->width; x++) {
-                b4Pixels[(y * img->width + x) * 4 + 0] = img->pixels[y * img->width + x];
-                b4Pixels[(y * img->width + x) * 4 + 1] = img->pixels[y * img->width + x];
-                b4Pixels[(y * img->width + x) * 4 + 2] = img->pixels[y * img->width + x];
-                b4Pixels[(y * img->width + x) * 4 + 3] = img->pixels[y * img->width + x];
-            }
-        }
-        //テクスチャに転送
-        _texture->SubImageUpdate(_dest_offset_x + img->offset_x, _dest_offset_y + img->offset_y, img->width, img->height, b4Pixels);
-        //マップに登録
-        _slices_map[text] = u22::shape::Rectangle((float)_dest_offset_x, (float)_dest_offset_y, (float)_dest_offset_x + img->offset_x + img->width, (float)_dest_offset_y + img->offset_y + img->height);
-        delete[] b4Pixels;
-        //次の書き込み場所へ
+        } // if
+
+        //uint8_t* b4pixels = new uint8_t[image->width * image->height * 4];
+        auto b4pixels = std::make_unique<std::uint8_t[]>(image->width * image->height * 4);
+
+        for (int y = 0; y < image->height; y++) {
+            for (int x = 0; x < image->width; x++) {
+                b4pixels[(y * image->width + x) * 4 + 0] = image->pixels[y * image->width + x];
+                b4pixels[(y * image->width + x) * 4 + 1] = image->pixels[y * image->width + x];
+                b4pixels[(y * image->width + x) * 4 + 2] = image->pixels[y * image->width + x];
+                b4pixels[(y * image->width + x) * 4 + 3] = image->pixels[y * image->width + x];
+            } // for
+        } // for
+        _texture->SubImageUpdate(_dest_offset_x + image->offset_x, _dest_offset_y + image->offset_y, image->width, image->height, b4pixels.get());
+        _slices_map[text] = u22::shape::Rectangle(
+            static_cast<float>(_dest_offset_x),
+            static_cast<float>(_dest_offset_y),
+            static_cast<float>(_dest_offset_x) + image->offset_x + image->width,
+            static_cast<float>(_dest_offset_y) + image->offset_y + image->height);
         _dest_offset_x += _font->GetSize() + _margin;
-    }
+        //delete[] b4pixels;
+    } // for
     return true;
 }
 
@@ -125,31 +126,25 @@ bool u22::graphics::FontRenderer::Render(const u22::math::Vector2F& position, co
     } // if
     auto shader = _shader.lock();
 
-    //スライスマップ
     auto& map = _slices_map;
-    //テクスチャ
     auto tex = _texture;
-    //描画座標
-    float dx = position.x;
-    float dy = position.y;
+    auto draw_pos = position;
 
     for (size_t i = 0; i < str.size(); i++) {
-        //描画文字
         char text[3] = { 0 };
-        if (IsDBCSLeadByte(str[i])) {
+        if (::IsDBCSLeadByte(str[i])) {
             text[0] = str[i]; text[1] = str[i + 1];
             i++;
         } // if
         else {
-            //改行文字は次の行へ字下げ
             if (str[i] == '\n') {
-                dx = position.x;
-                dy += _font->GetSize();
+                draw_pos.x = position.x;
+                draw_pos.y += _font->GetSize();
                 continue;
-            }
+            } // if
             text[0] = str[i];
         } // else
-        //マップから検索
+
         auto slice = map.find(text);
         if (slice == map.end()) {
             if (!this->RegisterCharacter(text)) {
@@ -163,7 +158,7 @@ bool u22::graphics::FontRenderer::Render(const u22::math::Vector2F& position, co
 
         shader->Enable();
         {
-            auto pos = u22::math::Vector3F(dx, dy, 0.0f);
+            auto pos = u22::math::Vector3F(draw_pos.x, draw_pos.y, 0.0f);
             // offset
             pos.x += slice->second.GetWidth() * 0.5f;
             pos.y += slice->second.GetHeight() * 0.5f;
@@ -173,7 +168,7 @@ bool u22::graphics::FontRenderer::Render(const u22::math::Vector2F& position, co
         }
         this->Draw();
         shader->Disable();
-        dx += slice->second.GetWidth();
+        draw_pos.x += slice->second.GetWidth();
     }
     return true;
 }

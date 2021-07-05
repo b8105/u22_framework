@@ -21,11 +21,13 @@ using namespace u22;
 using namespace u22::animation;
 using namespace u22::utility;
 
-using Vector2 = math::Vector2F;
-using Vector3 = math::Vector3F;
-using Vector4 = math::Vector4F;
-using CTexture = graphics::TextureRenderer;
-using CFont = graphics::FontRenderer;
+using Vector2 = u22::math::Vector2F;
+using Vector3 = u22::math::Vector3F;
+using Vector4 = u22::math::Vector4F;
+using CTexture = u22::graphics::TextureRenderer;
+using CFont = u22::graphics::FontRenderer;
+using CSoundBuffer = u22::audio::SoundBuffer;
+using CSoundStreamBuffer = u22::audio::SoundStreamBuffer;
 using CCircle = u22::collision::CollisionableCircle;
 using CRectangle = u22::collision::CollisionableRectangle;
 //using SoundBuffer = audio::Buffer;

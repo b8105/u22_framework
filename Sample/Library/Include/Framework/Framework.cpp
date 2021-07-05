@@ -36,6 +36,11 @@ bool u22::Framework::Setup(const std::shared_ptr<u22::IApplicaion>& ptr, u22::Ap
     if (!_graphics->Initialize(_window)) {
         return false;
     } // if
+    // オーディオ
+    if (!_audio->Initialize()) {
+        return false;
+    } // if
+
     _applicaion = ptr;
     _applicaion->Initialize();
     return true;
@@ -48,7 +53,7 @@ int u22::Framework::Run(void) {
             _clock->Wait(); continue;
         } // if
         _clock->Update();
-        
+
 //        _clock->Tick();
 //        _clock->Sleep();
 
@@ -67,5 +72,6 @@ bool u22::Framework::Cleanup(void) {
 
     _window->Destroy();
     _graphics->Release();
+    _audio->Release();
     return true;
 }

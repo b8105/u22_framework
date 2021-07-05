@@ -2,9 +2,16 @@
 #define U22_AUDIO_AUDIO_H
 
 
+#include "../Common/Common.h"
+
+
 namespace u22::audio {
 class Audio {
 private:
+    //! デバイス
+    ALCdevice* _device;
+    //! コンテキスト
+    ALCcontext* _context;
 public:
     /// <summary>
     /// コンストラクタ
