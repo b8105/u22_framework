@@ -96,7 +96,7 @@ u22::graphics::CircleRenderer::~CircleRenderer() {
 }
 
 bool u22::graphics::CircleRenderer::Initialize(void) {
-    auto shader = u22::Framework::GetInfomation().graphics->GetEffectShader(u22::graphics::EffectShaderType::Circle);
+    auto shader = u22::Framework::GetInfomation()->graphics->GetEffectShader(u22::graphics::EffectShaderType::Circle);
     if (!shader) {
         return false;
     } // if

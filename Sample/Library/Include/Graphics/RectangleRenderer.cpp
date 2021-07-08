@@ -99,7 +99,7 @@ u22::graphics::RectangleRenderer::~RectangleRenderer() {
 }
 
 bool u22::graphics::RectangleRenderer::Initialize(void) {
-    auto shader = u22::Framework::GetInfomation().graphics->GetEffectShader(u22::graphics::EffectShaderType::Rectangle);
+    auto shader = u22::Framework::GetInfomation()->graphics->GetEffectShader(u22::graphics::EffectShaderType::Rectangle);
     if (!shader) {
         return false;
     } // if

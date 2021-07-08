@@ -77,10 +77,27 @@ public:
     /// 描画
     /// </summary>
     /// <param name="position">スクリーン座標</param>
+    /// <param name="position">色</param>
+    /// <param name="camera">カメラ</param>
+    /// <returns></returns>
+    bool Render(const u22::math::Vector2F& position, const u22::math::Vector4F& color, const u22::graphics::Camera& camera) const;
+    /// <summary>
+    /// 描画
+    /// </summary>
+    /// <param name="position">スクリーン座標</param>
     /// <param name="rectangle">表示矩形</param>
     /// <param name="camera">カメラ</param>
     /// <returns></returns>
     bool Render(const u22::math::Vector2F& position, const u22::shape::Rectangle& rectangle, const u22::graphics::Camera& camera) const;
+    /// <summary>
+    /// 描画
+    /// </summary>
+    /// <param name="position">スクリーン座標</param>
+    /// <param name="rectangle">表示矩形</param>
+    /// <param name="rectangle">色</param>
+    /// <param name="camera">カメラ</param>
+    /// <returns></returns>
+    bool Render(const u22::math::Vector2F& position, const u22::shape::Rectangle& rectangle, const u22::math::Vector4F& color, const u22::graphics::Camera& camera) const;
     /// <summary>
     /// 描画
     /// </summary>

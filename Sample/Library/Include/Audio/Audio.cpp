@@ -9,11 +9,11 @@ u22::audio::Audio::~Audio() {
 }
 
 bool u22::audio::Audio::Initialize(void) {
-    _device = alcOpenDevice(nullptr);
+    _device = ::alcOpenDevice(nullptr);
     if (!_device) {
         return false;
     } // if
-    _context = alcCreateContext(_device, NULL);
+    _context = ::alcCreateContext(_device, NULL);
     if (!_context) {
         return false;
     } // if

@@ -51,7 +51,7 @@ bool u22::graphics::TextureRenderer::Load(const char* path) {
         return false;
     } // if
 
-    auto shader = u22::Framework::GetInfomation().graphics->GetEffectShader(u22::graphics::EffectShaderType::Sprite);
+    auto shader = u22::Framework::GetInfomation()->graphics->GetEffectShader(u22::graphics::EffectShaderType::Sprite);
     if (!shader) {
         return false;
     } // if
@@ -61,10 +61,19 @@ bool u22::graphics::TextureRenderer::Load(const char* path) {
 
 bool u22::graphics::TextureRenderer::Render(const u22::math::Vector2F& position, const u22::graphics::Camera& camera) const {
     auto rect = u22::shape::Rectangle(0.0f, 0.0f, static_cast<float>(_texture->GetSize().x), static_cast<float>(_texture->GetSize().y));
-    return this->Render(position, rect, camera);
+    return this->Render(position, rect, u22::math::vec4::kOne, camera);
+}
+
+bool u22::graphics::TextureRenderer::Render(const u22::math::Vector2F& position, const u22::math::Vector4F& color, const u22::graphics::Camera& camera) const {
+    auto rect = u22::shape::Rectangle(0.0f, 0.0f, static_cast<float>(_texture->GetSize().x), static_cast<float>(_texture->GetSize().y));
+    return this->Render(position, rect, color, camera);
 }
 
 bool u22::graphics::TextureRenderer::Render(const u22::math::Vector2F& position, const u22::shape::Rectangle& rectangle, const u22::graphics::Camera& camera) const {
+    return this->Render(position, rectangle, u22::math::vec4::kOne, camera);
+}
+
+bool u22::graphics::TextureRenderer::Render(const u22::math::Vector2F& position, const u22::shape::Rectangle& rectangle, const u22::math::Vector4F& color, const u22::graphics::Camera& camera) const {
     if (_shader.expired()) {
         return false;
     } // if
@@ -80,7 +89,7 @@ bool u22::graphics::TextureRenderer::Render(const u22::math::Vector2F& position,
     pos.y *= -1.0f;
 
     shader->Enable();
-    this->TransferUniform(shader, rectangle, u22::math::vec4::kOne, u22::math::utility::ConputeTransform(pos, u22::math::Vector3F(), scale), camera);
+    this->TransferUniform(shader, rectangle, color, u22::math::utility::ConputeTransform(pos, u22::math::Vector3F(), scale), camera);
     this->Draw();
     shader->Disable();
     return true;

@@ -17,13 +17,13 @@
 namespace u22 {
 struct ApplicationInfo {
     //! 位置
-    int window_position_x = 20;
+    int window_position_x ;
     //! 位置
-    int window_position_y = 40;
+    int window_position_y ;
     //! サイズ
-    int window_width = 1024;
+    int window_width ;
     //! サイズ
-    int window_height = 768;
+    int window_height;
 };
 struct FrameworkInfo {
 public:
@@ -45,6 +45,10 @@ public:
     /// デストラクタ
     /// </summary>
     ~FrameworkInfo() = default;
+
+    std::shared_ptr<u22::Window> GetWindow(void) const {
+        return this->window;
+    }
 };
 class Framework {
 private:
@@ -68,7 +72,7 @@ public:
     /// </summary>
     /// <param name=""></param>
     /// <returns></returns>
-    static u22::FrameworkInfo& GetInfomation(void);
+    static u22::FrameworkInfo* GetInfomation(void);
     /// <summary>
     /// コンストラクタ
     /// </summary>

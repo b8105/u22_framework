@@ -56,8 +56,16 @@ enum class KeyCode : int {
     Escape = GLFW_KEY_ESCAPE,
     CountMax,
 };
+enum class MouseButton : int {
+    Right = GLFW_MOUSE_BUTTON_RIGHT,
+    Left = GLFW_MOUSE_BUTTON_LEFT,
+};
 static int ToRawCode(const u22::input::KeyCode code) noexcept {
     return static_cast<std::underlying_type<u22::input::KeyCode>::type>(code);
 }
+static int ToRawCode(const u22::input::MouseButton code) noexcept {
+    return static_cast<std::underlying_type<u22::input::MouseButton>::type>(code);
+}
+
 }
 #endif // !U22_INPUT_KEYCODE_H

@@ -30,6 +30,8 @@ private:
     std::weak_ptr<u22::graphics::EffectShader> _shader;
     //! テクスチャ
     std::shared_ptr<u22::graphics::Texture> _texture;
+    //! テクスチャ
+    std::size_t _texture_size;
     //! オフセット
     int _dest_offset_x;
     //! オフセット

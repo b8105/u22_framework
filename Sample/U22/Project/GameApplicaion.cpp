@@ -1,13 +1,38 @@
 #include "GameApplicaion.h"
 
 
-graphics::Camera _camera;
+//! 0.0f ~ 1.0f の値が入る
+//! テクスチャの画像の色に掛ける値
+Vector4 _color_rgba = Vector4(1.0f, 1.0f, 1.0f, 1.0f);
+
 Vector3 _position;
+CCamera _camera;
 CTexture _texture;
-SpriteAnimationController _motion;
+CSpriteAnimationController _motion;
 CSoundStreamBuffer _bgm;
 CSoundBuffer _se;
 
+
+
+void InpuTest(void) {
+    if (g_pInput->IsPush(MouseButton::Left)) {
+        puts("g_pInput->IsPush(Keycode::MouseLeft)");
+    } // if
+    if (g_pInput->IsHold(MouseButton::Right)) {
+        puts("g_pInput->IsHold(Keycode::MouseRight)");
+    } // else if
+
+    if (g_pInput->IsPush(Keycode::A)) {
+        puts("g_pInput->IsPush(Keycode::A)");
+    } // if
+    else if (g_pInput->IsHold(Keycode::A)) {
+        //puts("g_pInput->IsHold(Keycode::A)");
+    } // else if
+    else if (g_pInput->IsPull(Keycode::A)) {
+        puts("g_pInput->IsPull(Keycode::A)");
+    } // else if
+
+}
 
 u22::GameApplication::GameApplication() {
 }
@@ -82,6 +107,53 @@ bool u22::GameApplication::Initialize(void) {
 }
 
 bool u22::GameApplication::Update(void) {
+    // マウスインプットテスト
+    InpuTest();
+
+    // テクスチャの色変更
+    float c = 0.1f;
+    if (g_pInput->IsHold(Keycode::R)) {
+        if (g_pInput->IsHold(Keycode::Space)) {
+            _color_rgba.r += c;
+        } // if
+        else {
+            _color_rgba.r -= c;
+        } // else 
+        _color_rgba.r = std::clamp(_color_rgba.r, 0.0f, 1.0f);
+    } // if
+    if (g_pInput->IsHold(Keycode::G)) {
+        if (g_pInput->IsHold(Keycode::Space)) {
+            _color_rgba.g += c;
+        } // if
+        else {
+            _color_rgba.g -= c;
+        } // else 
+        _color_rgba.g = std::clamp(_color_rgba.g, 0.0f, 1.0f);
+    } // if
+    if (g_pInput->IsHold(Keycode::B)) {
+        if (g_pInput->IsHold(Keycode::Space)) {
+            _color_rgba.b += c;
+        } // if
+        else {
+            _color_rgba.b -= c;
+        } // else 
+        _color_rgba.b = std::clamp(_color_rgba.b, 0.0f, 1.0f);
+    } // if
+    if (g_pInput->IsHold(Keycode::A)) {
+        if (g_pInput->IsHold(Keycode::Space)) {
+            _color_rgba.a += c;
+        } // if
+        else {
+            _color_rgba.a -= c;
+        } // else 
+        _color_rgba.a = std::clamp(_color_rgba.a, 0.0f, 1.0f);
+    } // if
+
+
+    // ウインドウサイズ取得
+    int width = g_pFramework->GetWindow()->GetWidth();
+    int height  = g_pFramework->GetWindow()->GetHeight();
+
     if (g_pInput->IsHold(u22::input::KeyCode::Escape)) {
         ::PostQuitMessage(0);
     } // if
@@ -101,7 +173,7 @@ bool u22::GameApplication::Update(void) {
         _motion.ChangeMotion(4);
         _bgm.Play();
     } // if
-    else if (g_pInput->IsPush(u22::input::KeyCode::Down)) {
+    else if (g_pInput->IsHold(u22::input::KeyCode::Down)) {
         _position.y += 20.0f;
         _motion.ChangeMotion(1);
     } // else if
@@ -127,7 +199,18 @@ bool u22::GameApplication::Render(void) {
 
     CRectangle rect = _motion.GetSourceRectangle();
     ::GraphicsUtilities::RenderFillRectangle(rect, color::rgba::kRed, _camera);
-    _texture.Render(_position, rect, _camera);
+    
+    _texture.Render(_position, rect, _color_rgba, _camera);
+    //_texture.Render(_position, rect, color::rgba::kRed, _camera);
+    //_texture.Render(_position, rect, color::rgba::kGreen, _camera);
+    //_texture.Render(_position, rect, color::rgba::kBlue, _camera);
+    //_texture.Render(_position, rect, color::rgba::kBlack, _camera);
+    //_texture.Render(_position, rect, color::rgba::kBlue, _camera);
+    //_texture.Render(_position, rect, _color_rgba, _camera);
+    //_texture.Render(_position, rect, _color_rgba, _camera);
+    //_texture.Render(_position, rect, _color_rgba, _camera);
+    
+    
     rect.SetBounds(_position, rect.GetSize());
 
     auto color = Vector4(0.0f, 0.0f, 0.0f, 0.5f);

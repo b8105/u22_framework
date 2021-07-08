@@ -4,7 +4,6 @@
 
 
 bool u22::graphics::FontRenderer::IsCodeValid(const char s) const {
-    //return !(s == ' ' || s == '\t' || s == '\n' || s == '\r' || s == '\0');
     return !(s == '\n' || s == '\0');
 }
 
@@ -39,25 +38,22 @@ bool u22::graphics::FontRenderer::RegisterCharacter(const char* str) {
             continue;
         } // if
 
-        //uint8_t* b4pixels = new uint8_t[image->width * image->height * 4];
-        auto b4pixels = std::make_unique<std::uint8_t[]>(image->width * image->height * 4);
-
+        auto pixels = std::make_unique<std::uint8_t[]>(image->width * image->height * 4);
         for (int y = 0; y < image->height; y++) {
             for (int x = 0; x < image->width; x++) {
-                b4pixels[(y * image->width + x) * 4 + 0] = image->pixels[y * image->width + x];
-                b4pixels[(y * image->width + x) * 4 + 1] = image->pixels[y * image->width + x];
-                b4pixels[(y * image->width + x) * 4 + 2] = image->pixels[y * image->width + x];
-                b4pixels[(y * image->width + x) * 4 + 3] = image->pixels[y * image->width + x];
+                pixels[(y * image->width + x) * 4 + 0] = image->pixels[y * image->width + x];
+                pixels[(y * image->width + x) * 4 + 1] = image->pixels[y * image->width + x];
+                pixels[(y * image->width + x) * 4 + 2] = image->pixels[y * image->width + x];
+                pixels[(y * image->width + x) * 4 + 3] = image->pixels[y * image->width + x];
             } // for
         } // for
-        _texture->SubImageUpdate(_dest_offset_x + image->offset_x, _dest_offset_y + image->offset_y, image->width, image->height, b4pixels.get());
+        _texture->SubImageUpdate(_dest_offset_x + image->offset_x, _dest_offset_y + image->offset_y, image->width, image->height, pixels.get());
         _slices_map[text] = u22::shape::Rectangle(
             static_cast<float>(_dest_offset_x),
             static_cast<float>(_dest_offset_y),
             static_cast<float>(_dest_offset_x) + image->offset_x + image->width,
             static_cast<float>(_dest_offset_y) + image->offset_y + image->height);
         _dest_offset_x += _font->GetSize() + _margin;
-        //delete[] b4pixels;
     } // for
     return true;
 }
@@ -83,6 +79,7 @@ u22::graphics::FontRenderer::FontRenderer() :
     _vao(),
     _shader(),
     _texture(),
+    _texture_size(1024),
     _dest_offset_x(),
     _dest_offset_y(),
     _margin(2),
@@ -105,14 +102,14 @@ bool u22::graphics::FontRenderer::Load(const char* path, uint32_t size) {
 
     _texture = std::make_shared<u22::graphics::Texture>();
     _texture->Generate();
-    _texture->TextureMapping(1024, 1024);
+    _texture->TextureMapping(_texture_size, _texture_size);
 
     if (!_vao.Generate<u22::graphics::SpriteVertex>(u22::graphics::kSpriteVertices, u22::graphics::kSpriteIndices)) {
         _vao.Delete();
         return false;
     } // if
 
-    auto shader = u22::Framework::GetInfomation().graphics->GetEffectShader(u22::graphics::EffectShaderType::Sprite);
+    auto shader = u22::Framework::GetInfomation()->graphics->GetEffectShader(u22::graphics::EffectShaderType::Sprite);
     if (!shader) {
         return false;
     } // if

@@ -15,7 +15,8 @@ void u22::graphics::Camera::UpdatePerspective(void) {
 
 u22::graphics::Camera::Camera() :
     _fovy(::glm::radians(45.0f)),
-    _aspect(1024.0f / 768.0f),
+    _aspect(),
+    //_aspect(u22::Framework::GetInfomation()->window->GetWidth() / u22::Framework::GetInfomation()->window->GetHeight()),
     _near(1.0f),
     _far(1000.0f),
     _position(),
@@ -50,10 +51,13 @@ glm::mat4 u22::graphics::Camera::GetViewProjectionMatrix(void) const {
 }
 
 bool u22::graphics::Camera::Initalize2DCamera(void) {
+    _aspect = static_cast<float>(u22::Framework::GetInfomation()->window->GetWidth() / u22::Framework::GetInfomation()->window->GetHeight());
+
     this->SetPosition(u22::math::Vector3F(0.0f, 0.0f, 0.0f));
-    this->Create2D(u22::Framework::GetInfomation().window->GetWidth(),
-                   u22::Framework::GetInfomation().window->GetHeight());
-    ::glViewport(0, 0, 1024, 768); // フレームバッファ全体に描画する。左下隅から右上隅へ。
+    this->Create2D(u22::Framework::GetInfomation()->window->GetWidth(),
+                   u22::Framework::GetInfomation()->window->GetHeight());
+    // フレームバッファ全体に描画する。左下隅から右上隅へ。
+    ::glViewport(0, 0, u22::Framework::GetInfomation()->window->GetWidth(), u22::Framework::GetInfomation()->window->GetHeight()); 
     return true;
 }
 

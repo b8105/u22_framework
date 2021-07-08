@@ -18,7 +18,7 @@ uint32_t u22::graphics::Font::GetSize(void) const {
 }
 
 bool u22::graphics::Font::Generate(const char* path, std::uint32_t size) {
-    if (::FT_New_Face(u22::Framework::GetInfomation().graphics->GetFontPtr(), path, 0, &_face)) {
+    if (::FT_New_Face(u22::Framework::GetInfomation()->graphics->GetFontPtr(), path, 0, &_face)) {
         return false;
     } // if
     if (::FT_Set_Pixel_Sizes(_face, size, 0)) {

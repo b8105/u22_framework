@@ -33,7 +33,7 @@ bool u22::audio::AudioBuffer::Delete(void) {
     ::alDeleteBuffers(1, &_id);
     return true;
 }
-
+/*
 bool u22::audio::AudioBuffer::Load(const char* path) {
     ::alGenBuffers(1, &_id);
     if (!_file.Load(path)) {
@@ -71,3 +71,4 @@ bool u22::audio::AudioBuffer::Play(void) const {
     alSourcePlay(_source);
     return true;
 }
+*/

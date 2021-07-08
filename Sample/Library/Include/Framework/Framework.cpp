@@ -4,8 +4,8 @@
 u22::FrameworkInfo u22::Framework::_infomation;
 
 
-u22::FrameworkInfo& u22::Framework::GetInfomation(void) {
-    return _infomation;
+u22::FrameworkInfo* u22::Framework::GetInfomation(void) {
+    return &_infomation;
 }
 
 u22::Framework::Framework() :
@@ -53,9 +53,6 @@ int u22::Framework::Run(void) {
             _clock->Wait(); continue;
         } // if
         _clock->Update();
-
-//        _clock->Tick();
-//        _clock->Sleep();
 
         _input->Refresh();
         _applicaion->Update();

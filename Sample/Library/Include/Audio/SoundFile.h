@@ -50,11 +50,24 @@ public:
     /// <returns></returns>
     ALsizei GetFrequency(void) const;
     /// <summary>
+    /// ŠJ‚­
+    /// </summary>
+    /// <param name="path"></param>
+    /// <returns></returns>
+    bool Open(const char* path);
+    /// <summary>
     /// “Ç‚İ‚İ
     /// </summary>
     /// <param name="path"></param>
     /// <returns></returns>
     bool Load(const char* path);
+    /// <summary>
+    /// “Ç‚İ‚İ
+    /// </summary>
+    /// <param name="offset"></param>
+    /// <param name="size"></param>
+    /// <returns></returns>
+    int Read(int offset, int size);
     /// <summary>
     /// ‰ğ•ú
     /// </summary>

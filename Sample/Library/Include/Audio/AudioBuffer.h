@@ -54,19 +54,19 @@ public:
     /// </summary>
     /// <param name="path">ƒpƒX</param>
     /// <returns></returns>
-    bool Load(const char* path);
+    //bool Load(const char* path);
     /// <summary>
     /// ‰ğ•ú
     /// </summary>
     /// <param name=""></param>
     /// <returns></returns>
-    bool Release(void);
+    //bool Release(void);
     /// <summary>
     /// Ä¶
     /// </summary>
     /// <param name=""></param>
     /// <returns></returns>
-    bool Play(void) const;
+    //bool Play(void) const;
 };
 }
 #endif // !U22_AUDIO_AUDIO_BUFFER_H
