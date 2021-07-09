@@ -1,6 +1,7 @@
 #ifndef U22_AUDIO_SOUND_STREAM_BUFFER_H
 #define U22_AUDIO_SOUND_STREAM_BUFFER_H
 
+
 #include <array>
 #include <vector>
 
@@ -56,16 +57,16 @@ private:
     /// <returns></returns>
     ALuint WhiteNextData(ALuint buffer);
     /// <summary>
+    /// セッター
+    /// </summary>
+    /// <param name="pitch"></param>
+    virtual void SetPitch(float pitch) override;
+    /// <summary>
     /// 巻き戻し
     /// </summary>
     /// <param name=""></param>
     /// <returns></returns>
     virtual bool Rewind(void) override;
-    /// <summary>
-    /// セッター
-    /// </summary>
-    /// <param name="pitch"></param>
-    virtual void SetPitch(float pitch) override;
 public:
     /// <summary>
     /// コンストラクタ
@@ -85,6 +86,18 @@ public:
     /// </summary>
     /// <param name="loop"></param>
     virtual void SetLoop(bool loop) override;
+    /// <summary>
+    /// 判定
+    /// </summary>
+    /// <param name=""></param>
+    /// <returns></returns>
+    virtual bool IsPlay(void) const override;
+    /// <summary>
+    /// 判定
+    /// </summary>
+    /// <param name=""></param>
+    /// <returns></returns>
+    virtual bool IsPause(void) const override;
     /// <summary>
     /// 判定
     /// </summary>
@@ -114,7 +127,13 @@ public:
     /// </summary>
     /// <param name=""></param>
     /// <returns></returns>
-    virtual bool Play(void) const override;
+    virtual bool Play(void) override;
+    /// <summary>
+    /// 中断
+    /// </summary>
+    /// <param name=""></param>
+    /// <returns></returns>
+    virtual bool Pause(void) override;
     /// <summary>
     /// 停止
     /// </summary>
