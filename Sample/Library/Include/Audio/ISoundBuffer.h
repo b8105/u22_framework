@@ -36,18 +36,6 @@ public:
     /// </summary>
     /// <param name=""></param>
     /// <returns></returns>
-    virtual bool IsPlay(void) const = 0;
-    /// <summary>
-    /// îªíË
-    /// </summary>
-    /// <param name=""></param>
-    /// <returns></returns>
-    virtual bool IsPause(void) const = 0;
-    /// <summary>
-    /// îªíË
-    /// </summary>
-    /// <param name=""></param>
-    /// <returns></returns>
     virtual bool IsEnd(void) const = 0;
     /// <summary>
     /// ì«Ç›çûÇ›
@@ -72,13 +60,7 @@ public:
     /// </summary>
     /// <param name=""></param>
     /// <returns></returns>
-    virtual bool Play(void) = 0;
-    /// <summary>
-    /// íÜíf
-    /// </summary>
-    /// <param name=""></param>
-    /// <returns></returns>
-    virtual bool Pause(void) = 0;
+    virtual bool Play(void) const = 0;
     /// <summary>
     /// í‚é~
     /// </summary>

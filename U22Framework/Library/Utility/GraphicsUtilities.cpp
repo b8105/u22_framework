@@ -8,8 +8,12 @@ u22::graphics::RectangleRenderer u22::utility::GraphicsUtilities::_rectangle;
 
 bool u22::utility::GraphicsUtilities::Setup(void) {
     if (!_font.Load("../Resource/font/RictyDiminishedDiscord-Regular.ttf", 32)) {
-        return false;
+        if (!_font.Load("Resource/font/RictyDiminishedDiscord-Regular.ttf", 32)) {
+            return false;
+        } // 
     } // if
+
+
     if (!_rectangle.Initialize()) {
         return false;
     } // if

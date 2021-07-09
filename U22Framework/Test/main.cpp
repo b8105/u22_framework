@@ -2,7 +2,11 @@
 #include "GameApplicaion.h"
 
 
+#ifdef _CONSOLE
 int main(int argc, char* argv[]) {
+#elif _NCONSOLE
+int WINAPI WinMain(HINSTANCE instance, HINSTANCE prev, LPSTR command_line, int show) {
+#endif // CONSOLE
     auto framework = new u22::Framework();
     auto app = std::make_shared<u22::GameApplication>();
     auto info = u22::ApplicationInfo();

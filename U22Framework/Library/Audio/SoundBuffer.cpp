@@ -27,18 +27,6 @@ void u22::audio::SoundBuffer::SetLoop(bool loop) {
     ::alSourcei(_source, AL_LOOPING, loop);
 }
 
-bool u22::audio::SoundBuffer::IsPlay(void) const {
-    ALint state = 0;
-    ::alGetSourcei(_source, AL_SOURCE_STATE, &state);
-    return state == AL_PLAYING;
-}
-
-bool u22::audio::SoundBuffer::IsPause(void) const {
-    ALint state = 0;
-    ::alGetSourcei(_source, AL_SOURCE_STATE, &state);
-    return state == AL_PAUSED;
-}
-
 bool u22::audio::SoundBuffer::IsEnd(void) const {
     return this->_end;
 }
@@ -69,7 +57,7 @@ bool u22::audio::SoundBuffer::Release(void) {
     if (_id == NULL) {
         return false;
     } // if
-    this->Stop();
+    ::alSourceStop(_source);
     ::alDeleteSources(1, &_source);
     ::alDeleteBuffers(1, &_id);
     _id = NULL;
@@ -77,38 +65,18 @@ bool u22::audio::SoundBuffer::Release(void) {
     return true;
 }
 
-bool u22::audio::SoundBuffer::Play(void) {
+bool u22::audio::SoundBuffer::Play(void) const {
     if (_source == NULL) {
         return false;
     } // if
     ::alSourcePlay(_source);
     return true;
 }
-
-bool u22::audio::SoundBuffer::Pause(void) {
-    if (_source == NULL) {
-        return false;
-    } // if
-
-    ALint state = 0;
-    ::alGetSourcei(_source, AL_SOURCE_STATE, &state);
-    if (state == AL_PAUSED) {
-        return false;
-    } // if
-    ::alSourcePause(_source);
-    return true;
-}
-
 bool u22::audio::SoundBuffer::Stop(void) const {
     if (_source == NULL) {
         return false;
     } // if
-
-    ALint state = 0;
-    ::alGetSourcei(_source, AL_SOURCE_STATE, &state);
-    if (state != AL_STOPPED) {
-        ::alSourceStop(_source);
-    } // if
+    ::alSourceStop(_source);
     return true;
 }
 bool u22::audio::SoundBuffer::Rewind(void) {

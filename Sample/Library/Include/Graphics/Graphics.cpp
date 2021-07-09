@@ -29,7 +29,10 @@ bool u22::graphics::Graphics::LoadShader(void) {
         auto shader = std::make_shared<u22::graphics::EffectShader>();
         ret = shader->Load("../Resource/shader/sprite.vert", "../Resource/shader/sprite.frag");
         if (!ret) {
-            return false;
+            ret = shader->Load("Resource/shader/sprite.vert", "Resource/shader/sprite.frag");
+            if (!ret) {
+                return false;
+            } // if
         } // if
         _shader_map.emplace(u22::graphics::EffectShaderType::Sprite, shader);
     }
@@ -37,7 +40,10 @@ bool u22::graphics::Graphics::LoadShader(void) {
         auto shader = std::make_shared<u22::graphics::EffectShader>();
         ret = shader->Load("../Resource/shader/circle.vert", "../Resource/shader/circle.frag");
         if (!ret) {
-            return false;
+            ret = shader->Load("Resource/shader/circle.vert", "Resource/shader/circle.frag");
+            if (!ret) {
+                return false;
+            } // if
         } // if
         _shader_map.emplace(u22::graphics::EffectShaderType::Circle, shader);
     }
@@ -45,7 +51,10 @@ bool u22::graphics::Graphics::LoadShader(void) {
         auto shader = std::make_shared<u22::graphics::EffectShader>();
         ret = shader->Load("../Resource/shader/rectangle.vert", "../Resource/shader/rectangle.frag");
         if (!ret) {
-            return false;
+            ret = shader->Load("Resource/shader/rectangle.vert", "Resource/shader/rectangle.frag");
+            if (!ret) {
+                return false;
+            } // if
         } // if
         _shader_map.emplace(u22::graphics::EffectShaderType::Rectangle, shader);
     }

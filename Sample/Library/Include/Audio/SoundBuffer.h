@@ -11,7 +11,7 @@
 
 
 namespace u22::audio {
-class SoundBuffer : public u22::audio::ISoundBuffer {
+class SoundBuffer : public u22::audio ::ISoundBuffer {
 private:
     //! ƒnƒ“ƒhƒ‹
     ALuint _id;
@@ -58,18 +58,6 @@ public:
     /// </summary>
     /// <param name=""></param>
     /// <returns></returns>
-    virtual bool IsPlay(void) const override;
-    /// <summary>
-    /// ”»’è
-    /// </summary>
-    /// <param name=""></param>
-    /// <returns></returns>
-    virtual bool IsPause(void) const override;
-    /// <summary>
-    /// ”»’è
-    /// </summary>
-    /// <param name=""></param>
-    /// <returns></returns>
     virtual bool IsEnd(void) const override;
     /// <summary>
     /// “Ç‚İ‚İ
@@ -94,13 +82,7 @@ public:
     /// </summary>
     /// <param name=""></param>
     /// <returns></returns>
-    virtual bool Play(void) override;
-    /// <summary>
-    /// ’†’f
-    /// </summary>
-    /// <param name=""></param>
-    /// <returns></returns>
-    virtual bool Pause(void) override;
+    virtual bool Play(void) const override;
     /// <summary>
     /// ’â~
     /// </summary>

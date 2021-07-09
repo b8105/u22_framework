@@ -82,7 +82,7 @@ u22::graphics::FontRenderer::FontRenderer() :
     _texture_size(1024),
     _dest_offset_x(),
     _dest_offset_y(),
-    _margin(4),
+    _margin(2),
     _slices_map() {
 }
 
