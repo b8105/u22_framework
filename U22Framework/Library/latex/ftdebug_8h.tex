@@ -1,0 +1,160 @@
+\hypertarget{ftdebug_8h}{}\doxysection{freetype/internal/ftdebug.h ファイル}
+\label{ftdebug_8h}\index{freetype/internal/ftdebug.h@{freetype/internal/ftdebug.h}}
+{\ttfamily \#include $<$ft2build.\+h$>$}\newline
+{\ttfamily \#include $<$freetype/freetype.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}compiler-\/macros.\+h\char`\"{}}\newline
+ftdebug.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ftdebug_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ftdebug_8h_a1bc57df2c464d4922c1954a659e74ac7}{F\+T\+\_\+\+T\+R\+A\+CE}}(level,  varformat)~do \{ \} while ( 0 )      /$\ast$ nothing $\ast$/
+\item 
+\#define \mbox{\hyperlink{ftdebug_8h_a2626b122437b69ef36f9723712feb19f}{F\+T\+\_\+\+T\+R\+A\+C\+E0}}(varformat)~\mbox{\hyperlink{ftdebug_8h_a1bc57df2c464d4922c1954a659e74ac7}{F\+T\+\_\+\+T\+R\+A\+CE}}( 0, varformat )
+\item 
+\#define \mbox{\hyperlink{ftdebug_8h_ac7adbe2d7e87419e83933da5f9a943e8}{F\+T\+\_\+\+T\+R\+A\+C\+E1}}(varformat)~\mbox{\hyperlink{ftdebug_8h_a1bc57df2c464d4922c1954a659e74ac7}{F\+T\+\_\+\+T\+R\+A\+CE}}( 1, varformat )
+\item 
+\#define \mbox{\hyperlink{ftdebug_8h_ac08388f302990ef0e54c2e9ba9a86d18}{F\+T\+\_\+\+T\+R\+A\+C\+E2}}(varformat)~\mbox{\hyperlink{ftdebug_8h_a1bc57df2c464d4922c1954a659e74ac7}{F\+T\+\_\+\+T\+R\+A\+CE}}( 2, varformat )
+\item 
+\#define \mbox{\hyperlink{ftdebug_8h_a9ff2b46b2097d26afa62871cddccdaad}{F\+T\+\_\+\+T\+R\+A\+C\+E3}}(varformat)~\mbox{\hyperlink{ftdebug_8h_a1bc57df2c464d4922c1954a659e74ac7}{F\+T\+\_\+\+T\+R\+A\+CE}}( 3, varformat )
+\item 
+\#define \mbox{\hyperlink{ftdebug_8h_ad7e98818b876c5493b441d7516bf34a0}{F\+T\+\_\+\+T\+R\+A\+C\+E4}}(varformat)~\mbox{\hyperlink{ftdebug_8h_a1bc57df2c464d4922c1954a659e74ac7}{F\+T\+\_\+\+T\+R\+A\+CE}}( 4, varformat )
+\item 
+\#define \mbox{\hyperlink{ftdebug_8h_a31421bde1b6252c99fc76764c22d9a48}{F\+T\+\_\+\+T\+R\+A\+C\+E5}}(varformat)~\mbox{\hyperlink{ftdebug_8h_a1bc57df2c464d4922c1954a659e74ac7}{F\+T\+\_\+\+T\+R\+A\+CE}}( 5, varformat )
+\item 
+\#define \mbox{\hyperlink{ftdebug_8h_aa632d6d6dd2170762d85575126c7c63f}{F\+T\+\_\+\+T\+R\+A\+C\+E6}}(varformat)~\mbox{\hyperlink{ftdebug_8h_a1bc57df2c464d4922c1954a659e74ac7}{F\+T\+\_\+\+T\+R\+A\+CE}}( 6, varformat )
+\item 
+\#define \mbox{\hyperlink{ftdebug_8h_a949e7d3b1c748d889a33dd99ec21c535}{F\+T\+\_\+\+T\+R\+A\+C\+E7}}(varformat)~\mbox{\hyperlink{ftdebug_8h_a1bc57df2c464d4922c1954a659e74ac7}{F\+T\+\_\+\+T\+R\+A\+CE}}( 7, varformat )
+\item 
+\#define \mbox{\hyperlink{ftdebug_8h_a311092b5a8fece0a17cfb5b2d874e25d}{F\+T\+\_\+\+E\+R\+R\+OR}}(varformat)~do \{ \} while ( 0 )      /$\ast$ nothing $\ast$/
+\item 
+\#define \mbox{\hyperlink{ftdebug_8h_a0edcd80581eabc970a562c5d284d5e7e}{F\+T\+\_\+\+A\+S\+S\+E\+RT}}(condition)~do \{ \} while ( 0 )
+\item 
+\#define \mbox{\hyperlink{ftdebug_8h_abdc2938dd5136129d81fa82465e3324e}{F\+T\+\_\+\+T\+H\+R\+OW}}(e)~\mbox{\hyperlink{fttypes_8h_a68551f6a26f7a08610c35fc8f0b6b8bc}{F\+T\+\_\+\+E\+R\+R\+\_\+\+C\+AT}}( \mbox{\hyperlink{fterrors_8h_af0eb185e421716db7b56371e80dfcaa1}{F\+T\+\_\+\+E\+R\+R\+\_\+\+P\+R\+E\+F\+IX}}, e )
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ftdebug_8h_a45819dc1d1ccd28e0d02872731793722}{F\+T\+\_\+\+Trace\+\_\+\+Get\+\_\+\+Count}} (void)
+\item 
+\mbox{\hyperlink{ftdebug_8h_a205f1d6093fcaf813104f3b3fe50c011}{F\+T\+\_\+\+Trace\+\_\+\+Get\+\_\+\+Name}} (\mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} idx)
+\item 
+\mbox{\hyperlink{ftdebug_8h_a9373d2557ce72eaba8b5bbc7aa163598}{F\+T\+\_\+\+Trace\+\_\+\+Disable}} (void)
+\item 
+\mbox{\hyperlink{ftdebug_8h_aef734e0aca7b1ed63b14df4e19c90d40}{F\+T\+\_\+\+Trace\+\_\+\+Enable}} (void)
+\item 
+\mbox{\hyperlink{ftdebug_8h_ac3debabea06dc9fd9c6997342d234eee}{ft\+\_\+debug\+\_\+init}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{ftdebug_8h_a0edcd80581eabc970a562c5d284d5e7e}\label{ftdebug_8h_a0edcd80581eabc970a562c5d284d5e7e}} 
+\index{ftdebug.h@{ftdebug.h}!FT\_ASSERT@{FT\_ASSERT}}
+\index{FT\_ASSERT@{FT\_ASSERT}!ftdebug.h@{ftdebug.h}}
+\doxysubsubsection{\texorpdfstring{FT\_ASSERT}{FT\_ASSERT}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+A\+S\+S\+E\+RT(\begin{DoxyParamCaption}\item[{}]{condition }\end{DoxyParamCaption})~do \{ \} while ( 0 )}
+
+\mbox{\Hypertarget{ftdebug_8h_a311092b5a8fece0a17cfb5b2d874e25d}\label{ftdebug_8h_a311092b5a8fece0a17cfb5b2d874e25d}} 
+\index{ftdebug.h@{ftdebug.h}!FT\_ERROR@{FT\_ERROR}}
+\index{FT\_ERROR@{FT\_ERROR}!ftdebug.h@{ftdebug.h}}
+\doxysubsubsection{\texorpdfstring{FT\_ERROR}{FT\_ERROR}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+E\+R\+R\+OR(\begin{DoxyParamCaption}\item[{}]{varformat }\end{DoxyParamCaption})~do \{ \} while ( 0 )      /$\ast$ nothing $\ast$/}
+
+\mbox{\Hypertarget{ftdebug_8h_abdc2938dd5136129d81fa82465e3324e}\label{ftdebug_8h_abdc2938dd5136129d81fa82465e3324e}} 
+\index{ftdebug.h@{ftdebug.h}!FT\_THROW@{FT\_THROW}}
+\index{FT\_THROW@{FT\_THROW}!ftdebug.h@{ftdebug.h}}
+\doxysubsubsection{\texorpdfstring{FT\_THROW}{FT\_THROW}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+T\+H\+R\+OW(\begin{DoxyParamCaption}\item[{}]{e }\end{DoxyParamCaption})~\mbox{\hyperlink{fttypes_8h_a68551f6a26f7a08610c35fc8f0b6b8bc}{F\+T\+\_\+\+E\+R\+R\+\_\+\+C\+AT}}( \mbox{\hyperlink{fterrors_8h_af0eb185e421716db7b56371e80dfcaa1}{F\+T\+\_\+\+E\+R\+R\+\_\+\+P\+R\+E\+F\+IX}}, e )}
+
+\mbox{\Hypertarget{ftdebug_8h_a1bc57df2c464d4922c1954a659e74ac7}\label{ftdebug_8h_a1bc57df2c464d4922c1954a659e74ac7}} 
+\index{ftdebug.h@{ftdebug.h}!FT\_TRACE@{FT\_TRACE}}
+\index{FT\_TRACE@{FT\_TRACE}!ftdebug.h@{ftdebug.h}}
+\doxysubsubsection{\texorpdfstring{FT\_TRACE}{FT\_TRACE}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+T\+R\+A\+CE(\begin{DoxyParamCaption}\item[{}]{level,  }\item[{}]{varformat }\end{DoxyParamCaption})~do \{ \} while ( 0 )      /$\ast$ nothing $\ast$/}
+
+\mbox{\Hypertarget{ftdebug_8h_a2626b122437b69ef36f9723712feb19f}\label{ftdebug_8h_a2626b122437b69ef36f9723712feb19f}} 
+\index{ftdebug.h@{ftdebug.h}!FT\_TRACE0@{FT\_TRACE0}}
+\index{FT\_TRACE0@{FT\_TRACE0}!ftdebug.h@{ftdebug.h}}
+\doxysubsubsection{\texorpdfstring{FT\_TRACE0}{FT\_TRACE0}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+T\+R\+A\+C\+E0(\begin{DoxyParamCaption}\item[{}]{varformat }\end{DoxyParamCaption})~\mbox{\hyperlink{ftdebug_8h_a1bc57df2c464d4922c1954a659e74ac7}{F\+T\+\_\+\+T\+R\+A\+CE}}( 0, varformat )}
+
+\mbox{\Hypertarget{ftdebug_8h_ac7adbe2d7e87419e83933da5f9a943e8}\label{ftdebug_8h_ac7adbe2d7e87419e83933da5f9a943e8}} 
+\index{ftdebug.h@{ftdebug.h}!FT\_TRACE1@{FT\_TRACE1}}
+\index{FT\_TRACE1@{FT\_TRACE1}!ftdebug.h@{ftdebug.h}}
+\doxysubsubsection{\texorpdfstring{FT\_TRACE1}{FT\_TRACE1}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+T\+R\+A\+C\+E1(\begin{DoxyParamCaption}\item[{}]{varformat }\end{DoxyParamCaption})~\mbox{\hyperlink{ftdebug_8h_a1bc57df2c464d4922c1954a659e74ac7}{F\+T\+\_\+\+T\+R\+A\+CE}}( 1, varformat )}
+
+\mbox{\Hypertarget{ftdebug_8h_ac08388f302990ef0e54c2e9ba9a86d18}\label{ftdebug_8h_ac08388f302990ef0e54c2e9ba9a86d18}} 
+\index{ftdebug.h@{ftdebug.h}!FT\_TRACE2@{FT\_TRACE2}}
+\index{FT\_TRACE2@{FT\_TRACE2}!ftdebug.h@{ftdebug.h}}
+\doxysubsubsection{\texorpdfstring{FT\_TRACE2}{FT\_TRACE2}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+T\+R\+A\+C\+E2(\begin{DoxyParamCaption}\item[{}]{varformat }\end{DoxyParamCaption})~\mbox{\hyperlink{ftdebug_8h_a1bc57df2c464d4922c1954a659e74ac7}{F\+T\+\_\+\+T\+R\+A\+CE}}( 2, varformat )}
+
+\mbox{\Hypertarget{ftdebug_8h_a9ff2b46b2097d26afa62871cddccdaad}\label{ftdebug_8h_a9ff2b46b2097d26afa62871cddccdaad}} 
+\index{ftdebug.h@{ftdebug.h}!FT\_TRACE3@{FT\_TRACE3}}
+\index{FT\_TRACE3@{FT\_TRACE3}!ftdebug.h@{ftdebug.h}}
+\doxysubsubsection{\texorpdfstring{FT\_TRACE3}{FT\_TRACE3}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+T\+R\+A\+C\+E3(\begin{DoxyParamCaption}\item[{}]{varformat }\end{DoxyParamCaption})~\mbox{\hyperlink{ftdebug_8h_a1bc57df2c464d4922c1954a659e74ac7}{F\+T\+\_\+\+T\+R\+A\+CE}}( 3, varformat )}
+
+\mbox{\Hypertarget{ftdebug_8h_ad7e98818b876c5493b441d7516bf34a0}\label{ftdebug_8h_ad7e98818b876c5493b441d7516bf34a0}} 
+\index{ftdebug.h@{ftdebug.h}!FT\_TRACE4@{FT\_TRACE4}}
+\index{FT\_TRACE4@{FT\_TRACE4}!ftdebug.h@{ftdebug.h}}
+\doxysubsubsection{\texorpdfstring{FT\_TRACE4}{FT\_TRACE4}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+T\+R\+A\+C\+E4(\begin{DoxyParamCaption}\item[{}]{varformat }\end{DoxyParamCaption})~\mbox{\hyperlink{ftdebug_8h_a1bc57df2c464d4922c1954a659e74ac7}{F\+T\+\_\+\+T\+R\+A\+CE}}( 4, varformat )}
+
+\mbox{\Hypertarget{ftdebug_8h_a31421bde1b6252c99fc76764c22d9a48}\label{ftdebug_8h_a31421bde1b6252c99fc76764c22d9a48}} 
+\index{ftdebug.h@{ftdebug.h}!FT\_TRACE5@{FT\_TRACE5}}
+\index{FT\_TRACE5@{FT\_TRACE5}!ftdebug.h@{ftdebug.h}}
+\doxysubsubsection{\texorpdfstring{FT\_TRACE5}{FT\_TRACE5}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+T\+R\+A\+C\+E5(\begin{DoxyParamCaption}\item[{}]{varformat }\end{DoxyParamCaption})~\mbox{\hyperlink{ftdebug_8h_a1bc57df2c464d4922c1954a659e74ac7}{F\+T\+\_\+\+T\+R\+A\+CE}}( 5, varformat )}
+
+\mbox{\Hypertarget{ftdebug_8h_aa632d6d6dd2170762d85575126c7c63f}\label{ftdebug_8h_aa632d6d6dd2170762d85575126c7c63f}} 
+\index{ftdebug.h@{ftdebug.h}!FT\_TRACE6@{FT\_TRACE6}}
+\index{FT\_TRACE6@{FT\_TRACE6}!ftdebug.h@{ftdebug.h}}
+\doxysubsubsection{\texorpdfstring{FT\_TRACE6}{FT\_TRACE6}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+T\+R\+A\+C\+E6(\begin{DoxyParamCaption}\item[{}]{varformat }\end{DoxyParamCaption})~\mbox{\hyperlink{ftdebug_8h_a1bc57df2c464d4922c1954a659e74ac7}{F\+T\+\_\+\+T\+R\+A\+CE}}( 6, varformat )}
+
+\mbox{\Hypertarget{ftdebug_8h_a949e7d3b1c748d889a33dd99ec21c535}\label{ftdebug_8h_a949e7d3b1c748d889a33dd99ec21c535}} 
+\index{ftdebug.h@{ftdebug.h}!FT\_TRACE7@{FT\_TRACE7}}
+\index{FT\_TRACE7@{FT\_TRACE7}!ftdebug.h@{ftdebug.h}}
+\doxysubsubsection{\texorpdfstring{FT\_TRACE7}{FT\_TRACE7}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+T\+R\+A\+C\+E7(\begin{DoxyParamCaption}\item[{}]{varformat }\end{DoxyParamCaption})~\mbox{\hyperlink{ftdebug_8h_a1bc57df2c464d4922c1954a659e74ac7}{F\+T\+\_\+\+T\+R\+A\+CE}}( 7, varformat )}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{ftdebug_8h_ac3debabea06dc9fd9c6997342d234eee}\label{ftdebug_8h_ac3debabea06dc9fd9c6997342d234eee}} 
+\index{ftdebug.h@{ftdebug.h}!ft\_debug\_init@{ft\_debug\_init}}
+\index{ft\_debug\_init@{ft\_debug\_init}!ftdebug.h@{ftdebug.h}}
+\doxysubsubsection{\texorpdfstring{ft\_debug\_init()}{ft\_debug\_init()}}
+{\footnotesize\ttfamily ft\+\_\+debug\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftdebug_8h_a9373d2557ce72eaba8b5bbc7aa163598}\label{ftdebug_8h_a9373d2557ce72eaba8b5bbc7aa163598}} 
+\index{ftdebug.h@{ftdebug.h}!FT\_Trace\_Disable@{FT\_Trace\_Disable}}
+\index{FT\_Trace\_Disable@{FT\_Trace\_Disable}!ftdebug.h@{ftdebug.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Trace\_Disable()}{FT\_Trace\_Disable()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Trace\+\_\+\+Disable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftdebug_8h_aef734e0aca7b1ed63b14df4e19c90d40}\label{ftdebug_8h_aef734e0aca7b1ed63b14df4e19c90d40}} 
+\index{ftdebug.h@{ftdebug.h}!FT\_Trace\_Enable@{FT\_Trace\_Enable}}
+\index{FT\_Trace\_Enable@{FT\_Trace\_Enable}!ftdebug.h@{ftdebug.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Trace\_Enable()}{FT\_Trace\_Enable()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Trace\+\_\+\+Enable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftdebug_8h_a45819dc1d1ccd28e0d02872731793722}\label{ftdebug_8h_a45819dc1d1ccd28e0d02872731793722}} 
+\index{ftdebug.h@{ftdebug.h}!FT\_Trace\_Get\_Count@{FT\_Trace\_Get\_Count}}
+\index{FT\_Trace\_Get\_Count@{FT\_Trace\_Get\_Count}!ftdebug.h@{ftdebug.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Trace\_Get\_Count()}{FT\_Trace\_Get\_Count()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Trace\+\_\+\+Get\+\_\+\+Count (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftdebug_8h_a205f1d6093fcaf813104f3b3fe50c011}\label{ftdebug_8h_a205f1d6093fcaf813104f3b3fe50c011}} 
+\index{ftdebug.h@{ftdebug.h}!FT\_Trace\_Get\_Name@{FT\_Trace\_Get\_Name}}
+\index{FT\_Trace\_Get\_Name@{FT\_Trace\_Get\_Name}!ftdebug.h@{ftdebug.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Trace\_Get\_Name()}{FT\_Trace\_Get\_Name()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Trace\+\_\+\+Get\+\_\+\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}}}]{idx }\end{DoxyParamCaption})}
+

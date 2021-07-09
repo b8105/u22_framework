@@ -1,0 +1,29 @@
+﻿  GameApplicaion.cpp
+  main.cpp
+  コードを生成中...
+MSVCRTD.lib(initializers.obj) : warning LNK4098: defaultlib 'msvcrt.lib' は他のライブラリの使用と競合しています。/NODEFAULTLIB:library を使用してください。
+MSVCRTD.lib(initializers.obj) : warning LNK4098: defaultlib 'libcmtd.lib' は他のライブラリの使用と競合しています。/NODEFAULTLIB:library を使用してください。
+freetyped.lib(autofit.obj) : warning LNK4099: PDB 'freetype.pdb' が 'freetyped.lib(autofit.obj)' で、または 'C:\Users\maila\Documents\GitHub\u22_framework\Sample\U22\freetype.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+freetyped.lib(ftbase.obj) : warning LNK4099: PDB '' が 'freetyped.lib(ftbase.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+freetyped.lib(ftbitmap.obj) : warning LNK4099: PDB 'freetype.pdb' が 'freetyped.lib(ftbitmap.obj)' で、または 'C:\Users\maila\Documents\GitHub\u22_framework\Sample\U22\freetype.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+freetyped.lib(ftinit.obj) : warning LNK4099: PDB 'freetype.pdb' が 'freetyped.lib(ftinit.obj)' で、または 'C:\Users\maila\Documents\GitHub\u22_framework\Sample\U22\freetype.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+freetyped.lib(ftsystem.obj) : warning LNK4099: PDB 'freetype.pdb' が 'freetyped.lib(ftsystem.obj)' で、または 'C:\Users\maila\Documents\GitHub\u22_framework\Sample\U22\freetype.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+freetyped.lib(bdf.obj) : warning LNK4099: PDB 'freetype.pdb' が 'freetyped.lib(bdf.obj)' で、または 'C:\Users\maila\Documents\GitHub\u22_framework\Sample\U22\freetype.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+freetyped.lib(cff.obj) : warning LNK4099: PDB 'freetype.pdb' が 'freetyped.lib(cff.obj)' で、または 'C:\Users\maila\Documents\GitHub\u22_framework\Sample\U22\freetype.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+freetyped.lib(type1cid.obj) : warning LNK4099: PDB '' が 'freetyped.lib(type1cid.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+freetyped.lib(ftgzip.obj) : warning LNK4099: PDB 'freetype.pdb' が 'freetyped.lib(ftgzip.obj)' で、または 'C:\Users\maila\Documents\GitHub\u22_framework\Sample\U22\freetype.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+freetyped.lib(ftlzw.obj) : warning LNK4099: PDB 'freetype.pdb' が 'freetyped.lib(ftlzw.obj)' で、または 'C:\Users\maila\Documents\GitHub\u22_framework\Sample\U22\freetype.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+freetyped.lib(pcf.obj) : warning LNK4099: PDB 'freetype.pdb' が 'freetyped.lib(pcf.obj)' で、または 'C:\Users\maila\Documents\GitHub\u22_framework\Sample\U22\freetype.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+freetyped.lib(pfr.obj) : warning LNK4099: PDB 'freetype.pdb' が 'freetyped.lib(pfr.obj)' で、または 'C:\Users\maila\Documents\GitHub\u22_framework\Sample\U22\freetype.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+freetyped.lib(psaux.obj) : warning LNK4099: PDB 'freetype.pdb' が 'freetyped.lib(psaux.obj)' で、または 'C:\Users\maila\Documents\GitHub\u22_framework\Sample\U22\freetype.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+freetyped.lib(pshinter.obj) : warning LNK4099: PDB '' が 'freetyped.lib(pshinter.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+freetyped.lib(psmodule.obj) : warning LNK4099: PDB 'freetype.pdb' が 'freetyped.lib(psmodule.obj)' で、または 'C:\Users\maila\Documents\GitHub\u22_framework\Sample\U22\freetype.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+freetyped.lib(raster.obj) : warning LNK4099: PDB 'freetype.pdb' が 'freetyped.lib(raster.obj)' で、または 'C:\Users\maila\Documents\GitHub\u22_framework\Sample\U22\freetype.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+freetyped.lib(sfnt.obj) : warning LNK4099: PDB 'freetype.pdb' が 'freetyped.lib(sfnt.obj)' で、または 'C:\Users\maila\Documents\GitHub\u22_framework\Sample\U22\freetype.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+freetyped.lib(smooth.obj) : warning LNK4099: PDB 'freetype.pdb' が 'freetyped.lib(smooth.obj)' で、または 'C:\Users\maila\Documents\GitHub\u22_framework\Sample\U22\freetype.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+freetyped.lib(truetype.obj) : warning LNK4099: PDB 'freetype.pdb' が 'freetyped.lib(truetype.obj)' で、または 'C:\Users\maila\Documents\GitHub\u22_framework\Sample\U22\freetype.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+freetyped.lib(type1.obj) : warning LNK4099: PDB '' が 'freetyped.lib(type1.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+freetyped.lib(type42.obj) : warning LNK4099: PDB 'freetype.pdb' が 'freetyped.lib(type42.obj)' で、または 'C:\Users\maila\Documents\GitHub\u22_framework\Sample\U22\freetype.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+freetyped.lib(winfnt.obj) : warning LNK4099: PDB 'freetype.pdb' が 'freetyped.lib(winfnt.obj)' で、または 'C:\Users\maila\Documents\GitHub\u22_framework\Sample\U22\freetype.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+freetyped.lib(ftdebug.obj) : warning LNK4099: PDB 'freetype.pdb' が 'freetyped.lib(ftdebug.obj)' で、または 'C:\Users\maila\Documents\GitHub\u22_framework\Sample\U22\freetype.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+  Project.vcxproj -> C:\Users\maila\Documents\GitHub\u22_framework\Sample\U22\Project.exe

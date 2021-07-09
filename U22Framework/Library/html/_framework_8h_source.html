@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: Framework/Framework.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bcbb2cf9a3d3d83e5515c82071a07177.html">Framework</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Framework.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_framework_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef U22_FRAMEWORK_FRAMEWORK_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define U22_FRAMEWORK_FRAMEWORK_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../Common/Common.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../Clock/Clock.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_window_8h.html">Window/Window.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;../Input/Input.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;../Graphics/Graphics.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;../Audio/Audio.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_i_applicaion_8h.html">IApplicaion.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceu22.html">u22</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structu22_1_1_application_info.html">   18</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structu22_1_1_application_info.html">ApplicationInfo</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structu22_1_1_application_info.html#a930589b2750791e91aac56a0899af6b5">   20</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structu22_1_1_application_info.html#a930589b2750791e91aac56a0899af6b5">window_position_x</a> ;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structu22_1_1_application_info.html#a99a8d29501c22d6512c52a93cc48b2a6">   22</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structu22_1_1_application_info.html#a99a8d29501c22d6512c52a93cc48b2a6">window_position_y</a> ;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structu22_1_1_application_info.html#a37828a9b6bb330b5336c5f22020d5f43">   24</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structu22_1_1_application_info.html#a37828a9b6bb330b5336c5f22020d5f43">window_width</a> ;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structu22_1_1_application_info.html#a1caf945c328b3698f6ddca6d2f8a1ec2">   26</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structu22_1_1_application_info.html#a1caf945c328b3698f6ddca6d2f8a1ec2">window_height</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structu22_1_1_application_info.html#a5f61c99a3338196d5e0dbd0f5efe1c3e">   28</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structu22_1_1_application_info.html#a5f61c99a3338196d5e0dbd0f5efe1c3e">full_screen_mode</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structu22_1_1_framework_info.html">   30</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structu22_1_1_framework_info.html">FrameworkInfo</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structu22_1_1_framework_info.html#a4282f9f6053ec232143bc78044f52d20">   33</a></span>&#160;    std::shared_ptr&lt;u22::clock::Clock&gt; <a class="code" href="structu22_1_1_framework_info.html#a4282f9f6053ec232143bc78044f52d20">clock</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structu22_1_1_framework_info.html#a23058678f492228d0120099251cf10e1">   35</a></span>&#160;    std::shared_ptr&lt;u22::Window&gt; <a class="code" href="structu22_1_1_framework_info.html#a23058678f492228d0120099251cf10e1">window</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structu22_1_1_framework_info.html#a1fecad9b5a34187cad6a886d6e43882f">   37</a></span>&#160;    std::shared_ptr&lt;u22::input::Input&gt; <a class="code" href="structu22_1_1_framework_info.html#a1fecad9b5a34187cad6a886d6e43882f">input</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structu22_1_1_framework_info.html#ab4e65744eb3b47cdfd9babb95104b383">   39</a></span>&#160;    std::shared_ptr&lt;u22::graphics::Graphics&gt; <a class="code" href="structu22_1_1_framework_info.html#ab4e65744eb3b47cdfd9babb95104b383">graphics</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structu22_1_1_framework_info.html#a2d211a631c9ccfc15455bfe7cb643b83">   41</a></span>&#160;    std::shared_ptr&lt;u22::audio::Audio&gt; <a class="code" href="structu22_1_1_framework_info.html#a2d211a631c9ccfc15455bfe7cb643b83">audio</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structu22_1_1_framework_info.html#a648ca43db16d71bdf8eab54a72d52681">   45</a></span>&#160;    <a class="code" href="structu22_1_1_framework_info.html#a648ca43db16d71bdf8eab54a72d52681">FrameworkInfo</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="structu22_1_1_framework_info.html#a6210b1797e71d95a162038c0c3e294b8">   49</a></span>&#160;    <a class="code" href="structu22_1_1_framework_info.html#a6210b1797e71d95a162038c0c3e294b8">~FrameworkInfo</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="structu22_1_1_framework_info.html#a76924296837d7727960b1cdf50990b2c">   51</a></span>&#160;    std::shared_ptr&lt;u22::Window&gt; <a class="code" href="structu22_1_1_framework_info.html#a76924296837d7727960b1cdf50990b2c">GetWindow</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> this-&gt;<a class="code" href="structu22_1_1_framework_info.html#a23058678f492228d0120099251cf10e1">window</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classu22_1_1_framework.html">   55</a></span>&#160;<span class="keyword">class </span><a class="code" href="classu22_1_1_framework.html">Framework</a> {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">static</span> <a class="code" href="structu22_1_1_framework_info.html">u22::FrameworkInfo</a> _infomation;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    std::shared_ptr&lt;u22::clock::Clock&gt; _clock;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    std::shared_ptr&lt;u22::Window&gt; _window;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::shared_ptr&lt;u22::input::Input&gt; _input;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    std::shared_ptr&lt;u22::graphics::Graphics&gt; _graphics;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::shared_ptr&lt;u22::audio::Audio&gt; _audio;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    std::shared_ptr&lt;u22::IApplicaion&gt; _applicaion;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">static</span> <a class="code" href="structu22_1_1_framework_info.html">u22::FrameworkInfo</a>* <a class="code" href="classu22_1_1_framework.html#a4178f3ac4244aa173e022c627a7fd658">GetInfomation</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="classu22_1_1_framework.html#a914033aefc9c05373e4bdd4225d17028">Framework</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="classu22_1_1_framework.html#a95092067b6d3cc8600641cfdd4f71bed">~Framework</a>();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1_framework.html#a578184da56cc5817276f7e83f50bf2b4">Setup</a>(<span class="keyword">const</span> std::shared_ptr&lt;u22::IApplicaion&gt;&amp; ptr, <a class="code" href="structu22_1_1_application_info.html">u22::ApplicationInfo</a>* info);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classu22_1_1_framework.html#ab384a35c36a152d362302545b03a8d9b">Run</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1_framework.html#ad3987d59bf263e09ca2fc8ad6f374b4f">Cleanup</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif // !U22_FRAMEWORK_FRAMEWORK_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astructu22_1_1_application_info_html_a5f61c99a3338196d5e0dbd0f5efe1c3e"><div class="ttname"><a href="structu22_1_1_application_info.html#a5f61c99a3338196d5e0dbd0f5efe1c3e">u22::ApplicationInfo::full_screen_mode</a></div><div class="ttdeci">bool full_screen_mode</div><div class="ttdoc">フルスクリーン</div><div class="ttdef"><b>Definition:</b> Framework.h:28</div></div>
+<div class="ttc" id="astructu22_1_1_application_info_html_a37828a9b6bb330b5336c5f22020d5f43"><div class="ttname"><a href="structu22_1_1_application_info.html#a37828a9b6bb330b5336c5f22020d5f43">u22::ApplicationInfo::window_width</a></div><div class="ttdeci">int window_width</div><div class="ttdoc">サイズ</div><div class="ttdef"><b>Definition:</b> Framework.h:24</div></div>
+<div class="ttc" id="astructu22_1_1_application_info_html"><div class="ttname"><a href="structu22_1_1_application_info.html">u22::ApplicationInfo</a></div><div class="ttdef"><b>Definition:</b> Framework.h:18</div></div>
+<div class="ttc" id="a_framework_8h_html"><div class="ttname"><a href="_framework_8h.html">Framework.h</a></div></div>
+<div class="ttc" id="a_i_applicaion_8h_html"><div class="ttname"><a href="_i_applicaion_8h.html">IApplicaion.h</a></div></div>
+<div class="ttc" id="astructu22_1_1_framework_info_html_a2d211a631c9ccfc15455bfe7cb643b83"><div class="ttname"><a href="structu22_1_1_framework_info.html#a2d211a631c9ccfc15455bfe7cb643b83">u22::FrameworkInfo::audio</a></div><div class="ttdeci">std::shared_ptr&lt; u22::audio::Audio &gt; audio</div><div class="ttdoc">オーディオ</div><div class="ttdef"><b>Definition:</b> Framework.h:41</div></div>
+<div class="ttc" id="astructu22_1_1_framework_info_html_a76924296837d7727960b1cdf50990b2c"><div class="ttname"><a href="structu22_1_1_framework_info.html#a76924296837d7727960b1cdf50990b2c">u22::FrameworkInfo::GetWindow</a></div><div class="ttdeci">std::shared_ptr&lt; u22::Window &gt; GetWindow(void) const</div><div class="ttdef"><b>Definition:</b> Framework.h:51</div></div>
+<div class="ttc" id="aclassu22_1_1_framework_html_a578184da56cc5817276f7e83f50bf2b4"><div class="ttname"><a href="classu22_1_1_framework.html#a578184da56cc5817276f7e83f50bf2b4">u22::Framework::Setup</a></div><div class="ttdeci">bool Setup(const std::shared_ptr&lt; u22::IApplicaion &gt; &amp;ptr, u22::ApplicationInfo *info)</div><div class="ttdoc">セットアップ</div><div class="ttdef"><b>Definition:</b> Framework.cpp:30</div></div>
+<div class="ttc" id="astructu22_1_1_framework_info_html_ab4e65744eb3b47cdfd9babb95104b383"><div class="ttname"><a href="structu22_1_1_framework_info.html#ab4e65744eb3b47cdfd9babb95104b383">u22::FrameworkInfo::graphics</a></div><div class="ttdeci">std::shared_ptr&lt; u22::graphics::Graphics &gt; graphics</div><div class="ttdoc">グラフィックス</div><div class="ttdef"><b>Definition:</b> Framework.h:39</div></div>
+<div class="ttc" id="astructu22_1_1_framework_info_html_a23058678f492228d0120099251cf10e1"><div class="ttname"><a href="structu22_1_1_framework_info.html#a23058678f492228d0120099251cf10e1">u22::FrameworkInfo::window</a></div><div class="ttdeci">std::shared_ptr&lt; u22::Window &gt; window</div><div class="ttdoc">ウインドウ</div><div class="ttdef"><b>Definition:</b> Framework.h:35</div></div>
+<div class="ttc" id="astructu22_1_1_framework_info_html"><div class="ttname"><a href="structu22_1_1_framework_info.html">u22::FrameworkInfo</a></div><div class="ttdef"><b>Definition:</b> Framework.h:30</div></div>
+<div class="ttc" id="aclassu22_1_1_framework_html_a914033aefc9c05373e4bdd4225d17028"><div class="ttname"><a href="classu22_1_1_framework.html#a914033aefc9c05373e4bdd4225d17028">u22::Framework::Framework</a></div><div class="ttdeci">Framework()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> Framework.cpp:11</div></div>
+<div class="ttc" id="aclassu22_1_1_framework_html_ad3987d59bf263e09ca2fc8ad6f374b4f"><div class="ttname"><a href="classu22_1_1_framework.html#ad3987d59bf263e09ca2fc8ad6f374b4f">u22::Framework::Cleanup</a></div><div class="ttdeci">bool Cleanup(void)</div><div class="ttdoc">クリーンナップ</div><div class="ttdef"><b>Definition:</b> Framework.cpp:67</div></div>
+<div class="ttc" id="astructu22_1_1_application_info_html_a930589b2750791e91aac56a0899af6b5"><div class="ttname"><a href="structu22_1_1_application_info.html#a930589b2750791e91aac56a0899af6b5">u22::ApplicationInfo::window_position_x</a></div><div class="ttdeci">int window_position_x</div><div class="ttdoc">位置</div><div class="ttdef"><b>Definition:</b> Framework.h:20</div></div>
+<div class="ttc" id="aclassu22_1_1_framework_html_a95092067b6d3cc8600641cfdd4f71bed"><div class="ttname"><a href="classu22_1_1_framework.html#a95092067b6d3cc8600641cfdd4f71bed">u22::Framework::~Framework</a></div><div class="ttdeci">~Framework()</div><div class="ttdoc">デストラクタ</div><div class="ttdef"><b>Definition:</b> Framework.cpp:27</div></div>
+<div class="ttc" id="astructu22_1_1_application_info_html_a99a8d29501c22d6512c52a93cc48b2a6"><div class="ttname"><a href="structu22_1_1_application_info.html#a99a8d29501c22d6512c52a93cc48b2a6">u22::ApplicationInfo::window_position_y</a></div><div class="ttdeci">int window_position_y</div><div class="ttdoc">位置</div><div class="ttdef"><b>Definition:</b> Framework.h:22</div></div>
+<div class="ttc" id="aclassu22_1_1_framework_html"><div class="ttname"><a href="classu22_1_1_framework.html">u22::Framework</a></div><div class="ttdef"><b>Definition:</b> Framework.h:55</div></div>
+<div class="ttc" id="astructu22_1_1_framework_info_html_a1fecad9b5a34187cad6a886d6e43882f"><div class="ttname"><a href="structu22_1_1_framework_info.html#a1fecad9b5a34187cad6a886d6e43882f">u22::FrameworkInfo::input</a></div><div class="ttdeci">std::shared_ptr&lt; u22::input::Input &gt; input</div><div class="ttdoc">インプット</div><div class="ttdef"><b>Definition:</b> Framework.h:37</div></div>
+<div class="ttc" id="astructu22_1_1_framework_info_html_a648ca43db16d71bdf8eab54a72d52681"><div class="ttname"><a href="structu22_1_1_framework_info.html#a648ca43db16d71bdf8eab54a72d52681">u22::FrameworkInfo::FrameworkInfo</a></div><div class="ttdeci">FrameworkInfo()=default</div><div class="ttdoc">コンストラクタ</div></div>
+<div class="ttc" id="astructu22_1_1_application_info_html_a1caf945c328b3698f6ddca6d2f8a1ec2"><div class="ttname"><a href="structu22_1_1_application_info.html#a1caf945c328b3698f6ddca6d2f8a1ec2">u22::ApplicationInfo::window_height</a></div><div class="ttdeci">int window_height</div><div class="ttdoc">サイズ</div><div class="ttdef"><b>Definition:</b> Framework.h:26</div></div>
+<div class="ttc" id="a_window_8h_html"><div class="ttname"><a href="_window_8h.html">Window.h</a></div></div>
+<div class="ttc" id="aclassu22_1_1_framework_html_ab384a35c36a152d362302545b03a8d9b"><div class="ttname"><a href="classu22_1_1_framework.html#ab384a35c36a152d362302545b03a8d9b">u22::Framework::Run</a></div><div class="ttdeci">int Run(void)</div><div class="ttdoc">実行</div><div class="ttdef"><b>Definition:</b> Framework.cpp:49</div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> hash.hpp:50</div></div>
+<div class="ttc" id="aclassu22_1_1_window_html"><div class="ttname"><a href="classu22_1_1_window.html">u22::Window</a></div><div class="ttdef"><b>Definition:</b> Window.h:11</div></div>
+<div class="ttc" id="aclassu22_1_1_framework_html_a4178f3ac4244aa173e022c627a7fd658"><div class="ttname"><a href="classu22_1_1_framework.html#a4178f3ac4244aa173e022c627a7fd658">u22::Framework::GetInfomation</a></div><div class="ttdeci">static u22::FrameworkInfo * GetInfomation(void)</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> Framework.cpp:7</div></div>
+<div class="ttc" id="astructu22_1_1_framework_info_html_a6210b1797e71d95a162038c0c3e294b8"><div class="ttname"><a href="structu22_1_1_framework_info.html#a6210b1797e71d95a162038c0c3e294b8">u22::FrameworkInfo::~FrameworkInfo</a></div><div class="ttdeci">~FrameworkInfo()=default</div><div class="ttdoc">デストラクタ</div></div>
+<div class="ttc" id="anamespaceu22_html"><div class="ttname"><a href="namespaceu22.html">u22</a></div><div class="ttdef"><b>Definition:</b> SpriteAnimationController.h:13</div></div>
+<div class="ttc" id="astructu22_1_1_framework_info_html_a4282f9f6053ec232143bc78044f52d20"><div class="ttname"><a href="structu22_1_1_framework_info.html#a4282f9f6053ec232143bc78044f52d20">u22::FrameworkInfo::clock</a></div><div class="ttdeci">std::shared_ptr&lt; u22::clock::Clock &gt; clock</div><div class="ttdoc">クロック</div><div class="ttdef"><b>Definition:</b> Framework.h:33</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

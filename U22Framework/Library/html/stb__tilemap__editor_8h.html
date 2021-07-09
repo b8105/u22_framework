@@ -1,0 +1,1420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: External/stb/stb_tilemap_editor.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_443fc37f241ba4018364a998c18d007b.html">External</a></li><li class="navelem"><a class="el" href="dir_8cdafb5277d0f188f0ea90f41e2137ea.html">stb</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#typedef-members">型定義</a> &#124;
+<a href="#enum-members">列挙型</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">stb_tilemap_editor.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="stb__tilemap__editor_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a2e1905e985b498486f2b9a5b382fed97"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#a2e1905e985b498486f2b9a5b382fed97">STBTE_PROP_none</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a2e1905e985b498486f2b9a5b382fed97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6828435ad2c5b62cde25b8ecb0dac693"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#a6828435ad2c5b62cde25b8ecb0dac693">STBTE_PROP_int</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a6828435ad2c5b62cde25b8ecb0dac693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a693261b2e2c6cb676cb9641ee5d5417a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#a693261b2e2c6cb676cb9641ee5d5417a">STBTE_PROP_float</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a693261b2e2c6cb676cb9641ee5d5417a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e4e8c0b5906b4d29423ae62206da89d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#a9e4e8c0b5906b4d29423ae62206da89d">STBTE_PROP_bool</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a9e4e8c0b5906b4d29423ae62206da89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bbe19dda5a69b006c2353bca45e2118"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#a4bbe19dda5a69b006c2353bca45e2118">STBTE_PROP_disabled</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a4bbe19dda5a69b006c2353bca45e2118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a851eec1f64fa91af15f1bb1ec4e06d2e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#a851eec1f64fa91af15f1bb1ec4e06d2e">STBTE_EMPTY</a>&#160;&#160;&#160;-1</td></tr>
+<tr class="separator:a851eec1f64fa91af15f1bb1ec4e06d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:a1eb4417db66bd630e3d03310a03416c5"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a></td></tr>
+<tr class="separator:a1eb4417db66bd630e3d03310a03416c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:a06fc87d81c62e9abb8790b6e5713c55b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6c1fc181944f58b4bcd23a05acd34499">SF_FORMAT_WAV</a> = 0x010000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6b3c3276356e59c65552aa8dc81c8f8b">SF_FORMAT_AIFF</a> = 0x020000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf4bf74071da31239a8bbe3a34877d511">SF_FORMAT_AU</a> = 0x030000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba754f6ac6e6b293b1ffcb1d06412fa297">SF_FORMAT_RAW</a> = 0x040000, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba67e5cf6543280ccf166a2489658ab4ea">SF_FORMAT_PAF</a> = 0x050000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba589143a1c82410acb51792eba617ec02">SF_FORMAT_SVX</a> = 0x060000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8905ae7f3ab72cc5b667cf43a89d378b">SF_FORMAT_NIST</a> = 0x070000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baac658149adf5858ad555460103a72e36">SF_FORMAT_VOC</a> = 0x080000, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba876afc0cbbb2ef3bfce2ed0013c3a07c">SF_FORMAT_IRCAM</a> = 0x0A0000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba1550936375eaff26d88f01c5e57b679c">SF_FORMAT_W64</a> = 0x0B0000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bace8c193d02de42380758f1428b95603f">SF_FORMAT_MAT4</a> = 0x0C0000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba81a423e6776be321f518ddf39d49755d">SF_FORMAT_MAT5</a> = 0x0D0000, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba339137ced07d99c95c80cea58165c2b0">SF_FORMAT_PVF</a> = 0x0E0000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba61cf59e2b4e7782f59f21370397e3b42">SF_FORMAT_XI</a> = 0x0F0000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf9786f5a4824ff5c5a1f8b12e2ca1b8a">SF_FORMAT_HTK</a> = 0x100000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bacba7b7998062f1749acf67a17ad57cf2">SF_FORMAT_SDS</a> = 0x110000, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bad9e4eb2bce984e40515ba901c1e6fee6">SF_FORMAT_AVR</a> = 0x120000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf84597ff85285cec0ef7a253ee7ee03b">SF_FORMAT_WAVEX</a> = 0x130000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba09f74ea32b2c1e5f6e8860a63fee39c7">SF_FORMAT_SD2</a> = 0x160000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae7dd912842b509d648d62915b996b06f">SF_FORMAT_FLAC</a> = 0x170000, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baebb9b420892e6347299efea9b1de731a">SF_FORMAT_CAF</a> = 0x180000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba9fa3f8c0e1f841adbe18fff6afd9b225">SF_FORMAT_WVE</a> = 0x190000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baaaef1f7e663487eefbe4106de44ea7fd">SF_FORMAT_OGG</a> = 0x200000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6f9158b93d85b1589cf0c22e3d9ed762">SF_FORMAT_MPC2K</a> = 0x210000, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba412416b46a68961e0f3b5998a5003da4">SF_FORMAT_RF64</a> = 0x220000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8c9b17bb36d115f80ef61dcae7631b26">SF_FORMAT_PCM_S8</a> = 0x0001, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba63515ce839545c11d35dc8c8c4c5c261">SF_FORMAT_PCM_16</a> = 0x0002, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba160bd57540f1d3d6acbf2e29ea4769f4">SF_FORMAT_PCM_24</a> = 0x0003, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba741fa21e06429d59eb548d6f388d16b4">SF_FORMAT_PCM_32</a> = 0x0004, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba3828255dad74fc3ebb02b59afb28caae">SF_FORMAT_PCM_U8</a> = 0x0005, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8b19f7e84eb0556faff33623830b489b">SF_FORMAT_FLOAT</a> = 0x0006, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba7f5de05a45409d1ce72c9a2ecbff1bd3">SF_FORMAT_DOUBLE</a> = 0x0007, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae3fd36f90782efc0ee6d00cc4a6f4060">SF_FORMAT_ULAW</a> = 0x0010, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba88cd6729a685a388edbf6b971bc57d59">SF_FORMAT_ALAW</a> = 0x0011, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba84028970a006395da0454b107749238e">SF_FORMAT_IMA_ADPCM</a> = 0x0012, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae668a3aeec6b4ed1b13bf61bf826853e">SF_FORMAT_MS_ADPCM</a> = 0x0013, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf83aeb49bdbb825a72f7e28a917b3ff8">SF_FORMAT_GSM610</a> = 0x0020, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba313dc159c6ef2fbb2aa8a8527ae679d6">SF_FORMAT_VOX_ADPCM</a> = 0x0021, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baac83013f62a7f7b43d9cf7738b0752da">SF_FORMAT_G721_32</a> = 0x0030, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bada2bb516d73e8f64dbde9a30e9c2fe3a">SF_FORMAT_G723_24</a> = 0x0031, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baa5c30385e6f2292e273fd4c2897bee6b">SF_FORMAT_G723_40</a> = 0x0032, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba82f7b868e26a90aa9f35aca78dccd6cb">SF_FORMAT_DWVW_12</a> = 0x0040, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baa4e811170b266013a8e48089466b1eaa">SF_FORMAT_DWVW_16</a> = 0x0041, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba0f25d45633813e4d4e9115a635d4e44c">SF_FORMAT_DWVW_24</a> = 0x0042, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba90c0d2cd326ee0c8535500290ddac4c6">SF_FORMAT_DWVW_N</a> = 0x0043, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8fed18695608391eec4fde4ef6aca65e">SF_FORMAT_DPCM_8</a> = 0x0050, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba1760953aad0c96ca1c85cac5b353b919">SF_FORMAT_DPCM_16</a> = 0x0051, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba029114057a7956f3c94ae18d269faf61">SF_FORMAT_VORBIS</a> = 0x0060, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bacf21441e9a1c5b705b5669b63e4bae1e">SF_FORMAT_ALAC_16</a> = 0x0070, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba4ad8a6ee7d05d950e76319544f0e7e3f">SF_FORMAT_ALAC_20</a> = 0x0071, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba303b93fd601b13ec59f315f159713743">SF_FORMAT_ALAC_24</a> = 0x0072, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baff13be8653e6eb27f0a9be560bca32e1">SF_FORMAT_ALAC_32</a> = 0x0073, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba19c07acde7315bff90e2f4aafd91a0eb">SF_ENDIAN_FILE</a> = 0x00000000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba5e4eee211f84815fdc7932cf26e2cda2">SF_ENDIAN_LITTLE</a> = 0x10000000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba0c342389e92c7a1cbbf5267cd25db357">SF_ENDIAN_BIG</a> = 0x20000000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8cb50cf8159f5eca028506e847b3357f">SF_ENDIAN_CPU</a> = 0x30000000, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae792e42fc6619187743f7741e7044240">SF_FORMAT_SUBMASK</a> = 0x0000FFFF, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba4d9e4f32f119d026fdc74a88e9d41e87">SF_FORMAT_TYPEMASK</a> = 0x0FFF0000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba3ad64b85eba112d383ece8d58e612ced">SF_FORMAT_ENDMASK</a> = 0x30000000, 
+<a class="el" href="stb_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba24e950b5afa49d5dac392ca3dbac31cf">stb_keep_no</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="stb_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba78d897c2442e1e03a94787a224c34650">stb_keep_yes</a> = 1, 
+<a class="el" href="stb_8h.html#a06fc87d81c62e9abb8790b6e5713c55bafc277b5591965d4b85ff6a123d68f7bc">stb_keep_if_different</a> = 2, 
+<a class="el" href="stb__ds_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6190aa75494d401819f42525160a29df">STBDS_HM_BINARY</a>, 
+<a class="el" href="stb__ds_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba0eb29a259a93d6d37f0388a7c868adca">STBDS_HM_STRING</a>, 
+<br />
+&#160;&#160;<a class="el" href="stb__image_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba0177ac2c5002f4f251bb766d41752029">STBI_default</a> = 0, 
+<a class="el" href="stb__image_8h.html#a06fc87d81c62e9abb8790b6e5713c55bad1eb95ca1fa7706bf732bf35a0ed40aa">STBI_grey</a> = 1, 
+<a class="el" href="stb__image_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf5829d16d4cca6077465c5abd346e2f8">STBI_grey_alpha</a> = 2, 
+<a class="el" href="stb__image_8h.html#a06fc87d81c62e9abb8790b6e5713c55baa59123e5d0af25f9b1539f5cf1facddf">STBI_rgb</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="stb__image_8h.html#a06fc87d81c62e9abb8790b6e5713c55baa7b1af0c9f0310c3ada2aa29a32de293">STBI_rgb_alpha</a> = 4, 
+<a class="el" href="stb__rect__pack_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba5e4dd0b1cbee654bbfeebc5311f03525">STBRP_HEURISTIC_Skyline_default</a> =0, 
+<a class="el" href="stb__rect__pack_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba13530b067fb1f9707dc0f9d51f8b074a">STBRP_HEURISTIC_Skyline_BL_sortHeight</a> = STBRP_HEURISTIC_Skyline_default, 
+<a class="el" href="stb__rect__pack_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba11d62749c4405a231a6fd1dd9d46615c">STBRP_HEURISTIC_Skyline_BF_sortHeight</a>, 
+<br />
+&#160;&#160;<a class="el" href="stb__tilemap__editor_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba778bce82a2515bae94b3398971aee45b">STBTE_drawmode_deemphasize</a> = -1, 
+<a class="el" href="stb__tilemap__editor_8h.html#a06fc87d81c62e9abb8790b6e5713c55bafc38f2f3cc1c7fa986c121abdc30ffec">STBTE_drawmode_normal</a> = 0, 
+<a class="el" href="stb__tilemap__editor_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba088e1c4fcba12f43066438f0040eecc1">STBTE_drawmode_emphasize</a> = 1, 
+<a class="el" href="stb__truetype_8h.html#a06fc87d81c62e9abb8790b6e5713c55bab335ba97e1798b621313de85a9a6e69d">STBTT_vmove</a> =1, 
+<br />
+&#160;&#160;<a class="el" href="stb__truetype_8h.html#a06fc87d81c62e9abb8790b6e5713c55bade4bb6465c32e56588f35e5120769e2e">STBTT_vline</a>, 
+<a class="el" href="stb__truetype_8h.html#a06fc87d81c62e9abb8790b6e5713c55bab9ac3e527ce18873abeab556f6768ce4">STBTT_vcurve</a>, 
+<a class="el" href="stb__truetype_8h.html#a06fc87d81c62e9abb8790b6e5713c55bab6cd2670234c731eafba404d3a2470fd">STBTT_vcubic</a>, 
+<a class="el" href="stb__vorbis_8c.html#a06fc87d81c62e9abb8790b6e5713c55ba80ba889feb2380990384b027bd2905b4">VORBIS_packet_id</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="stb__vorbis_8c.html#a06fc87d81c62e9abb8790b6e5713c55ba01e28b89a67bc5705d2c44c1221fce8d">VORBIS_packet_comment</a> = 3, 
+<a class="el" href="stb__vorbis_8c.html#a06fc87d81c62e9abb8790b6e5713c55ba20b3079d6deb5a9d07566234f8f0eb1d">VORBIS_packet_setup</a> = 5, 
+<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae4a976805a2c137e4e56be03380ea2a2">STBVOX_UNIFORM_face_data</a>, 
+<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55bab955886cfcf0c2c881d633beeb99ad93">STBVOX_UNIFORM_transform</a>, 
+<br />
+&#160;&#160;<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba9415362fa2fe2833bbb221c12310dc81">STBVOX_UNIFORM_tex_array</a>, 
+<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf9b476df9befe12c8855d1ea20db22fe">STBVOX_UNIFORM_texscale</a>, 
+<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba1f8122611f70005180ede22ebffa840f">STBVOX_UNIFORM_color_table</a>, 
+<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba67cfb94d15198e0d936ca263a2077b5e">STBVOX_UNIFORM_normals</a>, 
+<br />
+&#160;&#160;<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba65f746116b3aa230da8bbb534e6cea97">STBVOX_UNIFORM_texgen</a>, 
+<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba87500607917aa427db2ff08fc3ea1ca8">STBVOX_UNIFORM_ambient</a>, 
+<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba82a48737d53c36a05fdf8138c17c349f">STBVOX_UNIFORM_camera_pos</a>, 
+<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba463fbe04a519703eaad7ce1434576696">STBVOX_UNIFORM_count</a>
+<br />
+ }</td></tr>
+<tr class="separator:a06fc87d81c62e9abb8790b6e5713c55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2079dfc8862b75681f6f25afb163489b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#a2079dfc8862b75681f6f25afb163489b">stbte_action</a> { <br />
+&#160;&#160;<a class="el" href="stb__tilemap__editor_8h.html#a2079dfc8862b75681f6f25afb163489ba165230ce39d882a97144e6227e69f9ad">STBTE_tool_select</a>, 
+<a class="el" href="stb__tilemap__editor_8h.html#a2079dfc8862b75681f6f25afb163489ba32cde384d0d8a6714f94d9dcc3849a3f">STBTE_tool_brush</a>, 
+<a class="el" href="stb__tilemap__editor_8h.html#a2079dfc8862b75681f6f25afb163489baa35a62c011e46341589fb46002660521">STBTE_tool_erase</a>, 
+<a class="el" href="stb__tilemap__editor_8h.html#a2079dfc8862b75681f6f25afb163489baca063ebe73fa14e2fa11aa988d7449e0">STBTE_tool_rectangle</a>, 
+<br />
+&#160;&#160;<a class="el" href="stb__tilemap__editor_8h.html#a2079dfc8862b75681f6f25afb163489bab062287551b5ee45068a64fa837637a9">STBTE_tool_eyedropper</a>, 
+<a class="el" href="stb__tilemap__editor_8h.html#a2079dfc8862b75681f6f25afb163489ba6f60681098ec465c4ed2655dbfa368e1">STBTE_tool_link</a>, 
+<a class="el" href="stb__tilemap__editor_8h.html#a2079dfc8862b75681f6f25afb163489bae81816d78c404bd57c0e8ed67be8f222">STBTE_act_toggle_grid</a>, 
+<a class="el" href="stb__tilemap__editor_8h.html#a2079dfc8862b75681f6f25afb163489bacd1aac723f0a0b952d6cb6261775edbb">STBTE_act_toggle_links</a>, 
+<br />
+&#160;&#160;<a class="el" href="stb__tilemap__editor_8h.html#a2079dfc8862b75681f6f25afb163489bae46c9443f03e78bbde3e88a65c29895b">STBTE_act_undo</a>, 
+<a class="el" href="stb__tilemap__editor_8h.html#a2079dfc8862b75681f6f25afb163489ba0cc48c1485f6aa0637963b3ff6ba807f">STBTE_act_redo</a>, 
+<a class="el" href="stb__tilemap__editor_8h.html#a2079dfc8862b75681f6f25afb163489baed6f197db53051e958e29ff9cfd6b92d">STBTE_act_cut</a>, 
+<a class="el" href="stb__tilemap__editor_8h.html#a2079dfc8862b75681f6f25afb163489ba05555aa5cee661a131fb491b28a23211">STBTE_act_copy</a>, 
+<br />
+&#160;&#160;<a class="el" href="stb__tilemap__editor_8h.html#a2079dfc8862b75681f6f25afb163489ba9f148beb095d8cac4c9b534de3de0e7c">STBTE_act_paste</a>, 
+<a class="el" href="stb__tilemap__editor_8h.html#a2079dfc8862b75681f6f25afb163489bae1d9ac30a5e2b3e333da82f9f64e7ee5">STBTE_scroll_left</a>, 
+<a class="el" href="stb__tilemap__editor_8h.html#a2079dfc8862b75681f6f25afb163489ba144ea20a132345c10d9ca53a6d02ba19">STBTE_scroll_right</a>, 
+<a class="el" href="stb__tilemap__editor_8h.html#a2079dfc8862b75681f6f25afb163489baf1d442243546075cdf22300644830165">STBTE_scroll_up</a>, 
+<br />
+&#160;&#160;<a class="el" href="stb__tilemap__editor_8h.html#a2079dfc8862b75681f6f25afb163489ba55752707f18e9e16ff02c9c6cbcc8420">STBTE_scroll_down</a>
+<br />
+ }</td></tr>
+<tr class="separator:a2079dfc8862b75681f6f25afb163489b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:ad55839664c3676f7f3a3bdb07aa81297"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#ad55839664c3676f7f3a3bdb07aa81297">stbte_create_map</a> (int map_x, int map_y, int map_layers, int spacing_x, int spacing_y, int max_tiles)</td></tr>
+<tr class="separator:ad55839664c3676f7f3a3bdb07aa81297"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a532d59e89a4d7b992b64e4b1199391d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#a532d59e89a4d7b992b64e4b1199391d5">stbte_define_tile</a> (<a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *tm, unsigned short id, unsigned int layermask, const char *category)</td></tr>
+<tr class="separator:a532d59e89a4d7b992b64e4b1199391d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2468f716774298bc660b8d7e8af0594"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#ac2468f716774298bc660b8d7e8af0594">stbte_set_display</a> (int x0, int y0, int x1, int y1)</td></tr>
+<tr class="separator:ac2468f716774298bc660b8d7e8af0594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa51ed26fa69025bb4c89183691b35040"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#aa51ed26fa69025bb4c89183691b35040">stbte_draw</a> (<a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *tm)</td></tr>
+<tr class="separator:aa51ed26fa69025bb4c89183691b35040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eb7f67f47b02a51a63611fa929beced"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#a4eb7f67f47b02a51a63611fa929beced">stbte_tick</a> (<a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *tm, float time_in_seconds_since_last_frame)</td></tr>
+<tr class="separator:a4eb7f67f47b02a51a63611fa929beced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acafb5cfed567392a1baf79eeaae5e000"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#acafb5cfed567392a1baf79eeaae5e000">stbte_mouse_sdl</a> (<a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *tm, const void *sdl_event, float xscale, float yscale, int xoffset, int yoffset)</td></tr>
+<tr class="separator:acafb5cfed567392a1baf79eeaae5e000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c0d85f8274efb0d679f76826e43bf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#a39c0d85f8274efb0d679f76826e43bf0">stbte_mouse_move</a> (<a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *tm, int x, int y, int shifted, int scrollkey)</td></tr>
+<tr class="separator:a39c0d85f8274efb0d679f76826e43bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad3d7c0b7c1e52e1325088431d296552"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#aad3d7c0b7c1e52e1325088431d296552">stbte_mouse_button</a> (<a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *tm, int x, int y, int right, int down, int shifted, int scrollkey)</td></tr>
+<tr class="separator:aad3d7c0b7c1e52e1325088431d296552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a891722cd60c57eb0a75e16003e9b77d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#a891722cd60c57eb0a75e16003e9b77d2">stbte_mouse_wheel</a> (<a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *tm, int x, int y, int vscroll)</td></tr>
+<tr class="separator:a891722cd60c57eb0a75e16003e9b77d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08d80ba9968f8144a4d1cb627c6a3567"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#a08d80ba9968f8144a4d1cb627c6a3567">stbte_action</a> (<a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *tm, enum <a class="el" href="stb__tilemap__editor_8h.html#a2079dfc8862b75681f6f25afb163489b">stbte_action</a> act)</td></tr>
+<tr class="separator:a08d80ba9968f8144a4d1cb627c6a3567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7798c9367ae88c6e192d93bd5ef7233c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#a7798c9367ae88c6e192d93bd5ef7233c">stbte_get_dimensions</a> (<a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *tm, int *max_x, int *max_y)</td></tr>
+<tr class="separator:a7798c9367ae88c6e192d93bd5ef7233c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cadb4b5e1f08367aaa52c4e763bbf5a"><td class="memItemLeft" align="right" valign="top">short *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#a5cadb4b5e1f08367aaa52c4e763bbf5a">stbte_get_tile</a> (<a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *tm, int x, int y)</td></tr>
+<tr class="separator:a5cadb4b5e1f08367aaa52c4e763bbf5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84541a5141c5c9105ad9d47855e95a54"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#a84541a5141c5c9105ad9d47855e95a54">stbte_get_properties</a> (<a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *tm, int x, int y)</td></tr>
+<tr class="separator:a84541a5141c5c9105ad9d47855e95a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a0b0206daffbbdec3c5ae73fd25c929"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#a2a0b0206daffbbdec3c5ae73fd25c929">stbte_get_link</a> (<a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *tm, int x, int y, int *destx, int *desty)</td></tr>
+<tr class="separator:a2a0b0206daffbbdec3c5ae73fd25c929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5156a27d97734122e05aa55b2e53822"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#aa5156a27d97734122e05aa55b2e53822">stbte_set_dimensions</a> (<a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *tm, int max_x, int max_y)</td></tr>
+<tr class="separator:aa5156a27d97734122e05aa55b2e53822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab83a573d98dd477d94353db2faf0eace"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#ab83a573d98dd477d94353db2faf0eace">stbte_clear_map</a> (<a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *tm)</td></tr>
+<tr class="separator:ab83a573d98dd477d94353db2faf0eace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ef183ba8f556e9b387329bbbd37d2f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#a3ef183ba8f556e9b387329bbbd37d2f9">stbte_set_tile</a> (<a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *tm, int x, int y, int layer, signed short tile)</td></tr>
+<tr class="separator:a3ef183ba8f556e9b387329bbbd37d2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa39f39745b1c187618fed3805b17ca12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#aa39f39745b1c187618fed3805b17ca12">stbte_set_property</a> (<a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *tm, int x, int y, int n, float val)</td></tr>
+<tr class="separator:aa39f39745b1c187618fed3805b17ca12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d1af7c456d500d6815a27a3f012476"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#a38d1af7c456d500d6815a27a3f012476">stbte_set_link</a> (<a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *tm, int x, int y, int destx, int desty)</td></tr>
+<tr class="separator:a38d1af7c456d500d6815a27a3f012476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab376c07fd370625478fbedc24208ef7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#ab376c07fd370625478fbedc24208ef7a">stbte_set_background_tile</a> (<a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *tm, short id)</td></tr>
+<tr class="separator:ab376c07fd370625478fbedc24208ef7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea0c8ec195bf5b4258866097dabe41bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#aea0c8ec195bf5b4258866097dabe41bf">stbte_set_sidewidths</a> (int left, int right)</td></tr>
+<tr class="separator:aea0c8ec195bf5b4258866097dabe41bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0632f752b15074e386e6d48c1f121d89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#a0632f752b15074e386e6d48c1f121d89">stbte_set_spacing</a> (<a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *tm, int spacing_x, int spacing_y, int palette_spacing_x, int palette_spacing_y)</td></tr>
+<tr class="separator:a0632f752b15074e386e6d48c1f121d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affc619c2115a95f947825d203c482c47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__tilemap__editor_8h.html#affc619c2115a95f947825d203c482c47">stbte_set_layername</a> (<a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *tm, int layer, const char *layername)</td></tr>
+<tr class="separator:affc619c2115a95f947825d203c482c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">マクロ定義詳解</h2>
+<a id="a851eec1f64fa91af15f1bb1ec4e06d2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a851eec1f64fa91af15f1bb1ec4e06d2e">&#9670;&nbsp;</a></span>STBTE_EMPTY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STBTE_EMPTY&#160;&#160;&#160;-1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e4e8c0b5906b4d29423ae62206da89d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e4e8c0b5906b4d29423ae62206da89d">&#9670;&nbsp;</a></span>STBTE_PROP_bool</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STBTE_PROP_bool&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4bbe19dda5a69b006c2353bca45e2118"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bbe19dda5a69b006c2353bca45e2118">&#9670;&nbsp;</a></span>STBTE_PROP_disabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STBTE_PROP_disabled&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a693261b2e2c6cb676cb9641ee5d5417a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a693261b2e2c6cb676cb9641ee5d5417a">&#9670;&nbsp;</a></span>STBTE_PROP_float</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STBTE_PROP_float&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6828435ad2c5b62cde25b8ecb0dac693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6828435ad2c5b62cde25b8ecb0dac693">&#9670;&nbsp;</a></span>STBTE_PROP_int</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STBTE_PROP_int&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e1905e985b498486f2b9a5b382fed97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e1905e985b498486f2b9a5b382fed97">&#9670;&nbsp;</a></span>STBTE_PROP_none</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STBTE_PROP_none&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">型定義詳解</h2>
+<a id="a1eb4417db66bd630e3d03310a03416c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eb4417db66bd630e3d03310a03416c5">&#9670;&nbsp;</a></span>stbte_tilemap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> <a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">列挙型詳解</h2>
+<a id="a06fc87d81c62e9abb8790b6e5713c55b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06fc87d81c62e9abb8790b6e5713c55b">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba6c1fc181944f58b4bcd23a05acd34499"></a>SF_FORMAT_WAV&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba6b3c3276356e59c65552aa8dc81c8f8b"></a>SF_FORMAT_AIFF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baf4bf74071da31239a8bbe3a34877d511"></a>SF_FORMAT_AU&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba754f6ac6e6b293b1ffcb1d06412fa297"></a>SF_FORMAT_RAW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba67e5cf6543280ccf166a2489658ab4ea"></a>SF_FORMAT_PAF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba589143a1c82410acb51792eba617ec02"></a>SF_FORMAT_SVX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba8905ae7f3ab72cc5b667cf43a89d378b"></a>SF_FORMAT_NIST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baac658149adf5858ad555460103a72e36"></a>SF_FORMAT_VOC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba876afc0cbbb2ef3bfce2ed0013c3a07c"></a>SF_FORMAT_IRCAM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba1550936375eaff26d88f01c5e57b679c"></a>SF_FORMAT_W64&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bace8c193d02de42380758f1428b95603f"></a>SF_FORMAT_MAT4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba81a423e6776be321f518ddf39d49755d"></a>SF_FORMAT_MAT5&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba339137ced07d99c95c80cea58165c2b0"></a>SF_FORMAT_PVF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba61cf59e2b4e7782f59f21370397e3b42"></a>SF_FORMAT_XI&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baf9786f5a4824ff5c5a1f8b12e2ca1b8a"></a>SF_FORMAT_HTK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bacba7b7998062f1749acf67a17ad57cf2"></a>SF_FORMAT_SDS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bad9e4eb2bce984e40515ba901c1e6fee6"></a>SF_FORMAT_AVR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baf84597ff85285cec0ef7a253ee7ee03b"></a>SF_FORMAT_WAVEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba09f74ea32b2c1e5f6e8860a63fee39c7"></a>SF_FORMAT_SD2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bae7dd912842b509d648d62915b996b06f"></a>SF_FORMAT_FLAC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baebb9b420892e6347299efea9b1de731a"></a>SF_FORMAT_CAF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba9fa3f8c0e1f841adbe18fff6afd9b225"></a>SF_FORMAT_WVE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baaaef1f7e663487eefbe4106de44ea7fd"></a>SF_FORMAT_OGG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba6f9158b93d85b1589cf0c22e3d9ed762"></a>SF_FORMAT_MPC2K&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba412416b46a68961e0f3b5998a5003da4"></a>SF_FORMAT_RF64&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba8c9b17bb36d115f80ef61dcae7631b26"></a>SF_FORMAT_PCM_S8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba63515ce839545c11d35dc8c8c4c5c261"></a>SF_FORMAT_PCM_16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba160bd57540f1d3d6acbf2e29ea4769f4"></a>SF_FORMAT_PCM_24&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba741fa21e06429d59eb548d6f388d16b4"></a>SF_FORMAT_PCM_32&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba3828255dad74fc3ebb02b59afb28caae"></a>SF_FORMAT_PCM_U8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba8b19f7e84eb0556faff33623830b489b"></a>SF_FORMAT_FLOAT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba7f5de05a45409d1ce72c9a2ecbff1bd3"></a>SF_FORMAT_DOUBLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bae3fd36f90782efc0ee6d00cc4a6f4060"></a>SF_FORMAT_ULAW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba88cd6729a685a388edbf6b971bc57d59"></a>SF_FORMAT_ALAW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba84028970a006395da0454b107749238e"></a>SF_FORMAT_IMA_ADPCM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bae668a3aeec6b4ed1b13bf61bf826853e"></a>SF_FORMAT_MS_ADPCM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baf83aeb49bdbb825a72f7e28a917b3ff8"></a>SF_FORMAT_GSM610&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba313dc159c6ef2fbb2aa8a8527ae679d6"></a>SF_FORMAT_VOX_ADPCM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baac83013f62a7f7b43d9cf7738b0752da"></a>SF_FORMAT_G721_32&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bada2bb516d73e8f64dbde9a30e9c2fe3a"></a>SF_FORMAT_G723_24&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baa5c30385e6f2292e273fd4c2897bee6b"></a>SF_FORMAT_G723_40&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba82f7b868e26a90aa9f35aca78dccd6cb"></a>SF_FORMAT_DWVW_12&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baa4e811170b266013a8e48089466b1eaa"></a>SF_FORMAT_DWVW_16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba0f25d45633813e4d4e9115a635d4e44c"></a>SF_FORMAT_DWVW_24&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba90c0d2cd326ee0c8535500290ddac4c6"></a>SF_FORMAT_DWVW_N&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba8fed18695608391eec4fde4ef6aca65e"></a>SF_FORMAT_DPCM_8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba1760953aad0c96ca1c85cac5b353b919"></a>SF_FORMAT_DPCM_16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba029114057a7956f3c94ae18d269faf61"></a>SF_FORMAT_VORBIS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bacf21441e9a1c5b705b5669b63e4bae1e"></a>SF_FORMAT_ALAC_16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba4ad8a6ee7d05d950e76319544f0e7e3f"></a>SF_FORMAT_ALAC_20&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba303b93fd601b13ec59f315f159713743"></a>SF_FORMAT_ALAC_24&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baff13be8653e6eb27f0a9be560bca32e1"></a>SF_FORMAT_ALAC_32&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba19c07acde7315bff90e2f4aafd91a0eb"></a>SF_ENDIAN_FILE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba5e4eee211f84815fdc7932cf26e2cda2"></a>SF_ENDIAN_LITTLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba0c342389e92c7a1cbbf5267cd25db357"></a>SF_ENDIAN_BIG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba8cb50cf8159f5eca028506e847b3357f"></a>SF_ENDIAN_CPU&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bae792e42fc6619187743f7741e7044240"></a>SF_FORMAT_SUBMASK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba4d9e4f32f119d026fdc74a88e9d41e87"></a>SF_FORMAT_TYPEMASK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba3ad64b85eba112d383ece8d58e612ced"></a>SF_FORMAT_ENDMASK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba24e950b5afa49d5dac392ca3dbac31cf"></a>stb_keep_no&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba78d897c2442e1e03a94787a224c34650"></a>stb_keep_yes&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bafc277b5591965d4b85ff6a123d68f7bc"></a>stb_keep_if_different&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba6190aa75494d401819f42525160a29df"></a>STBDS_HM_BINARY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba0eb29a259a93d6d37f0388a7c868adca"></a>STBDS_HM_STRING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba0177ac2c5002f4f251bb766d41752029"></a>STBI_default&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bad1eb95ca1fa7706bf732bf35a0ed40aa"></a>STBI_grey&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baf5829d16d4cca6077465c5abd346e2f8"></a>STBI_grey_alpha&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baa59123e5d0af25f9b1539f5cf1facddf"></a>STBI_rgb&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baa7b1af0c9f0310c3ada2aa29a32de293"></a>STBI_rgb_alpha&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba5e4dd0b1cbee654bbfeebc5311f03525"></a>STBRP_HEURISTIC_Skyline_default&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba13530b067fb1f9707dc0f9d51f8b074a"></a>STBRP_HEURISTIC_Skyline_BL_sortHeight&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba11d62749c4405a231a6fd1dd9d46615c"></a>STBRP_HEURISTIC_Skyline_BF_sortHeight&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba778bce82a2515bae94b3398971aee45b"></a>STBTE_drawmode_deemphasize&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bafc38f2f3cc1c7fa986c121abdc30ffec"></a>STBTE_drawmode_normal&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba088e1c4fcba12f43066438f0040eecc1"></a>STBTE_drawmode_emphasize&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bab335ba97e1798b621313de85a9a6e69d"></a>STBTT_vmove&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bade4bb6465c32e56588f35e5120769e2e"></a>STBTT_vline&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bab9ac3e527ce18873abeab556f6768ce4"></a>STBTT_vcurve&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bab6cd2670234c731eafba404d3a2470fd"></a>STBTT_vcubic&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba80ba889feb2380990384b027bd2905b4"></a>VORBIS_packet_id&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba01e28b89a67bc5705d2c44c1221fce8d"></a>VORBIS_packet_comment&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba20b3079d6deb5a9d07566234f8f0eb1d"></a>VORBIS_packet_setup&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bae4a976805a2c137e4e56be03380ea2a2"></a>STBVOX_UNIFORM_face_data&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bab955886cfcf0c2c881d633beeb99ad93"></a>STBVOX_UNIFORM_transform&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba9415362fa2fe2833bbb221c12310dc81"></a>STBVOX_UNIFORM_tex_array&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baf9b476df9befe12c8855d1ea20db22fe"></a>STBVOX_UNIFORM_texscale&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba1f8122611f70005180ede22ebffa840f"></a>STBVOX_UNIFORM_color_table&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba67cfb94d15198e0d936ca263a2077b5e"></a>STBVOX_UNIFORM_normals&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba65f746116b3aa230da8bbb534e6cea97"></a>STBVOX_UNIFORM_texgen&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba87500607917aa427db2ff08fc3ea1ca8"></a>STBVOX_UNIFORM_ambient&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba82a48737d53c36a05fdf8138c17c349f"></a>STBVOX_UNIFORM_camera_pos&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba463fbe04a519703eaad7ce1434576696"></a>STBVOX_UNIFORM_count&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a2079dfc8862b75681f6f25afb163489b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2079dfc8862b75681f6f25afb163489b">&#9670;&nbsp;</a></span>stbte_action</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="stb__tilemap__editor_8h.html#a2079dfc8862b75681f6f25afb163489b">stbte_action</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a2079dfc8862b75681f6f25afb163489ba165230ce39d882a97144e6227e69f9ad"></a>STBTE_tool_select&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2079dfc8862b75681f6f25afb163489ba32cde384d0d8a6714f94d9dcc3849a3f"></a>STBTE_tool_brush&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2079dfc8862b75681f6f25afb163489baa35a62c011e46341589fb46002660521"></a>STBTE_tool_erase&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2079dfc8862b75681f6f25afb163489baca063ebe73fa14e2fa11aa988d7449e0"></a>STBTE_tool_rectangle&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2079dfc8862b75681f6f25afb163489bab062287551b5ee45068a64fa837637a9"></a>STBTE_tool_eyedropper&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2079dfc8862b75681f6f25afb163489ba6f60681098ec465c4ed2655dbfa368e1"></a>STBTE_tool_link&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2079dfc8862b75681f6f25afb163489bae81816d78c404bd57c0e8ed67be8f222"></a>STBTE_act_toggle_grid&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2079dfc8862b75681f6f25afb163489bacd1aac723f0a0b952d6cb6261775edbb"></a>STBTE_act_toggle_links&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2079dfc8862b75681f6f25afb163489bae46c9443f03e78bbde3e88a65c29895b"></a>STBTE_act_undo&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2079dfc8862b75681f6f25afb163489ba0cc48c1485f6aa0637963b3ff6ba807f"></a>STBTE_act_redo&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2079dfc8862b75681f6f25afb163489baed6f197db53051e958e29ff9cfd6b92d"></a>STBTE_act_cut&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2079dfc8862b75681f6f25afb163489ba05555aa5cee661a131fb491b28a23211"></a>STBTE_act_copy&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2079dfc8862b75681f6f25afb163489ba9f148beb095d8cac4c9b534de3de0e7c"></a>STBTE_act_paste&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2079dfc8862b75681f6f25afb163489bae1d9ac30a5e2b3e333da82f9f64e7ee5"></a>STBTE_scroll_left&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2079dfc8862b75681f6f25afb163489ba144ea20a132345c10d9ca53a6d02ba19"></a>STBTE_scroll_right&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2079dfc8862b75681f6f25afb163489baf1d442243546075cdf22300644830165"></a>STBTE_scroll_up&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2079dfc8862b75681f6f25afb163489ba55752707f18e9e16ff02c9c6cbcc8420"></a>STBTE_scroll_down&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a08d80ba9968f8144a4d1cb627c6a3567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08d80ba9968f8144a4d1cb627c6a3567">&#9670;&nbsp;</a></span>stbte_action()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="stb__tilemap__editor_8h.html#a2079dfc8862b75681f6f25afb163489b">stbte_action</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *&#160;</td>
+          <td class="paramname"><em>tm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">enum <a class="el" href="stb__tilemap__editor_8h.html#a2079dfc8862b75681f6f25afb163489b">stbte_action</a>&#160;</td>
+          <td class="paramname"><em>act</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab83a573d98dd477d94353db2faf0eace"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab83a573d98dd477d94353db2faf0eace">&#9670;&nbsp;</a></span>stbte_clear_map()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stbte_clear_map </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *&#160;</td>
+          <td class="paramname"><em>tm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad55839664c3676f7f3a3bdb07aa81297"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad55839664c3676f7f3a3bdb07aa81297">&#9670;&nbsp;</a></span>stbte_create_map()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a>* stbte_create_map </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>map_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>map_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>map_layers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>spacing_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>spacing_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max_tiles</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a532d59e89a4d7b992b64e4b1199391d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a532d59e89a4d7b992b64e4b1199391d5">&#9670;&nbsp;</a></span>stbte_define_tile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stbte_define_tile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *&#160;</td>
+          <td class="paramname"><em>tm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>layermask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>category</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa51ed26fa69025bb4c89183691b35040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa51ed26fa69025bb4c89183691b35040">&#9670;&nbsp;</a></span>stbte_draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stbte_draw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *&#160;</td>
+          <td class="paramname"><em>tm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7798c9367ae88c6e192d93bd5ef7233c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7798c9367ae88c6e192d93bd5ef7233c">&#9670;&nbsp;</a></span>stbte_get_dimensions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stbte_get_dimensions </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *&#160;</td>
+          <td class="paramname"><em>tm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>max_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>max_y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a0b0206daffbbdec3c5ae73fd25c929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a0b0206daffbbdec3c5ae73fd25c929">&#9670;&nbsp;</a></span>stbte_get_link()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stbte_get_link </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *&#160;</td>
+          <td class="paramname"><em>tm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>destx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>desty</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84541a5141c5c9105ad9d47855e95a54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84541a5141c5c9105ad9d47855e95a54">&#9670;&nbsp;</a></span>stbte_get_properties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float* stbte_get_properties </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *&#160;</td>
+          <td class="paramname"><em>tm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5cadb4b5e1f08367aaa52c4e763bbf5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cadb4b5e1f08367aaa52c4e763bbf5a">&#9670;&nbsp;</a></span>stbte_get_tile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short* stbte_get_tile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *&#160;</td>
+          <td class="paramname"><em>tm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad3d7c0b7c1e52e1325088431d296552"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad3d7c0b7c1e52e1325088431d296552">&#9670;&nbsp;</a></span>stbte_mouse_button()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stbte_mouse_button </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *&#160;</td>
+          <td class="paramname"><em>tm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>right</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>down</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>shifted</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>scrollkey</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39c0d85f8274efb0d679f76826e43bf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39c0d85f8274efb0d679f76826e43bf0">&#9670;&nbsp;</a></span>stbte_mouse_move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stbte_mouse_move </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *&#160;</td>
+          <td class="paramname"><em>tm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>shifted</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>scrollkey</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acafb5cfed567392a1baf79eeaae5e000"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acafb5cfed567392a1baf79eeaae5e000">&#9670;&nbsp;</a></span>stbte_mouse_sdl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stbte_mouse_sdl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *&#160;</td>
+          <td class="paramname"><em>tm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>sdl_event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>xscale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>yscale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>xoffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>yoffset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a891722cd60c57eb0a75e16003e9b77d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a891722cd60c57eb0a75e16003e9b77d2">&#9670;&nbsp;</a></span>stbte_mouse_wheel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stbte_mouse_wheel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *&#160;</td>
+          <td class="paramname"><em>tm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vscroll</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab376c07fd370625478fbedc24208ef7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab376c07fd370625478fbedc24208ef7a">&#9670;&nbsp;</a></span>stbte_set_background_tile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stbte_set_background_tile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *&#160;</td>
+          <td class="paramname"><em>tm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa5156a27d97734122e05aa55b2e53822"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5156a27d97734122e05aa55b2e53822">&#9670;&nbsp;</a></span>stbte_set_dimensions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stbte_set_dimensions </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *&#160;</td>
+          <td class="paramname"><em>tm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max_y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2468f716774298bc660b8d7e8af0594"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2468f716774298bc660b8d7e8af0594">&#9670;&nbsp;</a></span>stbte_set_display()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stbte_set_display </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="affc619c2115a95f947825d203c482c47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affc619c2115a95f947825d203c482c47">&#9670;&nbsp;</a></span>stbte_set_layername()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stbte_set_layername </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *&#160;</td>
+          <td class="paramname"><em>tm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>layer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>layername</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38d1af7c456d500d6815a27a3f012476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d1af7c456d500d6815a27a3f012476">&#9670;&nbsp;</a></span>stbte_set_link()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stbte_set_link </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *&#160;</td>
+          <td class="paramname"><em>tm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>destx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desty</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa39f39745b1c187618fed3805b17ca12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa39f39745b1c187618fed3805b17ca12">&#9670;&nbsp;</a></span>stbte_set_property()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stbte_set_property </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *&#160;</td>
+          <td class="paramname"><em>tm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea0c8ec195bf5b4258866097dabe41bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea0c8ec195bf5b4258866097dabe41bf">&#9670;&nbsp;</a></span>stbte_set_sidewidths()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stbte_set_sidewidths </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>right</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0632f752b15074e386e6d48c1f121d89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0632f752b15074e386e6d48c1f121d89">&#9670;&nbsp;</a></span>stbte_set_spacing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stbte_set_spacing </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *&#160;</td>
+          <td class="paramname"><em>tm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>spacing_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>spacing_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>palette_spacing_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>palette_spacing_y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3ef183ba8f556e9b387329bbbd37d2f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ef183ba8f556e9b387329bbbd37d2f9">&#9670;&nbsp;</a></span>stbte_set_tile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stbte_set_tile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *&#160;</td>
+          <td class="paramname"><em>tm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>layer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">signed short&#160;</td>
+          <td class="paramname"><em>tile</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4eb7f67f47b02a51a63611fa929beced"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eb7f67f47b02a51a63611fa929beced">&#9670;&nbsp;</a></span>stbte_tick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stbte_tick </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__tilemap__editor_8h.html#a1eb4417db66bd630e3d03310a03416c5">stbte_tilemap</a> *&#160;</td>
+          <td class="paramname"><em>tm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time_in_seconds_since_last_frame</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

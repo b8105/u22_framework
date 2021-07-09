@@ -1,0 +1,114 @@
+\hypertarget{struct_p_s_aux___service_rec__}{}\doxysection{P\+S\+Aux\+\_\+\+Service\+Rec\+\_\+ 構造体}
+\label{struct_p_s_aux___service_rec__}\index{PSAux\_ServiceRec\_@{PSAux\_ServiceRec\_}}
+
+
+{\ttfamily \#include $<$psaux.\+h$>$}
+
+
+
+P\+S\+Aux\+\_\+\+Service\+Rec\+\_\+ 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_p_s_aux___service_rec____coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{psaux_8h_ae1dd1e776643bdb8aa3d4e9f34f8c322}{P\+S\+\_\+\+Table\+\_\+\+Funcs\+Rec}} $\ast$ \mbox{\hyperlink{struct_p_s_aux___service_rec___ad328bf7394cad5b2838822aa109acc42}{ps\+\_\+table\+\_\+funcs}}
+\item 
+const \mbox{\hyperlink{psaux_8h_a60c32aa3a1dd1f98fd236dc2ae24c418}{P\+S\+\_\+\+Parser\+\_\+\+Funcs\+Rec}} $\ast$ \mbox{\hyperlink{struct_p_s_aux___service_rec___ac673695e814332b38fd33c7f0287a4b7}{ps\+\_\+parser\+\_\+funcs}}
+\item 
+const \mbox{\hyperlink{psaux_8h_ae82f1eae40f3b91789a38ecd2267f979}{T1\+\_\+\+Builder\+\_\+\+Funcs\+Rec}} $\ast$ \mbox{\hyperlink{struct_p_s_aux___service_rec___a3fe7449b123d0fb6f7ba92462c4e94c1}{t1\+\_\+builder\+\_\+funcs}}
+\item 
+const \mbox{\hyperlink{psaux_8h_ab098a10d53329810072d1a9377403bd8}{T1\+\_\+\+Decoder\+\_\+\+Funcs\+Rec}} $\ast$ \mbox{\hyperlink{struct_p_s_aux___service_rec___a5cfe03f55fa4c342a094fd31355835b2}{t1\+\_\+decoder\+\_\+funcs}}
+\item 
+void($\ast$ \mbox{\hyperlink{struct_p_s_aux___service_rec___a8f56c369db4df9268b255dba29aadc9f}{t1\+\_\+decrypt}} )(\mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} $\ast$buffer, \mbox{\hyperlink{fttypes_8h_af7b5edd727ac01b0d4729ac848bd4175}{F\+T\+\_\+\+Offset}} length, \mbox{\hyperlink{fttypes_8h_a937f6c17cf5ffd09086d8610c37b9f58}{F\+T\+\_\+\+U\+Short}} seed)
+\item 
+F\+T\+\_\+\+U\+Int32($\ast$ \mbox{\hyperlink{struct_p_s_aux___service_rec___a36822ec9733bc28cf55e48ba5c1774a2}{cff\+\_\+random}} )(F\+T\+\_\+\+U\+Int32 r)
+\item 
+void($\ast$ \mbox{\hyperlink{struct_p_s_aux___service_rec___a2dd1852ce4544a540733c65db2f473db}{ps\+\_\+decoder\+\_\+init}} )(\mbox{\hyperlink{psaux_8h_a79a57c8203defe7bf110be78920c32ab}{P\+S\+\_\+\+Decoder}} $\ast$ps\+\_\+decoder, void $\ast$decoder, \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} is\+\_\+t1)
+\item 
+void($\ast$ \mbox{\hyperlink{struct_p_s_aux___service_rec___a5bc583a1ced4f0019fe4c0aa783a6485}{t1\+\_\+make\+\_\+subfont}} )(\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{t1tables_8h_af13eae0f58324d685b24cd4079c01c7e}{P\+S\+\_\+\+Private}} priv, \mbox{\hyperlink{cfftypes_8h_a0aad5fff840536d64267a3d68383eda0}{C\+F\+F\+\_\+\+Sub\+Font}} subfont)
+\item 
+\mbox{\hyperlink{psaux_8h_a69a7c0a42a1bc1731862770f50a32bc2}{T1\+\_\+\+C\+Map\+\_\+\+Classes}} \mbox{\hyperlink{struct_p_s_aux___service_rec___a4ac30b929dcc6127200baea07b5b406a}{t1\+\_\+cmap\+\_\+classes}}
+\item 
+const \mbox{\hyperlink{psaux_8h_aacd485af3f2664a6b8c91dccba33751e}{A\+F\+M\+\_\+\+Parser\+\_\+\+Funcs\+Rec}} $\ast$ \mbox{\hyperlink{struct_p_s_aux___service_rec___a9ddf18cc18487266a3e1dd7721fd12fb}{afm\+\_\+parser\+\_\+funcs}}
+\item 
+const \mbox{\hyperlink{psaux_8h_a27d7523fbbbd51a7c6f682e078794f07}{C\+F\+F\+\_\+\+Decoder\+\_\+\+Funcs\+Rec}} $\ast$ \mbox{\hyperlink{struct_p_s_aux___service_rec___acfc4ef0b7b11a08fb1d5dd72317c218a}{cff\+\_\+decoder\+\_\+funcs}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{struct_p_s_aux___service_rec___a9ddf18cc18487266a3e1dd7721fd12fb}\label{struct_p_s_aux___service_rec___a9ddf18cc18487266a3e1dd7721fd12fb}} 
+\index{PSAux\_ServiceRec\_@{PSAux\_ServiceRec\_}!afm\_parser\_funcs@{afm\_parser\_funcs}}
+\index{afm\_parser\_funcs@{afm\_parser\_funcs}!PSAux\_ServiceRec\_@{PSAux\_ServiceRec\_}}
+\doxysubsubsection{\texorpdfstring{afm\_parser\_funcs}{afm\_parser\_funcs}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{psaux_8h_aacd485af3f2664a6b8c91dccba33751e}{A\+F\+M\+\_\+\+Parser\+\_\+\+Funcs\+Rec}}$\ast$ P\+S\+Aux\+\_\+\+Service\+Rec\+\_\+\+::afm\+\_\+parser\+\_\+funcs}
+
+\mbox{\Hypertarget{struct_p_s_aux___service_rec___acfc4ef0b7b11a08fb1d5dd72317c218a}\label{struct_p_s_aux___service_rec___acfc4ef0b7b11a08fb1d5dd72317c218a}} 
+\index{PSAux\_ServiceRec\_@{PSAux\_ServiceRec\_}!cff\_decoder\_funcs@{cff\_decoder\_funcs}}
+\index{cff\_decoder\_funcs@{cff\_decoder\_funcs}!PSAux\_ServiceRec\_@{PSAux\_ServiceRec\_}}
+\doxysubsubsection{\texorpdfstring{cff\_decoder\_funcs}{cff\_decoder\_funcs}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{psaux_8h_a27d7523fbbbd51a7c6f682e078794f07}{C\+F\+F\+\_\+\+Decoder\+\_\+\+Funcs\+Rec}}$\ast$ P\+S\+Aux\+\_\+\+Service\+Rec\+\_\+\+::cff\+\_\+decoder\+\_\+funcs}
+
+\mbox{\Hypertarget{struct_p_s_aux___service_rec___a36822ec9733bc28cf55e48ba5c1774a2}\label{struct_p_s_aux___service_rec___a36822ec9733bc28cf55e48ba5c1774a2}} 
+\index{PSAux\_ServiceRec\_@{PSAux\_ServiceRec\_}!cff\_random@{cff\_random}}
+\index{cff\_random@{cff\_random}!PSAux\_ServiceRec\_@{PSAux\_ServiceRec\_}}
+\doxysubsubsection{\texorpdfstring{cff\_random}{cff\_random}}
+{\footnotesize\ttfamily F\+T\+\_\+\+U\+Int32($\ast$ P\+S\+Aux\+\_\+\+Service\+Rec\+\_\+\+::cff\+\_\+random) (F\+T\+\_\+\+U\+Int32 r)}
+
+\mbox{\Hypertarget{struct_p_s_aux___service_rec___a2dd1852ce4544a540733c65db2f473db}\label{struct_p_s_aux___service_rec___a2dd1852ce4544a540733c65db2f473db}} 
+\index{PSAux\_ServiceRec\_@{PSAux\_ServiceRec\_}!ps\_decoder\_init@{ps\_decoder\_init}}
+\index{ps\_decoder\_init@{ps\_decoder\_init}!PSAux\_ServiceRec\_@{PSAux\_ServiceRec\_}}
+\doxysubsubsection{\texorpdfstring{ps\_decoder\_init}{ps\_decoder\_init}}
+{\footnotesize\ttfamily void($\ast$ P\+S\+Aux\+\_\+\+Service\+Rec\+\_\+\+::ps\+\_\+decoder\+\_\+init) (\mbox{\hyperlink{psaux_8h_a79a57c8203defe7bf110be78920c32ab}{P\+S\+\_\+\+Decoder}} $\ast$ps\+\_\+decoder, void $\ast$decoder, \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} is\+\_\+t1)}
+
+\mbox{\Hypertarget{struct_p_s_aux___service_rec___ac673695e814332b38fd33c7f0287a4b7}\label{struct_p_s_aux___service_rec___ac673695e814332b38fd33c7f0287a4b7}} 
+\index{PSAux\_ServiceRec\_@{PSAux\_ServiceRec\_}!ps\_parser\_funcs@{ps\_parser\_funcs}}
+\index{ps\_parser\_funcs@{ps\_parser\_funcs}!PSAux\_ServiceRec\_@{PSAux\_ServiceRec\_}}
+\doxysubsubsection{\texorpdfstring{ps\_parser\_funcs}{ps\_parser\_funcs}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{psaux_8h_a60c32aa3a1dd1f98fd236dc2ae24c418}{P\+S\+\_\+\+Parser\+\_\+\+Funcs\+Rec}}$\ast$ P\+S\+Aux\+\_\+\+Service\+Rec\+\_\+\+::ps\+\_\+parser\+\_\+funcs}
+
+\mbox{\Hypertarget{struct_p_s_aux___service_rec___ad328bf7394cad5b2838822aa109acc42}\label{struct_p_s_aux___service_rec___ad328bf7394cad5b2838822aa109acc42}} 
+\index{PSAux\_ServiceRec\_@{PSAux\_ServiceRec\_}!ps\_table\_funcs@{ps\_table\_funcs}}
+\index{ps\_table\_funcs@{ps\_table\_funcs}!PSAux\_ServiceRec\_@{PSAux\_ServiceRec\_}}
+\doxysubsubsection{\texorpdfstring{ps\_table\_funcs}{ps\_table\_funcs}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{psaux_8h_ae1dd1e776643bdb8aa3d4e9f34f8c322}{P\+S\+\_\+\+Table\+\_\+\+Funcs\+Rec}}$\ast$ P\+S\+Aux\+\_\+\+Service\+Rec\+\_\+\+::ps\+\_\+table\+\_\+funcs}
+
+\mbox{\Hypertarget{struct_p_s_aux___service_rec___a3fe7449b123d0fb6f7ba92462c4e94c1}\label{struct_p_s_aux___service_rec___a3fe7449b123d0fb6f7ba92462c4e94c1}} 
+\index{PSAux\_ServiceRec\_@{PSAux\_ServiceRec\_}!t1\_builder\_funcs@{t1\_builder\_funcs}}
+\index{t1\_builder\_funcs@{t1\_builder\_funcs}!PSAux\_ServiceRec\_@{PSAux\_ServiceRec\_}}
+\doxysubsubsection{\texorpdfstring{t1\_builder\_funcs}{t1\_builder\_funcs}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{psaux_8h_ae82f1eae40f3b91789a38ecd2267f979}{T1\+\_\+\+Builder\+\_\+\+Funcs\+Rec}}$\ast$ P\+S\+Aux\+\_\+\+Service\+Rec\+\_\+\+::t1\+\_\+builder\+\_\+funcs}
+
+\mbox{\Hypertarget{struct_p_s_aux___service_rec___a4ac30b929dcc6127200baea07b5b406a}\label{struct_p_s_aux___service_rec___a4ac30b929dcc6127200baea07b5b406a}} 
+\index{PSAux\_ServiceRec\_@{PSAux\_ServiceRec\_}!t1\_cmap\_classes@{t1\_cmap\_classes}}
+\index{t1\_cmap\_classes@{t1\_cmap\_classes}!PSAux\_ServiceRec\_@{PSAux\_ServiceRec\_}}
+\doxysubsubsection{\texorpdfstring{t1\_cmap\_classes}{t1\_cmap\_classes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{psaux_8h_a69a7c0a42a1bc1731862770f50a32bc2}{T1\+\_\+\+C\+Map\+\_\+\+Classes}} P\+S\+Aux\+\_\+\+Service\+Rec\+\_\+\+::t1\+\_\+cmap\+\_\+classes}
+
+\mbox{\Hypertarget{struct_p_s_aux___service_rec___a5cfe03f55fa4c342a094fd31355835b2}\label{struct_p_s_aux___service_rec___a5cfe03f55fa4c342a094fd31355835b2}} 
+\index{PSAux\_ServiceRec\_@{PSAux\_ServiceRec\_}!t1\_decoder\_funcs@{t1\_decoder\_funcs}}
+\index{t1\_decoder\_funcs@{t1\_decoder\_funcs}!PSAux\_ServiceRec\_@{PSAux\_ServiceRec\_}}
+\doxysubsubsection{\texorpdfstring{t1\_decoder\_funcs}{t1\_decoder\_funcs}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{psaux_8h_ab098a10d53329810072d1a9377403bd8}{T1\+\_\+\+Decoder\+\_\+\+Funcs\+Rec}}$\ast$ P\+S\+Aux\+\_\+\+Service\+Rec\+\_\+\+::t1\+\_\+decoder\+\_\+funcs}
+
+\mbox{\Hypertarget{struct_p_s_aux___service_rec___a8f56c369db4df9268b255dba29aadc9f}\label{struct_p_s_aux___service_rec___a8f56c369db4df9268b255dba29aadc9f}} 
+\index{PSAux\_ServiceRec\_@{PSAux\_ServiceRec\_}!t1\_decrypt@{t1\_decrypt}}
+\index{t1\_decrypt@{t1\_decrypt}!PSAux\_ServiceRec\_@{PSAux\_ServiceRec\_}}
+\doxysubsubsection{\texorpdfstring{t1\_decrypt}{t1\_decrypt}}
+{\footnotesize\ttfamily void($\ast$ P\+S\+Aux\+\_\+\+Service\+Rec\+\_\+\+::t1\+\_\+decrypt) (\mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} $\ast$buffer, \mbox{\hyperlink{fttypes_8h_af7b5edd727ac01b0d4729ac848bd4175}{F\+T\+\_\+\+Offset}} length, \mbox{\hyperlink{fttypes_8h_a937f6c17cf5ffd09086d8610c37b9f58}{F\+T\+\_\+\+U\+Short}} seed)}
+
+\mbox{\Hypertarget{struct_p_s_aux___service_rec___a5bc583a1ced4f0019fe4c0aa783a6485}\label{struct_p_s_aux___service_rec___a5bc583a1ced4f0019fe4c0aa783a6485}} 
+\index{PSAux\_ServiceRec\_@{PSAux\_ServiceRec\_}!t1\_make\_subfont@{t1\_make\_subfont}}
+\index{t1\_make\_subfont@{t1\_make\_subfont}!PSAux\_ServiceRec\_@{PSAux\_ServiceRec\_}}
+\doxysubsubsection{\texorpdfstring{t1\_make\_subfont}{t1\_make\_subfont}}
+{\footnotesize\ttfamily void($\ast$ P\+S\+Aux\+\_\+\+Service\+Rec\+\_\+\+::t1\+\_\+make\+\_\+subfont) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{t1tables_8h_af13eae0f58324d685b24cd4079c01c7e}{P\+S\+\_\+\+Private}} priv, \mbox{\hyperlink{cfftypes_8h_a0aad5fff840536d64267a3d68383eda0}{C\+F\+F\+\_\+\+Sub\+Font}} subfont)}
+
+
+
+この構造体詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+freetype/internal/\mbox{\hyperlink{psaux_8h}{psaux.\+h}}\end{DoxyCompactItemize}

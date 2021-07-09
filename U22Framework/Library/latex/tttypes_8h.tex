@@ -1,0 +1,617 @@
+\hypertarget{tttypes_8h}{}\doxysection{freetype/internal/tttypes.h ファイル}
+\label{tttypes_8h}\index{freetype/internal/tttypes.h@{freetype/internal/tttypes.h}}
+{\ttfamily \#include $<$freetype/tttables.\+h$>$}\newline
+{\ttfamily \#include $<$freetype/internal/ftobjs.\+h$>$}\newline
+{\ttfamily \#include $<$freetype/ftcolor.\+h$>$}\newline
+tttypes.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tttypes_8h__incl}
+\end{center}
+\end{figure}
+被依存関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tttypes_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_t_t_c___header_rec__}{T\+T\+C\+\_\+\+Header\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_s_f_n_t___header_rec__}{S\+F\+N\+T\+\_\+\+Header\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t_t___table_rec__}{T\+T\+\_\+\+Table\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t_t___long_metrics_rec__}{T\+T\+\_\+\+Long\+Metrics\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t_t___name_rec__}{T\+T\+\_\+\+Name\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t_t___lang_tag_rec__}{T\+T\+\_\+\+Lang\+Tag\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t_t___name_table_rec__}{T\+T\+\_\+\+Name\+Table\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t_t___gasp_range_rec__}{T\+T\+\_\+\+Gasp\+Range\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t_t___gasp__}{T\+T\+\_\+\+Gasp\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t_t___s_bit___metrics_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Metrics\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t_t___s_bit___small___metrics__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Small\+\_\+\+Metrics\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t_t___s_bit___line_metrics_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Line\+Metrics\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t_t___s_bit___range_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Range\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t_t___s_bit___strike_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Strike\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t_t___s_bit___component_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Component\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t_t___s_bit___scale_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Scale\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t_t___post__20_rec__}{T\+T\+\_\+\+Post\+\_\+20\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t_t___post__25__}{T\+T\+\_\+\+Post\+\_\+25\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t_t___post___names_rec__}{T\+T\+\_\+\+Post\+\_\+\+Names\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t_t___face_rec__}{T\+T\+\_\+\+Face\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t_t___glyph_zone_rec__}{T\+T\+\_\+\+Glyph\+Zone\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t_t___loader_rec__}{T\+T\+\_\+\+Loader\+Rec\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{tttypes_8h_a20733c317c0f1c2b0dd3071fa22dc6b8}{T\+T\+\_\+\+G\+A\+S\+P\+\_\+\+G\+R\+I\+D\+F\+IT}}~0x01
+\item 
+\#define \mbox{\hyperlink{tttypes_8h_a637f07edb0bfd4e4d763945fd84e7511}{T\+T\+\_\+\+G\+A\+S\+P\+\_\+\+D\+O\+G\+R\+AY}}~0x02
+\item 
+\#define \mbox{\hyperlink{tttypes_8h_af35047be9922207114c12c12d1002157}{T\+T\+\_\+\+F\+A\+C\+E\+\_\+\+F\+L\+A\+G\+\_\+\+V\+A\+R\+\_\+\+F\+V\+AR}}~( 1 $<$$<$ 0 )
+\item 
+\#define \mbox{\hyperlink{tttypes_8h_a18c3f49d7b5cb18e323c68d92fdef92a}{T\+T\+\_\+\+F\+A\+C\+E\+\_\+\+F\+L\+A\+G\+\_\+\+V\+A\+R\+\_\+\+H\+A\+D\+V\+A\+N\+CE}}~( 1 $<$$<$ 1 )
+\item 
+\#define \mbox{\hyperlink{tttypes_8h_a6c2bc3c7d952da28a0acd53af0e94eb9}{T\+T\+\_\+\+F\+A\+C\+E\+\_\+\+F\+L\+A\+G\+\_\+\+V\+A\+R\+\_\+\+L\+SB}}~( 1 $<$$<$ 2 )
+\item 
+\#define \mbox{\hyperlink{tttypes_8h_a5af2d1e8ff3de3382531e66b19f76b8c}{T\+T\+\_\+\+F\+A\+C\+E\+\_\+\+F\+L\+A\+G\+\_\+\+V\+A\+R\+\_\+\+R\+SB}}~( 1 $<$$<$ 3 )
+\item 
+\#define \mbox{\hyperlink{tttypes_8h_a7eb0fccc95be6940cc4c6f865e4ede4a}{T\+T\+\_\+\+F\+A\+C\+E\+\_\+\+F\+L\+A\+G\+\_\+\+V\+A\+R\+\_\+\+V\+A\+D\+V\+A\+N\+CE}}~( 1 $<$$<$ 4 )
+\item 
+\#define \mbox{\hyperlink{tttypes_8h_a74519127849cdad3ff1cd3a094b1cc3d}{T\+T\+\_\+\+F\+A\+C\+E\+\_\+\+F\+L\+A\+G\+\_\+\+V\+A\+R\+\_\+\+T\+SB}}~( 1 $<$$<$ 5 )
+\item 
+\#define \mbox{\hyperlink{tttypes_8h_a946a0019ef726f5a54f1fcbc33b2dead}{T\+T\+\_\+\+F\+A\+C\+E\+\_\+\+F\+L\+A\+G\+\_\+\+V\+A\+R\+\_\+\+B\+SB}}~( 1 $<$$<$ 6 )
+\item 
+\#define \mbox{\hyperlink{tttypes_8h_a3c6a5a63f9a93754d394a54237b96d86}{T\+T\+\_\+\+F\+A\+C\+E\+\_\+\+F\+L\+A\+G\+\_\+\+V\+A\+R\+\_\+\+V\+O\+RG}}~( 1 $<$$<$ 7 )
+\item 
+\#define \mbox{\hyperlink{tttypes_8h_af92b00901ff1221e712dfbd1f37035bd}{T\+T\+\_\+\+F\+A\+C\+E\+\_\+\+F\+L\+A\+G\+\_\+\+V\+A\+R\+\_\+\+M\+V\+AR}}~( 1 $<$$<$ 8 )
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{public-macros_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER}} struct \mbox{\hyperlink{struct_t_t_c___header_rec__}{T\+T\+C\+\_\+\+Header\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_ae2c15fa40d68cec3d45c6ca763f87b55}{T\+T\+C\+\_\+\+Header\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_s_f_n_t___header_rec__}{S\+F\+N\+T\+\_\+\+Header\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_adf91f04808ce2a44010893a7f6add08f}{S\+F\+N\+T\+\_\+\+Header\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_s_f_n_t___header_rec__}{S\+F\+N\+T\+\_\+\+Header\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_a0c98d0ae8b58a330ad60a1cabd8596a5}{S\+F\+N\+T\+\_\+\+Header}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___table_rec__}{T\+T\+\_\+\+Table\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_a581598b7d82d61251b85f2a2831556c2}{T\+T\+\_\+\+Table\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___table_rec__}{T\+T\+\_\+\+Table\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_af84325159c268817528e02bea95999e6}{T\+T\+\_\+\+Table}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___long_metrics_rec__}{T\+T\+\_\+\+Long\+Metrics\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_a1d1a9c373ea856b336d0256d643bbeaa}{T\+T\+\_\+\+Long\+Metrics\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___long_metrics_rec__}{T\+T\+\_\+\+Long\+Metrics\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_ad8128f4fc9bb21bd580f7d55237eab4e}{T\+T\+\_\+\+Long\+Metrics}}
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_aa7279be89046a2563cd3d4d6651fbdcf}{F\+T\+\_\+\+Short}} \mbox{\hyperlink{tttypes_8h_a5bd5612a2e1aac59cacada156418f699}{T\+T\+\_\+\+Short\+Metrics}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___name_rec__}{T\+T\+\_\+\+Name\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_a8c6baaaf4bbae6a864fa080356a15716}{T\+T\+\_\+\+Name\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___name_rec__}{T\+T\+\_\+\+Name\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_aa40d764c556b3866772a0982b4b22285}{T\+T\+\_\+\+Name}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___lang_tag_rec__}{T\+T\+\_\+\+Lang\+Tag\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_a05fb668f6c1627d9f5b2500b1bec5fbe}{T\+T\+\_\+\+Lang\+Tag\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___lang_tag_rec__}{T\+T\+\_\+\+Lang\+Tag\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_a58bc228eefd067d3e45aa776435d6266}{T\+T\+\_\+\+Lang\+Tag}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___name_table_rec__}{T\+T\+\_\+\+Name\+Table\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_a4309afe2f61ffc72baaf5dfbde50ba2f}{T\+T\+\_\+\+Name\+Table\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___name_table_rec__}{T\+T\+\_\+\+Name\+Table\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_a1e96e67b402a62aee28600c2494fe830}{T\+T\+\_\+\+Name\+Table}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___gasp_range_rec__}{T\+T\+\_\+\+Gasp\+Range\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_ae75abcaa6fee9c141c0c6dc9bc0b7c2d}{T\+T\+\_\+\+Gasp\+Range\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___gasp_range_rec__}{T\+T\+\_\+\+Gasp\+Range\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_a66136e5feadbe82157028caa94a11a36}{T\+T\+\_\+\+Gasp\+Range}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___gasp__}{T\+T\+\_\+\+Gasp\+\_\+}} \mbox{\hyperlink{tttypes_8h_acfcae940f648727a74e25eed2069bf69}{T\+T\+\_\+\+Gasp\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___s_bit___metrics_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Metrics\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_ae633ebb8b4be1dddce6c77216db4edf0}{T\+T\+\_\+\+S\+Bit\+\_\+\+Metrics\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___s_bit___metrics_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Metrics\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_a67dc74ad6b510065a0f51287e4fde011}{T\+T\+\_\+\+S\+Bit\+\_\+\+Metrics}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___s_bit___small___metrics__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Small\+\_\+\+Metrics\+\_\+}} \mbox{\hyperlink{tttypes_8h_a36d3a4781e2f5eb7ed607ae2c83c48a2}{T\+T\+\_\+\+S\+Bit\+\_\+\+Small\+Metrics\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___s_bit___small___metrics__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Small\+\_\+\+Metrics\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_af94517f62bff4af09e1dabb2f0ad5da4}{T\+T\+\_\+\+S\+Bit\+\_\+\+Small\+Metrics}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___s_bit___line_metrics_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Line\+Metrics\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_abec580b4d66e1720ba8247f2e582ae8f}{T\+T\+\_\+\+S\+Bit\+\_\+\+Line\+Metrics\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___s_bit___line_metrics_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Line\+Metrics\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_a6b425797f47d960c3564045f00d1ec54}{T\+T\+\_\+\+S\+Bit\+\_\+\+Line\+Metrics}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___s_bit___range_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Range\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_af32aeb37683c563170802e958df5d5cd}{T\+T\+\_\+\+S\+Bit\+\_\+\+Range\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___s_bit___range_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Range\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_aa8d90bac8664dd99e02e71c830cb8a03}{T\+T\+\_\+\+S\+Bit\+\_\+\+Range}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___s_bit___strike_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Strike\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_ac5b3bbb8f6fc76c401fc29db0006faff}{T\+T\+\_\+\+S\+Bit\+\_\+\+Strike\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___s_bit___strike_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Strike\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_ac125f9b4c2e11189d9ad2676ef7d8634}{T\+T\+\_\+\+S\+Bit\+\_\+\+Strike}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___s_bit___component_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Component\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_ae2194c95e0d611c9c0688859523b9c36}{T\+T\+\_\+\+S\+Bit\+\_\+\+Component\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___s_bit___component_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Component\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_a592dcd5f02227fae2143da1af61bfafd}{T\+T\+\_\+\+S\+Bit\+\_\+\+Component}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___s_bit___scale_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Scale\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_a2b08d35afaa0b63cd781aaab9302e127}{T\+T\+\_\+\+S\+Bit\+\_\+\+Scale\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___s_bit___scale_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Scale\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_a6433053a6a39d75f8df79cd5c8303f8a}{T\+T\+\_\+\+S\+Bit\+\_\+\+Scale}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___post__20_rec__}{T\+T\+\_\+\+Post\+\_\+20\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_ad0f012289e44b0b5994f78d84116df5d}{T\+T\+\_\+\+Post\+\_\+20\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___post__20_rec__}{T\+T\+\_\+\+Post\+\_\+20\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_aebc100436da211dcfada5150af883984}{T\+T\+\_\+\+Post\+\_\+20}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___post__25__}{T\+T\+\_\+\+Post\+\_\+25\+\_\+}} \mbox{\hyperlink{tttypes_8h_a6dd196340907582a24be747a65f33bf3}{T\+T\+\_\+\+Post\+\_\+25\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___post__25__}{T\+T\+\_\+\+Post\+\_\+25\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_a467437c9e87d0fb76e59ec7912663b54}{T\+T\+\_\+\+Post\+\_\+25}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___post___names_rec__}{T\+T\+\_\+\+Post\+\_\+\+Names\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_a10c2b8ce29a2aeffacaee1df233d687f}{T\+T\+\_\+\+Post\+\_\+\+Names\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___post___names_rec__}{T\+T\+\_\+\+Post\+\_\+\+Names\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_a5258ac8f61739db08250d887f544dcea}{T\+T\+\_\+\+Post\+\_\+\+Names}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___face_rec__}{T\+T\+\_\+\+Face\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}}
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{tttypes_8h_ac350176c20d495a2fab3f0a71ad2246b}{T\+T\+\_\+\+Interpreter}}) (void $\ast$exec\+\_\+context)
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___loader_rec__}{T\+T\+\_\+\+Loader\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_a0516f0faa93cd9f8624d653a1f5b10eb}{T\+T\+\_\+\+Loader}}
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{tttypes_8h_a7f26a7d52363c19c402cf2bc1aedaaab}{T\+T\+\_\+\+Loader\+\_\+\+Goto\+Table\+Func}}) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} tag, \mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$length)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{tttypes_8h_a50aa7a72d93378d153760ff33aa0eb24}{T\+T\+\_\+\+Loader\+\_\+\+Start\+Glyph\+Func}}) (\mbox{\hyperlink{tttypes_8h_a0516f0faa93cd9f8624d653a1f5b10eb}{T\+T\+\_\+\+Loader}} loader, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} glyph\+\_\+index, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} offset, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} byte\+\_\+count)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{tttypes_8h_a168436f60dd37f412345357ff95ad221}{T\+T\+\_\+\+Loader\+\_\+\+Read\+Glyph\+Func}}) (\mbox{\hyperlink{tttypes_8h_a0516f0faa93cd9f8624d653a1f5b10eb}{T\+T\+\_\+\+Loader}} loader)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{tttypes_8h_a12242c4e08e6f59c4c818fdada300a77}{T\+T\+\_\+\+Loader\+\_\+\+End\+Glyph\+Func}}) (\mbox{\hyperlink{tttypes_8h_a0516f0faa93cd9f8624d653a1f5b10eb}{T\+T\+\_\+\+Loader}} loader)
+\item 
+typedef enum \mbox{\hyperlink{tttypes_8h_adf43324037de43a8ca1e7c0c6d7070b2}{T\+T\+\_\+\+Sbit\+Table\+Type\+\_\+}} \mbox{\hyperlink{tttypes_8h_ab094d65b93301c3b71928c255b7ff102}{T\+T\+\_\+\+Sbit\+Table\+Type}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___face_rec__}{T\+T\+\_\+\+Face\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_a62e342ed83365e97a228db08f453a373}{T\+T\+\_\+\+Face\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___glyph_zone_rec__}{T\+T\+\_\+\+Glyph\+Zone\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_ae9cdb4213c174f24f104da8708973437}{T\+T\+\_\+\+Glyph\+Zone\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___glyph_zone_rec__}{T\+T\+\_\+\+Glyph\+Zone\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_a11f9ebb5983830845c3e03e00807dcac}{T\+T\+\_\+\+Glyph\+Zone}}
+\item 
+typedef struct T\+T\+\_\+\+Exec\+Context\+Rec\+\_\+ $\ast$ \mbox{\hyperlink{tttypes_8h_a1123cb7d0004d27ae7674ca0683b6255}{T\+T\+\_\+\+Exec\+Context}}
+\item 
+typedef struct T\+T\+\_\+\+Size\+Rec\+\_\+ $\ast$ \mbox{\hyperlink{tttypes_8h_a793cea9d73ebb12d4c2edc0c0f81b03a}{T\+T\+\_\+\+Size}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___loader_rec__}{T\+T\+\_\+\+Loader\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_addfb394e2d7ccc1b233e4136f827dc57}{T\+T\+\_\+\+Loader\+Rec}}
+\end{DoxyCompactItemize}
+\doxysubsection*{列挙型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{tttypes_8h_adf43324037de43a8ca1e7c0c6d7070b2}{T\+T\+\_\+\+Sbit\+Table\+Type\+\_\+}} \{ \newline
+\mbox{\hyperlink{tttypes_8h_adf43324037de43a8ca1e7c0c6d7070b2a6d54772ce5f632eec62629231ee6aad2}{T\+T\+\_\+\+S\+B\+I\+T\+\_\+\+T\+A\+B\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+NE}} = 0, 
+\mbox{\hyperlink{tttypes_8h_adf43324037de43a8ca1e7c0c6d7070b2a84bdab628464b7a9993b8057b58fc7f0}{T\+T\+\_\+\+S\+B\+I\+T\+\_\+\+T\+A\+B\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+B\+LC}}, 
+\mbox{\hyperlink{tttypes_8h_adf43324037de43a8ca1e7c0c6d7070b2a5cc07236beb4f1548c1d51f3a7056daf}{T\+T\+\_\+\+S\+B\+I\+T\+\_\+\+T\+A\+B\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+B\+LC}}, 
+\mbox{\hyperlink{tttypes_8h_adf43324037de43a8ca1e7c0c6d7070b2a7324f1b2f57dbf2b1d18b188a18efd61}{T\+T\+\_\+\+S\+B\+I\+T\+\_\+\+T\+A\+B\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+B\+IX}}, 
+\newline
+\mbox{\hyperlink{tttypes_8h_adf43324037de43a8ca1e7c0c6d7070b2a27737d62f9bf7ed4a42748b59799bc32}{T\+T\+\_\+\+S\+B\+I\+T\+\_\+\+T\+A\+B\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+AX}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{tttypes_8h_a946a0019ef726f5a54f1fcbc33b2dead}\label{tttypes_8h_a946a0019ef726f5a54f1fcbc33b2dead}} 
+\index{tttypes.h@{tttypes.h}!TT\_FACE\_FLAG\_VAR\_BSB@{TT\_FACE\_FLAG\_VAR\_BSB}}
+\index{TT\_FACE\_FLAG\_VAR\_BSB@{TT\_FACE\_FLAG\_VAR\_BSB}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_FACE\_FLAG\_VAR\_BSB}{TT\_FACE\_FLAG\_VAR\_BSB}}
+{\footnotesize\ttfamily \#define T\+T\+\_\+\+F\+A\+C\+E\+\_\+\+F\+L\+A\+G\+\_\+\+V\+A\+R\+\_\+\+B\+SB~( 1 $<$$<$ 6 )}
+
+\mbox{\Hypertarget{tttypes_8h_af35047be9922207114c12c12d1002157}\label{tttypes_8h_af35047be9922207114c12c12d1002157}} 
+\index{tttypes.h@{tttypes.h}!TT\_FACE\_FLAG\_VAR\_FVAR@{TT\_FACE\_FLAG\_VAR\_FVAR}}
+\index{TT\_FACE\_FLAG\_VAR\_FVAR@{TT\_FACE\_FLAG\_VAR\_FVAR}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_FACE\_FLAG\_VAR\_FVAR}{TT\_FACE\_FLAG\_VAR\_FVAR}}
+{\footnotesize\ttfamily \#define T\+T\+\_\+\+F\+A\+C\+E\+\_\+\+F\+L\+A\+G\+\_\+\+V\+A\+R\+\_\+\+F\+V\+AR~( 1 $<$$<$ 0 )}
+
+\mbox{\Hypertarget{tttypes_8h_a18c3f49d7b5cb18e323c68d92fdef92a}\label{tttypes_8h_a18c3f49d7b5cb18e323c68d92fdef92a}} 
+\index{tttypes.h@{tttypes.h}!TT\_FACE\_FLAG\_VAR\_HADVANCE@{TT\_FACE\_FLAG\_VAR\_HADVANCE}}
+\index{TT\_FACE\_FLAG\_VAR\_HADVANCE@{TT\_FACE\_FLAG\_VAR\_HADVANCE}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_FACE\_FLAG\_VAR\_HADVANCE}{TT\_FACE\_FLAG\_VAR\_HADVANCE}}
+{\footnotesize\ttfamily \#define T\+T\+\_\+\+F\+A\+C\+E\+\_\+\+F\+L\+A\+G\+\_\+\+V\+A\+R\+\_\+\+H\+A\+D\+V\+A\+N\+CE~( 1 $<$$<$ 1 )}
+
+\mbox{\Hypertarget{tttypes_8h_a6c2bc3c7d952da28a0acd53af0e94eb9}\label{tttypes_8h_a6c2bc3c7d952da28a0acd53af0e94eb9}} 
+\index{tttypes.h@{tttypes.h}!TT\_FACE\_FLAG\_VAR\_LSB@{TT\_FACE\_FLAG\_VAR\_LSB}}
+\index{TT\_FACE\_FLAG\_VAR\_LSB@{TT\_FACE\_FLAG\_VAR\_LSB}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_FACE\_FLAG\_VAR\_LSB}{TT\_FACE\_FLAG\_VAR\_LSB}}
+{\footnotesize\ttfamily \#define T\+T\+\_\+\+F\+A\+C\+E\+\_\+\+F\+L\+A\+G\+\_\+\+V\+A\+R\+\_\+\+L\+SB~( 1 $<$$<$ 2 )}
+
+\mbox{\Hypertarget{tttypes_8h_af92b00901ff1221e712dfbd1f37035bd}\label{tttypes_8h_af92b00901ff1221e712dfbd1f37035bd}} 
+\index{tttypes.h@{tttypes.h}!TT\_FACE\_FLAG\_VAR\_MVAR@{TT\_FACE\_FLAG\_VAR\_MVAR}}
+\index{TT\_FACE\_FLAG\_VAR\_MVAR@{TT\_FACE\_FLAG\_VAR\_MVAR}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_FACE\_FLAG\_VAR\_MVAR}{TT\_FACE\_FLAG\_VAR\_MVAR}}
+{\footnotesize\ttfamily \#define T\+T\+\_\+\+F\+A\+C\+E\+\_\+\+F\+L\+A\+G\+\_\+\+V\+A\+R\+\_\+\+M\+V\+AR~( 1 $<$$<$ 8 )}
+
+\mbox{\Hypertarget{tttypes_8h_a5af2d1e8ff3de3382531e66b19f76b8c}\label{tttypes_8h_a5af2d1e8ff3de3382531e66b19f76b8c}} 
+\index{tttypes.h@{tttypes.h}!TT\_FACE\_FLAG\_VAR\_RSB@{TT\_FACE\_FLAG\_VAR\_RSB}}
+\index{TT\_FACE\_FLAG\_VAR\_RSB@{TT\_FACE\_FLAG\_VAR\_RSB}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_FACE\_FLAG\_VAR\_RSB}{TT\_FACE\_FLAG\_VAR\_RSB}}
+{\footnotesize\ttfamily \#define T\+T\+\_\+\+F\+A\+C\+E\+\_\+\+F\+L\+A\+G\+\_\+\+V\+A\+R\+\_\+\+R\+SB~( 1 $<$$<$ 3 )}
+
+\mbox{\Hypertarget{tttypes_8h_a74519127849cdad3ff1cd3a094b1cc3d}\label{tttypes_8h_a74519127849cdad3ff1cd3a094b1cc3d}} 
+\index{tttypes.h@{tttypes.h}!TT\_FACE\_FLAG\_VAR\_TSB@{TT\_FACE\_FLAG\_VAR\_TSB}}
+\index{TT\_FACE\_FLAG\_VAR\_TSB@{TT\_FACE\_FLAG\_VAR\_TSB}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_FACE\_FLAG\_VAR\_TSB}{TT\_FACE\_FLAG\_VAR\_TSB}}
+{\footnotesize\ttfamily \#define T\+T\+\_\+\+F\+A\+C\+E\+\_\+\+F\+L\+A\+G\+\_\+\+V\+A\+R\+\_\+\+T\+SB~( 1 $<$$<$ 5 )}
+
+\mbox{\Hypertarget{tttypes_8h_a7eb0fccc95be6940cc4c6f865e4ede4a}\label{tttypes_8h_a7eb0fccc95be6940cc4c6f865e4ede4a}} 
+\index{tttypes.h@{tttypes.h}!TT\_FACE\_FLAG\_VAR\_VADVANCE@{TT\_FACE\_FLAG\_VAR\_VADVANCE}}
+\index{TT\_FACE\_FLAG\_VAR\_VADVANCE@{TT\_FACE\_FLAG\_VAR\_VADVANCE}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_FACE\_FLAG\_VAR\_VADVANCE}{TT\_FACE\_FLAG\_VAR\_VADVANCE}}
+{\footnotesize\ttfamily \#define T\+T\+\_\+\+F\+A\+C\+E\+\_\+\+F\+L\+A\+G\+\_\+\+V\+A\+R\+\_\+\+V\+A\+D\+V\+A\+N\+CE~( 1 $<$$<$ 4 )}
+
+\mbox{\Hypertarget{tttypes_8h_a3c6a5a63f9a93754d394a54237b96d86}\label{tttypes_8h_a3c6a5a63f9a93754d394a54237b96d86}} 
+\index{tttypes.h@{tttypes.h}!TT\_FACE\_FLAG\_VAR\_VORG@{TT\_FACE\_FLAG\_VAR\_VORG}}
+\index{TT\_FACE\_FLAG\_VAR\_VORG@{TT\_FACE\_FLAG\_VAR\_VORG}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_FACE\_FLAG\_VAR\_VORG}{TT\_FACE\_FLAG\_VAR\_VORG}}
+{\footnotesize\ttfamily \#define T\+T\+\_\+\+F\+A\+C\+E\+\_\+\+F\+L\+A\+G\+\_\+\+V\+A\+R\+\_\+\+V\+O\+RG~( 1 $<$$<$ 7 )}
+
+\mbox{\Hypertarget{tttypes_8h_a637f07edb0bfd4e4d763945fd84e7511}\label{tttypes_8h_a637f07edb0bfd4e4d763945fd84e7511}} 
+\index{tttypes.h@{tttypes.h}!TT\_GASP\_DOGRAY@{TT\_GASP\_DOGRAY}}
+\index{TT\_GASP\_DOGRAY@{TT\_GASP\_DOGRAY}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_GASP\_DOGRAY}{TT\_GASP\_DOGRAY}}
+{\footnotesize\ttfamily \#define T\+T\+\_\+\+G\+A\+S\+P\+\_\+\+D\+O\+G\+R\+AY~0x02}
+
+\mbox{\Hypertarget{tttypes_8h_a20733c317c0f1c2b0dd3071fa22dc6b8}\label{tttypes_8h_a20733c317c0f1c2b0dd3071fa22dc6b8}} 
+\index{tttypes.h@{tttypes.h}!TT\_GASP\_GRIDFIT@{TT\_GASP\_GRIDFIT}}
+\index{TT\_GASP\_GRIDFIT@{TT\_GASP\_GRIDFIT}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_GASP\_GRIDFIT}{TT\_GASP\_GRIDFIT}}
+{\footnotesize\ttfamily \#define T\+T\+\_\+\+G\+A\+S\+P\+\_\+\+G\+R\+I\+D\+F\+IT~0x01}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{tttypes_8h_a0c98d0ae8b58a330ad60a1cabd8596a5}\label{tttypes_8h_a0c98d0ae8b58a330ad60a1cabd8596a5}} 
+\index{tttypes.h@{tttypes.h}!SFNT\_Header@{SFNT\_Header}}
+\index{SFNT\_Header@{SFNT\_Header}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{SFNT\_Header}{SFNT\_Header}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_s_f_n_t___header_rec__}{S\+F\+N\+T\+\_\+\+Header\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_a0c98d0ae8b58a330ad60a1cabd8596a5}{S\+F\+N\+T\+\_\+\+Header}}}
+
+\mbox{\Hypertarget{tttypes_8h_adf91f04808ce2a44010893a7f6add08f}\label{tttypes_8h_adf91f04808ce2a44010893a7f6add08f}} 
+\index{tttypes.h@{tttypes.h}!SFNT\_HeaderRec@{SFNT\_HeaderRec}}
+\index{SFNT\_HeaderRec@{SFNT\_HeaderRec}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{SFNT\_HeaderRec}{SFNT\_HeaderRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_s_f_n_t___header_rec__}{S\+F\+N\+T\+\_\+\+Header\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_adf91f04808ce2a44010893a7f6add08f}{S\+F\+N\+T\+\_\+\+Header\+Rec}}}
+
+\mbox{\Hypertarget{tttypes_8h_a1123cb7d0004d27ae7674ca0683b6255}\label{tttypes_8h_a1123cb7d0004d27ae7674ca0683b6255}} 
+\index{tttypes.h@{tttypes.h}!TT\_ExecContext@{TT\_ExecContext}}
+\index{TT\_ExecContext@{TT\_ExecContext}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_ExecContext}{TT\_ExecContext}}
+{\footnotesize\ttfamily typedef struct T\+T\+\_\+\+Exec\+Context\+Rec\+\_\+$\ast$ \mbox{\hyperlink{tttypes_8h_a1123cb7d0004d27ae7674ca0683b6255}{T\+T\+\_\+\+Exec\+Context}}}
+
+\mbox{\Hypertarget{tttypes_8h_a4579aa38b4b171acee676ce82638952c}\label{tttypes_8h_a4579aa38b4b171acee676ce82638952c}} 
+\index{tttypes.h@{tttypes.h}!TT\_Face@{TT\_Face}}
+\index{TT\_Face@{TT\_Face}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Face}{TT\_Face}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___face_rec__}{T\+T\+\_\+\+Face\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}}}
+
+\mbox{\Hypertarget{tttypes_8h_a62e342ed83365e97a228db08f453a373}\label{tttypes_8h_a62e342ed83365e97a228db08f453a373}} 
+\index{tttypes.h@{tttypes.h}!TT\_FaceRec@{TT\_FaceRec}}
+\index{TT\_FaceRec@{TT\_FaceRec}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_FaceRec}{TT\_FaceRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___face_rec__}{T\+T\+\_\+\+Face\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_a62e342ed83365e97a228db08f453a373}{T\+T\+\_\+\+Face\+Rec}}}
+
+\mbox{\Hypertarget{tttypes_8h_a66136e5feadbe82157028caa94a11a36}\label{tttypes_8h_a66136e5feadbe82157028caa94a11a36}} 
+\index{tttypes.h@{tttypes.h}!TT\_GaspRange@{TT\_GaspRange}}
+\index{TT\_GaspRange@{TT\_GaspRange}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_GaspRange}{TT\_GaspRange}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___gasp_range_rec__}{T\+T\+\_\+\+Gasp\+Range\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_a66136e5feadbe82157028caa94a11a36}{T\+T\+\_\+\+Gasp\+Range}}}
+
+\mbox{\Hypertarget{tttypes_8h_ae75abcaa6fee9c141c0c6dc9bc0b7c2d}\label{tttypes_8h_ae75abcaa6fee9c141c0c6dc9bc0b7c2d}} 
+\index{tttypes.h@{tttypes.h}!TT\_GaspRangeRec@{TT\_GaspRangeRec}}
+\index{TT\_GaspRangeRec@{TT\_GaspRangeRec}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_GaspRangeRec}{TT\_GaspRangeRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___gasp_range_rec__}{T\+T\+\_\+\+Gasp\+Range\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_ae75abcaa6fee9c141c0c6dc9bc0b7c2d}{T\+T\+\_\+\+Gasp\+Range\+Rec}}}
+
+\mbox{\Hypertarget{tttypes_8h_acfcae940f648727a74e25eed2069bf69}\label{tttypes_8h_acfcae940f648727a74e25eed2069bf69}} 
+\index{tttypes.h@{tttypes.h}!TT\_GaspRec@{TT\_GaspRec}}
+\index{TT\_GaspRec@{TT\_GaspRec}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_GaspRec}{TT\_GaspRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___gasp__}{T\+T\+\_\+\+Gasp\+\_\+}} \mbox{\hyperlink{tttypes_8h_acfcae940f648727a74e25eed2069bf69}{T\+T\+\_\+\+Gasp\+Rec}}}
+
+\mbox{\Hypertarget{tttypes_8h_a11f9ebb5983830845c3e03e00807dcac}\label{tttypes_8h_a11f9ebb5983830845c3e03e00807dcac}} 
+\index{tttypes.h@{tttypes.h}!TT\_GlyphZone@{TT\_GlyphZone}}
+\index{TT\_GlyphZone@{TT\_GlyphZone}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_GlyphZone}{TT\_GlyphZone}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___glyph_zone_rec__}{T\+T\+\_\+\+Glyph\+Zone\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_a11f9ebb5983830845c3e03e00807dcac}{T\+T\+\_\+\+Glyph\+Zone}}}
+
+\mbox{\Hypertarget{tttypes_8h_ae9cdb4213c174f24f104da8708973437}\label{tttypes_8h_ae9cdb4213c174f24f104da8708973437}} 
+\index{tttypes.h@{tttypes.h}!TT\_GlyphZoneRec@{TT\_GlyphZoneRec}}
+\index{TT\_GlyphZoneRec@{TT\_GlyphZoneRec}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_GlyphZoneRec}{TT\_GlyphZoneRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___glyph_zone_rec__}{T\+T\+\_\+\+Glyph\+Zone\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_ae9cdb4213c174f24f104da8708973437}{T\+T\+\_\+\+Glyph\+Zone\+Rec}}}
+
+\mbox{\Hypertarget{tttypes_8h_ac350176c20d495a2fab3f0a71ad2246b}\label{tttypes_8h_ac350176c20d495a2fab3f0a71ad2246b}} 
+\index{tttypes.h@{tttypes.h}!TT\_Interpreter@{TT\_Interpreter}}
+\index{TT\_Interpreter@{TT\_Interpreter}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Interpreter}{TT\_Interpreter}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T\+T\+\_\+\+Interpreter) (void $\ast$exec\+\_\+context)}
+
+\mbox{\Hypertarget{tttypes_8h_a58bc228eefd067d3e45aa776435d6266}\label{tttypes_8h_a58bc228eefd067d3e45aa776435d6266}} 
+\index{tttypes.h@{tttypes.h}!TT\_LangTag@{TT\_LangTag}}
+\index{TT\_LangTag@{TT\_LangTag}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_LangTag}{TT\_LangTag}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___lang_tag_rec__}{T\+T\+\_\+\+Lang\+Tag\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_a58bc228eefd067d3e45aa776435d6266}{T\+T\+\_\+\+Lang\+Tag}}}
+
+\mbox{\Hypertarget{tttypes_8h_a05fb668f6c1627d9f5b2500b1bec5fbe}\label{tttypes_8h_a05fb668f6c1627d9f5b2500b1bec5fbe}} 
+\index{tttypes.h@{tttypes.h}!TT\_LangTagRec@{TT\_LangTagRec}}
+\index{TT\_LangTagRec@{TT\_LangTagRec}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_LangTagRec}{TT\_LangTagRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___lang_tag_rec__}{T\+T\+\_\+\+Lang\+Tag\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_a05fb668f6c1627d9f5b2500b1bec5fbe}{T\+T\+\_\+\+Lang\+Tag\+Rec}}}
+
+\mbox{\Hypertarget{tttypes_8h_a0516f0faa93cd9f8624d653a1f5b10eb}\label{tttypes_8h_a0516f0faa93cd9f8624d653a1f5b10eb}} 
+\index{tttypes.h@{tttypes.h}!TT\_Loader@{TT\_Loader}}
+\index{TT\_Loader@{TT\_Loader}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Loader}{TT\_Loader}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___loader_rec__}{T\+T\+\_\+\+Loader\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{tttypes_8h_a0516f0faa93cd9f8624d653a1f5b10eb}{T\+T\+\_\+\+Loader}}}
+
+\mbox{\Hypertarget{tttypes_8h_a12242c4e08e6f59c4c818fdada300a77}\label{tttypes_8h_a12242c4e08e6f59c4c818fdada300a77}} 
+\index{tttypes.h@{tttypes.h}!TT\_Loader\_EndGlyphFunc@{TT\_Loader\_EndGlyphFunc}}
+\index{TT\_Loader\_EndGlyphFunc@{TT\_Loader\_EndGlyphFunc}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Loader\_EndGlyphFunc}{TT\_Loader\_EndGlyphFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ T\+T\+\_\+\+Loader\+\_\+\+End\+Glyph\+Func) (\mbox{\hyperlink{tttypes_8h_a0516f0faa93cd9f8624d653a1f5b10eb}{T\+T\+\_\+\+Loader}} loader)}
+
+\mbox{\Hypertarget{tttypes_8h_a7f26a7d52363c19c402cf2bc1aedaaab}\label{tttypes_8h_a7f26a7d52363c19c402cf2bc1aedaaab}} 
+\index{tttypes.h@{tttypes.h}!TT\_Loader\_GotoTableFunc@{TT\_Loader\_GotoTableFunc}}
+\index{TT\_Loader\_GotoTableFunc@{TT\_Loader\_GotoTableFunc}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Loader\_GotoTableFunc}{TT\_Loader\_GotoTableFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T\+T\+\_\+\+Loader\+\_\+\+Goto\+Table\+Func) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} tag, \mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$length)}
+
+\mbox{\Hypertarget{tttypes_8h_a168436f60dd37f412345357ff95ad221}\label{tttypes_8h_a168436f60dd37f412345357ff95ad221}} 
+\index{tttypes.h@{tttypes.h}!TT\_Loader\_ReadGlyphFunc@{TT\_Loader\_ReadGlyphFunc}}
+\index{TT\_Loader\_ReadGlyphFunc@{TT\_Loader\_ReadGlyphFunc}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Loader\_ReadGlyphFunc}{TT\_Loader\_ReadGlyphFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T\+T\+\_\+\+Loader\+\_\+\+Read\+Glyph\+Func) (\mbox{\hyperlink{tttypes_8h_a0516f0faa93cd9f8624d653a1f5b10eb}{T\+T\+\_\+\+Loader}} loader)}
+
+\mbox{\Hypertarget{tttypes_8h_a50aa7a72d93378d153760ff33aa0eb24}\label{tttypes_8h_a50aa7a72d93378d153760ff33aa0eb24}} 
+\index{tttypes.h@{tttypes.h}!TT\_Loader\_StartGlyphFunc@{TT\_Loader\_StartGlyphFunc}}
+\index{TT\_Loader\_StartGlyphFunc@{TT\_Loader\_StartGlyphFunc}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Loader\_StartGlyphFunc}{TT\_Loader\_StartGlyphFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T\+T\+\_\+\+Loader\+\_\+\+Start\+Glyph\+Func) (\mbox{\hyperlink{tttypes_8h_a0516f0faa93cd9f8624d653a1f5b10eb}{T\+T\+\_\+\+Loader}} loader, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} glyph\+\_\+index, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} offset, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} byte\+\_\+count)}
+
+\mbox{\Hypertarget{tttypes_8h_addfb394e2d7ccc1b233e4136f827dc57}\label{tttypes_8h_addfb394e2d7ccc1b233e4136f827dc57}} 
+\index{tttypes.h@{tttypes.h}!TT\_LoaderRec@{TT\_LoaderRec}}
+\index{TT\_LoaderRec@{TT\_LoaderRec}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_LoaderRec}{TT\_LoaderRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___loader_rec__}{T\+T\+\_\+\+Loader\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_addfb394e2d7ccc1b233e4136f827dc57}{T\+T\+\_\+\+Loader\+Rec}}}
+
+\mbox{\Hypertarget{tttypes_8h_ad8128f4fc9bb21bd580f7d55237eab4e}\label{tttypes_8h_ad8128f4fc9bb21bd580f7d55237eab4e}} 
+\index{tttypes.h@{tttypes.h}!TT\_LongMetrics@{TT\_LongMetrics}}
+\index{TT\_LongMetrics@{TT\_LongMetrics}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_LongMetrics}{TT\_LongMetrics}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___long_metrics_rec__}{T\+T\+\_\+\+Long\+Metrics\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_ad8128f4fc9bb21bd580f7d55237eab4e}{T\+T\+\_\+\+Long\+Metrics}}}
+
+\mbox{\Hypertarget{tttypes_8h_a1d1a9c373ea856b336d0256d643bbeaa}\label{tttypes_8h_a1d1a9c373ea856b336d0256d643bbeaa}} 
+\index{tttypes.h@{tttypes.h}!TT\_LongMetricsRec@{TT\_LongMetricsRec}}
+\index{TT\_LongMetricsRec@{TT\_LongMetricsRec}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_LongMetricsRec}{TT\_LongMetricsRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___long_metrics_rec__}{T\+T\+\_\+\+Long\+Metrics\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_a1d1a9c373ea856b336d0256d643bbeaa}{T\+T\+\_\+\+Long\+Metrics\+Rec}}}
+
+\mbox{\Hypertarget{tttypes_8h_aa40d764c556b3866772a0982b4b22285}\label{tttypes_8h_aa40d764c556b3866772a0982b4b22285}} 
+\index{tttypes.h@{tttypes.h}!TT\_Name@{TT\_Name}}
+\index{TT\_Name@{TT\_Name}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Name}{TT\_Name}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___name_rec__}{T\+T\+\_\+\+Name\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_aa40d764c556b3866772a0982b4b22285}{T\+T\+\_\+\+Name}}}
+
+\mbox{\Hypertarget{tttypes_8h_a8c6baaaf4bbae6a864fa080356a15716}\label{tttypes_8h_a8c6baaaf4bbae6a864fa080356a15716}} 
+\index{tttypes.h@{tttypes.h}!TT\_NameRec@{TT\_NameRec}}
+\index{TT\_NameRec@{TT\_NameRec}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_NameRec}{TT\_NameRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___name_rec__}{T\+T\+\_\+\+Name\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_a8c6baaaf4bbae6a864fa080356a15716}{T\+T\+\_\+\+Name\+Rec}}}
+
+\mbox{\Hypertarget{tttypes_8h_a1e96e67b402a62aee28600c2494fe830}\label{tttypes_8h_a1e96e67b402a62aee28600c2494fe830}} 
+\index{tttypes.h@{tttypes.h}!TT\_NameTable@{TT\_NameTable}}
+\index{TT\_NameTable@{TT\_NameTable}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_NameTable}{TT\_NameTable}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___name_table_rec__}{T\+T\+\_\+\+Name\+Table\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_a1e96e67b402a62aee28600c2494fe830}{T\+T\+\_\+\+Name\+Table}}}
+
+\mbox{\Hypertarget{tttypes_8h_a4309afe2f61ffc72baaf5dfbde50ba2f}\label{tttypes_8h_a4309afe2f61ffc72baaf5dfbde50ba2f}} 
+\index{tttypes.h@{tttypes.h}!TT\_NameTableRec@{TT\_NameTableRec}}
+\index{TT\_NameTableRec@{TT\_NameTableRec}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_NameTableRec}{TT\_NameTableRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___name_table_rec__}{T\+T\+\_\+\+Name\+Table\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_a4309afe2f61ffc72baaf5dfbde50ba2f}{T\+T\+\_\+\+Name\+Table\+Rec}}}
+
+\mbox{\Hypertarget{tttypes_8h_aebc100436da211dcfada5150af883984}\label{tttypes_8h_aebc100436da211dcfada5150af883984}} 
+\index{tttypes.h@{tttypes.h}!TT\_Post\_20@{TT\_Post\_20}}
+\index{TT\_Post\_20@{TT\_Post\_20}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Post\_20}{TT\_Post\_20}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___post__20_rec__}{T\+T\+\_\+\+Post\+\_\+20\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_aebc100436da211dcfada5150af883984}{T\+T\+\_\+\+Post\+\_\+20}}}
+
+\mbox{\Hypertarget{tttypes_8h_ad0f012289e44b0b5994f78d84116df5d}\label{tttypes_8h_ad0f012289e44b0b5994f78d84116df5d}} 
+\index{tttypes.h@{tttypes.h}!TT\_Post\_20Rec@{TT\_Post\_20Rec}}
+\index{TT\_Post\_20Rec@{TT\_Post\_20Rec}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Post\_20Rec}{TT\_Post\_20Rec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___post__20_rec__}{T\+T\+\_\+\+Post\+\_\+20\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_ad0f012289e44b0b5994f78d84116df5d}{T\+T\+\_\+\+Post\+\_\+20\+Rec}}}
+
+\mbox{\Hypertarget{tttypes_8h_a467437c9e87d0fb76e59ec7912663b54}\label{tttypes_8h_a467437c9e87d0fb76e59ec7912663b54}} 
+\index{tttypes.h@{tttypes.h}!TT\_Post\_25@{TT\_Post\_25}}
+\index{TT\_Post\_25@{TT\_Post\_25}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Post\_25}{TT\_Post\_25}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___post__25__}{T\+T\+\_\+\+Post\+\_\+25\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_a467437c9e87d0fb76e59ec7912663b54}{T\+T\+\_\+\+Post\+\_\+25}}}
+
+\mbox{\Hypertarget{tttypes_8h_a6dd196340907582a24be747a65f33bf3}\label{tttypes_8h_a6dd196340907582a24be747a65f33bf3}} 
+\index{tttypes.h@{tttypes.h}!TT\_Post\_25Rec@{TT\_Post\_25Rec}}
+\index{TT\_Post\_25Rec@{TT\_Post\_25Rec}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Post\_25Rec}{TT\_Post\_25Rec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___post__25__}{T\+T\+\_\+\+Post\+\_\+25\+\_\+}} \mbox{\hyperlink{tttypes_8h_a6dd196340907582a24be747a65f33bf3}{T\+T\+\_\+\+Post\+\_\+25\+Rec}}}
+
+\mbox{\Hypertarget{tttypes_8h_a5258ac8f61739db08250d887f544dcea}\label{tttypes_8h_a5258ac8f61739db08250d887f544dcea}} 
+\index{tttypes.h@{tttypes.h}!TT\_Post\_Names@{TT\_Post\_Names}}
+\index{TT\_Post\_Names@{TT\_Post\_Names}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Post\_Names}{TT\_Post\_Names}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___post___names_rec__}{T\+T\+\_\+\+Post\+\_\+\+Names\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_a5258ac8f61739db08250d887f544dcea}{T\+T\+\_\+\+Post\+\_\+\+Names}}}
+
+\mbox{\Hypertarget{tttypes_8h_a10c2b8ce29a2aeffacaee1df233d687f}\label{tttypes_8h_a10c2b8ce29a2aeffacaee1df233d687f}} 
+\index{tttypes.h@{tttypes.h}!TT\_Post\_NamesRec@{TT\_Post\_NamesRec}}
+\index{TT\_Post\_NamesRec@{TT\_Post\_NamesRec}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Post\_NamesRec}{TT\_Post\_NamesRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___post___names_rec__}{T\+T\+\_\+\+Post\+\_\+\+Names\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_a10c2b8ce29a2aeffacaee1df233d687f}{T\+T\+\_\+\+Post\+\_\+\+Names\+Rec}}}
+
+\mbox{\Hypertarget{tttypes_8h_a592dcd5f02227fae2143da1af61bfafd}\label{tttypes_8h_a592dcd5f02227fae2143da1af61bfafd}} 
+\index{tttypes.h@{tttypes.h}!TT\_SBit\_Component@{TT\_SBit\_Component}}
+\index{TT\_SBit\_Component@{TT\_SBit\_Component}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_SBit\_Component}{TT\_SBit\_Component}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___s_bit___component_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Component\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_a592dcd5f02227fae2143da1af61bfafd}{T\+T\+\_\+\+S\+Bit\+\_\+\+Component}}}
+
+\mbox{\Hypertarget{tttypes_8h_ae2194c95e0d611c9c0688859523b9c36}\label{tttypes_8h_ae2194c95e0d611c9c0688859523b9c36}} 
+\index{tttypes.h@{tttypes.h}!TT\_SBit\_ComponentRec@{TT\_SBit\_ComponentRec}}
+\index{TT\_SBit\_ComponentRec@{TT\_SBit\_ComponentRec}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_SBit\_ComponentRec}{TT\_SBit\_ComponentRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___s_bit___component_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Component\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_ae2194c95e0d611c9c0688859523b9c36}{T\+T\+\_\+\+S\+Bit\+\_\+\+Component\+Rec}}}
+
+\mbox{\Hypertarget{tttypes_8h_a6b425797f47d960c3564045f00d1ec54}\label{tttypes_8h_a6b425797f47d960c3564045f00d1ec54}} 
+\index{tttypes.h@{tttypes.h}!TT\_SBit\_LineMetrics@{TT\_SBit\_LineMetrics}}
+\index{TT\_SBit\_LineMetrics@{TT\_SBit\_LineMetrics}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_SBit\_LineMetrics}{TT\_SBit\_LineMetrics}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___s_bit___line_metrics_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Line\+Metrics\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_a6b425797f47d960c3564045f00d1ec54}{T\+T\+\_\+\+S\+Bit\+\_\+\+Line\+Metrics}}}
+
+\mbox{\Hypertarget{tttypes_8h_abec580b4d66e1720ba8247f2e582ae8f}\label{tttypes_8h_abec580b4d66e1720ba8247f2e582ae8f}} 
+\index{tttypes.h@{tttypes.h}!TT\_SBit\_LineMetricsRec@{TT\_SBit\_LineMetricsRec}}
+\index{TT\_SBit\_LineMetricsRec@{TT\_SBit\_LineMetricsRec}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_SBit\_LineMetricsRec}{TT\_SBit\_LineMetricsRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___s_bit___line_metrics_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Line\+Metrics\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_abec580b4d66e1720ba8247f2e582ae8f}{T\+T\+\_\+\+S\+Bit\+\_\+\+Line\+Metrics\+Rec}}}
+
+\mbox{\Hypertarget{tttypes_8h_a67dc74ad6b510065a0f51287e4fde011}\label{tttypes_8h_a67dc74ad6b510065a0f51287e4fde011}} 
+\index{tttypes.h@{tttypes.h}!TT\_SBit\_Metrics@{TT\_SBit\_Metrics}}
+\index{TT\_SBit\_Metrics@{TT\_SBit\_Metrics}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_SBit\_Metrics}{TT\_SBit\_Metrics}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___s_bit___metrics_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Metrics\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_a67dc74ad6b510065a0f51287e4fde011}{T\+T\+\_\+\+S\+Bit\+\_\+\+Metrics}}}
+
+\mbox{\Hypertarget{tttypes_8h_ae633ebb8b4be1dddce6c77216db4edf0}\label{tttypes_8h_ae633ebb8b4be1dddce6c77216db4edf0}} 
+\index{tttypes.h@{tttypes.h}!TT\_SBit\_MetricsRec@{TT\_SBit\_MetricsRec}}
+\index{TT\_SBit\_MetricsRec@{TT\_SBit\_MetricsRec}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_SBit\_MetricsRec}{TT\_SBit\_MetricsRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___s_bit___metrics_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Metrics\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_ae633ebb8b4be1dddce6c77216db4edf0}{T\+T\+\_\+\+S\+Bit\+\_\+\+Metrics\+Rec}}}
+
+\mbox{\Hypertarget{tttypes_8h_aa8d90bac8664dd99e02e71c830cb8a03}\label{tttypes_8h_aa8d90bac8664dd99e02e71c830cb8a03}} 
+\index{tttypes.h@{tttypes.h}!TT\_SBit\_Range@{TT\_SBit\_Range}}
+\index{TT\_SBit\_Range@{TT\_SBit\_Range}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_SBit\_Range}{TT\_SBit\_Range}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___s_bit___range_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Range\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_aa8d90bac8664dd99e02e71c830cb8a03}{T\+T\+\_\+\+S\+Bit\+\_\+\+Range}}}
+
+\mbox{\Hypertarget{tttypes_8h_af32aeb37683c563170802e958df5d5cd}\label{tttypes_8h_af32aeb37683c563170802e958df5d5cd}} 
+\index{tttypes.h@{tttypes.h}!TT\_SBit\_RangeRec@{TT\_SBit\_RangeRec}}
+\index{TT\_SBit\_RangeRec@{TT\_SBit\_RangeRec}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_SBit\_RangeRec}{TT\_SBit\_RangeRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___s_bit___range_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Range\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_af32aeb37683c563170802e958df5d5cd}{T\+T\+\_\+\+S\+Bit\+\_\+\+Range\+Rec}}}
+
+\mbox{\Hypertarget{tttypes_8h_a6433053a6a39d75f8df79cd5c8303f8a}\label{tttypes_8h_a6433053a6a39d75f8df79cd5c8303f8a}} 
+\index{tttypes.h@{tttypes.h}!TT\_SBit\_Scale@{TT\_SBit\_Scale}}
+\index{TT\_SBit\_Scale@{TT\_SBit\_Scale}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_SBit\_Scale}{TT\_SBit\_Scale}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___s_bit___scale_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Scale\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_a6433053a6a39d75f8df79cd5c8303f8a}{T\+T\+\_\+\+S\+Bit\+\_\+\+Scale}}}
+
+\mbox{\Hypertarget{tttypes_8h_a2b08d35afaa0b63cd781aaab9302e127}\label{tttypes_8h_a2b08d35afaa0b63cd781aaab9302e127}} 
+\index{tttypes.h@{tttypes.h}!TT\_SBit\_ScaleRec@{TT\_SBit\_ScaleRec}}
+\index{TT\_SBit\_ScaleRec@{TT\_SBit\_ScaleRec}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_SBit\_ScaleRec}{TT\_SBit\_ScaleRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___s_bit___scale_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Scale\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_a2b08d35afaa0b63cd781aaab9302e127}{T\+T\+\_\+\+S\+Bit\+\_\+\+Scale\+Rec}}}
+
+\mbox{\Hypertarget{tttypes_8h_af94517f62bff4af09e1dabb2f0ad5da4}\label{tttypes_8h_af94517f62bff4af09e1dabb2f0ad5da4}} 
+\index{tttypes.h@{tttypes.h}!TT\_SBit\_SmallMetrics@{TT\_SBit\_SmallMetrics}}
+\index{TT\_SBit\_SmallMetrics@{TT\_SBit\_SmallMetrics}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_SBit\_SmallMetrics}{TT\_SBit\_SmallMetrics}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___s_bit___small___metrics__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Small\+\_\+\+Metrics\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_af94517f62bff4af09e1dabb2f0ad5da4}{T\+T\+\_\+\+S\+Bit\+\_\+\+Small\+Metrics}}}
+
+\mbox{\Hypertarget{tttypes_8h_a36d3a4781e2f5eb7ed607ae2c83c48a2}\label{tttypes_8h_a36d3a4781e2f5eb7ed607ae2c83c48a2}} 
+\index{tttypes.h@{tttypes.h}!TT\_SBit\_SmallMetricsRec@{TT\_SBit\_SmallMetricsRec}}
+\index{TT\_SBit\_SmallMetricsRec@{TT\_SBit\_SmallMetricsRec}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_SBit\_SmallMetricsRec}{TT\_SBit\_SmallMetricsRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___s_bit___small___metrics__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Small\+\_\+\+Metrics\+\_\+}} \mbox{\hyperlink{tttypes_8h_a36d3a4781e2f5eb7ed607ae2c83c48a2}{T\+T\+\_\+\+S\+Bit\+\_\+\+Small\+Metrics\+Rec}}}
+
+\mbox{\Hypertarget{tttypes_8h_ac125f9b4c2e11189d9ad2676ef7d8634}\label{tttypes_8h_ac125f9b4c2e11189d9ad2676ef7d8634}} 
+\index{tttypes.h@{tttypes.h}!TT\_SBit\_Strike@{TT\_SBit\_Strike}}
+\index{TT\_SBit\_Strike@{TT\_SBit\_Strike}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_SBit\_Strike}{TT\_SBit\_Strike}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___s_bit___strike_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Strike\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_ac125f9b4c2e11189d9ad2676ef7d8634}{T\+T\+\_\+\+S\+Bit\+\_\+\+Strike}}}
+
+\mbox{\Hypertarget{tttypes_8h_ac5b3bbb8f6fc76c401fc29db0006faff}\label{tttypes_8h_ac5b3bbb8f6fc76c401fc29db0006faff}} 
+\index{tttypes.h@{tttypes.h}!TT\_SBit\_StrikeRec@{TT\_SBit\_StrikeRec}}
+\index{TT\_SBit\_StrikeRec@{TT\_SBit\_StrikeRec}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_SBit\_StrikeRec}{TT\_SBit\_StrikeRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___s_bit___strike_rec__}{T\+T\+\_\+\+S\+Bit\+\_\+\+Strike\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_ac5b3bbb8f6fc76c401fc29db0006faff}{T\+T\+\_\+\+S\+Bit\+\_\+\+Strike\+Rec}}}
+
+\mbox{\Hypertarget{tttypes_8h_ab094d65b93301c3b71928c255b7ff102}\label{tttypes_8h_ab094d65b93301c3b71928c255b7ff102}} 
+\index{tttypes.h@{tttypes.h}!TT\_SbitTableType@{TT\_SbitTableType}}
+\index{TT\_SbitTableType@{TT\_SbitTableType}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_SbitTableType}{TT\_SbitTableType}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{tttypes_8h_adf43324037de43a8ca1e7c0c6d7070b2}{T\+T\+\_\+\+Sbit\+Table\+Type\+\_\+}} \mbox{\hyperlink{tttypes_8h_ab094d65b93301c3b71928c255b7ff102}{T\+T\+\_\+\+Sbit\+Table\+Type}}}
+
+\mbox{\Hypertarget{tttypes_8h_a5bd5612a2e1aac59cacada156418f699}\label{tttypes_8h_a5bd5612a2e1aac59cacada156418f699}} 
+\index{tttypes.h@{tttypes.h}!TT\_ShortMetrics@{TT\_ShortMetrics}}
+\index{TT\_ShortMetrics@{TT\_ShortMetrics}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_ShortMetrics}{TT\_ShortMetrics}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_aa7279be89046a2563cd3d4d6651fbdcf}{F\+T\+\_\+\+Short}} \mbox{\hyperlink{tttypes_8h_a5bd5612a2e1aac59cacada156418f699}{T\+T\+\_\+\+Short\+Metrics}}}
+
+\mbox{\Hypertarget{tttypes_8h_a793cea9d73ebb12d4c2edc0c0f81b03a}\label{tttypes_8h_a793cea9d73ebb12d4c2edc0c0f81b03a}} 
+\index{tttypes.h@{tttypes.h}!TT\_Size@{TT\_Size}}
+\index{TT\_Size@{TT\_Size}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Size}{TT\_Size}}
+{\footnotesize\ttfamily typedef struct T\+T\+\_\+\+Size\+Rec\+\_\+$\ast$ \mbox{\hyperlink{tttypes_8h_a793cea9d73ebb12d4c2edc0c0f81b03a}{T\+T\+\_\+\+Size}}}
+
+\mbox{\Hypertarget{tttypes_8h_af84325159c268817528e02bea95999e6}\label{tttypes_8h_af84325159c268817528e02bea95999e6}} 
+\index{tttypes.h@{tttypes.h}!TT\_Table@{TT\_Table}}
+\index{TT\_Table@{TT\_Table}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Table}{TT\_Table}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___table_rec__}{T\+T\+\_\+\+Table\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{tttypes_8h_af84325159c268817528e02bea95999e6}{T\+T\+\_\+\+Table}}}
+
+\mbox{\Hypertarget{tttypes_8h_a581598b7d82d61251b85f2a2831556c2}\label{tttypes_8h_a581598b7d82d61251b85f2a2831556c2}} 
+\index{tttypes.h@{tttypes.h}!TT\_TableRec@{TT\_TableRec}}
+\index{TT\_TableRec@{TT\_TableRec}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_TableRec}{TT\_TableRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___table_rec__}{T\+T\+\_\+\+Table\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_a581598b7d82d61251b85f2a2831556c2}{T\+T\+\_\+\+Table\+Rec}}}
+
+\mbox{\Hypertarget{tttypes_8h_ae2c15fa40d68cec3d45c6ca763f87b55}\label{tttypes_8h_ae2c15fa40d68cec3d45c6ca763f87b55}} 
+\index{tttypes.h@{tttypes.h}!TTC\_HeaderRec@{TTC\_HeaderRec}}
+\index{TTC\_HeaderRec@{TTC\_HeaderRec}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TTC\_HeaderRec}{TTC\_HeaderRec}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{public-macros_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER}} struct \mbox{\hyperlink{struct_t_t_c___header_rec__}{T\+T\+C\+\_\+\+Header\+Rec\+\_\+}} \mbox{\hyperlink{tttypes_8h_ae2c15fa40d68cec3d45c6ca763f87b55}{T\+T\+C\+\_\+\+Header\+Rec}}}
+
+
+
+\doxysubsection{列挙型詳解}
+\mbox{\Hypertarget{tttypes_8h_adf43324037de43a8ca1e7c0c6d7070b2}\label{tttypes_8h_adf43324037de43a8ca1e7c0c6d7070b2}} 
+\index{tttypes.h@{tttypes.h}!TT\_SbitTableType\_@{TT\_SbitTableType\_}}
+\index{TT\_SbitTableType\_@{TT\_SbitTableType\_}!tttypes.h@{tttypes.h}}
+\doxysubsubsection{\texorpdfstring{TT\_SbitTableType\_}{TT\_SbitTableType\_}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{tttypes_8h_adf43324037de43a8ca1e7c0c6d7070b2}{T\+T\+\_\+\+Sbit\+Table\+Type\+\_\+}}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TT\_SBIT\_TABLE\_TYPE\_NONE@{TT\_SBIT\_TABLE\_TYPE\_NONE}!tttypes.h@{tttypes.h}}\index{tttypes.h@{tttypes.h}!TT\_SBIT\_TABLE\_TYPE\_NONE@{TT\_SBIT\_TABLE\_TYPE\_NONE}}}\mbox{\Hypertarget{tttypes_8h_adf43324037de43a8ca1e7c0c6d7070b2a6d54772ce5f632eec62629231ee6aad2}\label{tttypes_8h_adf43324037de43a8ca1e7c0c6d7070b2a6d54772ce5f632eec62629231ee6aad2}} 
+T\+T\+\_\+\+S\+B\+I\+T\+\_\+\+T\+A\+B\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TT\_SBIT\_TABLE\_TYPE\_EBLC@{TT\_SBIT\_TABLE\_TYPE\_EBLC}!tttypes.h@{tttypes.h}}\index{tttypes.h@{tttypes.h}!TT\_SBIT\_TABLE\_TYPE\_EBLC@{TT\_SBIT\_TABLE\_TYPE\_EBLC}}}\mbox{\Hypertarget{tttypes_8h_adf43324037de43a8ca1e7c0c6d7070b2a84bdab628464b7a9993b8057b58fc7f0}\label{tttypes_8h_adf43324037de43a8ca1e7c0c6d7070b2a84bdab628464b7a9993b8057b58fc7f0}} 
+T\+T\+\_\+\+S\+B\+I\+T\+\_\+\+T\+A\+B\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+E\+B\+LC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TT\_SBIT\_TABLE\_TYPE\_CBLC@{TT\_SBIT\_TABLE\_TYPE\_CBLC}!tttypes.h@{tttypes.h}}\index{tttypes.h@{tttypes.h}!TT\_SBIT\_TABLE\_TYPE\_CBLC@{TT\_SBIT\_TABLE\_TYPE\_CBLC}}}\mbox{\Hypertarget{tttypes_8h_adf43324037de43a8ca1e7c0c6d7070b2a5cc07236beb4f1548c1d51f3a7056daf}\label{tttypes_8h_adf43324037de43a8ca1e7c0c6d7070b2a5cc07236beb4f1548c1d51f3a7056daf}} 
+T\+T\+\_\+\+S\+B\+I\+T\+\_\+\+T\+A\+B\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+B\+LC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TT\_SBIT\_TABLE\_TYPE\_SBIX@{TT\_SBIT\_TABLE\_TYPE\_SBIX}!tttypes.h@{tttypes.h}}\index{tttypes.h@{tttypes.h}!TT\_SBIT\_TABLE\_TYPE\_SBIX@{TT\_SBIT\_TABLE\_TYPE\_SBIX}}}\mbox{\Hypertarget{tttypes_8h_adf43324037de43a8ca1e7c0c6d7070b2a7324f1b2f57dbf2b1d18b188a18efd61}\label{tttypes_8h_adf43324037de43a8ca1e7c0c6d7070b2a7324f1b2f57dbf2b1d18b188a18efd61}} 
+T\+T\+\_\+\+S\+B\+I\+T\+\_\+\+T\+A\+B\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+B\+IX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TT\_SBIT\_TABLE\_TYPE\_MAX@{TT\_SBIT\_TABLE\_TYPE\_MAX}!tttypes.h@{tttypes.h}}\index{tttypes.h@{tttypes.h}!TT\_SBIT\_TABLE\_TYPE\_MAX@{TT\_SBIT\_TABLE\_TYPE\_MAX}}}\mbox{\Hypertarget{tttypes_8h_adf43324037de43a8ca1e7c0c6d7070b2a27737d62f9bf7ed4a42748b59799bc32}\label{tttypes_8h_adf43324037de43a8ca1e7c0c6d7070b2a27737d62f9bf7ed4a42748b59799bc32}} 
+T\+T\+\_\+\+S\+B\+I\+T\+\_\+\+T\+A\+B\+L\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+AX&\\
+\hline
+
+\end{DoxyEnumFields}

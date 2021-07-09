@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: Framework/Window/Window.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bcbb2cf9a3d3d83e5515c82071a07177.html">Framework</a></li><li class="navelem"><a class="el" href="dir_9220df8ecce49b265c05a9034b2b8014.html">Window</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Window.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_window_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef U22_FRAMEWORK_WINDOW_WINDOW_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define U22_FRAMEWORK_WINDOW_WINDOW_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../../Common/Common.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceu22.html">u22</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classu22_1_1_window.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classu22_1_1_window.html">Window</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="group__window.html#ga3c96d80d363e67d13a41b5d1821f3242">::GLFWwindow</a>* _handle;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    std::string _title;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">int</span> _width;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">int</span> _height;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classu22_1_1_window.html#aeccd1eafa2f0ecc961bb6854ef699c75">Window</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classu22_1_1_window.html#a0bd63ca69b8e1099620f95be7417299e">~Window</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classu22_1_1_window.html#a0e231c79f2d158448baae5f3861409eb">SetHandle</a>(::<a class="code" href="group__window.html#ga3c96d80d363e67d13a41b5d1821f3242">GLFWwindow</a>* ptr);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="group__window.html#ga3c96d80d363e67d13a41b5d1821f3242">::GLFWwindow</a>* <a class="code" href="classu22_1_1_window.html#ae3ea511def33789dc9b859b2a12caa63">GetHandle</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classu22_1_1_window.html#a27629eea95252d35b1e7d0c4c7c57553">GetWidth</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classu22_1_1_window.html#ac5fdfff9e00ba1882631bed659657ff2">GetHeight</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1_window.html#a6694016543a86ba134cf47a1d9243e97">ShouldClose</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1_window.html#a31daccb42cdd4864068a25b0d84b7306">Create</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* title, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">int</span> pos_x, <span class="keywordtype">int</span> pos_y, <span class="keywordtype">bool</span> full_screen);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1_window.html#ad2404c9f49c1b08eed6ebffa4e32761e">Destroy</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classu22_1_1_window.html#a1aa98ac910cb99a9bd5f0a2e35ca8d97">Present</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classu22_1_1_window.html#adcffbadcaafc9e172dde4fe55a27d930">PollEvents</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif // U22_FRAMEWORK_WINDOW_WINDOW_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassu22_1_1_window_html_ac5fdfff9e00ba1882631bed659657ff2"><div class="ttname"><a href="classu22_1_1_window.html#ac5fdfff9e00ba1882631bed659657ff2">u22::Window::GetHeight</a></div><div class="ttdeci">int GetHeight(void) const</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> Window.cpp:26</div></div>
+<div class="ttc" id="aclassu22_1_1_window_html_ae3ea511def33789dc9b859b2a12caa63"><div class="ttname"><a href="classu22_1_1_window.html#ae3ea511def33789dc9b859b2a12caa63">u22::Window::GetHandle</a></div><div class="ttdeci">::GLFWwindow * GetHandle(void)</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> Window.cpp:18</div></div>
+<div class="ttc" id="aclassu22_1_1_window_html_a6694016543a86ba134cf47a1d9243e97"><div class="ttname"><a href="classu22_1_1_window.html#a6694016543a86ba134cf47a1d9243e97">u22::Window::ShouldClose</a></div><div class="ttdeci">bool ShouldClose(void)</div><div class="ttdoc">判定</div><div class="ttdef"><b>Definition:</b> Window.cpp:30</div></div>
+<div class="ttc" id="agroup__context_html_gafd76c93e15ec8b0b90506a9936a46185"><div class="ttname"><a href="group__context.html#gafd76c93e15ec8b0b90506a9936a46185">glfwMakeContextCurrent</a></div><div class="ttdeci">GLFWAPI void glfwMakeContextCurrent(GLFWwindow *window)</div><div class="ttdoc">Makes the context of the specified window current for the calling thread.</div></div>
+<div class="ttc" id="agroup__init_html_gafd90e6fd4819ea9e22e5e739519a6504"><div class="ttname"><a href="group__init.html#gafd90e6fd4819ea9e22e5e739519a6504">glfwTerminate</a></div><div class="ttdeci">GLFWAPI void glfwTerminate(void)</div><div class="ttdoc">Terminates the GLFW library.</div></div>
+<div class="ttc" id="agroup__window_html_ga872d16e4c77f58c0436f356255920cfc"><div class="ttname"><a href="group__window.html#ga872d16e4c77f58c0436f356255920cfc">glfwPollEvents</a></div><div class="ttdeci">GLFWAPI void glfwPollEvents(void)</div><div class="ttdoc">Processes all pending events.</div></div>
+<div class="ttc" id="agroup__window_html_ga3c96d80d363e67d13a41b5d1821f3242"><div class="ttname"><a href="group__window.html#ga3c96d80d363e67d13a41b5d1821f3242">GLFWwindow</a></div><div class="ttdeci">struct GLFWwindow GLFWwindow</div><div class="ttdoc">Opaque window object.</div><div class="ttdef"><b>Definition:</b> glfw3.h:789</div></div>
+<div class="ttc" id="aclassu22_1_1_window_html_adcffbadcaafc9e172dde4fe55a27d930"><div class="ttname"><a href="classu22_1_1_window.html#adcffbadcaafc9e172dde4fe55a27d930">u22::Window::PollEvents</a></div><div class="ttdeci">void PollEvents(void) const</div><div class="ttdoc">イベントポーリング</div><div class="ttdef"><b>Definition:</b> Window.cpp:66</div></div>
+<div class="ttc" id="agroup__window_html_gafb827800eedbfcbc97b1e5408df668d7"><div class="ttname"><a href="group__window.html#gafb827800eedbfcbc97b1e5408df668d7">glfwSwapBuffers</a></div><div class="ttdeci">GLFWAPI void glfwSwapBuffers(GLFWwindow *window)</div><div class="ttdoc">Swaps the front and back buffers of the specified window.</div></div>
+<div class="ttc" id="agroup__monitor_html_ga59ea49f377fe701dd76764183e64d9f4"><div class="ttname"><a href="group__monitor.html#ga59ea49f377fe701dd76764183e64d9f4">glfwGetPrimaryMonitor</a></div><div class="ttdeci">GLFWAPI GLFWmonitor * glfwGetPrimaryMonitor(void)</div><div class="ttdoc">Returns the primary monitor.</div></div>
+<div class="ttc" id="aclassu22_1_1_window_html_a0e231c79f2d158448baae5f3861409eb"><div class="ttname"><a href="classu22_1_1_window.html#a0e231c79f2d158448baae5f3861409eb">u22::Window::SetHandle</a></div><div class="ttdeci">void SetHandle(::GLFWwindow *ptr)</div><div class="ttdoc">セッター</div><div class="ttdef"><b>Definition:</b> Window.cpp:14</div></div>
+<div class="ttc" id="agroup__window_html_ga0dc8d880a0d87be16d3ea8114561f6f0"><div class="ttname"><a href="group__window.html#ga0dc8d880a0d87be16d3ea8114561f6f0">glfwSetWindowPos</a></div><div class="ttdeci">GLFWAPI void glfwSetWindowPos(GLFWwindow *window, int xpos, int ypos)</div><div class="ttdoc">Sets the position of the client area of the specified window.</div></div>
+<div class="ttc" id="aclassu22_1_1_window_html_a0bd63ca69b8e1099620f95be7417299e"><div class="ttname"><a href="classu22_1_1_window.html#a0bd63ca69b8e1099620f95be7417299e">u22::Window::~Window</a></div><div class="ttdeci">~Window()</div><div class="ttdoc">デストラクタ</div><div class="ttdef"><b>Definition:</b> Window.cpp:11</div></div>
+<div class="ttc" id="aclassu22_1_1_window_html_a31daccb42cdd4864068a25b0d84b7306"><div class="ttname"><a href="classu22_1_1_window.html#a31daccb42cdd4864068a25b0d84b7306">u22::Window::Create</a></div><div class="ttdeci">bool Create(const char *title, int width, int height, int pos_x, int pos_y, bool full_screen)</div><div class="ttdoc">作成</div><div class="ttdef"><b>Definition:</b> Window.cpp:34</div></div>
+<div class="ttc" id="aclassu22_1_1_window_html_a1aa98ac910cb99a9bd5f0a2e35ca8d97"><div class="ttname"><a href="classu22_1_1_window.html#a1aa98ac910cb99a9bd5f0a2e35ca8d97">u22::Window::Present</a></div><div class="ttdeci">void Present(void) const</div><div class="ttdoc">フリップ</div><div class="ttdef"><b>Definition:</b> Window.cpp:62</div></div>
+<div class="ttc" id="agroup__window_html_ga806747476b7247d292be3711c323ea10"><div class="ttname"><a href="group__window.html#ga806747476b7247d292be3711c323ea10">glfwDestroyWindow</a></div><div class="ttdeci">GLFWAPI void glfwDestroyWindow(GLFWwindow *window)</div><div class="ttdoc">Destroys the specified window and its context.</div></div>
+<div class="ttc" id="aclassu22_1_1_window_html_a27629eea95252d35b1e7d0c4c7c57553"><div class="ttname"><a href="classu22_1_1_window.html#a27629eea95252d35b1e7d0c4c7c57553">u22::Window::GetWidth</a></div><div class="ttdeci">int GetWidth(void) const</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> Window.cpp:22</div></div>
+<div class="ttc" id="a_window_8h_html"><div class="ttname"><a href="_window_8h.html">Window.h</a></div></div>
+<div class="ttc" id="aclassu22_1_1_window_html_aeccd1eafa2f0ecc961bb6854ef699c75"><div class="ttname"><a href="classu22_1_1_window.html#aeccd1eafa2f0ecc961bb6854ef699c75">u22::Window::Window</a></div><div class="ttdeci">Window()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> Window.cpp:4</div></div>
+<div class="ttc" id="aclassu22_1_1_window_html_ad2404c9f49c1b08eed6ebffa4e32761e"><div class="ttname"><a href="classu22_1_1_window.html#ad2404c9f49c1b08eed6ebffa4e32761e">u22::Window::Destroy</a></div><div class="ttdeci">bool Destroy(void)</div><div class="ttdoc">削除</div><div class="ttdef"><b>Definition:</b> Window.cpp:54</div></div>
+<div class="ttc" id="aclassu22_1_1_window_html"><div class="ttname"><a href="classu22_1_1_window.html">u22::Window</a></div><div class="ttdef"><b>Definition:</b> Window.h:11</div></div>
+<div class="ttc" id="agroup__window_html_ga680a02abe0e4494b6759d5703240713e"><div class="ttname"><a href="group__window.html#ga680a02abe0e4494b6759d5703240713e">glfwCreateWindow</a></div><div class="ttdeci">GLFWAPI GLFWwindow * glfwCreateWindow(int width, int height, const char *title, GLFWmonitor *monitor, GLFWwindow *share)</div><div class="ttdoc">Creates a window and its associated context.</div></div>
+<div class="ttc" id="agroup__window_html_gaa6162f67dfa38b8beda2fea623649332"><div class="ttname"><a href="group__window.html#gaa6162f67dfa38b8beda2fea623649332">glfwWindowShouldClose</a></div><div class="ttdeci">GLFWAPI int glfwWindowShouldClose(GLFWwindow *window)</div><div class="ttdoc">Checks the close flag of the specified window.</div></div>
+<div class="ttc" id="anamespaceu22_html"><div class="ttname"><a href="namespaceu22.html">u22</a></div><div class="ttdef"><b>Definition:</b> SpriteAnimationController.h:13</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

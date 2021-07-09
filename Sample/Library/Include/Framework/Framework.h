@@ -24,6 +24,8 @@ struct ApplicationInfo {
     int window_width ;
     //! サイズ
     int window_height;
+    //! フルスクリーン
+    bool full_screen_mode;
 };
 struct FrameworkInfo {
 public:

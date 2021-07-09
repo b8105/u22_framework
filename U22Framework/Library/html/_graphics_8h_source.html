@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: Graphics/Graphics.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64f7452aef2cdad98d34a70f5ea329e2.html">Graphics</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Graphics.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_graphics_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef U22_GRAPHICS_GRAPHICS_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define U22_GRAPHICS_GRAPHICS_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../Framework/Window/Window.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;../Math/Vector4.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_graphics_define_8h.html">GraphicsDefine.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_camera_8h.html">Camera.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_effect_shader_8h.html">EffectShader.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceu22_1_1graphics.html">u22::graphics</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classu22_1_1graphics_1_1_graphics.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classu22_1_1graphics_1_1_graphics.html">Graphics</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">bool</span> _initialized;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    std::unordered_map&lt;u22::graphics::EffectShaderType, std::shared_ptr&lt;u22::graphics::EffectShader&gt;&gt; _shader_map;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="struct_f_t___library_rec__.html">FT_Library</a> _font;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">bool</span> Setup(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">bool</span> LoadShader(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">bool</span> ReleaseShader(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classu22_1_1graphics_1_1_graphics.html#a1f1a9f8af2bdb8289d24c50717187319">Graphics</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classu22_1_1graphics_1_1_graphics.html#a6b1cf4cff697b8457de73f067860a33d">~Graphics</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="struct_f_t___library_rec__.html">FT_Library</a> <a class="code" href="classu22_1_1graphics_1_1_graphics.html#ad150a98adbbbe166968cda61c228389a">GetFontPtr</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    std::shared_ptr&lt;u22::graphics::EffectShader&gt; <a class="code" href="classu22_1_1graphics_1_1_graphics.html#a1c9354efd30cb2790bd3331561f4941e">GetEffectShader</a>(<a class="code" href="namespaceu22_1_1graphics.html#aeac9e83f7ce88cab997836ce2a61f77e">u22::graphics::EffectShaderType</a> type) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classu22_1_1graphics_1_1_graphics.html#a4778c5d692c412b71548552438125ee5">ClearTarget</a>(<span class="keyword">const</span> <a class="code" href="classu22_1_1math_1_1_vector4_3_01float_01_4.html">u22::math::Vector4F</a>&amp; <a class="code" href="namespacecolor.html">color</a>, <span class="keywordtype">float</span> depth, <span class="keywordtype">float</span> stencil);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classu22_1_1graphics_1_1_graphics.html#a6de61f19dbe411e98d136bfba61c3e88">RenderStart</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1graphics_1_1_graphics.html#abf668a5d285131d7a065fdf806f0e4c6">Initialize</a>(<span class="keyword">const</span> std::shared_ptr&lt;u22::Window&gt;&amp; window);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1graphics_1_1_graphics.html#a8f6c61bef2f5aa08a2bd533f22ac99ae">Release</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif // !U22_GRAPHICS_GRAPHICS_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="anamespaceu22_1_1graphics_html_aeac9e83f7ce88cab997836ce2a61f77ea30954d90085f6eaaf5817917fc5fecb3"><div class="ttname"><a href="namespaceu22_1_1graphics.html#aeac9e83f7ce88cab997836ce2a61f77ea30954d90085f6eaaf5817917fc5fecb3">u22::graphics::EffectShaderType::Circle</a></div><div class="ttdeci">@ Circle</div></div>
+<div class="ttc" id="astb__vorbis_8c_html_aa73214aa5f2f94f63d90bb4e3d99fe53"><div class="ttname"><a href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a></div><div class="ttdeci">#define L</div><div class="ttdef"><b>Definition:</b> stb_vorbis.c:5037</div></div>
+<div class="ttc" id="anamespaceu22_1_1graphics_html"><div class="ttname"><a href="namespaceu22_1_1graphics.html">u22::graphics</a></div><div class="ttdef"><b>Definition:</b> Buffer.h:8</div></div>
+<div class="ttc" id="aglew_8h_html_affc6c383998f3d5c0a5e74a07788f6ed"><div class="ttname"><a href="glew_8h.html#affc6c383998f3d5c0a5e74a07788f6ed">glClear</a></div><div class="ttdeci">GLAPI void GLAPIENTRY glClear(GLbitfield mask)</div></div>
+<div class="ttc" id="aglew_8h_html_a00362af73243cfbcf5509f74893b1b31"><div class="ttname"><a href="glew_8h.html#a00362af73243cfbcf5509f74893b1b31">glClearDepth</a></div><div class="ttdeci">GLAPI void GLAPIENTRY glClearDepth(GLclampd depth)</div></div>
+<div class="ttc" id="agroup__init_html_gafd90e6fd4819ea9e22e5e739519a6504"><div class="ttname"><a href="group__init.html#gafd90e6fd4819ea9e22e5e739519a6504">glfwTerminate</a></div><div class="ttdeci">GLFWAPI void glfwTerminate(void)</div><div class="ttdoc">Terminates the GLFW library.</div></div>
+<div class="ttc" id="aglew_8h_html_a84814ca499dc312708e8aa22324f1d78"><div class="ttname"><a href="glew_8h.html#a84814ca499dc312708e8aa22324f1d78">GL_CCW</a></div><div class="ttdeci">#define GL_CCW</div><div class="ttdef"><b>Definition:</b> glew.h:402</div></div>
+<div class="ttc" id="anamespacecolor_html"><div class="ttname"><a href="namespacecolor.html">color</a></div><div class="ttdef"><b>Definition:</b> MathDefine.h:52</div></div>
+<div class="ttc" id="afreetype_8h_html_abcae5780e604026b1994f140864ffbcb"><div class="ttname"><a href="freetype_8h.html#abcae5780e604026b1994f140864ffbcb">FT_Done_FreeType</a></div><div class="ttdeci">FT_Done_FreeType(FT_Library library)</div></div>
+<div class="ttc" id="a_graphics_define_8h_html"><div class="ttname"><a href="_graphics_define_8h.html">GraphicsDefine.h</a></div></div>
+<div class="ttc" id="aclassu22_1_1math_1_1_vector4_3_01float_01_4_html"><div class="ttname"><a href="classu22_1_1math_1_1_vector4_3_01float_01_4.html">u22::math::Vector4&lt; float &gt;</a></div><div class="ttdef"><b>Definition:</b> Vector4.h:16</div></div>
+<div class="ttc" id="aglew_8h_html_a51e6c75d54b3a9fb93fbc880463c212c"><div class="ttname"><a href="glew_8h.html#a51e6c75d54b3a9fb93fbc880463c212c">GL_SRC_ALPHA</a></div><div class="ttdeci">#define GL_SRC_ALPHA</div><div class="ttdef"><b>Definition:</b> glew.h:358</div></div>
+<div class="ttc" id="aglfw3_8h_html_a44f3a6b4261fbe351e0b950b0f372e12"><div class="ttname"><a href="glfw3_8h.html#a44f3a6b4261fbe351e0b950b0f372e12">GLFW_OPENGL_PROFILE</a></div><div class="ttdeci">#define GLFW_OPENGL_PROFILE</div><div class="ttdef"><b>Definition:</b> glfw3.h:658</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_graphics_html_abf668a5d285131d7a065fdf806f0e4c6"><div class="ttname"><a href="classu22_1_1graphics_1_1_graphics.html#abf668a5d285131d7a065fdf806f0e4c6">u22::graphics::Graphics::Initialize</a></div><div class="ttdeci">bool Initialize(const std::shared_ptr&lt; u22::Window &gt; &amp;window)</div><div class="ttdoc">初期化</div><div class="ttdef"><b>Definition:</b> Graphics.cpp:108</div></div>
+<div class="ttc" id="aclassu22_1_1utility_1_1_graphics_utilities_html_a60a3bfa562bab1b7a3c8def9712aa448"><div class="ttname"><a href="classu22_1_1utility_1_1_graphics_utilities.html#a60a3bfa562bab1b7a3c8def9712aa448">u22::utility::GraphicsUtilities::Setup</a></div><div class="ttdeci">static bool Setup(void)</div><div class="ttdoc">セットアップ</div><div class="ttdef"><b>Definition:</b> GraphicsUtilities.cpp:9</div></div>
+<div class="ttc" id="aglew_8h_html_a982341cb30016caa07a4e46228a71ffa"><div class="ttname"><a href="glew_8h.html#a982341cb30016caa07a4e46228a71ffa">GL_DEPTH</a></div><div class="ttdeci">#define GL_DEPTH</div><div class="ttdef"><b>Definition:</b> glew.h:671</div></div>
+<div class="ttc" id="aglfw3_8h_html_ac877fe3b627d21ef3a0a23e0a73ba8c5"><div class="ttname"><a href="glfw3_8h.html#ac877fe3b627d21ef3a0a23e0a73ba8c5">GLFW_FALSE</a></div><div class="ttdeci">#define GLFW_FALSE</div><div class="ttdoc">Zero.</div><div class="ttdef"><b>Definition:</b> glfw3.h:250</div></div>
+<div class="ttc" id="aglew_8h_html_aa290e8f9ee6f6862778355aa22bb0b13"><div class="ttname"><a href="glew_8h.html#aa290e8f9ee6f6862778355aa22bb0b13">GL_BLEND</a></div><div class="ttdeci">#define GL_BLEND</div><div class="ttdef"><b>Definition:</b> glew.h:485</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_graphics_html_a4778c5d692c412b71548552438125ee5"><div class="ttname"><a href="classu22_1_1graphics_1_1_graphics.html#a4778c5d692c412b71548552438125ee5">u22::graphics::Graphics::ClearTarget</a></div><div class="ttdeci">void ClearTarget(const u22::math::Vector4F &amp;color, float depth, float stencil)</div><div class="ttdoc">クリア</div><div class="ttdef"><b>Definition:</b> Graphics.cpp:85</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_graphics_html_a1f1a9f8af2bdb8289d24c50717187319"><div class="ttname"><a href="classu22_1_1graphics_1_1_graphics.html#a1f1a9f8af2bdb8289d24c50717187319">u22::graphics::Graphics::Graphics</a></div><div class="ttdeci">Graphics()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> Graphics.cpp:66</div></div>
+<div class="ttc" id="anamespaceu22_1_1graphics_html_aeac9e83f7ce88cab997836ce2a61f77eace9291906a4c3b042650b70d7f3b152e"><div class="ttname"><a href="namespaceu22_1_1graphics.html#aeac9e83f7ce88cab997836ce2a61f77eace9291906a4c3b042650b70d7f3b152e">u22::graphics::EffectShaderType::Rectangle</a></div><div class="ttdeci">@ Rectangle</div></div>
+<div class="ttc" id="aglew_8h_html_acfd692f7e3361a218a542300f35ea816"><div class="ttname"><a href="glew_8h.html#acfd692f7e3361a218a542300f35ea816">glDisable</a></div><div class="ttdeci">GLAPI void GLAPIENTRY glDisable(GLenum cap)</div></div>
+<div class="ttc" id="aglew_8h_html_a1beaf822e5a901dc3fe429b68efb77d4"><div class="ttname"><a href="glew_8h.html#a1beaf822e5a901dc3fe429b68efb77d4">glEnable</a></div><div class="ttdeci">GLAPI void GLAPIENTRY glEnable(GLenum cap)</div></div>
+<div class="ttc" id="aglew_8h_html_a06316bc3c17db78ce93419fb208945ba"><div class="ttname"><a href="glew_8h.html#a06316bc3c17db78ce93419fb208945ba">GL_TRUE</a></div><div class="ttdeci">#define GL_TRUE</div><div class="ttdef"><b>Definition:</b> glew.h:321</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_graphics_html_a8f6c61bef2f5aa08a2bd533f22ac99ae"><div class="ttname"><a href="classu22_1_1graphics_1_1_graphics.html#a8f6c61bef2f5aa08a2bd533f22ac99ae">u22::graphics::Graphics::Release</a></div><div class="ttdeci">bool Release(void)</div><div class="ttdoc">解放</div><div class="ttdef"><b>Definition:</b> Graphics.cpp:131</div></div>
+<div class="ttc" id="aglfw3_8h_html_a31aca791e4b538c4e4a771eb95cc2d07"><div class="ttname"><a href="glfw3_8h.html#a31aca791e4b538c4e4a771eb95cc2d07">GLFW_CONTEXT_VERSION_MINOR</a></div><div class="ttdeci">#define GLFW_CONTEXT_VERSION_MINOR</div><div class="ttdef"><b>Definition:</b> glfw3.h:653</div></div>
+<div class="ttc" id="aglfw3_8h_html_a13d24b12465da8b28985f46c8557925b"><div class="ttname"><a href="glfw3_8h.html#a13d24b12465da8b28985f46c8557925b">GLFW_OPENGL_FORWARD_COMPAT</a></div><div class="ttdeci">#define GLFW_OPENGL_FORWARD_COMPAT</div><div class="ttdef"><b>Definition:</b> glfw3.h:656</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_graphics_html_a6de61f19dbe411e98d136bfba61c3e88"><div class="ttname"><a href="classu22_1_1graphics_1_1_graphics.html#a6de61f19dbe411e98d136bfba61c3e88">u22::graphics::Graphics::RenderStart</a></div><div class="ttdeci">void RenderStart(void)</div><div class="ttdoc">描画開始</div><div class="ttdef"><b>Definition:</b> Graphics.cpp:94</div></div>
+<div class="ttc" id="aglfw3_8h_html_afe5e4922de1f9932d7e9849bb053b0c0"><div class="ttname"><a href="glfw3_8h.html#afe5e4922de1f9932d7e9849bb053b0c0">GLFW_CONTEXT_VERSION_MAJOR</a></div><div class="ttdeci">#define GLFW_CONTEXT_VERSION_MAJOR</div><div class="ttdef"><b>Definition:</b> glfw3.h:652</div></div>
+<div class="ttc" id="astruct_f_t___library_rec___html"><div class="ttname"><a href="struct_f_t___library_rec__.html">FT_LibraryRec_</a></div><div class="ttdef"><b>Definition:</b> ftobjs.h:894</div></div>
+<div class="ttc" id="aglew_8h_html_abe3e281237b175db178879e0988f5a78"><div class="ttname"><a href="glew_8h.html#abe3e281237b175db178879e0988f5a78">GL_STENCIL_BUFFER_BIT</a></div><div class="ttdeci">#define GL_STENCIL_BUFFER_BIT</div><div class="ttdef"><b>Definition:</b> glew.h:365</div></div>
+<div class="ttc" id="aglew_8h_html_aa3926eb5e008f14829baa8d72435215f"><div class="ttname"><a href="glew_8h.html#aa3926eb5e008f14829baa8d72435215f">GL_ONE_MINUS_SRC_ALPHA</a></div><div class="ttdeci">#define GL_ONE_MINUS_SRC_ALPHA</div><div class="ttdef"><b>Definition:</b> glew.h:359</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_graphics_html_a1c9354efd30cb2790bd3331561f4941e"><div class="ttname"><a href="classu22_1_1graphics_1_1_graphics.html#a1c9354efd30cb2790bd3331561f4941e">u22::graphics::Graphics::GetEffectShader</a></div><div class="ttdeci">std::shared_ptr&lt; u22::graphics::EffectShader &gt; GetEffectShader(u22::graphics::EffectShaderType type) const</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> Graphics.cpp:81</div></div>
+<div class="ttc" id="agroup__init_html_gab41771f0215a2e0afb4cf1cf98082d40"><div class="ttname"><a href="group__init.html#gab41771f0215a2e0afb4cf1cf98082d40">glfwInit</a></div><div class="ttdeci">GLFWAPI int glfwInit(void)</div><div class="ttdoc">Initializes the GLFW library.</div></div>
+<div class="ttc" id="aglew_8h_html_a771c92e99534aa263a608bf8f1df232f"><div class="ttname"><a href="glew_8h.html#a771c92e99534aa263a608bf8f1df232f">GLEW_ARB_vertex_program</a></div><div class="ttdeci">#define GLEW_ARB_vertex_program</div><div class="ttdef"><b>Definition:</b> glew.h:8222</div></div>
+<div class="ttc" id="aglew_8h_html_a411ef2829ad14972de3e9c74b158cf33"><div class="ttname"><a href="glew_8h.html#a411ef2829ad14972de3e9c74b158cf33">GLEW_OK</a></div><div class="ttdeci">#define GLEW_OK</div><div class="ttdef"><b>Definition:</b> glew.h:23622</div></div>
+<div class="ttc" id="a_graphics_8h_html"><div class="ttname"><a href="_graphics_8h.html">Graphics.h</a></div></div>
+<div class="ttc" id="aglew_8h_html_aef2a9e9a4b130bc4de57514327847b4f"><div class="ttname"><a href="glew_8h.html#aef2a9e9a4b130bc4de57514327847b4f">GL_DEPTH_BUFFER_BIT</a></div><div class="ttdeci">#define GL_DEPTH_BUFFER_BIT</div><div class="ttdef"><b>Definition:</b> glew.h:341</div></div>
+<div class="ttc" id="aglew_8h_html_ab96734b878496b7f1d84b854a0cc072c"><div class="ttname"><a href="glew_8h.html#ab96734b878496b7f1d84b854a0cc072c">glCullFace</a></div><div class="ttdeci">GLAPI void GLAPIENTRY glCullFace(GLenum mode)</div></div>
+<div class="ttc" id="a_camera_8h_html"><div class="ttname"><a href="_camera_8h.html">Camera.h</a></div></div>
+<div class="ttc" id="anamespaceu22_1_1graphics_html_aeac9e83f7ce88cab997836ce2a61f77e"><div class="ttname"><a href="namespaceu22_1_1graphics.html#aeac9e83f7ce88cab997836ce2a61f77e">u22::graphics::EffectShaderType</a></div><div class="ttdeci">EffectShaderType</div><div class="ttdef"><b>Definition:</b> GraphicsDefine.h:6</div></div>
+<div class="ttc" id="a_effect_shader_8h_html"><div class="ttname"><a href="_effect_shader_8h.html">EffectShader.h</a></div></div>
+<div class="ttc" id="aglew_8h_html_af339551012daa99fef8c4d313e98b546"><div class="ttname"><a href="glew_8h.html#af339551012daa99fef8c4d313e98b546">glClearColor</a></div><div class="ttdeci">GLAPI void GLAPIENTRY glClearColor(GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha)</div></div>
+<div class="ttc" id="afreetype_8h_html_af93e2afa8ab5ba5675ae8d67b84df079"><div class="ttname"><a href="freetype_8h.html#af93e2afa8ab5ba5675ae8d67b84df079">FT_Init_FreeType</a></div><div class="ttdeci">FT_Init_FreeType(FT_Library *alibrary)</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_graphics_html_ad150a98adbbbe166968cda61c228389a"><div class="ttname"><a href="classu22_1_1graphics_1_1_graphics.html#ad150a98adbbbe166968cda61c228389a">u22::graphics::Graphics::GetFontPtr</a></div><div class="ttdeci">FT_Library GetFontPtr(void) const</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> Graphics.cpp:77</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_graphics_html"><div class="ttname"><a href="classu22_1_1graphics_1_1_graphics.html">u22::graphics::Graphics</a></div><div class="ttdef"><b>Definition:</b> Graphics.h:17</div></div>
+<div class="ttc" id="aglfw3_8h_html_adba13c7a1b3aa40831eb2beedbd5bd1d"><div class="ttname"><a href="glfw3_8h.html#adba13c7a1b3aa40831eb2beedbd5bd1d">GLFW_RESIZABLE</a></div><div class="ttdeci">#define GLFW_RESIZABLE</div><div class="ttdef"><b>Definition:</b> glfw3.h:627</div></div>
+<div class="ttc" id="aglew_8h_html_af39d420d8826819cb0108c6f1be0dc1b"><div class="ttname"><a href="glew_8h.html#af39d420d8826819cb0108c6f1be0dc1b">glewInit</a></div><div class="ttdeci">GLEWAPI GLenum GLEWAPIENTRY glewInit(void)</div></div>
+<div class="ttc" id="aglew_8h_html_a688ad6fbf908a39f7197da6d4e4dd083"><div class="ttname"><a href="glew_8h.html#a688ad6fbf908a39f7197da6d4e4dd083">GL_BACK</a></div><div class="ttdeci">#define GL_BACK</div><div class="ttdef"><b>Definition:</b> glew.h:371</div></div>
+<div class="ttc" id="agroup__window_html_ga69c40728499720bef8a49aa925ea0efa"><div class="ttname"><a href="group__window.html#ga69c40728499720bef8a49aa925ea0efa">glfwWindowHint</a></div><div class="ttdeci">GLFWAPI void glfwWindowHint(int hint, int value)</div><div class="ttdoc">Sets the specified window hint to the desired value.</div></div>
+<div class="ttc" id="aglew_8h_html_a8c4f153ed20a741aaae952650fec46f0"><div class="ttname"><a href="glew_8h.html#a8c4f153ed20a741aaae952650fec46f0">GL_CULL_FACE</a></div><div class="ttdeci">#define GL_CULL_FACE</div><div class="ttdef"><b>Definition:</b> glew.h:435</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_graphics_html_a6b1cf4cff697b8457de73f067860a33d"><div class="ttname"><a href="classu22_1_1graphics_1_1_graphics.html#a6b1cf4cff697b8457de73f067860a33d">u22::graphics::Graphics::~Graphics</a></div><div class="ttdeci">~Graphics()</div><div class="ttdoc">デストラクタ</div><div class="ttdef"><b>Definition:</b> Graphics.cpp:74</div></div>
+<div class="ttc" id="aclassu22_1_1utility_1_1_graphics_utilities_html_aa52f6d57416c0d1dba2f446721914cfa"><div class="ttname"><a href="classu22_1_1utility_1_1_graphics_utilities.html#aa52f6d57416c0d1dba2f446721914cfa">u22::utility::GraphicsUtilities::Cleanup</a></div><div class="ttdeci">static bool Cleanup(void)</div><div class="ttdoc">クリーンナップ</div><div class="ttdef"><b>Definition:</b> GraphicsUtilities.cpp:22</div></div>
+<div class="ttc" id="aglfw3_8h_html_af094bb16da76f66ebceb19ee213b3de8"><div class="ttname"><a href="glfw3_8h.html#af094bb16da76f66ebceb19ee213b3de8">GLFW_OPENGL_CORE_PROFILE</a></div><div class="ttdeci">#define GLFW_OPENGL_CORE_PROFILE</div><div class="ttdef"><b>Definition:</b> glfw3.h:672</div></div>
+<div class="ttc" id="aglfw3_8h_html_a2cdf86fdcb7722fb8829c4e201607535"><div class="ttname"><a href="glfw3_8h.html#a2cdf86fdcb7722fb8829c4e201607535">GLFW_SAMPLES</a></div><div class="ttdeci">#define GLFW_SAMPLES</div><div class="ttdef"><b>Definition:</b> glfw3.h:646</div></div>
+<div class="ttc" id="aglew_8h_html_a8e13e72c3a7bac1f4685fcf3d32bf98c"><div class="ttname"><a href="glew_8h.html#a8e13e72c3a7bac1f4685fcf3d32bf98c">glBlendFunc</a></div><div class="ttdeci">GLAPI void GLAPIENTRY glBlendFunc(GLenum sfactor, GLenum dfactor)</div></div>
+<div class="ttc" id="aglew_8h_html_a947db9ff944c4b78e652144c3dd1060c"><div class="ttname"><a href="glew_8h.html#a947db9ff944c4b78e652144c3dd1060c">GL_COLOR_BUFFER_BIT</a></div><div class="ttdeci">#define GL_COLOR_BUFFER_BIT</div><div class="ttdef"><b>Definition:</b> glew.h:754</div></div>
+<div class="ttc" id="aglew_8h_html_afa8b9e2bcb7fed76f69b2182bc2f3d73"><div class="ttname"><a href="glew_8h.html#afa8b9e2bcb7fed76f69b2182bc2f3d73">glFrontFace</a></div><div class="ttdeci">GLAPI void GLAPIENTRY glFrontFace(GLenum mode)</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

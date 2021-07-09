@@ -1,0 +1,474 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: External/stb/stb_sprintf.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_443fc37f241ba4018364a998c18d007b.html">External</a></li><li class="navelem"><a class="el" href="dir_8cdafb5277d0f188f0ea90f41e2137ea.html">stb</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#typedef-members">型定義</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">stb_sprintf.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdarg.h&gt;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+stb_sprintf.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="stb__sprintf_8h__incl.png" border="0" usemap="#a_external_2stb_2stb__sprintf_8h" alt=""/></div>
+<map name="_external_2stb_2stb__sprintf_8h" id="_external_2stb_2stb__sprintf_8h">
+<area shape="rect" title=" " alt="" coords="5,5,172,32"/>
+<area shape="rect" title=" " alt="" coords="7,80,77,107"/>
+<area shape="rect" title=" " alt="" coords="101,80,169,107"/>
+</map>
+</div>
+</div>
+<p><a href="stb__sprintf_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a56ab01661c19b78103cbc14d4efc6b87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__sprintf_8h.html#a56ab01661c19b78103cbc14d4efc6b87">STBI__ASAN</a></td></tr>
+<tr class="separator:a56ab01661c19b78103cbc14d4efc6b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fcae98d41a743f93ac74ca23ab5151e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__sprintf_8h.html#a5fcae98d41a743f93ac74ca23ab5151e">STBSP__PUBLICDEC</a>&#160;&#160;&#160;extern</td></tr>
+<tr class="separator:a5fcae98d41a743f93ac74ca23ab5151e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0385a47e69ebb16d03176b698bb6e10a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__sprintf_8h.html#a0385a47e69ebb16d03176b698bb6e10a">STBSP__PUBLICDEF</a>&#160;&#160;&#160;<a class="el" href="stb__sprintf_8h.html#a56ab01661c19b78103cbc14d4efc6b87">STBI__ASAN</a></td></tr>
+<tr class="separator:a0385a47e69ebb16d03176b698bb6e10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf994065406c4849a79e2ae349179f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__sprintf_8h.html#aedf994065406c4849a79e2ae349179f5">STB_SPRINTF_MIN</a>&#160;&#160;&#160;512</td></tr>
+<tr class="separator:aedf994065406c4849a79e2ae349179f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18552b475bbdaf624249ce1bc678ec73"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__sprintf_8h.html#a18552b475bbdaf624249ce1bc678ec73">STB_SPRINTF_DECORATE</a>(name)&#160;&#160;&#160;stbsp_##name</td></tr>
+<tr class="separator:a18552b475bbdaf624249ce1bc678ec73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:a891e1e4e3582734d5cb8f2b1c9714278"><td class="memItemLeft" align="right" valign="top">typedef char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__sprintf_8h.html#a891e1e4e3582734d5cb8f2b1c9714278">STBSP_SPRINTFCB</a>(char *buf, void *user, int len)</td></tr>
+<tr class="separator:a891e1e4e3582734d5cb8f2b1c9714278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a5921ee084282c796114454863ebdb987"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__sprintf_8h.html#a0385a47e69ebb16d03176b698bb6e10a">STBSP__PUBLICDEF</a> int <a class="el" href="stb__sprintf_8h.html#a18552b475bbdaf624249ce1bc678ec73">STB_SPRINTF_DECORATE</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__sprintf_8h.html#a5921ee084282c796114454863ebdb987">vsprintf</a> (char *buf, char const *fmt, va_list va)</td></tr>
+<tr class="separator:a5921ee084282c796114454863ebdb987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e681f47bc63d07fa62ae4815e11cdcb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__sprintf_8h.html#a0385a47e69ebb16d03176b698bb6e10a">STBSP__PUBLICDEF</a> int <a class="el" href="stb__sprintf_8h.html#a18552b475bbdaf624249ce1bc678ec73">STB_SPRINTF_DECORATE</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__sprintf_8h.html#a6e681f47bc63d07fa62ae4815e11cdcb">vsnprintf</a> (char *buf, int count, char const *fmt, va_list va)</td></tr>
+<tr class="separator:a6e681f47bc63d07fa62ae4815e11cdcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d6aad80f7f147a33c0378d381782312"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__sprintf_8h.html#a0385a47e69ebb16d03176b698bb6e10a">STBSP__PUBLICDEF</a> int <a class="el" href="stb__sprintf_8h.html#a18552b475bbdaf624249ce1bc678ec73">STB_SPRINTF_DECORATE</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__sprintf_8h.html#a2d6aad80f7f147a33c0378d381782312">sprintf</a> (char *buf, char const *fmt,...)</td></tr>
+<tr class="separator:a2d6aad80f7f147a33c0378d381782312"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26ad87ea10d61ad98d8c0acfcf6cd77d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__sprintf_8h.html#a0385a47e69ebb16d03176b698bb6e10a">STBSP__PUBLICDEF</a> int <a class="el" href="stb__sprintf_8h.html#a18552b475bbdaf624249ce1bc678ec73">STB_SPRINTF_DECORATE</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__sprintf_8h.html#a26ad87ea10d61ad98d8c0acfcf6cd77d">snprintf</a> (char *buf, int count, char const *fmt,...)</td></tr>
+<tr class="separator:a26ad87ea10d61ad98d8c0acfcf6cd77d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b263c74f48c751e4918b1852fb06380"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__sprintf_8h.html#a0385a47e69ebb16d03176b698bb6e10a">STBSP__PUBLICDEF</a> int <a class="el" href="stb__sprintf_8h.html#a18552b475bbdaf624249ce1bc678ec73">STB_SPRINTF_DECORATE</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__sprintf_8h.html#a8b263c74f48c751e4918b1852fb06380">vsprintfcb</a> (<a class="el" href="stb__sprintf_8h.html#a891e1e4e3582734d5cb8f2b1c9714278">STBSP_SPRINTFCB</a> *callback, void *user, char *buf, char const *fmt, va_list va)</td></tr>
+<tr class="separator:a8b263c74f48c751e4918b1852fb06380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af08e839fb85363c68c7b1eae942d2955"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__sprintf_8h.html#a0385a47e69ebb16d03176b698bb6e10a">STBSP__PUBLICDEF</a> void <a class="el" href="stb__sprintf_8h.html#a18552b475bbdaf624249ce1bc678ec73">STB_SPRINTF_DECORATE</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__sprintf_8h.html#af08e839fb85363c68c7b1eae942d2955">set_separators</a> (char comma, char period)</td></tr>
+<tr class="separator:af08e839fb85363c68c7b1eae942d2955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">マクロ定義詳解</h2>
+<a id="a18552b475bbdaf624249ce1bc678ec73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18552b475bbdaf624249ce1bc678ec73">&#9670;&nbsp;</a></span>STB_SPRINTF_DECORATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STB_SPRINTF_DECORATE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name</td><td>)</td>
+          <td>&#160;&#160;&#160;stbsp_##name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aedf994065406c4849a79e2ae349179f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedf994065406c4849a79e2ae349179f5">&#9670;&nbsp;</a></span>STB_SPRINTF_MIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STB_SPRINTF_MIN&#160;&#160;&#160;512</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56ab01661c19b78103cbc14d4efc6b87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56ab01661c19b78103cbc14d4efc6b87">&#9670;&nbsp;</a></span>STBI__ASAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STBI__ASAN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5fcae98d41a743f93ac74ca23ab5151e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fcae98d41a743f93ac74ca23ab5151e">&#9670;&nbsp;</a></span>STBSP__PUBLICDEC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STBSP__PUBLICDEC&#160;&#160;&#160;extern</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0385a47e69ebb16d03176b698bb6e10a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0385a47e69ebb16d03176b698bb6e10a">&#9670;&nbsp;</a></span>STBSP__PUBLICDEF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STBSP__PUBLICDEF&#160;&#160;&#160;<a class="el" href="stb__sprintf_8h.html#a56ab01661c19b78103cbc14d4efc6b87">STBI__ASAN</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">型定義詳解</h2>
+<a id="a891e1e4e3582734d5cb8f2b1c9714278"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a891e1e4e3582734d5cb8f2b1c9714278">&#9670;&nbsp;</a></span>STBSP_SPRINTFCB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef char* STBSP_SPRINTFCB(char *buf, void *user, int len)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="af08e839fb85363c68c7b1eae942d2955"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af08e839fb85363c68c7b1eae942d2955">&#9670;&nbsp;</a></span>set_separators()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__sprintf_8h.html#a0385a47e69ebb16d03176b698bb6e10a">STBSP__PUBLICDEF</a> void <a class="el" href="stb__sprintf_8h.html#a18552b475bbdaf624249ce1bc678ec73">STB_SPRINTF_DECORATE</a>() set_separators </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>comma</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>period</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26ad87ea10d61ad98d8c0acfcf6cd77d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26ad87ea10d61ad98d8c0acfcf6cd77d">&#9670;&nbsp;</a></span>snprintf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__sprintf_8h.html#a0385a47e69ebb16d03176b698bb6e10a">STBSP__PUBLICDEF</a> int <a class="el" href="stb__sprintf_8h.html#a18552b475bbdaf624249ce1bc678ec73">STB_SPRINTF_DECORATE</a>() snprintf </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d6aad80f7f147a33c0378d381782312"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d6aad80f7f147a33c0378d381782312">&#9670;&nbsp;</a></span>sprintf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__sprintf_8h.html#a0385a47e69ebb16d03176b698bb6e10a">STBSP__PUBLICDEF</a> int <a class="el" href="stb__sprintf_8h.html#a18552b475bbdaf624249ce1bc678ec73">STB_SPRINTF_DECORATE</a>() sprintf </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e681f47bc63d07fa62ae4815e11cdcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e681f47bc63d07fa62ae4815e11cdcb">&#9670;&nbsp;</a></span>vsnprintf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__sprintf_8h.html#a0385a47e69ebb16d03176b698bb6e10a">STBSP__PUBLICDEF</a> int <a class="el" href="stb__sprintf_8h.html#a18552b475bbdaf624249ce1bc678ec73">STB_SPRINTF_DECORATE</a>() vsnprintf </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>va</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5921ee084282c796114454863ebdb987"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5921ee084282c796114454863ebdb987">&#9670;&nbsp;</a></span>vsprintf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__sprintf_8h.html#a0385a47e69ebb16d03176b698bb6e10a">STBSP__PUBLICDEF</a> int <a class="el" href="stb__sprintf_8h.html#a18552b475bbdaf624249ce1bc678ec73">STB_SPRINTF_DECORATE</a>() vsprintf </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>va</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="stb__sprintf_8h_a5921ee084282c796114454863ebdb987_icgraph.png" border="0" usemap="#astb__sprintf_8h_a5921ee084282c796114454863ebdb987_icgraph" alt=""/></div>
+<map name="stb__sprintf_8h_a5921ee084282c796114454863ebdb987_icgraph" id="stb__sprintf_8h_a5921ee084282c796114454863ebdb987_icgraph">
+<area shape="rect" title=" " alt="" coords="431,860,493,887"/>
+<area shape="rect" href="namespaceglm_1_1detail.html#acd5305bbd1c5417b1eb770faf8229d14" title=" " alt="" coords="256,860,383,887"/>
+<area shape="rect" href="structglm_1_1detail_1_1compute__to__string_3_01mat_3_012_00_012_00_01_t_00_01_q_01_4_01_4.html#a107a920bb722084d0518a0ff50e8c118" title=" " alt="" coords="31,5,182,61"/>
+<area shape="rect" href="structglm_1_1detail_1_1compute__to__string_3_01mat_3_012_00_013_00_01_t_00_01_q_01_4_01_4.html#a1459d67dba1cee7c2467271a97fab304" title=" " alt="" coords="31,85,182,141"/>
+<area shape="rect" href="structglm_1_1detail_1_1compute__to__string_3_01mat_3_012_00_014_00_01_t_00_01_q_01_4_01_4.html#a33aa32e523377e9a404a6eb7b4048e76" title=" " alt="" coords="31,165,182,221"/>
+<area shape="rect" href="structglm_1_1detail_1_1compute__to__string_3_01mat_3_013_00_012_00_01_t_00_01_q_01_4_01_4.html#a1d5c4ef4e4daf9c8f5c0b85f098d0efd" title=" " alt="" coords="31,245,182,301"/>
+<area shape="rect" href="structglm_1_1detail_1_1compute__to__string_3_01mat_3_013_00_013_00_01_t_00_01_q_01_4_01_4.html#aebf52cc023615d49c480e8cde7cda457" title=" " alt="" coords="31,325,182,381"/>
+<area shape="rect" href="structglm_1_1detail_1_1compute__to__string_3_01mat_3_013_00_014_00_01_t_00_01_q_01_4_01_4.html#ae80e1ea4b5f28839ab5e906afe2811c2" title=" " alt="" coords="31,405,182,461"/>
+<area shape="rect" href="structglm_1_1detail_1_1compute__to__string_3_01mat_3_014_00_012_00_01_t_00_01_q_01_4_01_4.html#af5b35e5a4cb38e51bcde9ae1eba1d126" title=" " alt="" coords="31,485,182,541"/>
+<area shape="rect" href="structglm_1_1detail_1_1compute__to__string_3_01mat_3_014_00_013_00_01_t_00_01_q_01_4_01_4.html#a25c5199fbde991582ba0afe092c4ec17" title=" " alt="" coords="31,565,182,621"/>
+<area shape="rect" href="structglm_1_1detail_1_1compute__to__string_3_01mat_3_014_00_014_00_01_t_00_01_q_01_4_01_4.html#a2bcb205f92a1451a9292f463bbb41288" title=" " alt="" coords="31,645,182,701"/>
+<area shape="rect" href="structglm_1_1detail_1_1compute__to__string_3_01qua_3_01_t_00_01_q_01_4_01_4.html#a23a7c8c0bc9ac5c7abaab0e1f9165581" title=" " alt="" coords="32,725,181,781"/>
+<area shape="rect" href="structglm_1_1detail_1_1compute__to__string_3_01tdualquat_3_01_t_00_01_q_01_4_01_4.html#a312a529ab87f8e85ad185676dd31267d" title=" " alt="" coords="35,805,179,861"/>
+<area shape="rect" href="structglm_1_1detail_1_1compute__to__string_3_01vec_3_011_00_01bool_00_01_q_01_4_01_4.html#ad6119763fcff0254a57ae8a51a9f5915" title=" " alt="" coords="24,885,189,941"/>
+<area shape="rect" href="structglm_1_1detail_1_1compute__to__string_3_01vec_3_011_00_01_t_00_01_q_01_4_01_4.html#ad8aa70be55855aba1c6c6796caf5b0cf" title=" " alt="" coords="33,965,181,1021"/>
+<area shape="rect" href="structglm_1_1detail_1_1compute__to__string_3_01vec_3_012_00_01bool_00_01_q_01_4_01_4.html#a08b55aa0b86bc8176b9fa02f0520c434" title=" " alt="" coords="24,1045,189,1101"/>
+<area shape="rect" href="structglm_1_1detail_1_1compute__to__string_3_01vec_3_012_00_01_t_00_01_q_01_4_01_4.html#a53a9c1f76338785f54bb2638b69517ef" title=" " alt="" coords="33,1125,181,1181"/>
+<area shape="rect" href="structglm_1_1detail_1_1compute__to__string_3_01vec_3_013_00_01bool_00_01_q_01_4_01_4.html#a05dff60a280662ac95d5e22eae28c730" title=" " alt="" coords="24,1205,189,1261"/>
+<area shape="rect" href="structglm_1_1detail_1_1compute__to__string_3_01vec_3_013_00_01_t_00_01_q_01_4_01_4.html#a61d57060d3b0c3f2dd672f7b8cf962a5" title=" " alt="" coords="33,1285,181,1341"/>
+<area shape="rect" href="structglm_1_1detail_1_1compute__to__string_3_01vec_3_014_00_01bool_00_01_q_01_4_01_4.html#acc9ef66b31a0aaa989ee98614e340e27" title=" " alt="" coords="24,1365,189,1421"/>
+<area shape="rect" href="structglm_1_1detail_1_1compute__to__string_3_01vec_3_014_00_01_t_00_01_q_01_4_01_4.html#a7ad9df3e448b98637f2fa56c1b20817d" title=" " alt="" coords="33,1445,181,1501"/>
+<area shape="rect" href="classu22_1_1audio_1_1_sound_file.html#a732e2b4dcd7b8747dd737a3f500d5239" title="読み込み" alt="" coords="33,1526,181,1567"/>
+<area shape="rect" href="classu22_1_1audio_1_1_sound_stream_buffer.html#af0829da4b04fa8d57dd871b0048fb73c" title="読み込み" alt="" coords="5,1591,208,1633"/>
+<area shape="rect" href="classu22_1_1audio_1_1_sound_file.html#a6c886a5c51ec06263db0f32a9c2010c7" title="開く" alt="" coords="33,1657,181,1698"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8b263c74f48c751e4918b1852fb06380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b263c74f48c751e4918b1852fb06380">&#9670;&nbsp;</a></span>vsprintfcb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__sprintf_8h.html#a0385a47e69ebb16d03176b698bb6e10a">STBSP__PUBLICDEF</a> int <a class="el" href="stb__sprintf_8h.html#a18552b475bbdaf624249ce1bc678ec73">STB_SPRINTF_DECORATE</a>() vsprintfcb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__sprintf_8h.html#a891e1e4e3582734d5cb8f2b1c9714278">STBSP_SPRINTFCB</a> *&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>va</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

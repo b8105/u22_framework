@@ -1,0 +1,73 @@
+\hypertarget{ftrfork_8h}{}\doxysection{freetype/internal/ftrfork.h ファイル}
+\label{ftrfork_8h}\index{freetype/internal/ftrfork.h@{freetype/internal/ftrfork.h}}
+{\ttfamily \#include $<$freetype/internal/ftobjs.\+h$>$}\newline
+ftrfork.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ftrfork_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_f_t___r_fork___ref__}{F\+T\+\_\+\+R\+Fork\+\_\+\+Ref\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ftrfork_8h_a82d22e239187d650de719ed758f76163}{F\+T\+\_\+\+R\+A\+C\+C\+E\+S\+S\+\_\+\+N\+\_\+\+R\+U\+L\+ES}}~9
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_f_t___r_fork___ref__}{F\+T\+\_\+\+R\+Fork\+\_\+\+Ref\+\_\+}} \mbox{\hyperlink{ftrfork_8h_a52aa04e900ccef374006f7da1d280204}{F\+T\+\_\+\+R\+Fork\+\_\+\+Ref}}
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ftrfork_8h_a586950696c34eee1e576563c24208bf4}{F\+T\+\_\+\+Raccess\+\_\+\+Guess}} (\mbox{\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\+T\+\_\+\+Library}} library, \mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream, char $\ast$base\+\_\+name, char $\ast$$\ast$new\+\_\+names, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} $\ast$offsets, \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}} $\ast$errors)
+\item 
+\mbox{\hyperlink{ftrfork_8h_a7ab196be3a237c4dca8d2cde79ef08ca}{F\+T\+\_\+\+Raccess\+\_\+\+Get\+\_\+\+Header\+Info}} (\mbox{\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\+T\+\_\+\+Library}} library, \mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} rfork\+\_\+offset, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} $\ast$map\+\_\+offset, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} $\ast$rdata\+\_\+pos)
+\item 
+\mbox{\hyperlink{ftrfork_8h_aadb1b14e2154780d86ac856b7a788456}{F\+T\+\_\+\+Raccess\+\_\+\+Get\+\_\+\+Data\+Offsets}} (\mbox{\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\+T\+\_\+\+Library}} library, \mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} map\+\_\+offset, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} rdata\+\_\+pos, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} tag, \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} sort\+\_\+by\+\_\+res\+\_\+id, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} $\ast$$\ast$offsets, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} $\ast$count)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{ftrfork_8h_a82d22e239187d650de719ed758f76163}\label{ftrfork_8h_a82d22e239187d650de719ed758f76163}} 
+\index{ftrfork.h@{ftrfork.h}!FT\_RACCESS\_N\_RULES@{FT\_RACCESS\_N\_RULES}}
+\index{FT\_RACCESS\_N\_RULES@{FT\_RACCESS\_N\_RULES}!ftrfork.h@{ftrfork.h}}
+\doxysubsubsection{\texorpdfstring{FT\_RACCESS\_N\_RULES}{FT\_RACCESS\_N\_RULES}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+R\+A\+C\+C\+E\+S\+S\+\_\+\+N\+\_\+\+R\+U\+L\+ES~9}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{ftrfork_8h_a52aa04e900ccef374006f7da1d280204}\label{ftrfork_8h_a52aa04e900ccef374006f7da1d280204}} 
+\index{ftrfork.h@{ftrfork.h}!FT\_RFork\_Ref@{FT\_RFork\_Ref}}
+\index{FT\_RFork\_Ref@{FT\_RFork\_Ref}!ftrfork.h@{ftrfork.h}}
+\doxysubsubsection{\texorpdfstring{FT\_RFork\_Ref}{FT\_RFork\_Ref}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_f_t___r_fork___ref__}{F\+T\+\_\+\+R\+Fork\+\_\+\+Ref\+\_\+}} \mbox{\hyperlink{ftrfork_8h_a52aa04e900ccef374006f7da1d280204}{F\+T\+\_\+\+R\+Fork\+\_\+\+Ref}}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{ftrfork_8h_aadb1b14e2154780d86ac856b7a788456}\label{ftrfork_8h_aadb1b14e2154780d86ac856b7a788456}} 
+\index{ftrfork.h@{ftrfork.h}!FT\_Raccess\_Get\_DataOffsets@{FT\_Raccess\_Get\_DataOffsets}}
+\index{FT\_Raccess\_Get\_DataOffsets@{FT\_Raccess\_Get\_DataOffsets}!ftrfork.h@{ftrfork.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Raccess\_Get\_DataOffsets()}{FT\_Raccess\_Get\_DataOffsets()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Raccess\+\_\+\+Get\+\_\+\+Data\+Offsets (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\+T\+\_\+\+Library}}}]{library,  }\item[{\mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}}}]{stream,  }\item[{\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}}}]{map\+\_\+offset,  }\item[{\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}}}]{rdata\+\_\+pos,  }\item[{\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}}}]{tag,  }\item[{\mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}}}]{sort\+\_\+by\+\_\+res\+\_\+id,  }\item[{\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} $\ast$$\ast$}]{offsets,  }\item[{\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} $\ast$}]{count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftrfork_8h_a7ab196be3a237c4dca8d2cde79ef08ca}\label{ftrfork_8h_a7ab196be3a237c4dca8d2cde79ef08ca}} 
+\index{ftrfork.h@{ftrfork.h}!FT\_Raccess\_Get\_HeaderInfo@{FT\_Raccess\_Get\_HeaderInfo}}
+\index{FT\_Raccess\_Get\_HeaderInfo@{FT\_Raccess\_Get\_HeaderInfo}!ftrfork.h@{ftrfork.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Raccess\_Get\_HeaderInfo()}{FT\_Raccess\_Get\_HeaderInfo()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Raccess\+\_\+\+Get\+\_\+\+Header\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\+T\+\_\+\+Library}}}]{library,  }\item[{\mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}}}]{stream,  }\item[{\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}}}]{rfork\+\_\+offset,  }\item[{\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} $\ast$}]{map\+\_\+offset,  }\item[{\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} $\ast$}]{rdata\+\_\+pos }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftrfork_8h_a586950696c34eee1e576563c24208bf4}\label{ftrfork_8h_a586950696c34eee1e576563c24208bf4}} 
+\index{ftrfork.h@{ftrfork.h}!FT\_Raccess\_Guess@{FT\_Raccess\_Guess}}
+\index{FT\_Raccess\_Guess@{FT\_Raccess\_Guess}!ftrfork.h@{ftrfork.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Raccess\_Guess()}{FT\_Raccess\_Guess()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Raccess\+\_\+\+Guess (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\+T\+\_\+\+Library}}}]{library,  }\item[{\mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}}}]{stream,  }\item[{char $\ast$}]{base\+\_\+name,  }\item[{char $\ast$$\ast$}]{new\+\_\+names,  }\item[{\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} $\ast$}]{offsets,  }\item[{\mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}} $\ast$}]{errors }\end{DoxyParamCaption})}
+

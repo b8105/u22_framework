@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: Graphics/Texture.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64f7452aef2cdad98d34a70f5ea329e2.html">Graphics</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Texture.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_texture_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef U22_GRAPHICS_TEXTURE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define U22_GRAPHICS_TEXTURE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../Common/Common.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../Math/Vector2.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceu22_1_1graphics.html">u22::graphics</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classu22_1_1graphics_1_1_texture.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classu22_1_1graphics_1_1_texture.html">Texture</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> _id;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::string _name;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classu22_1_1math_1_1_vector2_3_01int_01_4.html">u22::math::Vector2I</a> _size;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classu22_1_1graphics_1_1_texture.html#ae0c458ee9bbc80acc6b1789360c88ff3">Texture</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classu22_1_1graphics_1_1_texture.html#a63f157e970580684b896be05f3d6178d">~Texture</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> <a class="code" href="classu22_1_1graphics_1_1_texture.html#a46db817f47dd2d63e1fdc33845adcd06">GetID</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classu22_1_1graphics_1_1_texture.html#aed0959216f24905db28c648e58718107">GetWidth</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classu22_1_1graphics_1_1_texture.html#a546a6dfc1da579c0ff4def78edcc64d6">GetHeight</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classu22_1_1math_1_1_vector2_3_01int_01_4.html">u22::math::Vector2I</a> <a class="code" href="classu22_1_1graphics_1_1_texture.html#a2f57714be8d0c6894c8e4e3933429dbf">GetSize</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1graphics_1_1_texture.html#a61f61574fdf3c54cf868a5624688440a">Generate</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1graphics_1_1_texture.html#aa4b8288485428fa5e9cec8be4c551714">TextureMapping</a>(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1graphics_1_1_texture.html#a5ee0f1c473265d1ea7b82a19b781e44f">SubImageUpdate</a>(<a class="code" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> offset_x, <a class="code" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> offset_y, <a class="code" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> width, <a class="code" href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a> height, <span class="keyword">const</span> <span class="keywordtype">void</span>* pixels);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classu22_1_1graphics_1_1_texture.html#a1a7298d6825fb55f270ae06ae8c9915f">Bind</a>(<a class="code" href="group__gtc__type__precision.html#ga822ca53a9ad412504532838906276a99">uint32_t</a> index = 0) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classu22_1_1graphics_1_1_texture.html#a2fb82c36f3bb1def50cc69a5039b13b2">UnBind</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1graphics_1_1_texture.html#a1bd6deedf450cd4ab55cec1480a52fe8">Load</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1graphics_1_1_texture.html#afe431254058db7bb51760ac1f13f5cd4">Release</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif // !U22_GRAPHICS_TEXTURE_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aglew_8h_html_a7ec02582a9b1c390908a2230c8e26c0b"><div class="ttname"><a href="glew_8h.html#a7ec02582a9b1c390908a2230c8e26c0b">GL_NEAREST</a></div><div class="ttdeci">#define GL_NEAREST</div><div class="ttdef"><b>Definition:</b> glew.h:717</div></div>
+<div class="ttc" id="anamespaceu22_1_1graphics_html"><div class="ttname"><a href="namespaceu22_1_1graphics.html">u22::graphics</a></div><div class="ttdef"><b>Definition:</b> Buffer.h:8</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_image_html"><div class="ttname"><a href="classu22_1_1graphics_1_1_image.html">u22::graphics::Image</a></div><div class="ttdef"><b>Definition:</b> Image.h:9</div></div>
+<div class="ttc" id="aftobjs_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="ftobjs_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> ftobjs.h:61</div></div>
+<div class="ttc" id="aglew_8h_html_ad8c26383a66e464f7a383399334de809"><div class="ttname"><a href="glew_8h.html#ad8c26383a66e464f7a383399334de809">glGetFloatv</a></div><div class="ttdeci">GLAPI void GLAPIENTRY glGetFloatv(GLenum pname, GLfloat *params)</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_texture_html_aa4b8288485428fa5e9cec8be4c551714"><div class="ttname"><a href="classu22_1_1graphics_1_1_texture.html#aa4b8288485428fa5e9cec8be4c551714">u22::graphics::Texture::TextureMapping</a></div><div class="ttdeci">bool TextureMapping(int width, int height)</div><div class="ttdoc">設定</div><div class="ttdef"><b>Definition:</b> Texture.cpp:36</div></div>
+<div class="ttc" id="aglew_8h_html_ac8dbabff536e520bc700960dadd8d787"><div class="ttname"><a href="glew_8h.html#ac8dbabff536e520bc700960dadd8d787">glTexParameteri</a></div><div class="ttdeci">GLAPI void GLAPIENTRY glTexParameteri(GLenum target, GLenum pname, GLint param)</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_texture_html_a1a7298d6825fb55f270ae06ae8c9915f"><div class="ttname"><a href="classu22_1_1graphics_1_1_texture.html#a1a7298d6825fb55f270ae06ae8c9915f">u22::graphics::Texture::Bind</a></div><div class="ttdeci">void Bind(uint32_t index=0) const</div><div class="ttdoc">使用</div><div class="ttdef"><b>Definition:</b> Texture.cpp:60</div></div>
+<div class="ttc" id="aglew_8h_html_adb2666717eedb30c430d1a371d897c76"><div class="ttname"><a href="glew_8h.html#adb2666717eedb30c430d1a371d897c76">glPixelStorei</a></div><div class="ttdeci">GLAPI void GLAPIENTRY glPixelStorei(GLenum pname, GLint param)</div></div>
+<div class="ttc" id="aglew_8h_html_ad4de17abefa73fa2ef53379f73b734be"><div class="ttname"><a href="glew_8h.html#ad4de17abefa73fa2ef53379f73b734be">GL_TEXTURE_2D</a></div><div class="ttdeci">#define GL_TEXTURE_2D</div><div class="ttdef"><b>Definition:</b> glew.h:11906</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_texture_html_aed0959216f24905db28c648e58718107"><div class="ttname"><a href="classu22_1_1graphics_1_1_texture.html#aed0959216f24905db28c648e58718107">u22::graphics::Texture::GetWidth</a></div><div class="ttdeci">int GetWidth(void) const</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> Texture.cpp:19</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_texture_html_a63f157e970580684b896be05f3d6178d"><div class="ttname"><a href="classu22_1_1graphics_1_1_texture.html#a63f157e970580684b896be05f3d6178d">u22::graphics::Texture::~Texture</a></div><div class="ttdeci">~Texture()</div><div class="ttdoc">デストラクタ</div><div class="ttdef"><b>Definition:</b> Texture.cpp:12</div></div>
+<div class="ttc" id="aglew_8h_html_a4552c48d4df9661fa173a189167c4816"><div class="ttname"><a href="glew_8h.html#a4552c48d4df9661fa173a189167c4816">GL_CLAMP</a></div><div class="ttdeci">#define GL_CLAMP</div><div class="ttdef"><b>Definition:</b> glew.h:727</div></div>
+<div class="ttc" id="a_image_8h_html"><div class="ttname"><a href="_image_8h.html">Image.h</a></div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_texture_html_afe431254058db7bb51760ac1f13f5cd4"><div class="ttname"><a href="classu22_1_1graphics_1_1_texture.html#afe431254058db7bb51760ac1f13f5cd4">u22::graphics::Texture::Release</a></div><div class="ttdeci">bool Release(void)</div><div class="ttdoc">解放</div><div class="ttdef"><b>Definition:</b> Texture.cpp:108</div></div>
+<div class="ttc" id="aglew_8h_html_a00b65957cb070504d8e364031b176737"><div class="ttname"><a href="glew_8h.html#a00b65957cb070504d8e364031b176737">GL_TEXTURE_MAX_ANISOTROPY_EXT</a></div><div class="ttdeci">#define GL_TEXTURE_MAX_ANISOTROPY_EXT</div><div class="ttdef"><b>Definition:</b> glew.h:12320</div></div>
+<div class="ttc" id="agroup__gtc__type__precision_html_ga822ca53a9ad412504532838906276a99"><div class="ttname"><a href="group__gtc__type__precision.html#ga822ca53a9ad412504532838906276a99">glm::uint32_t</a></div><div class="ttdeci">uint32 uint32_t</div><div class="ttdef"><b>Definition:</b> fwd.hpp:129</div></div>
+<div class="ttc" id="aglew_8h_html_a16cc91096144fc7048b45e2add14915b"><div class="ttname"><a href="glew_8h.html#a16cc91096144fc7048b45e2add14915b">GL_TEXTURE0</a></div><div class="ttdeci">#define GL_TEXTURE0</div><div class="ttdef"><b>Definition:</b> glew.h:1292</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_texture_html_ae0c458ee9bbc80acc6b1789360c88ff3"><div class="ttname"><a href="classu22_1_1graphics_1_1_texture.html#ae0c458ee9bbc80acc6b1789360c88ff3">u22::graphics::Texture::Texture</a></div><div class="ttdeci">Texture()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> Texture.cpp:6</div></div>
+<div class="ttc" id="aglew_8h_html_a9f2854f4a91a0d83d2d54cb8110bfca4"><div class="ttname"><a href="glew_8h.html#a9f2854f4a91a0d83d2d54cb8110bfca4">GL_RGBA</a></div><div class="ttdeci">#define GL_RGBA</div><div class="ttdef"><b>Definition:</b> glew.h:681</div></div>
+<div class="ttc" id="aglew_8h_html_af24c49639dd0c5748c08354cb9fda28c"><div class="ttname"><a href="glew_8h.html#af24c49639dd0c5748c08354cb9fda28c">glGenerateMipmap</a></div><div class="ttdeci">#define glGenerateMipmap</div><div class="ttdef"><b>Definition:</b> glew.h:4888</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_texture_html_a46db817f47dd2d63e1fdc33845adcd06"><div class="ttname"><a href="classu22_1_1graphics_1_1_texture.html#a46db817f47dd2d63e1fdc33845adcd06">u22::graphics::Texture::GetID</a></div><div class="ttdeci">GLuint GetID(void) const</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> Texture.cpp:15</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_texture_html_a546a6dfc1da579c0ff4def78edcc64d6"><div class="ttname"><a href="classu22_1_1graphics_1_1_texture.html#a546a6dfc1da579c0ff4def78edcc64d6">u22::graphics::Texture::GetHeight</a></div><div class="ttdeci">int GetHeight(void) const</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> Texture.cpp:23</div></div>
+<div class="ttc" id="aglew_8h_html_a8e71ccb4538d4f8f5e8ff074fc5b6754"><div class="ttname"><a href="glew_8h.html#a8e71ccb4538d4f8f5e8ff074fc5b6754">GL_UNPACK_ALIGNMENT</a></div><div class="ttdeci">#define GL_UNPACK_ALIGNMENT</div><div class="ttdef"><b>Definition:</b> glew.h:537</div></div>
+<div class="ttc" id="aglew_8h_html_acb47a41b5963d44826f44b7370bccc26"><div class="ttname"><a href="glew_8h.html#acb47a41b5963d44826f44b7370bccc26">GL_TEXTURE_MAG_FILTER</a></div><div class="ttdeci">#define GL_TEXTURE_MAG_FILTER</div><div class="ttdef"><b>Definition:</b> glew.h:723</div></div>
+<div class="ttc" id="aglew_8h_html_ad05ccdc8c4add1d8f4f06d6e526754c8"><div class="ttname"><a href="glew_8h.html#ad05ccdc8c4add1d8f4f06d6e526754c8">glTextureParameterf</a></div><div class="ttdeci">#define glTextureParameterf</div><div class="ttdef"><b>Definition:</b> glew.h:4514</div></div>
+<div class="ttc" id="aglew_8h_html_a2f5eccab2c3938a8c0c141035b4df47c"><div class="ttname"><a href="glew_8h.html#a2f5eccab2c3938a8c0c141035b4df47c">glDeleteTextures</a></div><div class="ttdeci">GLAPI void GLAPIENTRY glDeleteTextures(GLsizei n, const GLuint *textures)</div></div>
+<div class="ttc" id="aglew_8h_html_a99e77ebf136a8c511226cf705049a305"><div class="ttname"><a href="glew_8h.html#a99e77ebf136a8c511226cf705049a305">glGenTextures</a></div><div class="ttdeci">GLAPI void GLAPIENTRY glGenTextures(GLsizei n, GLuint *textures)</div></div>
+<div class="ttc" id="aglew_8h_html_af15266b67de988f5ddf442bbbdd1b3fc"><div class="ttname"><a href="glew_8h.html#af15266b67de988f5ddf442bbbdd1b3fc">glActiveTexture</a></div><div class="ttdeci">#define glActiveTexture</div><div class="ttdef"><b>Definition:</b> glew.h:1427</div></div>
+<div class="ttc" id="a_texture_8h_html"><div class="ttname"><a href="_texture_8h.html">Texture.h</a></div></div>
+<div class="ttc" id="aglew_8h_html_ad1cf646d8224fdedcce963d095f71c1b"><div class="ttname"><a href="glew_8h.html#ad1cf646d8224fdedcce963d095f71c1b">GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT</a></div><div class="ttdeci">#define GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT</div><div class="ttdef"><b>Definition:</b> glew.h:12321</div></div>
+<div class="ttc" id="aglew_8h_html_a893f88f6de911fec975d0c3bafd0c641"><div class="ttname"><a href="glew_8h.html#a893f88f6de911fec975d0c3bafd0c641">GLEW_EXT_texture_filter_anisotropic</a></div><div class="ttdeci">#define GLEW_EXT_texture_filter_anisotropic</div><div class="ttdef"><b>Definition:</b> glew.h:12323</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_texture_html"><div class="ttname"><a href="classu22_1_1graphics_1_1_texture.html">u22::graphics::Texture</a></div><div class="ttdef"><b>Definition:</b> Texture.h:13</div></div>
+<div class="ttc" id="aclassu22_1_1math_1_1_vector2_3_01int_01_4_html"><div class="ttname"><a href="classu22_1_1math_1_1_vector2_3_01int_01_4.html">u22::math::Vector2&lt; int &gt;</a></div><div class="ttdef"><b>Definition:</b> Vector2.h:38</div></div>
+<div class="ttc" id="aglew_8h_html_a31aeedaeef29442c9c015ab355c8f5ab"><div class="ttname"><a href="glew_8h.html#a31aeedaeef29442c9c015ab355c8f5ab">GLfloat</a></div><div class="ttdeci">float GLfloat</div><div class="ttdef"><b>Definition:</b> glew.h:289</div></div>
+<div class="ttc" id="aglew_8h_html_aa311c7f0d6ec4f1a33f9235c3651b86b"><div class="ttname"><a href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a></div><div class="ttdeci">unsigned int GLuint</div><div class="ttdef"><b>Definition:</b> glew.h:280</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_texture_html_a61f61574fdf3c54cf868a5624688440a"><div class="ttname"><a href="classu22_1_1graphics_1_1_texture.html#a61f61574fdf3c54cf868a5624688440a">u22::graphics::Texture::Generate</a></div><div class="ttdeci">bool Generate(void)</div><div class="ttdoc">生成</div><div class="ttdef"><b>Definition:</b> Texture.cpp:31</div></div>
+<div class="ttc" id="aglew_8h_html_a5ac0f3c4d7fafd42b284b5487a791017"><div class="ttname"><a href="glew_8h.html#a5ac0f3c4d7fafd42b284b5487a791017">GLint</a></div><div class="ttdeci">int GLint</div><div class="ttdef"><b>Definition:</b> glew.h:281</div></div>
+<div class="ttc" id="aglew_8h_html_ac307a4772e1d3decd5b6f36192113ab6"><div class="ttname"><a href="glew_8h.html#ac307a4772e1d3decd5b6f36192113ab6">GL_TEXTURE_WRAP_T</a></div><div class="ttdeci">#define GL_TEXTURE_WRAP_T</div><div class="ttdef"><b>Definition:</b> glew.h:726</div></div>
+<div class="ttc" id="aglew_8h_html_a8c86940a36bacc0d713e296c1dfe9cf5"><div class="ttname"><a href="glew_8h.html#a8c86940a36bacc0d713e296c1dfe9cf5">glTexSubImage2D</a></div><div class="ttdeci">GLAPI void GLAPIENTRY glTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const void *pixels)</div></div>
+<div class="ttc" id="aglew_8h_html_a173a2b2453322dd8d613df6cf2e72480"><div class="ttname"><a href="glew_8h.html#a173a2b2453322dd8d613df6cf2e72480">GL_TEXTURE_MIN_FILTER</a></div><div class="ttdeci">#define GL_TEXTURE_MIN_FILTER</div><div class="ttdef"><b>Definition:</b> glew.h:724</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_texture_html_a2fb82c36f3bb1def50cc69a5039b13b2"><div class="ttname"><a href="classu22_1_1graphics_1_1_texture.html#a2fb82c36f3bb1def50cc69a5039b13b2">u22::graphics::Texture::UnBind</a></div><div class="ttdeci">void UnBind(void) const</div><div class="ttdoc">解除</div><div class="ttdef"><b>Definition:</b> Texture.cpp:65</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_texture_html_a5ee0f1c473265d1ea7b82a19b781e44f"><div class="ttname"><a href="classu22_1_1graphics_1_1_texture.html#a5ee0f1c473265d1ea7b82a19b781e44f">u22::graphics::Texture::SubImageUpdate</a></div><div class="ttdeci">bool SubImageUpdate(GLint offset_x, GLint offset_y, GLint width, GLint height, const void *pixels)</div><div class="ttdoc">書き換え</div><div class="ttdef"><b>Definition:</b> Texture.cpp:52</div></div>
+<div class="ttc" id="aglew_8h_html_a80a33c79f69417372d65d2a65ca36d49"><div class="ttname"><a href="glew_8h.html#a80a33c79f69417372d65d2a65ca36d49">GL_UNSIGNED_BYTE</a></div><div class="ttdeci">#define GL_UNSIGNED_BYTE</div><div class="ttdef"><b>Definition:</b> glew.h:637</div></div>
+<div class="ttc" id="aglew_8h_html_a940f58f3728713267a58e2d09ff602b2"><div class="ttname"><a href="glew_8h.html#a940f58f3728713267a58e2d09ff602b2">glBindTexture</a></div><div class="ttdeci">GLAPI void GLAPIENTRY glBindTexture(GLenum target, GLuint texture)</div></div>
+<div class="ttc" id="aglew_8h_html_ae0c4b34c030bad60c4e2b94cd0a6d804"><div class="ttname"><a href="glew_8h.html#ae0c4b34c030bad60c4e2b94cd0a6d804">glTexImage2D</a></div><div class="ttdeci">GLAPI void GLAPIENTRY glTexImage2D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, const void *pixels)</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_texture_html_a1bd6deedf450cd4ab55cec1480a52fe8"><div class="ttname"><a href="classu22_1_1graphics_1_1_texture.html#a1bd6deedf450cd4ab55cec1480a52fe8">u22::graphics::Texture::Load</a></div><div class="ttdeci">bool Load(const char *path)</div><div class="ttdoc">読み込み</div><div class="ttdef"><b>Definition:</b> Texture.cpp:69</div></div>
+<div class="ttc" id="aglew_8h_html_a23a0bc2909cc2f79fe7287aaa044e880"><div class="ttname"><a href="glew_8h.html#a23a0bc2909cc2f79fe7287aaa044e880">GL_TEXTURE_WRAP_S</a></div><div class="ttdeci">#define GL_TEXTURE_WRAP_S</div><div class="ttdef"><b>Definition:</b> glew.h:725</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_texture_html_a2f57714be8d0c6894c8e4e3933429dbf"><div class="ttname"><a href="classu22_1_1graphics_1_1_texture.html#a2f57714be8d0c6894c8e4e3933429dbf">u22::graphics::Texture::GetSize</a></div><div class="ttdeci">u22::math::Vector2I GetSize(void) const</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> Texture.cpp:27</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

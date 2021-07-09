@@ -1,0 +1,15 @@
+<map id="Core features" name="Core features">
+<area shape="rect" id="node1" href="$group__core__func__matrix.html" title=" " alt="" coords="186,5,301,31"/>
+<area shape="rect" id="node2" href="$group__core__matrix__precision.html" title="Matrix types with precision qualifiers which may result in various precision in term of ULPs" alt="" coords="155,55,332,95"/>
+<area shape="rect" id="node3" href="$group__core__func__exponential.html" title=" " alt="" coords="170,120,317,145"/>
+<area shape="rect" id="node4" href="$group__core__vector.html" title=" " alt="" coords="195,169,291,195"/>
+<area shape="rect" id="node5" href="$group__core__vector__precision.html" title="Vector types with precision qualifiers which may result in various precision in term of ULPs" alt="" coords="154,219,333,259"/>
+<area shape="rect" id="node6" href="$group__core__func__integer.html" title=" " alt="" coords="185,284,302,309"/>
+<area shape="rect" id="node7" href="$group__core__matrix.html" title=" " alt="" coords="196,333,291,359"/>
+<area shape="rect" id="node8" href="$group__core__func__geometric.html" title=" " alt="" coords="174,383,313,408"/>
+<area shape="rect" id="node9" href="$group__core__func__vector__relational.html" title=" " alt="" coords="152,432,335,457"/>
+<area shape="rect" id="node10" href="$group__core__func__trigonometric.html" title=" " alt="" coords="164,482,323,522"/>
+<area shape="rect" id="node11" href="$group__core__func__common.html" title=" " alt="" coords="178,547,309,572"/>
+<area shape="rect" id="node12" href="$group__core__func__packing.html" title=" " alt="" coords="165,597,321,637"/>
+<area shape="rect" id="node13" title="Features that implement in C++ the GLSL specification as closely as possible." alt="" coords="5,309,104,335"/>
+</map>

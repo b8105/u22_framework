@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: Graphics/EffectShader.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64f7452aef2cdad98d34a70f5ea329e2.html">Graphics</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">EffectShader.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_effect_shader_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef U22_GRAPHICS_EFFECT_SHADER_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define U22_GRAPHICS_EFFECT_SHADER_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../Common/Common.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../Math/Vector2.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../Math/Vector4.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../Math/Matrix4x4.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceu22_1_1graphics.html">u22::graphics</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classu22_1_1graphics_1_1_effect_shader.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classu22_1_1graphics_1_1_effect_shader.html">EffectShader</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> _vertex_id;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> _fragment_id;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> _id;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> _uniform_handle;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">bool</span> Compile(<span class="keyword">const</span> <span class="keywordtype">char</span>* path, <a class="code" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a>&amp; out);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">bool</span> Check(<span class="keyword">const</span> <a class="code" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> <span class="keywordtype">id</span>, <span class="keyword">const</span> <a class="code" href="glew_8h.html#a7efd7809e1632cdae75603fd1fee61c0">GLenum</a> type);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classu22_1_1graphics_1_1_effect_shader.html#a0f4cf9cb36e9c14ba40e9409fed199e7">EffectShader</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classu22_1_1graphics_1_1_effect_shader.html#acb1e1d4837efed028b3c0c070a9a65ad">~EffectShader</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a> <a class="code" href="classu22_1_1graphics_1_1_effect_shader.html#a6642fa94d5cbf236e2a5068f7625a7a4">GetID</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1graphics_1_1_effect_shader.html#a4f955674032892330d2996073f3b0188">Load</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* vert_path, <span class="keyword">const</span> <span class="keywordtype">char</span>* frag_path);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1graphics_1_1_effect_shader.html#a84115f536a51fc44eed51b23d92b036a">Release</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classu22_1_1graphics_1_1_effect_shader.html#acbc6705be1bbc14e18bcf9a382a7d3b2">TransferUniform</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; value);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classu22_1_1graphics_1_1_effect_shader.html#acbc6705be1bbc14e18bcf9a382a7d3b2">TransferUniform</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keyword">const</span> <a class="code" href="classu22_1_1math_1_1_vector2_3_01float_01_4.html">u22::math::Vector2F</a>&amp; vector2);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classu22_1_1graphics_1_1_effect_shader.html#acbc6705be1bbc14e18bcf9a382a7d3b2">TransferUniform</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keyword">const</span> <a class="code" href="classu22_1_1math_1_1_vector4_3_01float_01_4.html">u22::math::Vector4F</a>&amp; vector4);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classu22_1_1graphics_1_1_effect_shader.html#acbc6705be1bbc14e18bcf9a382a7d3b2">TransferUniform</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keyword">const</span> <a class="code" href="structglm_1_1mat.html">glm::mat4</a>&amp; matrix, <span class="keywordtype">bool</span> <a class="code" href="group__core__func__matrix.html#gae679d841da8ce9dbcc6c2d454f15bc35">transpose</a> = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classu22_1_1graphics_1_1_effect_shader.html#a9db6da858e4c237d2381446c280ade81">Attach</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classu22_1_1graphics_1_1_effect_shader.html#addde7ebadaa795464b7bf96e897942e1">Link</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">//bool GenerateUniformBuffer(const char* name, std::size_t size, void* data);</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">//bool BindUniformBuffer(const char* name, std::size_t size, void* data);</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classu22_1_1graphics_1_1_effect_shader.html#af80cfd309d7d8bd3585cd4d05a857094">Enable</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classu22_1_1graphics_1_1_effect_shader.html#a4bd1d603ec17a29434a5e33b56645144">Disable</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif // !U22_GRAPHICS_EFFECT_SHADER_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aglew_8h_html_aceb29bc16e885f956eb9e351a7dd6276"><div class="ttname"><a href="glew_8h.html#aceb29bc16e885f956eb9e351a7dd6276">GL_VERTEX_SHADER</a></div><div class="ttdeci">#define GL_VERTEX_SHADER</div><div class="ttdef"><b>Definition:</b> glew.h:1769</div></div>
+<div class="ttc" id="anamespaceu22_1_1graphics_html"><div class="ttname"><a href="namespaceu22_1_1graphics.html">u22::graphics</a></div><div class="ttdef"><b>Definition:</b> Buffer.h:8</div></div>
+<div class="ttc" id="aclassu22_1_1math_1_1_vector2_3_01float_01_4_html"><div class="ttname"><a href="classu22_1_1math_1_1_vector2_3_01float_01_4.html">u22::math::Vector2&lt; float &gt;</a></div><div class="ttdef"><b>Definition:</b> Vector2.h:16</div></div>
+<div class="ttc" id="aglew_8h_html_ac012d7614801ed69d643ad388dcfc768"><div class="ttname"><a href="glew_8h.html#ac012d7614801ed69d643ad388dcfc768">glDeleteShader</a></div><div class="ttdeci">#define glDeleteShader</div><div class="ttdef"><b>Definition:</b> glew.h:1917</div></div>
+<div class="ttc" id="aglew_8h_html_a213791d8094088fb4c40d265b7fe7694"><div class="ttname"><a href="glew_8h.html#a213791d8094088fb4c40d265b7fe7694">glUniform1f</a></div><div class="ttdeci">#define glUniform1f</div><div class="ttdef"><b>Definition:</b> glew.h:1945</div></div>
+<div class="ttc" id="aftobjs_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="ftobjs_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> ftobjs.h:61</div></div>
+<div class="ttc" id="aclassu22_1_1math_1_1_vector4_3_01float_01_4_html"><div class="ttname"><a href="classu22_1_1math_1_1_vector4_3_01float_01_4.html">u22::math::Vector4&lt; float &gt;</a></div><div class="ttdef"><b>Definition:</b> Vector4.h:16</div></div>
+<div class="ttc" id="aglew_8h_html_a8f68825b5857a0eab9387a49ba2cae3c"><div class="ttname"><a href="glew_8h.html#a8f68825b5857a0eab9387a49ba2cae3c">glUniform2fv</a></div><div class="ttdeci">#define glUniform2fv</div><div class="ttdef"><b>Definition:</b> glew.h:1950</div></div>
+<div class="ttc" id="aglew_8h_html_a94c0e17529ebff9ddffdf7715b2341cc"><div class="ttname"><a href="glew_8h.html#a94c0e17529ebff9ddffdf7715b2341cc">glDeleteProgram</a></div><div class="ttdeci">#define glDeleteProgram</div><div class="ttdef"><b>Definition:</b> glew.h:1916</div></div>
+<div class="ttc" id="aglew_8h_html_ad241352c6eee6e79f09942ef0771db47"><div class="ttname"><a href="glew_8h.html#ad241352c6eee6e79f09942ef0771db47">glLinkProgram</a></div><div class="ttdeci">#define glLinkProgram</div><div class="ttdef"><b>Definition:</b> glew.h:1940</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_effect_shader_html_addde7ebadaa795464b7bf96e897942e1"><div class="ttname"><a href="classu22_1_1graphics_1_1_effect_shader.html#addde7ebadaa795464b7bf96e897942e1">u22::graphics::EffectShader::Link</a></div><div class="ttdeci">void Link(void)</div><div class="ttdoc">リンク</div><div class="ttdef"><b>Definition:</b> EffectShader.cpp:117</div></div>
+<div class="ttc" id="aglew_8h_html_a8b14cf3c9445c50aabe5c7d21b31d215"><div class="ttname"><a href="glew_8h.html#a8b14cf3c9445c50aabe5c7d21b31d215">GL_COMPILE_STATUS</a></div><div class="ttdeci">#define GL_COMPILE_STATUS</div><div class="ttdef"><b>Definition:</b> glew.h:1796</div></div>
+<div class="ttc" id="aglew_8h_html_a2f24b3425eec94391cbfbb638466c65b"><div class="ttname"><a href="glew_8h.html#a2f24b3425eec94391cbfbb638466c65b">glUniform4fv</a></div><div class="ttdeci">#define glUniform4fv</div><div class="ttdef"><b>Definition:</b> glew.h:1958</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_effect_shader_html_a0f4cf9cb36e9c14ba40e9409fed199e7"><div class="ttname"><a href="classu22_1_1graphics_1_1_effect_shader.html#a0f4cf9cb36e9c14ba40e9409fed199e7">u22::graphics::EffectShader::EffectShader</a></div><div class="ttdeci">EffectShader()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> EffectShader.cpp:37</div></div>
+<div class="ttc" id="aglew_8h_html_a1cd4c6b9e1fb6b4eb927ab0997de48ef"><div class="ttname"><a href="glew_8h.html#a1cd4c6b9e1fb6b4eb927ab0997de48ef">glUniformMatrix4fv</a></div><div class="ttdeci">#define glUniformMatrix4fv</div><div class="ttdef"><b>Definition:</b> glew.h:1963</div></div>
+<div class="ttc" id="aglew_8h_html_ae77c1e831fd164e9ac6c1a9cdb697ce5"><div class="ttname"><a href="glew_8h.html#ae77c1e831fd164e9ac6c1a9cdb697ce5">GL_INFO_LOG_LENGTH</a></div><div class="ttdeci">#define GL_INFO_LOG_LENGTH</div><div class="ttdef"><b>Definition:</b> glew.h:1799</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_effect_shader_html_acb1e1d4837efed028b3c0c070a9a65ad"><div class="ttname"><a href="classu22_1_1graphics_1_1_effect_shader.html#acb1e1d4837efed028b3c0c070a9a65ad">u22::graphics::EffectShader::~EffectShader</a></div><div class="ttdeci">~EffectShader()</div><div class="ttdoc">デストラクタ</div><div class="ttdef"><b>Definition:</b> EffectShader.cpp:44</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_effect_shader_html_af80cfd309d7d8bd3585cd4d05a857094"><div class="ttname"><a href="classu22_1_1graphics_1_1_effect_shader.html#af80cfd309d7d8bd3585cd4d05a857094">u22::graphics::EffectShader::Enable</a></div><div class="ttdeci">void Enable(void)</div><div class="ttdoc">有効化</div><div class="ttdef"><b>Definition:</b> EffectShader.cpp:120</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_effect_shader_html_a4f955674032892330d2996073f3b0188"><div class="ttname"><a href="classu22_1_1graphics_1_1_effect_shader.html#a4f955674032892330d2996073f3b0188">u22::graphics::EffectShader::Load</a></div><div class="ttdeci">bool Load(const char *vert_path, const char *frag_path)</div><div class="ttdoc">読み込み</div><div class="ttdef"><b>Definition:</b> EffectShader.cpp:51</div></div>
+<div class="ttc" id="aglew_8h_html_ae7002efbed794728b79205427b3ccc66"><div class="ttname"><a href="glew_8h.html#ae7002efbed794728b79205427b3ccc66">glGetShaderiv</a></div><div class="ttdeci">#define glGetShaderiv</div><div class="ttdef"><b>Definition:</b> glew.h:1930</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_effect_shader_html"><div class="ttname"><a href="classu22_1_1graphics_1_1_effect_shader.html">u22::graphics::EffectShader</a></div><div class="ttdef"><b>Definition:</b> EffectShader.h:13</div></div>
+<div class="ttc" id="aglew_8h_html_a369ec108462c247e3028edc9070117a0"><div class="ttname"><a href="glew_8h.html#a369ec108462c247e3028edc9070117a0">glShaderSource</a></div><div class="ttdeci">#define glShaderSource</div><div class="ttdef"><b>Definition:</b> glew.h:1941</div></div>
+<div class="ttc" id="aglew_8h_html_a4d3447ff3caf454bc686968fbe5f04bf"><div class="ttname"><a href="glew_8h.html#a4d3447ff3caf454bc686968fbe5f04bf">glCreateShader</a></div><div class="ttdeci">#define glCreateShader</div><div class="ttdef"><b>Definition:</b> glew.h:1915</div></div>
+<div class="ttc" id="aglew_8h_html_afa5b8f96b52bc2825da63335dcabb07d"><div class="ttname"><a href="glew_8h.html#afa5b8f96b52bc2825da63335dcabb07d">glDetachShader</a></div><div class="ttdeci">#define glDetachShader</div><div class="ttdef"><b>Definition:</b> glew.h:1918</div></div>
+<div class="ttc" id="aglew_8h_html_acf7a528ef1ef237d2a7676dcb0f22473"><div class="ttname"><a href="glew_8h.html#acf7a528ef1ef237d2a7676dcb0f22473">glCompileShader</a></div><div class="ttdeci">#define glCompileShader</div><div class="ttdef"><b>Definition:</b> glew.h:1913</div></div>
+<div class="ttc" id="aglew_8h_html_ad8e40c882d63c4671dea2ca2dfcf3046"><div class="ttname"><a href="glew_8h.html#ad8e40c882d63c4671dea2ca2dfcf3046">glUseProgram</a></div><div class="ttdeci">#define glUseProgram</div><div class="ttdef"><b>Definition:</b> glew.h:1964</div></div>
+<div class="ttc" id="astructglm_1_1mat_html"><div class="ttname"><a href="structglm_1_1mat.html">glm::mat</a></div><div class="ttdef"><b>Definition:</b> qualifier.hpp:36</div></div>
+<div class="ttc" id="aglew_8h_html_a10106e4be90a66213839645cf12770f9"><div class="ttname"><a href="glew_8h.html#a10106e4be90a66213839645cf12770f9">glGetUniformLocation</a></div><div class="ttdeci">#define glGetUniformLocation</div><div class="ttdef"><b>Definition:</b> glew.h:1931</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_effect_shader_html_a6642fa94d5cbf236e2a5068f7625a7a4"><div class="ttname"><a href="classu22_1_1graphics_1_1_effect_shader.html#a6642fa94d5cbf236e2a5068f7625a7a4">u22::graphics::EffectShader::GetID</a></div><div class="ttdeci">GLuint GetID(void) const</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> EffectShader.cpp:47</div></div>
+<div class="ttc" id="a_effect_shader_8h_html"><div class="ttname"><a href="_effect_shader_8h.html">EffectShader.h</a></div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_effect_shader_html_acbc6705be1bbc14e18bcf9a382a7d3b2"><div class="ttname"><a href="classu22_1_1graphics_1_1_effect_shader.html#acbc6705be1bbc14e18bcf9a382a7d3b2">u22::graphics::EffectShader::TransferUniform</a></div><div class="ttdeci">void TransferUniform(const char *name, const float &amp;value)</div><div class="ttdoc">転送</div><div class="ttdef"><b>Definition:</b> EffectShader.cpp:94</div></div>
+<div class="ttc" id="aglew_8h_html_a7efd7809e1632cdae75603fd1fee61c0"><div class="ttname"><a href="glew_8h.html#a7efd7809e1632cdae75603fd1fee61c0">GLenum</a></div><div class="ttdeci">unsigned int GLenum</div><div class="ttdef"><b>Definition:</b> glew.h:278</div></div>
+<div class="ttc" id="aglew_8h_html_acf9d728f2b2be42fbc2fe6dada8bcd2b"><div class="ttname"><a href="glew_8h.html#acf9d728f2b2be42fbc2fe6dada8bcd2b">glCreateProgram</a></div><div class="ttdeci">#define glCreateProgram</div><div class="ttdef"><b>Definition:</b> glew.h:1914</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_effect_shader_html_a84115f536a51fc44eed51b23d92b036a"><div class="ttname"><a href="classu22_1_1graphics_1_1_effect_shader.html#a84115f536a51fc44eed51b23d92b036a">u22::graphics::EffectShader::Release</a></div><div class="ttdeci">bool Release(void)</div><div class="ttdoc">解放</div><div class="ttdef"><b>Definition:</b> EffectShader.cpp:89</div></div>
+<div class="ttc" id="aglew_8h_html_aa311c7f0d6ec4f1a33f9235c3651b86b"><div class="ttname"><a href="glew_8h.html#aa311c7f0d6ec4f1a33f9235c3651b86b">GLuint</a></div><div class="ttdeci">unsigned int GLuint</div><div class="ttdef"><b>Definition:</b> glew.h:280</div></div>
+<div class="ttc" id="aglew_8h_html_a1a0294662b50921555cae95fb20740d4"><div class="ttname"><a href="glew_8h.html#a1a0294662b50921555cae95fb20740d4">GL_FRAGMENT_SHADER</a></div><div class="ttdeci">#define GL_FRAGMENT_SHADER</div><div class="ttdef"><b>Definition:</b> glew.h:1768</div></div>
+<div class="ttc" id="agroup__core__func__matrix_html_gae679d841da8ce9dbcc6c2d454f15bc35"><div class="ttname"><a href="group__core__func__matrix.html#gae679d841da8ce9dbcc6c2d454f15bc35">glm::transpose</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER mat&lt; C, R, T, Q &gt;::transpose_type transpose(mat&lt; C, R, T, Q &gt; const &amp;m)</div><div class="ttdef"><b>Definition:</b> func_matrix.inl:374</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_effect_shader_html_a4bd1d603ec17a29434a5e33b56645144"><div class="ttname"><a href="classu22_1_1graphics_1_1_effect_shader.html#a4bd1d603ec17a29434a5e33b56645144">u22::graphics::EffectShader::Disable</a></div><div class="ttdeci">void Disable(void)</div><div class="ttdoc">無効化</div><div class="ttdef"><b>Definition:</b> EffectShader.cpp:124</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_effect_shader_html_a9db6da858e4c237d2381446c280ade81"><div class="ttname"><a href="classu22_1_1graphics_1_1_effect_shader.html#a9db6da858e4c237d2381446c280ade81">u22::graphics::EffectShader::Attach</a></div><div class="ttdeci">void Attach(void)</div><div class="ttdoc">追加</div><div class="ttdef"><b>Definition:</b> EffectShader.cpp:114</div></div>
+<div class="ttc" id="aglew_8h_html_a3058fd84744eb41e33773ad2b1a8c184"><div class="ttname"><a href="glew_8h.html#a3058fd84744eb41e33773ad2b1a8c184">glGetShaderInfoLog</a></div><div class="ttdeci">#define glGetShaderInfoLog</div><div class="ttdef"><b>Definition:</b> glew.h:1928</div></div>
+<div class="ttc" id="aglew_8h_html_a0cb06d612b3358bfaadbbefd7c51f1cc"><div class="ttname"><a href="glew_8h.html#a0cb06d612b3358bfaadbbefd7c51f1cc">glAttachShader</a></div><div class="ttdeci">#define glAttachShader</div><div class="ttdef"><b>Definition:</b> glew.h:1910</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

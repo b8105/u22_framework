@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: External/GLM/gtc/matrix_access.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_443fc37f241ba4018364a998c18d007b.html">External</a></li><li class="navelem"><a class="el" href="dir_c334883f19ec445d87470844289252ab.html">GLM</a></li><li class="navelem"><a class="el" href="dir_537b8871b7c5b83c64b0280177f30483.html">gtc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">matrix_access.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="matrix__access_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// Dependency:</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;../detail/setup.hpp&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#if GLM_MESSAGES == GLM_ENABLE &amp;&amp; !defined(GLM_EXT_INCLUDED)</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#   pragma message(&quot;GLM: GLM_GTC_matrix_access extension included&quot;)</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceglm.html">glm</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> genType&gt;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a> <span class="keyword">typename</span> genType::row_type <a class="code" href="group__gtc__matrix__access.html#ga259e5ebd0f31ec3f83440f8cae7f5dba">row</a>(</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        genType <span class="keyword">const</span>&amp; m,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="namespaceglm.html#a090a0de2260835bee80e71a702492ed9">length_t</a> index);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> genType&gt;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a> genType <a class="code" href="group__gtc__matrix__access.html#ga259e5ebd0f31ec3f83440f8cae7f5dba">row</a>(</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        genType <span class="keyword">const</span>&amp; m,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="namespaceglm.html#a090a0de2260835bee80e71a702492ed9">length_t</a> index,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">typename</span> genType::row_type <span class="keyword">const</span>&amp; x);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> genType&gt;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a> <span class="keyword">typename</span> genType::col_type <a class="code" href="group__gtc__matrix__access.html#ga96022eb0d3fae39d89fc7a954e59b374">column</a>(</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        genType <span class="keyword">const</span>&amp; m,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="namespaceglm.html#a090a0de2260835bee80e71a702492ed9">length_t</a> index);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> genType&gt;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a> genType <a class="code" href="group__gtc__matrix__access.html#ga96022eb0d3fae39d89fc7a954e59b374">column</a>(</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        genType <span class="keyword">const</span>&amp; m,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="namespaceglm.html#a090a0de2260835bee80e71a702492ed9">length_t</a> index,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">typename</span> genType::col_type <span class="keyword">const</span>&amp; x);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}<span class="comment">//namespace glm</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="matrix__access_8inl.html">matrix_access.inl</a>&quot;</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astb__vorbis_8c_html_aa73214aa5f2f94f63d90bb4e3d99fe53"><div class="ttname"><a href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a></div><div class="ttdeci">#define L</div><div class="ttdef"><b>Definition:</b> stb_vorbis.c:5037</div></div>
+<div class="ttc" id="agroup__gtc__matrix__access_html_ga259e5ebd0f31ec3f83440f8cae7f5dba"><div class="ttname"><a href="group__gtc__matrix__access.html#ga259e5ebd0f31ec3f83440f8cae7f5dba">glm::row</a></div><div class="ttdeci">GLM_FUNC_DECL genType::row_type row(genType const &amp;m, length_t index)</div><div class="ttdef"><b>Definition:</b> matrix_access.inl:23</div></div>
+<div class="ttc" id="agroup__gtc__integer_html_ga57824268ebe13a922f1d69a5d37f637f"><div class="ttname"><a href="group__gtc__integer.html#ga57824268ebe13a922f1d69a5d37f637f">glm::iround</a></div><div class="ttdeci">GLM_FUNC_DECL vec&lt; L, int, Q &gt; iround(vec&lt; L, T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> integer.inl:43</div></div>
+<div class="ttc" id="astructglm_1_1vec_3_014_00_01_t_00_01_q_01_4_html"><div class="ttname"><a href="structglm_1_1vec_3_014_00_01_t_00_01_q_01_4.html">glm::vec&lt; 4, T, Q &gt;</a></div><div class="ttdef"><b>Definition:</b> type_vec4.hpp:18</div></div>
+<div class="ttc" id="astructglm_1_1vec_3_014_00_01_t_00_01_q_01_4_html_a4f0ee6c1ad138fad04c3918cba14d108"><div class="ttname"><a href="structglm_1_1vec_3_014_00_01_t_00_01_q_01_4.html#a4f0ee6c1ad138fad04c3918cba14d108">glm::vec&lt; 4, T, Q &gt;::x</a></div><div class="ttdeci">T x</div><div class="ttdef"><b>Definition:</b> type_vec4.hpp:65</div></div>
+<div class="ttc" id="astructglm_1_1vec_3_013_00_01_t_00_01_q_01_4_html_a33809116048db7caf55162a670dec598"><div class="ttname"><a href="structglm_1_1vec_3_013_00_01_t_00_01_q_01_4.html#a33809116048db7caf55162a670dec598">glm::vec&lt; 3, T, Q &gt;::z</a></div><div class="ttdeci">T z</div><div class="ttdef"><b>Definition:</b> type_vec3.hpp:70</div></div>
+<div class="ttc" id="anamespaceglm_1_1detail_html_a2699e3b3ea6ad8d4bb99aed56761582c"><div class="ttname"><a href="namespaceglm_1_1detail.html#a2699e3b3ea6ad8d4bb99aed56761582c">glm::detail::ones32</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER unsigned int ones32(unsigned int x)</div><div class="ttdef"><b>Definition:</b> integer.inl:37</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1compute__log2_3_01_l_00_01_t_00_01_q_00_01false_00_01_aligned_01_4_html_ac62f752297dfcc4f1778e504cce4e305"><div class="ttname"><a href="structglm_1_1detail_1_1compute__log2_3_01_l_00_01_t_00_01_q_00_01false_00_01_aligned_01_4.html#ac62f752297dfcc4f1778e504cce4e305">glm::detail::compute_log2&lt; L, T, Q, false, Aligned &gt;::call</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER vec&lt; L, T, Q &gt; call(vec&lt; L, T, Q &gt; const &amp;v)</div><div class="ttdef"><b>Definition:</b> integer.inl:9</div></div>
+<div class="ttc" id="agroup__core__func__vector__relational_html_gab0bdafc019d227257ff73fb5bcca1718"><div class="ttname"><a href="group__core__func__vector__relational.html#gab0bdafc019d227257ff73fb5bcca1718">glm::lessThanEqual</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER GLM_CONSTEXPR vec&lt; L, bool, Q &gt; lessThanEqual(vec&lt; L, T, Q &gt; const &amp;x, vec&lt; L, T, Q &gt; const &amp;y)</div><div class="ttdef"><b>Definition:</b> func_vector_relational.inl:13</div></div>
+<div class="ttc" id="astructglm_1_1vec_3_014_00_01_t_00_01_q_01_4_html_a819e3f804a8e92a03b37abe5fa6f4df1"><div class="ttname"><a href="structglm_1_1vec_3_014_00_01_t_00_01_q_01_4.html#a819e3f804a8e92a03b37abe5fa6f4df1">glm::vec&lt; 4, T, Q &gt;::y</a></div><div class="ttdeci">T y</div><div class="ttdef"><b>Definition:</b> type_vec4.hpp:66</div></div>
+<div class="ttc" id="astructglm_1_1vec_3_013_00_01_t_00_01_q_01_4_html"><div class="ttname"><a href="structglm_1_1vec_3_013_00_01_t_00_01_q_01_4.html">glm::vec&lt; 3, T, Q &gt;</a></div><div class="ttdef"><b>Definition:</b> type_vec3.hpp:18</div></div>
+<div class="ttc" id="anamespaceglm_html_a4fd29415871152bfb5abd588334147c8"><div class="ttname"><a href="namespaceglm.html#a4fd29415871152bfb5abd588334147c8">glm::uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definition:</b> setup.hpp:649</div></div>
+<div class="ttc" id="agroup__core__func__vector__relational_html_ga87e53f50b679f5f95c5cb4780311b3dd"><div class="ttname"><a href="group__core__func__vector__relational.html#ga87e53f50b679f5f95c5cb4780311b3dd">glm::all</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER GLM_CONSTEXPR bool all(vec&lt; L, bool, Q &gt; const &amp;v)</div><div class="ttdef"><b>Definition:</b> func_vector_relational.inl:67</div></div>
+<div class="ttc" id="asetup_8hpp_html_a6893d4a6bf0ecab00f7c73166379245a"><div class="ttname"><a href="setup_8hpp.html#a6893d4a6bf0ecab00f7c73166379245a">GLM_STATIC_ASSERT</a></div><div class="ttdeci">#define GLM_STATIC_ASSERT(x, message)</div><div class="ttdef"><b>Definition:</b> setup.hpp:405</div></div>
+<div class="ttc" id="astructglm_1_1vec_3_012_00_01_t_00_01_q_01_4_html"><div class="ttname"><a href="structglm_1_1vec_3_012_00_01_t_00_01_q_01_4.html">glm::vec&lt; 2, T, Q &gt;</a></div><div class="ttdef"><b>Definition:</b> type_vec2.hpp:18</div></div>
+<div class="ttc" id="agroup__core__func__common_html_ga12201563ef902e3b07e0d1d7656efdb1"><div class="ttname"><a href="group__core__func__common.html#ga12201563ef902e3b07e0d1d7656efdb1">glm::mod</a></div><div class="ttdeci">GLM_FUNC_DECL genType mod(genType x, genType y)</div><div class="ttdef"><b>Definition:</b> func_common.inl:401</div></div>
+<div class="ttc" id="astructglm_1_1vec_3_013_00_01_t_00_01_q_01_4_html_aa124b422bca85bd1e079c5880591d056"><div class="ttname"><a href="structglm_1_1vec_3_013_00_01_t_00_01_q_01_4.html#aa124b422bca85bd1e079c5880591d056">glm::vec&lt; 3, T, Q &gt;::x</a></div><div class="ttdeci">T x</div><div class="ttdef"><b>Definition:</b> type_vec3.hpp:68</div></div>
+<div class="ttc" id="agroup__core__func__integer_html_ga7e4a794d766861c70bc961630f8ef621"><div class="ttname"><a href="group__core__func__integer.html#ga7e4a794d766861c70bc961630f8ef621">glm::findMSB</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER int findMSB(genIUType v)</div><div class="ttdef"><b>Definition:</b> func_integer.inl:353</div></div>
+<div class="ttc" id="anamespaceglm_html"><div class="ttname"><a href="namespaceglm.html">glm</a></div><div class="ttdoc">Core features</div><div class="ttdef"><b>Definition:</b> common.hpp:21</div></div>
+<div class="ttc" id="astructglm_1_1vec_html"><div class="ttname"><a href="structglm_1_1vec.html">glm::vec</a></div><div class="ttdef"><b>Definition:</b> qualifier.hpp:35</div></div>
+<div class="ttc" id="astructglm_1_1vec_3_012_00_01_t_00_01_q_01_4_html_a49302c697fe0183c08329f51cdf70894"><div class="ttname"><a href="structglm_1_1vec_3_012_00_01_t_00_01_q_01_4.html#a49302c697fe0183c08329f51cdf70894">glm::vec&lt; 2, T, Q &gt;::x</a></div><div class="ttdeci">T x</div><div class="ttdef"><b>Definition:</b> type_vec2.hpp:65</div></div>
+<div class="ttc" id="amatrix__access_8inl_html"><div class="ttname"><a href="matrix__access_8inl.html">matrix_access.inl</a></div></div>
+<div class="ttc" id="astructglm_1_1vec_3_014_00_01_t_00_01_q_01_4_html_a72b956e1e8cce70057f78520dd4e1c90"><div class="ttname"><a href="structglm_1_1vec_3_014_00_01_t_00_01_q_01_4.html#a72b956e1e8cce70057f78520dd4e1c90">glm::vec&lt; 4, T, Q &gt;::w</a></div><div class="ttdeci">T w</div><div class="ttdef"><b>Definition:</b> type_vec4.hpp:68</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1compute__log2_html_acd539eb6855938b3b7b7f10573baff18"><div class="ttname"><a href="structglm_1_1detail_1_1compute__log2.html#acd539eb6855938b3b7b7f10573baff18">glm::detail::compute_log2::call</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER vec&lt; L, T, Q &gt; call(vec&lt; L, T, Q &gt; const &amp;v)</div><div class="ttdef"><b>Definition:</b> func_exponential.inl:26</div></div>
+<div class="ttc" id="agroup__gtx__integer_html_ga8cbd3120905f398ec321b5d1836e08fb"><div class="ttname"><a href="group__gtx__integer.html#ga8cbd3120905f398ec321b5d1836e08fb">glm::factorial</a></div><div class="ttdeci">GLM_FUNC_DECL genType factorial(genType const &amp;x)</div><div class="ttdef"><b>Definition:</b> integer.inl:73</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1compute__log2_html"><div class="ttname"><a href="structglm_1_1detail_1_1compute__log2.html">glm::detail::compute_log2</a></div><div class="ttdef"><b>Definition:</b> func_exponential.inl:25</div></div>
+<div class="ttc" id="anamespaceglm_html_a090a0de2260835bee80e71a702492ed9"><div class="ttname"><a href="namespaceglm.html#a090a0de2260835bee80e71a702492ed9">glm::length_t</a></div><div class="ttdeci">int length_t</div><div class="ttdef"><b>Definition:</b> setup.hpp:595</div></div>
+<div class="ttc" id="astructglm_1_1vec_3_013_00_01_t_00_01_q_01_4_html_a3ff0c9672e374f78b7403d0c04ddc329"><div class="ttname"><a href="structglm_1_1vec_3_013_00_01_t_00_01_q_01_4.html#a3ff0c9672e374f78b7403d0c04ddc329">glm::vec&lt; 3, T, Q &gt;::y</a></div><div class="ttdeci">T y</div><div class="ttdef"><b>Definition:</b> type_vec3.hpp:69</div></div>
+<div class="ttc" id="astructglm_1_1vec_3_014_00_01_t_00_01_q_01_4_html_aef4c0898d2f91614ba5a747b8445a9d6"><div class="ttname"><a href="structglm_1_1vec_3_014_00_01_t_00_01_q_01_4.html#aef4c0898d2f91614ba5a747b8445a9d6">glm::vec&lt; 4, T, Q &gt;::z</a></div><div class="ttdeci">T z</div><div class="ttdef"><b>Definition:</b> type_vec4.hpp:67</div></div>
+<div class="ttc" id="agroup__gtc__integer_html_ga6715b9d573972a0f7763d30d45bcaec4"><div class="ttname"><a href="group__gtc__integer.html#ga6715b9d573972a0f7763d30d45bcaec4">glm::uround</a></div><div class="ttdeci">GLM_FUNC_DECL vec&lt; L, uint, Q &gt; uround(vec&lt; L, T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> integer.inl:61</div></div>
+<div class="ttc" id="asetup_8hpp_html_ab2d052de21a70539923e9bcbf6e83a51"><div class="ttname"><a href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a></div><div class="ttdeci">#define GLM_FUNC_DECL</div><div class="ttdef"><b>Definition:</b> setup.hpp:438</div></div>
+<div class="ttc" id="astructglm_1_1vec_3_012_00_01_t_00_01_q_01_4_html_ad674beb9a1e35fe0390507911daad747"><div class="ttname"><a href="structglm_1_1vec_3_012_00_01_t_00_01_q_01_4.html#ad674beb9a1e35fe0390507911daad747">glm::vec&lt; 2, T, Q &gt;::y</a></div><div class="ttdeci">T y</div><div class="ttdef"><b>Definition:</b> type_vec2.hpp:66</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1compute__find_m_s_b__vec_html"><div class="ttname"><a href="structglm_1_1detail_1_1compute__find_m_s_b__vec.html">glm::detail::compute_findMSB_vec</a></div><div class="ttdef"><b>Definition:</b> func_integer.inl:122</div></div>
+<div class="ttc" id="asetup_8hpp_html_a33fdea6f91c5f834105f7415e2a64407"><div class="ttname"><a href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a></div><div class="ttdeci">#define GLM_FUNC_QUALIFIER</div><div class="ttdef"><b>Definition:</b> setup.hpp:439</div></div>
+<div class="ttc" id="agroup__core__func__exponential_html_gaa83e5f1648b7ccdf33b87c07c76cb77c"><div class="ttname"><a href="group__core__func__exponential.html#gaa83e5f1648b7ccdf33b87c07c76cb77c">glm::sqrt</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER vec&lt; L, T, Q &gt; sqrt(vec&lt; L, T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> func_exponential.inl:128</div></div>
+<div class="ttc" id="agroup__gtx__integer_html_gacbe62fd2384464c16ea30ecc4defc11c"><div class="ttname"><a href="group__gtx__integer.html#gacbe62fd2384464c16ea30ecc4defc11c">glm::nlz</a></div><div class="ttdeci">GLM_FUNC_DECL uint nlz(uint x)</div><div class="ttdef"><b>Definition:</b> integer.inl:154</div></div>
+<div class="ttc" id="agroup__gtc__matrix__access_html_ga96022eb0d3fae39d89fc7a954e59b374"><div class="ttname"><a href="group__gtc__matrix__access.html#ga96022eb0d3fae39d89fc7a954e59b374">glm::column</a></div><div class="ttdeci">GLM_FUNC_DECL genType::col_type column(genType const &amp;m, length_t index)</div><div class="ttdef"><b>Definition:</b> matrix_access.inl:53</div></div>
+<div class="ttc" id="agroup__core__func__exponential_html_ga2254981952d4f333b900a6bf5167a6c4"><div class="ttname"><a href="group__core__func__exponential.html#ga2254981952d4f333b900a6bf5167a6c4">glm::pow</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER vec&lt; L, T, Q &gt; pow(vec&lt; L, T, Q &gt; const &amp;base, vec&lt; L, T, Q &gt; const &amp;exponent)</div><div class="ttdef"><b>Definition:</b> func_exponential.inl:72</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

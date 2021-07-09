@@ -1,0 +1,502 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: freetype/internal/fthash.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_981d57b2e11530428c66a192ba91cfc7.html">freetype</a></li><li class="navelem"><a class="el" href="dir_ac174dc64ad36850d6be9a69f636b6c2.html">internal</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#typedef-members">型定義</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">fthash.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="freetype_8h_source.html">freetype/freetype.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+fthash.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="fthash_8h__incl.png" border="0" usemap="#afreetype_2internal_2fthash_8h" alt=""/></div>
+<map name="freetype_2internal_2fthash_8h" id="freetype_2internal_2fthash_8h">
+<area shape="rect" title=" " alt="" coords="211,5,375,32"/>
+<area shape="rect" href="freetype_8h.html" title=" " alt="" coords="228,80,357,107"/>
+<area shape="rect" href="ft2build_8h.html" title=" " alt="" coords="51,229,126,256"/>
+<area shape="rect" href="fttypes_8h.html" title=" " alt="" coords="231,155,354,181"/>
+<area shape="rect" href="fterrors_8h.html" title=" " alt="" coords="554,155,677,181"/>
+<area shape="rect" href="ftheader_8h.html" title=" " alt="" coords="5,304,172,331"/>
+<area shape="rect" href="ftsystem_8h.html" title=" " alt="" coords="150,229,283,256"/>
+<area shape="rect" href="ftimage_8h.html" title=" " alt="" coords="307,229,433,256"/>
+<area shape="rect" title=" " alt="" coords="457,229,525,256"/>
+<area shape="rect" href="ftmoderr_8h.html" title=" " alt="" coords="550,229,681,256"/>
+<area shape="rect" href="fterrdef_8h.html" title=" " alt="" coords="705,229,827,256"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="fthash_8h__dep__incl.png" border="0" usemap="#afreetype_2internal_2fthash_8hdep" alt=""/></div>
+<map name="freetype_2internal_2fthash_8hdep" id="freetype_2internal_2fthash_8hdep">
+<area shape="rect" title=" " alt="" coords="5,5,169,32"/>
+<area shape="rect" href="psaux_8h.html" title=" " alt="" coords="20,333,184,360"/>
+<area shape="rect" href="t1types_8h.html" title=" " alt="" coords="89,80,261,107"/>
+<area shape="rect" href="cfftypes_8h.html" title=" " alt="" coords="115,162,289,189"/>
+<area shape="rect" href="svpsinfo_8h.html" title=" " alt="" coords="314,155,479,196"/>
+<area shape="rect" href="cffotypes_8h.html" title=" " alt="" coords="165,251,346,278"/>
+<area shape="rect" href="svcfftl_8h.html" title=" " alt="" coords="370,244,535,285"/>
+</map>
+</div>
+</div>
+<p><a href="fthash_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union_f_t___hashkey__.html">FT_Hashkey_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_f_t___hashnode_rec__.html">FT_HashnodeRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_f_t___hash_rec__.html">FT_HashRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a32e93ba1d4f59a6b8ae732340ca770a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fthash_8h.html#a32e93ba1d4f59a6b8ae732340ca770a1">ft_hash_num_free</a>&#160;&#160;&#160;<a class="el" href="fthash_8h.html#a37477f81553fb35742f81d07698bb614">ft_hash_str_free</a></td></tr>
+<tr class="separator:a32e93ba1d4f59a6b8ae732340ca770a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:a546f40770d5d8901f7f1a85c53ba92e3"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="public-macros_8h.html#a72ee5814b3ae378ebb7fd3a8e3ddec14">FT_BEGIN_HEADER</a> union <a class="el" href="union_f_t___hashkey__.html">FT_Hashkey_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fthash_8h.html#a546f40770d5d8901f7f1a85c53ba92e3">FT_Hashkey</a></td></tr>
+<tr class="separator:a546f40770d5d8901f7f1a85c53ba92e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af27315a671e7174d4faea67b8ce540b6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_f_t___hashnode_rec__.html">FT_HashnodeRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fthash_8h.html#af27315a671e7174d4faea67b8ce540b6">FT_HashnodeRec</a></td></tr>
+<tr class="separator:af27315a671e7174d4faea67b8ce540b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac09d9b509705e167e3e5882b7a12b97e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_f_t___hashnode_rec__.html">FT_HashnodeRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fthash_8h.html#ac09d9b509705e167e3e5882b7a12b97e">FT_Hashnode</a></td></tr>
+<tr class="separator:ac09d9b509705e167e3e5882b7a12b97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a929f5ecf758f2eab42f2afac42d3f99e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fthash_8h.html#a929f5ecf758f2eab42f2afac42d3f99e">FT_Hash_LookupFunc</a>) (<a class="el" href="fthash_8h.html#a546f40770d5d8901f7f1a85c53ba92e3">FT_Hashkey</a> *key)</td></tr>
+<tr class="separator:a929f5ecf758f2eab42f2afac42d3f99e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a730ce3ef6bfaa6544cccc0a99026a350"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="fttypes_8h.html#a1a832a256bb5a7e6e884afaa1a07f3ae">FT_Bool</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fthash_8h.html#a730ce3ef6bfaa6544cccc0a99026a350">FT_Hash_CompareFunc</a>) (<a class="el" href="fthash_8h.html#a546f40770d5d8901f7f1a85c53ba92e3">FT_Hashkey</a> *a, <a class="el" href="fthash_8h.html#a546f40770d5d8901f7f1a85c53ba92e3">FT_Hashkey</a> *b)</td></tr>
+<tr class="separator:a730ce3ef6bfaa6544cccc0a99026a350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7f3d499920b5305314992c9886b63bc"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_f_t___hash_rec__.html">FT_HashRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fthash_8h.html#ae7f3d499920b5305314992c9886b63bc">FT_HashRec</a></td></tr>
+<tr class="separator:ae7f3d499920b5305314992c9886b63bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb2366c4ff7d31bceb8a1ee4bc0abb9"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_f_t___hash_rec__.html">FT_HashRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fthash_8h.html#a0cb2366c4ff7d31bceb8a1ee4bc0abb9">FT_Hash</a></td></tr>
+<tr class="separator:a0cb2366c4ff7d31bceb8a1ee4bc0abb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:ae79ddf14251e068d0d3e616d1541f80a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fthash_8h.html#ae79ddf14251e068d0d3e616d1541f80a">ft_hash_str_init</a> (<a class="el" href="fthash_8h.html#a0cb2366c4ff7d31bceb8a1ee4bc0abb9">FT_Hash</a> hash, <a class="el" href="ftsystem_8h.html#a67ec7ea35cde99a89a65e9f827a9ad3a">FT_Memory</a> memory)</td></tr>
+<tr class="separator:ae79ddf14251e068d0d3e616d1541f80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a680113fe944fd85b6ab6b6c445e1d14b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fthash_8h.html#a680113fe944fd85b6ab6b6c445e1d14b">ft_hash_num_init</a> (<a class="el" href="fthash_8h.html#a0cb2366c4ff7d31bceb8a1ee4bc0abb9">FT_Hash</a> hash, <a class="el" href="ftsystem_8h.html#a67ec7ea35cde99a89a65e9f827a9ad3a">FT_Memory</a> memory)</td></tr>
+<tr class="separator:a680113fe944fd85b6ab6b6c445e1d14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37477f81553fb35742f81d07698bb614"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fthash_8h.html#a37477f81553fb35742f81d07698bb614">ft_hash_str_free</a> (<a class="el" href="fthash_8h.html#a0cb2366c4ff7d31bceb8a1ee4bc0abb9">FT_Hash</a> hash, <a class="el" href="ftsystem_8h.html#a67ec7ea35cde99a89a65e9f827a9ad3a">FT_Memory</a> memory)</td></tr>
+<tr class="separator:a37477f81553fb35742f81d07698bb614"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af305eab5d1df6131cbc122ba4f32fb09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fthash_8h.html#af305eab5d1df6131cbc122ba4f32fb09">ft_hash_str_insert</a> (const char *key, size_t data, <a class="el" href="fthash_8h.html#a0cb2366c4ff7d31bceb8a1ee4bc0abb9">FT_Hash</a> hash, <a class="el" href="ftsystem_8h.html#a67ec7ea35cde99a89a65e9f827a9ad3a">FT_Memory</a> memory)</td></tr>
+<tr class="separator:af305eab5d1df6131cbc122ba4f32fb09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2ed7d26faa1e4d461180b9a1937449f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fthash_8h.html#ab2ed7d26faa1e4d461180b9a1937449f">ft_hash_num_insert</a> (<a class="el" href="fttypes_8h.html#af90e5fb0d07e21be9fe6faa33f02484c">FT_Int</a> num, size_t data, <a class="el" href="fthash_8h.html#a0cb2366c4ff7d31bceb8a1ee4bc0abb9">FT_Hash</a> hash, <a class="el" href="ftsystem_8h.html#a67ec7ea35cde99a89a65e9f827a9ad3a">FT_Memory</a> memory)</td></tr>
+<tr class="separator:ab2ed7d26faa1e4d461180b9a1937449f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af015f3abadab787fc5d369d7659d430d"><td class="memItemLeft" align="right" valign="top">size_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fthash_8h.html#af015f3abadab787fc5d369d7659d430d">ft_hash_str_lookup</a> (const char *key, <a class="el" href="fthash_8h.html#a0cb2366c4ff7d31bceb8a1ee4bc0abb9">FT_Hash</a> hash)</td></tr>
+<tr class="separator:af015f3abadab787fc5d369d7659d430d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79d7a997dfc2c94786f6a066b12dc58"><td class="memItemLeft" align="right" valign="top">size_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fthash_8h.html#ab79d7a997dfc2c94786f6a066b12dc58">ft_hash_num_lookup</a> (<a class="el" href="fttypes_8h.html#af90e5fb0d07e21be9fe6faa33f02484c">FT_Int</a> num, <a class="el" href="fthash_8h.html#a0cb2366c4ff7d31bceb8a1ee4bc0abb9">FT_Hash</a> hash)</td></tr>
+<tr class="separator:ab79d7a997dfc2c94786f6a066b12dc58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">マクロ定義詳解</h2>
+<a id="a32e93ba1d4f59a6b8ae732340ca770a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32e93ba1d4f59a6b8ae732340ca770a1">&#9670;&nbsp;</a></span>ft_hash_num_free</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ft_hash_num_free&#160;&#160;&#160;<a class="el" href="fthash_8h.html#a37477f81553fb35742f81d07698bb614">ft_hash_str_free</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">型定義詳解</h2>
+<a id="a0cb2366c4ff7d31bceb8a1ee4bc0abb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cb2366c4ff7d31bceb8a1ee4bc0abb9">&#9670;&nbsp;</a></span>FT_Hash</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_f_t___hash_rec__.html">FT_HashRec_</a>* <a class="el" href="fthash_8h.html#a0cb2366c4ff7d31bceb8a1ee4bc0abb9">FT_Hash</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a730ce3ef6bfaa6544cccc0a99026a350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a730ce3ef6bfaa6544cccc0a99026a350">&#9670;&nbsp;</a></span>FT_Hash_CompareFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="fttypes_8h.html#a1a832a256bb5a7e6e884afaa1a07f3ae">FT_Bool</a>(* FT_Hash_CompareFunc) (<a class="el" href="fthash_8h.html#a546f40770d5d8901f7f1a85c53ba92e3">FT_Hashkey</a> *a, <a class="el" href="fthash_8h.html#a546f40770d5d8901f7f1a85c53ba92e3">FT_Hashkey</a> *b)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a929f5ecf758f2eab42f2afac42d3f99e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a929f5ecf758f2eab42f2afac42d3f99e">&#9670;&nbsp;</a></span>FT_Hash_LookupFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>(* FT_Hash_LookupFunc) (<a class="el" href="fthash_8h.html#a546f40770d5d8901f7f1a85c53ba92e3">FT_Hashkey</a> *key)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a546f40770d5d8901f7f1a85c53ba92e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a546f40770d5d8901f7f1a85c53ba92e3">&#9670;&nbsp;</a></span>FT_Hashkey</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="public-macros_8h.html#a72ee5814b3ae378ebb7fd3a8e3ddec14">FT_BEGIN_HEADER</a> union <a class="el" href="union_f_t___hashkey__.html">FT_Hashkey_</a> <a class="el" href="fthash_8h.html#a546f40770d5d8901f7f1a85c53ba92e3">FT_Hashkey</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac09d9b509705e167e3e5882b7a12b97e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac09d9b509705e167e3e5882b7a12b97e">&#9670;&nbsp;</a></span>FT_Hashnode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_f_t___hashnode_rec__.html">FT_HashnodeRec_</a>* <a class="el" href="fthash_8h.html#ac09d9b509705e167e3e5882b7a12b97e">FT_Hashnode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af27315a671e7174d4faea67b8ce540b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af27315a671e7174d4faea67b8ce540b6">&#9670;&nbsp;</a></span>FT_HashnodeRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_f_t___hashnode_rec__.html">FT_HashnodeRec_</a> <a class="el" href="fthash_8h.html#af27315a671e7174d4faea67b8ce540b6">FT_HashnodeRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae7f3d499920b5305314992c9886b63bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7f3d499920b5305314992c9886b63bc">&#9670;&nbsp;</a></span>FT_HashRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_f_t___hash_rec__.html">FT_HashRec_</a> <a class="el" href="fthash_8h.html#ae7f3d499920b5305314992c9886b63bc">FT_HashRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a680113fe944fd85b6ab6b6c445e1d14b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a680113fe944fd85b6ab6b6c445e1d14b">&#9670;&nbsp;</a></span>ft_hash_num_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a> ft_hash_num_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fthash_8h.html#a0cb2366c4ff7d31bceb8a1ee4bc0abb9">FT_Hash</a>&#160;</td>
+          <td class="paramname"><em>hash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ftsystem_8h.html#a67ec7ea35cde99a89a65e9f827a9ad3a">FT_Memory</a>&#160;</td>
+          <td class="paramname"><em>memory</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab2ed7d26faa1e4d461180b9a1937449f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2ed7d26faa1e4d461180b9a1937449f">&#9670;&nbsp;</a></span>ft_hash_num_insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a> ft_hash_num_insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fttypes_8h.html#af90e5fb0d07e21be9fe6faa33f02484c">FT_Int</a>&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="fthash_8h.html#a0cb2366c4ff7d31bceb8a1ee4bc0abb9">FT_Hash</a>&#160;</td>
+          <td class="paramname"><em>hash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ftsystem_8h.html#a67ec7ea35cde99a89a65e9f827a9ad3a">FT_Memory</a>&#160;</td>
+          <td class="paramname"><em>memory</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab79d7a997dfc2c94786f6a066b12dc58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab79d7a997dfc2c94786f6a066b12dc58">&#9670;&nbsp;</a></span>ft_hash_num_lookup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t* ft_hash_num_lookup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fttypes_8h.html#af90e5fb0d07e21be9fe6faa33f02484c">FT_Int</a>&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="fthash_8h.html#a0cb2366c4ff7d31bceb8a1ee4bc0abb9">FT_Hash</a>&#160;</td>
+          <td class="paramname"><em>hash</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37477f81553fb35742f81d07698bb614"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37477f81553fb35742f81d07698bb614">&#9670;&nbsp;</a></span>ft_hash_str_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ft_hash_str_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fthash_8h.html#a0cb2366c4ff7d31bceb8a1ee4bc0abb9">FT_Hash</a>&#160;</td>
+          <td class="paramname"><em>hash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ftsystem_8h.html#a67ec7ea35cde99a89a65e9f827a9ad3a">FT_Memory</a>&#160;</td>
+          <td class="paramname"><em>memory</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae79ddf14251e068d0d3e616d1541f80a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae79ddf14251e068d0d3e616d1541f80a">&#9670;&nbsp;</a></span>ft_hash_str_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a> ft_hash_str_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fthash_8h.html#a0cb2366c4ff7d31bceb8a1ee4bc0abb9">FT_Hash</a>&#160;</td>
+          <td class="paramname"><em>hash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ftsystem_8h.html#a67ec7ea35cde99a89a65e9f827a9ad3a">FT_Memory</a>&#160;</td>
+          <td class="paramname"><em>memory</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af305eab5d1df6131cbc122ba4f32fb09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af305eab5d1df6131cbc122ba4f32fb09">&#9670;&nbsp;</a></span>ft_hash_str_insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a> ft_hash_str_insert </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="fthash_8h.html#a0cb2366c4ff7d31bceb8a1ee4bc0abb9">FT_Hash</a>&#160;</td>
+          <td class="paramname"><em>hash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ftsystem_8h.html#a67ec7ea35cde99a89a65e9f827a9ad3a">FT_Memory</a>&#160;</td>
+          <td class="paramname"><em>memory</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af015f3abadab787fc5d369d7659d430d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af015f3abadab787fc5d369d7659d430d">&#9670;&nbsp;</a></span>ft_hash_str_lookup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t* ft_hash_str_lookup </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="fthash_8h.html#a0cb2366c4ff7d31bceb8a1ee4bc0abb9">FT_Hash</a>&#160;</td>
+          <td class="paramname"><em>hash</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

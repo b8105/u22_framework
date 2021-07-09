@@ -1,0 +1,121 @@
+\hypertarget{struct_p_s___parser___funcs_rec__}{}\doxysection{P\+S\+\_\+\+Parser\+\_\+\+Funcs\+Rec\+\_\+ 構造体}
+\label{struct_p_s___parser___funcs_rec__}\index{PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}}
+
+
+{\ttfamily \#include $<$psaux.\+h$>$}
+
+\doxysubsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+void($\ast$ \mbox{\hyperlink{struct_p_s___parser___funcs_rec___a9cf5f71c64e8661135a04cdf7d0a655b}{init}} )(\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser, \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} $\ast$base, \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} $\ast$limit, \mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} memory)
+\item 
+void($\ast$ \mbox{\hyperlink{struct_p_s___parser___funcs_rec___a8773f4b44c9bf75d0f3dd694e5be9f41}{done}} )(\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser)
+\item 
+void($\ast$ \mbox{\hyperlink{struct_p_s___parser___funcs_rec___a2ddd4735b8e65deac4a2f0f4984de16d}{skip\+\_\+spaces}} )(\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser)
+\item 
+void($\ast$ \mbox{\hyperlink{struct_p_s___parser___funcs_rec___a64dfe3d1fa75f0a00c08acddacd95f5c}{skip\+\_\+\+P\+S\+\_\+token}} )(\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser)
+\item 
+\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}}($\ast$ \mbox{\hyperlink{struct_p_s___parser___funcs_rec___a0b07e18c6190ffcee54c5ba5d108fed5}{to\+\_\+int}} )(\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser)
+\item 
+\mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}}($\ast$ \mbox{\hyperlink{struct_p_s___parser___funcs_rec___aa35006d3e089289275d37fe225a3de6c}{to\+\_\+fixed}} )(\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} power\+\_\+ten)
+\item 
+\mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{struct_p_s___parser___funcs_rec___a10c7f67ff642beaa026b19251b4642f6}{to\+\_\+bytes}} )(\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser, \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} $\ast$bytes, \mbox{\hyperlink{fttypes_8h_af7b5edd727ac01b0d4729ac848bd4175}{F\+T\+\_\+\+Offset}} max\+\_\+bytes, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$pnum\+\_\+bytes, \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} delimiters)
+\item 
+\mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}}($\ast$ \mbox{\hyperlink{struct_p_s___parser___funcs_rec___aa2057732838e9a5669f65e5299aff78e}{to\+\_\+coord\+\_\+array}} )(\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} max\+\_\+coords, \mbox{\hyperlink{fttypes_8h_aa7279be89046a2563cd3d4d6651fbdcf}{F\+T\+\_\+\+Short}} $\ast$coords)
+\item 
+\mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}}($\ast$ \mbox{\hyperlink{struct_p_s___parser___funcs_rec___a88946710b0c177f3730c49e43abba7ee}{to\+\_\+fixed\+\_\+array}} )(\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} max\+\_\+values, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$values, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} power\+\_\+ten)
+\item 
+void($\ast$ \mbox{\hyperlink{struct_p_s___parser___funcs_rec___a03298b95d48251efe9d74d9e1c7bef03}{to\+\_\+token}} )(\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser, \mbox{\hyperlink{psaux_8h_aaee5fcb159a39e09f57597e140a6ce38}{T1\+\_\+\+Token}} token)
+\item 
+void($\ast$ \mbox{\hyperlink{struct_p_s___parser___funcs_rec___af2bf35eb7dd33653d97f34c6cf1b47bd}{to\+\_\+token\+\_\+array}} )(\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser, \mbox{\hyperlink{psaux_8h_aaee5fcb159a39e09f57597e140a6ce38}{T1\+\_\+\+Token}} tokens, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} max\+\_\+tokens, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} $\ast$pnum\+\_\+tokens)
+\item 
+\mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{struct_p_s___parser___funcs_rec___a33c37608a63a065ee93fd346a44f0404}{load\+\_\+field}} )(\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser, const \mbox{\hyperlink{psaux_8h_aff7e8566a4f38b05a4dc5355a81facea}{T1\+\_\+\+Field}} field, void $\ast$$\ast$objects, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} max\+\_\+objects, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$pflags)
+\item 
+\mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{struct_p_s___parser___funcs_rec___a0952dd98193c4f73fe0a1281188ad395}{load\+\_\+field\+\_\+table}} )(\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser, const \mbox{\hyperlink{psaux_8h_aff7e8566a4f38b05a4dc5355a81facea}{T1\+\_\+\+Field}} field, void $\ast$$\ast$objects, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} max\+\_\+objects, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$pflags)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{struct_p_s___parser___funcs_rec___a8773f4b44c9bf75d0f3dd694e5be9f41}\label{struct_p_s___parser___funcs_rec___a8773f4b44c9bf75d0f3dd694e5be9f41}} 
+\index{PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}!done@{done}}
+\index{done@{done}!PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}}
+\doxysubsubsection{\texorpdfstring{done}{done}}
+{\footnotesize\ttfamily void($\ast$ P\+S\+\_\+\+Parser\+\_\+\+Funcs\+Rec\+\_\+\+::done) (\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser)}
+
+\mbox{\Hypertarget{struct_p_s___parser___funcs_rec___a9cf5f71c64e8661135a04cdf7d0a655b}\label{struct_p_s___parser___funcs_rec___a9cf5f71c64e8661135a04cdf7d0a655b}} 
+\index{PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}!init@{init}}
+\index{init@{init}!PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}}
+\doxysubsubsection{\texorpdfstring{init}{init}}
+{\footnotesize\ttfamily void($\ast$ P\+S\+\_\+\+Parser\+\_\+\+Funcs\+Rec\+\_\+\+::init) (\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser, \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} $\ast$base, \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} $\ast$limit, \mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} memory)}
+
+\mbox{\Hypertarget{struct_p_s___parser___funcs_rec___a33c37608a63a065ee93fd346a44f0404}\label{struct_p_s___parser___funcs_rec___a33c37608a63a065ee93fd346a44f0404}} 
+\index{PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}!load\_field@{load\_field}}
+\index{load\_field@{load\_field}!PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}}
+\doxysubsubsection{\texorpdfstring{load\_field}{load\_field}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ P\+S\+\_\+\+Parser\+\_\+\+Funcs\+Rec\+\_\+\+::load\+\_\+field) (\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser, const \mbox{\hyperlink{psaux_8h_aff7e8566a4f38b05a4dc5355a81facea}{T1\+\_\+\+Field}} field, void $\ast$$\ast$objects, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} max\+\_\+objects, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$pflags)}
+
+\mbox{\Hypertarget{struct_p_s___parser___funcs_rec___a0952dd98193c4f73fe0a1281188ad395}\label{struct_p_s___parser___funcs_rec___a0952dd98193c4f73fe0a1281188ad395}} 
+\index{PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}!load\_field\_table@{load\_field\_table}}
+\index{load\_field\_table@{load\_field\_table}!PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}}
+\doxysubsubsection{\texorpdfstring{load\_field\_table}{load\_field\_table}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ P\+S\+\_\+\+Parser\+\_\+\+Funcs\+Rec\+\_\+\+::load\+\_\+field\+\_\+table) (\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser, const \mbox{\hyperlink{psaux_8h_aff7e8566a4f38b05a4dc5355a81facea}{T1\+\_\+\+Field}} field, void $\ast$$\ast$objects, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} max\+\_\+objects, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$pflags)}
+
+\mbox{\Hypertarget{struct_p_s___parser___funcs_rec___a64dfe3d1fa75f0a00c08acddacd95f5c}\label{struct_p_s___parser___funcs_rec___a64dfe3d1fa75f0a00c08acddacd95f5c}} 
+\index{PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}!skip\_PS\_token@{skip\_PS\_token}}
+\index{skip\_PS\_token@{skip\_PS\_token}!PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}}
+\doxysubsubsection{\texorpdfstring{skip\_PS\_token}{skip\_PS\_token}}
+{\footnotesize\ttfamily void($\ast$ P\+S\+\_\+\+Parser\+\_\+\+Funcs\+Rec\+\_\+\+::skip\+\_\+\+P\+S\+\_\+token) (\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser)}
+
+\mbox{\Hypertarget{struct_p_s___parser___funcs_rec___a2ddd4735b8e65deac4a2f0f4984de16d}\label{struct_p_s___parser___funcs_rec___a2ddd4735b8e65deac4a2f0f4984de16d}} 
+\index{PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}!skip\_spaces@{skip\_spaces}}
+\index{skip\_spaces@{skip\_spaces}!PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}}
+\doxysubsubsection{\texorpdfstring{skip\_spaces}{skip\_spaces}}
+{\footnotesize\ttfamily void($\ast$ P\+S\+\_\+\+Parser\+\_\+\+Funcs\+Rec\+\_\+\+::skip\+\_\+spaces) (\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser)}
+
+\mbox{\Hypertarget{struct_p_s___parser___funcs_rec___a10c7f67ff642beaa026b19251b4642f6}\label{struct_p_s___parser___funcs_rec___a10c7f67ff642beaa026b19251b4642f6}} 
+\index{PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}!to\_bytes@{to\_bytes}}
+\index{to\_bytes@{to\_bytes}!PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}}
+\doxysubsubsection{\texorpdfstring{to\_bytes}{to\_bytes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ P\+S\+\_\+\+Parser\+\_\+\+Funcs\+Rec\+\_\+\+::to\+\_\+bytes) (\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser, \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} $\ast$bytes, \mbox{\hyperlink{fttypes_8h_af7b5edd727ac01b0d4729ac848bd4175}{F\+T\+\_\+\+Offset}} max\+\_\+bytes, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$pnum\+\_\+bytes, \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} delimiters)}
+
+\mbox{\Hypertarget{struct_p_s___parser___funcs_rec___aa2057732838e9a5669f65e5299aff78e}\label{struct_p_s___parser___funcs_rec___aa2057732838e9a5669f65e5299aff78e}} 
+\index{PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}!to\_coord\_array@{to\_coord\_array}}
+\index{to\_coord\_array@{to\_coord\_array}!PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}}
+\doxysubsubsection{\texorpdfstring{to\_coord\_array}{to\_coord\_array}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}}($\ast$ P\+S\+\_\+\+Parser\+\_\+\+Funcs\+Rec\+\_\+\+::to\+\_\+coord\+\_\+array) (\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} max\+\_\+coords, \mbox{\hyperlink{fttypes_8h_aa7279be89046a2563cd3d4d6651fbdcf}{F\+T\+\_\+\+Short}} $\ast$coords)}
+
+\mbox{\Hypertarget{struct_p_s___parser___funcs_rec___aa35006d3e089289275d37fe225a3de6c}\label{struct_p_s___parser___funcs_rec___aa35006d3e089289275d37fe225a3de6c}} 
+\index{PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}!to\_fixed@{to\_fixed}}
+\index{to\_fixed@{to\_fixed}!PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}}
+\doxysubsubsection{\texorpdfstring{to\_fixed}{to\_fixed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}}($\ast$ P\+S\+\_\+\+Parser\+\_\+\+Funcs\+Rec\+\_\+\+::to\+\_\+fixed) (\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} power\+\_\+ten)}
+
+\mbox{\Hypertarget{struct_p_s___parser___funcs_rec___a88946710b0c177f3730c49e43abba7ee}\label{struct_p_s___parser___funcs_rec___a88946710b0c177f3730c49e43abba7ee}} 
+\index{PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}!to\_fixed\_array@{to\_fixed\_array}}
+\index{to\_fixed\_array@{to\_fixed\_array}!PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}}
+\doxysubsubsection{\texorpdfstring{to\_fixed\_array}{to\_fixed\_array}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}}($\ast$ P\+S\+\_\+\+Parser\+\_\+\+Funcs\+Rec\+\_\+\+::to\+\_\+fixed\+\_\+array) (\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} max\+\_\+values, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$values, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} power\+\_\+ten)}
+
+\mbox{\Hypertarget{struct_p_s___parser___funcs_rec___a0b07e18c6190ffcee54c5ba5d108fed5}\label{struct_p_s___parser___funcs_rec___a0b07e18c6190ffcee54c5ba5d108fed5}} 
+\index{PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}!to\_int@{to\_int}}
+\index{to\_int@{to\_int}!PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}}
+\doxysubsubsection{\texorpdfstring{to\_int}{to\_int}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}}($\ast$ P\+S\+\_\+\+Parser\+\_\+\+Funcs\+Rec\+\_\+\+::to\+\_\+int) (\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser)}
+
+\mbox{\Hypertarget{struct_p_s___parser___funcs_rec___a03298b95d48251efe9d74d9e1c7bef03}\label{struct_p_s___parser___funcs_rec___a03298b95d48251efe9d74d9e1c7bef03}} 
+\index{PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}!to\_token@{to\_token}}
+\index{to\_token@{to\_token}!PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}}
+\doxysubsubsection{\texorpdfstring{to\_token}{to\_token}}
+{\footnotesize\ttfamily void($\ast$ P\+S\+\_\+\+Parser\+\_\+\+Funcs\+Rec\+\_\+\+::to\+\_\+token) (\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser, \mbox{\hyperlink{psaux_8h_aaee5fcb159a39e09f57597e140a6ce38}{T1\+\_\+\+Token}} token)}
+
+\mbox{\Hypertarget{struct_p_s___parser___funcs_rec___af2bf35eb7dd33653d97f34c6cf1b47bd}\label{struct_p_s___parser___funcs_rec___af2bf35eb7dd33653d97f34c6cf1b47bd}} 
+\index{PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}!to\_token\_array@{to\_token\_array}}
+\index{to\_token\_array@{to\_token\_array}!PS\_Parser\_FuncsRec\_@{PS\_Parser\_FuncsRec\_}}
+\doxysubsubsection{\texorpdfstring{to\_token\_array}{to\_token\_array}}
+{\footnotesize\ttfamily void($\ast$ P\+S\+\_\+\+Parser\+\_\+\+Funcs\+Rec\+\_\+\+::to\+\_\+token\+\_\+array) (\mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}} parser, \mbox{\hyperlink{psaux_8h_aaee5fcb159a39e09f57597e140a6ce38}{T1\+\_\+\+Token}} tokens, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} max\+\_\+tokens, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} $\ast$pnum\+\_\+tokens)}
+
+
+
+この構造体詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+freetype/internal/\mbox{\hyperlink{psaux_8h}{psaux.\+h}}\end{DoxyCompactItemize}

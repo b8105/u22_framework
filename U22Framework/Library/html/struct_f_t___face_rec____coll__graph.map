@@ -1,0 +1,39 @@
+<map id="FT_FaceRec_" name="FT_FaceRec_">
+<area shape="rect" id="node1" title=" " alt="" coords="1155,377,1258,404"/>
+<area shape="rect" id="node5" href="$struct_f_t___char_map_rec__.html" title=" " alt="" coords="1426,439,1553,465"/>
+<area shape="rect" id="node29" href="$struct_f_t___driver___class_rec__.html" title=" " alt="" coords="1729,539,1876,565"/>
+<area shape="rect" id="node30" href="$struct_f_t___size_rec__.html" title=" " alt="" coords="1439,189,1539,216"/>
+<area shape="rect" id="node33" href="$struct_f_t___glyph_slot_rec__.html" title=" " alt="" coords="1424,643,1555,669"/>
+<area shape="rect" id="node2" href="$struct_f_t___stream_rec__.html" title=" " alt="" coords="851,585,967,612"/>
+<area shape="rect" id="node3" href="$struct_f_t___memory_rec__.html" title=" " alt="" coords="598,980,719,1007"/>
+<area shape="rect" id="node11" href="$struct_f_t___module_rec__.html" title=" " alt="" coords="1149,1071,1265,1097"/>
+<area shape="rect" id="node12" href="$struct_f_t___library_rec__.html" title=" " alt="" coords="853,1056,966,1083"/>
+<area shape="rect" id="node24" href="$struct_f_t___glyph_loader_rec__.html" title=" " alt="" coords="836,913,983,940"/>
+<area shape="rect" id="node4" href="$union_f_t___stream_desc__.html" title=" " alt="" coords="597,587,720,613"/>
+<area shape="rect" id="node6" href="$struct_f_t___bitmap___size__.html" title=" " alt="" coords="847,317,972,344"/>
+<area shape="rect" id="node7" href="$struct_f_t___list_rec__.html" title=" " alt="" coords="611,205,706,232"/>
+<area shape="rect" id="node10" href="$struct_f_t___driver_rec__.html" title=" " alt="" coords="2030,539,2137,565"/>
+<area shape="rect" id="node8" href="$struct_f_t___list_node_rec__.html" title=" " alt="" coords="321,205,447,232"/>
+<area shape="rect" id="node9" href="$struct_f_t___generic__.html" title=" " alt="" coords="861,368,957,395"/>
+<area shape="rect" id="node14" href="$struct_f_t___renderer_rec__.html" title=" " alt="" coords="2020,1183,2147,1209"/>
+<area shape="rect" id="node21" href="$struct_f_t___module___class__.html" title=" " alt="" coords="1423,1021,1556,1048"/>
+<area shape="rect" id="node23" href="$struct_f_t___glyph_rec__.html" title=" " alt="" coords="1153,1287,1261,1313"/>
+<area shape="rect" id="node13" href="$struct_f_t___vector__.html" title=" " alt="" coords="37,859,127,885"/>
+<area shape="rect" id="node25" href="$struct_f_t___glyph_load_rec__.html" title=" " alt="" coords="591,903,727,929"/>
+<area shape="rect" id="node26" href="$struct_f_t___outline__.html" title=" " alt="" coords="338,859,430,885"/>
+<area shape="rect" id="node35" href="$struct_f_t___slot___internal_rec__.html" title=" " alt="" coords="1133,749,1280,776"/>
+<area shape="rect" id="node36" href="$struct_f_t___face___internal_rec__.html" title=" " alt="" coords="308,404,460,431"/>
+<area shape="rect" id="node15" href="$struct_f_t___renderer___class__.html" title=" " alt="" coords="1731,1129,1874,1156"/>
+<area shape="rect" id="node16" href="$struct_f_t___raster___funcs__.html" title=" " alt="" coords="1423,1149,1555,1176"/>
+<area shape="rect" id="node17" href="$struct_f_t___raster___params__.html" title=" " alt="" coords="1136,1123,1277,1149"/>
+<area shape="rect" id="node18" href="$struct_f_t___span__.html" title=" " alt="" coords="869,1308,950,1335"/>
+<area shape="rect" id="node19" href="$struct_f_t___bitmap__.html" title=" " alt="" coords="863,991,955,1017"/>
+<area shape="rect" id="node20" href="$struct_f_t___b_box__.html" title=" " alt="" coords="868,749,951,776"/>
+<area shape="rect" id="node22" href="$struct_f_t___glyph___class__.html" title=" " alt="" coords="1580,1280,1705,1307"/>
+<area shape="rect" id="node27" href="$struct_f_t___sub_glyph_rec__.html" title=" " alt="" coords="319,555,449,581"/>
+<area shape="rect" id="node28" href="$struct_f_t___matrix__.html" title=" " alt="" coords="39,475,125,501"/>
+<area shape="rect" id="node31" href="$struct_f_t___size___internal_rec__.html" title=" " alt="" coords="1132,120,1281,147"/>
+<area shape="rect" id="node32" href="$struct_f_t___size___metrics__.html" title=" " alt="" coords="846,83,973,109"/>
+<area shape="rect" id="node34" href="$struct_f_t___glyph___metrics__.html" title=" " alt="" coords="1139,643,1274,669"/>
+<area shape="rect" id="node37" href="$struct_f_t___service_cache_rec__.html" title=" " alt="" coords="5,385,159,412"/>
+</map>

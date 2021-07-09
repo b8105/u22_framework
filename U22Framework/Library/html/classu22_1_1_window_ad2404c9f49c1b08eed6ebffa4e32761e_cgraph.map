@@ -1,0 +1,4 @@
+<map id="u22::Window::Destroy" name="u22::Window::Destroy">
+<area shape="rect" id="node1" title="削除" alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node2" href="$group__window.html#ga806747476b7247d292be3711c323ea10" title="Destroys the specified window and its context." alt="" coords="204,5,339,32"/>
+</map>

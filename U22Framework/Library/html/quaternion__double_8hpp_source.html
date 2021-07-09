@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: External/GLM/ext/quaternion_double.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_443fc37f241ba4018364a998c18d007b.html">External</a></li><li class="navelem"><a class="el" href="dir_c334883f19ec445d87470844289252ab.html">GLM</a></li><li class="navelem"><a class="el" href="dir_3ead7d7d98efc92dbd3a2f779851262e.html">ext</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">quaternion_double.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="quaternion__double_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// Dependency:</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;../detail/type_quat.hpp&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#if GLM_MESSAGES == GLM_ENABLE &amp;&amp; !defined(GLM_EXT_INCLUDED)</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#   pragma message(&quot;GLM: GLM_EXT_quaternion_double extension included&quot;)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceglm.html">glm</a></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="group__ext__quaternion__double.html#gadb68095027a4365a7f5341a28c631b15">   35</a></span>&#160;    <span class="keyword">typedef</span> <a class="code" href="structglm_1_1qua.html">qua&lt;double, defaultp&gt;</a>       <a class="code" href="group__ext__quaternion__double.html#gadb68095027a4365a7f5341a28c631b15">dquat</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;} <span class="comment">//namespace glm</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="agroup__ext__quaternion__trigonometric_html_ga8aa248b31d5ade470c87304df5eb7bd8"><div class="ttname"><a href="group__ext__quaternion__trigonometric.html#ga8aa248b31d5ade470c87304df5eb7bd8">glm::angle</a></div><div class="ttdeci">GLM_FUNC_DECL T angle(qua&lt; T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> quaternion_trigonometric.inl:4</div></div>
+<div class="ttc" id="agroup__core__func__common_html_ga8e93f374aae27d1a88b921860351f8d4"><div class="ttname"><a href="group__core__func__common.html#ga8e93f374aae27d1a88b921860351f8d4">glm::mix</a></div><div class="ttdeci">GLM_FUNC_DECL genTypeT mix(genTypeT x, genTypeT y, genTypeU a)</div><div class="ttdef"><b>Definition:</b> func_common.inl:525</div></div>
+<div class="ttc" id="aquaternion__common__simd_8inl_html"><div class="ttname"><a href="quaternion__common__simd_8inl.html">quaternion_common_simd.inl</a></div></div>
+<div class="ttc" id="agroup__ext__quaternion__common_html_ga6033dc0741051fa463a0a147ba29f293"><div class="ttname"><a href="group__ext__quaternion__common.html#ga6033dc0741051fa463a0a147ba29f293">glm::lerp</a></div><div class="ttdeci">GLM_FUNC_DECL qua&lt; T, Q &gt; lerp(qua&lt; T, Q &gt; const &amp;x, qua&lt; T, Q &gt; const &amp;y, T a)</div><div class="ttdef"><b>Definition:</b> quaternion_common.inl:29</div></div>
+<div class="ttc" id="asetup_8hpp_html_a6893d4a6bf0ecab00f7c73166379245a"><div class="ttname"><a href="setup_8hpp.html#a6893d4a6bf0ecab00f7c73166379245a">GLM_STATIC_ASSERT</a></div><div class="ttdeci">#define GLM_STATIC_ASSERT(x, message)</div><div class="ttdef"><b>Definition:</b> setup.hpp:405</div></div>
+<div class="ttc" id="anamespaceglm_html_a40370edb74dec9048258c063b9c091c9"><div class="ttname"><a href="namespaceglm.html#a40370edb74dec9048258c063b9c091c9">glm::dot</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER T dot(T x, T y)</div><div class="ttdef"><b>Definition:</b> func_geometric.inl:160</div></div>
+<div class="ttc" id="astructglm_1_1qua_html_ae0e0786cb5ef565606ecc3d4d8255fd3"><div class="ttname"><a href="structglm_1_1qua.html#ae0e0786cb5ef565606ecc3d4d8255fd3">glm::qua::x</a></div><div class="ttdeci">T x</div><div class="ttdef"><b>Definition:</b> type_quat.hpp:50</div></div>
+<div class="ttc" id="astructglm_1_1qua_html"><div class="ttname"><a href="structglm_1_1qua.html">glm::qua</a></div><div class="ttdef"><b>Definition:</b> type_quat.hpp:20</div></div>
+<div class="ttc" id="anamespaceglm_html"><div class="ttname"><a href="namespaceglm.html">glm</a></div><div class="ttdoc">Core features</div><div class="ttdef"><b>Definition:</b> common.hpp:21</div></div>
+<div class="ttc" id="astructglm_1_1vec_html"><div class="ttname"><a href="structglm_1_1vec.html">glm::vec</a></div><div class="ttdef"><b>Definition:</b> qualifier.hpp:35</div></div>
+<div class="ttc" id="astructglm_1_1qua_html_a751f58e48134d3bd65253a43708a552d"><div class="ttname"><a href="structglm_1_1qua.html#a751f58e48134d3bd65253a43708a552d">glm::qua::z</a></div><div class="ttdeci">T z</div><div class="ttdef"><b>Definition:</b> type_quat.hpp:50</div></div>
+<div class="ttc" id="agroup__core__func__trigonometric_html_ga29747fd108cb7292ae5a284f69691a69"><div class="ttname"><a href="group__core__func__trigonometric.html#ga29747fd108cb7292ae5a284f69691a69">glm::sin</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER vec&lt; L, T, Q &gt; sin(vec&lt; L, T, Q &gt; const &amp;v)</div><div class="ttdef"><b>Definition:</b> func_trigonometric.inl:41</div></div>
+<div class="ttc" id="agroup__core__func__common_html_ga29ef934c00306490de837b4746b4e14d"><div class="ttname"><a href="group__core__func__common.html#ga29ef934c00306490de837b4746b4e14d">glm::isnan</a></div><div class="ttdeci">GLM_FUNC_DECL vec&lt; L, bool, Q &gt; isnan(vec&lt; L, T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> func_common.inl:612</div></div>
+<div class="ttc" id="agroup__ext__quaternion__double_html_gadb68095027a4365a7f5341a28c631b15"><div class="ttname"><a href="group__ext__quaternion__double.html#gadb68095027a4365a7f5341a28c631b15">glm::dquat</a></div><div class="ttdeci">qua&lt; double, defaultp &gt; dquat</div><div class="ttdoc">Quaternion of double-precision floating-point numbers.</div><div class="ttdef"><b>Definition:</b> quaternion_double.hpp:35</div></div>
+<div class="ttc" id="agroup__core__func__trigonometric_html_gacc9b092df8257c68f19c9053703e2563"><div class="ttname"><a href="group__core__func__trigonometric.html#gacc9b092df8257c68f19c9053703e2563">glm::acos</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER vec&lt; L, T, Q &gt; acos(vec&lt; L, T, Q &gt; const &amp;v)</div><div class="ttdef"><b>Definition:</b> func_trigonometric.inl:77</div></div>
+<div class="ttc" id="agroup__ext__quaternion__common_html_gae7fc3c945be366b9942b842f55da428a"><div class="ttname"><a href="group__ext__quaternion__common.html#gae7fc3c945be366b9942b842f55da428a">glm::slerp</a></div><div class="ttdeci">GLM_FUNC_DECL qua&lt; T, Q &gt; slerp(qua&lt; T, Q &gt; const &amp;x, qua&lt; T, Q &gt; const &amp;y, T a)</div><div class="ttdef"><b>Definition:</b> quaternion_common.inl:41</div></div>
+<div class="ttc" id="agroup__ext__quaternion__common_html_ga10d7bda73201788ac2ab28cd8d0d409b"><div class="ttname"><a href="group__ext__quaternion__common.html#ga10d7bda73201788ac2ab28cd8d0d409b">glm::conjugate</a></div><div class="ttdeci">GLM_FUNC_DECL qua&lt; T, Q &gt; conjugate(qua&lt; T, Q &gt; const &amp;q)</div><div class="ttdef"><b>Definition:</b> quaternion_common.inl:76</div></div>
+<div class="ttc" id="astructglm_1_1qua_html_a3183bedd482933c6723e6ebcf409e178"><div class="ttname"><a href="structglm_1_1qua.html#a3183bedd482933c6723e6ebcf409e178">glm::qua::y</a></div><div class="ttdeci">T y</div><div class="ttdef"><b>Definition:</b> type_quat.hpp:50</div></div>
+<div class="ttc" id="asetup_8hpp_html_a33fdea6f91c5f834105f7415e2a64407"><div class="ttname"><a href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a></div><div class="ttdeci">#define GLM_FUNC_QUALIFIER</div><div class="ttdef"><b>Definition:</b> setup.hpp:439</div></div>
+<div class="ttc" id="astructglm_1_1qua_html_ad8a7f933070e6e4382d9fce4a6efecd6"><div class="ttname"><a href="structglm_1_1qua.html#ad8a7f933070e6e4382d9fce4a6efecd6">glm::qua::w</a></div><div class="ttdeci">T w</div><div class="ttdef"><b>Definition:</b> type_quat.hpp:50</div></div>
+<div class="ttc" id="agroup__core__func__matrix_html_gaed509fe8129b01e4f20a6d0de5690091"><div class="ttname"><a href="group__core__func__matrix.html#gaed509fe8129b01e4f20a6d0de5690091">glm::inverse</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER mat&lt; C, R, T, Q &gt; inverse(mat&lt; C, R, T, Q &gt; const &amp;m)</div><div class="ttdef"><b>Definition:</b> func_matrix.inl:388</div></div>
+<div class="ttc" id="agroup__core__func__common_html_ga2885587c23a106301f20443896365b62"><div class="ttname"><a href="group__core__func__common.html#ga2885587c23a106301f20443896365b62">glm::isinf</a></div><div class="ttdeci">GLM_FUNC_DECL vec&lt; L, bool, Q &gt; isinf(vec&lt; L, T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> func_common.inl:654</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

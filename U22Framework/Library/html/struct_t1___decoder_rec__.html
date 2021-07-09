@@ -1,0 +1,560 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: T1_DecoderRec_ 構造体</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="struct_t1___decoder_rec__-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">T1_DecoderRec_ 構造体</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="psaux_8h_source.html">psaux.h</a>&gt;</code></p>
+<div class="dynheader">
+T1_DecoderRec_ 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_t1___decoder_rec____coll__graph.png" border="0" usemap="#a_t1___decoder_rec___coll__map" alt="Collaboration graph"/></div>
+<map name="_t1___decoder_rec___coll__map" id="_t1___decoder_rec___coll__map">
+<area shape="rect" title=" " alt="" coords="2300,1523,2421,1549"/>
+<area shape="rect" href="struct_t1___decoder___funcs_rec__.html" title=" " alt="" coords="1989,1333,2153,1360"/>
+<area shape="rect" href="struct_t1___decoder___zone_rec__.html" title=" " alt="" coords="1993,1388,2149,1415"/>
+<area shape="rect" href="struct_f_t___vector__.html" title=" " alt="" coords="37,555,127,581"/>
+<area shape="rect" href="struct_t1___builder_rec__.html" title=" " alt="" coords="2015,475,2128,501"/>
+<area shape="rect" href="struct_f_t___outline__.html" title=" " alt="" coords="338,555,430,581"/>
+<area shape="rect" href="struct_f_t___glyph_load_rec__.html" title=" " alt="" coords="572,689,708,716"/>
+<area shape="rect" href="struct_f_t___glyph_slot_rec__.html" title=" " alt="" coords="1735,931,1866,957"/>
+<area shape="rect" href="struct_f_t___library_rec__.html" title=" " alt="" coords="583,895,697,921"/>
+<area shape="rect" href="struct_f_t___glyph_rec__.html" title=" " alt="" coords="853,537,961,564"/>
+<area shape="rect" href="struct_f_t___face___internal_rec__.html" title=" " alt="" coords="308,1307,460,1333"/>
+<area shape="rect" href="struct_f_t___slot___internal_rec__.html" title=" " alt="" coords="1121,747,1268,773"/>
+<area shape="rect" href="struct_f_t___generic__.html" title=" " alt="" coords="1147,1533,1243,1560"/>
+<area shape="rect" href="struct_f_t___face_rec__.html" title=" " alt="" coords="1465,1341,1567,1368"/>
+<area shape="rect" href="struct_f_t___size_rec__.html" title=" " alt="" coords="1751,1531,1851,1557"/>
+<area shape="rect" href="struct_f_t___matrix__.html" title=" " alt="" coords="39,981,125,1008"/>
+<area shape="rect" href="struct_f_t___sub_glyph_rec__.html" title=" " alt="" coords="319,855,449,881"/>
+<area shape="rect" href="struct_p_s___blend_rec__.html" title=" " alt="" coords="851,1775,962,1801"/>
+<area shape="rect" href="struct_p_s___font_info_rec__.html" title=" " alt="" coords="579,1775,701,1801"/>
+<area shape="rect" href="struct_p_s___design_map__.html" title=" " alt="" coords="581,1825,699,1852"/>
+<area shape="rect" href="struct_p_s___private_rec__.html" title=" " alt="" coords="582,1724,698,1751"/>
+<area shape="rect" href="struct_f_t___b_box__.html" title=" " alt="" coords="599,1196,681,1223"/>
+<area shape="rect" href="struct_f_t___raster___params__.html" title=" " alt="" coords="836,487,977,513"/>
+<area shape="rect" href="struct_t1___builder___funcs_rec__.html" title=" " alt="" coords="2283,53,2439,80"/>
+<area shape="rect" href="struct_f_t___glyph_loader_rec__.html" title=" " alt="" coords="833,724,980,751"/>
+<area shape="rect" href="struct_f_t___driver_rec__.html" title=" " alt="" coords="1141,1167,1248,1193"/>
+<area shape="rect" href="struct_f_t___memory_rec__.html" title=" " alt="" coords="323,1004,445,1031"/>
+<area shape="rect" href="struct_f_t___module_rec__.html" title=" " alt="" coords="849,972,965,999"/>
+<area shape="rect" href="struct_f_t___stream_rec__.html" title=" " alt="" coords="582,1300,698,1327"/>
+<area shape="rect" href="struct_f_t___driver___class_rec__.html" title=" " alt="" coords="1998,1439,2145,1465"/>
+<area shape="rect" href="struct_f_t___module___class__.html" title=" " alt="" coords="1128,993,1261,1020"/>
+<area shape="rect" href="struct_f_t___renderer_rec__.html" title=" " alt="" coords="1737,564,1864,591"/>
+<area shape="rect" href="struct_f_t___renderer___class__.html" title=" " alt="" coords="1445,535,1587,561"/>
+<area shape="rect" href="struct_f_t___raster___funcs__.html" title=" " alt="" coords="1129,544,1261,571"/>
+<area shape="rect" href="struct_f_t___span__.html" title=" " alt="" coords="599,487,681,513"/>
+<area shape="rect" href="struct_f_t___bitmap__.html" title=" " alt="" coords="594,436,686,463"/>
+<area shape="rect" href="struct_f_t___glyph___class__.html" title=" " alt="" coords="1292,400,1417,427"/>
+<area shape="rect" href="struct_f_t___list_rec__.html" title=" " alt="" coords="337,1452,431,1479"/>
+<area shape="rect" href="struct_f_t___list_node_rec__.html" title=" " alt="" coords="19,1452,145,1479"/>
+<area shape="rect" href="struct_f_t___glyph___metrics__.html" title=" " alt="" coords="1449,964,1583,991"/>
+<area shape="rect" href="struct_f_t___char_map_rec__.html" title=" " alt="" coords="1737,1343,1864,1369"/>
+<area shape="rect" href="union_f_t___stream_desc__.html" title=" " alt="" coords="323,1256,445,1283"/>
+<area shape="rect" href="struct_f_t___bitmap___size__.html" title=" " alt="" coords="1132,1268,1257,1295"/>
+<area shape="rect" href="struct_f_t___size___internal_rec__.html" title=" " alt="" coords="1441,1691,1591,1717"/>
+<area shape="rect" href="struct_f_t___size___metrics__.html" title=" " alt="" coords="1131,1677,1258,1704"/>
+<area shape="rect" href="struct_f_t___service_cache_rec__.html" title=" " alt="" coords="5,1307,159,1333"/>
+<area shape="rect" href="struct_f_t___hash_rec__.html" title=" " alt="" coords="2019,1795,2123,1821"/>
+<area shape="rect" href="struct_f_t___hashnode_rec__.html" title=" " alt="" coords="1735,1803,1867,1829"/>
+<area shape="rect" href="union_f_t___hashkey__.html" title=" " alt="" coords="1465,1843,1567,1869"/>
+<area shape="rect" title=" " alt="" coords="1487,1792,1545,1819"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:a75fd9f539974efe45107ce602dc9ea1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="psaux_8h.html#a7e7000fa7222ecde3531ab9b12ab7090">T1_BuilderRec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#a75fd9f539974efe45107ce602dc9ea1b">builder</a></td></tr>
+<tr class="separator:a75fd9f539974efe45107ce602dc9ea1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0def194d1b8f9b68f1750820a19bb3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#a7fa72a1f0e79fb1860c5965789024d6f">FT_Long</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#af0def194d1b8f9b68f1750820a19bb3f">stack</a> [<a class="el" href="ftoption_8h.html#a2d9bf92424fd81e25c1ed03f80bb5c80">T1_MAX_CHARSTRINGS_OPERANDS</a>]</td></tr>
+<tr class="separator:af0def194d1b8f9b68f1750820a19bb3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f26aa85b1859f23427b7aba9008f126"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#a7fa72a1f0e79fb1860c5965789024d6f">FT_Long</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#a5f26aa85b1859f23427b7aba9008f126">top</a></td></tr>
+<tr class="separator:a5f26aa85b1859f23427b7aba9008f126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e33201df5beec8a3d81eca726b09ea5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="psaux_8h.html#a1e3011ccffef1cad2439d3186985434f">T1_Decoder_ZoneRec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#a4e33201df5beec8a3d81eca726b09ea5">zones</a> [<a class="el" href="ftoption_8h.html#aa9c844460223f004a1916df4b7a831f4">T1_MAX_SUBRS_CALLS</a>+1]</td></tr>
+<tr class="separator:a4e33201df5beec8a3d81eca726b09ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add29399f0c811404b9d6ca373793103e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="psaux_8h.html#a5cfd02fa4e8c74f182585e0853bc93b2">T1_Decoder_Zone</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#add29399f0c811404b9d6ca373793103e">zone</a></td></tr>
+<tr class="separator:add29399f0c811404b9d6ca373793103e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1c3efd334618c670c6e2b975829e926"><td class="memItemLeft" align="right" valign="top">FT_Service_PsCMaps&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#ac1c3efd334618c670c6e2b975829e926">psnames</a></td></tr>
+<tr class="separator:ac1c3efd334618c670c6e2b975829e926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ae08137c5931f34db9c3bb864b17712"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#a1ae08137c5931f34db9c3bb864b17712">num_glyphs</a></td></tr>
+<tr class="separator:a1ae08137c5931f34db9c3bb864b17712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb8be0bdd36652cd4383754698b5b44a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#a51f26183ca0c9f4af958939648caeccd">FT_Byte</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#acb8be0bdd36652cd4383754698b5b44a">glyph_names</a></td></tr>
+<tr class="separator:acb8be0bdd36652cd4383754698b5b44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae462a9834f9196cec6b51bb651409a04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#af90e5fb0d07e21be9fe6faa33f02484c">FT_Int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#ae462a9834f9196cec6b51bb651409a04">lenIV</a></td></tr>
+<tr class="separator:ae462a9834f9196cec6b51bb651409a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75edc3358d8eb8ebe0b25446b12167ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#af90e5fb0d07e21be9fe6faa33f02484c">FT_Int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#a75edc3358d8eb8ebe0b25446b12167ab">num_subrs</a></td></tr>
+<tr class="separator:a75edc3358d8eb8ebe0b25446b12167ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a069e863647a7f3ff1f9fa36d4ff20bec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#a51f26183ca0c9f4af958939648caeccd">FT_Byte</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#a069e863647a7f3ff1f9fa36d4ff20bec">subrs</a></td></tr>
+<tr class="separator:a069e863647a7f3ff1f9fa36d4ff20bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aa81301674740592565909725507716"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#a0aa81301674740592565909725507716">subrs_len</a></td></tr>
+<tr class="separator:a0aa81301674740592565909725507716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac279ebc75024ca9174b1d320d053b4c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fthash_8h.html#a0cb2366c4ff7d31bceb8a1ee4bc0abb9">FT_Hash</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#ac279ebc75024ca9174b1d320d053b4c1">subrs_hash</a></td></tr>
+<tr class="separator:ac279ebc75024ca9174b1d320d053b4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0964ecfe6c7cd48293ef2df1113f2358"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#aa6f56f1da1b9036f07db19fbc39c8aea">FT_Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#a0964ecfe6c7cd48293ef2df1113f2358">font_matrix</a></td></tr>
+<tr class="separator:a0964ecfe6c7cd48293ef2df1113f2358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93665f0c3ec9a060fcc50d09809dfb9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ftimage_8h.html#abfcb941b4b81f3a922d4ae57c620db27">FT_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#a93665f0c3ec9a060fcc50d09809dfb9c">font_offset</a></td></tr>
+<tr class="separator:a93665f0c3ec9a060fcc50d09809dfb9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24ce4060a032f528d0bcc10b8494c9b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#af90e5fb0d07e21be9fe6faa33f02484c">FT_Int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#a24ce4060a032f528d0bcc10b8494c9b6">flex_state</a></td></tr>
+<tr class="separator:a24ce4060a032f528d0bcc10b8494c9b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d126bc9c7acd4d5ba333deb256c6e2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#af90e5fb0d07e21be9fe6faa33f02484c">FT_Int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#a3d126bc9c7acd4d5ba333deb256c6e2d">num_flex_vectors</a></td></tr>
+<tr class="separator:a3d126bc9c7acd4d5ba333deb256c6e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a445d990e03f146af0b9ce61721367563"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ftimage_8h.html#abfcb941b4b81f3a922d4ae57c620db27">FT_Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#a445d990e03f146af0b9ce61721367563">flex_vectors</a> [7]</td></tr>
+<tr class="separator:a445d990e03f146af0b9ce61721367563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cd698c7041cb4f319949b62f215f7c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="t1tables_8h.html#aa6585837cd3e553b7c3d969f8afc3b17">PS_Blend</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#a0cd698c7041cb4f319949b62f215f7c7">blend</a></td></tr>
+<tr class="separator:a0cd698c7041cb4f319949b62f215f7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a364b15149edb573dcc79be015eba61b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="freetype_8h.html#a42c69ed4922d28c7d8cc9173237f966b">FT_Render_Mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#a364b15149edb573dcc79be015eba61b4">hint_mode</a></td></tr>
+<tr class="separator:a364b15149edb573dcc79be015eba61b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840af0b01e7adb1e3aa521a936196b62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="psaux_8h.html#a261ae6af916d044be1b818e5dc8e8b9b">T1_Decoder_Callback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#a840af0b01e7adb1e3aa521a936196b62">parse_callback</a></td></tr>
+<tr class="separator:a840af0b01e7adb1e3aa521a936196b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b0f5f7cb3f44e88880aa9c927d79775"><td class="memItemLeft" align="right" valign="top"><a class="el" href="psaux_8h.html#ab098a10d53329810072d1a9377403bd8">T1_Decoder_FuncsRec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#a6b0f5f7cb3f44e88880aa9c927d79775">funcs</a></td></tr>
+<tr class="separator:a6b0f5f7cb3f44e88880aa9c927d79775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a967ee06cbbdc8823be8f95df5db625b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#a7fa72a1f0e79fb1860c5965789024d6f">FT_Long</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#a967ee06cbbdc8823be8f95df5db625b9">buildchar</a></td></tr>
+<tr class="separator:a967ee06cbbdc8823be8f95df5db625b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55fd1c88d6f7badaec2aa13db17c816f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#a55fd1c88d6f7badaec2aa13db17c816f">len_buildchar</a></td></tr>
+<tr class="separator:a55fd1c88d6f7badaec2aa13db17c816f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45bf18b54ff973177ea3061ef0b705c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#a1a832a256bb5a7e6e884afaa1a07f3ae">FT_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#a45bf18b54ff973177ea3061ef0b705c6">seac</a></td></tr>
+<tr class="separator:a45bf18b54ff973177ea3061ef0b705c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af86db311be715d7621ec743acf979fda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fttypes_8h.html#a6fddceba92aa481008f68bad54cb8c0b">FT_Generic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___decoder_rec__.html#af86db311be715d7621ec743acf979fda">cf2_instance</a></td></tr>
+<tr class="separator:af86db311be715d7621ec743acf979fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a0cd698c7041cb4f319949b62f215f7c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cd698c7041cb4f319949b62f215f7c7">&#9670;&nbsp;</a></span>blend</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="t1tables_8h.html#aa6585837cd3e553b7c3d969f8afc3b17">PS_Blend</a> T1_DecoderRec_::blend</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a967ee06cbbdc8823be8f95df5db625b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a967ee06cbbdc8823be8f95df5db625b9">&#9670;&nbsp;</a></span>buildchar</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#a7fa72a1f0e79fb1860c5965789024d6f">FT_Long</a>* T1_DecoderRec_::buildchar</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a75fd9f539974efe45107ce602dc9ea1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75fd9f539974efe45107ce602dc9ea1b">&#9670;&nbsp;</a></span>builder</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="psaux_8h.html#a7e7000fa7222ecde3531ab9b12ab7090">T1_BuilderRec</a> T1_DecoderRec_::builder</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af86db311be715d7621ec743acf979fda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af86db311be715d7621ec743acf979fda">&#9670;&nbsp;</a></span>cf2_instance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#a6fddceba92aa481008f68bad54cb8c0b">FT_Generic</a> T1_DecoderRec_::cf2_instance</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24ce4060a032f528d0bcc10b8494c9b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24ce4060a032f528d0bcc10b8494c9b6">&#9670;&nbsp;</a></span>flex_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#af90e5fb0d07e21be9fe6faa33f02484c">FT_Int</a> T1_DecoderRec_::flex_state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a445d990e03f146af0b9ce61721367563"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a445d990e03f146af0b9ce61721367563">&#9670;&nbsp;</a></span>flex_vectors</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ftimage_8h.html#abfcb941b4b81f3a922d4ae57c620db27">FT_Vector</a> T1_DecoderRec_::flex_vectors[7]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0964ecfe6c7cd48293ef2df1113f2358"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0964ecfe6c7cd48293ef2df1113f2358">&#9670;&nbsp;</a></span>font_matrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#aa6f56f1da1b9036f07db19fbc39c8aea">FT_Matrix</a> T1_DecoderRec_::font_matrix</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a93665f0c3ec9a060fcc50d09809dfb9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93665f0c3ec9a060fcc50d09809dfb9c">&#9670;&nbsp;</a></span>font_offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ftimage_8h.html#abfcb941b4b81f3a922d4ae57c620db27">FT_Vector</a> T1_DecoderRec_::font_offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b0f5f7cb3f44e88880aa9c927d79775"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b0f5f7cb3f44e88880aa9c927d79775">&#9670;&nbsp;</a></span>funcs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="psaux_8h.html#ab098a10d53329810072d1a9377403bd8">T1_Decoder_FuncsRec</a> T1_DecoderRec_::funcs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb8be0bdd36652cd4383754698b5b44a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb8be0bdd36652cd4383754698b5b44a">&#9670;&nbsp;</a></span>glyph_names</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#a51f26183ca0c9f4af958939648caeccd">FT_Byte</a>** T1_DecoderRec_::glyph_names</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a364b15149edb573dcc79be015eba61b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a364b15149edb573dcc79be015eba61b4">&#9670;&nbsp;</a></span>hint_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="freetype_8h.html#a42c69ed4922d28c7d8cc9173237f966b">FT_Render_Mode</a> T1_DecoderRec_::hint_mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a55fd1c88d6f7badaec2aa13db17c816f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55fd1c88d6f7badaec2aa13db17c816f">&#9670;&nbsp;</a></span>len_buildchar</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> T1_DecoderRec_::len_buildchar</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae462a9834f9196cec6b51bb651409a04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae462a9834f9196cec6b51bb651409a04">&#9670;&nbsp;</a></span>lenIV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#af90e5fb0d07e21be9fe6faa33f02484c">FT_Int</a> T1_DecoderRec_::lenIV</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d126bc9c7acd4d5ba333deb256c6e2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d126bc9c7acd4d5ba333deb256c6e2d">&#9670;&nbsp;</a></span>num_flex_vectors</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#af90e5fb0d07e21be9fe6faa33f02484c">FT_Int</a> T1_DecoderRec_::num_flex_vectors</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ae08137c5931f34db9c3bb864b17712"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ae08137c5931f34db9c3bb864b17712">&#9670;&nbsp;</a></span>num_glyphs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> T1_DecoderRec_::num_glyphs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a75edc3358d8eb8ebe0b25446b12167ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75edc3358d8eb8ebe0b25446b12167ab">&#9670;&nbsp;</a></span>num_subrs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#af90e5fb0d07e21be9fe6faa33f02484c">FT_Int</a> T1_DecoderRec_::num_subrs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a840af0b01e7adb1e3aa521a936196b62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840af0b01e7adb1e3aa521a936196b62">&#9670;&nbsp;</a></span>parse_callback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="psaux_8h.html#a261ae6af916d044be1b818e5dc8e8b9b">T1_Decoder_Callback</a> T1_DecoderRec_::parse_callback</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac1c3efd334618c670c6e2b975829e926"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1c3efd334618c670c6e2b975829e926">&#9670;&nbsp;</a></span>psnames</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FT_Service_PsCMaps T1_DecoderRec_::psnames</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45bf18b54ff973177ea3061ef0b705c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45bf18b54ff973177ea3061ef0b705c6">&#9670;&nbsp;</a></span>seac</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#a1a832a256bb5a7e6e884afaa1a07f3ae">FT_Bool</a> T1_DecoderRec_::seac</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af0def194d1b8f9b68f1750820a19bb3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0def194d1b8f9b68f1750820a19bb3f">&#9670;&nbsp;</a></span>stack</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#a7fa72a1f0e79fb1860c5965789024d6f">FT_Long</a> T1_DecoderRec_::stack[<a class="el" href="ftoption_8h.html#a2d9bf92424fd81e25c1ed03f80bb5c80">T1_MAX_CHARSTRINGS_OPERANDS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a069e863647a7f3ff1f9fa36d4ff20bec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a069e863647a7f3ff1f9fa36d4ff20bec">&#9670;&nbsp;</a></span>subrs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#a51f26183ca0c9f4af958939648caeccd">FT_Byte</a>** T1_DecoderRec_::subrs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac279ebc75024ca9174b1d320d053b4c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac279ebc75024ca9174b1d320d053b4c1">&#9670;&nbsp;</a></span>subrs_hash</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fthash_8h.html#a0cb2366c4ff7d31bceb8a1ee4bc0abb9">FT_Hash</a> T1_DecoderRec_::subrs_hash</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0aa81301674740592565909725507716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aa81301674740592565909725507716">&#9670;&nbsp;</a></span>subrs_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a>* T1_DecoderRec_::subrs_len</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f26aa85b1859f23427b7aba9008f126"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f26aa85b1859f23427b7aba9008f126">&#9670;&nbsp;</a></span>top</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fttypes_8h.html#a7fa72a1f0e79fb1860c5965789024d6f">FT_Long</a>* T1_DecoderRec_::top</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add29399f0c811404b9d6ca373793103e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add29399f0c811404b9d6ca373793103e">&#9670;&nbsp;</a></span>zone</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="psaux_8h.html#a5cfd02fa4e8c74f182585e0853bc93b2">T1_Decoder_Zone</a> T1_DecoderRec_::zone</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e33201df5beec8a3d81eca726b09ea5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e33201df5beec8a3d81eca726b09ea5">&#9670;&nbsp;</a></span>zones</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="psaux_8h.html#a1e3011ccffef1cad2439d3186985434f">T1_Decoder_ZoneRec</a> T1_DecoderRec_::zones[<a class="el" href="ftoption_8h.html#aa9c844460223f004a1916df4b7a831f4">T1_MAX_SUBRS_CALLS</a>+1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>この構造体詳解は次のファイルから抽出されました:<ul>
+<li>freetype/internal/<a class="el" href="psaux_8h_source.html">psaux.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

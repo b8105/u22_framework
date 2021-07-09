@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: Audio/Audio.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_654f178923b1444d84ee2a4d88be6b27.html">Audio</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Audio.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_audio_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef U22_AUDIO_AUDIO_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define U22_AUDIO_AUDIO_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../Common/Common.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="namespaceu22_1_1audio.html">    8</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceu22_1_1audio.html">u22::audio</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classu22_1_1audio_1_1_audio.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classu22_1_1audio_1_1_audio.html">Audio</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="alc_8h.html#aba8742179fd52ef41c66adacdec5383e">ALCdevice</a>* _device;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="alc_8h.html#ad085cf94ff96646b5a2b5401c4489e23">ALCcontext</a>* _context;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classu22_1_1audio_1_1_audio.html#a98351c4a4c3358e3ff1e0f4b49e35bd0">Audio</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classu22_1_1audio_1_1_audio.html#a0e3437b607a942d3d14fe37dd085a236">~Audio</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1audio_1_1_audio.html#a18c4c1cb52c78a04e2757f30aca7879e">Initialize</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1audio_1_1_audio.html#ac65315e775fcc56008415dd84469c44e">Release</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif // !U22_AUDIO_AUDIO_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aalc_8h_html_a41682484927dfa1d17a8167ddc39b03c"><div class="ttname"><a href="alc_8h.html#a41682484927dfa1d17a8167ddc39b03c">alcDestroyContext</a></div><div class="ttdeci">ALC_API void ALC_APIENTRY alcDestroyContext(ALCcontext *context)</div></div>
+<div class="ttc" id="aftobjs_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="ftobjs_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> ftobjs.h:61</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_audio_html_ac65315e775fcc56008415dd84469c44e"><div class="ttname"><a href="classu22_1_1audio_1_1_audio.html#ac65315e775fcc56008415dd84469c44e">u22::audio::Audio::Release</a></div><div class="ttdeci">bool Release(void)</div><div class="ttdoc">解放</div><div class="ttdef"><b>Definition:</b> Audio.cpp:24</div></div>
+<div class="ttc" id="a_audio_8h_html"><div class="ttname"><a href="_audio_8h.html">Audio.h</a></div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_audio_html_a98351c4a4c3358e3ff1e0f4b49e35bd0"><div class="ttname"><a href="classu22_1_1audio_1_1_audio.html#a98351c4a4c3358e3ff1e0f4b49e35bd0">u22::audio::Audio::Audio</a></div><div class="ttdeci">Audio()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> Audio.cpp:3</div></div>
+<div class="ttc" id="aalc_8h_html_aba8742179fd52ef41c66adacdec5383e"><div class="ttname"><a href="alc_8h.html#aba8742179fd52ef41c66adacdec5383e">ALCdevice</a></div><div class="ttdeci">struct ALCdevice_struct ALCdevice</div><div class="ttdef"><b>Definition:</b> alc.h:44</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_audio_html"><div class="ttname"><a href="classu22_1_1audio_1_1_audio.html">u22::audio::Audio</a></div><div class="ttdef"><b>Definition:</b> Audio.h:9</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_audio_html_a0e3437b607a942d3d14fe37dd085a236"><div class="ttname"><a href="classu22_1_1audio_1_1_audio.html#a0e3437b607a942d3d14fe37dd085a236">u22::audio::Audio::~Audio</a></div><div class="ttdeci">~Audio()</div><div class="ttdoc">デストラクタ</div><div class="ttdef"><b>Definition:</b> Audio.cpp:8</div></div>
+<div class="ttc" id="anamespaceu22_1_1audio_html"><div class="ttname"><a href="namespaceu22_1_1audio.html">u22::audio</a></div><div class="ttdef"><b>Definition:</b> Audio.h:8</div></div>
+<div class="ttc" id="aalc_8h_html_ad085cf94ff96646b5a2b5401c4489e23"><div class="ttname"><a href="alc_8h.html#ad085cf94ff96646b5a2b5401c4489e23">ALCcontext</a></div><div class="ttdeci">struct ALCcontext_struct ALCcontext</div><div class="ttdef"><b>Definition:</b> alc.h:45</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_audio_html_a18c4c1cb52c78a04e2757f30aca7879e"><div class="ttname"><a href="classu22_1_1audio_1_1_audio.html#a18c4c1cb52c78a04e2757f30aca7879e">u22::audio::Audio::Initialize</a></div><div class="ttdeci">bool Initialize(void)</div><div class="ttdoc">初期化</div><div class="ttdef"><b>Definition:</b> Audio.cpp:11</div></div>
+<div class="ttc" id="aalc_8h_html_a6cbf6348dd3f49c36d61c63f711d2eba"><div class="ttname"><a href="alc_8h.html#a6cbf6348dd3f49c36d61c63f711d2eba">alcOpenDevice</a></div><div class="ttdeci">ALC_API ALCdevice *ALC_APIENTRY alcOpenDevice(const ALCchar *devicename)</div></div>
+<div class="ttc" id="aalc_8h_html_aa8a289916ea5f2a5db8415b8c0b877b3"><div class="ttname"><a href="alc_8h.html#aa8a289916ea5f2a5db8415b8c0b877b3">alcCloseDevice</a></div><div class="ttdeci">ALC_API ALCboolean ALC_APIENTRY alcCloseDevice(ALCdevice *device)</div></div>
+<div class="ttc" id="aalc_8h_html_a8ece422dd6634d2388190beb9693f86d"><div class="ttname"><a href="alc_8h.html#a8ece422dd6634d2388190beb9693f86d">alcMakeContextCurrent</a></div><div class="ttdeci">ALC_API ALCboolean ALC_APIENTRY alcMakeContextCurrent(ALCcontext *context)</div></div>
+<div class="ttc" id="aalc_8h_html_a2b026c787625167d70504be39d896c8f"><div class="ttname"><a href="alc_8h.html#a2b026c787625167d70504be39d896c8f">alcCreateContext</a></div><div class="ttdeci">ALC_API ALCcontext *ALC_APIENTRY alcCreateContext(ALCdevice *device, const ALCint *attrlist)</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

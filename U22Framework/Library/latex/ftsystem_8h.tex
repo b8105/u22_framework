@@ -1,0 +1,96 @@
+\hypertarget{ftsystem_8h}{}\doxysection{freetype/ftsystem.h ファイル}
+\label{ftsystem_8h}\index{freetype/ftsystem.h@{freetype/ftsystem.h}}
+被依存関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ftsystem_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_f_t___memory_rec__}{F\+T\+\_\+\+Memory\+Rec\+\_\+}}
+\item 
+union \mbox{\hyperlink{union_f_t___stream_desc__}{F\+T\+\_\+\+Stream\+Desc\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_f_t___stream_rec__}{F\+T\+\_\+\+Stream\+Rec\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef typedef\+F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER struct \mbox{\hyperlink{struct_f_t___memory_rec__}{F\+T\+\_\+\+Memory\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}}
+\item 
+typedef void $\ast$($\ast$ \mbox{\hyperlink{ftsystem_8h_ae36240d207415b573f5b84416b426540}{F\+T\+\_\+\+Alloc\+\_\+\+Func}}) (\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} memory, long size)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{ftsystem_8h_abbf66b34e6c3a7f9564cbe3d6fa6c6fb}{F\+T\+\_\+\+Free\+\_\+\+Func}}) (\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} memory, void $\ast$block)
+\item 
+typedef void $\ast$($\ast$ \mbox{\hyperlink{ftsystem_8h_a264ca9013613b2454d64987bf768ac93}{F\+T\+\_\+\+Realloc\+\_\+\+Func}}) (\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} memory, long cur\+\_\+size, long new\+\_\+size, void $\ast$block)
+\item 
+typedef struct \mbox{\hyperlink{struct_f_t___stream_rec__}{F\+T\+\_\+\+Stream\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}}
+\item 
+typedef union \mbox{\hyperlink{union_f_t___stream_desc__}{F\+T\+\_\+\+Stream\+Desc\+\_\+}} \mbox{\hyperlink{ftsystem_8h_a302b58ffa36ab8ca08cadb2629bb8e8f}{F\+T\+\_\+\+Stream\+Desc}}
+\item 
+typedef unsigned long($\ast$ \mbox{\hyperlink{ftsystem_8h_a1909d9c00ba62592c047a9868e5a6b0b}{F\+T\+\_\+\+Stream\+\_\+\+Io\+Func}}) (\mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream, unsigned long offset, unsigned char $\ast$buffer, unsigned long count)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{ftsystem_8h_a9ab6151513724c69e5493d520d43135f}{F\+T\+\_\+\+Stream\+\_\+\+Close\+Func}}) (\mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream)
+\item 
+typedef struct \mbox{\hyperlink{struct_f_t___stream_rec__}{F\+T\+\_\+\+Stream\+Rec\+\_\+}} \mbox{\hyperlink{ftsystem_8h_a0ac77b1942c2bf23e05e4f95976a993a}{F\+T\+\_\+\+Stream\+Rec}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{ftsystem_8h_ae36240d207415b573f5b84416b426540}\label{ftsystem_8h_ae36240d207415b573f5b84416b426540}} 
+\index{ftsystem.h@{ftsystem.h}!FT\_Alloc\_Func@{FT\_Alloc\_Func}}
+\index{FT\_Alloc\_Func@{FT\_Alloc\_Func}!ftsystem.h@{ftsystem.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Alloc\_Func}{FT\_Alloc\_Func}}
+{\footnotesize\ttfamily typedef void$\ast$($\ast$ F\+T\+\_\+\+Alloc\+\_\+\+Func) (\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} memory, long size)}
+
+\mbox{\Hypertarget{ftsystem_8h_abbf66b34e6c3a7f9564cbe3d6fa6c6fb}\label{ftsystem_8h_abbf66b34e6c3a7f9564cbe3d6fa6c6fb}} 
+\index{ftsystem.h@{ftsystem.h}!FT\_Free\_Func@{FT\_Free\_Func}}
+\index{FT\_Free\_Func@{FT\_Free\_Func}!ftsystem.h@{ftsystem.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Free\_Func}{FT\_Free\_Func}}
+{\footnotesize\ttfamily typedef void($\ast$ F\+T\+\_\+\+Free\+\_\+\+Func) (\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} memory, void $\ast$block)}
+
+\mbox{\Hypertarget{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}\label{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}} 
+\index{ftsystem.h@{ftsystem.h}!FT\_Memory@{FT\_Memory}}
+\index{FT\_Memory@{FT\_Memory}!ftsystem.h@{ftsystem.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Memory}{FT\_Memory}}
+{\footnotesize\ttfamily typedef typedef\+F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER struct \mbox{\hyperlink{struct_f_t___memory_rec__}{F\+T\+\_\+\+Memory\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}}}
+
+\mbox{\Hypertarget{ftsystem_8h_a264ca9013613b2454d64987bf768ac93}\label{ftsystem_8h_a264ca9013613b2454d64987bf768ac93}} 
+\index{ftsystem.h@{ftsystem.h}!FT\_Realloc\_Func@{FT\_Realloc\_Func}}
+\index{FT\_Realloc\_Func@{FT\_Realloc\_Func}!ftsystem.h@{ftsystem.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Realloc\_Func}{FT\_Realloc\_Func}}
+{\footnotesize\ttfamily typedef void$\ast$($\ast$ F\+T\+\_\+\+Realloc\+\_\+\+Func) (\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} memory, long cur\+\_\+size, long new\+\_\+size, void $\ast$block)}
+
+\mbox{\Hypertarget{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}\label{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}} 
+\index{ftsystem.h@{ftsystem.h}!FT\_Stream@{FT\_Stream}}
+\index{FT\_Stream@{FT\_Stream}!ftsystem.h@{ftsystem.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Stream}{FT\_Stream}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_f_t___stream_rec__}{F\+T\+\_\+\+Stream\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}}}
+
+\mbox{\Hypertarget{ftsystem_8h_a9ab6151513724c69e5493d520d43135f}\label{ftsystem_8h_a9ab6151513724c69e5493d520d43135f}} 
+\index{ftsystem.h@{ftsystem.h}!FT\_Stream\_CloseFunc@{FT\_Stream\_CloseFunc}}
+\index{FT\_Stream\_CloseFunc@{FT\_Stream\_CloseFunc}!ftsystem.h@{ftsystem.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Stream\_CloseFunc}{FT\_Stream\_CloseFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ F\+T\+\_\+\+Stream\+\_\+\+Close\+Func) (\mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream)}
+
+\mbox{\Hypertarget{ftsystem_8h_a1909d9c00ba62592c047a9868e5a6b0b}\label{ftsystem_8h_a1909d9c00ba62592c047a9868e5a6b0b}} 
+\index{ftsystem.h@{ftsystem.h}!FT\_Stream\_IoFunc@{FT\_Stream\_IoFunc}}
+\index{FT\_Stream\_IoFunc@{FT\_Stream\_IoFunc}!ftsystem.h@{ftsystem.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Stream\_IoFunc}{FT\_Stream\_IoFunc}}
+{\footnotesize\ttfamily typedef unsigned long($\ast$ F\+T\+\_\+\+Stream\+\_\+\+Io\+Func) (\mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream, unsigned long offset, unsigned char $\ast$buffer, unsigned long count)}
+
+\mbox{\Hypertarget{ftsystem_8h_a302b58ffa36ab8ca08cadb2629bb8e8f}\label{ftsystem_8h_a302b58ffa36ab8ca08cadb2629bb8e8f}} 
+\index{ftsystem.h@{ftsystem.h}!FT\_StreamDesc@{FT\_StreamDesc}}
+\index{FT\_StreamDesc@{FT\_StreamDesc}!ftsystem.h@{ftsystem.h}}
+\doxysubsubsection{\texorpdfstring{FT\_StreamDesc}{FT\_StreamDesc}}
+{\footnotesize\ttfamily typedef union \mbox{\hyperlink{union_f_t___stream_desc__}{F\+T\+\_\+\+Stream\+Desc\+\_\+}} \mbox{\hyperlink{ftsystem_8h_a302b58ffa36ab8ca08cadb2629bb8e8f}{F\+T\+\_\+\+Stream\+Desc}}}
+
+\mbox{\Hypertarget{ftsystem_8h_a0ac77b1942c2bf23e05e4f95976a993a}\label{ftsystem_8h_a0ac77b1942c2bf23e05e4f95976a993a}} 
+\index{ftsystem.h@{ftsystem.h}!FT\_StreamRec@{FT\_StreamRec}}
+\index{FT\_StreamRec@{FT\_StreamRec}!ftsystem.h@{ftsystem.h}}
+\doxysubsubsection{\texorpdfstring{FT\_StreamRec}{FT\_StreamRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_f_t___stream_rec__}{F\+T\+\_\+\+Stream\+Rec\+\_\+}} \mbox{\hyperlink{ftsystem_8h_a0ac77b1942c2bf23e05e4f95976a993a}{F\+T\+\_\+\+Stream\+Rec}}}
+

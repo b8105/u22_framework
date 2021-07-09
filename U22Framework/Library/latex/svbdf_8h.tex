@@ -1,0 +1,77 @@
+\hypertarget{svbdf_8h}{}\doxysection{freetype/internal/services/svbdf.h ファイル}
+\label{svbdf_8h}\index{freetype/internal/services/svbdf.h@{freetype/internal/services/svbdf.h}}
+{\ttfamily \#include $<$freetype/ftbdf.\+h$>$}\newline
+{\ttfamily \#include $<$freetype/internal/ftserv.\+h$>$}\newline
+svbdf.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{svbdf_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{svbdf_8h_a42123baebacb3c66947d85df761ac0c7}{F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+B\+DF}}~\char`\"{}bdf\char`\"{}
+\item 
+\#define \mbox{\hyperlink{svbdf_8h_afe7c4335724ef150e49bbd1e00e4cf0d}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+B\+D\+F\+Rec}}(class\+\_\+,  get\+\_\+charset\+\_\+id\+\_\+,  get\+\_\+property\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svbdf_8h_abc0ab935af0da20de7387effa7e7df21}{F\+T\+\_\+\+B\+D\+F\+\_\+\+Get\+Charset\+Id\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, const char $\ast$$\ast$acharset\+\_\+encoding, const char $\ast$$\ast$acharset\+\_\+registry)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svbdf_8h_a99230c76e45ef925b2c753a345cb6a88}{F\+T\+\_\+\+B\+D\+F\+\_\+\+Get\+Property\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, const char $\ast$prop\+\_\+name, \mbox{\hyperlink{ftbdf_8h_a288716a8f34789daccf6f4ac8a0a280d}{B\+D\+F\+\_\+\+Property\+Rec}} $\ast$aproperty)
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{svbdf_8h_ac238a8208d2171889a7f948ebaca3034}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE}} (B\+DF)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{svbdf_8h_afe7c4335724ef150e49bbd1e00e4cf0d}\label{svbdf_8h_afe7c4335724ef150e49bbd1e00e4cf0d}} 
+\index{svbdf.h@{svbdf.h}!FT\_DEFINE\_SERVICE\_BDFRec@{FT\_DEFINE\_SERVICE\_BDFRec}}
+\index{FT\_DEFINE\_SERVICE\_BDFRec@{FT\_DEFINE\_SERVICE\_BDFRec}!svbdf.h@{svbdf.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE\_BDFRec}{FT\_DEFINE\_SERVICE\_BDFRec}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+B\+D\+F\+Rec(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{get\+\_\+charset\+\_\+id\+\_\+,  }\item[{}]{get\+\_\+property\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{static} \textcolor{keyword}{const} FT\_Service\_BDFRec  class\_ =                               \(\backslash\)}
+\DoxyCodeLine{  \{                                                                      \(\backslash\)}
+\DoxyCodeLine{    get\_charset\_id\_, get\_property\_                                       \(\backslash\)}
+\DoxyCodeLine{  \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{svbdf_8h_a42123baebacb3c66947d85df761ac0c7}\label{svbdf_8h_a42123baebacb3c66947d85df761ac0c7}} 
+\index{svbdf.h@{svbdf.h}!FT\_SERVICE\_ID\_BDF@{FT\_SERVICE\_ID\_BDF}}
+\index{FT\_SERVICE\_ID\_BDF@{FT\_SERVICE\_ID\_BDF}!svbdf.h@{svbdf.h}}
+\doxysubsubsection{\texorpdfstring{FT\_SERVICE\_ID\_BDF}{FT\_SERVICE\_ID\_BDF}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+B\+DF~\char`\"{}bdf\char`\"{}}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{svbdf_8h_abc0ab935af0da20de7387effa7e7df21}\label{svbdf_8h_abc0ab935af0da20de7387effa7e7df21}} 
+\index{svbdf.h@{svbdf.h}!FT\_BDF\_GetCharsetIdFunc@{FT\_BDF\_GetCharsetIdFunc}}
+\index{FT\_BDF\_GetCharsetIdFunc@{FT\_BDF\_GetCharsetIdFunc}!svbdf.h@{svbdf.h}}
+\doxysubsubsection{\texorpdfstring{FT\_BDF\_GetCharsetIdFunc}{FT\_BDF\_GetCharsetIdFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+B\+D\+F\+\_\+\+Get\+Charset\+Id\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, const char $\ast$$\ast$acharset\+\_\+encoding, const char $\ast$$\ast$acharset\+\_\+registry)}
+
+\mbox{\Hypertarget{svbdf_8h_a99230c76e45ef925b2c753a345cb6a88}\label{svbdf_8h_a99230c76e45ef925b2c753a345cb6a88}} 
+\index{svbdf.h@{svbdf.h}!FT\_BDF\_GetPropertyFunc@{FT\_BDF\_GetPropertyFunc}}
+\index{FT\_BDF\_GetPropertyFunc@{FT\_BDF\_GetPropertyFunc}!svbdf.h@{svbdf.h}}
+\doxysubsubsection{\texorpdfstring{FT\_BDF\_GetPropertyFunc}{FT\_BDF\_GetPropertyFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+B\+D\+F\+\_\+\+Get\+Property\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, const char $\ast$prop\+\_\+name, \mbox{\hyperlink{ftbdf_8h_a288716a8f34789daccf6f4ac8a0a280d}{B\+D\+F\+\_\+\+Property\+Rec}} $\ast$aproperty)}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{svbdf_8h_ac238a8208d2171889a7f948ebaca3034}\label{svbdf_8h_ac238a8208d2171889a7f948ebaca3034}} 
+\index{svbdf.h@{svbdf.h}!FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}}
+\index{FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}!svbdf.h@{svbdf.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE()}{FT\_DEFINE\_SERVICE()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE (\begin{DoxyParamCaption}\item[{B\+DF}]{ }\end{DoxyParamCaption})}
+

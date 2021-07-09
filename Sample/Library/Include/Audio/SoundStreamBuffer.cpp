@@ -69,6 +69,18 @@ void u22::audio::SoundStreamBuffer::SetLoop(bool loop) {
     this->_loop = loop;
 }
 
+bool u22::audio::SoundStreamBuffer::IsPlay(void) const {
+    ALint state = 0;
+    ::alGetSourcei(_source, AL_SOURCE_STATE, &state);
+    return state == AL_PLAYING;
+}
+
+bool u22::audio::SoundStreamBuffer::IsPause(void) const {
+    ALint state = 0;
+    ::alGetSourcei(_source, AL_SOURCE_STATE, &state);
+    return state == AL_PAUSED;
+}
+
 bool u22::audio::SoundStreamBuffer::IsEnd(void) const {
     return this->_end;
 }
@@ -142,23 +154,57 @@ bool u22::audio::SoundStreamBuffer::Release(void) {
     ::alSourceStop(_source);
     ::alDeleteSources(1, &_source);
     ::alDeleteBuffers(2, _buffers.data());
+
+    *_buffers.data() = NULL;
+    _source = NULL;
     return true;
 }
 
-bool u22::audio::SoundStreamBuffer::Play(void) const {
+bool u22::audio::SoundStreamBuffer::Play(void) {
     if (_source == NULL) {
         return false;
     } // if
+
+    ALint state = 0;
+    ::alGetSourcei(_source, AL_SOURCE_STATE, &state);
+    if (state == AL_PLAYING) {
+        return false;
+    } // if
+
     ::alSourcePlay(_source);
     return true;
 }
+
+bool u22::audio::SoundStreamBuffer::Pause(void) {
+    if (_source == NULL) {
+        return false;
+    } // if
+
+    ALint state = 0;
+    ::alGetSourcei(_source, AL_SOURCE_STATE, &state);
+    if (state == AL_PAUSED) {
+        return false;
+    } // if
+
+    ::alSourcePause(_source);
+    return true;
+}
+
 bool u22::audio::SoundStreamBuffer::Stop(void) const {
     if (_source == NULL) {
         return false;
     } // if
-    ::alSourceStop(_source);
+
+    ALint state = 0;
+    ::alGetSourcei(_source, AL_SOURCE_STATE, &state);
+    if (state == AL_STOPPED) {
+        return false;
+    } // if
+
+    ::alSourcePause(_source);
     return true;
 }
+
 bool u22::audio::SoundStreamBuffer::Rewind(void) {
     if (_source == NULL) {
         return false;

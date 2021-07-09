@@ -1,0 +1,52 @@
+<map id="T1_DecoderRec_" name="T1_DecoderRec_">
+<area shape="rect" id="node1" title=" " alt="" coords="2300,1523,2421,1549"/>
+<area shape="rect" id="node2" href="$struct_t1___decoder___funcs_rec__.html" title=" " alt="" coords="1989,1333,2153,1360"/>
+<area shape="rect" id="node3" href="$struct_t1___decoder___zone_rec__.html" title=" " alt="" coords="1993,1388,2149,1415"/>
+<area shape="rect" id="node4" href="$struct_f_t___vector__.html" title=" " alt="" coords="37,555,127,581"/>
+<area shape="rect" id="node12" href="$struct_t1___builder_rec__.html" title=" " alt="" coords="2015,475,2128,501"/>
+<area shape="rect" id="node13" href="$struct_f_t___outline__.html" title=" " alt="" coords="338,555,430,581"/>
+<area shape="rect" id="node16" href="$struct_f_t___glyph_load_rec__.html" title=" " alt="" coords="572,689,708,716"/>
+<area shape="rect" id="node18" href="$struct_f_t___glyph_slot_rec__.html" title=" " alt="" coords="1735,931,1866,957"/>
+<area shape="rect" id="node19" href="$struct_f_t___library_rec__.html" title=" " alt="" coords="583,895,697,921"/>
+<area shape="rect" id="node29" href="$struct_f_t___glyph_rec__.html" title=" " alt="" coords="853,537,961,564"/>
+<area shape="rect" id="node43" href="$struct_f_t___face___internal_rec__.html" title=" " alt="" coords="308,1307,460,1333"/>
+<area shape="rect" id="node45" href="$struct_f_t___slot___internal_rec__.html" title=" " alt="" coords="1121,747,1268,773"/>
+<area shape="rect" id="node5" href="$struct_f_t___generic__.html" title=" " alt="" coords="1147,1533,1243,1560"/>
+<area shape="rect" id="node33" href="$struct_f_t___face_rec__.html" title=" " alt="" coords="1465,1341,1567,1368"/>
+<area shape="rect" id="node40" href="$struct_f_t___size_rec__.html" title=" " alt="" coords="1751,1531,1851,1557"/>
+<area shape="rect" id="node6" href="$struct_f_t___matrix__.html" title=" " alt="" coords="39,981,125,1008"/>
+<area shape="rect" id="node17" href="$struct_f_t___sub_glyph_rec__.html" title=" " alt="" coords="319,855,449,881"/>
+<area shape="rect" id="node7" href="$struct_p_s___blend_rec__.html" title=" " alt="" coords="851,1775,962,1801"/>
+<area shape="rect" id="node8" href="$struct_p_s___font_info_rec__.html" title=" " alt="" coords="579,1775,701,1801"/>
+<area shape="rect" id="node9" href="$struct_p_s___design_map__.html" title=" " alt="" coords="581,1825,699,1852"/>
+<area shape="rect" id="node10" href="$struct_p_s___private_rec__.html" title=" " alt="" coords="582,1724,698,1751"/>
+<area shape="rect" id="node11" href="$struct_f_t___b_box__.html" title=" " alt="" coords="599,1196,681,1223"/>
+<area shape="rect" id="node25" href="$struct_f_t___raster___params__.html" title=" " alt="" coords="836,487,977,513"/>
+<area shape="rect" id="node46" href="$struct_t1___builder___funcs_rec__.html" title=" " alt="" coords="2283,53,2439,80"/>
+<area shape="rect" id="node14" href="$struct_f_t___glyph_loader_rec__.html" title=" " alt="" coords="833,724,980,751"/>
+<area shape="rect" id="node38" href="$struct_f_t___driver_rec__.html" title=" " alt="" coords="1141,1167,1248,1193"/>
+<area shape="rect" id="node15" href="$struct_f_t___memory_rec__.html" title=" " alt="" coords="323,1004,445,1031"/>
+<area shape="rect" id="node20" href="$struct_f_t___module_rec__.html" title=" " alt="" coords="849,972,965,999"/>
+<area shape="rect" id="node34" href="$struct_f_t___stream_rec__.html" title=" " alt="" coords="582,1300,698,1327"/>
+<area shape="rect" id="node39" href="$struct_f_t___driver___class_rec__.html" title=" " alt="" coords="1998,1439,2145,1465"/>
+<area shape="rect" id="node21" href="$struct_f_t___module___class__.html" title=" " alt="" coords="1128,993,1261,1020"/>
+<area shape="rect" id="node22" href="$struct_f_t___renderer_rec__.html" title=" " alt="" coords="1737,564,1864,591"/>
+<area shape="rect" id="node23" href="$struct_f_t___renderer___class__.html" title=" " alt="" coords="1445,535,1587,561"/>
+<area shape="rect" id="node24" href="$struct_f_t___raster___funcs__.html" title=" " alt="" coords="1129,544,1261,571"/>
+<area shape="rect" id="node26" href="$struct_f_t___span__.html" title=" " alt="" coords="599,487,681,513"/>
+<area shape="rect" id="node27" href="$struct_f_t___bitmap__.html" title=" " alt="" coords="594,436,686,463"/>
+<area shape="rect" id="node28" href="$struct_f_t___glyph___class__.html" title=" " alt="" coords="1292,400,1417,427"/>
+<area shape="rect" id="node30" href="$struct_f_t___list_rec__.html" title=" " alt="" coords="337,1452,431,1479"/>
+<area shape="rect" id="node31" href="$struct_f_t___list_node_rec__.html" title=" " alt="" coords="19,1452,145,1479"/>
+<area shape="rect" id="node32" href="$struct_f_t___glyph___metrics__.html" title=" " alt="" coords="1449,964,1583,991"/>
+<area shape="rect" id="node36" href="$struct_f_t___char_map_rec__.html" title=" " alt="" coords="1737,1343,1864,1369"/>
+<area shape="rect" id="node35" href="$union_f_t___stream_desc__.html" title=" " alt="" coords="323,1256,445,1283"/>
+<area shape="rect" id="node37" href="$struct_f_t___bitmap___size__.html" title=" " alt="" coords="1132,1268,1257,1295"/>
+<area shape="rect" id="node41" href="$struct_f_t___size___internal_rec__.html" title=" " alt="" coords="1441,1691,1591,1717"/>
+<area shape="rect" id="node42" href="$struct_f_t___size___metrics__.html" title=" " alt="" coords="1131,1677,1258,1704"/>
+<area shape="rect" id="node44" href="$struct_f_t___service_cache_rec__.html" title=" " alt="" coords="5,1307,159,1333"/>
+<area shape="rect" id="node47" href="$struct_f_t___hash_rec__.html" title=" " alt="" coords="2019,1795,2123,1821"/>
+<area shape="rect" id="node48" href="$struct_f_t___hashnode_rec__.html" title=" " alt="" coords="1735,1803,1867,1829"/>
+<area shape="rect" id="node49" href="$union_f_t___hashkey__.html" title=" " alt="" coords="1465,1843,1567,1869"/>
+<area shape="rect" id="node50" title=" " alt="" coords="1487,1792,1545,1819"/>
+</map>

@@ -1,0 +1,751 @@
+\hypertarget{alc_8h}{}\doxysection{External/\+A\+L/alc.h ファイル}
+\label{alc_8h}\index{External/AL/alc.h@{External/AL/alc.h}}
+被依存関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{alc_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}}~extern
+\item 
+\#define \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}}
+\item 
+\#define \mbox{\hyperlink{alc_8h_acdc6b5a97ec35175a3ca690480894339}{A\+L\+C\+A\+PI}}~\mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}}
+\item 
+\#define \mbox{\hyperlink{alc_8h_a57137309701f1ec4a967da4080f44fba}{A\+L\+C\+A\+P\+I\+E\+N\+T\+RY}}~\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}}
+\item 
+\#define \mbox{\hyperlink{alc_8h_acd60aa3183bb0d147313b57d4faba4ef}{A\+L\+C\+\_\+\+I\+N\+V\+A\+L\+ID}}~0
+\item 
+\#define \mbox{\hyperlink{alc_8h_a2f3f5607967f3df17e17839ba7aa91ca}{A\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+0\+\_\+1}}~1
+\item 
+\#define \mbox{\hyperlink{alc_8h_a75c8002b3f17ef7cedcc15048704c5bb}{A\+L\+C\+\_\+\+F\+A\+L\+SE}}~0
+\item 
+\#define \mbox{\hyperlink{alc_8h_a076ac923fead5bd3c88edcc174f43f1d}{A\+L\+C\+\_\+\+T\+R\+UE}}~1
+\item 
+\#define \mbox{\hyperlink{alc_8h_a0d9bf7c56d393fac6d847f4dc3298388}{A\+L\+C\+\_\+\+F\+R\+E\+Q\+U\+E\+N\+CY}}~0x1007
+\item 
+\#define \mbox{\hyperlink{alc_8h_af604484dd2615b905237c9545a32b9f8}{A\+L\+C\+\_\+\+R\+E\+F\+R\+E\+SH}}~0x1008
+\item 
+\#define \mbox{\hyperlink{alc_8h_aab71669a7a451c5f44682b38beafbae6}{A\+L\+C\+\_\+\+S\+Y\+NC}}~0x1009
+\item 
+\#define \mbox{\hyperlink{alc_8h_a2214cc209895f21e0d4cde152c6c387f}{A\+L\+C\+\_\+\+M\+O\+N\+O\+\_\+\+S\+O\+U\+R\+C\+ES}}~0x1010
+\item 
+\#define \mbox{\hyperlink{alc_8h_a41d68b4d86e869eb9e4972d3a1525b25}{A\+L\+C\+\_\+\+S\+T\+E\+R\+E\+O\+\_\+\+S\+O\+U\+R\+C\+ES}}~0x1011
+\item 
+\#define \mbox{\hyperlink{alc_8h_acfef1bbfbd17d635c33f23722a802ce6}{A\+L\+C\+\_\+\+N\+O\+\_\+\+E\+R\+R\+OR}}~\mbox{\hyperlink{alc_8h_a75c8002b3f17ef7cedcc15048704c5bb}{A\+L\+C\+\_\+\+F\+A\+L\+SE}}
+\item 
+\#define \mbox{\hyperlink{alc_8h_a56b799ffa64b9cfb58e8b094faa71198}{A\+L\+C\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+D\+E\+V\+I\+CE}}~0x\+A001
+\item 
+\#define \mbox{\hyperlink{alc_8h_adcb501db33eee01fca85c6331cfa9bd4}{A\+L\+C\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+C\+O\+N\+T\+E\+XT}}~0x\+A002
+\item 
+\#define \mbox{\hyperlink{alc_8h_a7b50d3b3ce29500d5e4c69cfd0c0f2e5}{A\+L\+C\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+E\+N\+UM}}~0x\+A003
+\item 
+\#define \mbox{\hyperlink{alc_8h_a236371fca6c4db465fd1be1ff33e18fa}{A\+L\+C\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+V\+A\+L\+UE}}~0x\+A004
+\item 
+\#define \mbox{\hyperlink{alc_8h_a9dacbcdaa399486c56995aa650375d80}{A\+L\+C\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+M\+E\+M\+O\+RY}}~0x\+A005
+\item 
+\#define \mbox{\hyperlink{alc_8h_affdc7d8c97bdf078c71a8368aeae2192}{A\+L\+C\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+S\+P\+E\+C\+I\+F\+I\+ER}}~0x1004
+\item 
+\#define \mbox{\hyperlink{alc_8h_ab16d8c2014eb3bad25676fa30b394671}{A\+L\+C\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+S\+P\+E\+C\+I\+F\+I\+ER}}~0x1005
+\item 
+\#define \mbox{\hyperlink{alc_8h_ab01ada9c46b88d719586aec435db1177}{A\+L\+C\+\_\+\+E\+X\+T\+E\+N\+S\+I\+O\+NS}}~0x1006
+\item 
+\#define \mbox{\hyperlink{alc_8h_aa9bf6efbe1da52e56abd3bc1d04457f5}{A\+L\+C\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}}~0x1000
+\item 
+\#define \mbox{\hyperlink{alc_8h_a8976c63f81797f3a59cc7e13d878c7fc}{A\+L\+C\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}}~0x1001
+\item 
+\#define \mbox{\hyperlink{alc_8h_af29dcd11fa7947104c456628970377ab}{A\+L\+C\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S\+\_\+\+S\+I\+ZE}}~0x1002
+\item 
+\#define \mbox{\hyperlink{alc_8h_adb03edeb6d7714cafc725184f9037e00}{A\+L\+C\+\_\+\+A\+L\+L\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+ES}}~0x1003
+\item 
+\#define \mbox{\hyperlink{alc_8h_a51f8724706542688d03f550ee36688fe}{A\+L\+C\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+\_\+\+D\+E\+V\+I\+C\+E\+S\+\_\+\+S\+P\+E\+C\+I\+F\+I\+ER}}~0x1012
+\item 
+\#define \mbox{\hyperlink{alc_8h_ac254f19954bd74cab4046415ddea276e}{A\+L\+C\+\_\+\+A\+L\+L\+\_\+\+D\+E\+V\+I\+C\+E\+S\+\_\+\+S\+P\+E\+C\+I\+F\+I\+ER}}~0x1013
+\item 
+\#define \mbox{\hyperlink{alc_8h_a62fd780df694f4b8c157703a494b715b}{A\+L\+C\+\_\+\+C\+A\+P\+T\+U\+R\+E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+S\+P\+E\+C\+I\+F\+I\+ER}}~0x310
+\item 
+\#define \mbox{\hyperlink{alc_8h_ab5c579fa2da79660aea4481ec156f53f}{A\+L\+C\+\_\+\+C\+A\+P\+T\+U\+R\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+S\+P\+E\+C\+I\+F\+I\+ER}}~0x311
+\item 
+\#define \mbox{\hyperlink{alc_8h_a62aeefd27eb29b91edb2ac70c7d49e0b}{A\+L\+C\+\_\+\+C\+A\+P\+T\+U\+R\+E\+\_\+\+S\+A\+M\+P\+L\+ES}}~0x312
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct A\+L\+Cdevice\+\_\+struct \mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}}
+\item 
+typedef struct A\+L\+Ccontext\+\_\+struct \mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}}
+\item 
+typedef char \mbox{\hyperlink{alc_8h_ab3f76bbb16c17231a6b15f2caf769606}{A\+L\+Cboolean}}
+\item 
+typedef char \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}}
+\item 
+typedef char \mbox{\hyperlink{alc_8h_aa53bd11a398b5859f146ee4b351b545c}{A\+L\+Cbyte}}
+\item 
+typedef unsigned char \mbox{\hyperlink{alc_8h_a277cf3302e858d17e19f87eca27f5d57}{A\+L\+Cubyte}}
+\item 
+typedef short \mbox{\hyperlink{alc_8h_af40224f2ab04850f50e493fb0dd3e125}{A\+L\+Cshort}}
+\item 
+typedef unsigned short \mbox{\hyperlink{alc_8h_aec133ee3b79f5782a52c584895f91719}{A\+L\+Cushort}}
+\item 
+typedef int \mbox{\hyperlink{alc_8h_a939c58bf441454df5a52bdbfc72c5398}{A\+L\+Cint}}
+\item 
+typedef unsigned int \mbox{\hyperlink{alc_8h_a0b10e6a008d4dd8190bb4a0bae3f49c6}{A\+L\+Cuint}}
+\item 
+typedef int \mbox{\hyperlink{alc_8h_a7041956d733b9affdb45d9b725e20156}{A\+L\+Csizei}}
+\item 
+typedef int \mbox{\hyperlink{alc_8h_a6535508b0b689f249c8e99053d584a0f}{A\+L\+Cenum}}
+\item 
+typedef float \mbox{\hyperlink{alc_8h_a4d95199c0882016e7ba09ba946cbb300}{A\+L\+Cfloat}}
+\item 
+typedef double \mbox{\hyperlink{alc_8h_a2137bef590c4c1679b4758ebd99305ae}{A\+L\+Cdouble}}
+\item 
+typedef void \mbox{\hyperlink{alc_8h_a03528d12ba43b25711e5d893da1b128c}{A\+L\+Cvoid}}
+\item 
+typedef \mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}} $\ast$(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ \mbox{\hyperlink{alc_8h_a3e4c431d0f6069bec21065163b4dede4}{L\+P\+A\+L\+C\+C\+R\+E\+A\+T\+E\+C\+O\+N\+T\+E\+XT}}) (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device, const \mbox{\hyperlink{alc_8h_a939c58bf441454df5a52bdbfc72c5398}{A\+L\+Cint}} $\ast$attrlist)
+\item 
+typedef \mbox{\hyperlink{alc_8h_ab3f76bbb16c17231a6b15f2caf769606}{A\+L\+Cboolean}}(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ \mbox{\hyperlink{alc_8h_a0ce4d0a4e3e01574c823fc53786ead93}{L\+P\+A\+L\+C\+M\+A\+K\+E\+C\+O\+N\+T\+E\+X\+T\+C\+U\+R\+R\+E\+NT}}) (\mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}} $\ast$context)
+\item 
+typedef void(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ \mbox{\hyperlink{alc_8h_a42ab4039316ea799b567fd9d2ca1b27e}{L\+P\+A\+L\+C\+P\+R\+O\+C\+E\+S\+S\+C\+O\+N\+T\+E\+XT}}) (\mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}} $\ast$context)
+\item 
+typedef void(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ \mbox{\hyperlink{alc_8h_ac658415606987ffee561850972fe58d7}{L\+P\+A\+L\+C\+S\+U\+S\+P\+E\+N\+D\+C\+O\+N\+T\+E\+XT}}) (\mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}} $\ast$context)
+\item 
+typedef void(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ \mbox{\hyperlink{alc_8h_a08470dff7ffd2de0eca29f323a7babac}{L\+P\+A\+L\+C\+D\+E\+S\+T\+R\+O\+Y\+C\+O\+N\+T\+E\+XT}}) (\mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}} $\ast$context)
+\item 
+typedef \mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}} $\ast$(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ \mbox{\hyperlink{alc_8h_ac68a57790316121a52f7b137e6e24e74}{L\+P\+A\+L\+C\+G\+E\+T\+C\+U\+R\+R\+E\+N\+T\+C\+O\+N\+T\+E\+XT}}) (void)
+\item 
+typedef \mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ \mbox{\hyperlink{alc_8h_a68986d0ba78934e91100089ecf8a847d}{L\+P\+A\+L\+C\+G\+E\+T\+C\+O\+N\+T\+E\+X\+T\+S\+D\+E\+V\+I\+CE}}) (\mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}} $\ast$context)
+\item 
+typedef \mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ \mbox{\hyperlink{alc_8h_aed0c314b470ade0f5dfe92a73e2bc80e}{L\+P\+A\+L\+C\+O\+P\+E\+N\+D\+E\+V\+I\+CE}}) (const \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}} $\ast$devicename)
+\item 
+typedef \mbox{\hyperlink{alc_8h_ab3f76bbb16c17231a6b15f2caf769606}{A\+L\+Cboolean}}(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ \mbox{\hyperlink{alc_8h_ae6b2028d1072b9bddecaaf19a4c1dca8}{L\+P\+A\+L\+C\+C\+L\+O\+S\+E\+D\+E\+V\+I\+CE}}) (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device)
+\item 
+typedef \mbox{\hyperlink{alc_8h_a6535508b0b689f249c8e99053d584a0f}{A\+L\+Cenum}}(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ \mbox{\hyperlink{alc_8h_a983fd1c2783b4bc24e592bee5f9ffcfa}{L\+P\+A\+L\+C\+G\+E\+T\+E\+R\+R\+OR}}) (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device)
+\item 
+typedef \mbox{\hyperlink{alc_8h_ab3f76bbb16c17231a6b15f2caf769606}{A\+L\+Cboolean}}(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ \mbox{\hyperlink{alc_8h_ac21b8f7ddc0a4e4ed99dd3b66f2f3bdd}{L\+P\+A\+L\+C\+I\+S\+E\+X\+T\+E\+N\+S\+I\+O\+N\+P\+R\+E\+S\+E\+NT}}) (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device, const \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}} $\ast$extname)
+\item 
+typedef void $\ast$(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ \mbox{\hyperlink{alc_8h_a7836d1e09bb24a7635a9fc6c973f4f29}{L\+P\+A\+L\+C\+G\+E\+T\+P\+R\+O\+C\+A\+D\+D\+R\+E\+SS}}) (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device, const \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}} $\ast$funcname)
+\item 
+typedef \mbox{\hyperlink{alc_8h_a6535508b0b689f249c8e99053d584a0f}{A\+L\+Cenum}}(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ \mbox{\hyperlink{alc_8h_a6830d5ff37373a927a26c81613eeae12}{L\+P\+A\+L\+C\+G\+E\+T\+E\+N\+U\+M\+V\+A\+L\+UE}}) (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device, const \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}} $\ast$enumname)
+\item 
+typedef const \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}} $\ast$(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ \mbox{\hyperlink{alc_8h_a0d4a57c3970bcab1419ac87df2306835}{L\+P\+A\+L\+C\+G\+E\+T\+S\+T\+R\+I\+NG}}) (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device, \mbox{\hyperlink{alc_8h_a6535508b0b689f249c8e99053d584a0f}{A\+L\+Cenum}} param)
+\item 
+typedef void(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ \mbox{\hyperlink{alc_8h_a7fd9e60aca280c51be55fcadc766d035}{L\+P\+A\+L\+C\+G\+E\+T\+I\+N\+T\+E\+G\+E\+RV}}) (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device, \mbox{\hyperlink{alc_8h_a6535508b0b689f249c8e99053d584a0f}{A\+L\+Cenum}} param, \mbox{\hyperlink{alc_8h_a7041956d733b9affdb45d9b725e20156}{A\+L\+Csizei}} size, \mbox{\hyperlink{alc_8h_a939c58bf441454df5a52bdbfc72c5398}{A\+L\+Cint}} $\ast$dest)
+\item 
+typedef \mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ \mbox{\hyperlink{alc_8h_a925f641e9d4ae3fafb17b2691ec6000d}{L\+P\+A\+L\+C\+C\+A\+P\+T\+U\+R\+E\+O\+P\+E\+N\+D\+E\+V\+I\+CE}}) (const \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}} $\ast$devicename, \mbox{\hyperlink{alc_8h_a0b10e6a008d4dd8190bb4a0bae3f49c6}{A\+L\+Cuint}} frequency, \mbox{\hyperlink{alc_8h_a6535508b0b689f249c8e99053d584a0f}{A\+L\+Cenum}} format, \mbox{\hyperlink{alc_8h_a7041956d733b9affdb45d9b725e20156}{A\+L\+Csizei}} buffersize)
+\item 
+typedef \mbox{\hyperlink{alc_8h_ab3f76bbb16c17231a6b15f2caf769606}{A\+L\+Cboolean}}(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ \mbox{\hyperlink{alc_8h_a670073e6ced2e22aea515e732527bf73}{L\+P\+A\+L\+C\+C\+A\+P\+T\+U\+R\+E\+C\+L\+O\+S\+E\+D\+E\+V\+I\+CE}}) (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device)
+\item 
+typedef void(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ \mbox{\hyperlink{alc_8h_a7d52e3aa86d7f4ee9835f02a3e18b619}{L\+P\+A\+L\+C\+C\+A\+P\+T\+U\+R\+E\+S\+T\+A\+RT}}) (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device)
+\item 
+typedef void(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ \mbox{\hyperlink{alc_8h_aea1f7228dc55d7485035238dfaa6f3d1}{L\+P\+A\+L\+C\+C\+A\+P\+T\+U\+R\+E\+S\+T\+OP}}) (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device)
+\item 
+typedef void(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ \mbox{\hyperlink{alc_8h_acbce027f58b46235ddcf45378952030a}{L\+P\+A\+L\+C\+C\+A\+P\+T\+U\+R\+E\+S\+A\+M\+P\+L\+ES}}) (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device, \mbox{\hyperlink{alc_8h_a03528d12ba43b25711e5d893da1b128c}{A\+L\+Cvoid}} $\ast$buffer, \mbox{\hyperlink{alc_8h_a7041956d733b9affdb45d9b725e20156}{A\+L\+Csizei}} samples)
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} \mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}} $\ast$\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} \mbox{\hyperlink{alc_8h_a2b026c787625167d70504be39d896c8f}{alc\+Create\+Context}} (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device, const \mbox{\hyperlink{alc_8h_a939c58bf441454df5a52bdbfc72c5398}{A\+L\+Cint}} $\ast$attrlist)
+\item 
+\mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} \mbox{\hyperlink{alc_8h_ab3f76bbb16c17231a6b15f2caf769606}{A\+L\+Cboolean}} \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} \mbox{\hyperlink{alc_8h_a8ece422dd6634d2388190beb9693f86d}{alc\+Make\+Context\+Current}} (\mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}} $\ast$context)
+\item 
+\mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} void \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} \mbox{\hyperlink{alc_8h_a257c6c6c344f174520ce5ef7aac04289}{alc\+Process\+Context}} (\mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}} $\ast$context)
+\item 
+\mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} void \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} \mbox{\hyperlink{alc_8h_a55cccf33b5327a9a4f106c3202207aa6}{alc\+Suspend\+Context}} (\mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}} $\ast$context)
+\item 
+\mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} void \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} \mbox{\hyperlink{alc_8h_a41682484927dfa1d17a8167ddc39b03c}{alc\+Destroy\+Context}} (\mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}} $\ast$context)
+\item 
+\mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} \mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}} $\ast$\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} \mbox{\hyperlink{alc_8h_a6c5016c97667cfdf3d0dc62cca7c960a}{alc\+Get\+Current\+Context}} (void)
+\item 
+\mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} \mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} \mbox{\hyperlink{alc_8h_a6c909f173dc76c4c1032b2aeb0a4d82d}{alc\+Get\+Contexts\+Device}} (\mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}} $\ast$context)
+\item 
+\mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} \mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} \mbox{\hyperlink{alc_8h_a6cbf6348dd3f49c36d61c63f711d2eba}{alc\+Open\+Device}} (const \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}} $\ast$devicename)
+\item 
+\mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} \mbox{\hyperlink{alc_8h_ab3f76bbb16c17231a6b15f2caf769606}{A\+L\+Cboolean}} \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} \mbox{\hyperlink{alc_8h_aa8a289916ea5f2a5db8415b8c0b877b3}{alc\+Close\+Device}} (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device)
+\item 
+\mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} \mbox{\hyperlink{alc_8h_a6535508b0b689f249c8e99053d584a0f}{A\+L\+Cenum}} \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} \mbox{\hyperlink{alc_8h_ad340df39f8ec24048a9a20f083c63b73}{alc\+Get\+Error}} (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device)
+\item 
+\mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} \mbox{\hyperlink{alc_8h_ab3f76bbb16c17231a6b15f2caf769606}{A\+L\+Cboolean}} \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} \mbox{\hyperlink{alc_8h_a604cec73d2f4acd2d3ba939ac40eed0c}{alc\+Is\+Extension\+Present}} (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device, const \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}} $\ast$extname)
+\item 
+\mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} void $\ast$\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} \mbox{\hyperlink{alc_8h_a1d57417d350feff52ae273bdebf6f443}{alc\+Get\+Proc\+Address}} (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device, const \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}} $\ast$funcname)
+\item 
+\mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} \mbox{\hyperlink{alc_8h_a6535508b0b689f249c8e99053d584a0f}{A\+L\+Cenum}} \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} \mbox{\hyperlink{alc_8h_aacebe8f59ad2dd11fc0385fba87a87e2}{alc\+Get\+Enum\+Value}} (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device, const \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}} $\ast$enumname)
+\item 
+\mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} const \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}} $\ast$\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} \mbox{\hyperlink{alc_8h_a62c6fef8631bcb2343cfaa4d08b29390}{alc\+Get\+String}} (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device, \mbox{\hyperlink{alc_8h_a6535508b0b689f249c8e99053d584a0f}{A\+L\+Cenum}} param)
+\item 
+\mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} void \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} \mbox{\hyperlink{alc_8h_a822defeb83946811894cc1c39fe4a327}{alc\+Get\+Integerv}} (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device, \mbox{\hyperlink{alc_8h_a6535508b0b689f249c8e99053d584a0f}{A\+L\+Cenum}} param, \mbox{\hyperlink{alc_8h_a7041956d733b9affdb45d9b725e20156}{A\+L\+Csizei}} size, \mbox{\hyperlink{alc_8h_a939c58bf441454df5a52bdbfc72c5398}{A\+L\+Cint}} $\ast$data)
+\item 
+\mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} \mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} \mbox{\hyperlink{alc_8h_a43b2a06b1d9c2c280405fe33f5482be9}{alc\+Capture\+Open\+Device}} (const \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}} $\ast$devicename, \mbox{\hyperlink{alc_8h_a0b10e6a008d4dd8190bb4a0bae3f49c6}{A\+L\+Cuint}} frequency, \mbox{\hyperlink{alc_8h_a6535508b0b689f249c8e99053d584a0f}{A\+L\+Cenum}} format, \mbox{\hyperlink{alc_8h_a7041956d733b9affdb45d9b725e20156}{A\+L\+Csizei}} buffersize)
+\item 
+\mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} \mbox{\hyperlink{alc_8h_ab3f76bbb16c17231a6b15f2caf769606}{A\+L\+Cboolean}} \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} \mbox{\hyperlink{alc_8h_a356954a6c030edfa6ed582efe5eb5c17}{alc\+Capture\+Close\+Device}} (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device)
+\item 
+\mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} void \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} \mbox{\hyperlink{alc_8h_ab00a220b27db9ebd44fcafab075e5129}{alc\+Capture\+Start}} (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device)
+\item 
+\mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} void \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} \mbox{\hyperlink{alc_8h_ae9ba5188a1e220941a3ee3fa2265cd6a}{alc\+Capture\+Stop}} (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device)
+\item 
+\mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} void \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} \mbox{\hyperlink{alc_8h_afc25ce3f5434dc54b1b0d35666aec6e8}{alc\+Capture\+Samples}} (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device, \mbox{\hyperlink{alc_8h_a03528d12ba43b25711e5d893da1b128c}{A\+L\+Cvoid}} $\ast$buffer, \mbox{\hyperlink{alc_8h_a7041956d733b9affdb45d9b725e20156}{A\+L\+Csizei}} samples)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{alc_8h_adb03edeb6d7714cafc725184f9037e00}\label{alc_8h_adb03edeb6d7714cafc725184f9037e00}} 
+\index{alc.h@{alc.h}!ALC\_ALL\_ATTRIBUTES@{ALC\_ALL\_ATTRIBUTES}}
+\index{ALC\_ALL\_ATTRIBUTES@{ALC\_ALL\_ATTRIBUTES}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_ALL\_ATTRIBUTES}{ALC\_ALL\_ATTRIBUTES}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+A\+L\+L\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+ES~0x1003}
+
+\mbox{\Hypertarget{alc_8h_ac254f19954bd74cab4046415ddea276e}\label{alc_8h_ac254f19954bd74cab4046415ddea276e}} 
+\index{alc.h@{alc.h}!ALC\_ALL\_DEVICES\_SPECIFIER@{ALC\_ALL\_DEVICES\_SPECIFIER}}
+\index{ALC\_ALL\_DEVICES\_SPECIFIER@{ALC\_ALL\_DEVICES\_SPECIFIER}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_ALL\_DEVICES\_SPECIFIER}{ALC\_ALL\_DEVICES\_SPECIFIER}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+A\+L\+L\+\_\+\+D\+E\+V\+I\+C\+E\+S\+\_\+\+S\+P\+E\+C\+I\+F\+I\+ER~0x1013}
+
+\mbox{\Hypertarget{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}\label{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}} 
+\index{alc.h@{alc.h}!ALC\_API@{ALC\_API}}
+\index{ALC\_API@{ALC\_API}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_API}{ALC\_API}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+A\+PI~extern}
+
+\mbox{\Hypertarget{alc_8h_ad26234a076d29e819fa6654429bc8b35}\label{alc_8h_ad26234a076d29e819fa6654429bc8b35}} 
+\index{alc.h@{alc.h}!ALC\_APIENTRY@{ALC\_APIENTRY}}
+\index{ALC\_APIENTRY@{ALC\_APIENTRY}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_APIENTRY}{ALC\_APIENTRY}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}
+
+\mbox{\Hypertarget{alc_8h_af29dcd11fa7947104c456628970377ab}\label{alc_8h_af29dcd11fa7947104c456628970377ab}} 
+\index{alc.h@{alc.h}!ALC\_ATTRIBUTES\_SIZE@{ALC\_ATTRIBUTES\_SIZE}}
+\index{ALC\_ATTRIBUTES\_SIZE@{ALC\_ATTRIBUTES\_SIZE}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_ATTRIBUTES\_SIZE}{ALC\_ATTRIBUTES\_SIZE}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S\+\_\+\+S\+I\+ZE~0x1002}
+
+\mbox{\Hypertarget{alc_8h_ab5c579fa2da79660aea4481ec156f53f}\label{alc_8h_ab5c579fa2da79660aea4481ec156f53f}} 
+\index{alc.h@{alc.h}!ALC\_CAPTURE\_DEFAULT\_DEVICE\_SPECIFIER@{ALC\_CAPTURE\_DEFAULT\_DEVICE\_SPECIFIER}}
+\index{ALC\_CAPTURE\_DEFAULT\_DEVICE\_SPECIFIER@{ALC\_CAPTURE\_DEFAULT\_DEVICE\_SPECIFIER}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_CAPTURE\_DEFAULT\_DEVICE\_SPECIFIER}{ALC\_CAPTURE\_DEFAULT\_DEVICE\_SPECIFIER}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+C\+A\+P\+T\+U\+R\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+S\+P\+E\+C\+I\+F\+I\+ER~0x311}
+
+\mbox{\Hypertarget{alc_8h_a62fd780df694f4b8c157703a494b715b}\label{alc_8h_a62fd780df694f4b8c157703a494b715b}} 
+\index{alc.h@{alc.h}!ALC\_CAPTURE\_DEVICE\_SPECIFIER@{ALC\_CAPTURE\_DEVICE\_SPECIFIER}}
+\index{ALC\_CAPTURE\_DEVICE\_SPECIFIER@{ALC\_CAPTURE\_DEVICE\_SPECIFIER}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_CAPTURE\_DEVICE\_SPECIFIER}{ALC\_CAPTURE\_DEVICE\_SPECIFIER}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+C\+A\+P\+T\+U\+R\+E\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+S\+P\+E\+C\+I\+F\+I\+ER~0x310}
+
+Capture extension \mbox{\Hypertarget{alc_8h_a62aeefd27eb29b91edb2ac70c7d49e0b}\label{alc_8h_a62aeefd27eb29b91edb2ac70c7d49e0b}} 
+\index{alc.h@{alc.h}!ALC\_CAPTURE\_SAMPLES@{ALC\_CAPTURE\_SAMPLES}}
+\index{ALC\_CAPTURE\_SAMPLES@{ALC\_CAPTURE\_SAMPLES}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_CAPTURE\_SAMPLES}{ALC\_CAPTURE\_SAMPLES}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+C\+A\+P\+T\+U\+R\+E\+\_\+\+S\+A\+M\+P\+L\+ES~0x312}
+
+\mbox{\Hypertarget{alc_8h_a51f8724706542688d03f550ee36688fe}\label{alc_8h_a51f8724706542688d03f550ee36688fe}} 
+\index{alc.h@{alc.h}!ALC\_DEFAULT\_ALL\_DEVICES\_SPECIFIER@{ALC\_DEFAULT\_ALL\_DEVICES\_SPECIFIER}}
+\index{ALC\_DEFAULT\_ALL\_DEVICES\_SPECIFIER@{ALC\_DEFAULT\_ALL\_DEVICES\_SPECIFIER}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_DEFAULT\_ALL\_DEVICES\_SPECIFIER}{ALC\_DEFAULT\_ALL\_DEVICES\_SPECIFIER}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+L\+L\+\_\+\+D\+E\+V\+I\+C\+E\+S\+\_\+\+S\+P\+E\+C\+I\+F\+I\+ER~0x1012}
+
+A\+L\+C\+\_\+\+E\+N\+U\+M\+E\+R\+A\+T\+E\+\_\+\+A\+L\+L\+\_\+\+E\+XT enums \mbox{\Hypertarget{alc_8h_affdc7d8c97bdf078c71a8368aeae2192}\label{alc_8h_affdc7d8c97bdf078c71a8368aeae2192}} 
+\index{alc.h@{alc.h}!ALC\_DEFAULT\_DEVICE\_SPECIFIER@{ALC\_DEFAULT\_DEVICE\_SPECIFIER}}
+\index{ALC\_DEFAULT\_DEVICE\_SPECIFIER@{ALC\_DEFAULT\_DEVICE\_SPECIFIER}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_DEFAULT\_DEVICE\_SPECIFIER}{ALC\_DEFAULT\_DEVICE\_SPECIFIER}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+S\+P\+E\+C\+I\+F\+I\+ER~0x1004}
+
+The Specifier string for default device \mbox{\Hypertarget{alc_8h_ab16d8c2014eb3bad25676fa30b394671}\label{alc_8h_ab16d8c2014eb3bad25676fa30b394671}} 
+\index{alc.h@{alc.h}!ALC\_DEVICE\_SPECIFIER@{ALC\_DEVICE\_SPECIFIER}}
+\index{ALC\_DEVICE\_SPECIFIER@{ALC\_DEVICE\_SPECIFIER}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_DEVICE\_SPECIFIER}{ALC\_DEVICE\_SPECIFIER}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+D\+E\+V\+I\+C\+E\+\_\+\+S\+P\+E\+C\+I\+F\+I\+ER~0x1005}
+
+\mbox{\Hypertarget{alc_8h_ab01ada9c46b88d719586aec435db1177}\label{alc_8h_ab01ada9c46b88d719586aec435db1177}} 
+\index{alc.h@{alc.h}!ALC\_EXTENSIONS@{ALC\_EXTENSIONS}}
+\index{ALC\_EXTENSIONS@{ALC\_EXTENSIONS}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_EXTENSIONS}{ALC\_EXTENSIONS}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+E\+X\+T\+E\+N\+S\+I\+O\+NS~0x1006}
+
+\mbox{\Hypertarget{alc_8h_a75c8002b3f17ef7cedcc15048704c5bb}\label{alc_8h_a75c8002b3f17ef7cedcc15048704c5bb}} 
+\index{alc.h@{alc.h}!ALC\_FALSE@{ALC\_FALSE}}
+\index{ALC\_FALSE@{ALC\_FALSE}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_FALSE}{ALC\_FALSE}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+F\+A\+L\+SE~0}
+
+\mbox{\Hypertarget{alc_8h_a0d9bf7c56d393fac6d847f4dc3298388}\label{alc_8h_a0d9bf7c56d393fac6d847f4dc3298388}} 
+\index{alc.h@{alc.h}!ALC\_FREQUENCY@{ALC\_FREQUENCY}}
+\index{ALC\_FREQUENCY@{ALC\_FREQUENCY}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_FREQUENCY}{ALC\_FREQUENCY}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+F\+R\+E\+Q\+U\+E\+N\+CY~0x1007}
+
+followed by $<$int$>$ Hz \mbox{\Hypertarget{alc_8h_acd60aa3183bb0d147313b57d4faba4ef}\label{alc_8h_acd60aa3183bb0d147313b57d4faba4ef}} 
+\index{alc.h@{alc.h}!ALC\_INVALID@{ALC\_INVALID}}
+\index{ALC\_INVALID@{ALC\_INVALID}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_INVALID}{ALC\_INVALID}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+I\+N\+V\+A\+L\+ID~0}
+
+\mbox{\Hypertarget{alc_8h_adcb501db33eee01fca85c6331cfa9bd4}\label{alc_8h_adcb501db33eee01fca85c6331cfa9bd4}} 
+\index{alc.h@{alc.h}!ALC\_INVALID\_CONTEXT@{ALC\_INVALID\_CONTEXT}}
+\index{ALC\_INVALID\_CONTEXT@{ALC\_INVALID\_CONTEXT}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_INVALID\_CONTEXT}{ALC\_INVALID\_CONTEXT}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+C\+O\+N\+T\+E\+XT~0x\+A002}
+
+invalid context ID \mbox{\Hypertarget{alc_8h_a56b799ffa64b9cfb58e8b094faa71198}\label{alc_8h_a56b799ffa64b9cfb58e8b094faa71198}} 
+\index{alc.h@{alc.h}!ALC\_INVALID\_DEVICE@{ALC\_INVALID\_DEVICE}}
+\index{ALC\_INVALID\_DEVICE@{ALC\_INVALID\_DEVICE}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_INVALID\_DEVICE}{ALC\_INVALID\_DEVICE}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+D\+E\+V\+I\+CE~0x\+A001}
+
+No device \mbox{\Hypertarget{alc_8h_a7b50d3b3ce29500d5e4c69cfd0c0f2e5}\label{alc_8h_a7b50d3b3ce29500d5e4c69cfd0c0f2e5}} 
+\index{alc.h@{alc.h}!ALC\_INVALID\_ENUM@{ALC\_INVALID\_ENUM}}
+\index{ALC\_INVALID\_ENUM@{ALC\_INVALID\_ENUM}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_INVALID\_ENUM}{ALC\_INVALID\_ENUM}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+E\+N\+UM~0x\+A003}
+
+bad enum \mbox{\Hypertarget{alc_8h_a236371fca6c4db465fd1be1ff33e18fa}\label{alc_8h_a236371fca6c4db465fd1be1ff33e18fa}} 
+\index{alc.h@{alc.h}!ALC\_INVALID\_VALUE@{ALC\_INVALID\_VALUE}}
+\index{ALC\_INVALID\_VALUE@{ALC\_INVALID\_VALUE}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_INVALID\_VALUE}{ALC\_INVALID\_VALUE}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+V\+A\+L\+UE~0x\+A004}
+
+bad value \mbox{\Hypertarget{alc_8h_aa9bf6efbe1da52e56abd3bc1d04457f5}\label{alc_8h_aa9bf6efbe1da52e56abd3bc1d04457f5}} 
+\index{alc.h@{alc.h}!ALC\_MAJOR\_VERSION@{ALC\_MAJOR\_VERSION}}
+\index{ALC\_MAJOR\_VERSION@{ALC\_MAJOR\_VERSION}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_MAJOR\_VERSION}{ALC\_MAJOR\_VERSION}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON~0x1000}
+
+\mbox{\Hypertarget{alc_8h_a8976c63f81797f3a59cc7e13d878c7fc}\label{alc_8h_a8976c63f81797f3a59cc7e13d878c7fc}} 
+\index{alc.h@{alc.h}!ALC\_MINOR\_VERSION@{ALC\_MINOR\_VERSION}}
+\index{ALC\_MINOR\_VERSION@{ALC\_MINOR\_VERSION}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_MINOR\_VERSION}{ALC\_MINOR\_VERSION}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON~0x1001}
+
+\mbox{\Hypertarget{alc_8h_a2214cc209895f21e0d4cde152c6c387f}\label{alc_8h_a2214cc209895f21e0d4cde152c6c387f}} 
+\index{alc.h@{alc.h}!ALC\_MONO\_SOURCES@{ALC\_MONO\_SOURCES}}
+\index{ALC\_MONO\_SOURCES@{ALC\_MONO\_SOURCES}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_MONO\_SOURCES}{ALC\_MONO\_SOURCES}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+M\+O\+N\+O\+\_\+\+S\+O\+U\+R\+C\+ES~0x1010}
+
+followed by $<$int$>$ Num of requested Mono (3D) Sources \mbox{\Hypertarget{alc_8h_acfef1bbfbd17d635c33f23722a802ce6}\label{alc_8h_acfef1bbfbd17d635c33f23722a802ce6}} 
+\index{alc.h@{alc.h}!ALC\_NO\_ERROR@{ALC\_NO\_ERROR}}
+\index{ALC\_NO\_ERROR@{ALC\_NO\_ERROR}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_NO\_ERROR}{ALC\_NO\_ERROR}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+N\+O\+\_\+\+E\+R\+R\+OR~\mbox{\hyperlink{alc_8h_a75c8002b3f17ef7cedcc15048704c5bb}{A\+L\+C\+\_\+\+F\+A\+L\+SE}}}
+
+errors No error \mbox{\Hypertarget{alc_8h_a9dacbcdaa399486c56995aa650375d80}\label{alc_8h_a9dacbcdaa399486c56995aa650375d80}} 
+\index{alc.h@{alc.h}!ALC\_OUT\_OF\_MEMORY@{ALC\_OUT\_OF\_MEMORY}}
+\index{ALC\_OUT\_OF\_MEMORY@{ALC\_OUT\_OF\_MEMORY}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_OUT\_OF\_MEMORY}{ALC\_OUT\_OF\_MEMORY}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+O\+U\+T\+\_\+\+O\+F\+\_\+\+M\+E\+M\+O\+RY~0x\+A005}
+
+Out of memory. \mbox{\Hypertarget{alc_8h_af604484dd2615b905237c9545a32b9f8}\label{alc_8h_af604484dd2615b905237c9545a32b9f8}} 
+\index{alc.h@{alc.h}!ALC\_REFRESH@{ALC\_REFRESH}}
+\index{ALC\_REFRESH@{ALC\_REFRESH}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_REFRESH}{ALC\_REFRESH}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+R\+E\+F\+R\+E\+SH~0x1008}
+
+followed by $<$int$>$ Hz \mbox{\Hypertarget{alc_8h_a41d68b4d86e869eb9e4972d3a1525b25}\label{alc_8h_a41d68b4d86e869eb9e4972d3a1525b25}} 
+\index{alc.h@{alc.h}!ALC\_STEREO\_SOURCES@{ALC\_STEREO\_SOURCES}}
+\index{ALC\_STEREO\_SOURCES@{ALC\_STEREO\_SOURCES}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_STEREO\_SOURCES}{ALC\_STEREO\_SOURCES}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+S\+T\+E\+R\+E\+O\+\_\+\+S\+O\+U\+R\+C\+ES~0x1011}
+
+followed by $<$int$>$ Num of requested Stereo Sources \mbox{\Hypertarget{alc_8h_aab71669a7a451c5f44682b38beafbae6}\label{alc_8h_aab71669a7a451c5f44682b38beafbae6}} 
+\index{alc.h@{alc.h}!ALC\_SYNC@{ALC\_SYNC}}
+\index{ALC\_SYNC@{ALC\_SYNC}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_SYNC}{ALC\_SYNC}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+S\+Y\+NC~0x1009}
+
+followed by A\+L\+\_\+\+T\+R\+UE, A\+L\+\_\+\+F\+A\+L\+SE \mbox{\Hypertarget{alc_8h_a076ac923fead5bd3c88edcc174f43f1d}\label{alc_8h_a076ac923fead5bd3c88edcc174f43f1d}} 
+\index{alc.h@{alc.h}!ALC\_TRUE@{ALC\_TRUE}}
+\index{ALC\_TRUE@{ALC\_TRUE}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_TRUE}{ALC\_TRUE}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+T\+R\+UE~1}
+
+\mbox{\Hypertarget{alc_8h_a2f3f5607967f3df17e17839ba7aa91ca}\label{alc_8h_a2f3f5607967f3df17e17839ba7aa91ca}} 
+\index{alc.h@{alc.h}!ALC\_VERSION\_0\_1@{ALC\_VERSION\_0\_1}}
+\index{ALC\_VERSION\_0\_1@{ALC\_VERSION\_0\_1}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALC\_VERSION\_0\_1}{ALC\_VERSION\_0\_1}}
+{\footnotesize\ttfamily \#define A\+L\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+0\+\_\+1~1}
+
+\mbox{\Hypertarget{alc_8h_acdc6b5a97ec35175a3ca690480894339}\label{alc_8h_acdc6b5a97ec35175a3ca690480894339}} 
+\index{alc.h@{alc.h}!ALCAPI@{ALCAPI}}
+\index{ALCAPI@{ALCAPI}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALCAPI}{ALCAPI}}
+{\footnotesize\ttfamily \#define A\+L\+C\+A\+PI~\mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}}}
+
+\mbox{\Hypertarget{alc_8h_a57137309701f1ec4a967da4080f44fba}\label{alc_8h_a57137309701f1ec4a967da4080f44fba}} 
+\index{alc.h@{alc.h}!ALCAPIENTRY@{ALCAPIENTRY}}
+\index{ALCAPIENTRY@{ALCAPIENTRY}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALCAPIENTRY}{ALCAPIENTRY}}
+{\footnotesize\ttfamily \#define A\+L\+C\+A\+P\+I\+E\+N\+T\+RY~\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}}}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{alc_8h_ab3f76bbb16c17231a6b15f2caf769606}\label{alc_8h_ab3f76bbb16c17231a6b15f2caf769606}} 
+\index{alc.h@{alc.h}!ALCboolean@{ALCboolean}}
+\index{ALCboolean@{ALCboolean}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALCboolean}{ALCboolean}}
+{\footnotesize\ttfamily typedef char \mbox{\hyperlink{alc_8h_ab3f76bbb16c17231a6b15f2caf769606}{A\+L\+Cboolean}}}
+
+8-\/bit boolean \mbox{\Hypertarget{alc_8h_aa53bd11a398b5859f146ee4b351b545c}\label{alc_8h_aa53bd11a398b5859f146ee4b351b545c}} 
+\index{alc.h@{alc.h}!ALCbyte@{ALCbyte}}
+\index{ALCbyte@{ALCbyte}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALCbyte}{ALCbyte}}
+{\footnotesize\ttfamily typedef char \mbox{\hyperlink{alc_8h_aa53bd11a398b5859f146ee4b351b545c}{A\+L\+Cbyte}}}
+
+signed 8-\/bit 2\textquotesingle{}s complement integer \mbox{\Hypertarget{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}\label{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}} 
+\index{alc.h@{alc.h}!ALCchar@{ALCchar}}
+\index{ALCchar@{ALCchar}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALCchar}{ALCchar}}
+{\footnotesize\ttfamily typedef char \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}}}
+
+character \mbox{\Hypertarget{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}\label{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}} 
+\index{alc.h@{alc.h}!ALCcontext@{ALCcontext}}
+\index{ALCcontext@{ALCcontext}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALCcontext}{ALCcontext}}
+{\footnotesize\ttfamily typedef struct A\+L\+Ccontext\+\_\+struct \mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}}}
+
+\mbox{\Hypertarget{alc_8h_aba8742179fd52ef41c66adacdec5383e}\label{alc_8h_aba8742179fd52ef41c66adacdec5383e}} 
+\index{alc.h@{alc.h}!ALCdevice@{ALCdevice}}
+\index{ALCdevice@{ALCdevice}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALCdevice}{ALCdevice}}
+{\footnotesize\ttfamily typedef struct A\+L\+Cdevice\+\_\+struct \mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}}}
+
+\mbox{\Hypertarget{alc_8h_a2137bef590c4c1679b4758ebd99305ae}\label{alc_8h_a2137bef590c4c1679b4758ebd99305ae}} 
+\index{alc.h@{alc.h}!ALCdouble@{ALCdouble}}
+\index{ALCdouble@{ALCdouble}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALCdouble}{ALCdouble}}
+{\footnotesize\ttfamily typedef double \mbox{\hyperlink{alc_8h_a2137bef590c4c1679b4758ebd99305ae}{A\+L\+Cdouble}}}
+
+64-\/bit I\+E\+E\+E754 floating-\/point \mbox{\Hypertarget{alc_8h_a6535508b0b689f249c8e99053d584a0f}\label{alc_8h_a6535508b0b689f249c8e99053d584a0f}} 
+\index{alc.h@{alc.h}!ALCenum@{ALCenum}}
+\index{ALCenum@{ALCenum}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALCenum}{ALCenum}}
+{\footnotesize\ttfamily typedef int \mbox{\hyperlink{alc_8h_a6535508b0b689f249c8e99053d584a0f}{A\+L\+Cenum}}}
+
+enumerated 32-\/bit value \mbox{\Hypertarget{alc_8h_a4d95199c0882016e7ba09ba946cbb300}\label{alc_8h_a4d95199c0882016e7ba09ba946cbb300}} 
+\index{alc.h@{alc.h}!ALCfloat@{ALCfloat}}
+\index{ALCfloat@{ALCfloat}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALCfloat}{ALCfloat}}
+{\footnotesize\ttfamily typedef float \mbox{\hyperlink{alc_8h_a4d95199c0882016e7ba09ba946cbb300}{A\+L\+Cfloat}}}
+
+32-\/bit I\+E\+E\+E754 floating-\/point \mbox{\Hypertarget{alc_8h_a939c58bf441454df5a52bdbfc72c5398}\label{alc_8h_a939c58bf441454df5a52bdbfc72c5398}} 
+\index{alc.h@{alc.h}!ALCint@{ALCint}}
+\index{ALCint@{ALCint}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALCint}{ALCint}}
+{\footnotesize\ttfamily typedef int \mbox{\hyperlink{alc_8h_a939c58bf441454df5a52bdbfc72c5398}{A\+L\+Cint}}}
+
+signed 32-\/bit 2\textquotesingle{}s complement integer \mbox{\Hypertarget{alc_8h_af40224f2ab04850f50e493fb0dd3e125}\label{alc_8h_af40224f2ab04850f50e493fb0dd3e125}} 
+\index{alc.h@{alc.h}!ALCshort@{ALCshort}}
+\index{ALCshort@{ALCshort}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALCshort}{ALCshort}}
+{\footnotesize\ttfamily typedef short \mbox{\hyperlink{alc_8h_af40224f2ab04850f50e493fb0dd3e125}{A\+L\+Cshort}}}
+
+signed 16-\/bit 2\textquotesingle{}s complement integer \mbox{\Hypertarget{alc_8h_a7041956d733b9affdb45d9b725e20156}\label{alc_8h_a7041956d733b9affdb45d9b725e20156}} 
+\index{alc.h@{alc.h}!ALCsizei@{ALCsizei}}
+\index{ALCsizei@{ALCsizei}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALCsizei}{ALCsizei}}
+{\footnotesize\ttfamily typedef int \mbox{\hyperlink{alc_8h_a7041956d733b9affdb45d9b725e20156}{A\+L\+Csizei}}}
+
+non-\/negative 32-\/bit binary integer size \mbox{\Hypertarget{alc_8h_a277cf3302e858d17e19f87eca27f5d57}\label{alc_8h_a277cf3302e858d17e19f87eca27f5d57}} 
+\index{alc.h@{alc.h}!ALCubyte@{ALCubyte}}
+\index{ALCubyte@{ALCubyte}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALCubyte}{ALCubyte}}
+{\footnotesize\ttfamily typedef unsigned char \mbox{\hyperlink{alc_8h_a277cf3302e858d17e19f87eca27f5d57}{A\+L\+Cubyte}}}
+
+unsigned 8-\/bit integer \mbox{\Hypertarget{alc_8h_a0b10e6a008d4dd8190bb4a0bae3f49c6}\label{alc_8h_a0b10e6a008d4dd8190bb4a0bae3f49c6}} 
+\index{alc.h@{alc.h}!ALCuint@{ALCuint}}
+\index{ALCuint@{ALCuint}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALCuint}{ALCuint}}
+{\footnotesize\ttfamily typedef unsigned int \mbox{\hyperlink{alc_8h_a0b10e6a008d4dd8190bb4a0bae3f49c6}{A\+L\+Cuint}}}
+
+unsigned 32-\/bit integer \mbox{\Hypertarget{alc_8h_aec133ee3b79f5782a52c584895f91719}\label{alc_8h_aec133ee3b79f5782a52c584895f91719}} 
+\index{alc.h@{alc.h}!ALCushort@{ALCushort}}
+\index{ALCushort@{ALCushort}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALCushort}{ALCushort}}
+{\footnotesize\ttfamily typedef unsigned short \mbox{\hyperlink{alc_8h_aec133ee3b79f5782a52c584895f91719}{A\+L\+Cushort}}}
+
+unsigned 16-\/bit integer \mbox{\Hypertarget{alc_8h_a03528d12ba43b25711e5d893da1b128c}\label{alc_8h_a03528d12ba43b25711e5d893da1b128c}} 
+\index{alc.h@{alc.h}!ALCvoid@{ALCvoid}}
+\index{ALCvoid@{ALCvoid}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{ALCvoid}{ALCvoid}}
+{\footnotesize\ttfamily typedef void \mbox{\hyperlink{alc_8h_a03528d12ba43b25711e5d893da1b128c}{A\+L\+Cvoid}}}
+
+void type (for opaque pointers only) \mbox{\Hypertarget{alc_8h_a670073e6ced2e22aea515e732527bf73}\label{alc_8h_a670073e6ced2e22aea515e732527bf73}} 
+\index{alc.h@{alc.h}!LPALCCAPTURECLOSEDEVICE@{LPALCCAPTURECLOSEDEVICE}}
+\index{LPALCCAPTURECLOSEDEVICE@{LPALCCAPTURECLOSEDEVICE}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{LPALCCAPTURECLOSEDEVICE}{LPALCCAPTURECLOSEDEVICE}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{alc_8h_ab3f76bbb16c17231a6b15f2caf769606}{A\+L\+Cboolean}}(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ L\+P\+A\+L\+C\+C\+A\+P\+T\+U\+R\+E\+C\+L\+O\+S\+E\+D\+E\+V\+I\+CE) (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device)}
+
+\mbox{\Hypertarget{alc_8h_a925f641e9d4ae3fafb17b2691ec6000d}\label{alc_8h_a925f641e9d4ae3fafb17b2691ec6000d}} 
+\index{alc.h@{alc.h}!LPALCCAPTUREOPENDEVICE@{LPALCCAPTUREOPENDEVICE}}
+\index{LPALCCAPTUREOPENDEVICE@{LPALCCAPTUREOPENDEVICE}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{LPALCCAPTUREOPENDEVICE}{LPALCCAPTUREOPENDEVICE}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}}$\ast$(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ L\+P\+A\+L\+C\+C\+A\+P\+T\+U\+R\+E\+O\+P\+E\+N\+D\+E\+V\+I\+CE) (const \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}} $\ast$devicename, \mbox{\hyperlink{alc_8h_a0b10e6a008d4dd8190bb4a0bae3f49c6}{A\+L\+Cuint}} frequency, \mbox{\hyperlink{alc_8h_a6535508b0b689f249c8e99053d584a0f}{A\+L\+Cenum}} format, \mbox{\hyperlink{alc_8h_a7041956d733b9affdb45d9b725e20156}{A\+L\+Csizei}} buffersize)}
+
+\mbox{\Hypertarget{alc_8h_acbce027f58b46235ddcf45378952030a}\label{alc_8h_acbce027f58b46235ddcf45378952030a}} 
+\index{alc.h@{alc.h}!LPALCCAPTURESAMPLES@{LPALCCAPTURESAMPLES}}
+\index{LPALCCAPTURESAMPLES@{LPALCCAPTURESAMPLES}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{LPALCCAPTURESAMPLES}{LPALCCAPTURESAMPLES}}
+{\footnotesize\ttfamily typedef void(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ L\+P\+A\+L\+C\+C\+A\+P\+T\+U\+R\+E\+S\+A\+M\+P\+L\+ES) (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device, \mbox{\hyperlink{alc_8h_a03528d12ba43b25711e5d893da1b128c}{A\+L\+Cvoid}} $\ast$buffer, \mbox{\hyperlink{alc_8h_a7041956d733b9affdb45d9b725e20156}{A\+L\+Csizei}} samples)}
+
+\mbox{\Hypertarget{alc_8h_a7d52e3aa86d7f4ee9835f02a3e18b619}\label{alc_8h_a7d52e3aa86d7f4ee9835f02a3e18b619}} 
+\index{alc.h@{alc.h}!LPALCCAPTURESTART@{LPALCCAPTURESTART}}
+\index{LPALCCAPTURESTART@{LPALCCAPTURESTART}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{LPALCCAPTURESTART}{LPALCCAPTURESTART}}
+{\footnotesize\ttfamily typedef void(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ L\+P\+A\+L\+C\+C\+A\+P\+T\+U\+R\+E\+S\+T\+A\+RT) (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device)}
+
+\mbox{\Hypertarget{alc_8h_aea1f7228dc55d7485035238dfaa6f3d1}\label{alc_8h_aea1f7228dc55d7485035238dfaa6f3d1}} 
+\index{alc.h@{alc.h}!LPALCCAPTURESTOP@{LPALCCAPTURESTOP}}
+\index{LPALCCAPTURESTOP@{LPALCCAPTURESTOP}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{LPALCCAPTURESTOP}{LPALCCAPTURESTOP}}
+{\footnotesize\ttfamily typedef void(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ L\+P\+A\+L\+C\+C\+A\+P\+T\+U\+R\+E\+S\+T\+OP) (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device)}
+
+\mbox{\Hypertarget{alc_8h_ae6b2028d1072b9bddecaaf19a4c1dca8}\label{alc_8h_ae6b2028d1072b9bddecaaf19a4c1dca8}} 
+\index{alc.h@{alc.h}!LPALCCLOSEDEVICE@{LPALCCLOSEDEVICE}}
+\index{LPALCCLOSEDEVICE@{LPALCCLOSEDEVICE}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{LPALCCLOSEDEVICE}{LPALCCLOSEDEVICE}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{alc_8h_ab3f76bbb16c17231a6b15f2caf769606}{A\+L\+Cboolean}}(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ L\+P\+A\+L\+C\+C\+L\+O\+S\+E\+D\+E\+V\+I\+CE) (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device)}
+
+\mbox{\Hypertarget{alc_8h_a3e4c431d0f6069bec21065163b4dede4}\label{alc_8h_a3e4c431d0f6069bec21065163b4dede4}} 
+\index{alc.h@{alc.h}!LPALCCREATECONTEXT@{LPALCCREATECONTEXT}}
+\index{LPALCCREATECONTEXT@{LPALCCREATECONTEXT}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{LPALCCREATECONTEXT}{LPALCCREATECONTEXT}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}}$\ast$(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ L\+P\+A\+L\+C\+C\+R\+E\+A\+T\+E\+C\+O\+N\+T\+E\+XT) (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device, const \mbox{\hyperlink{alc_8h_a939c58bf441454df5a52bdbfc72c5398}{A\+L\+Cint}} $\ast$attrlist)}
+
+\mbox{\Hypertarget{alc_8h_a08470dff7ffd2de0eca29f323a7babac}\label{alc_8h_a08470dff7ffd2de0eca29f323a7babac}} 
+\index{alc.h@{alc.h}!LPALCDESTROYCONTEXT@{LPALCDESTROYCONTEXT}}
+\index{LPALCDESTROYCONTEXT@{LPALCDESTROYCONTEXT}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{LPALCDESTROYCONTEXT}{LPALCDESTROYCONTEXT}}
+{\footnotesize\ttfamily typedef void(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ L\+P\+A\+L\+C\+D\+E\+S\+T\+R\+O\+Y\+C\+O\+N\+T\+E\+XT) (\mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}} $\ast$context)}
+
+\mbox{\Hypertarget{alc_8h_a68986d0ba78934e91100089ecf8a847d}\label{alc_8h_a68986d0ba78934e91100089ecf8a847d}} 
+\index{alc.h@{alc.h}!LPALCGETCONTEXTSDEVICE@{LPALCGETCONTEXTSDEVICE}}
+\index{LPALCGETCONTEXTSDEVICE@{LPALCGETCONTEXTSDEVICE}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{LPALCGETCONTEXTSDEVICE}{LPALCGETCONTEXTSDEVICE}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}}$\ast$(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ L\+P\+A\+L\+C\+G\+E\+T\+C\+O\+N\+T\+E\+X\+T\+S\+D\+E\+V\+I\+CE) (\mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}} $\ast$context)}
+
+\mbox{\Hypertarget{alc_8h_ac68a57790316121a52f7b137e6e24e74}\label{alc_8h_ac68a57790316121a52f7b137e6e24e74}} 
+\index{alc.h@{alc.h}!LPALCGETCURRENTCONTEXT@{LPALCGETCURRENTCONTEXT}}
+\index{LPALCGETCURRENTCONTEXT@{LPALCGETCURRENTCONTEXT}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{LPALCGETCURRENTCONTEXT}{LPALCGETCURRENTCONTEXT}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}}$\ast$(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ L\+P\+A\+L\+C\+G\+E\+T\+C\+U\+R\+R\+E\+N\+T\+C\+O\+N\+T\+E\+XT) (void)}
+
+\mbox{\Hypertarget{alc_8h_a6830d5ff37373a927a26c81613eeae12}\label{alc_8h_a6830d5ff37373a927a26c81613eeae12}} 
+\index{alc.h@{alc.h}!LPALCGETENUMVALUE@{LPALCGETENUMVALUE}}
+\index{LPALCGETENUMVALUE@{LPALCGETENUMVALUE}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{LPALCGETENUMVALUE}{LPALCGETENUMVALUE}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{alc_8h_a6535508b0b689f249c8e99053d584a0f}{A\+L\+Cenum}}(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ L\+P\+A\+L\+C\+G\+E\+T\+E\+N\+U\+M\+V\+A\+L\+UE) (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device, const \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}} $\ast$enumname)}
+
+\mbox{\Hypertarget{alc_8h_a983fd1c2783b4bc24e592bee5f9ffcfa}\label{alc_8h_a983fd1c2783b4bc24e592bee5f9ffcfa}} 
+\index{alc.h@{alc.h}!LPALCGETERROR@{LPALCGETERROR}}
+\index{LPALCGETERROR@{LPALCGETERROR}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{LPALCGETERROR}{LPALCGETERROR}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{alc_8h_a6535508b0b689f249c8e99053d584a0f}{A\+L\+Cenum}}(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ L\+P\+A\+L\+C\+G\+E\+T\+E\+R\+R\+OR) (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device)}
+
+\mbox{\Hypertarget{alc_8h_a7fd9e60aca280c51be55fcadc766d035}\label{alc_8h_a7fd9e60aca280c51be55fcadc766d035}} 
+\index{alc.h@{alc.h}!LPALCGETINTEGERV@{LPALCGETINTEGERV}}
+\index{LPALCGETINTEGERV@{LPALCGETINTEGERV}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{LPALCGETINTEGERV}{LPALCGETINTEGERV}}
+{\footnotesize\ttfamily typedef void(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ L\+P\+A\+L\+C\+G\+E\+T\+I\+N\+T\+E\+G\+E\+RV) (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device, \mbox{\hyperlink{alc_8h_a6535508b0b689f249c8e99053d584a0f}{A\+L\+Cenum}} param, \mbox{\hyperlink{alc_8h_a7041956d733b9affdb45d9b725e20156}{A\+L\+Csizei}} size, \mbox{\hyperlink{alc_8h_a939c58bf441454df5a52bdbfc72c5398}{A\+L\+Cint}} $\ast$dest)}
+
+\mbox{\Hypertarget{alc_8h_a7836d1e09bb24a7635a9fc6c973f4f29}\label{alc_8h_a7836d1e09bb24a7635a9fc6c973f4f29}} 
+\index{alc.h@{alc.h}!LPALCGETPROCADDRESS@{LPALCGETPROCADDRESS}}
+\index{LPALCGETPROCADDRESS@{LPALCGETPROCADDRESS}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{LPALCGETPROCADDRESS}{LPALCGETPROCADDRESS}}
+{\footnotesize\ttfamily typedef void$\ast$(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ L\+P\+A\+L\+C\+G\+E\+T\+P\+R\+O\+C\+A\+D\+D\+R\+E\+SS) (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device, const \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}} $\ast$funcname)}
+
+\mbox{\Hypertarget{alc_8h_a0d4a57c3970bcab1419ac87df2306835}\label{alc_8h_a0d4a57c3970bcab1419ac87df2306835}} 
+\index{alc.h@{alc.h}!LPALCGETSTRING@{LPALCGETSTRING}}
+\index{LPALCGETSTRING@{LPALCGETSTRING}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{LPALCGETSTRING}{LPALCGETSTRING}}
+{\footnotesize\ttfamily typedef const \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}}$\ast$(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ L\+P\+A\+L\+C\+G\+E\+T\+S\+T\+R\+I\+NG) (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device, \mbox{\hyperlink{alc_8h_a6535508b0b689f249c8e99053d584a0f}{A\+L\+Cenum}} param)}
+
+\mbox{\Hypertarget{alc_8h_ac21b8f7ddc0a4e4ed99dd3b66f2f3bdd}\label{alc_8h_ac21b8f7ddc0a4e4ed99dd3b66f2f3bdd}} 
+\index{alc.h@{alc.h}!LPALCISEXTENSIONPRESENT@{LPALCISEXTENSIONPRESENT}}
+\index{LPALCISEXTENSIONPRESENT@{LPALCISEXTENSIONPRESENT}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{LPALCISEXTENSIONPRESENT}{LPALCISEXTENSIONPRESENT}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{alc_8h_ab3f76bbb16c17231a6b15f2caf769606}{A\+L\+Cboolean}}(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ L\+P\+A\+L\+C\+I\+S\+E\+X\+T\+E\+N\+S\+I\+O\+N\+P\+R\+E\+S\+E\+NT) (\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$device, const \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}} $\ast$extname)}
+
+\mbox{\Hypertarget{alc_8h_a0ce4d0a4e3e01574c823fc53786ead93}\label{alc_8h_a0ce4d0a4e3e01574c823fc53786ead93}} 
+\index{alc.h@{alc.h}!LPALCMAKECONTEXTCURRENT@{LPALCMAKECONTEXTCURRENT}}
+\index{LPALCMAKECONTEXTCURRENT@{LPALCMAKECONTEXTCURRENT}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{LPALCMAKECONTEXTCURRENT}{LPALCMAKECONTEXTCURRENT}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{alc_8h_ab3f76bbb16c17231a6b15f2caf769606}{A\+L\+Cboolean}}(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ L\+P\+A\+L\+C\+M\+A\+K\+E\+C\+O\+N\+T\+E\+X\+T\+C\+U\+R\+R\+E\+NT) (\mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}} $\ast$context)}
+
+\mbox{\Hypertarget{alc_8h_aed0c314b470ade0f5dfe92a73e2bc80e}\label{alc_8h_aed0c314b470ade0f5dfe92a73e2bc80e}} 
+\index{alc.h@{alc.h}!LPALCOPENDEVICE@{LPALCOPENDEVICE}}
+\index{LPALCOPENDEVICE@{LPALCOPENDEVICE}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{LPALCOPENDEVICE}{LPALCOPENDEVICE}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}}$\ast$(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ L\+P\+A\+L\+C\+O\+P\+E\+N\+D\+E\+V\+I\+CE) (const \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}} $\ast$devicename)}
+
+\mbox{\Hypertarget{alc_8h_a42ab4039316ea799b567fd9d2ca1b27e}\label{alc_8h_a42ab4039316ea799b567fd9d2ca1b27e}} 
+\index{alc.h@{alc.h}!LPALCPROCESSCONTEXT@{LPALCPROCESSCONTEXT}}
+\index{LPALCPROCESSCONTEXT@{LPALCPROCESSCONTEXT}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{LPALCPROCESSCONTEXT}{LPALCPROCESSCONTEXT}}
+{\footnotesize\ttfamily typedef void(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ L\+P\+A\+L\+C\+P\+R\+O\+C\+E\+S\+S\+C\+O\+N\+T\+E\+XT) (\mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}} $\ast$context)}
+
+\mbox{\Hypertarget{alc_8h_ac658415606987ffee561850972fe58d7}\label{alc_8h_ac658415606987ffee561850972fe58d7}} 
+\index{alc.h@{alc.h}!LPALCSUSPENDCONTEXT@{LPALCSUSPENDCONTEXT}}
+\index{LPALCSUSPENDCONTEXT@{LPALCSUSPENDCONTEXT}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{LPALCSUSPENDCONTEXT}{LPALCSUSPENDCONTEXT}}
+{\footnotesize\ttfamily typedef void(\mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} $\ast$ L\+P\+A\+L\+C\+S\+U\+S\+P\+E\+N\+D\+C\+O\+N\+T\+E\+XT) (\mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}} $\ast$context)}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{alc_8h_a356954a6c030edfa6ed582efe5eb5c17}\label{alc_8h_a356954a6c030edfa6ed582efe5eb5c17}} 
+\index{alc.h@{alc.h}!alcCaptureCloseDevice@{alcCaptureCloseDevice}}
+\index{alcCaptureCloseDevice@{alcCaptureCloseDevice}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{alcCaptureCloseDevice()}{alcCaptureCloseDevice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} \mbox{\hyperlink{alc_8h_ab3f76bbb16c17231a6b15f2caf769606}{A\+L\+Cboolean}} \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} alc\+Capture\+Close\+Device (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$}]{device }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{alc_8h_a43b2a06b1d9c2c280405fe33f5482be9}\label{alc_8h_a43b2a06b1d9c2c280405fe33f5482be9}} 
+\index{alc.h@{alc.h}!alcCaptureOpenDevice@{alcCaptureOpenDevice}}
+\index{alcCaptureOpenDevice@{alcCaptureOpenDevice}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{alcCaptureOpenDevice()}{alcCaptureOpenDevice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} \mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}}$\ast$ \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} alc\+Capture\+Open\+Device (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}} $\ast$}]{devicename,  }\item[{\mbox{\hyperlink{alc_8h_a0b10e6a008d4dd8190bb4a0bae3f49c6}{A\+L\+Cuint}}}]{frequency,  }\item[{\mbox{\hyperlink{alc_8h_a6535508b0b689f249c8e99053d584a0f}{A\+L\+Cenum}}}]{format,  }\item[{\mbox{\hyperlink{alc_8h_a7041956d733b9affdb45d9b725e20156}{A\+L\+Csizei}}}]{buffersize }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{alc_8h_afc25ce3f5434dc54b1b0d35666aec6e8}\label{alc_8h_afc25ce3f5434dc54b1b0d35666aec6e8}} 
+\index{alc.h@{alc.h}!alcCaptureSamples@{alcCaptureSamples}}
+\index{alcCaptureSamples@{alcCaptureSamples}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{alcCaptureSamples()}{alcCaptureSamples()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} void \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} alc\+Capture\+Samples (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$}]{device,  }\item[{\mbox{\hyperlink{alc_8h_a03528d12ba43b25711e5d893da1b128c}{A\+L\+Cvoid}} $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{alc_8h_a7041956d733b9affdb45d9b725e20156}{A\+L\+Csizei}}}]{samples }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{alc_8h_ab00a220b27db9ebd44fcafab075e5129}\label{alc_8h_ab00a220b27db9ebd44fcafab075e5129}} 
+\index{alc.h@{alc.h}!alcCaptureStart@{alcCaptureStart}}
+\index{alcCaptureStart@{alcCaptureStart}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{alcCaptureStart()}{alcCaptureStart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} void \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} alc\+Capture\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$}]{device }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{alc_8h_ae9ba5188a1e220941a3ee3fa2265cd6a}\label{alc_8h_ae9ba5188a1e220941a3ee3fa2265cd6a}} 
+\index{alc.h@{alc.h}!alcCaptureStop@{alcCaptureStop}}
+\index{alcCaptureStop@{alcCaptureStop}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{alcCaptureStop()}{alcCaptureStop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} void \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} alc\+Capture\+Stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$}]{device }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{alc_8h_aa8a289916ea5f2a5db8415b8c0b877b3}\label{alc_8h_aa8a289916ea5f2a5db8415b8c0b877b3}} 
+\index{alc.h@{alc.h}!alcCloseDevice@{alcCloseDevice}}
+\index{alcCloseDevice@{alcCloseDevice}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{alcCloseDevice()}{alcCloseDevice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} \mbox{\hyperlink{alc_8h_ab3f76bbb16c17231a6b15f2caf769606}{A\+L\+Cboolean}} \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} alc\+Close\+Device (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$}]{device }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{alc_8h_aa8a289916ea5f2a5db8415b8c0b877b3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{alc_8h_a2b026c787625167d70504be39d896c8f}\label{alc_8h_a2b026c787625167d70504be39d896c8f}} 
+\index{alc.h@{alc.h}!alcCreateContext@{alcCreateContext}}
+\index{alcCreateContext@{alcCreateContext}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{alcCreateContext()}{alcCreateContext()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} \mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}}$\ast$ \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} alc\+Create\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$}]{device,  }\item[{const \mbox{\hyperlink{alc_8h_a939c58bf441454df5a52bdbfc72c5398}{A\+L\+Cint}} $\ast$}]{attrlist }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{alc_8h_a2b026c787625167d70504be39d896c8f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{alc_8h_a41682484927dfa1d17a8167ddc39b03c}\label{alc_8h_a41682484927dfa1d17a8167ddc39b03c}} 
+\index{alc.h@{alc.h}!alcDestroyContext@{alcDestroyContext}}
+\index{alcDestroyContext@{alcDestroyContext}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{alcDestroyContext()}{alcDestroyContext()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} void \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} alc\+Destroy\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}} $\ast$}]{context }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{alc_8h_a41682484927dfa1d17a8167ddc39b03c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{alc_8h_a6c909f173dc76c4c1032b2aeb0a4d82d}\label{alc_8h_a6c909f173dc76c4c1032b2aeb0a4d82d}} 
+\index{alc.h@{alc.h}!alcGetContextsDevice@{alcGetContextsDevice}}
+\index{alcGetContextsDevice@{alcGetContextsDevice}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{alcGetContextsDevice()}{alcGetContextsDevice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} \mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}}$\ast$ \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} alc\+Get\+Contexts\+Device (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}} $\ast$}]{context }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{alc_8h_a6c5016c97667cfdf3d0dc62cca7c960a}\label{alc_8h_a6c5016c97667cfdf3d0dc62cca7c960a}} 
+\index{alc.h@{alc.h}!alcGetCurrentContext@{alcGetCurrentContext}}
+\index{alcGetCurrentContext@{alcGetCurrentContext}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{alcGetCurrentContext()}{alcGetCurrentContext()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} \mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}}$\ast$ \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} alc\+Get\+Current\+Context (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{alc_8h_aacebe8f59ad2dd11fc0385fba87a87e2}\label{alc_8h_aacebe8f59ad2dd11fc0385fba87a87e2}} 
+\index{alc.h@{alc.h}!alcGetEnumValue@{alcGetEnumValue}}
+\index{alcGetEnumValue@{alcGetEnumValue}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{alcGetEnumValue()}{alcGetEnumValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} \mbox{\hyperlink{alc_8h_a6535508b0b689f249c8e99053d584a0f}{A\+L\+Cenum}} \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} alc\+Get\+Enum\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$}]{device,  }\item[{const \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}} $\ast$}]{enumname }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{alc_8h_ad340df39f8ec24048a9a20f083c63b73}\label{alc_8h_ad340df39f8ec24048a9a20f083c63b73}} 
+\index{alc.h@{alc.h}!alcGetError@{alcGetError}}
+\index{alcGetError@{alcGetError}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{alcGetError()}{alcGetError()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} \mbox{\hyperlink{alc_8h_a6535508b0b689f249c8e99053d584a0f}{A\+L\+Cenum}} \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} alc\+Get\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$}]{device }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{alc_8h_a822defeb83946811894cc1c39fe4a327}\label{alc_8h_a822defeb83946811894cc1c39fe4a327}} 
+\index{alc.h@{alc.h}!alcGetIntegerv@{alcGetIntegerv}}
+\index{alcGetIntegerv@{alcGetIntegerv}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{alcGetIntegerv()}{alcGetIntegerv()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} void \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} alc\+Get\+Integerv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$}]{device,  }\item[{\mbox{\hyperlink{alc_8h_a6535508b0b689f249c8e99053d584a0f}{A\+L\+Cenum}}}]{param,  }\item[{\mbox{\hyperlink{alc_8h_a7041956d733b9affdb45d9b725e20156}{A\+L\+Csizei}}}]{size,  }\item[{\mbox{\hyperlink{alc_8h_a939c58bf441454df5a52bdbfc72c5398}{A\+L\+Cint}} $\ast$}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{alc_8h_a1d57417d350feff52ae273bdebf6f443}\label{alc_8h_a1d57417d350feff52ae273bdebf6f443}} 
+\index{alc.h@{alc.h}!alcGetProcAddress@{alcGetProcAddress}}
+\index{alcGetProcAddress@{alcGetProcAddress}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{alcGetProcAddress()}{alcGetProcAddress()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} void$\ast$ \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} alc\+Get\+Proc\+Address (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$}]{device,  }\item[{const \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}} $\ast$}]{funcname }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{alc_8h_a62c6fef8631bcb2343cfaa4d08b29390}\label{alc_8h_a62c6fef8631bcb2343cfaa4d08b29390}} 
+\index{alc.h@{alc.h}!alcGetString@{alcGetString}}
+\index{alcGetString@{alcGetString}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{alcGetString()}{alcGetString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} const \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}}$\ast$ \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} alc\+Get\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$}]{device,  }\item[{\mbox{\hyperlink{alc_8h_a6535508b0b689f249c8e99053d584a0f}{A\+L\+Cenum}}}]{param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{alc_8h_a604cec73d2f4acd2d3ba939ac40eed0c}\label{alc_8h_a604cec73d2f4acd2d3ba939ac40eed0c}} 
+\index{alc.h@{alc.h}!alcIsExtensionPresent@{alcIsExtensionPresent}}
+\index{alcIsExtensionPresent@{alcIsExtensionPresent}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{alcIsExtensionPresent()}{alcIsExtensionPresent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} \mbox{\hyperlink{alc_8h_ab3f76bbb16c17231a6b15f2caf769606}{A\+L\+Cboolean}} \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} alc\+Is\+Extension\+Present (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}} $\ast$}]{device,  }\item[{const \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}} $\ast$}]{extname }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{alc_8h_a8ece422dd6634d2388190beb9693f86d}\label{alc_8h_a8ece422dd6634d2388190beb9693f86d}} 
+\index{alc.h@{alc.h}!alcMakeContextCurrent@{alcMakeContextCurrent}}
+\index{alcMakeContextCurrent@{alcMakeContextCurrent}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{alcMakeContextCurrent()}{alcMakeContextCurrent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} \mbox{\hyperlink{alc_8h_ab3f76bbb16c17231a6b15f2caf769606}{A\+L\+Cboolean}} \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} alc\+Make\+Context\+Current (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}} $\ast$}]{context }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{alc_8h_a8ece422dd6634d2388190beb9693f86d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{alc_8h_a6cbf6348dd3f49c36d61c63f711d2eba}\label{alc_8h_a6cbf6348dd3f49c36d61c63f711d2eba}} 
+\index{alc.h@{alc.h}!alcOpenDevice@{alcOpenDevice}}
+\index{alcOpenDevice@{alcOpenDevice}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{alcOpenDevice()}{alcOpenDevice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} \mbox{\hyperlink{alc_8h_aba8742179fd52ef41c66adacdec5383e}{A\+L\+Cdevice}}$\ast$ \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} alc\+Open\+Device (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{alc_8h_a5ffdc2576482e1ff45cc0bbde7177a36}{A\+L\+Cchar}} $\ast$}]{devicename }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{alc_8h_a6cbf6348dd3f49c36d61c63f711d2eba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{alc_8h_a257c6c6c344f174520ce5ef7aac04289}\label{alc_8h_a257c6c6c344f174520ce5ef7aac04289}} 
+\index{alc.h@{alc.h}!alcProcessContext@{alcProcessContext}}
+\index{alcProcessContext@{alcProcessContext}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{alcProcessContext()}{alcProcessContext()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} void \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} alc\+Process\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}} $\ast$}]{context }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{alc_8h_a55cccf33b5327a9a4f106c3202207aa6}\label{alc_8h_a55cccf33b5327a9a4f106c3202207aa6}} 
+\index{alc.h@{alc.h}!alcSuspendContext@{alcSuspendContext}}
+\index{alcSuspendContext@{alcSuspendContext}!alc.h@{alc.h}}
+\doxysubsubsection{\texorpdfstring{alcSuspendContext()}{alcSuspendContext()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{alc_8h_ab33f56ca61b69d521b09d3e567dbabd2}{A\+L\+C\+\_\+\+A\+PI}} void \mbox{\hyperlink{alc_8h_ad26234a076d29e819fa6654429bc8b35}{A\+L\+C\+\_\+\+A\+P\+I\+E\+N\+T\+RY}} alc\+Suspend\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{alc_8h_ad085cf94ff96646b5a2b5401c4489e23}{A\+L\+Ccontext}} $\ast$}]{context }\end{DoxyParamCaption})}
+

@@ -1,0 +1,484 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: freetype/internal/wofftypes.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_981d57b2e11530428c66a192ba91cfc7.html">freetype</a></li><li class="navelem"><a class="el" href="dir_ac174dc64ad36850d6be9a69f636b6c2.html">internal</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">wofftypes.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="wofftypes_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/****************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * wofftypes.h</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *   Basic WOFF/WOFF2 type definitions and interface (specification</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *   only).</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * Copyright (C) 1996-2020 by</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * David Turner, Robert Wilhelm, and Werner Lemberg.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * This file is part of the FreeType project, and may only be used,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * modified, and distributed under the terms of the FreeType project</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * license, LICENSE.TXT.  By continuing to use, modify, or distribute</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * this file you indicate that you have read the license and</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * understand and accept it fully.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef WOFFTYPES_H_</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#define WOFFTYPES_H_</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="tttables_8h.html">freetype/tttables.h</a>&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ftobjs_8h.html">freetype/internal/ftobjs.h</a>&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<a class="code" href="ftheader_8h.html#a72ee5814b3ae378ebb7fd3a8e3ddec14">FT_BEGIN_HEADER</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">  /**************************************************************************</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">   * @struct:</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">   *   WOFF_HeaderRec</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">   * @description:</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">   *   WOFF file format header.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">   * @fields:</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">   *   See</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">   *     https://www.w3.org/TR/WOFF/#WOFFHeader</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="struct_w_o_f_f___header_rec__.html">   44</a></span>&#160;  <span class="keyword">typedef</span> <span class="keyword">struct  </span><a class="code" href="struct_w_o_f_f___header_rec__.html">WOFF_HeaderRec_</a></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  {</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="struct_w_o_f_f___header_rec__.html#a4ecfcefa20b9b5c897d82727293e7111">   46</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>   <a class="code" href="struct_w_o_f_f___header_rec__.html#a4ecfcefa20b9b5c897d82727293e7111">signature</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="struct_w_o_f_f___header_rec__.html#ac805e897e024bfe4cd363f09138e2a5a">   47</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>   <a class="code" href="struct_w_o_f_f___header_rec__.html#ac805e897e024bfe4cd363f09138e2a5a">flavor</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="struct_w_o_f_f___header_rec__.html#a7cade0fd6f387b1e618804af7d113c6a">   48</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>   <a class="code" href="struct_w_o_f_f___header_rec__.html#a7cade0fd6f387b1e618804af7d113c6a">length</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="struct_w_o_f_f___header_rec__.html#a50c23865dcbfe3521af337bb54f68b01">   49</a></span>&#160;    <a class="code" href="fttypes_8h.html#a937f6c17cf5ffd09086d8610c37b9f58">FT_UShort</a>  <a class="code" href="struct_w_o_f_f___header_rec__.html#a50c23865dcbfe3521af337bb54f68b01">num_tables</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="struct_w_o_f_f___header_rec__.html#a968e375e8e226a532ae19570b38da37c">   50</a></span>&#160;    <a class="code" href="fttypes_8h.html#a937f6c17cf5ffd09086d8610c37b9f58">FT_UShort</a>  <a class="code" href="struct_w_o_f_f___header_rec__.html#a968e375e8e226a532ae19570b38da37c">reserved</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="struct_w_o_f_f___header_rec__.html#af1ab5dfddb4318368b20d2542b284fc4">   51</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>   <a class="code" href="struct_w_o_f_f___header_rec__.html#af1ab5dfddb4318368b20d2542b284fc4">totalSfntSize</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="struct_w_o_f_f___header_rec__.html#a814bef54b9aedb973bec2ef4009a8031">   52</a></span>&#160;    <a class="code" href="fttypes_8h.html#a937f6c17cf5ffd09086d8610c37b9f58">FT_UShort</a>  <a class="code" href="struct_w_o_f_f___header_rec__.html#a814bef54b9aedb973bec2ef4009a8031">majorVersion</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="struct_w_o_f_f___header_rec__.html#a39532ac80b6d675eea62b8c2f586d9e3">   53</a></span>&#160;    <a class="code" href="fttypes_8h.html#a937f6c17cf5ffd09086d8610c37b9f58">FT_UShort</a>  <a class="code" href="struct_w_o_f_f___header_rec__.html#a39532ac80b6d675eea62b8c2f586d9e3">minorVersion</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="struct_w_o_f_f___header_rec__.html#ac93e010ba26ba188d948009c089a824d">   54</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>   <a class="code" href="struct_w_o_f_f___header_rec__.html#ac93e010ba26ba188d948009c089a824d">metaOffset</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="struct_w_o_f_f___header_rec__.html#a5496776da0752cb2ff133c5068ceb0ab">   55</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>   <a class="code" href="struct_w_o_f_f___header_rec__.html#a5496776da0752cb2ff133c5068ceb0ab">metaLength</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="struct_w_o_f_f___header_rec__.html#a71ba111d9a0b7139db466f69dc47647f">   56</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>   <a class="code" href="struct_w_o_f_f___header_rec__.html#a71ba111d9a0b7139db466f69dc47647f">metaOrigLength</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="struct_w_o_f_f___header_rec__.html#a28e0df8dd3d47a13bae3c339c438a0d8">   57</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>   <a class="code" href="struct_w_o_f_f___header_rec__.html#a28e0df8dd3d47a13bae3c339c438a0d8">privOffset</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="struct_w_o_f_f___header_rec__.html#a5b2043f2356a61f1e41cfcd564ca5222">   58</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>   <a class="code" href="struct_w_o_f_f___header_rec__.html#a5b2043f2356a61f1e41cfcd564ca5222">privLength</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="wofftypes_8h.html#a6fad95b2939773d867cd7334c78da4d7">   60</a></span>&#160;  } <a class="code" href="wofftypes_8h.html#a6fad95b2939773d867cd7334c78da4d7">WOFF_HeaderRec</a>, *<a class="code" href="wofftypes_8h.html#a5bc5798e35c8362b0b064c90fb623afe">WOFF_Header</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">  /**************************************************************************</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">   * @struct:</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">   *   WOFF_TableRec</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">   * @description:</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">   *   This structure describes a given table of a WOFF font.</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">   * @fields:</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">   *   Tag ::</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">   *     A four-bytes tag describing the table.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">   *   Offset ::</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">   *     The offset of the table from the start of the WOFF font in its</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">   *     resource.</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">   *   CompLength ::</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">   *     Compressed table length (in bytes).</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">   *   OrigLength ::</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">   *     Uncompressed table length (in bytes).</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">   *   CheckSum ::</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">   *     The table checksum.  This value can be ignored.</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">   *   OrigOffset ::</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">   *     The uncompressed table file offset.  This value gets computed while</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">   *     constructing the (uncompressed) SFNT header.  It is not contained in</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">   *     the WOFF file.</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="struct_w_o_f_f___table_rec__.html">   93</a></span>&#160;  <span class="keyword">typedef</span> <span class="keyword">struct  </span><a class="code" href="struct_w_o_f_f___table_rec__.html">WOFF_TableRec_</a></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  {</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="struct_w_o_f_f___table_rec__.html#a180f01c612c0f50795b78764bc6d85a1">   95</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>  <a class="code" href="struct_w_o_f_f___table_rec__.html#a180f01c612c0f50795b78764bc6d85a1">Tag</a>;           <span class="comment">/* table ID                  */</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="struct_w_o_f_f___table_rec__.html#aac56c27dce54415c889ad2be4045851c">   96</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>  <a class="code" href="struct_w_o_f_f___table_rec__.html#aac56c27dce54415c889ad2be4045851c">Offset</a>;        <span class="comment">/* table file offset         */</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="struct_w_o_f_f___table_rec__.html#a273aa7c18d810be6808e2c857320f7c5">   97</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>  <a class="code" href="struct_w_o_f_f___table_rec__.html#a273aa7c18d810be6808e2c857320f7c5">CompLength</a>;    <span class="comment">/* compressed table length   */</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="struct_w_o_f_f___table_rec__.html#a42dd043bbef5656aa32461fc0def8340">   98</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>  <a class="code" href="struct_w_o_f_f___table_rec__.html#a42dd043bbef5656aa32461fc0def8340">OrigLength</a>;    <span class="comment">/* uncompressed table length */</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="struct_w_o_f_f___table_rec__.html#a7731a05b663d6bc3548d7c2a9a59f432">   99</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>  <a class="code" href="struct_w_o_f_f___table_rec__.html#a7731a05b663d6bc3548d7c2a9a59f432">CheckSum</a>;      <span class="comment">/* uncompressed checksum     */</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="struct_w_o_f_f___table_rec__.html#a1722f43cd00f44068a777808525624f1">  101</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>  <a class="code" href="struct_w_o_f_f___table_rec__.html#a1722f43cd00f44068a777808525624f1">OrigOffset</a>;    <span class="comment">/* uncompressed table file offset */</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                             <span class="comment">/* (not in the WOFF file)         */</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="wofftypes_8h.html#a36f25e0d0af7f5f243c95b3c78613970">  103</a></span>&#160;  } <a class="code" href="wofftypes_8h.html#a36f25e0d0af7f5f243c95b3c78613970">WOFF_TableRec</a>, *<a class="code" href="wofftypes_8h.html#ab98ded8549fb113503e693c88e05d4fb">WOFF_Table</a>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">  /**************************************************************************</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">   * @struct:</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">   *   WOFF2_TtcFontRec</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">   * @description:</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">   *   Metadata for a TTC font entry in WOFF2.</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">   * @fields:</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">   *   flavor ::</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">   *     TTC font flavor.</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">   *   num_tables ::</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">   *     Number of tables in TTC, indicating number of elements in</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">   *     `table_indices`.</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">   *   table_indices ::</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">   *     Array of table indices for each TTC font.</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___ttc_font_rec__.html">  125</a></span>&#160;  <span class="keyword">typedef</span> <span class="keyword">struct  </span><a class="code" href="struct_w_o_f_f2___ttc_font_rec__.html">WOFF2_TtcFontRec_</a></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  {</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___ttc_font_rec__.html#aadc572a3c3400446219ac38b90fd6eee">  127</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>    <a class="code" href="struct_w_o_f_f2___ttc_font_rec__.html#aadc572a3c3400446219ac38b90fd6eee">flavor</a>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___ttc_font_rec__.html#aa3c5391751a9c81c929b51b9710002a5">  128</a></span>&#160;    <a class="code" href="fttypes_8h.html#a937f6c17cf5ffd09086d8610c37b9f58">FT_UShort</a>   <a class="code" href="struct_w_o_f_f2___ttc_font_rec__.html#aa3c5391751a9c81c929b51b9710002a5">num_tables</a>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___ttc_font_rec__.html#a42052df1036700900ba00a7b6d4442d9">  129</a></span>&#160;    <a class="code" href="fttypes_8h.html#a937f6c17cf5ffd09086d8610c37b9f58">FT_UShort</a>*  <a class="code" href="struct_w_o_f_f2___ttc_font_rec__.html#a42052df1036700900ba00a7b6d4442d9">table_indices</a>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="wofftypes_8h.html#a711f591f0f401d26c1144ab5ca94f76d">  131</a></span>&#160;  } <a class="code" href="wofftypes_8h.html#a711f591f0f401d26c1144ab5ca94f76d">WOFF2_TtcFontRec</a>, *<a class="code" href="wofftypes_8h.html#a2af00f934ebda4021c27bf4a2a9e70c8">WOFF2_TtcFont</a>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">  /**************************************************************************</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment">   * @struct:</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment">   *   WOFF2_HeaderRec</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment">   * @description:</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment">   *   WOFF2 file format header.</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment">   * @fields:</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment">   *   See</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment">   *     https://www.w3.org/TR/WOFF2/#woff20Header</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment">   * @note:</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment">   *   We don&#39;t care about the fields `reserved`, `majorVersion` and</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment">   *   `minorVersion`, so they are not included.  The `totalSfntSize` field</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment">   *   does not necessarily represent the actual size of the uncompressed</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">   *   SFNT font stream, so that is used as a reference value instead.</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___header_rec__.html">  153</a></span>&#160;  <span class="keyword">typedef</span> <span class="keyword">struct  </span><a class="code" href="struct_w_o_f_f2___header_rec__.html">WOFF2_HeaderRec_</a></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  {</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___header_rec__.html#aa1948deced6a2a9fc5e24767e9619a72">  155</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>   <a class="code" href="struct_w_o_f_f2___header_rec__.html#aa1948deced6a2a9fc5e24767e9619a72">signature</a>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___header_rec__.html#acbe235a3c95e3db42365e5a86d1e51dc">  156</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>   <a class="code" href="struct_w_o_f_f2___header_rec__.html#acbe235a3c95e3db42365e5a86d1e51dc">flavor</a>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___header_rec__.html#a608e8431b69e4df117d302ac297f7045">  157</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>   <a class="code" href="struct_w_o_f_f2___header_rec__.html#a608e8431b69e4df117d302ac297f7045">length</a>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___header_rec__.html#abc0332678b8953b4b6fb49cd02d647f1">  158</a></span>&#160;    <a class="code" href="fttypes_8h.html#a937f6c17cf5ffd09086d8610c37b9f58">FT_UShort</a>  <a class="code" href="struct_w_o_f_f2___header_rec__.html#abc0332678b8953b4b6fb49cd02d647f1">num_tables</a>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___header_rec__.html#a5045d833ebe81db68eb4e62fcf0674ca">  159</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>   <a class="code" href="struct_w_o_f_f2___header_rec__.html#a5045d833ebe81db68eb4e62fcf0674ca">totalSfntSize</a>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___header_rec__.html#a31c30002c672bbafa2dfd393a758c56f">  160</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>   <a class="code" href="struct_w_o_f_f2___header_rec__.html#a31c30002c672bbafa2dfd393a758c56f">totalCompressedSize</a>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___header_rec__.html#a188f8647670ff4e278994be486d1e144">  161</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>   <a class="code" href="struct_w_o_f_f2___header_rec__.html#a188f8647670ff4e278994be486d1e144">metaOffset</a>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___header_rec__.html#ac757a53a77b2e22c0ec1cdbd322df3b5">  162</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>   <a class="code" href="struct_w_o_f_f2___header_rec__.html#ac757a53a77b2e22c0ec1cdbd322df3b5">metaLength</a>;</div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___header_rec__.html#a30cb8e3c042c05409cfc0640b36b304e">  163</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>   <a class="code" href="struct_w_o_f_f2___header_rec__.html#a30cb8e3c042c05409cfc0640b36b304e">metaOrigLength</a>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___header_rec__.html#ad1b064096552c4c92c3659407f0315c3">  164</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>   <a class="code" href="struct_w_o_f_f2___header_rec__.html#ad1b064096552c4c92c3659407f0315c3">privOffset</a>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___header_rec__.html#a51561b97b842589e97f441990eb413fc">  165</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>   <a class="code" href="struct_w_o_f_f2___header_rec__.html#a51561b97b842589e97f441990eb413fc">privLength</a>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___header_rec__.html#afcb18f2b9825ac1ced8807c35326325f">  167</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>   <a class="code" href="struct_w_o_f_f2___header_rec__.html#afcb18f2b9825ac1ced8807c35326325f">uncompressed_size</a>;    <span class="comment">/* uncompressed brotli stream size */</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___header_rec__.html#ae77b42c4626f39e77df684ebec8062a8">  168</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>   <a class="code" href="struct_w_o_f_f2___header_rec__.html#ae77b42c4626f39e77df684ebec8062a8">compressed_offset</a>;    <span class="comment">/* compressed stream offset        */</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___header_rec__.html#acc53e0cb3c7dd78e76eaba30fc7caae7">  169</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>   <a class="code" href="struct_w_o_f_f2___header_rec__.html#acc53e0cb3c7dd78e76eaba30fc7caae7">header_version</a>;       <span class="comment">/* version of original TTC Header  */</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___header_rec__.html#a3d57b340e79301774e84155f5322ef2b">  170</a></span>&#160;    <a class="code" href="fttypes_8h.html#a937f6c17cf5ffd09086d8610c37b9f58">FT_UShort</a>  <a class="code" href="struct_w_o_f_f2___header_rec__.html#a3d57b340e79301774e84155f5322ef2b">num_fonts</a>;            <span class="comment">/* number of fonts in TTC          */</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___header_rec__.html#a3f1ef4c3496aeea9875682c88e299998">  171</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>   <a class="code" href="struct_w_o_f_f2___header_rec__.html#a3f1ef4c3496aeea9875682c88e299998">actual_sfnt_size</a>;     <span class="comment">/* actual size of sfnt stream      */</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___header_rec__.html#a94bcd0c8d8d6038cd3ab4f3ac1ea545a">  173</a></span>&#160;    <a class="code" href="struct_w_o_f_f2___ttc_font_rec__.html">WOFF2_TtcFont</a>  <a class="code" href="struct_w_o_f_f2___header_rec__.html#a94bcd0c8d8d6038cd3ab4f3ac1ea545a">ttc_fonts</a>;        <span class="comment">/* metadata for fonts in a TTC     */</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="wofftypes_8h.html#abfbeaa2a6e40ca4f12e0d03b47fbd660">  175</a></span>&#160;  } <a class="code" href="wofftypes_8h.html#abfbeaa2a6e40ca4f12e0d03b47fbd660">WOFF2_HeaderRec</a>, *<a class="code" href="wofftypes_8h.html#a57d4018cfbdc6a94de2f423b2e70f147">WOFF2_Header</a>;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">  /**************************************************************************</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment">   * @struct:</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">   *   WOFF2_TableRec</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">   * @description:</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment">   *   This structure describes a given table of a WOFF2 font.</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment">   * @fields:</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment">   *   See</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="comment">   *     https://www.w3.org/TR/WOFF2/#table_dir_format</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___table_rec__.html">  191</a></span>&#160;  <span class="keyword">typedef</span> <span class="keyword">struct  </span><a class="code" href="struct_w_o_f_f2___table_rec__.html">WOFF2_TableRec_</a></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  {</div>
+<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___table_rec__.html#ad360db830f70e431fb901d0b3576ba11">  193</a></span>&#160;    <a class="code" href="fttypes_8h.html#a51f26183ca0c9f4af958939648caeccd">FT_Byte</a>   <a class="code" href="struct_w_o_f_f2___table_rec__.html#ad360db830f70e431fb901d0b3576ba11">FlagByte</a>;           <span class="comment">/* table type and flags      */</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___table_rec__.html#a3c0fac0a0edec38a9da1250c9b7ae98c">  194</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>  <a class="code" href="struct_w_o_f_f2___table_rec__.html#a3c0fac0a0edec38a9da1250c9b7ae98c">Tag</a>;                <span class="comment">/* table file offset         */</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___table_rec__.html#a5805d7f22aaaf96041dcdffc828ffbce">  195</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>  <a class="code" href="struct_w_o_f_f2___table_rec__.html#a5805d7f22aaaf96041dcdffc828ffbce">dst_length</a>;         <span class="comment">/* uncompressed table length */</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___table_rec__.html#acbc0eb51cbb307a61359e78884b47acd">  196</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>  <a class="code" href="struct_w_o_f_f2___table_rec__.html#acbc0eb51cbb307a61359e78884b47acd">TransformLength</a>;    <span class="comment">/* transformed length        */</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___table_rec__.html#a4484d8130002c2f7302ba670ebbe66c7">  198</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>  <a class="code" href="struct_w_o_f_f2___table_rec__.html#a4484d8130002c2f7302ba670ebbe66c7">flags</a>;              <span class="comment">/* calculated flags          */</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___table_rec__.html#afe84a2d7bc1e13899904f756726cb25d">  199</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>  <a class="code" href="struct_w_o_f_f2___table_rec__.html#afe84a2d7bc1e13899904f756726cb25d">src_offset</a>;         <span class="comment">/* compressed table offset   */</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___table_rec__.html#addc73ea99c2308e93df0d974aecf83a6">  200</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>  <a class="code" href="struct_w_o_f_f2___table_rec__.html#addc73ea99c2308e93df0d974aecf83a6">src_length</a>;         <span class="comment">/* compressed table length   */</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___table_rec__.html#a787c7ea02a602d7c3245aefefa041909">  201</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>  <a class="code" href="struct_w_o_f_f2___table_rec__.html#a787c7ea02a602d7c3245aefefa041909">dst_offset</a>;         <span class="comment">/* uncompressed table offset */</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="wofftypes_8h.html#ad8007e6ad0e35533ef9d0f5abba56273">  203</a></span>&#160;  } <a class="code" href="wofftypes_8h.html#ad8007e6ad0e35533ef9d0f5abba56273">WOFF2_TableRec</a>, *<a class="code" href="wofftypes_8h.html#a1abefd580c961fee6bb372adfb44455b">WOFF2_Table</a>;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment">  /**************************************************************************</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment">   * @struct:</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment">   *   WOFF2_InfoRec</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment">   * @description:</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment">   *   Metadata for WOFF2 font that may be required for reconstruction of</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="comment">   *   sfnt tables.</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment">   * @fields:</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="comment">   *   header_checksum ::</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="comment">   *     Checksum of SFNT offset table.</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment">   *   num_glyphs ::</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="comment">   *     Number of glyphs in the font.</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="comment">   *   num_hmetrics ::</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="comment">   *     `numberOfHMetrics` field in the &#39;hhea&#39; table.</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="comment">   *   x_mins ::</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="comment">   *     `xMin` values of glyph bounding box.</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">   *   glyf_table ::</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">   *     A pointer to the `glyf&#39; table record.</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="comment">   *   loca_table ::</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="comment">   *     A pointer to the `loca&#39; table record.</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment">   *   head_table ::</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="comment">   *     A pointer to the `head&#39; table record.</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___info_rec__.html">  237</a></span>&#160;  <span class="keyword">typedef</span> <span class="keyword">struct  </span><a class="code" href="struct_w_o_f_f2___info_rec__.html">WOFF2_InfoRec_</a></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  {</div>
+<div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___info_rec__.html#ac873f511d8b19d47f4f600a4df9cb4dc">  239</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>   <a class="code" href="struct_w_o_f_f2___info_rec__.html#ac873f511d8b19d47f4f600a4df9cb4dc">header_checksum</a>;</div>
+<div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___info_rec__.html#a69367dea7d3a7553b30136f304d9a964">  240</a></span>&#160;    <a class="code" href="fttypes_8h.html#a937f6c17cf5ffd09086d8610c37b9f58">FT_UShort</a>  <a class="code" href="struct_w_o_f_f2___info_rec__.html#a69367dea7d3a7553b30136f304d9a964">num_glyphs</a>;</div>
+<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___info_rec__.html#a0af6a10625da6d069a3be5ff833d52dc">  241</a></span>&#160;    <a class="code" href="fttypes_8h.html#a937f6c17cf5ffd09086d8610c37b9f58">FT_UShort</a>  <a class="code" href="struct_w_o_f_f2___info_rec__.html#a0af6a10625da6d069a3be5ff833d52dc">num_hmetrics</a>;</div>
+<div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___info_rec__.html#a33126bfd9e28d514c18af913b593ddfd">  242</a></span>&#160;    <a class="code" href="fttypes_8h.html#aa7279be89046a2563cd3d4d6651fbdcf">FT_Short</a>*  <a class="code" href="struct_w_o_f_f2___info_rec__.html#a33126bfd9e28d514c18af913b593ddfd">x_mins</a>;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___info_rec__.html#a110ae1c1185962abb7a5d8d54e9a4d44">  244</a></span>&#160;    <a class="code" href="struct_w_o_f_f2___table_rec__.html">WOFF2_Table</a>  <a class="code" href="struct_w_o_f_f2___info_rec__.html#a110ae1c1185962abb7a5d8d54e9a4d44">glyf_table</a>;</div>
+<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___info_rec__.html#a58cc0a6567127601279d5db73c119823">  245</a></span>&#160;    <a class="code" href="struct_w_o_f_f2___table_rec__.html">WOFF2_Table</a>  <a class="code" href="struct_w_o_f_f2___info_rec__.html#a58cc0a6567127601279d5db73c119823">loca_table</a>;</div>
+<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___info_rec__.html#aacfe18daf358103a59aa00a434595a95">  246</a></span>&#160;    <a class="code" href="struct_w_o_f_f2___table_rec__.html">WOFF2_Table</a>  <a class="code" href="struct_w_o_f_f2___info_rec__.html#aacfe18daf358103a59aa00a434595a95">head_table</a>;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
+<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="wofftypes_8h.html#a7256fb1740b9f88395bff4b6838957d8">  248</a></span>&#160;  } <a class="code" href="wofftypes_8h.html#a7256fb1740b9f88395bff4b6838957d8">WOFF2_InfoRec</a>, *<a class="code" href="wofftypes_8h.html#ad3199553e4c10bd100ba5654f915809a">WOFF2_Info</a>;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment">  /**************************************************************************</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment">   * @struct:</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment">   *   WOFF2_SubstreamRec</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment">   * @description:</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment">   *   This structure stores information about a substream in the transformed</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="comment">   *   &#39;glyf&#39; table in a WOFF2 stream.</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="comment">   * @fields:</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment">   *   start ::</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="comment">   *     Beginning of the substream relative to uncompressed table stream.</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="comment">   *   offset ::</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="comment">   *     Offset of the substream relative to uncompressed table stream.</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment">   *   size ::</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment">   *     Size of the substream.</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___substream_rec__.html">  270</a></span>&#160;  <span class="keyword">typedef</span> <span class="keyword">struct  </span><a class="code" href="struct_w_o_f_f2___substream_rec__.html">WOFF2_SubstreamRec_</a></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  {</div>
+<div class="line"><a name="l00272"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___substream_rec__.html#a2dad399f322d9c396e447b42952217b0">  272</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>  <a class="code" href="struct_w_o_f_f2___substream_rec__.html#a2dad399f322d9c396e447b42952217b0">start</a>;</div>
+<div class="line"><a name="l00273"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___substream_rec__.html#a193aff40b2212e0bd79792f92b153d40">  273</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>  <a class="code" href="struct_w_o_f_f2___substream_rec__.html#a193aff40b2212e0bd79792f92b153d40">offset</a>;</div>
+<div class="line"><a name="l00274"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___substream_rec__.html#ad393192fd2901777a6ed32f2303f9b6c">  274</a></span>&#160;    <a class="code" href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a>  <a class="code" href="struct_w_o_f_f2___substream_rec__.html#ad393192fd2901777a6ed32f2303f9b6c">size</a>;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
+<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="wofftypes_8h.html#aa2cec66ab6640e7e52dbab529c7dd9d6">  276</a></span>&#160;  } <a class="code" href="wofftypes_8h.html#aa2cec66ab6640e7e52dbab529c7dd9d6">WOFF2_SubstreamRec</a>, *<a class="code" href="wofftypes_8h.html#ac236e540c1490f31884469f09b13c100">WOFF2_Substream</a>;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="comment">  /**************************************************************************</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="comment">   * @struct:</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="comment">   *   WOFF2_PointRec</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="comment">   * @description:</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="comment">   *   This structure stores information about a point in the transformed</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="comment">   *   &#39;glyf&#39; table in a WOFF2 stream.</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="comment">   * @fields:</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment">   *   x ::</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="comment">   *     x-coordinate of point.</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="comment">   *   y ::</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="comment">   *     y-coordinate of point.</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment">   *</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="comment">   *   on_curve ::</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment">   *     Set if point is on-curve.</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="comment">   */</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___point_rec__.html">  298</a></span>&#160;  <span class="keyword">typedef</span> <span class="keyword">struct  </span><a class="code" href="struct_w_o_f_f2___point_rec__.html">WOFF2_PointRec_</a></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  {</div>
+<div class="line"><a name="l00300"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___point_rec__.html#a1eacc4d4e17a4cdb9ba1528675119d80">  300</a></span>&#160;    <a class="code" href="fttypes_8h.html#af90e5fb0d07e21be9fe6faa33f02484c">FT_Int</a>   <a class="code" href="struct_w_o_f_f2___point_rec__.html#a1eacc4d4e17a4cdb9ba1528675119d80">x</a>;</div>
+<div class="line"><a name="l00301"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___point_rec__.html#a45badc2c7ee93440300bc50faaeaf761">  301</a></span>&#160;    <a class="code" href="fttypes_8h.html#af90e5fb0d07e21be9fe6faa33f02484c">FT_Int</a>   <a class="code" href="struct_w_o_f_f2___point_rec__.html#a45badc2c7ee93440300bc50faaeaf761">y</a>;</div>
+<div class="line"><a name="l00302"></a><span class="lineno"><a class="line" href="struct_w_o_f_f2___point_rec__.html#a8c612c474d588c49a3771d340e6cc8c5">  302</a></span>&#160;    <a class="code" href="fttypes_8h.html#a1a832a256bb5a7e6e884afaa1a07f3ae">FT_Bool</a>  <a class="code" href="struct_w_o_f_f2___point_rec__.html#a8c612c474d588c49a3771d340e6cc8c5">on_curve</a>;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; </div>
+<div class="line"><a name="l00304"></a><span class="lineno"><a class="line" href="wofftypes_8h.html#a62339a4c3f59c27734566eed634c3333">  304</a></span>&#160;  } <a class="code" href="wofftypes_8h.html#a62339a4c3f59c27734566eed634c3333">WOFF2_PointRec</a>, *<a class="code" href="wofftypes_8h.html#ab51304a6fd860bb05efbf5aa10b338ba">WOFF2_Point</a>;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<a class="code" href="ftheader_8h.html#a2ebbdbbee7f9bfa8b6b86790de7e9963">FT_END_HEADER</a></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* WOFFTYPES_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="comment">/* END */</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astruct_w_o_f_f2___header_rec___html_afcb18f2b9825ac1ced8807c35326325f"><div class="ttname"><a href="struct_w_o_f_f2___header_rec__.html#afcb18f2b9825ac1ced8807c35326325f">WOFF2_HeaderRec_::uncompressed_size</a></div><div class="ttdeci">FT_ULong uncompressed_size</div><div class="ttdef"><b>Definition:</b> wofftypes.h:167</div></div>
+<div class="ttc" id="astruct_w_o_f_f___table_rec___html"><div class="ttname"><a href="struct_w_o_f_f___table_rec__.html">WOFF_TableRec_</a></div><div class="ttdef"><b>Definition:</b> wofftypes.h:94</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___substream_rec___html_a2dad399f322d9c396e447b42952217b0"><div class="ttname"><a href="struct_w_o_f_f2___substream_rec__.html#a2dad399f322d9c396e447b42952217b0">WOFF2_SubstreamRec_::start</a></div><div class="ttdeci">FT_ULong start</div><div class="ttdef"><b>Definition:</b> wofftypes.h:272</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___ttc_font_rec___html_aa3c5391751a9c81c929b51b9710002a5"><div class="ttname"><a href="struct_w_o_f_f2___ttc_font_rec__.html#aa3c5391751a9c81c929b51b9710002a5">WOFF2_TtcFontRec_::num_tables</a></div><div class="ttdeci">FT_UShort num_tables</div><div class="ttdef"><b>Definition:</b> wofftypes.h:128</div></div>
+<div class="ttc" id="afttypes_8h_html_a937f6c17cf5ffd09086d8610c37b9f58"><div class="ttname"><a href="fttypes_8h.html#a937f6c17cf5ffd09086d8610c37b9f58">FT_UShort</a></div><div class="ttdeci">unsigned short FT_UShort</div><div class="ttdef"><b>Definition:</b> fttypes.h:209</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___info_rec___html_aacfe18daf358103a59aa00a434595a95"><div class="ttname"><a href="struct_w_o_f_f2___info_rec__.html#aacfe18daf358103a59aa00a434595a95">WOFF2_InfoRec_::head_table</a></div><div class="ttdeci">WOFF2_Table head_table</div><div class="ttdef"><b>Definition:</b> wofftypes.h:246</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___table_rec___html_ad360db830f70e431fb901d0b3576ba11"><div class="ttname"><a href="struct_w_o_f_f2___table_rec__.html#ad360db830f70e431fb901d0b3576ba11">WOFF2_TableRec_::FlagByte</a></div><div class="ttdeci">FT_Byte FlagByte</div><div class="ttdef"><b>Definition:</b> wofftypes.h:193</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___substream_rec___html"><div class="ttname"><a href="struct_w_o_f_f2___substream_rec__.html">WOFF2_SubstreamRec_</a></div><div class="ttdef"><b>Definition:</b> wofftypes.h:271</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___header_rec___html_a51561b97b842589e97f441990eb413fc"><div class="ttname"><a href="struct_w_o_f_f2___header_rec__.html#a51561b97b842589e97f441990eb413fc">WOFF2_HeaderRec_::privLength</a></div><div class="ttdeci">FT_ULong privLength</div><div class="ttdef"><b>Definition:</b> wofftypes.h:165</div></div>
+<div class="ttc" id="afttypes_8h_html_a4fac88bdba78eb76b505efa6e4fbf3f5"><div class="ttname"><a href="fttypes_8h.html#a4fac88bdba78eb76b505efa6e4fbf3f5">FT_ULong</a></div><div class="ttdeci">unsigned long FT_ULong</div><div class="ttdef"><b>Definition:</b> fttypes.h:253</div></div>
+<div class="ttc" id="astruct_w_o_f_f___header_rec___html_a7cade0fd6f387b1e618804af7d113c6a"><div class="ttname"><a href="struct_w_o_f_f___header_rec__.html#a7cade0fd6f387b1e618804af7d113c6a">WOFF_HeaderRec_::length</a></div><div class="ttdeci">FT_ULong length</div><div class="ttdef"><b>Definition:</b> wofftypes.h:48</div></div>
+<div class="ttc" id="astruct_w_o_f_f___table_rec___html_a1722f43cd00f44068a777808525624f1"><div class="ttname"><a href="struct_w_o_f_f___table_rec__.html#a1722f43cd00f44068a777808525624f1">WOFF_TableRec_::OrigOffset</a></div><div class="ttdeci">FT_ULong OrigOffset</div><div class="ttdef"><b>Definition:</b> wofftypes.h:101</div></div>
+<div class="ttc" id="awofftypes_8h_html_aa2cec66ab6640e7e52dbab529c7dd9d6"><div class="ttname"><a href="wofftypes_8h.html#aa2cec66ab6640e7e52dbab529c7dd9d6">WOFF2_SubstreamRec</a></div><div class="ttdeci">struct WOFF2_SubstreamRec_ WOFF2_SubstreamRec</div></div>
+<div class="ttc" id="afttypes_8h_html_a1a832a256bb5a7e6e884afaa1a07f3ae"><div class="ttname"><a href="fttypes_8h.html#a1a832a256bb5a7e6e884afaa1a07f3ae">FT_Bool</a></div><div class="ttdeci">FT_BEGIN_HEADER typedef unsigned char FT_Bool</div><div class="ttdef"><b>Definition:</b> fttypes.h:108</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___point_rec___html_a1eacc4d4e17a4cdb9ba1528675119d80"><div class="ttname"><a href="struct_w_o_f_f2___point_rec__.html#a1eacc4d4e17a4cdb9ba1528675119d80">WOFF2_PointRec_::x</a></div><div class="ttdeci">FT_Int x</div><div class="ttdef"><b>Definition:</b> wofftypes.h:300</div></div>
+<div class="ttc" id="astruct_w_o_f_f___header_rec___html_a968e375e8e226a532ae19570b38da37c"><div class="ttname"><a href="struct_w_o_f_f___header_rec__.html#a968e375e8e226a532ae19570b38da37c">WOFF_HeaderRec_::reserved</a></div><div class="ttdeci">FT_UShort reserved</div><div class="ttdef"><b>Definition:</b> wofftypes.h:50</div></div>
+<div class="ttc" id="awofftypes_8h_html_a36f25e0d0af7f5f243c95b3c78613970"><div class="ttname"><a href="wofftypes_8h.html#a36f25e0d0af7f5f243c95b3c78613970">WOFF_TableRec</a></div><div class="ttdeci">struct WOFF_TableRec_ WOFF_TableRec</div></div>
+<div class="ttc" id="astruct_w_o_f_f___header_rec___html_a4ecfcefa20b9b5c897d82727293e7111"><div class="ttname"><a href="struct_w_o_f_f___header_rec__.html#a4ecfcefa20b9b5c897d82727293e7111">WOFF_HeaderRec_::signature</a></div><div class="ttdeci">FT_ULong signature</div><div class="ttdef"><b>Definition:</b> wofftypes.h:46</div></div>
+<div class="ttc" id="atttables_8h_html"><div class="ttname"><a href="tttables_8h.html">tttables.h</a></div></div>
+<div class="ttc" id="astruct_w_o_f_f2___header_rec___html_a188f8647670ff4e278994be486d1e144"><div class="ttname"><a href="struct_w_o_f_f2___header_rec__.html#a188f8647670ff4e278994be486d1e144">WOFF2_HeaderRec_::metaOffset</a></div><div class="ttdeci">FT_ULong metaOffset</div><div class="ttdef"><b>Definition:</b> wofftypes.h:161</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___point_rec___html_a8c612c474d588c49a3771d340e6cc8c5"><div class="ttname"><a href="struct_w_o_f_f2___point_rec__.html#a8c612c474d588c49a3771d340e6cc8c5">WOFF2_PointRec_::on_curve</a></div><div class="ttdeci">FT_Bool on_curve</div><div class="ttdef"><b>Definition:</b> wofftypes.h:302</div></div>
+<div class="ttc" id="awofftypes_8h_html_a2af00f934ebda4021c27bf4a2a9e70c8"><div class="ttname"><a href="wofftypes_8h.html#a2af00f934ebda4021c27bf4a2a9e70c8">WOFF2_TtcFont</a></div><div class="ttdeci">struct WOFF2_TtcFontRec_ * WOFF2_TtcFont</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___header_rec___html_a94bcd0c8d8d6038cd3ab4f3ac1ea545a"><div class="ttname"><a href="struct_w_o_f_f2___header_rec__.html#a94bcd0c8d8d6038cd3ab4f3ac1ea545a">WOFF2_HeaderRec_::ttc_fonts</a></div><div class="ttdeci">WOFF2_TtcFont ttc_fonts</div><div class="ttdef"><b>Definition:</b> wofftypes.h:173</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___header_rec___html_a608e8431b69e4df117d302ac297f7045"><div class="ttname"><a href="struct_w_o_f_f2___header_rec__.html#a608e8431b69e4df117d302ac297f7045">WOFF2_HeaderRec_::length</a></div><div class="ttdeci">FT_ULong length</div><div class="ttdef"><b>Definition:</b> wofftypes.h:157</div></div>
+<div class="ttc" id="awofftypes_8h_html_ab51304a6fd860bb05efbf5aa10b338ba"><div class="ttname"><a href="wofftypes_8h.html#ab51304a6fd860bb05efbf5aa10b338ba">WOFF2_Point</a></div><div class="ttdeci">struct WOFF2_PointRec_ * WOFF2_Point</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___header_rec___html_a31c30002c672bbafa2dfd393a758c56f"><div class="ttname"><a href="struct_w_o_f_f2___header_rec__.html#a31c30002c672bbafa2dfd393a758c56f">WOFF2_HeaderRec_::totalCompressedSize</a></div><div class="ttdeci">FT_ULong totalCompressedSize</div><div class="ttdef"><b>Definition:</b> wofftypes.h:160</div></div>
+<div class="ttc" id="afttypes_8h_html_af90e5fb0d07e21be9fe6faa33f02484c"><div class="ttname"><a href="fttypes_8h.html#af90e5fb0d07e21be9fe6faa33f02484c">FT_Int</a></div><div class="ttdeci">signed int FT_Int</div><div class="ttdef"><b>Definition:</b> fttypes.h:220</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___info_rec___html_ac873f511d8b19d47f4f600a4df9cb4dc"><div class="ttname"><a href="struct_w_o_f_f2___info_rec__.html#ac873f511d8b19d47f4f600a4df9cb4dc">WOFF2_InfoRec_::header_checksum</a></div><div class="ttdeci">FT_ULong header_checksum</div><div class="ttdef"><b>Definition:</b> wofftypes.h:239</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___info_rec___html"><div class="ttname"><a href="struct_w_o_f_f2___info_rec__.html">WOFF2_InfoRec_</a></div><div class="ttdef"><b>Definition:</b> wofftypes.h:238</div></div>
+<div class="ttc" id="awofftypes_8h_html_a57d4018cfbdc6a94de2f423b2e70f147"><div class="ttname"><a href="wofftypes_8h.html#a57d4018cfbdc6a94de2f423b2e70f147">WOFF2_Header</a></div><div class="ttdeci">struct WOFF2_HeaderRec_ * WOFF2_Header</div></div>
+<div class="ttc" id="astruct_w_o_f_f___header_rec___html_ac805e897e024bfe4cd363f09138e2a5a"><div class="ttname"><a href="struct_w_o_f_f___header_rec__.html#ac805e897e024bfe4cd363f09138e2a5a">WOFF_HeaderRec_::flavor</a></div><div class="ttdeci">FT_ULong flavor</div><div class="ttdef"><b>Definition:</b> wofftypes.h:47</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___info_rec___html_a33126bfd9e28d514c18af913b593ddfd"><div class="ttname"><a href="struct_w_o_f_f2___info_rec__.html#a33126bfd9e28d514c18af913b593ddfd">WOFF2_InfoRec_::x_mins</a></div><div class="ttdeci">FT_Short * x_mins</div><div class="ttdef"><b>Definition:</b> wofftypes.h:242</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___point_rec___html_a45badc2c7ee93440300bc50faaeaf761"><div class="ttname"><a href="struct_w_o_f_f2___point_rec__.html#a45badc2c7ee93440300bc50faaeaf761">WOFF2_PointRec_::y</a></div><div class="ttdeci">FT_Int y</div><div class="ttdef"><b>Definition:</b> wofftypes.h:301</div></div>
+<div class="ttc" id="awofftypes_8h_html_ab98ded8549fb113503e693c88e05d4fb"><div class="ttname"><a href="wofftypes_8h.html#ab98ded8549fb113503e693c88e05d4fb">WOFF_Table</a></div><div class="ttdeci">struct WOFF_TableRec_ * WOFF_Table</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___info_rec___html_a0af6a10625da6d069a3be5ff833d52dc"><div class="ttname"><a href="struct_w_o_f_f2___info_rec__.html#a0af6a10625da6d069a3be5ff833d52dc">WOFF2_InfoRec_::num_hmetrics</a></div><div class="ttdeci">FT_UShort num_hmetrics</div><div class="ttdef"><b>Definition:</b> wofftypes.h:241</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___substream_rec___html_a193aff40b2212e0bd79792f92b153d40"><div class="ttname"><a href="struct_w_o_f_f2___substream_rec__.html#a193aff40b2212e0bd79792f92b153d40">WOFF2_SubstreamRec_::offset</a></div><div class="ttdeci">FT_ULong offset</div><div class="ttdef"><b>Definition:</b> wofftypes.h:273</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___table_rec___html_a787c7ea02a602d7c3245aefefa041909"><div class="ttname"><a href="struct_w_o_f_f2___table_rec__.html#a787c7ea02a602d7c3245aefefa041909">WOFF2_TableRec_::dst_offset</a></div><div class="ttdeci">FT_ULong dst_offset</div><div class="ttdef"><b>Definition:</b> wofftypes.h:201</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___header_rec___html_a5045d833ebe81db68eb4e62fcf0674ca"><div class="ttname"><a href="struct_w_o_f_f2___header_rec__.html#a5045d833ebe81db68eb4e62fcf0674ca">WOFF2_HeaderRec_::totalSfntSize</a></div><div class="ttdeci">FT_ULong totalSfntSize</div><div class="ttdef"><b>Definition:</b> wofftypes.h:159</div></div>
+<div class="ttc" id="astruct_w_o_f_f___header_rec___html_a28e0df8dd3d47a13bae3c339c438a0d8"><div class="ttname"><a href="struct_w_o_f_f___header_rec__.html#a28e0df8dd3d47a13bae3c339c438a0d8">WOFF_HeaderRec_::privOffset</a></div><div class="ttdeci">FT_ULong privOffset</div><div class="ttdef"><b>Definition:</b> wofftypes.h:57</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___header_rec___html_a3d57b340e79301774e84155f5322ef2b"><div class="ttname"><a href="struct_w_o_f_f2___header_rec__.html#a3d57b340e79301774e84155f5322ef2b">WOFF2_HeaderRec_::num_fonts</a></div><div class="ttdeci">FT_UShort num_fonts</div><div class="ttdef"><b>Definition:</b> wofftypes.h:170</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___ttc_font_rec___html"><div class="ttname"><a href="struct_w_o_f_f2___ttc_font_rec__.html">WOFF2_TtcFontRec_</a></div><div class="ttdef"><b>Definition:</b> wofftypes.h:126</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___info_rec___html_a110ae1c1185962abb7a5d8d54e9a4d44"><div class="ttname"><a href="struct_w_o_f_f2___info_rec__.html#a110ae1c1185962abb7a5d8d54e9a4d44">WOFF2_InfoRec_::glyf_table</a></div><div class="ttdeci">WOFF2_Table glyf_table</div><div class="ttdef"><b>Definition:</b> wofftypes.h:244</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___table_rec___html_a3c0fac0a0edec38a9da1250c9b7ae98c"><div class="ttname"><a href="struct_w_o_f_f2___table_rec__.html#a3c0fac0a0edec38a9da1250c9b7ae98c">WOFF2_TableRec_::Tag</a></div><div class="ttdeci">FT_ULong Tag</div><div class="ttdef"><b>Definition:</b> wofftypes.h:194</div></div>
+<div class="ttc" id="awofftypes_8h_html_a1abefd580c961fee6bb372adfb44455b"><div class="ttname"><a href="wofftypes_8h.html#a1abefd580c961fee6bb372adfb44455b">WOFF2_Table</a></div><div class="ttdeci">struct WOFF2_TableRec_ * WOFF2_Table</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___info_rec___html_a69367dea7d3a7553b30136f304d9a964"><div class="ttname"><a href="struct_w_o_f_f2___info_rec__.html#a69367dea7d3a7553b30136f304d9a964">WOFF2_InfoRec_::num_glyphs</a></div><div class="ttdeci">FT_UShort num_glyphs</div><div class="ttdef"><b>Definition:</b> wofftypes.h:240</div></div>
+<div class="ttc" id="awofftypes_8h_html_a5bc5798e35c8362b0b064c90fb623afe"><div class="ttname"><a href="wofftypes_8h.html#a5bc5798e35c8362b0b064c90fb623afe">WOFF_Header</a></div><div class="ttdeci">FT_BEGIN_HEADER struct WOFF_HeaderRec_ * WOFF_Header</div></div>
+<div class="ttc" id="astruct_w_o_f_f___table_rec___html_a273aa7c18d810be6808e2c857320f7c5"><div class="ttname"><a href="struct_w_o_f_f___table_rec__.html#a273aa7c18d810be6808e2c857320f7c5">WOFF_TableRec_::CompLength</a></div><div class="ttdeci">FT_ULong CompLength</div><div class="ttdef"><b>Definition:</b> wofftypes.h:97</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___info_rec___html_a58cc0a6567127601279d5db73c119823"><div class="ttname"><a href="struct_w_o_f_f2___info_rec__.html#a58cc0a6567127601279d5db73c119823">WOFF2_InfoRec_::loca_table</a></div><div class="ttdeci">WOFF2_Table loca_table</div><div class="ttdef"><b>Definition:</b> wofftypes.h:245</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___header_rec___html_a30cb8e3c042c05409cfc0640b36b304e"><div class="ttname"><a href="struct_w_o_f_f2___header_rec__.html#a30cb8e3c042c05409cfc0640b36b304e">WOFF2_HeaderRec_::metaOrigLength</a></div><div class="ttdeci">FT_ULong metaOrigLength</div><div class="ttdef"><b>Definition:</b> wofftypes.h:163</div></div>
+<div class="ttc" id="afttypes_8h_html_a51f26183ca0c9f4af958939648caeccd"><div class="ttname"><a href="fttypes_8h.html#a51f26183ca0c9f4af958939648caeccd">FT_Byte</a></div><div class="ttdeci">unsigned char FT_Byte</div><div class="ttdef"><b>Definition:</b> fttypes.h:154</div></div>
+<div class="ttc" id="awofftypes_8h_html_a7256fb1740b9f88395bff4b6838957d8"><div class="ttname"><a href="wofftypes_8h.html#a7256fb1740b9f88395bff4b6838957d8">WOFF2_InfoRec</a></div><div class="ttdeci">struct WOFF2_InfoRec_ WOFF2_InfoRec</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___table_rec___html_acbc0eb51cbb307a61359e78884b47acd"><div class="ttname"><a href="struct_w_o_f_f2___table_rec__.html#acbc0eb51cbb307a61359e78884b47acd">WOFF2_TableRec_::TransformLength</a></div><div class="ttdeci">FT_ULong TransformLength</div><div class="ttdef"><b>Definition:</b> wofftypes.h:196</div></div>
+<div class="ttc" id="awofftypes_8h_html_ad3199553e4c10bd100ba5654f915809a"><div class="ttname"><a href="wofftypes_8h.html#ad3199553e4c10bd100ba5654f915809a">WOFF2_Info</a></div><div class="ttdeci">struct WOFF2_InfoRec_ * WOFF2_Info</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___table_rec___html_addc73ea99c2308e93df0d974aecf83a6"><div class="ttname"><a href="struct_w_o_f_f2___table_rec__.html#addc73ea99c2308e93df0d974aecf83a6">WOFF2_TableRec_::src_length</a></div><div class="ttdeci">FT_ULong src_length</div><div class="ttdef"><b>Definition:</b> wofftypes.h:200</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___header_rec___html_ae77b42c4626f39e77df684ebec8062a8"><div class="ttname"><a href="struct_w_o_f_f2___header_rec__.html#ae77b42c4626f39e77df684ebec8062a8">WOFF2_HeaderRec_::compressed_offset</a></div><div class="ttdeci">FT_ULong compressed_offset</div><div class="ttdef"><b>Definition:</b> wofftypes.h:168</div></div>
+<div class="ttc" id="aftobjs_8h_html"><div class="ttname"><a href="ftobjs_8h.html">ftobjs.h</a></div></div>
+<div class="ttc" id="astruct_w_o_f_f___table_rec___html_a7731a05b663d6bc3548d7c2a9a59f432"><div class="ttname"><a href="struct_w_o_f_f___table_rec__.html#a7731a05b663d6bc3548d7c2a9a59f432">WOFF_TableRec_::CheckSum</a></div><div class="ttdeci">FT_ULong CheckSum</div><div class="ttdef"><b>Definition:</b> wofftypes.h:99</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___ttc_font_rec___html_a42052df1036700900ba00a7b6d4442d9"><div class="ttname"><a href="struct_w_o_f_f2___ttc_font_rec__.html#a42052df1036700900ba00a7b6d4442d9">WOFF2_TtcFontRec_::table_indices</a></div><div class="ttdeci">FT_UShort * table_indices</div><div class="ttdef"><b>Definition:</b> wofftypes.h:129</div></div>
+<div class="ttc" id="aftheader_8h_html_a2ebbdbbee7f9bfa8b6b86790de7e9963"><div class="ttname"><a href="ftheader_8h.html#a2ebbdbbee7f9bfa8b6b86790de7e9963">FT_END_HEADER</a></div><div class="ttdeci">#define FT_END_HEADER</div><div class="ttdef"><b>Definition:</b> ftheader.h:57</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___header_rec___html_a3f1ef4c3496aeea9875682c88e299998"><div class="ttname"><a href="struct_w_o_f_f2___header_rec__.html#a3f1ef4c3496aeea9875682c88e299998">WOFF2_HeaderRec_::actual_sfnt_size</a></div><div class="ttdeci">FT_ULong actual_sfnt_size</div><div class="ttdef"><b>Definition:</b> wofftypes.h:171</div></div>
+<div class="ttc" id="astruct_w_o_f_f___header_rec___html_a5b2043f2356a61f1e41cfcd564ca5222"><div class="ttname"><a href="struct_w_o_f_f___header_rec__.html#a5b2043f2356a61f1e41cfcd564ca5222">WOFF_HeaderRec_::privLength</a></div><div class="ttdeci">FT_ULong privLength</div><div class="ttdef"><b>Definition:</b> wofftypes.h:58</div></div>
+<div class="ttc" id="astruct_w_o_f_f___table_rec___html_aac56c27dce54415c889ad2be4045851c"><div class="ttname"><a href="struct_w_o_f_f___table_rec__.html#aac56c27dce54415c889ad2be4045851c">WOFF_TableRec_::Offset</a></div><div class="ttdeci">FT_ULong Offset</div><div class="ttdef"><b>Definition:</b> wofftypes.h:96</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___header_rec___html_acbe235a3c95e3db42365e5a86d1e51dc"><div class="ttname"><a href="struct_w_o_f_f2___header_rec__.html#acbe235a3c95e3db42365e5a86d1e51dc">WOFF2_HeaderRec_::flavor</a></div><div class="ttdeci">FT_ULong flavor</div><div class="ttdef"><b>Definition:</b> wofftypes.h:156</div></div>
+<div class="ttc" id="awofftypes_8h_html_a62339a4c3f59c27734566eed634c3333"><div class="ttname"><a href="wofftypes_8h.html#a62339a4c3f59c27734566eed634c3333">WOFF2_PointRec</a></div><div class="ttdeci">struct WOFF2_PointRec_ WOFF2_PointRec</div></div>
+<div class="ttc" id="astruct_w_o_f_f___header_rec___html_a50c23865dcbfe3521af337bb54f68b01"><div class="ttname"><a href="struct_w_o_f_f___header_rec__.html#a50c23865dcbfe3521af337bb54f68b01">WOFF_HeaderRec_::num_tables</a></div><div class="ttdeci">FT_UShort num_tables</div><div class="ttdef"><b>Definition:</b> wofftypes.h:49</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___point_rec___html"><div class="ttname"><a href="struct_w_o_f_f2___point_rec__.html">WOFF2_PointRec_</a></div><div class="ttdef"><b>Definition:</b> wofftypes.h:299</div></div>
+<div class="ttc" id="awofftypes_8h_html_a6fad95b2939773d867cd7334c78da4d7"><div class="ttname"><a href="wofftypes_8h.html#a6fad95b2939773d867cd7334c78da4d7">WOFF_HeaderRec</a></div><div class="ttdeci">FT_BEGIN_HEADER struct WOFF_HeaderRec_ WOFF_HeaderRec</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___header_rec___html"><div class="ttname"><a href="struct_w_o_f_f2___header_rec__.html">WOFF2_HeaderRec_</a></div><div class="ttdef"><b>Definition:</b> wofftypes.h:154</div></div>
+<div class="ttc" id="astruct_w_o_f_f___header_rec___html_af1ab5dfddb4318368b20d2542b284fc4"><div class="ttname"><a href="struct_w_o_f_f___header_rec__.html#af1ab5dfddb4318368b20d2542b284fc4">WOFF_HeaderRec_::totalSfntSize</a></div><div class="ttdeci">FT_ULong totalSfntSize</div><div class="ttdef"><b>Definition:</b> wofftypes.h:51</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___header_rec___html_acc53e0cb3c7dd78e76eaba30fc7caae7"><div class="ttname"><a href="struct_w_o_f_f2___header_rec__.html#acc53e0cb3c7dd78e76eaba30fc7caae7">WOFF2_HeaderRec_::header_version</a></div><div class="ttdeci">FT_ULong header_version</div><div class="ttdef"><b>Definition:</b> wofftypes.h:169</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___table_rec___html_a5805d7f22aaaf96041dcdffc828ffbce"><div class="ttname"><a href="struct_w_o_f_f2___table_rec__.html#a5805d7f22aaaf96041dcdffc828ffbce">WOFF2_TableRec_::dst_length</a></div><div class="ttdeci">FT_ULong dst_length</div><div class="ttdef"><b>Definition:</b> wofftypes.h:195</div></div>
+<div class="ttc" id="afttypes_8h_html_aa7279be89046a2563cd3d4d6651fbdcf"><div class="ttname"><a href="fttypes_8h.html#aa7279be89046a2563cd3d4d6651fbdcf">FT_Short</a></div><div class="ttdeci">signed short FT_Short</div><div class="ttdef"><b>Definition:</b> fttypes.h:198</div></div>
+<div class="ttc" id="astruct_w_o_f_f___header_rec___html"><div class="ttname"><a href="struct_w_o_f_f___header_rec__.html">WOFF_HeaderRec_</a></div><div class="ttdef"><b>Definition:</b> wofftypes.h:45</div></div>
+<div class="ttc" id="astruct_w_o_f_f___header_rec___html_ac93e010ba26ba188d948009c089a824d"><div class="ttname"><a href="struct_w_o_f_f___header_rec__.html#ac93e010ba26ba188d948009c089a824d">WOFF_HeaderRec_::metaOffset</a></div><div class="ttdeci">FT_ULong metaOffset</div><div class="ttdef"><b>Definition:</b> wofftypes.h:54</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___header_rec___html_ad1b064096552c4c92c3659407f0315c3"><div class="ttname"><a href="struct_w_o_f_f2___header_rec__.html#ad1b064096552c4c92c3659407f0315c3">WOFF2_HeaderRec_::privOffset</a></div><div class="ttdeci">FT_ULong privOffset</div><div class="ttdef"><b>Definition:</b> wofftypes.h:164</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___header_rec___html_ac757a53a77b2e22c0ec1cdbd322df3b5"><div class="ttname"><a href="struct_w_o_f_f2___header_rec__.html#ac757a53a77b2e22c0ec1cdbd322df3b5">WOFF2_HeaderRec_::metaLength</a></div><div class="ttdeci">FT_ULong metaLength</div><div class="ttdef"><b>Definition:</b> wofftypes.h:162</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___ttc_font_rec___html_aadc572a3c3400446219ac38b90fd6eee"><div class="ttname"><a href="struct_w_o_f_f2___ttc_font_rec__.html#aadc572a3c3400446219ac38b90fd6eee">WOFF2_TtcFontRec_::flavor</a></div><div class="ttdeci">FT_ULong flavor</div><div class="ttdef"><b>Definition:</b> wofftypes.h:127</div></div>
+<div class="ttc" id="awofftypes_8h_html_abfbeaa2a6e40ca4f12e0d03b47fbd660"><div class="ttname"><a href="wofftypes_8h.html#abfbeaa2a6e40ca4f12e0d03b47fbd660">WOFF2_HeaderRec</a></div><div class="ttdeci">struct WOFF2_HeaderRec_ WOFF2_HeaderRec</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___header_rec___html_aa1948deced6a2a9fc5e24767e9619a72"><div class="ttname"><a href="struct_w_o_f_f2___header_rec__.html#aa1948deced6a2a9fc5e24767e9619a72">WOFF2_HeaderRec_::signature</a></div><div class="ttdeci">FT_ULong signature</div><div class="ttdef"><b>Definition:</b> wofftypes.h:155</div></div>
+<div class="ttc" id="astruct_w_o_f_f___header_rec___html_a71ba111d9a0b7139db466f69dc47647f"><div class="ttname"><a href="struct_w_o_f_f___header_rec__.html#a71ba111d9a0b7139db466f69dc47647f">WOFF_HeaderRec_::metaOrigLength</a></div><div class="ttdeci">FT_ULong metaOrigLength</div><div class="ttdef"><b>Definition:</b> wofftypes.h:56</div></div>
+<div class="ttc" id="astruct_w_o_f_f___table_rec___html_a42dd043bbef5656aa32461fc0def8340"><div class="ttname"><a href="struct_w_o_f_f___table_rec__.html#a42dd043bbef5656aa32461fc0def8340">WOFF_TableRec_::OrigLength</a></div><div class="ttdeci">FT_ULong OrigLength</div><div class="ttdef"><b>Definition:</b> wofftypes.h:98</div></div>
+<div class="ttc" id="astruct_w_o_f_f___header_rec___html_a5496776da0752cb2ff133c5068ceb0ab"><div class="ttname"><a href="struct_w_o_f_f___header_rec__.html#a5496776da0752cb2ff133c5068ceb0ab">WOFF_HeaderRec_::metaLength</a></div><div class="ttdeci">FT_ULong metaLength</div><div class="ttdef"><b>Definition:</b> wofftypes.h:55</div></div>
+<div class="ttc" id="astruct_w_o_f_f___header_rec___html_a814bef54b9aedb973bec2ef4009a8031"><div class="ttname"><a href="struct_w_o_f_f___header_rec__.html#a814bef54b9aedb973bec2ef4009a8031">WOFF_HeaderRec_::majorVersion</a></div><div class="ttdeci">FT_UShort majorVersion</div><div class="ttdef"><b>Definition:</b> wofftypes.h:52</div></div>
+<div class="ttc" id="astruct_w_o_f_f___table_rec___html_a180f01c612c0f50795b78764bc6d85a1"><div class="ttname"><a href="struct_w_o_f_f___table_rec__.html#a180f01c612c0f50795b78764bc6d85a1">WOFF_TableRec_::Tag</a></div><div class="ttdeci">FT_ULong Tag</div><div class="ttdef"><b>Definition:</b> wofftypes.h:95</div></div>
+<div class="ttc" id="awofftypes_8h_html_ac236e540c1490f31884469f09b13c100"><div class="ttname"><a href="wofftypes_8h.html#ac236e540c1490f31884469f09b13c100">WOFF2_Substream</a></div><div class="ttdeci">struct WOFF2_SubstreamRec_ * WOFF2_Substream</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___table_rec___html"><div class="ttname"><a href="struct_w_o_f_f2___table_rec__.html">WOFF2_TableRec_</a></div><div class="ttdef"><b>Definition:</b> wofftypes.h:192</div></div>
+<div class="ttc" id="aftheader_8h_html_a72ee5814b3ae378ebb7fd3a8e3ddec14"><div class="ttname"><a href="ftheader_8h.html#a72ee5814b3ae378ebb7fd3a8e3ddec14">FT_BEGIN_HEADER</a></div><div class="ttdeci">#define FT_BEGIN_HEADER</div><div class="ttdef"><b>Definition:</b> ftheader.h:37</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___table_rec___html_a4484d8130002c2f7302ba670ebbe66c7"><div class="ttname"><a href="struct_w_o_f_f2___table_rec__.html#a4484d8130002c2f7302ba670ebbe66c7">WOFF2_TableRec_::flags</a></div><div class="ttdeci">FT_ULong flags</div><div class="ttdef"><b>Definition:</b> wofftypes.h:198</div></div>
+<div class="ttc" id="awofftypes_8h_html_a711f591f0f401d26c1144ab5ca94f76d"><div class="ttname"><a href="wofftypes_8h.html#a711f591f0f401d26c1144ab5ca94f76d">WOFF2_TtcFontRec</a></div><div class="ttdeci">struct WOFF2_TtcFontRec_ WOFF2_TtcFontRec</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___header_rec___html_abc0332678b8953b4b6fb49cd02d647f1"><div class="ttname"><a href="struct_w_o_f_f2___header_rec__.html#abc0332678b8953b4b6fb49cd02d647f1">WOFF2_HeaderRec_::num_tables</a></div><div class="ttdeci">FT_UShort num_tables</div><div class="ttdef"><b>Definition:</b> wofftypes.h:158</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___table_rec___html_afe84a2d7bc1e13899904f756726cb25d"><div class="ttname"><a href="struct_w_o_f_f2___table_rec__.html#afe84a2d7bc1e13899904f756726cb25d">WOFF2_TableRec_::src_offset</a></div><div class="ttdeci">FT_ULong src_offset</div><div class="ttdef"><b>Definition:</b> wofftypes.h:199</div></div>
+<div class="ttc" id="astruct_w_o_f_f2___substream_rec___html_ad393192fd2901777a6ed32f2303f9b6c"><div class="ttname"><a href="struct_w_o_f_f2___substream_rec__.html#ad393192fd2901777a6ed32f2303f9b6c">WOFF2_SubstreamRec_::size</a></div><div class="ttdeci">FT_ULong size</div><div class="ttdef"><b>Definition:</b> wofftypes.h:274</div></div>
+<div class="ttc" id="astruct_w_o_f_f___header_rec___html_a39532ac80b6d675eea62b8c2f586d9e3"><div class="ttname"><a href="struct_w_o_f_f___header_rec__.html#a39532ac80b6d675eea62b8c2f586d9e3">WOFF_HeaderRec_::minorVersion</a></div><div class="ttdeci">FT_UShort minorVersion</div><div class="ttdef"><b>Definition:</b> wofftypes.h:53</div></div>
+<div class="ttc" id="awofftypes_8h_html_ad8007e6ad0e35533ef9d0f5abba56273"><div class="ttname"><a href="wofftypes_8h.html#ad8007e6ad0e35533ef9d0f5abba56273">WOFF2_TableRec</a></div><div class="ttdeci">struct WOFF2_TableRec_ WOFF2_TableRec</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

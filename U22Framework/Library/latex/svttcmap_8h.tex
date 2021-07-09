@@ -1,0 +1,82 @@
+\hypertarget{svttcmap_8h}{}\doxysection{freetype/internal/services/svttcmap.h ファイル}
+\label{svttcmap_8h}\index{freetype/internal/services/svttcmap.h@{freetype/internal/services/svttcmap.h}}
+{\ttfamily \#include $<$freetype/internal/ftserv.\+h$>$}\newline
+{\ttfamily \#include $<$freetype/tttables.\+h$>$}\newline
+svttcmap.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{svttcmap_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_t_t___c_map_info__}{T\+T\+\_\+\+C\+Map\+Info\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{svttcmap_8h_ab338019855a7a6242574a31f568edf29}{F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+T\+T\+\_\+\+C\+M\+AP}}~\char`\"{}tt-\/cmaps\char`\"{}
+\item 
+\#define \mbox{\hyperlink{svttcmap_8h_ab4b57bcbd7dae5ad52bf1c8646208251}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+T\+T\+C\+M\+A\+P\+S\+R\+EC}}(class\+\_\+,  get\+\_\+cmap\+\_\+info\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_t_t___c_map_info__}{T\+T\+\_\+\+C\+Map\+Info\+\_\+}} \mbox{\hyperlink{svttcmap_8h_afe7d26dfb6d03ae077dae07857c9a3ff}{T\+T\+\_\+\+C\+Map\+Info}}
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svttcmap_8h_a1423be6057a02798d2d8b7024c58431f}{T\+T\+\_\+\+C\+Map\+\_\+\+Info\+\_\+\+Get\+Func}}) (\mbox{\hyperlink{freetype_8h_afc4717ddfd456a38ee15ec9c88fc7dac}{F\+T\+\_\+\+Char\+Map}} charmap, \mbox{\hyperlink{svttcmap_8h_afe7d26dfb6d03ae077dae07857c9a3ff}{T\+T\+\_\+\+C\+Map\+Info}} $\ast$cmap\+\_\+info)
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{svttcmap_8h_af800a6496267078aa7d1421e97acb51d}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE}} (T\+T\+C\+Maps)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{svttcmap_8h_ab4b57bcbd7dae5ad52bf1c8646208251}\label{svttcmap_8h_ab4b57bcbd7dae5ad52bf1c8646208251}} 
+\index{svttcmap.h@{svttcmap.h}!FT\_DEFINE\_SERVICE\_TTCMAPSREC@{FT\_DEFINE\_SERVICE\_TTCMAPSREC}}
+\index{FT\_DEFINE\_SERVICE\_TTCMAPSREC@{FT\_DEFINE\_SERVICE\_TTCMAPSREC}!svttcmap.h@{svttcmap.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE\_TTCMAPSREC}{FT\_DEFINE\_SERVICE\_TTCMAPSREC}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+T\+T\+C\+M\+A\+P\+S\+R\+EC(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{get\+\_\+cmap\+\_\+info\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{static} \textcolor{keyword}{const} FT\_Service\_TTCMapsRec  class\_ =                  \(\backslash\)}
+\DoxyCodeLine{  \{                                                             \(\backslash\)}
+\DoxyCodeLine{    get\_cmap\_info\_                                              \(\backslash\)}
+\DoxyCodeLine{  \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{svttcmap_8h_ab338019855a7a6242574a31f568edf29}\label{svttcmap_8h_ab338019855a7a6242574a31f568edf29}} 
+\index{svttcmap.h@{svttcmap.h}!FT\_SERVICE\_ID\_TT\_CMAP@{FT\_SERVICE\_ID\_TT\_CMAP}}
+\index{FT\_SERVICE\_ID\_TT\_CMAP@{FT\_SERVICE\_ID\_TT\_CMAP}!svttcmap.h@{svttcmap.h}}
+\doxysubsubsection{\texorpdfstring{FT\_SERVICE\_ID\_TT\_CMAP}{FT\_SERVICE\_ID\_TT\_CMAP}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+T\+T\+\_\+\+C\+M\+AP~\char`\"{}tt-\/cmaps\char`\"{}}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{svttcmap_8h_a1423be6057a02798d2d8b7024c58431f}\label{svttcmap_8h_a1423be6057a02798d2d8b7024c58431f}} 
+\index{svttcmap.h@{svttcmap.h}!TT\_CMap\_Info\_GetFunc@{TT\_CMap\_Info\_GetFunc}}
+\index{TT\_CMap\_Info\_GetFunc@{TT\_CMap\_Info\_GetFunc}!svttcmap.h@{svttcmap.h}}
+\doxysubsubsection{\texorpdfstring{TT\_CMap\_Info\_GetFunc}{TT\_CMap\_Info\_GetFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T\+T\+\_\+\+C\+Map\+\_\+\+Info\+\_\+\+Get\+Func) (\mbox{\hyperlink{freetype_8h_afc4717ddfd456a38ee15ec9c88fc7dac}{F\+T\+\_\+\+Char\+Map}} charmap, \mbox{\hyperlink{svttcmap_8h_afe7d26dfb6d03ae077dae07857c9a3ff}{T\+T\+\_\+\+C\+Map\+Info}} $\ast$cmap\+\_\+info)}
+
+\mbox{\Hypertarget{svttcmap_8h_afe7d26dfb6d03ae077dae07857c9a3ff}\label{svttcmap_8h_afe7d26dfb6d03ae077dae07857c9a3ff}} 
+\index{svttcmap.h@{svttcmap.h}!TT\_CMapInfo@{TT\_CMapInfo}}
+\index{TT\_CMapInfo@{TT\_CMapInfo}!svttcmap.h@{svttcmap.h}}
+\doxysubsubsection{\texorpdfstring{TT\_CMapInfo}{TT\_CMapInfo}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t_t___c_map_info__}{T\+T\+\_\+\+C\+Map\+Info\+\_\+}} \mbox{\hyperlink{svttcmap_8h_afe7d26dfb6d03ae077dae07857c9a3ff}{T\+T\+\_\+\+C\+Map\+Info}}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{svttcmap_8h_af800a6496267078aa7d1421e97acb51d}\label{svttcmap_8h_af800a6496267078aa7d1421e97acb51d}} 
+\index{svttcmap.h@{svttcmap.h}!FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}}
+\index{FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}!svttcmap.h@{svttcmap.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE()}{FT\_DEFINE\_SERVICE()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE (\begin{DoxyParamCaption}\item[{T\+T\+C\+Maps}]{ }\end{DoxyParamCaption})}
+

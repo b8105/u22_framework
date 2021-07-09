@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: External/GLM/gtx/scalar_multiplication.hpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_443fc37f241ba4018364a998c18d007b.html">External</a></li><li class="navelem"><a class="el" href="dir_c334883f19ec445d87470844289252ab.html">GLM</a></li><li class="navelem"><a class="el" href="dir_7b5826385e0aa91a8f8bc4a2a2cc7ac3.html">gtx</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#typedef-members">型定義</a>  </div>
+  <div class="headertitle">
+<div class="title">scalar_multiplication.hpp ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="setup_8hpp_source.html">../detail/setup.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="vec2_8hpp_source.html">../vec2.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="vec3_8hpp_source.html">../vec3.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="vec4_8hpp_source.html">../vec4.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mat2x2_8hpp_source.html">../mat2x2.hpp</a>&quot;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+scalar_multiplication.hpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="scalar__multiplication_8hpp__incl.png" border="0" usemap="#a_external_2_g_l_m_2gtx_2scalar__multiplication_8hpp" alt=""/></div>
+<map name="_external_2_g_l_m_2gtx_2scalar__multiplication_8hpp" id="_external_2_g_l_m_2gtx_2scalar__multiplication_8hpp">
+<area shape="rect" title=" " alt="" coords="3879,5,4041,47"/>
+<area shape="rect" href="setup_8hpp.html" title=" " alt="" coords="4486,497,4613,524"/>
+<area shape="rect" href="vec2_8hpp.html" title=" " alt="" coords="1224,177,1309,203"/>
+<area shape="rect" href="vec3_8hpp.html" title=" " alt="" coords="2989,177,3075,203"/>
+<area shape="rect" href="vec4_8hpp.html" title=" " alt="" coords="4475,177,4560,203"/>
+<area shape="rect" href="mat2x2_8hpp.html" title=" " alt="" coords="418,95,521,121"/>
+<area shape="rect" title=" " alt="" coords="5540,95,5623,121"/>
+<area shape="rect" title=" " alt="" coords="4457,572,4522,599"/>
+<area shape="rect" title=" " alt="" coords="3000,572,3064,599"/>
+<area shape="rect" href="platform_8h.html" title=" " alt="" coords="4547,572,4669,599"/>
+<area shape="rect" href="vector__bool2_8hpp.html" title=" " alt="" coords="540,266,689,293"/>
+<area shape="rect" href="vector__bool2__precision_8hpp.html" title=" " alt="" coords="714,259,838,300"/>
+<area shape="rect" href="vector__float2_8hpp.html" title=" " alt="" coords="863,266,1012,293"/>
+<area shape="rect" href="vector__float2__precision_8hpp.html" title=" " alt="" coords="1037,259,1161,300"/>
+<area shape="rect" href="vector__double2_8hpp.html" title=" " alt="" coords="1185,266,1348,293"/>
+<area shape="rect" href="vector__double2__precision_8hpp.html" title=" " alt="" coords="1372,259,1511,300"/>
+<area shape="rect" href="vector__int2_8hpp.html" title=" " alt="" coords="1535,266,1673,293"/>
+<area shape="rect" href="vector__int2__precision_8hpp.html" title=" " alt="" coords="1698,266,1897,293"/>
+<area shape="rect" href="vector__uint2_8hpp.html" title=" " alt="" coords="1921,266,2068,293"/>
+<area shape="rect" href="vector__uint2__precision_8hpp.html" title=" " alt="" coords="394,259,515,300"/>
+<area shape="rect" href="type__vec2_8hpp.html" title=" " alt="" coords="1191,348,1343,375"/>
+<area shape="rect" href="qualifier_8hpp.html" title=" " alt="" coords="3448,423,3539,449"/>
+<area shape="rect" href="type__vec2_8inl.html" title=" " alt="" coords="1218,423,1315,449"/>
+<area shape="rect" href="vector__bool3_8hpp.html" title=" " alt="" coords="2796,266,2945,293"/>
+<area shape="rect" href="vector__bool3__precision_8hpp.html" title=" " alt="" coords="2970,259,3094,300"/>
+<area shape="rect" href="vector__float3_8hpp.html" title=" " alt="" coords="3119,266,3268,293"/>
+<area shape="rect" href="vector__float3__precision_8hpp.html" title=" " alt="" coords="3293,259,3417,300"/>
+<area shape="rect" href="vector__double3_8hpp.html" title=" " alt="" coords="3441,266,3604,293"/>
+<area shape="rect" href="vector__double3__precision_8hpp.html" title=" " alt="" coords="3628,259,3767,300"/>
+<area shape="rect" href="vector__int3_8hpp.html" title=" " alt="" coords="2092,266,2231,293"/>
+<area shape="rect" href="vector__int3__precision_8hpp.html" title=" " alt="" coords="2255,266,2454,293"/>
+<area shape="rect" href="vector__uint3_8hpp.html" title=" " alt="" coords="2479,266,2625,293"/>
+<area shape="rect" href="vector__uint3__precision_8hpp.html" title=" " alt="" coords="2650,259,2771,300"/>
+<area shape="rect" href="type__vec3_8hpp.html" title=" " alt="" coords="2956,348,3108,375"/>
+<area shape="rect" href="vector__bool4_8hpp.html" title=" " alt="" coords="3791,266,3940,293"/>
+<area shape="rect" href="vector__bool4__precision_8hpp.html" title=" " alt="" coords="3965,259,4089,300"/>
+<area shape="rect" href="vector__float4_8hpp.html" title=" " alt="" coords="4113,266,4263,293"/>
+<area shape="rect" href="vector__float4__precision_8hpp.html" title=" " alt="" coords="4287,259,4411,300"/>
+<area shape="rect" href="vector__double4_8hpp.html" title=" " alt="" coords="4436,266,4599,293"/>
+<area shape="rect" href="vector__double4__precision_8hpp.html" title=" " alt="" coords="5327,259,5465,300"/>
+<area shape="rect" href="vector__int4_8hpp.html" title=" " alt="" coords="4623,266,4761,293"/>
+<area shape="rect" href="vector__int4__precision_8hpp.html" title=" " alt="" coords="4786,266,4985,293"/>
+<area shape="rect" href="vector__uint4_8hpp.html" title=" " alt="" coords="5009,266,5156,293"/>
+<area shape="rect" href="vector__uint4__precision_8hpp.html" title=" " alt="" coords="5181,259,5302,300"/>
+<area shape="rect" href="type__vec4_8hpp.html" title=" " alt="" coords="4357,348,4509,375"/>
+<area shape="rect" href="matrix__double2x2_8hpp.html" title=" " alt="" coords="5,177,184,203"/>
+<area shape="rect" href="matrix__double2x2__precision_8hpp.html" title=" " alt="" coords="208,169,363,211"/>
+<area shape="rect" href="matrix__float2x2_8hpp.html" title=" " alt="" coords="387,177,552,203"/>
+<area shape="rect" href="matrix__float2x2__precision_8hpp.html" title=" " alt="" coords="577,169,717,211"/>
+<area shape="rect" href="type__mat2x2_8hpp.html" title=" " alt="" coords="201,266,370,293"/>
+</map>
+</div>
+</div>
+<p><a href="scalar__multiplication_8hpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:namespaceglm"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceglm.html">glm</a></td></tr>
+<tr class="memdesc:namespaceglm"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__core.html">Core features</a> <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:aa1e74ac9f6e034680f02523fb962bd0c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scalar__multiplication_8hpp.html#aa1e74ac9f6e034680f02523fb962bd0c">GLM_IMPLEMENT_SCAL_MULT</a>(Vec)</td></tr>
+<tr class="separator:aa1e74ac9f6e034680f02523fb962bd0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:a68a5dc6ff1dbac4fda02c3b177afa4aa"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Vec &gt; </td></tr>
+<tr class="memitem:a68a5dc6ff1dbac4fda02c3b177afa4aa"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceglm.html#a68a5dc6ff1dbac4fda02c3b177afa4aa">glm::return_type_scalar_multiplication</a> = typename std::enable_if&lt; !std::is_same&lt; T, float &gt;::value &amp;&amp;std::is_arithmetic&lt; T &gt;::value, Vec &gt;::type</td></tr>
+<tr class="separator:a68a5dc6ff1dbac4fda02c3b177afa4aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>gtx</p>
+<dl class="section author"><dt>著者</dt><dd>Joshua Moerman</dd></dl>
+<p>Include &lt;<a class="el" href="scalar__multiplication_8hpp.html">glm/gtx/scalar_multiplication.hpp</a>&gt; to use the features of this extension.</p>
+<p>Enables scalar multiplication for all types</p>
+<p>Since GLSL is very strict about types, the following (often used) combinations do not work: double * vec4 int * vec4 vec4 / int So we'll fix that! Of course "float * vec4" should remain the same (hence the enable_if magic) </p>
+</div><h2 class="groupheader">マクロ定義詳解</h2>
+<a id="aa1e74ac9f6e034680f02523fb962bd0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1e74ac9f6e034680f02523fb962bd0c">&#9670;&nbsp;</a></span>GLM_IMPLEMENT_SCAL_MULT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GLM_IMPLEMENT_SCAL_MULT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Vec</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">    <a class="code" href="namespaceglm.html#aafc7cc63c9c88cdb32f4f9c1c03ad715">template&lt;typename T&gt; \</a></div>
+<div class="line"><a class="code" href="namespaceglm.html#aafc7cc63c9c88cdb32f4f9c1c03ad715">	return_type_scalar_multiplication&lt;T, Vec&gt; \</a></div>
+<div class="line"><a class="code" href="namespaceglm.html#aafc7cc63c9c88cdb32f4f9c1c03ad715">	operator*</a>(T <span class="keyword">const</span>&amp; s, Vec rh){ \</div>
+<div class="line">        return rh *= <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(s); \</div>
+<div class="line">    } \</div>
+<div class="line">     \</div>
+<div class="line">    template&lt;typename T&gt; \</div>
+<div class="line">    return_type_scalar_multiplication&lt;T, Vec&gt; \</div>
+<div class="line">    operator*(Vec lh, T <span class="keyword">const</span>&amp; s){ \</div>
+<div class="line">        return lh *= <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(s); \</div>
+<div class="line">    } \</div>
+<div class="line">     \</div>
+<div class="line">    template&lt;typename T&gt; \</div>
+<div class="line">    return_type_scalar_multiplication&lt;T, Vec&gt; \</div>
+<div class="line">    operator/(Vec lh, T <span class="keyword">const</span>&amp; s){ \</div>
+<div class="line">        return lh *= 1.0f / s; \</div>
+<div class="line">    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<div class="ttc" id="anamespaceglm_html_aafc7cc63c9c88cdb32f4f9c1c03ad715"><div class="ttname"><a href="namespaceglm.html#aafc7cc63c9c88cdb32f4f9c1c03ad715">glm::operator*</a></div><div class="ttdeci">GLM_FUNC_DECL mat&lt; 2, 2, T, Q &gt; operator*(mat&lt; 2, 2, T, Q &gt; const &amp;m, T scalar)</div><div class="ttdef"><b>Definition:</b> type_mat2x2.inl:413</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

@@ -1,0 +1,561 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: freetype/internal/cfftypes.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_981d57b2e11530428c66a192ba91cfc7.html">freetype</a></li><li class="navelem"><a class="el" href="dir_ac174dc64ad36850d6be9a69f636b6c2.html">internal</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#typedef-members">型定義</a>  </div>
+  <div class="headertitle">
+<div class="title">cfftypes.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="freetype_8h_source.html">freetype/freetype.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="t1tables_8h_source.html">freetype/t1tables.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ftserv_8h_source.html">freetype/internal/ftserv.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="svpscmap_8h_source.html">freetype/internal/services/svpscmap.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="pshints_8h_source.html">freetype/internal/pshints.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="t1types_8h_source.html">freetype/internal/t1types.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+cfftypes.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="cfftypes_8h__incl.png" border="0" usemap="#afreetype_2internal_2cfftypes_8h" alt=""/></div>
+<map name="freetype_2internal_2cfftypes_8h" id="freetype_2internal_2cfftypes_8h">
+<area shape="rect" title=" " alt="" coords="1515,5,1689,32"/>
+<area shape="rect" href="freetype_8h.html" title=" " alt="" coords="1013,475,1143,502"/>
+<area shape="rect" href="t1tables_8h.html" title=" " alt="" coords="1773,244,1903,271"/>
+<area shape="rect" href="ftserv_8h.html" title=" " alt="" coords="40,319,199,345"/>
+<area shape="rect" href="svpscmap_8h.html" title=" " alt="" coords="765,155,930,196"/>
+<area shape="rect" href="pshints_8h.html" title=" " alt="" coords="1753,162,1923,189"/>
+<area shape="rect" href="t1types_8h.html" title=" " alt="" coords="1455,80,1627,107"/>
+<area shape="rect" href="ft2build_8h.html" title=" " alt="" coords="405,632,479,659"/>
+<area shape="rect" href="fttypes_8h.html" title=" " alt="" coords="167,557,290,584"/>
+<area shape="rect" href="fterrors_8h.html" title=" " alt="" coords="1017,557,1139,584"/>
+<area shape="rect" href="ftheader_8h.html" title=" " alt="" coords="359,707,525,733"/>
+<area shape="rect" href="ftsystem_8h.html" title=" " alt="" coords="98,632,231,659"/>
+<area shape="rect" href="ftimage_8h.html" title=" " alt="" coords="255,632,381,659"/>
+<area shape="rect" title=" " alt="" coords="5,632,73,659"/>
+<area shape="rect" href="ftmoderr_8h.html" title=" " alt="" coords="938,632,1069,659"/>
+<area shape="rect" href="fterrdef_8h.html" title=" " alt="" coords="1093,632,1215,659"/>
+<area shape="rect" href="compiler-macros_8h.html" title=" " alt="" coords="365,393,495,420"/>
+<area shape="rect" href="public-macros_8h.html" title=" " alt="" coords="365,468,509,509"/>
+<area shape="rect" href="ftobjs_8h.html" title=" " alt="" coords="898,244,1058,271"/>
+<area shape="rect" href="ftrender_8h.html" title=" " alt="" coords="841,319,968,345"/>
+<area shape="rect" href="ftsizes_8h.html" title=" " alt="" coords="1475,393,1596,420"/>
+<area shape="rect" href="ftlcdfil_8h.html" title=" " alt="" coords="992,319,1108,345"/>
+<area shape="rect" href="ftmemory_8h.html" title=" " alt="" coords="223,319,405,345"/>
+<area shape="rect" href="ftgloadr_8h.html" title=" " alt="" coords="1081,393,1251,420"/>
+<area shape="rect" href="ftdrv_8h.html" title=" " alt="" coords="665,319,817,345"/>
+<area shape="rect" href="autohint_8h.html" title=" " alt="" coords="1276,393,1451,420"/>
+<area shape="rect" href="ftcalc_8h.html" title=" " alt="" coords="481,319,641,345"/>
+<area shape="rect" href="ftmodapi_8h.html" title=" " alt="" coords="571,393,703,420"/>
+<area shape="rect" href="ftglyph_8h.html" title=" " alt="" coords="727,393,848,420"/>
+<area shape="rect" href="ftparams_8h.html" title=" " alt="" coords="923,393,1057,420"/>
+<area shape="rect" href="fthash_8h.html" title=" " alt="" coords="1465,244,1629,271"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="cfftypes_8h__dep__incl.png" border="0" usemap="#afreetype_2internal_2cfftypes_8hdep" alt=""/></div>
+<map name="freetype_2internal_2cfftypes_8hdep" id="freetype_2internal_2cfftypes_8hdep">
+<area shape="rect" title=" " alt="" coords="137,5,311,32"/>
+<area shape="rect" href="cffotypes_8h.html" title=" " alt="" coords="5,87,187,114"/>
+<area shape="rect" href="psaux_8h.html" title=" " alt="" coords="78,169,242,196"/>
+<area shape="rect" href="svcfftl_8h.html" title=" " alt="" coords="261,80,427,121"/>
+</map>
+</div>
+</div>
+<p><a href="cfftypes_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_f_f___index_rec__.html">CFF_IndexRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_f_f___encoding_rec__.html">CFF_EncodingRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_f_f___charset_rec__.html">CFF_CharsetRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_f_f___var_data__.html">CFF_VarData_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_f_f___axis_coords__.html">CFF_AxisCoords_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_f_f___var_region__.html">CFF_VarRegion_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_f_f___v_store_rec__.html">CFF_VStoreRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_f_f___blend_rec__.html">CFF_BlendRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_f_f___font_rec_dict_rec__.html">CFF_FontRecDictRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_f_f___private_rec__.html">CFF_PrivateRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_f_f___f_d_select_rec__.html">CFF_FDSelectRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_f_f___sub_font_rec__.html">CFF_SubFontRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_f_f___font_rec__.html">CFF_FontRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:ad14db5b244ed5d580801e298eb2e38db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfftypes_8h.html#ad14db5b244ed5d580801e298eb2e38db">CFF_MAX_CID_FONTS</a>&#160;&#160;&#160;256</td></tr>
+<tr class="separator:ad14db5b244ed5d580801e298eb2e38db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:acd3a5f75a58f01d1d31ad0b408484de9"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="public-macros_8h.html#a72ee5814b3ae378ebb7fd3a8e3ddec14">FT_BEGIN_HEADER</a> struct <a class="el" href="struct_c_f_f___index_rec__.html">CFF_IndexRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfftypes_8h.html#acd3a5f75a58f01d1d31ad0b408484de9">CFF_IndexRec</a></td></tr>
+<tr class="separator:acd3a5f75a58f01d1d31ad0b408484de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94c5dac593686a5ea93112cdf5134b83"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="public-macros_8h.html#a72ee5814b3ae378ebb7fd3a8e3ddec14">FT_BEGIN_HEADER</a> struct <a class="el" href="struct_c_f_f___index_rec__.html">CFF_IndexRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfftypes_8h.html#a94c5dac593686a5ea93112cdf5134b83">CFF_Index</a></td></tr>
+<tr class="separator:a94c5dac593686a5ea93112cdf5134b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f4a816b4cec7cbca644145ac1a1bcbe"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_f_f___encoding_rec__.html">CFF_EncodingRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfftypes_8h.html#a7f4a816b4cec7cbca644145ac1a1bcbe">CFF_EncodingRec</a></td></tr>
+<tr class="separator:a7f4a816b4cec7cbca644145ac1a1bcbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a975ab23c28867b57ebc251fe8fd4d20a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_f_f___encoding_rec__.html">CFF_EncodingRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfftypes_8h.html#a975ab23c28867b57ebc251fe8fd4d20a">CFF_Encoding</a></td></tr>
+<tr class="separator:a975ab23c28867b57ebc251fe8fd4d20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd635249d35d526d5b59a2239e695f06"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_f_f___charset_rec__.html">CFF_CharsetRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfftypes_8h.html#abd635249d35d526d5b59a2239e695f06">CFF_CharsetRec</a></td></tr>
+<tr class="separator:abd635249d35d526d5b59a2239e695f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cf3de8943fccdb3d1b0bf044146ef36"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_f_f___charset_rec__.html">CFF_CharsetRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfftypes_8h.html#a3cf3de8943fccdb3d1b0bf044146ef36">CFF_Charset</a></td></tr>
+<tr class="separator:a3cf3de8943fccdb3d1b0bf044146ef36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba94c406079f139ccef7eccb3cc78e4f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_f_f___var_data__.html">CFF_VarData_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfftypes_8h.html#aba94c406079f139ccef7eccb3cc78e4f">CFF_VarData</a></td></tr>
+<tr class="separator:aba94c406079f139ccef7eccb3cc78e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaefebb81c2e1189d1dbe12bdf04e7df0"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_f_f___axis_coords__.html">CFF_AxisCoords_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfftypes_8h.html#aaefebb81c2e1189d1dbe12bdf04e7df0">CFF_AxisCoords</a></td></tr>
+<tr class="separator:aaefebb81c2e1189d1dbe12bdf04e7df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e7c4aa7fd7ff8894df2077b0fa63b2a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_f_f___var_region__.html">CFF_VarRegion_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfftypes_8h.html#a6e7c4aa7fd7ff8894df2077b0fa63b2a">CFF_VarRegion</a></td></tr>
+<tr class="separator:a6e7c4aa7fd7ff8894df2077b0fa63b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0b06266ae2ba8e2185e4331bcbb0eb1"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_f_f___v_store_rec__.html">CFF_VStoreRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfftypes_8h.html#ad0b06266ae2ba8e2185e4331bcbb0eb1">CFF_VStoreRec</a></td></tr>
+<tr class="separator:ad0b06266ae2ba8e2185e4331bcbb0eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add7dc67e6b10794ffbd729a5c71c0057"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_f_f___v_store_rec__.html">CFF_VStoreRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfftypes_8h.html#add7dc67e6b10794ffbd729a5c71c0057">CFF_VStore</a></td></tr>
+<tr class="separator:add7dc67e6b10794ffbd729a5c71c0057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76aa600c14d5973e2b9ea481b5d07311"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_f_f___font_rec__.html">CFF_FontRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfftypes_8h.html#a76aa600c14d5973e2b9ea481b5d07311">CFF_Font</a></td></tr>
+<tr class="separator:a76aa600c14d5973e2b9ea481b5d07311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b0278cbdac4bc597cd500165cc5f70d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_f_f___blend_rec__.html">CFF_BlendRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfftypes_8h.html#a5b0278cbdac4bc597cd500165cc5f70d">CFF_BlendRec</a></td></tr>
+<tr class="separator:a5b0278cbdac4bc597cd500165cc5f70d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaaba6fb0914c3306536ad16880813fd"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_f_f___blend_rec__.html">CFF_BlendRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfftypes_8h.html#aeaaba6fb0914c3306536ad16880813fd">CFF_Blend</a></td></tr>
+<tr class="separator:aeaaba6fb0914c3306536ad16880813fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4fac11f0abdbd6a162b75b6d0a53566"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_f_f___font_rec_dict_rec__.html">CFF_FontRecDictRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfftypes_8h.html#ad4fac11f0abdbd6a162b75b6d0a53566">CFF_FontRecDictRec</a></td></tr>
+<tr class="separator:ad4fac11f0abdbd6a162b75b6d0a53566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee6f37cc8d19291ed2f9a826d4907dda"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_f_f___font_rec_dict_rec__.html">CFF_FontRecDictRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfftypes_8h.html#aee6f37cc8d19291ed2f9a826d4907dda">CFF_FontRecDict</a></td></tr>
+<tr class="separator:aee6f37cc8d19291ed2f9a826d4907dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aad5fff840536d64267a3d68383eda0"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_f_f___sub_font_rec__.html">CFF_SubFontRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfftypes_8h.html#a0aad5fff840536d64267a3d68383eda0">CFF_SubFont</a></td></tr>
+<tr class="separator:a0aad5fff840536d64267a3d68383eda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacc622a1bab8f974818de384965aa8d0"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_f_f___private_rec__.html">CFF_PrivateRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfftypes_8h.html#aacc622a1bab8f974818de384965aa8d0">CFF_PrivateRec</a></td></tr>
+<tr class="separator:aacc622a1bab8f974818de384965aa8d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a680e892f1f8c8560c4813e690e379f61"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_f_f___private_rec__.html">CFF_PrivateRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfftypes_8h.html#a680e892f1f8c8560c4813e690e379f61">CFF_Private</a></td></tr>
+<tr class="separator:a680e892f1f8c8560c4813e690e379f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a077f9a1e00149e338515153315c0c273"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_f_f___f_d_select_rec__.html">CFF_FDSelectRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfftypes_8h.html#a077f9a1e00149e338515153315c0c273">CFF_FDSelectRec</a></td></tr>
+<tr class="separator:a077f9a1e00149e338515153315c0c273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a593b67e1775c92534af5723c6115f58a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_f_f___f_d_select_rec__.html">CFF_FDSelectRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfftypes_8h.html#a593b67e1775c92534af5723c6115f58a">CFF_FDSelect</a></td></tr>
+<tr class="separator:a593b67e1775c92534af5723c6115f58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb5d554950343116f7ea255f59b1a805"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_f_f___sub_font_rec__.html">CFF_SubFontRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfftypes_8h.html#acb5d554950343116f7ea255f59b1a805">CFF_SubFontRec</a></td></tr>
+<tr class="separator:acb5d554950343116f7ea255f59b1a805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a71e4cf0f9a376404f06ab157a9622b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_f_f___font_rec__.html">CFF_FontRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cfftypes_8h.html#a2a71e4cf0f9a376404f06ab157a9622b">CFF_FontRec</a></td></tr>
+<tr class="separator:a2a71e4cf0f9a376404f06ab157a9622b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">マクロ定義詳解</h2>
+<a id="ad14db5b244ed5d580801e298eb2e38db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad14db5b244ed5d580801e298eb2e38db">&#9670;&nbsp;</a></span>CFF_MAX_CID_FONTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CFF_MAX_CID_FONTS&#160;&#160;&#160;256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">型定義詳解</h2>
+<a id="aaefebb81c2e1189d1dbe12bdf04e7df0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaefebb81c2e1189d1dbe12bdf04e7df0">&#9670;&nbsp;</a></span>CFF_AxisCoords</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_f_f___axis_coords__.html">CFF_AxisCoords_</a> <a class="el" href="cfftypes_8h.html#aaefebb81c2e1189d1dbe12bdf04e7df0">CFF_AxisCoords</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeaaba6fb0914c3306536ad16880813fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaaba6fb0914c3306536ad16880813fd">&#9670;&nbsp;</a></span>CFF_Blend</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_f_f___blend_rec__.html">CFF_BlendRec_</a> * <a class="el" href="cfftypes_8h.html#aeaaba6fb0914c3306536ad16880813fd">CFF_Blend</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b0278cbdac4bc597cd500165cc5f70d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b0278cbdac4bc597cd500165cc5f70d">&#9670;&nbsp;</a></span>CFF_BlendRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_f_f___blend_rec__.html">CFF_BlendRec_</a> <a class="el" href="cfftypes_8h.html#a5b0278cbdac4bc597cd500165cc5f70d">CFF_BlendRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cf3de8943fccdb3d1b0bf044146ef36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cf3de8943fccdb3d1b0bf044146ef36">&#9670;&nbsp;</a></span>CFF_Charset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_f_f___charset_rec__.html">CFF_CharsetRec_</a> * <a class="el" href="cfftypes_8h.html#a3cf3de8943fccdb3d1b0bf044146ef36">CFF_Charset</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd635249d35d526d5b59a2239e695f06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd635249d35d526d5b59a2239e695f06">&#9670;&nbsp;</a></span>CFF_CharsetRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_f_f___charset_rec__.html">CFF_CharsetRec_</a> <a class="el" href="cfftypes_8h.html#abd635249d35d526d5b59a2239e695f06">CFF_CharsetRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a975ab23c28867b57ebc251fe8fd4d20a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a975ab23c28867b57ebc251fe8fd4d20a">&#9670;&nbsp;</a></span>CFF_Encoding</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_f_f___encoding_rec__.html">CFF_EncodingRec_</a> * <a class="el" href="cfftypes_8h.html#a975ab23c28867b57ebc251fe8fd4d20a">CFF_Encoding</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f4a816b4cec7cbca644145ac1a1bcbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f4a816b4cec7cbca644145ac1a1bcbe">&#9670;&nbsp;</a></span>CFF_EncodingRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_f_f___encoding_rec__.html">CFF_EncodingRec_</a> <a class="el" href="cfftypes_8h.html#a7f4a816b4cec7cbca644145ac1a1bcbe">CFF_EncodingRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a593b67e1775c92534af5723c6115f58a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a593b67e1775c92534af5723c6115f58a">&#9670;&nbsp;</a></span>CFF_FDSelect</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_f_f___f_d_select_rec__.html">CFF_FDSelectRec_</a> * <a class="el" href="cfftypes_8h.html#a593b67e1775c92534af5723c6115f58a">CFF_FDSelect</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a077f9a1e00149e338515153315c0c273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a077f9a1e00149e338515153315c0c273">&#9670;&nbsp;</a></span>CFF_FDSelectRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_f_f___f_d_select_rec__.html">CFF_FDSelectRec_</a> <a class="el" href="cfftypes_8h.html#a077f9a1e00149e338515153315c0c273">CFF_FDSelectRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76aa600c14d5973e2b9ea481b5d07311"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76aa600c14d5973e2b9ea481b5d07311">&#9670;&nbsp;</a></span>CFF_Font</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_f_f___font_rec__.html">CFF_FontRec_</a>* <a class="el" href="cfftypes_8h.html#a76aa600c14d5973e2b9ea481b5d07311">CFF_Font</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a71e4cf0f9a376404f06ab157a9622b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a71e4cf0f9a376404f06ab157a9622b">&#9670;&nbsp;</a></span>CFF_FontRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_f_f___font_rec__.html">CFF_FontRec_</a> <a class="el" href="cfftypes_8h.html#a2a71e4cf0f9a376404f06ab157a9622b">CFF_FontRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aee6f37cc8d19291ed2f9a826d4907dda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee6f37cc8d19291ed2f9a826d4907dda">&#9670;&nbsp;</a></span>CFF_FontRecDict</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_f_f___font_rec_dict_rec__.html">CFF_FontRecDictRec_</a> * <a class="el" href="cfftypes_8h.html#aee6f37cc8d19291ed2f9a826d4907dda">CFF_FontRecDict</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad4fac11f0abdbd6a162b75b6d0a53566"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4fac11f0abdbd6a162b75b6d0a53566">&#9670;&nbsp;</a></span>CFF_FontRecDictRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_f_f___font_rec_dict_rec__.html">CFF_FontRecDictRec_</a> <a class="el" href="cfftypes_8h.html#ad4fac11f0abdbd6a162b75b6d0a53566">CFF_FontRecDictRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94c5dac593686a5ea93112cdf5134b83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94c5dac593686a5ea93112cdf5134b83">&#9670;&nbsp;</a></span>CFF_Index</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="public-macros_8h.html#a72ee5814b3ae378ebb7fd3a8e3ddec14">FT_BEGIN_HEADER</a> struct <a class="el" href="struct_c_f_f___index_rec__.html">CFF_IndexRec_</a> * <a class="el" href="cfftypes_8h.html#a94c5dac593686a5ea93112cdf5134b83">CFF_Index</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acd3a5f75a58f01d1d31ad0b408484de9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd3a5f75a58f01d1d31ad0b408484de9">&#9670;&nbsp;</a></span>CFF_IndexRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="public-macros_8h.html#a72ee5814b3ae378ebb7fd3a8e3ddec14">FT_BEGIN_HEADER</a> struct <a class="el" href="struct_c_f_f___index_rec__.html">CFF_IndexRec_</a> <a class="el" href="cfftypes_8h.html#acd3a5f75a58f01d1d31ad0b408484de9">CFF_IndexRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a680e892f1f8c8560c4813e690e379f61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a680e892f1f8c8560c4813e690e379f61">&#9670;&nbsp;</a></span>CFF_Private</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_f_f___private_rec__.html">CFF_PrivateRec_</a> * <a class="el" href="cfftypes_8h.html#a680e892f1f8c8560c4813e690e379f61">CFF_Private</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aacc622a1bab8f974818de384965aa8d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacc622a1bab8f974818de384965aa8d0">&#9670;&nbsp;</a></span>CFF_PrivateRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_f_f___private_rec__.html">CFF_PrivateRec_</a> <a class="el" href="cfftypes_8h.html#aacc622a1bab8f974818de384965aa8d0">CFF_PrivateRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0aad5fff840536d64267a3d68383eda0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aad5fff840536d64267a3d68383eda0">&#9670;&nbsp;</a></span>CFF_SubFont</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_f_f___sub_font_rec__.html">CFF_SubFontRec_</a>* <a class="el" href="cfftypes_8h.html#a0aad5fff840536d64267a3d68383eda0">CFF_SubFont</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb5d554950343116f7ea255f59b1a805"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb5d554950343116f7ea255f59b1a805">&#9670;&nbsp;</a></span>CFF_SubFontRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_f_f___sub_font_rec__.html">CFF_SubFontRec_</a> <a class="el" href="cfftypes_8h.html#acb5d554950343116f7ea255f59b1a805">CFF_SubFontRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba94c406079f139ccef7eccb3cc78e4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba94c406079f139ccef7eccb3cc78e4f">&#9670;&nbsp;</a></span>CFF_VarData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_f_f___var_data__.html">CFF_VarData_</a> <a class="el" href="cfftypes_8h.html#aba94c406079f139ccef7eccb3cc78e4f">CFF_VarData</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e7c4aa7fd7ff8894df2077b0fa63b2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e7c4aa7fd7ff8894df2077b0fa63b2a">&#9670;&nbsp;</a></span>CFF_VarRegion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_f_f___var_region__.html">CFF_VarRegion_</a> <a class="el" href="cfftypes_8h.html#a6e7c4aa7fd7ff8894df2077b0fa63b2a">CFF_VarRegion</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add7dc67e6b10794ffbd729a5c71c0057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add7dc67e6b10794ffbd729a5c71c0057">&#9670;&nbsp;</a></span>CFF_VStore</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_f_f___v_store_rec__.html">CFF_VStoreRec_</a> * <a class="el" href="cfftypes_8h.html#add7dc67e6b10794ffbd729a5c71c0057">CFF_VStore</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad0b06266ae2ba8e2185e4331bcbb0eb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0b06266ae2ba8e2185e4331bcbb0eb1">&#9670;&nbsp;</a></span>CFF_VStoreRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_f_f___v_store_rec__.html">CFF_VStoreRec_</a> <a class="el" href="cfftypes_8h.html#ad0b06266ae2ba8e2185e4331bcbb0eb1">CFF_VStoreRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<map id="u22::graphics::Camera::Create2D" name="u22::graphics::Camera::Create2D">
+<area shape="rect" id="node1" title=" " alt="" coords="5,74,159,115"/>
+<area shape="rect" id="node2" href="$group__ext__matrix__transform.html#gaa64aa951a0e99136bba9008d2b59c78e" title=" " alt="" coords="207,56,295,83"/>
+<area shape="rect" id="node8" href="$group__ext__matrix__clip__space.html#gae5b6b40ed882cd56cd7cb97701909c06" title=" " alt="" coords="211,107,291,133"/>
+<area shape="rect" id="node3" href="$group__ext__matrix__transform.html#gab2c09e25b0a16d3a9d89cc85bbae41b0" title=" " alt="" coords="344,31,448,57"/>
+<area shape="rect" id="node7" href="$group__ext__matrix__transform.html#gacfa12c8889c754846bc20c65d9b5c701" title=" " alt="" coords="343,81,449,108"/>
+<area shape="rect" id="node4" href="$group__core__func__geometric.html#gaeeec0794212fe84fc9d261de067c9587" title=" " alt="" coords="509,5,592,32"/>
+<area shape="rect" id="node5" href="$namespaceglm.html#a40370edb74dec9048258c063b9c091c9" title=" " alt="" coords="516,56,585,83"/>
+<area shape="rect" id="node6" href="$group__core__func__geometric.html#ga3b8d3dcae77870781392ed2902cce597" title=" " alt="" coords="497,107,604,133"/>
+</map>

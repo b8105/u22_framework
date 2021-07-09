@@ -1,0 +1,201 @@
+\hypertarget{_u22_8h}{}\doxysection{U22.\+h ファイル}
+\label{_u22_8h}\index{U22.h@{U22.h}}
+
+
+各機能の一括インクルード 使いやすいようにエイリアス宣言する  
+
+
+{\ttfamily \#include \char`\"{}Framework/\+Framework\+Include.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Math/\+Math\+Include.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Shape/\+Shape\+Include.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Collision/\+Collision\+Include.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Clock/\+Clock.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Input/\+Input\+Include.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Graphics/\+Graphics\+Include.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Audio/\+Audio\+Include.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Animation/\+Animation\+Include.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Utility/\+Utility\+Include.\+h\char`\"{}}\newline
+U22.\+h の依存先関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_u22_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_u22_8h_adf26a36a6fe9d2c0b48a601fec7f449f}{g\+\_\+p\+Framework}}~(\mbox{\hyperlink{classu22_1_1_framework_a4178f3ac4244aa173e022c627a7fd658}{u22\+::\+Framework\+::\+Get\+Infomation}}())
+\item 
+\#define \mbox{\hyperlink{_u22_8h_a62c2f06ab96750d0a95ac24adc196d7b}{g\+\_\+p\+Clock}}~(\mbox{\hyperlink{classu22_1_1_framework_a4178f3ac4244aa173e022c627a7fd658}{u22\+::\+Framework\+::\+Get\+Infomation}}()-\/$>$clock)
+\item 
+\#define \mbox{\hyperlink{_u22_8h_ad7fd8c4441ff3a7406298b70898e9bb3}{g\+\_\+p\+Window}}~(\mbox{\hyperlink{classu22_1_1_framework_a4178f3ac4244aa173e022c627a7fd658}{u22\+::\+Framework\+::\+Get\+Infomation}}()-\/$>$window)
+\item 
+\#define \mbox{\hyperlink{_u22_8h_a0cb3681d9e62af8397f48c4b2e11b159}{g\+\_\+p\+Input}}~(\mbox{\hyperlink{classu22_1_1_framework_a4178f3ac4244aa173e022c627a7fd658}{u22\+::\+Framework\+::\+Get\+Infomation}}()-\/$>$input)
+\item 
+\#define \mbox{\hyperlink{_u22_8h_a2c66a5788c5a0069d6f9ca23a8a71c8c}{g\+\_\+p\+Graphics}}~(\mbox{\hyperlink{classu22_1_1_framework_a4178f3ac4244aa173e022c627a7fd658}{u22\+::\+Framework\+::\+Get\+Infomation}}()-\/$>$graphics)
+\item 
+\#define \mbox{\hyperlink{_u22_8h_a244c219fc7b85ff874cf81c18f3270db}{g\+\_\+p\+Aidio}}~(\mbox{\hyperlink{classu22_1_1_framework_a4178f3ac4244aa173e022c627a7fd658}{u22\+::\+Framework\+::\+Get\+Infomation}}()-\/$>$aidio)
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{_u22_8h_a1fd6e3d74028244335897d1ec6bf5760}{Keycode}} = \mbox{\hyperlink{namespaceu22_1_1input_a49c48d72760f3356307f8290de5ed483}{u22\+::input\+::\+Key\+Code}}
+\item 
+using \mbox{\hyperlink{_u22_8h_a128ca2922c312fdb116fc187ead1254e}{Mouse\+Button}} = \mbox{\hyperlink{namespaceu22_1_1input_a38074ea61858009575d7336c43be8515}{u22\+::input\+::\+Mouse\+Button}}
+\item 
+using \mbox{\hyperlink{_u22_8h_adeeb327d9c57fa7164b008c5a8998961}{Vector2}} = \mbox{\hyperlink{namespaceu22_1_1math_abd3e525891449648c8321ac9495844db}{u22\+::math\+::\+Vector2F}}
+\item 
+using \mbox{\hyperlink{_u22_8h_a3f599dbea67f25be07e35a3602b83ae2}{Vector3}} = \mbox{\hyperlink{namespaceu22_1_1math_a7541a7b83d972aaa30344cb4ee2192f1}{u22\+::math\+::\+Vector3F}}
+\item 
+using \mbox{\hyperlink{_u22_8h_ae6fa09de8ca1779095325994b4e6fba5}{Vector4}} = \mbox{\hyperlink{namespaceu22_1_1math_a4d1e97ba7f1e8c8170c4e2ba3f60f834}{u22\+::math\+::\+Vector4F}}
+\item 
+using \mbox{\hyperlink{_u22_8h_a6b4c69d9f360bb0841250efbff52398d}{C\+Camera}} = \mbox{\hyperlink{classu22_1_1graphics_1_1_camera}{u22\+::graphics\+::\+Camera}}
+\item 
+using \mbox{\hyperlink{_u22_8h_aa7771682b01324ea30650b63991eb1e2}{C\+Texture}} = \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_renderer}{u22\+::graphics\+::\+Texture\+Renderer}}
+\item 
+using \mbox{\hyperlink{_u22_8h_aca439bed95ac7f53a614729f5eebaf82}{C\+Font}} = \mbox{\hyperlink{classu22_1_1graphics_1_1_font_renderer}{u22\+::graphics\+::\+Font\+Renderer}}
+\item 
+using \mbox{\hyperlink{_u22_8h_a80147c632197f7624336856544727504}{C\+Sprite\+Animation\+Controller}} = \mbox{\hyperlink{classu22_1_1animation_1_1_sprite_animation_controller}{u22\+::animation\+::\+Sprite\+Animation\+Controller}}
+\item 
+using \mbox{\hyperlink{_u22_8h_a4c6e3f6469b864d49268cd6254055eb9}{C\+Sound\+Buffer}} = \mbox{\hyperlink{classu22_1_1audio_1_1_sound_buffer}{u22\+::audio\+::\+Sound\+Buffer}}
+\item 
+using \mbox{\hyperlink{_u22_8h_ac798e03bf4b29e8a54f83474eb13c3b8}{C\+Sound\+Stream\+Buffer}} = \mbox{\hyperlink{classu22_1_1audio_1_1_sound_stream_buffer}{u22\+::audio\+::\+Sound\+Stream\+Buffer}}
+\item 
+using \mbox{\hyperlink{_u22_8h_a65cca9ea8264e28f823512fd81a1bf0c}{C\+Circle}} = \mbox{\hyperlink{classu22_1_1collision_1_1_collisionable_circle}{u22\+::collision\+::\+Collisionable\+Circle}}
+\item 
+using \mbox{\hyperlink{_u22_8h_ad79941b663603400a64955f03def9f33}{C\+Rectangle}} = \mbox{\hyperlink{classu22_1_1collision_1_1_collisionable_rectangle}{u22\+::collision\+::\+Collisionable\+Rectangle}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{詳解}
+各機能の一括インクルード 使いやすいようにエイリアス宣言する 
+
+\begin{DoxyAuthor}{著者}
+name 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日付}
+2021/07/09 
+\end{DoxyDate}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{_u22_8h_a244c219fc7b85ff874cf81c18f3270db}\label{_u22_8h_a244c219fc7b85ff874cf81c18f3270db}} 
+\index{U22.h@{U22.h}!g\_pAidio@{g\_pAidio}}
+\index{g\_pAidio@{g\_pAidio}!U22.h@{U22.h}}
+\doxysubsubsection{\texorpdfstring{g\_pAidio}{g\_pAidio}}
+{\footnotesize\ttfamily \#define g\+\_\+p\+Aidio~(\mbox{\hyperlink{classu22_1_1_framework_a4178f3ac4244aa173e022c627a7fd658}{u22\+::\+Framework\+::\+Get\+Infomation}}()-\/$>$aidio)}
+
+\mbox{\Hypertarget{_u22_8h_a62c2f06ab96750d0a95ac24adc196d7b}\label{_u22_8h_a62c2f06ab96750d0a95ac24adc196d7b}} 
+\index{U22.h@{U22.h}!g\_pClock@{g\_pClock}}
+\index{g\_pClock@{g\_pClock}!U22.h@{U22.h}}
+\doxysubsubsection{\texorpdfstring{g\_pClock}{g\_pClock}}
+{\footnotesize\ttfamily \#define g\+\_\+p\+Clock~(\mbox{\hyperlink{classu22_1_1_framework_a4178f3ac4244aa173e022c627a7fd658}{u22\+::\+Framework\+::\+Get\+Infomation}}()-\/$>$clock)}
+
+\mbox{\Hypertarget{_u22_8h_adf26a36a6fe9d2c0b48a601fec7f449f}\label{_u22_8h_adf26a36a6fe9d2c0b48a601fec7f449f}} 
+\index{U22.h@{U22.h}!g\_pFramework@{g\_pFramework}}
+\index{g\_pFramework@{g\_pFramework}!U22.h@{U22.h}}
+\doxysubsubsection{\texorpdfstring{g\_pFramework}{g\_pFramework}}
+{\footnotesize\ttfamily \#define g\+\_\+p\+Framework~(\mbox{\hyperlink{classu22_1_1_framework_a4178f3ac4244aa173e022c627a7fd658}{u22\+::\+Framework\+::\+Get\+Infomation}}())}
+
+\mbox{\Hypertarget{_u22_8h_a2c66a5788c5a0069d6f9ca23a8a71c8c}\label{_u22_8h_a2c66a5788c5a0069d6f9ca23a8a71c8c}} 
+\index{U22.h@{U22.h}!g\_pGraphics@{g\_pGraphics}}
+\index{g\_pGraphics@{g\_pGraphics}!U22.h@{U22.h}}
+\doxysubsubsection{\texorpdfstring{g\_pGraphics}{g\_pGraphics}}
+{\footnotesize\ttfamily \#define g\+\_\+p\+Graphics~(\mbox{\hyperlink{classu22_1_1_framework_a4178f3ac4244aa173e022c627a7fd658}{u22\+::\+Framework\+::\+Get\+Infomation}}()-\/$>$graphics)}
+
+\mbox{\Hypertarget{_u22_8h_a0cb3681d9e62af8397f48c4b2e11b159}\label{_u22_8h_a0cb3681d9e62af8397f48c4b2e11b159}} 
+\index{U22.h@{U22.h}!g\_pInput@{g\_pInput}}
+\index{g\_pInput@{g\_pInput}!U22.h@{U22.h}}
+\doxysubsubsection{\texorpdfstring{g\_pInput}{g\_pInput}}
+{\footnotesize\ttfamily \#define g\+\_\+p\+Input~(\mbox{\hyperlink{classu22_1_1_framework_a4178f3ac4244aa173e022c627a7fd658}{u22\+::\+Framework\+::\+Get\+Infomation}}()-\/$>$input)}
+
+\mbox{\Hypertarget{_u22_8h_ad7fd8c4441ff3a7406298b70898e9bb3}\label{_u22_8h_ad7fd8c4441ff3a7406298b70898e9bb3}} 
+\index{U22.h@{U22.h}!g\_pWindow@{g\_pWindow}}
+\index{g\_pWindow@{g\_pWindow}!U22.h@{U22.h}}
+\doxysubsubsection{\texorpdfstring{g\_pWindow}{g\_pWindow}}
+{\footnotesize\ttfamily \#define g\+\_\+p\+Window~(\mbox{\hyperlink{classu22_1_1_framework_a4178f3ac4244aa173e022c627a7fd658}{u22\+::\+Framework\+::\+Get\+Infomation}}()-\/$>$window)}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{_u22_8h_a6b4c69d9f360bb0841250efbff52398d}\label{_u22_8h_a6b4c69d9f360bb0841250efbff52398d}} 
+\index{U22.h@{U22.h}!CCamera@{CCamera}}
+\index{CCamera@{CCamera}!U22.h@{U22.h}}
+\doxysubsubsection{\texorpdfstring{CCamera}{CCamera}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{_u22_8h_a6b4c69d9f360bb0841250efbff52398d}{C\+Camera}} =  \mbox{\hyperlink{classu22_1_1graphics_1_1_camera}{u22\+::graphics\+::\+Camera}}}
+
+ゲームカメラ \mbox{\Hypertarget{_u22_8h_a65cca9ea8264e28f823512fd81a1bf0c}\label{_u22_8h_a65cca9ea8264e28f823512fd81a1bf0c}} 
+\index{U22.h@{U22.h}!CCircle@{CCircle}}
+\index{CCircle@{CCircle}!U22.h@{U22.h}}
+\doxysubsubsection{\texorpdfstring{CCircle}{CCircle}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{_u22_8h_a65cca9ea8264e28f823512fd81a1bf0c}{C\+Circle}} =  \mbox{\hyperlink{classu22_1_1collision_1_1_collisionable_circle}{u22\+::collision\+::\+Collisionable\+Circle}}}
+
+円クラス、衝突機能を持つ \mbox{\Hypertarget{_u22_8h_aca439bed95ac7f53a614729f5eebaf82}\label{_u22_8h_aca439bed95ac7f53a614729f5eebaf82}} 
+\index{U22.h@{U22.h}!CFont@{CFont}}
+\index{CFont@{CFont}!U22.h@{U22.h}}
+\doxysubsubsection{\texorpdfstring{CFont}{CFont}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{_u22_8h_aca439bed95ac7f53a614729f5eebaf82}{C\+Font}} =  \mbox{\hyperlink{classu22_1_1graphics_1_1_font_renderer}{u22\+::graphics\+::\+Font\+Renderer}}}
+
+フォントクラス、描画機能を持つ \mbox{\Hypertarget{_u22_8h_ad79941b663603400a64955f03def9f33}\label{_u22_8h_ad79941b663603400a64955f03def9f33}} 
+\index{U22.h@{U22.h}!CRectangle@{CRectangle}}
+\index{CRectangle@{CRectangle}!U22.h@{U22.h}}
+\doxysubsubsection{\texorpdfstring{CRectangle}{CRectangle}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{_u22_8h_ad79941b663603400a64955f03def9f33}{C\+Rectangle}} =  \mbox{\hyperlink{classu22_1_1collision_1_1_collisionable_rectangle}{u22\+::collision\+::\+Collisionable\+Rectangle}}}
+
+矩形クラス、衝突機能を持つ \mbox{\Hypertarget{_u22_8h_a4c6e3f6469b864d49268cd6254055eb9}\label{_u22_8h_a4c6e3f6469b864d49268cd6254055eb9}} 
+\index{U22.h@{U22.h}!CSoundBuffer@{CSoundBuffer}}
+\index{CSoundBuffer@{CSoundBuffer}!U22.h@{U22.h}}
+\doxysubsubsection{\texorpdfstring{CSoundBuffer}{CSoundBuffer}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{_u22_8h_a4c6e3f6469b864d49268cd6254055eb9}{C\+Sound\+Buffer}} =  \mbox{\hyperlink{classu22_1_1audio_1_1_sound_buffer}{u22\+::audio\+::\+Sound\+Buffer}}}
+
+S\+E用のサウンド \mbox{\Hypertarget{_u22_8h_ac798e03bf4b29e8a54f83474eb13c3b8}\label{_u22_8h_ac798e03bf4b29e8a54f83474eb13c3b8}} 
+\index{U22.h@{U22.h}!CSoundStreamBuffer@{CSoundStreamBuffer}}
+\index{CSoundStreamBuffer@{CSoundStreamBuffer}!U22.h@{U22.h}}
+\doxysubsubsection{\texorpdfstring{CSoundStreamBuffer}{CSoundStreamBuffer}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{_u22_8h_ac798e03bf4b29e8a54f83474eb13c3b8}{C\+Sound\+Stream\+Buffer}} =  \mbox{\hyperlink{classu22_1_1audio_1_1_sound_stream_buffer}{u22\+::audio\+::\+Sound\+Stream\+Buffer}}}
+
+B\+G\+M用のサウンド \mbox{\Hypertarget{_u22_8h_a80147c632197f7624336856544727504}\label{_u22_8h_a80147c632197f7624336856544727504}} 
+\index{U22.h@{U22.h}!CSpriteAnimationController@{CSpriteAnimationController}}
+\index{CSpriteAnimationController@{CSpriteAnimationController}!U22.h@{U22.h}}
+\doxysubsubsection{\texorpdfstring{CSpriteAnimationController}{CSpriteAnimationController}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{_u22_8h_a80147c632197f7624336856544727504}{C\+Sprite\+Animation\+Controller}} =  \mbox{\hyperlink{classu22_1_1animation_1_1_sprite_animation_controller}{u22\+::animation\+::\+Sprite\+Animation\+Controller}}}
+
+スプライト用のアニメーション \mbox{\Hypertarget{_u22_8h_aa7771682b01324ea30650b63991eb1e2}\label{_u22_8h_aa7771682b01324ea30650b63991eb1e2}} 
+\index{U22.h@{U22.h}!CTexture@{CTexture}}
+\index{CTexture@{CTexture}!U22.h@{U22.h}}
+\doxysubsubsection{\texorpdfstring{CTexture}{CTexture}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{_u22_8h_aa7771682b01324ea30650b63991eb1e2}{C\+Texture}} =  \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_renderer}{u22\+::graphics\+::\+Texture\+Renderer}}}
+
+テクスチャクラス、描画機能を持つ \mbox{\Hypertarget{_u22_8h_a1fd6e3d74028244335897d1ec6bf5760}\label{_u22_8h_a1fd6e3d74028244335897d1ec6bf5760}} 
+\index{U22.h@{U22.h}!Keycode@{Keycode}}
+\index{Keycode@{Keycode}!U22.h@{U22.h}}
+\doxysubsubsection{\texorpdfstring{Keycode}{Keycode}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespaceu22_1_1input_a49c48d72760f3356307f8290de5ed483}{Keycode}} =  \mbox{\hyperlink{namespaceu22_1_1input_a49c48d72760f3356307f8290de5ed483}{u22\+::input\+::\+Key\+Code}}}
+
+入力時に引数として使う \mbox{\Hypertarget{_u22_8h_a128ca2922c312fdb116fc187ead1254e}\label{_u22_8h_a128ca2922c312fdb116fc187ead1254e}} 
+\index{U22.h@{U22.h}!MouseButton@{MouseButton}}
+\index{MouseButton@{MouseButton}!U22.h@{U22.h}}
+\doxysubsubsection{\texorpdfstring{MouseButton}{MouseButton}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespaceu22_1_1input_a38074ea61858009575d7336c43be8515}{Mouse\+Button}} =  \mbox{\hyperlink{namespaceu22_1_1input_a38074ea61858009575d7336c43be8515}{u22\+::input\+::\+Mouse\+Button}}}
+
+入力時に引数として使う \mbox{\Hypertarget{_u22_8h_adeeb327d9c57fa7164b008c5a8998961}\label{_u22_8h_adeeb327d9c57fa7164b008c5a8998961}} 
+\index{U22.h@{U22.h}!Vector2@{Vector2}}
+\index{Vector2@{Vector2}!U22.h@{U22.h}}
+\doxysubsubsection{\texorpdfstring{Vector2}{Vector2}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{_u22_8h_adeeb327d9c57fa7164b008c5a8998961}{Vector2}} =  \mbox{\hyperlink{namespaceu22_1_1math_abd3e525891449648c8321ac9495844db}{u22\+::math\+::\+Vector2F}}}
+
+要素2のベクトル \mbox{\Hypertarget{_u22_8h_a3f599dbea67f25be07e35a3602b83ae2}\label{_u22_8h_a3f599dbea67f25be07e35a3602b83ae2}} 
+\index{U22.h@{U22.h}!Vector3@{Vector3}}
+\index{Vector3@{Vector3}!U22.h@{U22.h}}
+\doxysubsubsection{\texorpdfstring{Vector3}{Vector3}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{_u22_8h_a3f599dbea67f25be07e35a3602b83ae2}{Vector3}} =  \mbox{\hyperlink{namespaceu22_1_1math_a7541a7b83d972aaa30344cb4ee2192f1}{u22\+::math\+::\+Vector3F}}}
+
+要素3のベクトル \mbox{\Hypertarget{_u22_8h_ae6fa09de8ca1779095325994b4e6fba5}\label{_u22_8h_ae6fa09de8ca1779095325994b4e6fba5}} 
+\index{U22.h@{U22.h}!Vector4@{Vector4}}
+\index{Vector4@{Vector4}!U22.h@{U22.h}}
+\doxysubsubsection{\texorpdfstring{Vector4}{Vector4}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{_u22_8h_ae6fa09de8ca1779095325994b4e6fba5}{Vector4}} =  \mbox{\hyperlink{namespaceu22_1_1math_a4d1e97ba7f1e8c8170c4e2ba3f60f834}{u22\+::math\+::\+Vector4F}}}
+
+要素4のベクトル 

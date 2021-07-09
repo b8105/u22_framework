@@ -1,0 +1,13 @@
+<map id="u22::graphics::TextureRenderer::RenderRotate" name="u22::graphics::TextureRenderer::RenderRotate">
+<area shape="rect" id="node1" title="描画" alt="" coords="5,147,208,189"/>
+<area shape="rect" id="node2" href="$classu22_1_1shape_1_1_rectangle.html#a901a7d3b82def413b8fc0f53ffccf182" title="ゲッター" alt="" coords="256,89,408,130"/>
+<area shape="rect" id="node3" href="$group__ext__matrix__transform.html#gaee9e865eaa9776370996da2940873fd4" title=" " alt="" coords="290,155,374,181"/>
+<area shape="rect" id="node11" href="$group__ext__matrix__transform.html#ga05051adbee603fb3c5095d8cf5cc229b" title=" " alt="" coords="291,205,373,232"/>
+<area shape="rect" id="node4" href="$group__ext__quaternion__trigonometric.html#ga8aa248b31d5ade470c87304df5eb7bd8" title=" " alt="" coords="468,29,551,56"/>
+<area shape="rect" id="node6" href="$group__ext__quaternion__trigonometric.html#ga764254f10248b505e936e5309a88c23d" title=" " alt="" coords="472,80,547,107"/>
+<area shape="rect" id="node8" href="$group__core__func__trigonometric.html#ga6a41efc740e3b3c937447d3a6284130e" title=" " alt="" coords="473,155,545,181"/>
+<area shape="rect" id="node9" href="$group__core__func__geometric.html#ga3b8d3dcae77870781392ed2902cce597" title=" " alt="" coords="456,205,563,232"/>
+<area shape="rect" id="node10" href="$group__core__func__trigonometric.html#ga29747fd108cb7292ae5a284f69691a69" title=" " alt="" coords="475,280,543,307"/>
+<area shape="rect" id="node5" href="$group__core__func__trigonometric.html#gacc9b092df8257c68f19c9053703e2563" title=" " alt="" coords="611,29,689,56"/>
+<area shape="rect" id="node7" href="$group__core__func__exponential.html#gaa83e5f1648b7ccdf33b87c07c76cb77c" title=" " alt="" coords="613,80,687,107"/>
+</map>

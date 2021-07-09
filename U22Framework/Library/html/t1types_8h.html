@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: freetype/internal/t1types.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_981d57b2e11530428c66a192ba91cfc7.html">freetype</a></li><li class="navelem"><a class="el" href="dir_ac174dc64ad36850d6be9a69f636b6c2.html">internal</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#typedef-members">型定義</a>  </div>
+  <div class="headertitle">
+<div class="title">t1types.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="t1tables_8h_source.html">freetype/t1tables.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="pshints_8h_source.html">freetype/internal/pshints.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ftserv_8h_source.html">freetype/internal/ftserv.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="fthash_8h_source.html">freetype/internal/fthash.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="svpscmap_8h_source.html">freetype/internal/services/svpscmap.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+t1types.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="t1types_8h__incl.png" border="0" usemap="#afreetype_2internal_2t1types_8h" alt=""/></div>
+<map name="freetype_2internal_2t1types_8h" id="freetype_2internal_2t1types_8h">
+<area shape="rect" title=" " alt="" coords="220,5,392,32"/>
+<area shape="rect" href="t1tables_8h.html" title=" " alt="" coords="5,169,135,196"/>
+<area shape="rect" href="pshints_8h.html" title=" " alt="" coords="98,87,269,114"/>
+<area shape="rect" href="ftserv_8h.html" title=" " alt="" coords="1632,244,1791,271"/>
+<area shape="rect" href="fthash_8h.html" title=" " alt="" coords="217,169,381,196"/>
+<area shape="rect" href="svpscmap_8h.html" title=" " alt="" coords="722,80,887,121"/>
+<area shape="rect" href="freetype_8h.html" title=" " alt="" coords="687,401,816,427"/>
+<area shape="rect" href="ft2build_8h.html" title=" " alt="" coords="1231,557,1306,584"/>
+<area shape="rect" href="fttypes_8h.html" title=" " alt="" coords="1411,483,1534,509"/>
+<area shape="rect" href="fterrors_8h.html" title=" " alt="" coords="690,483,813,509"/>
+<area shape="rect" href="ftheader_8h.html" title=" " alt="" coords="1185,632,1352,659"/>
+<area shape="rect" href="ftsystem_8h.html" title=" " alt="" coords="1330,557,1463,584"/>
+<area shape="rect" href="ftimage_8h.html" title=" " alt="" coords="1487,557,1613,584"/>
+<area shape="rect" title=" " alt="" coords="1637,557,1705,584"/>
+<area shape="rect" href="ftmoderr_8h.html" title=" " alt="" coords="611,557,742,584"/>
+<area shape="rect" href="fterrdef_8h.html" title=" " alt="" coords="766,557,889,584"/>
+<area shape="rect" href="compiler-macros_8h.html" title=" " alt="" coords="1507,319,1636,345"/>
+<area shape="rect" href="public-macros_8h.html" title=" " alt="" coords="1502,393,1646,435"/>
+<area shape="rect" href="ftobjs_8h.html" title=" " alt="" coords="845,169,1005,196"/>
+<area shape="rect" href="ftrender_8h.html" title=" " alt="" coords="861,244,988,271"/>
+<area shape="rect" href="ftsizes_8h.html" title=" " alt="" coords="863,319,984,345"/>
+<area shape="rect" href="ftlcdfil_8h.html" title=" " alt="" coords="373,244,489,271"/>
+<area shape="rect" href="ftmemory_8h.html" title=" " alt="" coords="1373,244,1556,271"/>
+<area shape="rect" href="ftgloadr_8h.html" title=" " alt="" coords="469,319,639,345"/>
+<area shape="rect" href="ftdrv_8h.html" title=" " alt="" coords="1013,244,1165,271"/>
+<area shape="rect" href="autohint_8h.html" title=" " alt="" coords="664,319,839,345"/>
+<area shape="rect" href="ftcalc_8h.html" title=" " alt="" coords="1189,244,1349,271"/>
+<area shape="rect" href="ftmodapi_8h.html" title=" " alt="" coords="1153,319,1285,345"/>
+<area shape="rect" href="ftglyph_8h.html" title=" " alt="" coords="1008,319,1129,345"/>
+<area shape="rect" href="ftparams_8h.html" title=" " alt="" coords="261,319,394,345"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="t1types_8h__dep__incl.png" border="0" usemap="#afreetype_2internal_2t1types_8hdep" alt=""/></div>
+<map name="freetype_2internal_2t1types_8hdep" id="freetype_2internal_2t1types_8hdep">
+<area shape="rect" title=" " alt="" coords="378,5,550,32"/>
+<area shape="rect" href="cfftypes_8h.html" title=" " alt="" coords="194,87,369,114"/>
+<area shape="rect" href="psaux_8h.html" title=" " alt="" coords="142,259,306,285"/>
+<area shape="rect" href="svpsinfo_8h.html" title=" " alt="" coords="501,80,667,121"/>
+<area shape="rect" href="cffotypes_8h.html" title=" " alt="" coords="5,177,187,203"/>
+<area shape="rect" href="svcfftl_8h.html" title=" " alt="" coords="261,169,427,211"/>
+</map>
+</div>
+</div>
+<p><a href="t1types_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___encoding_rec_rec__.html">T1_EncodingRecRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_s___font_extra_rec__.html">PS_FontExtraRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___font_rec__.html">T1_FontRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_i_d___subrs_rec__.html">CID_SubrsRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_f_m___track_kern_rec__.html">AFM_TrackKernRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_f_m___kern_pair_rec__.html">AFM_KernPairRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_f_m___font_info_rec__.html">AFM_FontInfoRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t1___face_rec__.html">T1_FaceRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_i_d___face_rec__.html">CID_FaceRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:a51043e6a9261cdf8b2237225cb9e95ca"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="public-macros_8h.html#a72ee5814b3ae378ebb7fd3a8e3ddec14">FT_BEGIN_HEADER</a> struct <a class="el" href="struct_t1___encoding_rec_rec__.html">T1_EncodingRecRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t1types_8h.html#a51043e6a9261cdf8b2237225cb9e95ca">T1_EncodingRec</a></td></tr>
+<tr class="separator:a51043e6a9261cdf8b2237225cb9e95ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5130f347f04407c2ecb038c75f1b6713"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="public-macros_8h.html#a72ee5814b3ae378ebb7fd3a8e3ddec14">FT_BEGIN_HEADER</a> struct <a class="el" href="struct_t1___encoding_rec_rec__.html">T1_EncodingRecRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t1types_8h.html#a5130f347f04407c2ecb038c75f1b6713">T1_Encoding</a></td></tr>
+<tr class="separator:a5130f347f04407c2ecb038c75f1b6713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d4957dc4329b471b1a3cab8de87f770"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_p_s___font_extra_rec__.html">PS_FontExtraRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t1types_8h.html#a5d4957dc4329b471b1a3cab8de87f770">PS_FontExtraRec</a></td></tr>
+<tr class="separator:a5d4957dc4329b471b1a3cab8de87f770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1361f22406b468b78d92a943aa77d5f2"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_t1___font_rec__.html">T1_FontRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t1types_8h.html#a1361f22406b468b78d92a943aa77d5f2">T1_FontRec</a></td></tr>
+<tr class="separator:a1361f22406b468b78d92a943aa77d5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67742e9bbcad8c2e36097597c28dd496"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_t1___font_rec__.html">T1_FontRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t1types_8h.html#a67742e9bbcad8c2e36097597c28dd496">T1_Font</a></td></tr>
+<tr class="separator:a67742e9bbcad8c2e36097597c28dd496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2b012a32b481f8215a0ccba39a79fb4"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_i_d___subrs_rec__.html">CID_SubrsRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t1types_8h.html#ad2b012a32b481f8215a0ccba39a79fb4">CID_SubrsRec</a></td></tr>
+<tr class="separator:ad2b012a32b481f8215a0ccba39a79fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade790be314badd510147c027e8b437d0"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_i_d___subrs_rec__.html">CID_SubrsRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t1types_8h.html#ade790be314badd510147c027e8b437d0">CID_Subrs</a></td></tr>
+<tr class="separator:ade790be314badd510147c027e8b437d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e5d800f4f1fcf3d3c6863a7e9f2b6e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_a_f_m___track_kern_rec__.html">AFM_TrackKernRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t1types_8h.html#a51e5d800f4f1fcf3d3c6863a7e9f2b6e">AFM_TrackKernRec</a></td></tr>
+<tr class="separator:a51e5d800f4f1fcf3d3c6863a7e9f2b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a8d7b59263d8628741dc7f317697766"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_a_f_m___track_kern_rec__.html">AFM_TrackKernRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t1types_8h.html#a5a8d7b59263d8628741dc7f317697766">AFM_TrackKern</a></td></tr>
+<tr class="separator:a5a8d7b59263d8628741dc7f317697766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a87e9b64e9290b85bbcbc3e43bd8df9"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_a_f_m___kern_pair_rec__.html">AFM_KernPairRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t1types_8h.html#a8a87e9b64e9290b85bbcbc3e43bd8df9">AFM_KernPairRec</a></td></tr>
+<tr class="separator:a8a87e9b64e9290b85bbcbc3e43bd8df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae17237ff674008488dfe0b868721a59c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_a_f_m___kern_pair_rec__.html">AFM_KernPairRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t1types_8h.html#ae17237ff674008488dfe0b868721a59c">AFM_KernPair</a></td></tr>
+<tr class="separator:ae17237ff674008488dfe0b868721a59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0142ebeb6506752b8d42677892dd357"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_a_f_m___font_info_rec__.html">AFM_FontInfoRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t1types_8h.html#ab0142ebeb6506752b8d42677892dd357">AFM_FontInfoRec</a></td></tr>
+<tr class="separator:ab0142ebeb6506752b8d42677892dd357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a777f9b8cdbac8c166fa6f1637d08c339"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_a_f_m___font_info_rec__.html">AFM_FontInfoRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t1types_8h.html#a777f9b8cdbac8c166fa6f1637d08c339">AFM_FontInfo</a></td></tr>
+<tr class="separator:a777f9b8cdbac8c166fa6f1637d08c339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa7ce214cfe6275f724f1b693c288024"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_t1___face_rec__.html">T1_FaceRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t1types_8h.html#aaa7ce214cfe6275f724f1b693c288024">T1_Face</a></td></tr>
+<tr class="separator:aaa7ce214cfe6275f724f1b693c288024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a227f83a5b84ac73273f72dc90b39a55e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_i_d___face_rec__.html">CID_FaceRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t1types_8h.html#a227f83a5b84ac73273f72dc90b39a55e">CID_Face</a></td></tr>
+<tr class="separator:a227f83a5b84ac73273f72dc90b39a55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d80d8e79e4c52a147631a93ac82a750"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_t1___face_rec__.html">T1_FaceRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t1types_8h.html#a5d80d8e79e4c52a147631a93ac82a750">T1_FaceRec</a></td></tr>
+<tr class="separator:a5d80d8e79e4c52a147631a93ac82a750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a8d4a05cd1f14c64acec6bf667652c7"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_c_i_d___face_rec__.html">CID_FaceRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="t1types_8h.html#a2a8d4a05cd1f14c64acec6bf667652c7">CID_FaceRec</a></td></tr>
+<tr class="separator:a2a8d4a05cd1f14c64acec6bf667652c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">型定義詳解</h2>
+<a id="a777f9b8cdbac8c166fa6f1637d08c339"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a777f9b8cdbac8c166fa6f1637d08c339">&#9670;&nbsp;</a></span>AFM_FontInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_a_f_m___font_info_rec__.html">AFM_FontInfoRec_</a> * <a class="el" href="t1types_8h.html#a777f9b8cdbac8c166fa6f1637d08c339">AFM_FontInfo</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0142ebeb6506752b8d42677892dd357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0142ebeb6506752b8d42677892dd357">&#9670;&nbsp;</a></span>AFM_FontInfoRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_a_f_m___font_info_rec__.html">AFM_FontInfoRec_</a> <a class="el" href="t1types_8h.html#ab0142ebeb6506752b8d42677892dd357">AFM_FontInfoRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae17237ff674008488dfe0b868721a59c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae17237ff674008488dfe0b868721a59c">&#9670;&nbsp;</a></span>AFM_KernPair</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_a_f_m___kern_pair_rec__.html">AFM_KernPairRec_</a> * <a class="el" href="t1types_8h.html#ae17237ff674008488dfe0b868721a59c">AFM_KernPair</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a87e9b64e9290b85bbcbc3e43bd8df9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a87e9b64e9290b85bbcbc3e43bd8df9">&#9670;&nbsp;</a></span>AFM_KernPairRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_a_f_m___kern_pair_rec__.html">AFM_KernPairRec_</a> <a class="el" href="t1types_8h.html#a8a87e9b64e9290b85bbcbc3e43bd8df9">AFM_KernPairRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5a8d7b59263d8628741dc7f317697766"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a8d7b59263d8628741dc7f317697766">&#9670;&nbsp;</a></span>AFM_TrackKern</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_a_f_m___track_kern_rec__.html">AFM_TrackKernRec_</a> * <a class="el" href="t1types_8h.html#a5a8d7b59263d8628741dc7f317697766">AFM_TrackKern</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a51e5d800f4f1fcf3d3c6863a7e9f2b6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51e5d800f4f1fcf3d3c6863a7e9f2b6e">&#9670;&nbsp;</a></span>AFM_TrackKernRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_a_f_m___track_kern_rec__.html">AFM_TrackKernRec_</a> <a class="el" href="t1types_8h.html#a51e5d800f4f1fcf3d3c6863a7e9f2b6e">AFM_TrackKernRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a227f83a5b84ac73273f72dc90b39a55e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a227f83a5b84ac73273f72dc90b39a55e">&#9670;&nbsp;</a></span>CID_Face</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_i_d___face_rec__.html">CID_FaceRec_</a>* <a class="el" href="t1types_8h.html#a227f83a5b84ac73273f72dc90b39a55e">CID_Face</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a8d4a05cd1f14c64acec6bf667652c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a8d4a05cd1f14c64acec6bf667652c7">&#9670;&nbsp;</a></span>CID_FaceRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_i_d___face_rec__.html">CID_FaceRec_</a> <a class="el" href="t1types_8h.html#a2a8d4a05cd1f14c64acec6bf667652c7">CID_FaceRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade790be314badd510147c027e8b437d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade790be314badd510147c027e8b437d0">&#9670;&nbsp;</a></span>CID_Subrs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_i_d___subrs_rec__.html">CID_SubrsRec_</a> * <a class="el" href="t1types_8h.html#ade790be314badd510147c027e8b437d0">CID_Subrs</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2b012a32b481f8215a0ccba39a79fb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2b012a32b481f8215a0ccba39a79fb4">&#9670;&nbsp;</a></span>CID_SubrsRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_c_i_d___subrs_rec__.html">CID_SubrsRec_</a> <a class="el" href="t1types_8h.html#ad2b012a32b481f8215a0ccba39a79fb4">CID_SubrsRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d4957dc4329b471b1a3cab8de87f770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d4957dc4329b471b1a3cab8de87f770">&#9670;&nbsp;</a></span>PS_FontExtraRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_p_s___font_extra_rec__.html">PS_FontExtraRec_</a> <a class="el" href="t1types_8h.html#a5d4957dc4329b471b1a3cab8de87f770">PS_FontExtraRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5130f347f04407c2ecb038c75f1b6713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5130f347f04407c2ecb038c75f1b6713">&#9670;&nbsp;</a></span>T1_Encoding</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="public-macros_8h.html#a72ee5814b3ae378ebb7fd3a8e3ddec14">FT_BEGIN_HEADER</a> struct <a class="el" href="struct_t1___encoding_rec_rec__.html">T1_EncodingRecRec_</a> * <a class="el" href="t1types_8h.html#a5130f347f04407c2ecb038c75f1b6713">T1_Encoding</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a51043e6a9261cdf8b2237225cb9e95ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51043e6a9261cdf8b2237225cb9e95ca">&#9670;&nbsp;</a></span>T1_EncodingRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="public-macros_8h.html#a72ee5814b3ae378ebb7fd3a8e3ddec14">FT_BEGIN_HEADER</a> struct <a class="el" href="struct_t1___encoding_rec_rec__.html">T1_EncodingRecRec_</a> <a class="el" href="t1types_8h.html#a51043e6a9261cdf8b2237225cb9e95ca">T1_EncodingRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa7ce214cfe6275f724f1b693c288024"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa7ce214cfe6275f724f1b693c288024">&#9670;&nbsp;</a></span>T1_Face</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_t1___face_rec__.html">T1_FaceRec_</a>* <a class="el" href="t1types_8h.html#aaa7ce214cfe6275f724f1b693c288024">T1_Face</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d80d8e79e4c52a147631a93ac82a750"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d80d8e79e4c52a147631a93ac82a750">&#9670;&nbsp;</a></span>T1_FaceRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_t1___face_rec__.html">T1_FaceRec_</a> <a class="el" href="t1types_8h.html#a5d80d8e79e4c52a147631a93ac82a750">T1_FaceRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67742e9bbcad8c2e36097597c28dd496"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67742e9bbcad8c2e36097597c28dd496">&#9670;&nbsp;</a></span>T1_Font</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_t1___font_rec__.html">T1_FontRec_</a> * <a class="el" href="t1types_8h.html#a67742e9bbcad8c2e36097597c28dd496">T1_Font</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1361f22406b468b78d92a943aa77d5f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1361f22406b468b78d92a943aa77d5f2">&#9670;&nbsp;</a></span>T1_FontRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_t1___font_rec__.html">T1_FontRec_</a> <a class="el" href="t1types_8h.html#a1361f22406b468b78d92a943aa77d5f2">T1_FontRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

@@ -1,0 +1,246 @@
+\hypertarget{ftcalc_8h}{}\doxysection{freetype/internal/ftcalc.h ファイル}
+\label{ftcalc_8h}\index{freetype/internal/ftcalc.h@{freetype/internal/ftcalc.h}}
+{\ttfamily \#include $<$freetype/freetype.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}compiler-\/macros.\+h\char`\"{}}\newline
+ftcalc.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ftcalc_8h__incl}
+\end{center}
+\end{figure}
+被依存関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ftcalc_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ftcalc_8h_a84e4fc30b048120246dcee3209aa09b3}{I\+N\+T\+\_\+\+T\+O\+\_\+\+F26\+D\+O\+T6}}(x)~( (\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}})(x) $\ast$ 64  )    /$\ast$ $<$$<$ 6  $\ast$/
+\item 
+\#define \mbox{\hyperlink{ftcalc_8h_aaabc14c7749fa905d36a951b3a8180fb}{I\+N\+T\+\_\+\+T\+O\+\_\+\+F2\+D\+O\+T14}}(x)~( (\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}})(x) $\ast$ 16384 )  /$\ast$ $<$$<$ 14 $\ast$/
+\item 
+\#define \mbox{\hyperlink{ftcalc_8h_a3c86072f1b76453bb957eea3df32ca92}{I\+N\+T\+\_\+\+T\+O\+\_\+\+F\+I\+X\+ED}}(x)~( (\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}})(x) $\ast$ 65536 )  /$\ast$ $<$$<$ 16 $\ast$/
+\item 
+\#define \mbox{\hyperlink{ftcalc_8h_a0a397782993fcdbff63766a156fbe5aa}{F2\+D\+O\+T14\+\_\+\+T\+O\+\_\+\+F\+I\+X\+ED}}(x)~( (\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}})(x) $\ast$ 4 )      /$\ast$ $<$$<$ 2  $\ast$/
+\item 
+\#define \mbox{\hyperlink{ftcalc_8h_a1a5fdb7b6355daf11d7e9e3ff673cba8}{F\+I\+X\+E\+D\+\_\+\+T\+O\+\_\+\+I\+NT}}(x)~( \mbox{\hyperlink{freetype_8h_a14ac4284fe5007cd994d3c4c1339ffac}{F\+T\+\_\+\+Round\+Fix}}( x ) $>$$>$ 16 )
+\item 
+\#define \mbox{\hyperlink{ftcalc_8h_a819d90679d2622c2fff0b53ca228ac9d}{R\+O\+U\+N\+D\+\_\+\+F26\+D\+O\+T6}}(x)~( ( (x) + 32 -\/ ( x $<$ 0 ) ) \& -\/64 )
+\item 
+\#define \mbox{\hyperlink{ftcalc_8h_adcba19ef4f63abddcf8f1dcdbf1b57fb}{A\+D\+D\+\_\+\+I\+NT}}(a,  b)~          (\mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}})( (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}})(a) + (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}})(b) )
+\item 
+\#define \mbox{\hyperlink{ftcalc_8h_a87bd7f12fd854797ea4bb570ec9fd77f}{S\+U\+B\+\_\+\+I\+NT}}(a,  b)~          (\mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}})( (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}})(a) -\/ (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}})(b) )
+\item 
+\#define \mbox{\hyperlink{ftcalc_8h_a6615bb7595a184a7f3a49ca89a98420c}{M\+U\+L\+\_\+\+I\+NT}}(a,  b)~          (\mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}})( (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}})(a) $\ast$ (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}})(b) )
+\item 
+\#define \mbox{\hyperlink{ftcalc_8h_a1c18cee040095d2ee5b3eb4be681f685}{N\+E\+G\+\_\+\+I\+NT}}(a)~          (\mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}})( (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}})0 -\/ (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}})(a) )
+\item 
+\#define \mbox{\hyperlink{ftcalc_8h_a8e86fcb02857b03c7455367074e64ec4}{A\+D\+D\+\_\+\+L\+O\+NG}}(a,  b)~          (\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}})( (\mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}})(a) + (\mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}})(b) )
+\item 
+\#define \mbox{\hyperlink{ftcalc_8h_a899087e5ecbad4dc9d3c3333b8b3b7a9}{S\+U\+B\+\_\+\+L\+O\+NG}}(a,  b)~          (\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}})( (\mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}})(a) -\/ (\mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}})(b) )
+\item 
+\#define \mbox{\hyperlink{ftcalc_8h_a84f13b6a9a2a51a37cd52beb138bef58}{M\+U\+L\+\_\+\+L\+O\+NG}}(a,  b)~          (\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}})( (\mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}})(a) $\ast$ (\mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}})(b) )
+\item 
+\#define \mbox{\hyperlink{ftcalc_8h_a55413bc40b53e5a81d0409d8260eb38c}{N\+E\+G\+\_\+\+L\+O\+NG}}(a)~          (\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}})( (\mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}})0 -\/ (\mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}})(a) )
+\item 
+\#define \mbox{\hyperlink{ftcalc_8h_af9f4f29adf779c2115542367db0e3eab}{A\+D\+D\+\_\+\+I\+N\+T32}}(a,  b)~          (F\+T\+\_\+\+Int32)( (F\+T\+\_\+\+U\+Int32)(a) + (F\+T\+\_\+\+U\+Int32)(b) )
+\item 
+\#define \mbox{\hyperlink{ftcalc_8h_adc004094d842892106228bf84e1fca97}{S\+U\+B\+\_\+\+I\+N\+T32}}(a,  b)~          (F\+T\+\_\+\+Int32)( (F\+T\+\_\+\+U\+Int32)(a) -\/ (F\+T\+\_\+\+U\+Int32)(b) )
+\item 
+\#define \mbox{\hyperlink{ftcalc_8h_a26c9f950680538a89d8111ae96582846}{M\+U\+L\+\_\+\+I\+N\+T32}}(a,  b)~          (F\+T\+\_\+\+Int32)( (F\+T\+\_\+\+U\+Int32)(a) $\ast$ (F\+T\+\_\+\+U\+Int32)(b) )
+\item 
+\#define \mbox{\hyperlink{ftcalc_8h_ab1a2d796a433bda7ef8803abcb2de995}{N\+E\+G\+\_\+\+I\+N\+T32}}(a)~          (F\+T\+\_\+\+Int32)( (F\+T\+\_\+\+U\+Int32)0 -\/ (F\+T\+\_\+\+U\+Int32)(a) )
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{public-macros_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER}} \mbox{\hyperlink{ftcalc_8h_a17c336fd5e8314d480a0c2e20e4d6302}{F\+T\+\_\+\+Mul\+Div\+\_\+\+No\+\_\+\+Round}} (\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} a, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} b, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} c)
+\item 
+\mbox{\hyperlink{ftcalc_8h_a91ea9f01b5a01a5fb7130217c708bf17}{F\+T\+\_\+\+Matrix\+\_\+\+Multiply\+\_\+\+Scaled}} (const \mbox{\hyperlink{fttypes_8h_aa6f56f1da1b9036f07db19fbc39c8aea}{F\+T\+\_\+\+Matrix}} $\ast$a, \mbox{\hyperlink{fttypes_8h_aa6f56f1da1b9036f07db19fbc39c8aea}{F\+T\+\_\+\+Matrix}} $\ast$b, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} scaling)
+\item 
+\mbox{\hyperlink{ftcalc_8h_abe332588cd067b7e04d7c8f1085fcc84}{F\+T\+\_\+\+Matrix\+\_\+\+Check}} (const \mbox{\hyperlink{fttypes_8h_aa6f56f1da1b9036f07db19fbc39c8aea}{F\+T\+\_\+\+Matrix}} $\ast$matrix)
+\item 
+\mbox{\hyperlink{ftcalc_8h_a58ef4ce2b20e862769a130a17b4ea60b}{F\+T\+\_\+\+Vector\+\_\+\+Transform\+\_\+\+Scaled}} (\mbox{\hyperlink{ftimage_8h_abfcb941b4b81f3a922d4ae57c620db27}{F\+T\+\_\+\+Vector}} $\ast$vector, const \mbox{\hyperlink{fttypes_8h_aa6f56f1da1b9036f07db19fbc39c8aea}{F\+T\+\_\+\+Matrix}} $\ast$matrix, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} scaling)
+\item 
+\mbox{\hyperlink{ftcalc_8h_a49cc721ec97dc77ca97dfd83ad3d9a52}{F\+T\+\_\+\+Vector\+\_\+\+Norm\+Len}} (\mbox{\hyperlink{ftimage_8h_abfcb941b4b81f3a922d4ae57c620db27}{F\+T\+\_\+\+Vector}} $\ast$vector)
+\item 
+\mbox{\hyperlink{ftcalc_8h_afef935a21feabb462c237a120e79760f}{ft\+\_\+corner\+\_\+orientation}} (\mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} in\+\_\+x, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} in\+\_\+y, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} out\+\_\+x, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} out\+\_\+y)
+\item 
+\mbox{\hyperlink{ftcalc_8h_a0fa18ba95c20b075835ae2f047aa55b8}{ft\+\_\+corner\+\_\+is\+\_\+flat}} (\mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} in\+\_\+x, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} in\+\_\+y, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} out\+\_\+x, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} out\+\_\+y)
+\item 
+\mbox{\hyperlink{ftcalc_8h_a12d06ff7e8b4393951281ce45520ec4a}{F\+T\+\_\+\+M\+SB}} (F\+T\+\_\+\+U\+Int32 z)
+\item 
+\mbox{\hyperlink{ftcalc_8h_ad9f0a896974099bbb43211c7b0b111f8}{F\+T\+\_\+\+Hypot}} (\mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} x, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} y)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{ftcalc_8h_adcba19ef4f63abddcf8f1dcdbf1b57fb}\label{ftcalc_8h_adcba19ef4f63abddcf8f1dcdbf1b57fb}} 
+\index{ftcalc.h@{ftcalc.h}!ADD\_INT@{ADD\_INT}}
+\index{ADD\_INT@{ADD\_INT}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{ADD\_INT}{ADD\_INT}}
+{\footnotesize\ttfamily \#define A\+D\+D\+\_\+\+I\+NT(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~          (\mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}})( (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}})(a) + (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}})(b) )}
+
+\mbox{\Hypertarget{ftcalc_8h_af9f4f29adf779c2115542367db0e3eab}\label{ftcalc_8h_af9f4f29adf779c2115542367db0e3eab}} 
+\index{ftcalc.h@{ftcalc.h}!ADD\_INT32@{ADD\_INT32}}
+\index{ADD\_INT32@{ADD\_INT32}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{ADD\_INT32}{ADD\_INT32}}
+{\footnotesize\ttfamily \#define A\+D\+D\+\_\+\+I\+N\+T32(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~          (F\+T\+\_\+\+Int32)( (F\+T\+\_\+\+U\+Int32)(a) + (F\+T\+\_\+\+U\+Int32)(b) )}
+
+\mbox{\Hypertarget{ftcalc_8h_a8e86fcb02857b03c7455367074e64ec4}\label{ftcalc_8h_a8e86fcb02857b03c7455367074e64ec4}} 
+\index{ftcalc.h@{ftcalc.h}!ADD\_LONG@{ADD\_LONG}}
+\index{ADD\_LONG@{ADD\_LONG}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{ADD\_LONG}{ADD\_LONG}}
+{\footnotesize\ttfamily \#define A\+D\+D\+\_\+\+L\+O\+NG(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~          (\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}})( (\mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}})(a) + (\mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}})(b) )}
+
+\mbox{\Hypertarget{ftcalc_8h_a0a397782993fcdbff63766a156fbe5aa}\label{ftcalc_8h_a0a397782993fcdbff63766a156fbe5aa}} 
+\index{ftcalc.h@{ftcalc.h}!F2DOT14\_TO\_FIXED@{F2DOT14\_TO\_FIXED}}
+\index{F2DOT14\_TO\_FIXED@{F2DOT14\_TO\_FIXED}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{F2DOT14\_TO\_FIXED}{F2DOT14\_TO\_FIXED}}
+{\footnotesize\ttfamily \#define F2\+D\+O\+T14\+\_\+\+T\+O\+\_\+\+F\+I\+X\+ED(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~( (\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}})(x) $\ast$ 4 )      /$\ast$ $<$$<$ 2  $\ast$/}
+
+\mbox{\Hypertarget{ftcalc_8h_a1a5fdb7b6355daf11d7e9e3ff673cba8}\label{ftcalc_8h_a1a5fdb7b6355daf11d7e9e3ff673cba8}} 
+\index{ftcalc.h@{ftcalc.h}!FIXED\_TO\_INT@{FIXED\_TO\_INT}}
+\index{FIXED\_TO\_INT@{FIXED\_TO\_INT}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{FIXED\_TO\_INT}{FIXED\_TO\_INT}}
+{\footnotesize\ttfamily \#define F\+I\+X\+E\+D\+\_\+\+T\+O\+\_\+\+I\+NT(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~( \mbox{\hyperlink{freetype_8h_a14ac4284fe5007cd994d3c4c1339ffac}{F\+T\+\_\+\+Round\+Fix}}( x ) $>$$>$ 16 )}
+
+\mbox{\Hypertarget{ftcalc_8h_a84e4fc30b048120246dcee3209aa09b3}\label{ftcalc_8h_a84e4fc30b048120246dcee3209aa09b3}} 
+\index{ftcalc.h@{ftcalc.h}!INT\_TO\_F26DOT6@{INT\_TO\_F26DOT6}}
+\index{INT\_TO\_F26DOT6@{INT\_TO\_F26DOT6}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{INT\_TO\_F26DOT6}{INT\_TO\_F26DOT6}}
+{\footnotesize\ttfamily \#define I\+N\+T\+\_\+\+T\+O\+\_\+\+F26\+D\+O\+T6(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~( (\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}})(x) $\ast$ 64  )    /$\ast$ $<$$<$ 6  $\ast$/}
+
+\mbox{\Hypertarget{ftcalc_8h_aaabc14c7749fa905d36a951b3a8180fb}\label{ftcalc_8h_aaabc14c7749fa905d36a951b3a8180fb}} 
+\index{ftcalc.h@{ftcalc.h}!INT\_TO\_F2DOT14@{INT\_TO\_F2DOT14}}
+\index{INT\_TO\_F2DOT14@{INT\_TO\_F2DOT14}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{INT\_TO\_F2DOT14}{INT\_TO\_F2DOT14}}
+{\footnotesize\ttfamily \#define I\+N\+T\+\_\+\+T\+O\+\_\+\+F2\+D\+O\+T14(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~( (\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}})(x) $\ast$ 16384 )  /$\ast$ $<$$<$ 14 $\ast$/}
+
+\mbox{\Hypertarget{ftcalc_8h_a3c86072f1b76453bb957eea3df32ca92}\label{ftcalc_8h_a3c86072f1b76453bb957eea3df32ca92}} 
+\index{ftcalc.h@{ftcalc.h}!INT\_TO\_FIXED@{INT\_TO\_FIXED}}
+\index{INT\_TO\_FIXED@{INT\_TO\_FIXED}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{INT\_TO\_FIXED}{INT\_TO\_FIXED}}
+{\footnotesize\ttfamily \#define I\+N\+T\+\_\+\+T\+O\+\_\+\+F\+I\+X\+ED(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~( (\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}})(x) $\ast$ 65536 )  /$\ast$ $<$$<$ 16 $\ast$/}
+
+\mbox{\Hypertarget{ftcalc_8h_a6615bb7595a184a7f3a49ca89a98420c}\label{ftcalc_8h_a6615bb7595a184a7f3a49ca89a98420c}} 
+\index{ftcalc.h@{ftcalc.h}!MUL\_INT@{MUL\_INT}}
+\index{MUL\_INT@{MUL\_INT}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{MUL\_INT}{MUL\_INT}}
+{\footnotesize\ttfamily \#define M\+U\+L\+\_\+\+I\+NT(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~          (\mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}})( (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}})(a) $\ast$ (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}})(b) )}
+
+\mbox{\Hypertarget{ftcalc_8h_a26c9f950680538a89d8111ae96582846}\label{ftcalc_8h_a26c9f950680538a89d8111ae96582846}} 
+\index{ftcalc.h@{ftcalc.h}!MUL\_INT32@{MUL\_INT32}}
+\index{MUL\_INT32@{MUL\_INT32}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{MUL\_INT32}{MUL\_INT32}}
+{\footnotesize\ttfamily \#define M\+U\+L\+\_\+\+I\+N\+T32(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~          (F\+T\+\_\+\+Int32)( (F\+T\+\_\+\+U\+Int32)(a) $\ast$ (F\+T\+\_\+\+U\+Int32)(b) )}
+
+\mbox{\Hypertarget{ftcalc_8h_a84f13b6a9a2a51a37cd52beb138bef58}\label{ftcalc_8h_a84f13b6a9a2a51a37cd52beb138bef58}} 
+\index{ftcalc.h@{ftcalc.h}!MUL\_LONG@{MUL\_LONG}}
+\index{MUL\_LONG@{MUL\_LONG}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{MUL\_LONG}{MUL\_LONG}}
+{\footnotesize\ttfamily \#define M\+U\+L\+\_\+\+L\+O\+NG(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~          (\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}})( (\mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}})(a) $\ast$ (\mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}})(b) )}
+
+\mbox{\Hypertarget{ftcalc_8h_a1c18cee040095d2ee5b3eb4be681f685}\label{ftcalc_8h_a1c18cee040095d2ee5b3eb4be681f685}} 
+\index{ftcalc.h@{ftcalc.h}!NEG\_INT@{NEG\_INT}}
+\index{NEG\_INT@{NEG\_INT}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{NEG\_INT}{NEG\_INT}}
+{\footnotesize\ttfamily \#define N\+E\+G\+\_\+\+I\+NT(\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})~          (\mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}})( (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}})0 -\/ (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}})(a) )}
+
+\mbox{\Hypertarget{ftcalc_8h_ab1a2d796a433bda7ef8803abcb2de995}\label{ftcalc_8h_ab1a2d796a433bda7ef8803abcb2de995}} 
+\index{ftcalc.h@{ftcalc.h}!NEG\_INT32@{NEG\_INT32}}
+\index{NEG\_INT32@{NEG\_INT32}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{NEG\_INT32}{NEG\_INT32}}
+{\footnotesize\ttfamily \#define N\+E\+G\+\_\+\+I\+N\+T32(\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})~          (F\+T\+\_\+\+Int32)( (F\+T\+\_\+\+U\+Int32)0 -\/ (F\+T\+\_\+\+U\+Int32)(a) )}
+
+\mbox{\Hypertarget{ftcalc_8h_a55413bc40b53e5a81d0409d8260eb38c}\label{ftcalc_8h_a55413bc40b53e5a81d0409d8260eb38c}} 
+\index{ftcalc.h@{ftcalc.h}!NEG\_LONG@{NEG\_LONG}}
+\index{NEG\_LONG@{NEG\_LONG}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{NEG\_LONG}{NEG\_LONG}}
+{\footnotesize\ttfamily \#define N\+E\+G\+\_\+\+L\+O\+NG(\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})~          (\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}})( (\mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}})0 -\/ (\mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}})(a) )}
+
+\mbox{\Hypertarget{ftcalc_8h_a819d90679d2622c2fff0b53ca228ac9d}\label{ftcalc_8h_a819d90679d2622c2fff0b53ca228ac9d}} 
+\index{ftcalc.h@{ftcalc.h}!ROUND\_F26DOT6@{ROUND\_F26DOT6}}
+\index{ROUND\_F26DOT6@{ROUND\_F26DOT6}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{ROUND\_F26DOT6}{ROUND\_F26DOT6}}
+{\footnotesize\ttfamily \#define R\+O\+U\+N\+D\+\_\+\+F26\+D\+O\+T6(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~( ( (x) + 32 -\/ ( x $<$ 0 ) ) \& -\/64 )}
+
+\mbox{\Hypertarget{ftcalc_8h_a87bd7f12fd854797ea4bb570ec9fd77f}\label{ftcalc_8h_a87bd7f12fd854797ea4bb570ec9fd77f}} 
+\index{ftcalc.h@{ftcalc.h}!SUB\_INT@{SUB\_INT}}
+\index{SUB\_INT@{SUB\_INT}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{SUB\_INT}{SUB\_INT}}
+{\footnotesize\ttfamily \#define S\+U\+B\+\_\+\+I\+NT(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~          (\mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}})( (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}})(a) -\/ (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}})(b) )}
+
+\mbox{\Hypertarget{ftcalc_8h_adc004094d842892106228bf84e1fca97}\label{ftcalc_8h_adc004094d842892106228bf84e1fca97}} 
+\index{ftcalc.h@{ftcalc.h}!SUB\_INT32@{SUB\_INT32}}
+\index{SUB\_INT32@{SUB\_INT32}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{SUB\_INT32}{SUB\_INT32}}
+{\footnotesize\ttfamily \#define S\+U\+B\+\_\+\+I\+N\+T32(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~          (F\+T\+\_\+\+Int32)( (F\+T\+\_\+\+U\+Int32)(a) -\/ (F\+T\+\_\+\+U\+Int32)(b) )}
+
+\mbox{\Hypertarget{ftcalc_8h_a899087e5ecbad4dc9d3c3333b8b3b7a9}\label{ftcalc_8h_a899087e5ecbad4dc9d3c3333b8b3b7a9}} 
+\index{ftcalc.h@{ftcalc.h}!SUB\_LONG@{SUB\_LONG}}
+\index{SUB\_LONG@{SUB\_LONG}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{SUB\_LONG}{SUB\_LONG}}
+{\footnotesize\ttfamily \#define S\+U\+B\+\_\+\+L\+O\+NG(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~          (\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}})( (\mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}})(a) -\/ (\mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}})(b) )}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{ftcalc_8h_a0fa18ba95c20b075835ae2f047aa55b8}\label{ftcalc_8h_a0fa18ba95c20b075835ae2f047aa55b8}} 
+\index{ftcalc.h@{ftcalc.h}!ft\_corner\_is\_flat@{ft\_corner\_is\_flat}}
+\index{ft\_corner\_is\_flat@{ft\_corner\_is\_flat}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{ft\_corner\_is\_flat()}{ft\_corner\_is\_flat()}}
+{\footnotesize\ttfamily ft\+\_\+corner\+\_\+is\+\_\+flat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}}}]{in\+\_\+x,  }\item[{\mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}}}]{in\+\_\+y,  }\item[{\mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}}}]{out\+\_\+x,  }\item[{\mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}}}]{out\+\_\+y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftcalc_8h_afef935a21feabb462c237a120e79760f}\label{ftcalc_8h_afef935a21feabb462c237a120e79760f}} 
+\index{ftcalc.h@{ftcalc.h}!ft\_corner\_orientation@{ft\_corner\_orientation}}
+\index{ft\_corner\_orientation@{ft\_corner\_orientation}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{ft\_corner\_orientation()}{ft\_corner\_orientation()}}
+{\footnotesize\ttfamily ft\+\_\+corner\+\_\+orientation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}}}]{in\+\_\+x,  }\item[{\mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}}}]{in\+\_\+y,  }\item[{\mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}}}]{out\+\_\+x,  }\item[{\mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}}}]{out\+\_\+y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftcalc_8h_ad9f0a896974099bbb43211c7b0b111f8}\label{ftcalc_8h_ad9f0a896974099bbb43211c7b0b111f8}} 
+\index{ftcalc.h@{ftcalc.h}!FT\_Hypot@{FT\_Hypot}}
+\index{FT\_Hypot@{FT\_Hypot}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Hypot()}{FT\_Hypot()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Hypot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}}}]{x,  }\item[{\mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}}}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftcalc_8h_abe332588cd067b7e04d7c8f1085fcc84}\label{ftcalc_8h_abe332588cd067b7e04d7c8f1085fcc84}} 
+\index{ftcalc.h@{ftcalc.h}!FT\_Matrix\_Check@{FT\_Matrix\_Check}}
+\index{FT\_Matrix\_Check@{FT\_Matrix\_Check}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Matrix\_Check()}{FT\_Matrix\_Check()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Matrix\+\_\+\+Check (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{fttypes_8h_aa6f56f1da1b9036f07db19fbc39c8aea}{F\+T\+\_\+\+Matrix}} $\ast$}]{matrix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftcalc_8h_a91ea9f01b5a01a5fb7130217c708bf17}\label{ftcalc_8h_a91ea9f01b5a01a5fb7130217c708bf17}} 
+\index{ftcalc.h@{ftcalc.h}!FT\_Matrix\_Multiply\_Scaled@{FT\_Matrix\_Multiply\_Scaled}}
+\index{FT\_Matrix\_Multiply\_Scaled@{FT\_Matrix\_Multiply\_Scaled}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Matrix\_Multiply\_Scaled()}{FT\_Matrix\_Multiply\_Scaled()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Matrix\+\_\+\+Multiply\+\_\+\+Scaled (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{fttypes_8h_aa6f56f1da1b9036f07db19fbc39c8aea}{F\+T\+\_\+\+Matrix}} $\ast$}]{a,  }\item[{\mbox{\hyperlink{fttypes_8h_aa6f56f1da1b9036f07db19fbc39c8aea}{F\+T\+\_\+\+Matrix}} $\ast$}]{b,  }\item[{\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}}}]{scaling }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftcalc_8h_a12d06ff7e8b4393951281ce45520ec4a}\label{ftcalc_8h_a12d06ff7e8b4393951281ce45520ec4a}} 
+\index{ftcalc.h@{ftcalc.h}!FT\_MSB@{FT\_MSB}}
+\index{FT\_MSB@{FT\_MSB}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{FT\_MSB()}{FT\_MSB()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+M\+SB (\begin{DoxyParamCaption}\item[{F\+T\+\_\+\+U\+Int32}]{z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftcalc_8h_a17c336fd5e8314d480a0c2e20e4d6302}\label{ftcalc_8h_a17c336fd5e8314d480a0c2e20e4d6302}} 
+\index{ftcalc.h@{ftcalc.h}!FT\_MulDiv\_No\_Round@{FT\_MulDiv\_No\_Round}}
+\index{FT\_MulDiv\_No\_Round@{FT\_MulDiv\_No\_Round}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{FT\_MulDiv\_No\_Round()}{FT\_MulDiv\_No\_Round()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{public-macros_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER}} F\+T\+\_\+\+Mul\+Div\+\_\+\+No\+\_\+\+Round (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}}}]{a,  }\item[{\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}}}]{b,  }\item[{\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}}}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftcalc_8h_a49cc721ec97dc77ca97dfd83ad3d9a52}\label{ftcalc_8h_a49cc721ec97dc77ca97dfd83ad3d9a52}} 
+\index{ftcalc.h@{ftcalc.h}!FT\_Vector\_NormLen@{FT\_Vector\_NormLen}}
+\index{FT\_Vector\_NormLen@{FT\_Vector\_NormLen}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Vector\_NormLen()}{FT\_Vector\_NormLen()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Vector\+\_\+\+Norm\+Len (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ftimage_8h_abfcb941b4b81f3a922d4ae57c620db27}{F\+T\+\_\+\+Vector}} $\ast$}]{vector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftcalc_8h_a58ef4ce2b20e862769a130a17b4ea60b}\label{ftcalc_8h_a58ef4ce2b20e862769a130a17b4ea60b}} 
+\index{ftcalc.h@{ftcalc.h}!FT\_Vector\_Transform\_Scaled@{FT\_Vector\_Transform\_Scaled}}
+\index{FT\_Vector\_Transform\_Scaled@{FT\_Vector\_Transform\_Scaled}!ftcalc.h@{ftcalc.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Vector\_Transform\_Scaled()}{FT\_Vector\_Transform\_Scaled()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Vector\+\_\+\+Transform\+\_\+\+Scaled (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ftimage_8h_abfcb941b4b81f3a922d4ae57c620db27}{F\+T\+\_\+\+Vector}} $\ast$}]{vector,  }\item[{const \mbox{\hyperlink{fttypes_8h_aa6f56f1da1b9036f07db19fbc39c8aea}{F\+T\+\_\+\+Matrix}} $\ast$}]{matrix,  }\item[{\mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}}}]{scaling }\end{DoxyParamCaption})}
+

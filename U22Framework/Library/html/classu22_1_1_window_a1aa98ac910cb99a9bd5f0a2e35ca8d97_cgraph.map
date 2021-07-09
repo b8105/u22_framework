@@ -1,0 +1,4 @@
+<map id="u22::Window::Present" name="u22::Window::Present">
+<area shape="rect" id="node1" title="フリップ" alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node2" href="$group__window.html#gafb827800eedbfcbc97b1e5408df668d7" title="Swaps the front and back buffers of the specified window." alt="" coords="204,5,320,32"/>
+</map>

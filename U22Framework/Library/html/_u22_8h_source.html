@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: U22.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">U22.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_u22_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_framework_include_8h.html">Framework/FrameworkInclude.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_math_include_8h.html">Math/MathInclude.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_shape_include_8h.html">Shape/ShapeInclude.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_collision_include_8h.html">Collision/CollisionInclude.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_clock_8h.html">Clock/Clock.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_input_include_8h.html">Input/InputInclude.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_graphics_include_8h.html">Graphics/GraphicsInclude.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_audio_include_8h.html">Audio/AudioInclude.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_animation_include_8h.html">Animation/AnimationInclude.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_utility_include_8h.html">Utility/UtilityInclude.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="_u22_8h.html#adf26a36a6fe9d2c0b48a601fec7f449f">   25</a></span>&#160;<span class="preprocessor">#define g_pFramework (u22::Framework::GetInfomation())</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="_u22_8h.html#a62c2f06ab96750d0a95ac24adc196d7b">   29</a></span>&#160;<span class="preprocessor">#define g_pClock (u22::Framework::GetInfomation()-&gt;clock)</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="_u22_8h.html#ad7fd8c4441ff3a7406298b70898e9bb3">   33</a></span>&#160;<span class="preprocessor">#define g_pWindow (u22::Framework::GetInfomation()-&gt;window)</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="_u22_8h.html#a0cb3681d9e62af8397f48c4b2e11b159">   37</a></span>&#160;<span class="preprocessor">#define g_pInput (u22::Framework::GetInfomation()-&gt;input)</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="_u22_8h.html#a2c66a5788c5a0069d6f9ca23a8a71c8c">   41</a></span>&#160;<span class="preprocessor">#define g_pGraphics (u22::Framework::GetInfomation()-&gt;graphics)</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="_u22_8h.html#a244c219fc7b85ff874cf81c18f3270db">   45</a></span>&#160;<span class="preprocessor">#define g_pAidio (u22::Framework::GetInfomation()-&gt;aidio)</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceu22_1_1utility.html">u22::utility</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceu22_1_1animation.html">u22::animation</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="_u22_8h.html#a1fd6e3d74028244335897d1ec6bf5760">   53</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespaceu22_1_1input.html#a49c48d72760f3356307f8290de5ed483">Keycode</a> = <a class="code" href="namespaceu22_1_1input.html#a49c48d72760f3356307f8290de5ed483">u22::input::KeyCode</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="_u22_8h.html#a128ca2922c312fdb116fc187ead1254e">   57</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespaceu22_1_1input.html#a38074ea61858009575d7336c43be8515">MouseButton</a> = <a class="code" href="namespaceu22_1_1input.html#a38074ea61858009575d7336c43be8515">u22::input::MouseButton</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="_u22_8h.html#adeeb327d9c57fa7164b008c5a8998961">   61</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classu22_1_1math_1_1_vector2_3_01float_01_4.html">Vector2</a> = <a class="code" href="namespaceu22_1_1math.html#abd3e525891449648c8321ac9495844db">u22::math::Vector2F</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="_u22_8h.html#a3f599dbea67f25be07e35a3602b83ae2">   65</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classu22_1_1math_1_1_vector3_3_01float_01_4.html">Vector3</a> = <a class="code" href="namespaceu22_1_1math.html#a7541a7b83d972aaa30344cb4ee2192f1">u22::math::Vector3F</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="_u22_8h.html#ae6fa09de8ca1779095325994b4e6fba5">   69</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classu22_1_1math_1_1_vector4_3_01float_01_4.html">Vector4</a> = <a class="code" href="namespaceu22_1_1math.html#a4d1e97ba7f1e8c8170c4e2ba3f60f834">u22::math::Vector4F</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="_u22_8h.html#a6b4c69d9f360bb0841250efbff52398d">   73</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classu22_1_1graphics_1_1_camera.html">CCamera</a> = <a class="code" href="classu22_1_1graphics_1_1_camera.html">u22::graphics::Camera</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="_u22_8h.html#aa7771682b01324ea30650b63991eb1e2">   77</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classu22_1_1graphics_1_1_texture_renderer.html">CTexture</a> = <a class="code" href="classu22_1_1graphics_1_1_texture_renderer.html">u22::graphics::TextureRenderer</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="_u22_8h.html#aca439bed95ac7f53a614729f5eebaf82">   81</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classu22_1_1graphics_1_1_font_renderer.html">CFont</a> = <a class="code" href="classu22_1_1graphics_1_1_font_renderer.html">u22::graphics::FontRenderer</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="_u22_8h.html#a80147c632197f7624336856544727504">   85</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classu22_1_1animation_1_1_sprite_animation_controller.html">CSpriteAnimationController</a> = <a class="code" href="classu22_1_1animation_1_1_sprite_animation_controller.html">u22::animation::SpriteAnimationController</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="_u22_8h.html#a4c6e3f6469b864d49268cd6254055eb9">   89</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classu22_1_1audio_1_1_sound_buffer.html">CSoundBuffer</a> = <a class="code" href="classu22_1_1audio_1_1_sound_buffer.html">u22::audio::SoundBuffer</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="_u22_8h.html#ac798e03bf4b29e8a54f83474eb13c3b8">   93</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classu22_1_1audio_1_1_sound_stream_buffer.html">CSoundStreamBuffer</a> = <a class="code" href="classu22_1_1audio_1_1_sound_stream_buffer.html">u22::audio::SoundStreamBuffer</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="_u22_8h.html#a65cca9ea8264e28f823512fd81a1bf0c">   97</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classu22_1_1collision_1_1_collisionable_circle.html">CCircle</a> = <a class="code" href="classu22_1_1collision_1_1_collisionable_circle.html">u22::collision::CollisionableCircle</a>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="_u22_8h.html#ad79941b663603400a64955f03def9f33">  101</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classu22_1_1collision_1_1_collisionable_rectangle.html">CRectangle</a> = <a class="code" href="classu22_1_1collision_1_1_collisionable_rectangle.html">u22::collision::CollisionableRectangle</a>;</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassu22_1_1math_1_1_vector2_3_01float_01_4_html"><div class="ttname"><a href="classu22_1_1math_1_1_vector2_3_01float_01_4.html">u22::math::Vector2&lt; float &gt;</a></div><div class="ttdef"><b>Definition:</b> Vector2.h:16</div></div>
+<div class="ttc" id="anamespaceu22_1_1utility_html"><div class="ttname"><a href="namespaceu22_1_1utility.html">u22::utility</a></div><div class="ttdef"><b>Definition:</b> CUtilities.h:5</div></div>
+<div class="ttc" id="aclassu22_1_1math_1_1_vector3_3_01float_01_4_html"><div class="ttname"><a href="classu22_1_1math_1_1_vector3_3_01float_01_4.html">u22::math::Vector3&lt; float &gt;</a></div><div class="ttdef"><b>Definition:</b> Vector3.h:18</div></div>
+<div class="ttc" id="aclassu22_1_1math_1_1_vector4_3_01float_01_4_html"><div class="ttname"><a href="classu22_1_1math_1_1_vector4_3_01float_01_4.html">u22::math::Vector4&lt; float &gt;</a></div><div class="ttdef"><b>Definition:</b> Vector4.h:16</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_html_abd3e525891449648c8321ac9495844db"><div class="ttname"><a href="namespaceu22_1_1math.html#abd3e525891449648c8321ac9495844db">u22::math::Vector2F</a></div><div class="ttdeci">Vector2&lt; float &gt; Vector2F</div><div class="ttdef"><b>Definition:</b> Vector2.h:61</div></div>
+<div class="ttc" id="a_audio_include_8h_html"><div class="ttname"><a href="_audio_include_8h.html">AudioInclude.h</a></div></div>
+<div class="ttc" id="anamespaceu22_1_1input_html_a49c48d72760f3356307f8290de5ed483"><div class="ttname"><a href="namespaceu22_1_1input.html#a49c48d72760f3356307f8290de5ed483">u22::input::KeyCode</a></div><div class="ttdeci">KeyCode</div><div class="ttdef"><b>Definition:</b> Keycode.h:12</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_texture_renderer_html"><div class="ttname"><a href="classu22_1_1graphics_1_1_texture_renderer.html">u22::graphics::TextureRenderer</a></div><div class="ttdef"><b>Definition:</b> TextureRenderer.h:17</div></div>
+<div class="ttc" id="aclassu22_1_1collision_1_1_collisionable_rectangle_html"><div class="ttname"><a href="classu22_1_1collision_1_1_collisionable_rectangle.html">u22::collision::CollisionableRectangle</a></div><div class="ttdef"><b>Definition:</b> CollisionableRectangle.h:10</div></div>
+<div class="ttc" id="anamespaceu22_1_1input_html_a38074ea61858009575d7336c43be8515"><div class="ttname"><a href="namespaceu22_1_1input.html#a38074ea61858009575d7336c43be8515">u22::input::MouseButton</a></div><div class="ttdeci">MouseButton</div><div class="ttdef"><b>Definition:</b> Keycode.h:59</div></div>
+<div class="ttc" id="a_framework_include_8h_html"><div class="ttname"><a href="_framework_include_8h.html">FrameworkInclude.h</a></div></div>
+<div class="ttc" id="aclassu22_1_1animation_1_1_sprite_animation_controller_html"><div class="ttname"><a href="classu22_1_1animation_1_1_sprite_animation_controller.html">u22::animation::SpriteAnimationController</a></div><div class="ttdef"><b>Definition:</b> SpriteAnimationController.h:14</div></div>
+<div class="ttc" id="a_input_include_8h_html"><div class="ttname"><a href="_input_include_8h.html">InputInclude.h</a></div></div>
+<div class="ttc" id="aclassu22_1_1collision_1_1_collisionable_circle_html"><div class="ttname"><a href="classu22_1_1collision_1_1_collisionable_circle.html">u22::collision::CollisionableCircle</a></div><div class="ttdef"><b>Definition:</b> CollisionableCircle.h:11</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_html_a7541a7b83d972aaa30344cb4ee2192f1"><div class="ttname"><a href="namespaceu22_1_1math.html#a7541a7b83d972aaa30344cb4ee2192f1">u22::math::Vector3F</a></div><div class="ttdeci">Vector3&lt; float &gt; Vector3F</div><div class="ttdef"><b>Definition:</b> Vector3.h:81</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_html_a4d1e97ba7f1e8c8170c4e2ba3f60f834"><div class="ttname"><a href="namespaceu22_1_1math.html#a4d1e97ba7f1e8c8170c4e2ba3f60f834">u22::math::Vector4F</a></div><div class="ttdeci">Vector4&lt; float &gt; Vector4F</div><div class="ttdef"><b>Definition:</b> Vector4.h:41</div></div>
+<div class="ttc" id="anamespaceu22_1_1animation_html"><div class="ttname"><a href="namespaceu22_1_1animation.html">u22::animation</a></div><div class="ttdef"><b>Definition:</b> SpriteAnimationController.h:13</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_camera_html"><div class="ttname"><a href="classu22_1_1graphics_1_1_camera.html">u22::graphics::Camera</a></div><div class="ttdef"><b>Definition:</b> Camera.h:12</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_sound_buffer_html"><div class="ttname"><a href="classu22_1_1audio_1_1_sound_buffer.html">u22::audio::SoundBuffer</a></div><div class="ttdef"><b>Definition:</b> SoundBuffer.h:14</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_sound_stream_buffer_html"><div class="ttname"><a href="classu22_1_1audio_1_1_sound_stream_buffer.html">u22::audio::SoundStreamBuffer</a></div><div class="ttdef"><b>Definition:</b> SoundStreamBuffer.h:16</div></div>
+<div class="ttc" id="a_math_include_8h_html"><div class="ttname"><a href="_math_include_8h.html">MathInclude.h</a></div></div>
+<div class="ttc" id="a_clock_8h_html"><div class="ttname"><a href="_clock_8h.html">Clock.h</a></div></div>
+<div class="ttc" id="a_animation_include_8h_html"><div class="ttname"><a href="_animation_include_8h.html">AnimationInclude.h</a></div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_font_renderer_html"><div class="ttname"><a href="classu22_1_1graphics_1_1_font_renderer.html">u22::graphics::FontRenderer</a></div><div class="ttdef"><b>Definition:</b> FontRenderer.h:23</div></div>
+<div class="ttc" id="a_graphics_include_8h_html"><div class="ttname"><a href="_graphics_include_8h.html">GraphicsInclude.h</a></div></div>
+<div class="ttc" id="a_shape_include_8h_html"><div class="ttname"><a href="_shape_include_8h.html">ShapeInclude.h</a></div></div>
+<div class="ttc" id="a_utility_include_8h_html"><div class="ttname"><a href="_utility_include_8h.html">UtilityInclude.h</a></div></div>
+<div class="ttc" id="a_collision_include_8h_html"><div class="ttname"><a href="_collision_include_8h.html">CollisionInclude.h</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

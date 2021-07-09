@@ -1,0 +1,283 @@
+\hypertarget{classu22_1_1graphics_1_1_texture}{}\doxysection{u22\+::graphics\+::Texture クラス}
+\label{classu22_1_1graphics_1_1_texture}\index{u22::graphics::Texture@{u22::graphics::Texture}}
+
+
+{\ttfamily \#include $<$Texture.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classu22_1_1graphics_1_1_texture_ae0c458ee9bbc80acc6b1789360c88ff3}{Texture}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classu22_1_1graphics_1_1_texture_a63f157e970580684b896be05f3d6178d}{$\sim$\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{glew_8h_aa311c7f0d6ec4f1a33f9235c3651b86b}{G\+Luint}} \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_a46db817f47dd2d63e1fdc33845adcd06}{Get\+ID}} (void) const
+\begin{DoxyCompactList}\small\item\em ゲッター \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_aed0959216f24905db28c648e58718107}{Get\+Width}} (void) const
+\begin{DoxyCompactList}\small\item\em ゲッター \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_a546a6dfc1da579c0ff4def78edcc64d6}{Get\+Height}} (void) const
+\begin{DoxyCompactList}\small\item\em ゲッター \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceu22_1_1math_a538b674ab924be91c95315cef6457602}{u22\+::math\+::\+Vector2I}} \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_a2f57714be8d0c6894c8e4e3933429dbf}{Get\+Size}} (void) const
+\begin{DoxyCompactList}\small\item\em ゲッター \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_a61f61574fdf3c54cf868a5624688440a}{Generate}} (void)
+\begin{DoxyCompactList}\small\item\em 生成 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_aa4b8288485428fa5e9cec8be4c551714}{Texture\+Mapping}} (int width, int height)
+\begin{DoxyCompactList}\small\item\em 設定 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_a5ee0f1c473265d1ea7b82a19b781e44f}{Sub\+Image\+Update}} (\mbox{\hyperlink{glew_8h_a5ac0f3c4d7fafd42b284b5487a791017}{G\+Lint}} offset\+\_\+x, \mbox{\hyperlink{glew_8h_a5ac0f3c4d7fafd42b284b5487a791017}{G\+Lint}} offset\+\_\+y, \mbox{\hyperlink{glew_8h_a5ac0f3c4d7fafd42b284b5487a791017}{G\+Lint}} width, \mbox{\hyperlink{glew_8h_a5ac0f3c4d7fafd42b284b5487a791017}{G\+Lint}} height, const void $\ast$pixels)
+\begin{DoxyCompactList}\small\item\em 書き換え \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_a1a7298d6825fb55f270ae06ae8c9915f}{Bind}} (uint32\+\_\+t index=0) const
+\begin{DoxyCompactList}\small\item\em 使用 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_a2fb82c36f3bb1def50cc69a5039b13b2}{Un\+Bind}} (void) const
+\begin{DoxyCompactList}\small\item\em 解除 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_a1bd6deedf450cd4ab55cec1480a52fe8}{Load}} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em 読み込み \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_afe431254058db7bb51760ac1f13f5cd4}{Release}} (void)
+\begin{DoxyCompactList}\small\item\em 解放 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_ae0c458ee9bbc80acc6b1789360c88ff3}\label{classu22_1_1graphics_1_1_texture_ae0c458ee9bbc80acc6b1789360c88ff3}} 
+\index{u22::graphics::Texture@{u22::graphics::Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!u22::graphics::Texture@{u22::graphics::Texture}}
+\doxysubsubsection{\texorpdfstring{Texture()}{Texture()}}
+{\footnotesize\ttfamily u22\+::graphics\+::\+Texture\+::\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+コンストラクタ 
+
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_a63f157e970580684b896be05f3d6178d}\label{classu22_1_1graphics_1_1_texture_a63f157e970580684b896be05f3d6178d}} 
+\index{u22::graphics::Texture@{u22::graphics::Texture}!````~Texture@{$\sim$Texture}}
+\index{````~Texture@{$\sim$Texture}!u22::graphics::Texture@{u22::graphics::Texture}}
+\doxysubsubsection{\texorpdfstring{$\sim$Texture()}{~Texture()}}
+{\footnotesize\ttfamily u22\+::graphics\+::\+Texture\+::$\sim$\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+デストラクタ 
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_a1a7298d6825fb55f270ae06ae8c9915f}\label{classu22_1_1graphics_1_1_texture_a1a7298d6825fb55f270ae06ae8c9915f}} 
+\index{u22::graphics::Texture@{u22::graphics::Texture}!Bind@{Bind}}
+\index{Bind@{Bind}!u22::graphics::Texture@{u22::graphics::Texture}}
+\doxysubsubsection{\texorpdfstring{Bind()}{Bind()}}
+{\footnotesize\ttfamily void u22\+::graphics\+::\+Texture\+::\+Bind (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{index = {\ttfamily 0} }\end{DoxyParamCaption}) const}
+
+
+
+使用 
+
+
+\begin{DoxyParams}{引数}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{classu22_1_1graphics_1_1_texture_a1a7298d6825fb55f270ae06ae8c9915f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_a61f61574fdf3c54cf868a5624688440a}\label{classu22_1_1graphics_1_1_texture_a61f61574fdf3c54cf868a5624688440a}} 
+\index{u22::graphics::Texture@{u22::graphics::Texture}!Generate@{Generate}}
+\index{Generate@{Generate}!u22::graphics::Texture@{u22::graphics::Texture}}
+\doxysubsubsection{\texorpdfstring{Generate()}{Generate()}}
+{\footnotesize\ttfamily bool u22\+::graphics\+::\+Texture\+::\+Generate (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+生成 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classu22_1_1graphics_1_1_texture_a61f61574fdf3c54cf868a5624688440a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_a546a6dfc1da579c0ff4def78edcc64d6}\label{classu22_1_1graphics_1_1_texture_a546a6dfc1da579c0ff4def78edcc64d6}} 
+\index{u22::graphics::Texture@{u22::graphics::Texture}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!u22::graphics::Texture@{u22::graphics::Texture}}
+\doxysubsubsection{\texorpdfstring{GetHeight()}{GetHeight()}}
+{\footnotesize\ttfamily int u22\+::graphics\+::\+Texture\+::\+Get\+Height (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+ゲッター 
+
+\begin{DoxyReturn}{戻り値}
+サイズ
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_a46db817f47dd2d63e1fdc33845adcd06}\label{classu22_1_1graphics_1_1_texture_a46db817f47dd2d63e1fdc33845adcd06}} 
+\index{u22::graphics::Texture@{u22::graphics::Texture}!GetID@{GetID}}
+\index{GetID@{GetID}!u22::graphics::Texture@{u22::graphics::Texture}}
+\doxysubsubsection{\texorpdfstring{GetID()}{GetID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{glew_8h_aa311c7f0d6ec4f1a33f9235c3651b86b}{G\+Luint}} u22\+::graphics\+::\+Texture\+::\+Get\+ID (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+ゲッター 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_a2f57714be8d0c6894c8e4e3933429dbf}\label{classu22_1_1graphics_1_1_texture_a2f57714be8d0c6894c8e4e3933429dbf}} 
+\index{u22::graphics::Texture@{u22::graphics::Texture}!GetSize@{GetSize}}
+\index{GetSize@{GetSize}!u22::graphics::Texture@{u22::graphics::Texture}}
+\doxysubsubsection{\texorpdfstring{GetSize()}{GetSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceu22_1_1math_a538b674ab924be91c95315cef6457602}{u22\+::math\+::\+Vector2I}} u22\+::graphics\+::\+Texture\+::\+Get\+Size (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+ゲッター 
+
+\begin{DoxyReturn}{戻り値}
+サイズ
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_aed0959216f24905db28c648e58718107}\label{classu22_1_1graphics_1_1_texture_aed0959216f24905db28c648e58718107}} 
+\index{u22::graphics::Texture@{u22::graphics::Texture}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!u22::graphics::Texture@{u22::graphics::Texture}}
+\doxysubsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily int u22\+::graphics\+::\+Texture\+::\+Get\+Width (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+ゲッター 
+
+\begin{DoxyReturn}{戻り値}
+サイズ
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_a1bd6deedf450cd4ab55cec1480a52fe8}\label{classu22_1_1graphics_1_1_texture_a1bd6deedf450cd4ab55cec1480a52fe8}} 
+\index{u22::graphics::Texture@{u22::graphics::Texture}!Load@{Load}}
+\index{Load@{Load}!u22::graphics::Texture@{u22::graphics::Texture}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily bool u22\+::graphics\+::\+Texture\+::\+Load (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+読み込み 
+
+
+\begin{DoxyParams}{引数}
+{\em path} & パス\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+成功
+\end{DoxyReturn}
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classu22_1_1graphics_1_1_texture_a1bd6deedf450cd4ab55cec1480a52fe8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_afe431254058db7bb51760ac1f13f5cd4}\label{classu22_1_1graphics_1_1_texture_afe431254058db7bb51760ac1f13f5cd4}} 
+\index{u22::graphics::Texture@{u22::graphics::Texture}!Release@{Release}}
+\index{Release@{Release}!u22::graphics::Texture@{u22::graphics::Texture}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily bool u22\+::graphics\+::\+Texture\+::\+Release (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+解放 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classu22_1_1graphics_1_1_texture_afe431254058db7bb51760ac1f13f5cd4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_a5ee0f1c473265d1ea7b82a19b781e44f}\label{classu22_1_1graphics_1_1_texture_a5ee0f1c473265d1ea7b82a19b781e44f}} 
+\index{u22::graphics::Texture@{u22::graphics::Texture}!SubImageUpdate@{SubImageUpdate}}
+\index{SubImageUpdate@{SubImageUpdate}!u22::graphics::Texture@{u22::graphics::Texture}}
+\doxysubsubsection{\texorpdfstring{SubImageUpdate()}{SubImageUpdate()}}
+{\footnotesize\ttfamily bool u22\+::graphics\+::\+Texture\+::\+Sub\+Image\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{glew_8h_a5ac0f3c4d7fafd42b284b5487a791017}{G\+Lint}}}]{offset\+\_\+x,  }\item[{\mbox{\hyperlink{glew_8h_a5ac0f3c4d7fafd42b284b5487a791017}{G\+Lint}}}]{offset\+\_\+y,  }\item[{\mbox{\hyperlink{glew_8h_a5ac0f3c4d7fafd42b284b5487a791017}{G\+Lint}}}]{width,  }\item[{\mbox{\hyperlink{glew_8h_a5ac0f3c4d7fafd42b284b5487a791017}{G\+Lint}}}]{height,  }\item[{const void $\ast$}]{pixels }\end{DoxyParamCaption})}
+
+
+
+書き換え 
+
+
+\begin{DoxyParams}{引数}
+{\em offset\+\_\+x} & オフセット\\
+\hline
+{\em offset\+\_\+y} & オフセット\\
+\hline
+{\em width} & サイズ\\
+\hline
+{\em height} & サイズ\\
+\hline
+{\em pixels} & データ\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classu22_1_1graphics_1_1_texture_a5ee0f1c473265d1ea7b82a19b781e44f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_aa4b8288485428fa5e9cec8be4c551714}\label{classu22_1_1graphics_1_1_texture_aa4b8288485428fa5e9cec8be4c551714}} 
+\index{u22::graphics::Texture@{u22::graphics::Texture}!TextureMapping@{TextureMapping}}
+\index{TextureMapping@{TextureMapping}!u22::graphics::Texture@{u22::graphics::Texture}}
+\doxysubsubsection{\texorpdfstring{TextureMapping()}{TextureMapping()}}
+{\footnotesize\ttfamily bool u22\+::graphics\+::\+Texture\+::\+Texture\+Mapping (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+設定 
+
+
+\begin{DoxyParams}{引数}
+{\em width} & サイズ\\
+\hline
+{\em height} & サイズ\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classu22_1_1graphics_1_1_texture_aa4b8288485428fa5e9cec8be4c551714_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_a2fb82c36f3bb1def50cc69a5039b13b2}\label{classu22_1_1graphics_1_1_texture_a2fb82c36f3bb1def50cc69a5039b13b2}} 
+\index{u22::graphics::Texture@{u22::graphics::Texture}!UnBind@{UnBind}}
+\index{UnBind@{UnBind}!u22::graphics::Texture@{u22::graphics::Texture}}
+\doxysubsubsection{\texorpdfstring{UnBind()}{UnBind()}}
+{\footnotesize\ttfamily void u22\+::graphics\+::\+Texture\+::\+Un\+Bind (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+解除 
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{classu22_1_1graphics_1_1_texture_a2fb82c36f3bb1def50cc69a5039b13b2_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+Graphics/\mbox{\hyperlink{_texture_8h}{Texture.\+h}}\item 
+Graphics/\mbox{\hyperlink{_texture_8cpp}{Texture.\+cpp}}\end{DoxyCompactItemize}

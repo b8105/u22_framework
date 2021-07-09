@@ -1,0 +1,38 @@
+<map id="glm::epsilon" name="glm::epsilon">
+<area shape="rect" id="node1" title="Return the epsilon constant for floating point types." alt="" coords="437,889,529,916"/>
+<area shape="rect" id="node2" href="$group__gtx__vector__query.html#ga13da4a787a2ff70e95d561fb19ff91b4" title=" " alt="" coords="245,5,363,32"/>
+<area shape="rect" id="node3" href="$group__gtx__vector__query.html#gac7b95b3f798e3c293262b2bdaad47c57" title=" " alt="" coords="238,107,370,133"/>
+<area shape="rect" id="node4" href="$namespaceglm.html#a4a14310285b0b47cd8357b63e3be0352" title=" " alt="" coords="26,88,150,115"/>
+<area shape="rect" id="node5" href="$group__gtx__vector__query.html#ga1b091c3d7f9ee3b0708311c001c293e3" title=" " alt="" coords="18,176,158,203"/>
+<area shape="rect" id="node6" href="$group__gtx__matrix__interpolation.html#gafefe32ce5a90a135287ba34fac3623bc" title=" " alt="" coords="250,283,358,309"/>
+<area shape="rect" id="node8" href="$structglm_1_1detail_1_1compute__is_comp_null_3_012_00_01_t_00_01_q_01_4.html#acec5e6ad7a0200dcbc038f9efcd97a36" title=" " alt="" coords="231,333,377,389"/>
+<area shape="rect" id="node9" href="$structglm_1_1detail_1_1compute__are_collinear_3_012_00_01_t_00_01_q_01_4.html#a4a32a093975dd49210dafdcb0be3b108" title=" " alt="" coords="234,413,374,469"/>
+<area shape="rect" id="node10" href="$structglm_1_1detail_1_1compute__is_comp_null_3_013_00_01_t_00_01_q_01_4.html#a2bb0d3fb0e8d0a8c9e4571e92102f1c3" title=" " alt="" coords="231,493,377,549"/>
+<area shape="rect" id="node11" href="$structglm_1_1detail_1_1compute__are_collinear_3_013_00_01_t_00_01_q_01_4.html#ad89215d790bc1b3d246a597e261c32f4" title=" " alt="" coords="234,573,374,629"/>
+<area shape="rect" id="node12" href="$structglm_1_1detail_1_1compute__is_comp_null_3_014_00_01_t_00_01_q_01_4.html#aff1dc41c1dcdc2849505c73ec3d392ac" title=" " alt="" coords="231,653,377,709"/>
+<area shape="rect" id="node13" href="$structglm_1_1detail_1_1compute__are_collinear_3_014_00_01_t_00_01_q_01_4.html#ad76314dc4d2ebd03e01707e521f91fb9" title=" " alt="" coords="234,733,374,789"/>
+<area shape="rect" id="node14" href="$namespaceglm.html#aded5e7ea9a0eacd03367ad77986c2a15" title=" " alt="" coords="241,813,367,840"/>
+<area shape="rect" id="node15" href="$namespaceglm.html#af4127d65f4afc6e447d461bae25f90fe" title=" " alt="" coords="231,864,377,891"/>
+<area shape="rect" id="node16" href="$group__ext__quaternion__relational.html#gaa001eecb91106463169a8e5ef1577b39" title=" " alt="" coords="263,915,345,941"/>
+<area shape="rect" id="node17" href="$group__gtx__intersect.html#ga9c68139f3d8a4f3d7fe45f9dbc0de5b7" title=" " alt="" coords="221,965,387,992"/>
+<area shape="rect" id="node18" href="$group__gtx__intersect.html#ga9d29b9b3acb504d43986502f42740df4" title=" " alt="" coords="219,1016,389,1043"/>
+<area shape="rect" id="node19" href="$group__gtx__intersect.html#gad3697a9700ea379739a667ea02573488" title=" " alt="" coords="225,1067,383,1093"/>
+<area shape="rect" id="node20" href="$group__gtx__intersect.html#gac88f8cd84c4bcb5b947d56acbbcfa56e" title=" " alt="" coords="221,1117,387,1144"/>
+<area shape="rect" id="node22" href="$group__gtx__intersect.html#ga65bf2c594482f04881c36bc761f9e946" title=" " alt="" coords="219,1168,389,1195"/>
+<area shape="rect" id="node23" href="$group__gtx__vector__query.html#gaf6ec1688eab7442fe96fe4941d5d4e76" title=" " alt="" coords="245,1219,363,1245"/>
+<area shape="rect" id="node24" href="$namespaceglm.html#a8dc1b6d068dde72568fc1fcfa2238ca5" title=" " alt="" coords="253,1269,355,1296"/>
+<area shape="rect" id="node25" href="$group__gtx__matrix__query.html#gae785af56f47ce220a1609f7f84aa077a" title=" " alt="" coords="241,232,367,259"/>
+<area shape="rect" id="node26" href="$group__gtx__matrix__query.html#ga9790ec222ce948c0ff0d8ce927340dba" title=" " alt="" coords="263,1344,345,1371"/>
+<area shape="rect" id="node27" href="$group__ext__quaternion__relational.html#ga5117a44c1bf21af857cd23e44a96d313" title=" " alt="" coords="253,1395,355,1421"/>
+<area shape="rect" id="node28" href="$group__ext__matrix__clip__space.html#gaead4d049d1feab463b700b5641aa590e" title=" " alt="" coords="225,1496,383,1523"/>
+<area shape="rect" id="node32" href="$group__ext__matrix__clip__space.html#gaca32af88c2719005c02817ad1142986c" title=" " alt="" coords="226,1445,382,1472"/>
+<area shape="rect" id="node34" href="$group__ext__matrix__clip__space.html#gad1526cb2cbe796095284e8f34b01c582" title=" " alt="" coords="224,1597,384,1624"/>
+<area shape="rect" id="node36" href="$group__ext__matrix__clip__space.html#ga4da358d6e1b8e5b9ae35d1f3f2dc3b9a" title=" " alt="" coords="225,1547,383,1573"/>
+<area shape="rect" id="node7" href="$group__gtx__matrix__interpolation.html#ga4e67863d150724b10c1ac00972dc958c" title=" " alt="" coords="33,283,143,309"/>
+<area shape="rect" id="node21" href="$group__gtx__intersect.html#gad28c00515b823b579c608aafa1100c1d" title=" " alt="" coords="5,1117,171,1144"/>
+<area shape="rect" id="node29" href="$group__ext__matrix__clip__space.html#ga747c8cf99458663dd7ad1bb3a2f07787" title=" " alt="" coords="30,1521,146,1548"/>
+<area shape="rect" id="node30" href="$group__ext__matrix__clip__space.html#ga9bd34951dc7022ac256fcb51d7f6fc2f" title=" " alt="" coords="22,1420,154,1447"/>
+<area shape="rect" id="node31" href="$group__ext__matrix__clip__space.html#gaf497e6bca61e7c87088370b126a93758" title=" " alt="" coords="21,1572,155,1599"/>
+<area shape="rect" id="node33" href="$group__ext__matrix__clip__space.html#gaa9dfba5c2322da54f72b1eb7c7c11b47" title=" " alt="" coords="21,1471,155,1497"/>
+<area shape="rect" id="node35" href="$group__ext__matrix__clip__space.html#ga26b88757fbd90601b80768a7e1ad3aa1" title=" " alt="" coords="21,1623,155,1649"/>
+</map>

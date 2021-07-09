@@ -1,0 +1,69 @@
+\hypertarget{svttglyf_8h}{}\doxysection{freetype/internal/services/svttglyf.h ファイル}
+\label{svttglyf_8h}\index{freetype/internal/services/svttglyf.h@{freetype/internal/services/svttglyf.h}}
+{\ttfamily \#include $<$freetype/internal/ftserv.\+h$>$}\newline
+{\ttfamily \#include $<$freetype/tttables.\+h$>$}\newline
+svttglyf.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{svttglyf_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{svttglyf_8h_a277503afb1dec8f47c81f6a55ba7de82}{F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+T\+T\+\_\+\+G\+L\+YF}}~\char`\"{}tt-\/glyf\char`\"{}
+\item 
+\#define \mbox{\hyperlink{svttglyf_8h_a6928259001858b94e58fd4b98f5b7802}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+T\+T\+G\+L\+Y\+F\+R\+EC}}(class\+\_\+,  get\+\_\+location\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}}($\ast$ \mbox{\hyperlink{svttglyf_8h_af0cd340c6f9f2aa68abf2ded23db5316}{T\+T\+\_\+\+Glyf\+\_\+\+Get\+Location\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} gindex, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$psize)
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{svttglyf_8h_a32b433b7032ac7f0080fa9a92a888272}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE}} (T\+T\+Glyf)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{svttglyf_8h_a6928259001858b94e58fd4b98f5b7802}\label{svttglyf_8h_a6928259001858b94e58fd4b98f5b7802}} 
+\index{svttglyf.h@{svttglyf.h}!FT\_DEFINE\_SERVICE\_TTGLYFREC@{FT\_DEFINE\_SERVICE\_TTGLYFREC}}
+\index{FT\_DEFINE\_SERVICE\_TTGLYFREC@{FT\_DEFINE\_SERVICE\_TTGLYFREC}!svttglyf.h@{svttglyf.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE\_TTGLYFREC}{FT\_DEFINE\_SERVICE\_TTGLYFREC}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+T\+T\+G\+L\+Y\+F\+R\+EC(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{get\+\_\+location\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{static} \textcolor{keyword}{const} FT\_Service\_TTGlyfRec  class\_ =                 \(\backslash\)}
+\DoxyCodeLine{  \{                                                           \(\backslash\)}
+\DoxyCodeLine{    get\_location\_                                             \(\backslash\)}
+\DoxyCodeLine{  \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{svttglyf_8h_a277503afb1dec8f47c81f6a55ba7de82}\label{svttglyf_8h_a277503afb1dec8f47c81f6a55ba7de82}} 
+\index{svttglyf.h@{svttglyf.h}!FT\_SERVICE\_ID\_TT\_GLYF@{FT\_SERVICE\_ID\_TT\_GLYF}}
+\index{FT\_SERVICE\_ID\_TT\_GLYF@{FT\_SERVICE\_ID\_TT\_GLYF}!svttglyf.h@{svttglyf.h}}
+\doxysubsubsection{\texorpdfstring{FT\_SERVICE\_ID\_TT\_GLYF}{FT\_SERVICE\_ID\_TT\_GLYF}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+T\+T\+\_\+\+G\+L\+YF~\char`\"{}tt-\/glyf\char`\"{}}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{svttglyf_8h_af0cd340c6f9f2aa68abf2ded23db5316}\label{svttglyf_8h_af0cd340c6f9f2aa68abf2ded23db5316}} 
+\index{svttglyf.h@{svttglyf.h}!TT\_Glyf\_GetLocationFunc@{TT\_Glyf\_GetLocationFunc}}
+\index{TT\_Glyf\_GetLocationFunc@{TT\_Glyf\_GetLocationFunc}!svttglyf.h@{svttglyf.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Glyf\_GetLocationFunc}{TT\_Glyf\_GetLocationFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}}($\ast$ T\+T\+\_\+\+Glyf\+\_\+\+Get\+Location\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} gindex, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$psize)}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{svttglyf_8h_a32b433b7032ac7f0080fa9a92a888272}\label{svttglyf_8h_a32b433b7032ac7f0080fa9a92a888272}} 
+\index{svttglyf.h@{svttglyf.h}!FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}}
+\index{FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}!svttglyf.h@{svttglyf.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE()}{FT\_DEFINE\_SERVICE()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE (\begin{DoxyParamCaption}\item[{T\+T\+Glyf}]{ }\end{DoxyParamCaption})}
+

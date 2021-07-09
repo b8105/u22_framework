@@ -1,0 +1,8 @@
+<map id="u22::Window::Create" name="u22::Window::Create">
+<area shape="rect" id="node1" title="作成" alt="" coords="5,107,148,133"/>
+<area shape="rect" id="node2" href="$group__window.html#ga680a02abe0e4494b6759d5703240713e" title="Creates a window and its associated context." alt="" coords="213,5,341,32"/>
+<area shape="rect" id="node3" href="$group__monitor.html#ga59ea49f377fe701dd76764183e64d9f4" title="Returns the primary monitor." alt="" coords="201,56,354,83"/>
+<area shape="rect" id="node4" href="$group__context.html#gafd76c93e15ec8b0b90506a9936a46185" title="Makes the context of the specified window current for the calling thread." alt="" coords="196,107,359,133"/>
+<area shape="rect" id="node5" href="$group__window.html#ga0dc8d880a0d87be16d3ea8114561f6f0" title="Sets the position of the client area of the specified window." alt="" coords="211,157,344,184"/>
+<area shape="rect" id="node6" href="$group__init.html#gafd90e6fd4819ea9e22e5e739519a6504" title="Terminates the GLFW library." alt="" coords="227,208,328,235"/>
+</map>

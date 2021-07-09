@@ -1,0 +1,6 @@
+<map id="alDeleteBuffers" name="alDeleteBuffers">
+<area shape="rect" id="node1" title=" " alt="" coords="256,78,365,105"/>
+<area shape="rect" id="node2" href="$classu22_1_1audio_1_1_audio_buffer.html#ac4bf23bd9bf357444826ead3ff453967" title="削除" alt="" coords="29,5,185,47"/>
+<area shape="rect" id="node3" href="$classu22_1_1audio_1_1_sound_buffer.html#a9042eecaac3e898d243e6a9a7ff27ba5" title="解放" alt="" coords="27,71,187,112"/>
+<area shape="rect" id="node4" href="$classu22_1_1audio_1_1_sound_stream_buffer.html#a3689e9725272b3c1bcb8dfbbb920ddf1" title="解放" alt="" coords="5,136,208,177"/>
+</map>

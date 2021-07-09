@@ -1,0 +1,132 @@
+\hypertarget{ftlcdfil_8h}{}\doxysection{freetype/ftlcdfil.h ファイル}
+\label{ftlcdfil_8h}\index{freetype/ftlcdfil.h@{freetype/ftlcdfil.h}}
+{\ttfamily \#include $<$freetype/freetype.\+h$>$}\newline
+{\ttfamily \#include $<$freetype/ftparams.\+h$>$}\newline
+ftlcdfil.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ftlcdfil_8h__incl}
+\end{center}
+\end{figure}
+被依存関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ftlcdfil_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ftlcdfil_8h_a7c6ed9b6c4e9a1efd92ef16c987bea89}{F\+T\+\_\+\+L\+C\+D\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+F\+I\+V\+E\+\_\+\+T\+A\+PS}}~5
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{public-macros_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER}} enum \mbox{\hyperlink{ftlcdfil_8h_a050b6cfffcf53795587eb8eae7147577}{F\+T\+\_\+\+Lcd\+Filter\+\_\+}} \mbox{\hyperlink{ftlcdfil_8h_aa063aecb411a78f6a7b603d94aab4102}{F\+T\+\_\+\+Lcd\+Filter}}
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} \mbox{\hyperlink{ftlcdfil_8h_aad84df0eb14f9896e340ea965328fead}{F\+T\+\_\+\+Lcd\+Five\+Tap\+Filter}}\mbox{[}\mbox{\hyperlink{ftlcdfil_8h_a7c6ed9b6c4e9a1efd92ef16c987bea89}{F\+T\+\_\+\+L\+C\+D\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+F\+I\+V\+E\+\_\+\+T\+A\+PS}}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{列挙型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{ftlcdfil_8h_a050b6cfffcf53795587eb8eae7147577}{F\+T\+\_\+\+Lcd\+Filter\+\_\+}} \{ \newline
+\mbox{\hyperlink{ftlcdfil_8h_a050b6cfffcf53795587eb8eae7147577ae6fa91add012c5bf6d570188e5b239c4}{F\+T\+\_\+\+L\+C\+D\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+N\+O\+NE}} = 0, 
+\mbox{\hyperlink{ftlcdfil_8h_a050b6cfffcf53795587eb8eae7147577ab606094a9ccac39d5431519a6c4055e3}{F\+T\+\_\+\+L\+C\+D\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+D\+E\+F\+A\+U\+LT}} = 1, 
+\mbox{\hyperlink{ftlcdfil_8h_a050b6cfffcf53795587eb8eae7147577a104fce3f715c045ad3b11f0155abe2b9}{F\+T\+\_\+\+L\+C\+D\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+L\+I\+G\+HT}} = 2, 
+\mbox{\hyperlink{ftlcdfil_8h_a050b6cfffcf53795587eb8eae7147577a146b1e510ec55ea1037aa4f66bada7cc}{F\+T\+\_\+\+L\+C\+D\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+L\+E\+G\+A\+C\+Y1}} = 3, 
+\newline
+\mbox{\hyperlink{ftlcdfil_8h_a050b6cfffcf53795587eb8eae7147577aace329ea0f5d6bcbf45f6b77a038b492}{F\+T\+\_\+\+L\+C\+D\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+L\+E\+G\+A\+CY}} = 16, 
+\mbox{\hyperlink{ftlcdfil_8h_a050b6cfffcf53795587eb8eae7147577a8130ccb414d2e49441cadedf857b2704}{F\+T\+\_\+\+L\+C\+D\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+M\+AX}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ftlcdfil_8h_a230881dc8a783c68ef48fec0bdf37f7a}{F\+T\+\_\+\+Library\+\_\+\+Set\+Lcd\+Filter}} (\mbox{\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\+T\+\_\+\+Library}} library, \mbox{\hyperlink{ftlcdfil_8h_aa063aecb411a78f6a7b603d94aab4102}{F\+T\+\_\+\+Lcd\+Filter}} filter)
+\item 
+\mbox{\hyperlink{ftlcdfil_8h_a8400fa1c5a65e92e71de810d48ee646f}{F\+T\+\_\+\+Library\+\_\+\+Set\+Lcd\+Filter\+Weights}} (\mbox{\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\+T\+\_\+\+Library}} library, unsigned char $\ast$weights)
+\item 
+\mbox{\hyperlink{ftlcdfil_8h_a3a0ea9b4aa9069c36c87fc65fc0308a2}{F\+T\+\_\+\+Library\+\_\+\+Set\+Lcd\+Geometry}} (\mbox{\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\+T\+\_\+\+Library}} library, \mbox{\hyperlink{ftimage_8h_abfcb941b4b81f3a922d4ae57c620db27}{F\+T\+\_\+\+Vector}} sub\mbox{[}3\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{ftlcdfil_8h_a7c6ed9b6c4e9a1efd92ef16c987bea89}\label{ftlcdfil_8h_a7c6ed9b6c4e9a1efd92ef16c987bea89}} 
+\index{ftlcdfil.h@{ftlcdfil.h}!FT\_LCD\_FILTER\_FIVE\_TAPS@{FT\_LCD\_FILTER\_FIVE\_TAPS}}
+\index{FT\_LCD\_FILTER\_FIVE\_TAPS@{FT\_LCD\_FILTER\_FIVE\_TAPS}!ftlcdfil.h@{ftlcdfil.h}}
+\doxysubsubsection{\texorpdfstring{FT\_LCD\_FILTER\_FIVE\_TAPS}{FT\_LCD\_FILTER\_FIVE\_TAPS}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+L\+C\+D\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+F\+I\+V\+E\+\_\+\+T\+A\+PS~5}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{ftlcdfil_8h_aa063aecb411a78f6a7b603d94aab4102}\label{ftlcdfil_8h_aa063aecb411a78f6a7b603d94aab4102}} 
+\index{ftlcdfil.h@{ftlcdfil.h}!FT\_LcdFilter@{FT\_LcdFilter}}
+\index{FT\_LcdFilter@{FT\_LcdFilter}!ftlcdfil.h@{ftlcdfil.h}}
+\doxysubsubsection{\texorpdfstring{FT\_LcdFilter}{FT\_LcdFilter}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{public-macros_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER}} enum \mbox{\hyperlink{ftlcdfil_8h_a050b6cfffcf53795587eb8eae7147577}{F\+T\+\_\+\+Lcd\+Filter\+\_\+}} \mbox{\hyperlink{ftlcdfil_8h_aa063aecb411a78f6a7b603d94aab4102}{F\+T\+\_\+\+Lcd\+Filter}}}
+
+\mbox{\Hypertarget{ftlcdfil_8h_aad84df0eb14f9896e340ea965328fead}\label{ftlcdfil_8h_aad84df0eb14f9896e340ea965328fead}} 
+\index{ftlcdfil.h@{ftlcdfil.h}!FT\_LcdFiveTapFilter@{FT\_LcdFiveTapFilter}}
+\index{FT\_LcdFiveTapFilter@{FT\_LcdFiveTapFilter}!ftlcdfil.h@{ftlcdfil.h}}
+\doxysubsubsection{\texorpdfstring{FT\_LcdFiveTapFilter}{FT\_LcdFiveTapFilter}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} F\+T\+\_\+\+Lcd\+Five\+Tap\+Filter\mbox{[}\mbox{\hyperlink{ftlcdfil_8h_a7c6ed9b6c4e9a1efd92ef16c987bea89}{F\+T\+\_\+\+L\+C\+D\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+F\+I\+V\+E\+\_\+\+T\+A\+PS}}\mbox{]}}
+
+
+
+\doxysubsection{列挙型詳解}
+\mbox{\Hypertarget{ftlcdfil_8h_a050b6cfffcf53795587eb8eae7147577}\label{ftlcdfil_8h_a050b6cfffcf53795587eb8eae7147577}} 
+\index{ftlcdfil.h@{ftlcdfil.h}!FT\_LcdFilter\_@{FT\_LcdFilter\_}}
+\index{FT\_LcdFilter\_@{FT\_LcdFilter\_}!ftlcdfil.h@{ftlcdfil.h}}
+\doxysubsubsection{\texorpdfstring{FT\_LcdFilter\_}{FT\_LcdFilter\_}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ftlcdfil_8h_a050b6cfffcf53795587eb8eae7147577}{F\+T\+\_\+\+Lcd\+Filter\+\_\+}}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FT\_LCD\_FILTER\_NONE@{FT\_LCD\_FILTER\_NONE}!ftlcdfil.h@{ftlcdfil.h}}\index{ftlcdfil.h@{ftlcdfil.h}!FT\_LCD\_FILTER\_NONE@{FT\_LCD\_FILTER\_NONE}}}\mbox{\Hypertarget{ftlcdfil_8h_a050b6cfffcf53795587eb8eae7147577ae6fa91add012c5bf6d570188e5b239c4}\label{ftlcdfil_8h_a050b6cfffcf53795587eb8eae7147577ae6fa91add012c5bf6d570188e5b239c4}} 
+F\+T\+\_\+\+L\+C\+D\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FT\_LCD\_FILTER\_DEFAULT@{FT\_LCD\_FILTER\_DEFAULT}!ftlcdfil.h@{ftlcdfil.h}}\index{ftlcdfil.h@{ftlcdfil.h}!FT\_LCD\_FILTER\_DEFAULT@{FT\_LCD\_FILTER\_DEFAULT}}}\mbox{\Hypertarget{ftlcdfil_8h_a050b6cfffcf53795587eb8eae7147577ab606094a9ccac39d5431519a6c4055e3}\label{ftlcdfil_8h_a050b6cfffcf53795587eb8eae7147577ab606094a9ccac39d5431519a6c4055e3}} 
+F\+T\+\_\+\+L\+C\+D\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+D\+E\+F\+A\+U\+LT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FT\_LCD\_FILTER\_LIGHT@{FT\_LCD\_FILTER\_LIGHT}!ftlcdfil.h@{ftlcdfil.h}}\index{ftlcdfil.h@{ftlcdfil.h}!FT\_LCD\_FILTER\_LIGHT@{FT\_LCD\_FILTER\_LIGHT}}}\mbox{\Hypertarget{ftlcdfil_8h_a050b6cfffcf53795587eb8eae7147577a104fce3f715c045ad3b11f0155abe2b9}\label{ftlcdfil_8h_a050b6cfffcf53795587eb8eae7147577a104fce3f715c045ad3b11f0155abe2b9}} 
+F\+T\+\_\+\+L\+C\+D\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+L\+I\+G\+HT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FT\_LCD\_FILTER\_LEGACY1@{FT\_LCD\_FILTER\_LEGACY1}!ftlcdfil.h@{ftlcdfil.h}}\index{ftlcdfil.h@{ftlcdfil.h}!FT\_LCD\_FILTER\_LEGACY1@{FT\_LCD\_FILTER\_LEGACY1}}}\mbox{\Hypertarget{ftlcdfil_8h_a050b6cfffcf53795587eb8eae7147577a146b1e510ec55ea1037aa4f66bada7cc}\label{ftlcdfil_8h_a050b6cfffcf53795587eb8eae7147577a146b1e510ec55ea1037aa4f66bada7cc}} 
+F\+T\+\_\+\+L\+C\+D\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+L\+E\+G\+A\+C\+Y1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FT\_LCD\_FILTER\_LEGACY@{FT\_LCD\_FILTER\_LEGACY}!ftlcdfil.h@{ftlcdfil.h}}\index{ftlcdfil.h@{ftlcdfil.h}!FT\_LCD\_FILTER\_LEGACY@{FT\_LCD\_FILTER\_LEGACY}}}\mbox{\Hypertarget{ftlcdfil_8h_a050b6cfffcf53795587eb8eae7147577aace329ea0f5d6bcbf45f6b77a038b492}\label{ftlcdfil_8h_a050b6cfffcf53795587eb8eae7147577aace329ea0f5d6bcbf45f6b77a038b492}} 
+F\+T\+\_\+\+L\+C\+D\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+L\+E\+G\+A\+CY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FT\_LCD\_FILTER\_MAX@{FT\_LCD\_FILTER\_MAX}!ftlcdfil.h@{ftlcdfil.h}}\index{ftlcdfil.h@{ftlcdfil.h}!FT\_LCD\_FILTER\_MAX@{FT\_LCD\_FILTER\_MAX}}}\mbox{\Hypertarget{ftlcdfil_8h_a050b6cfffcf53795587eb8eae7147577a8130ccb414d2e49441cadedf857b2704}\label{ftlcdfil_8h_a050b6cfffcf53795587eb8eae7147577a8130ccb414d2e49441cadedf857b2704}} 
+F\+T\+\_\+\+L\+C\+D\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+M\+AX&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{ftlcdfil_8h_a230881dc8a783c68ef48fec0bdf37f7a}\label{ftlcdfil_8h_a230881dc8a783c68ef48fec0bdf37f7a}} 
+\index{ftlcdfil.h@{ftlcdfil.h}!FT\_Library\_SetLcdFilter@{FT\_Library\_SetLcdFilter}}
+\index{FT\_Library\_SetLcdFilter@{FT\_Library\_SetLcdFilter}!ftlcdfil.h@{ftlcdfil.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Library\_SetLcdFilter()}{FT\_Library\_SetLcdFilter()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Library\+\_\+\+Set\+Lcd\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\+T\+\_\+\+Library}}}]{library,  }\item[{\mbox{\hyperlink{ftlcdfil_8h_aa063aecb411a78f6a7b603d94aab4102}{F\+T\+\_\+\+Lcd\+Filter}}}]{filter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftlcdfil_8h_a8400fa1c5a65e92e71de810d48ee646f}\label{ftlcdfil_8h_a8400fa1c5a65e92e71de810d48ee646f}} 
+\index{ftlcdfil.h@{ftlcdfil.h}!FT\_Library\_SetLcdFilterWeights@{FT\_Library\_SetLcdFilterWeights}}
+\index{FT\_Library\_SetLcdFilterWeights@{FT\_Library\_SetLcdFilterWeights}!ftlcdfil.h@{ftlcdfil.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Library\_SetLcdFilterWeights()}{FT\_Library\_SetLcdFilterWeights()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Library\+\_\+\+Set\+Lcd\+Filter\+Weights (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\+T\+\_\+\+Library}}}]{library,  }\item[{unsigned char $\ast$}]{weights }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftlcdfil_8h_a3a0ea9b4aa9069c36c87fc65fc0308a2}\label{ftlcdfil_8h_a3a0ea9b4aa9069c36c87fc65fc0308a2}} 
+\index{ftlcdfil.h@{ftlcdfil.h}!FT\_Library\_SetLcdGeometry@{FT\_Library\_SetLcdGeometry}}
+\index{FT\_Library\_SetLcdGeometry@{FT\_Library\_SetLcdGeometry}!ftlcdfil.h@{ftlcdfil.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Library\_SetLcdGeometry()}{FT\_Library\_SetLcdGeometry()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Library\+\_\+\+Set\+Lcd\+Geometry (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\+T\+\_\+\+Library}}}]{library,  }\item[{\mbox{\hyperlink{ftimage_8h_abfcb941b4b81f3a922d4ae57c620db27}{F\+T\+\_\+\+Vector}}}]{sub\mbox{[}3\mbox{]} }\end{DoxyParamCaption})}
+

@@ -1,0 +1,17 @@
+<map id="glm::orientate3" name="glm::orientate3">
+<area shape="rect" id="node1" title=" " alt="" coords="5,131,113,157"/>
+<area shape="rect" id="node2" href="$group__gtx__euler__angles.html#gae6aa26ccb020d281b449619e419a609e" title=" " alt="" coords="161,131,288,157"/>
+<area shape="rect" id="node3" href="$group__core__func__trigonometric.html#ga6a41efc740e3b3c937447d3a6284130e" title=" " alt="" coords="339,29,411,56"/>
+<area shape="rect" id="node4" href="$group__gtc__quaternion.html#ga7603e81477b46ddb448896909bc04928" title=" " alt="" coords="336,80,415,107"/>
+<area shape="rect" id="node9" href="$group__gtc__quaternion.html#ga0cc5ad970d0b00829b139fe0fe5a1e13" title=" " alt="" coords="341,131,409,157"/>
+<area shape="rect" id="node10" href="$group__core__func__trigonometric.html#ga29747fd108cb7292ae5a284f69691a69" title=" " alt="" coords="341,205,409,232"/>
+<area shape="rect" id="node11" href="$group__gtc__quaternion.html#ga8da38cdfdc452dafa660c2f46506bad5" title=" " alt="" coords="338,256,413,283"/>
+<area shape="rect" id="node5" href="$group__core__func__vector__relational.html#ga87e53f50b679f5f95c5cb4780311b3dd" title=" " alt="" coords="474,29,538,56"/>
+<area shape="rect" id="node6" href="$namespaceglm.html#a29204e55958a4011bfd1a6df7129984b" title=" " alt="" coords="468,131,544,157"/>
+<area shape="rect" id="node8" href="$group__core__func__vector__relational.html#gab4c5cfdaa70834421397a85aa83ad946" title=" " alt="" coords="465,80,547,107"/>
+<area shape="rect" id="node7" href="$group__gtx__compatibility.html#gac63011205bf6d0be82589dc56dd26708" title="Arc tangent. Returns an angle whose tangent is y/x. The signs of x and y are used to determine what q..." alt="" coords="597,131,680,157"/>
+<area shape="rect" id="node12" href="$group__core__func__trigonometric.html#ga0552d2df4865fa8c3d7cfc3ec2caac73" title=" " alt="" coords="469,231,543,257"/>
+<area shape="rect" id="node13" href="$group__core__func__common.html#ga7cd77683da6361e297c56443fc70806d" title=" " alt="" coords="463,281,549,308"/>
+<area shape="rect" id="node14" href="$group__core__func__common.html#gae02d42887fc5570451f880e3c624b9ac" title=" " alt="" coords="601,256,677,283"/>
+<area shape="rect" id="node15" href="$group__core__func__common.html#ga6cf8098827054a270ee36b18e30d471d" title=" " alt="" coords="603,307,675,333"/>
+</map>

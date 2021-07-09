@@ -1,0 +1,175 @@
+\hypertarget{ftdrv_8h}{}\doxysection{freetype/internal/ftdrv.h ファイル}
+\label{ftdrv_8h}\index{freetype/internal/ftdrv.h@{freetype/internal/ftdrv.h}}
+{\ttfamily \#include $<$freetype/ftmodapi.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}compiler-\/macros.\+h\char`\"{}}\newline
+ftdrv.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ftdrv_8h__incl}
+\end{center}
+\end{figure}
+被依存関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ftdrv_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_f_t___driver___class_rec__}{F\+T\+\_\+\+Driver\+\_\+\+Class\+Rec\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ftdrv_8h_ad6ebab82752358828cd2359c863aa2c9}{F\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+R\+I\+V\+ER}}(class\+\_\+)
+\item 
+\#define \mbox{\hyperlink{ftdrv_8h_a301c2594590b851f89abf740c76efd57}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+D\+R\+I\+V\+ER}}( class\+\_\+,  flags\+\_\+,  size\+\_\+,  name\+\_\+,  version\+\_\+,  requires\+\_\+,  interface\+\_\+,  init\+\_\+,  done\+\_\+,  get\+\_\+interface\+\_\+,  face\+\_\+object\+\_\+size\+\_\+,  size\+\_\+object\+\_\+size\+\_\+,  slot\+\_\+object\+\_\+size\+\_\+,  init\+\_\+face\+\_\+,  done\+\_\+face\+\_\+,  init\+\_\+size\+\_\+,  done\+\_\+size\+\_\+,  init\+\_\+slot\+\_\+,  done\+\_\+slot\+\_\+,  load\+\_\+glyph\+\_\+,  get\+\_\+kerning\+\_\+,  attach\+\_\+file\+\_\+,  get\+\_\+advances\+\_\+,  request\+\_\+size\+\_\+,  select\+\_\+size\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{ftdrv_8h_a13d29bae37d5389d84c0d7c2e433d593}{F\+T\+\_\+\+Face\+\_\+\+Done\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{ftdrv_8h_abb1c10610365a6a508a7434effbf994b}{F\+T\+\_\+\+Size\+\_\+\+Init\+Func}}) (\mbox{\hyperlink{freetype_8h_a791d0ff3273ca9628a523efd98d138c1}{F\+T\+\_\+\+Size}} size)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{ftdrv_8h_a76543caab721cef117cded600eebe0d3}{F\+T\+\_\+\+Size\+\_\+\+Done\+Func}}) (\mbox{\hyperlink{freetype_8h_a791d0ff3273ca9628a523efd98d138c1}{F\+T\+\_\+\+Size}} size)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{ftdrv_8h_a9aeb6080b6d9190c4af4656e55d41ac8}{F\+T\+\_\+\+Slot\+\_\+\+Init\+Func}}) (\mbox{\hyperlink{freetype_8h_a768daa0d9c3fa499e6c37034ee9f2ca3}{F\+T\+\_\+\+Glyph\+Slot}} slot)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{ftdrv_8h_abcb3d5f7769189d7c08a83a6149321c1}{F\+T\+\_\+\+Slot\+\_\+\+Done\+Func}}) (\mbox{\hyperlink{freetype_8h_a768daa0d9c3fa499e6c37034ee9f2ca3}{F\+T\+\_\+\+Glyph\+Slot}} slot)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{ftdrv_8h_a15e987f91032d444d61875d8ea735e3b}{F\+T\+\_\+\+Size\+\_\+\+Request\+Func}}) (\mbox{\hyperlink{freetype_8h_a791d0ff3273ca9628a523efd98d138c1}{F\+T\+\_\+\+Size}} size, \mbox{\hyperlink{freetype_8h_a7306d364ecf834b999a7d8462d0c8668}{F\+T\+\_\+\+Size\+\_\+\+Request}} req)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{ftdrv_8h_ad24cd5fbc72a4e432be4676a2d7f700b}{F\+T\+\_\+\+Size\+\_\+\+Select\+Func}}) (\mbox{\hyperlink{freetype_8h_a791d0ff3273ca9628a523efd98d138c1}{F\+T\+\_\+\+Size}} size, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} size\+\_\+index)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{ftdrv_8h_a45d2764127581beaa049b48f32cc5c39}{F\+T\+\_\+\+Slot\+\_\+\+Load\+Func}}) (\mbox{\hyperlink{freetype_8h_a768daa0d9c3fa499e6c37034ee9f2ca3}{F\+T\+\_\+\+Glyph\+Slot}} slot, \mbox{\hyperlink{freetype_8h_a791d0ff3273ca9628a523efd98d138c1}{F\+T\+\_\+\+Size}} size, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} glyph\+\_\+index, F\+T\+\_\+\+Int32 load\+\_\+flags)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{ftdrv_8h_a57ef03e416e28e6981e01e83fcf68b4e}{F\+T\+\_\+\+Face\+\_\+\+Get\+Kerning\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} left\+\_\+glyph, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} right\+\_\+glyph, \mbox{\hyperlink{ftimage_8h_abfcb941b4b81f3a922d4ae57c620db27}{F\+T\+\_\+\+Vector}} $\ast$kerning)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{ftdrv_8h_aa74e8fd695d70c4d1ca220116172f33d}{F\+T\+\_\+\+Face\+\_\+\+Attach\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{ftdrv_8h_ad08752b2a3f79d4f32489a99a535481a}{F\+T\+\_\+\+Face\+\_\+\+Get\+Advances\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} first, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} count, F\+T\+\_\+\+Int32 flags, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$advances)
+\item 
+typedef struct \mbox{\hyperlink{struct_f_t___driver___class_rec__}{F\+T\+\_\+\+Driver\+\_\+\+Class\+Rec\+\_\+}} \mbox{\hyperlink{ftdrv_8h_a57f9368fa4a66804639f104da3cb0780}{F\+T\+\_\+\+Driver\+\_\+\+Class\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_f_t___driver___class_rec__}{F\+T\+\_\+\+Driver\+\_\+\+Class\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{ftdrv_8h_abb8124be69e585349506b14fa2dba4de}{F\+T\+\_\+\+Driver\+\_\+\+Class}}
+\end{DoxyCompactItemize}
+\doxysubsection*{変数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{public-macros_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER}} typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{ftdrv_8h_af26746d2a05245d77ece407c7e0576b3}{F\+T\+\_\+\+Face\+\_\+\+Init\+Func}} )(\mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream, \mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} typeface\+\_\+index, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} num\+\_\+params, \mbox{\hyperlink{freetype_8h_a1647d861933dce4c11d35d33b264bcee}{F\+T\+\_\+\+Parameter}} $\ast$parameters)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{ftdrv_8h_ad6ebab82752358828cd2359c863aa2c9}\label{ftdrv_8h_ad6ebab82752358828cd2359c863aa2c9}} 
+\index{ftdrv.h@{ftdrv.h}!FT\_DECLARE\_DRIVER@{FT\_DECLARE\_DRIVER}}
+\index{FT\_DECLARE\_DRIVER@{FT\_DECLARE\_DRIVER}!ftdrv.h@{ftdrv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DECLARE\_DRIVER}{FT\_DECLARE\_DRIVER}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+D\+R\+I\+V\+ER(\begin{DoxyParamCaption}\item[{}]{class\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  FT\_CALLBACK\_TABLE                  \(\backslash\)}
+\DoxyCodeLine{  const \mbox{\hyperlink{struct_f_t___driver___class_rec__}{FT\_Driver\_ClassRec}}  class\_;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ftdrv_8h_a301c2594590b851f89abf740c76efd57}\label{ftdrv_8h_a301c2594590b851f89abf740c76efd57}} 
+\index{ftdrv.h@{ftdrv.h}!FT\_DEFINE\_DRIVER@{FT\_DEFINE\_DRIVER}}
+\index{FT\_DEFINE\_DRIVER@{FT\_DEFINE\_DRIVER}!ftdrv.h@{ftdrv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_DRIVER}{FT\_DEFINE\_DRIVER}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+D\+R\+I\+V\+ER(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{flags\+\_\+,  }\item[{}]{size\+\_\+,  }\item[{}]{name\+\_\+,  }\item[{}]{version\+\_\+,  }\item[{}]{requires\+\_\+,  }\item[{}]{interface\+\_\+,  }\item[{}]{init\+\_\+,  }\item[{}]{done\+\_\+,  }\item[{}]{get\+\_\+interface\+\_\+,  }\item[{}]{face\+\_\+object\+\_\+size\+\_\+,  }\item[{}]{size\+\_\+object\+\_\+size\+\_\+,  }\item[{}]{slot\+\_\+object\+\_\+size\+\_\+,  }\item[{}]{init\+\_\+face\+\_\+,  }\item[{}]{done\+\_\+face\+\_\+,  }\item[{}]{init\+\_\+size\+\_\+,  }\item[{}]{done\+\_\+size\+\_\+,  }\item[{}]{init\+\_\+slot\+\_\+,  }\item[{}]{done\+\_\+slot\+\_\+,  }\item[{}]{load\+\_\+glyph\+\_\+,  }\item[{}]{get\+\_\+kerning\+\_\+,  }\item[{}]{attach\+\_\+file\+\_\+,  }\item[{}]{get\+\_\+advances\+\_\+,  }\item[{}]{request\+\_\+size\+\_\+,  }\item[{}]{select\+\_\+size\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{ftdrv_8h_abb8124be69e585349506b14fa2dba4de}\label{ftdrv_8h_abb8124be69e585349506b14fa2dba4de}} 
+\index{ftdrv.h@{ftdrv.h}!FT\_Driver\_Class@{FT\_Driver\_Class}}
+\index{FT\_Driver\_Class@{FT\_Driver\_Class}!ftdrv.h@{ftdrv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Driver\_Class}{FT\_Driver\_Class}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_f_t___driver___class_rec__}{F\+T\+\_\+\+Driver\+\_\+\+Class\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{ftdrv_8h_abb8124be69e585349506b14fa2dba4de}{F\+T\+\_\+\+Driver\+\_\+\+Class}}}
+
+\mbox{\Hypertarget{ftdrv_8h_a57f9368fa4a66804639f104da3cb0780}\label{ftdrv_8h_a57f9368fa4a66804639f104da3cb0780}} 
+\index{ftdrv.h@{ftdrv.h}!FT\_Driver\_ClassRec@{FT\_Driver\_ClassRec}}
+\index{FT\_Driver\_ClassRec@{FT\_Driver\_ClassRec}!ftdrv.h@{ftdrv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Driver\_ClassRec}{FT\_Driver\_ClassRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_f_t___driver___class_rec__}{F\+T\+\_\+\+Driver\+\_\+\+Class\+Rec\+\_\+}} \mbox{\hyperlink{ftdrv_8h_a57f9368fa4a66804639f104da3cb0780}{F\+T\+\_\+\+Driver\+\_\+\+Class\+Rec}}}
+
+\mbox{\Hypertarget{ftdrv_8h_aa74e8fd695d70c4d1ca220116172f33d}\label{ftdrv_8h_aa74e8fd695d70c4d1ca220116172f33d}} 
+\index{ftdrv.h@{ftdrv.h}!FT\_Face\_AttachFunc@{FT\_Face\_AttachFunc}}
+\index{FT\_Face\_AttachFunc@{FT\_Face\_AttachFunc}!ftdrv.h@{ftdrv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Face\_AttachFunc}{FT\_Face\_AttachFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+Face\+\_\+\+Attach\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream)}
+
+\mbox{\Hypertarget{ftdrv_8h_a13d29bae37d5389d84c0d7c2e433d593}\label{ftdrv_8h_a13d29bae37d5389d84c0d7c2e433d593}} 
+\index{ftdrv.h@{ftdrv.h}!FT\_Face\_DoneFunc@{FT\_Face\_DoneFunc}}
+\index{FT\_Face\_DoneFunc@{FT\_Face\_DoneFunc}!ftdrv.h@{ftdrv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Face\_DoneFunc}{FT\_Face\_DoneFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ F\+T\+\_\+\+Face\+\_\+\+Done\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face)}
+
+\mbox{\Hypertarget{ftdrv_8h_ad08752b2a3f79d4f32489a99a535481a}\label{ftdrv_8h_ad08752b2a3f79d4f32489a99a535481a}} 
+\index{ftdrv.h@{ftdrv.h}!FT\_Face\_GetAdvancesFunc@{FT\_Face\_GetAdvancesFunc}}
+\index{FT\_Face\_GetAdvancesFunc@{FT\_Face\_GetAdvancesFunc}!ftdrv.h@{ftdrv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Face\_GetAdvancesFunc}{FT\_Face\_GetAdvancesFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+Face\+\_\+\+Get\+Advances\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} first, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} count, F\+T\+\_\+\+Int32 flags, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$advances)}
+
+\mbox{\Hypertarget{ftdrv_8h_a57ef03e416e28e6981e01e83fcf68b4e}\label{ftdrv_8h_a57ef03e416e28e6981e01e83fcf68b4e}} 
+\index{ftdrv.h@{ftdrv.h}!FT\_Face\_GetKerningFunc@{FT\_Face\_GetKerningFunc}}
+\index{FT\_Face\_GetKerningFunc@{FT\_Face\_GetKerningFunc}!ftdrv.h@{ftdrv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Face\_GetKerningFunc}{FT\_Face\_GetKerningFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+Face\+\_\+\+Get\+Kerning\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} left\+\_\+glyph, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} right\+\_\+glyph, \mbox{\hyperlink{ftimage_8h_abfcb941b4b81f3a922d4ae57c620db27}{F\+T\+\_\+\+Vector}} $\ast$kerning)}
+
+\mbox{\Hypertarget{ftdrv_8h_a76543caab721cef117cded600eebe0d3}\label{ftdrv_8h_a76543caab721cef117cded600eebe0d3}} 
+\index{ftdrv.h@{ftdrv.h}!FT\_Size\_DoneFunc@{FT\_Size\_DoneFunc}}
+\index{FT\_Size\_DoneFunc@{FT\_Size\_DoneFunc}!ftdrv.h@{ftdrv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Size\_DoneFunc}{FT\_Size\_DoneFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ F\+T\+\_\+\+Size\+\_\+\+Done\+Func) (\mbox{\hyperlink{freetype_8h_a791d0ff3273ca9628a523efd98d138c1}{F\+T\+\_\+\+Size}} size)}
+
+\mbox{\Hypertarget{ftdrv_8h_abb1c10610365a6a508a7434effbf994b}\label{ftdrv_8h_abb1c10610365a6a508a7434effbf994b}} 
+\index{ftdrv.h@{ftdrv.h}!FT\_Size\_InitFunc@{FT\_Size\_InitFunc}}
+\index{FT\_Size\_InitFunc@{FT\_Size\_InitFunc}!ftdrv.h@{ftdrv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Size\_InitFunc}{FT\_Size\_InitFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+Size\+\_\+\+Init\+Func) (\mbox{\hyperlink{freetype_8h_a791d0ff3273ca9628a523efd98d138c1}{F\+T\+\_\+\+Size}} size)}
+
+\mbox{\Hypertarget{ftdrv_8h_a15e987f91032d444d61875d8ea735e3b}\label{ftdrv_8h_a15e987f91032d444d61875d8ea735e3b}} 
+\index{ftdrv.h@{ftdrv.h}!FT\_Size\_RequestFunc@{FT\_Size\_RequestFunc}}
+\index{FT\_Size\_RequestFunc@{FT\_Size\_RequestFunc}!ftdrv.h@{ftdrv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Size\_RequestFunc}{FT\_Size\_RequestFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+Size\+\_\+\+Request\+Func) (\mbox{\hyperlink{freetype_8h_a791d0ff3273ca9628a523efd98d138c1}{F\+T\+\_\+\+Size}} size, \mbox{\hyperlink{freetype_8h_a7306d364ecf834b999a7d8462d0c8668}{F\+T\+\_\+\+Size\+\_\+\+Request}} req)}
+
+\mbox{\Hypertarget{ftdrv_8h_ad24cd5fbc72a4e432be4676a2d7f700b}\label{ftdrv_8h_ad24cd5fbc72a4e432be4676a2d7f700b}} 
+\index{ftdrv.h@{ftdrv.h}!FT\_Size\_SelectFunc@{FT\_Size\_SelectFunc}}
+\index{FT\_Size\_SelectFunc@{FT\_Size\_SelectFunc}!ftdrv.h@{ftdrv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Size\_SelectFunc}{FT\_Size\_SelectFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+Size\+\_\+\+Select\+Func) (\mbox{\hyperlink{freetype_8h_a791d0ff3273ca9628a523efd98d138c1}{F\+T\+\_\+\+Size}} size, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} size\+\_\+index)}
+
+\mbox{\Hypertarget{ftdrv_8h_abcb3d5f7769189d7c08a83a6149321c1}\label{ftdrv_8h_abcb3d5f7769189d7c08a83a6149321c1}} 
+\index{ftdrv.h@{ftdrv.h}!FT\_Slot\_DoneFunc@{FT\_Slot\_DoneFunc}}
+\index{FT\_Slot\_DoneFunc@{FT\_Slot\_DoneFunc}!ftdrv.h@{ftdrv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Slot\_DoneFunc}{FT\_Slot\_DoneFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ F\+T\+\_\+\+Slot\+\_\+\+Done\+Func) (\mbox{\hyperlink{freetype_8h_a768daa0d9c3fa499e6c37034ee9f2ca3}{F\+T\+\_\+\+Glyph\+Slot}} slot)}
+
+\mbox{\Hypertarget{ftdrv_8h_a9aeb6080b6d9190c4af4656e55d41ac8}\label{ftdrv_8h_a9aeb6080b6d9190c4af4656e55d41ac8}} 
+\index{ftdrv.h@{ftdrv.h}!FT\_Slot\_InitFunc@{FT\_Slot\_InitFunc}}
+\index{FT\_Slot\_InitFunc@{FT\_Slot\_InitFunc}!ftdrv.h@{ftdrv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Slot\_InitFunc}{FT\_Slot\_InitFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+Slot\+\_\+\+Init\+Func) (\mbox{\hyperlink{freetype_8h_a768daa0d9c3fa499e6c37034ee9f2ca3}{F\+T\+\_\+\+Glyph\+Slot}} slot)}
+
+\mbox{\Hypertarget{ftdrv_8h_a45d2764127581beaa049b48f32cc5c39}\label{ftdrv_8h_a45d2764127581beaa049b48f32cc5c39}} 
+\index{ftdrv.h@{ftdrv.h}!FT\_Slot\_LoadFunc@{FT\_Slot\_LoadFunc}}
+\index{FT\_Slot\_LoadFunc@{FT\_Slot\_LoadFunc}!ftdrv.h@{ftdrv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Slot\_LoadFunc}{FT\_Slot\_LoadFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+Slot\+\_\+\+Load\+Func) (\mbox{\hyperlink{freetype_8h_a768daa0d9c3fa499e6c37034ee9f2ca3}{F\+T\+\_\+\+Glyph\+Slot}} slot, \mbox{\hyperlink{freetype_8h_a791d0ff3273ca9628a523efd98d138c1}{F\+T\+\_\+\+Size}} size, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} glyph\+\_\+index, F\+T\+\_\+\+Int32 load\+\_\+flags)}
+
+
+
+\doxysubsection{変数詳解}
+\mbox{\Hypertarget{ftdrv_8h_af26746d2a05245d77ece407c7e0576b3}\label{ftdrv_8h_af26746d2a05245d77ece407c7e0576b3}} 
+\index{ftdrv.h@{ftdrv.h}!FT\_Face\_InitFunc@{FT\_Face\_InitFunc}}
+\index{FT\_Face\_InitFunc@{FT\_Face\_InitFunc}!ftdrv.h@{ftdrv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Face\_InitFunc}{FT\_Face\_InitFunc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{public-macros_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER}} typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+Face\+\_\+\+Init\+Func) (\mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream, \mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} typeface\+\_\+index, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} num\+\_\+params, \mbox{\hyperlink{freetype_8h_a1647d861933dce4c11d35d33b264bcee}{F\+T\+\_\+\+Parameter}} $\ast$parameters)}
+

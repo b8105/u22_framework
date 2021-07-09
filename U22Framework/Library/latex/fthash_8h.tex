@@ -1,0 +1,164 @@
+\hypertarget{fthash_8h}{}\doxysection{freetype/internal/fthash.h ファイル}
+\label{fthash_8h}\index{freetype/internal/fthash.h@{freetype/internal/fthash.h}}
+{\ttfamily \#include $<$freetype/freetype.\+h$>$}\newline
+fthash.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fthash_8h__incl}
+\end{center}
+\end{figure}
+被依存関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fthash_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+union \mbox{\hyperlink{union_f_t___hashkey__}{F\+T\+\_\+\+Hashkey\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_f_t___hashnode_rec__}{F\+T\+\_\+\+Hashnode\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_f_t___hash_rec__}{F\+T\+\_\+\+Hash\+Rec\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{fthash_8h_a32e93ba1d4f59a6b8ae732340ca770a1}{ft\+\_\+hash\+\_\+num\+\_\+free}}~\mbox{\hyperlink{fthash_8h_a37477f81553fb35742f81d07698bb614}{ft\+\_\+hash\+\_\+str\+\_\+free}}
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{public-macros_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER}} union \mbox{\hyperlink{union_f_t___hashkey__}{F\+T\+\_\+\+Hashkey\+\_\+}} \mbox{\hyperlink{fthash_8h_a546f40770d5d8901f7f1a85c53ba92e3}{F\+T\+\_\+\+Hashkey}}
+\item 
+typedef struct \mbox{\hyperlink{struct_f_t___hashnode_rec__}{F\+T\+\_\+\+Hashnode\+Rec\+\_\+}} \mbox{\hyperlink{fthash_8h_af27315a671e7174d4faea67b8ce540b6}{F\+T\+\_\+\+Hashnode\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_f_t___hashnode_rec__}{F\+T\+\_\+\+Hashnode\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{fthash_8h_ac09d9b509705e167e3e5882b7a12b97e}{F\+T\+\_\+\+Hashnode}}
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}}($\ast$ \mbox{\hyperlink{fthash_8h_a929f5ecf758f2eab42f2afac42d3f99e}{F\+T\+\_\+\+Hash\+\_\+\+Lookup\+Func}}) (\mbox{\hyperlink{fthash_8h_a546f40770d5d8901f7f1a85c53ba92e3}{F\+T\+\_\+\+Hashkey}} $\ast$key)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}}($\ast$ \mbox{\hyperlink{fthash_8h_a730ce3ef6bfaa6544cccc0a99026a350}{F\+T\+\_\+\+Hash\+\_\+\+Compare\+Func}}) (\mbox{\hyperlink{fthash_8h_a546f40770d5d8901f7f1a85c53ba92e3}{F\+T\+\_\+\+Hashkey}} $\ast$a, \mbox{\hyperlink{fthash_8h_a546f40770d5d8901f7f1a85c53ba92e3}{F\+T\+\_\+\+Hashkey}} $\ast$b)
+\item 
+typedef struct \mbox{\hyperlink{struct_f_t___hash_rec__}{F\+T\+\_\+\+Hash\+Rec\+\_\+}} \mbox{\hyperlink{fthash_8h_ae7f3d499920b5305314992c9886b63bc}{F\+T\+\_\+\+Hash\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_f_t___hash_rec__}{F\+T\+\_\+\+Hash\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{fthash_8h_a0cb2366c4ff7d31bceb8a1ee4bc0abb9}{F\+T\+\_\+\+Hash}}
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}} \mbox{\hyperlink{fthash_8h_ae79ddf14251e068d0d3e616d1541f80a}{ft\+\_\+hash\+\_\+str\+\_\+init}} (\mbox{\hyperlink{fthash_8h_a0cb2366c4ff7d31bceb8a1ee4bc0abb9}{F\+T\+\_\+\+Hash}} hash, \mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} memory)
+\item 
+\mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}} \mbox{\hyperlink{fthash_8h_a680113fe944fd85b6ab6b6c445e1d14b}{ft\+\_\+hash\+\_\+num\+\_\+init}} (\mbox{\hyperlink{fthash_8h_a0cb2366c4ff7d31bceb8a1ee4bc0abb9}{F\+T\+\_\+\+Hash}} hash, \mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} memory)
+\item 
+void \mbox{\hyperlink{fthash_8h_a37477f81553fb35742f81d07698bb614}{ft\+\_\+hash\+\_\+str\+\_\+free}} (\mbox{\hyperlink{fthash_8h_a0cb2366c4ff7d31bceb8a1ee4bc0abb9}{F\+T\+\_\+\+Hash}} hash, \mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} memory)
+\item 
+\mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}} \mbox{\hyperlink{fthash_8h_af305eab5d1df6131cbc122ba4f32fb09}{ft\+\_\+hash\+\_\+str\+\_\+insert}} (const char $\ast$key, size\+\_\+t data, \mbox{\hyperlink{fthash_8h_a0cb2366c4ff7d31bceb8a1ee4bc0abb9}{F\+T\+\_\+\+Hash}} hash, \mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} memory)
+\item 
+\mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}} \mbox{\hyperlink{fthash_8h_ab2ed7d26faa1e4d461180b9a1937449f}{ft\+\_\+hash\+\_\+num\+\_\+insert}} (\mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} num, size\+\_\+t data, \mbox{\hyperlink{fthash_8h_a0cb2366c4ff7d31bceb8a1ee4bc0abb9}{F\+T\+\_\+\+Hash}} hash, \mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} memory)
+\item 
+size\+\_\+t $\ast$ \mbox{\hyperlink{fthash_8h_af015f3abadab787fc5d369d7659d430d}{ft\+\_\+hash\+\_\+str\+\_\+lookup}} (const char $\ast$key, \mbox{\hyperlink{fthash_8h_a0cb2366c4ff7d31bceb8a1ee4bc0abb9}{F\+T\+\_\+\+Hash}} hash)
+\item 
+size\+\_\+t $\ast$ \mbox{\hyperlink{fthash_8h_ab79d7a997dfc2c94786f6a066b12dc58}{ft\+\_\+hash\+\_\+num\+\_\+lookup}} (\mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} num, \mbox{\hyperlink{fthash_8h_a0cb2366c4ff7d31bceb8a1ee4bc0abb9}{F\+T\+\_\+\+Hash}} hash)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{fthash_8h_a32e93ba1d4f59a6b8ae732340ca770a1}\label{fthash_8h_a32e93ba1d4f59a6b8ae732340ca770a1}} 
+\index{fthash.h@{fthash.h}!ft\_hash\_num\_free@{ft\_hash\_num\_free}}
+\index{ft\_hash\_num\_free@{ft\_hash\_num\_free}!fthash.h@{fthash.h}}
+\doxysubsubsection{\texorpdfstring{ft\_hash\_num\_free}{ft\_hash\_num\_free}}
+{\footnotesize\ttfamily \#define ft\+\_\+hash\+\_\+num\+\_\+free~\mbox{\hyperlink{fthash_8h_a37477f81553fb35742f81d07698bb614}{ft\+\_\+hash\+\_\+str\+\_\+free}}}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{fthash_8h_a0cb2366c4ff7d31bceb8a1ee4bc0abb9}\label{fthash_8h_a0cb2366c4ff7d31bceb8a1ee4bc0abb9}} 
+\index{fthash.h@{fthash.h}!FT\_Hash@{FT\_Hash}}
+\index{FT\_Hash@{FT\_Hash}!fthash.h@{fthash.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Hash}{FT\_Hash}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_f_t___hash_rec__}{F\+T\+\_\+\+Hash\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{fthash_8h_a0cb2366c4ff7d31bceb8a1ee4bc0abb9}{F\+T\+\_\+\+Hash}}}
+
+\mbox{\Hypertarget{fthash_8h_a730ce3ef6bfaa6544cccc0a99026a350}\label{fthash_8h_a730ce3ef6bfaa6544cccc0a99026a350}} 
+\index{fthash.h@{fthash.h}!FT\_Hash\_CompareFunc@{FT\_Hash\_CompareFunc}}
+\index{FT\_Hash\_CompareFunc@{FT\_Hash\_CompareFunc}!fthash.h@{fthash.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Hash\_CompareFunc}{FT\_Hash\_CompareFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}}($\ast$ F\+T\+\_\+\+Hash\+\_\+\+Compare\+Func) (\mbox{\hyperlink{fthash_8h_a546f40770d5d8901f7f1a85c53ba92e3}{F\+T\+\_\+\+Hashkey}} $\ast$a, \mbox{\hyperlink{fthash_8h_a546f40770d5d8901f7f1a85c53ba92e3}{F\+T\+\_\+\+Hashkey}} $\ast$b)}
+
+\mbox{\Hypertarget{fthash_8h_a929f5ecf758f2eab42f2afac42d3f99e}\label{fthash_8h_a929f5ecf758f2eab42f2afac42d3f99e}} 
+\index{fthash.h@{fthash.h}!FT\_Hash\_LookupFunc@{FT\_Hash\_LookupFunc}}
+\index{FT\_Hash\_LookupFunc@{FT\_Hash\_LookupFunc}!fthash.h@{fthash.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Hash\_LookupFunc}{FT\_Hash\_LookupFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}}($\ast$ F\+T\+\_\+\+Hash\+\_\+\+Lookup\+Func) (\mbox{\hyperlink{fthash_8h_a546f40770d5d8901f7f1a85c53ba92e3}{F\+T\+\_\+\+Hashkey}} $\ast$key)}
+
+\mbox{\Hypertarget{fthash_8h_a546f40770d5d8901f7f1a85c53ba92e3}\label{fthash_8h_a546f40770d5d8901f7f1a85c53ba92e3}} 
+\index{fthash.h@{fthash.h}!FT\_Hashkey@{FT\_Hashkey}}
+\index{FT\_Hashkey@{FT\_Hashkey}!fthash.h@{fthash.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Hashkey}{FT\_Hashkey}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{public-macros_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER}} union \mbox{\hyperlink{union_f_t___hashkey__}{F\+T\+\_\+\+Hashkey\+\_\+}} \mbox{\hyperlink{fthash_8h_a546f40770d5d8901f7f1a85c53ba92e3}{F\+T\+\_\+\+Hashkey}}}
+
+\mbox{\Hypertarget{fthash_8h_ac09d9b509705e167e3e5882b7a12b97e}\label{fthash_8h_ac09d9b509705e167e3e5882b7a12b97e}} 
+\index{fthash.h@{fthash.h}!FT\_Hashnode@{FT\_Hashnode}}
+\index{FT\_Hashnode@{FT\_Hashnode}!fthash.h@{fthash.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Hashnode}{FT\_Hashnode}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_f_t___hashnode_rec__}{F\+T\+\_\+\+Hashnode\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{fthash_8h_ac09d9b509705e167e3e5882b7a12b97e}{F\+T\+\_\+\+Hashnode}}}
+
+\mbox{\Hypertarget{fthash_8h_af27315a671e7174d4faea67b8ce540b6}\label{fthash_8h_af27315a671e7174d4faea67b8ce540b6}} 
+\index{fthash.h@{fthash.h}!FT\_HashnodeRec@{FT\_HashnodeRec}}
+\index{FT\_HashnodeRec@{FT\_HashnodeRec}!fthash.h@{fthash.h}}
+\doxysubsubsection{\texorpdfstring{FT\_HashnodeRec}{FT\_HashnodeRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_f_t___hashnode_rec__}{F\+T\+\_\+\+Hashnode\+Rec\+\_\+}} \mbox{\hyperlink{fthash_8h_af27315a671e7174d4faea67b8ce540b6}{F\+T\+\_\+\+Hashnode\+Rec}}}
+
+\mbox{\Hypertarget{fthash_8h_ae7f3d499920b5305314992c9886b63bc}\label{fthash_8h_ae7f3d499920b5305314992c9886b63bc}} 
+\index{fthash.h@{fthash.h}!FT\_HashRec@{FT\_HashRec}}
+\index{FT\_HashRec@{FT\_HashRec}!fthash.h@{fthash.h}}
+\doxysubsubsection{\texorpdfstring{FT\_HashRec}{FT\_HashRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_f_t___hash_rec__}{F\+T\+\_\+\+Hash\+Rec\+\_\+}} \mbox{\hyperlink{fthash_8h_ae7f3d499920b5305314992c9886b63bc}{F\+T\+\_\+\+Hash\+Rec}}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{fthash_8h_a680113fe944fd85b6ab6b6c445e1d14b}\label{fthash_8h_a680113fe944fd85b6ab6b6c445e1d14b}} 
+\index{fthash.h@{fthash.h}!ft\_hash\_num\_init@{ft\_hash\_num\_init}}
+\index{ft\_hash\_num\_init@{ft\_hash\_num\_init}!fthash.h@{fthash.h}}
+\doxysubsubsection{\texorpdfstring{ft\_hash\_num\_init()}{ft\_hash\_num\_init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}} ft\+\_\+hash\+\_\+num\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{fthash_8h_a0cb2366c4ff7d31bceb8a1ee4bc0abb9}{F\+T\+\_\+\+Hash}}}]{hash,  }\item[{\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}}}]{memory }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{fthash_8h_ab2ed7d26faa1e4d461180b9a1937449f}\label{fthash_8h_ab2ed7d26faa1e4d461180b9a1937449f}} 
+\index{fthash.h@{fthash.h}!ft\_hash\_num\_insert@{ft\_hash\_num\_insert}}
+\index{ft\_hash\_num\_insert@{ft\_hash\_num\_insert}!fthash.h@{fthash.h}}
+\doxysubsubsection{\texorpdfstring{ft\_hash\_num\_insert()}{ft\_hash\_num\_insert()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}} ft\+\_\+hash\+\_\+num\+\_\+insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}}}]{num,  }\item[{size\+\_\+t}]{data,  }\item[{\mbox{\hyperlink{fthash_8h_a0cb2366c4ff7d31bceb8a1ee4bc0abb9}{F\+T\+\_\+\+Hash}}}]{hash,  }\item[{\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}}}]{memory }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{fthash_8h_ab79d7a997dfc2c94786f6a066b12dc58}\label{fthash_8h_ab79d7a997dfc2c94786f6a066b12dc58}} 
+\index{fthash.h@{fthash.h}!ft\_hash\_num\_lookup@{ft\_hash\_num\_lookup}}
+\index{ft\_hash\_num\_lookup@{ft\_hash\_num\_lookup}!fthash.h@{fthash.h}}
+\doxysubsubsection{\texorpdfstring{ft\_hash\_num\_lookup()}{ft\_hash\_num\_lookup()}}
+{\footnotesize\ttfamily size\+\_\+t$\ast$ ft\+\_\+hash\+\_\+num\+\_\+lookup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}}}]{num,  }\item[{\mbox{\hyperlink{fthash_8h_a0cb2366c4ff7d31bceb8a1ee4bc0abb9}{F\+T\+\_\+\+Hash}}}]{hash }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{fthash_8h_a37477f81553fb35742f81d07698bb614}\label{fthash_8h_a37477f81553fb35742f81d07698bb614}} 
+\index{fthash.h@{fthash.h}!ft\_hash\_str\_free@{ft\_hash\_str\_free}}
+\index{ft\_hash\_str\_free@{ft\_hash\_str\_free}!fthash.h@{fthash.h}}
+\doxysubsubsection{\texorpdfstring{ft\_hash\_str\_free()}{ft\_hash\_str\_free()}}
+{\footnotesize\ttfamily void ft\+\_\+hash\+\_\+str\+\_\+free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{fthash_8h_a0cb2366c4ff7d31bceb8a1ee4bc0abb9}{F\+T\+\_\+\+Hash}}}]{hash,  }\item[{\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}}}]{memory }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{fthash_8h_ae79ddf14251e068d0d3e616d1541f80a}\label{fthash_8h_ae79ddf14251e068d0d3e616d1541f80a}} 
+\index{fthash.h@{fthash.h}!ft\_hash\_str\_init@{ft\_hash\_str\_init}}
+\index{ft\_hash\_str\_init@{ft\_hash\_str\_init}!fthash.h@{fthash.h}}
+\doxysubsubsection{\texorpdfstring{ft\_hash\_str\_init()}{ft\_hash\_str\_init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}} ft\+\_\+hash\+\_\+str\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{fthash_8h_a0cb2366c4ff7d31bceb8a1ee4bc0abb9}{F\+T\+\_\+\+Hash}}}]{hash,  }\item[{\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}}}]{memory }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{fthash_8h_af305eab5d1df6131cbc122ba4f32fb09}\label{fthash_8h_af305eab5d1df6131cbc122ba4f32fb09}} 
+\index{fthash.h@{fthash.h}!ft\_hash\_str\_insert@{ft\_hash\_str\_insert}}
+\index{ft\_hash\_str\_insert@{ft\_hash\_str\_insert}!fthash.h@{fthash.h}}
+\doxysubsubsection{\texorpdfstring{ft\_hash\_str\_insert()}{ft\_hash\_str\_insert()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}} ft\+\_\+hash\+\_\+str\+\_\+insert (\begin{DoxyParamCaption}\item[{const char $\ast$}]{key,  }\item[{size\+\_\+t}]{data,  }\item[{\mbox{\hyperlink{fthash_8h_a0cb2366c4ff7d31bceb8a1ee4bc0abb9}{F\+T\+\_\+\+Hash}}}]{hash,  }\item[{\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}}}]{memory }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{fthash_8h_af015f3abadab787fc5d369d7659d430d}\label{fthash_8h_af015f3abadab787fc5d369d7659d430d}} 
+\index{fthash.h@{fthash.h}!ft\_hash\_str\_lookup@{ft\_hash\_str\_lookup}}
+\index{ft\_hash\_str\_lookup@{ft\_hash\_str\_lookup}!fthash.h@{fthash.h}}
+\doxysubsubsection{\texorpdfstring{ft\_hash\_str\_lookup()}{ft\_hash\_str\_lookup()}}
+{\footnotesize\ttfamily size\+\_\+t$\ast$ ft\+\_\+hash\+\_\+str\+\_\+lookup (\begin{DoxyParamCaption}\item[{const char $\ast$}]{key,  }\item[{\mbox{\hyperlink{fthash_8h_a0cb2366c4ff7d31bceb8a1ee4bc0abb9}{F\+T\+\_\+\+Hash}}}]{hash }\end{DoxyParamCaption})}
+

@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: Graphics/Vertex.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64f7452aef2cdad98d34a70f5ea329e2.html">Graphics</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Vertex.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_vertex_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef U22_GRAPHICS_VERTEX_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define U22_GRAPHICS_VERTEX_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../Common/Common.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../Math/Vector2.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../Math/Vector3.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;../Math/Vector4.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceu22_1_1graphics.html">u22::graphics</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structu22_1_1graphics_1_1_color_vertex.html">   14</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structu22_1_1graphics_1_1_color_vertex.html">ColorVertex</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structu22_1_1graphics_1_1_color_vertex.html#ae67acee1639fef5581dad6c16b139b68">   16</a></span>&#160;    <a class="code" href="classu22_1_1math_1_1_vector3_3_01float_01_4.html">u22::math::Vector3F</a> <a class="code" href="structu22_1_1graphics_1_1_color_vertex.html#ae67acee1639fef5581dad6c16b139b68">position</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structu22_1_1graphics_1_1_color_vertex.html#a1cf5335829e701389ab91b1162ef63c0">   18</a></span>&#160;    <a class="code" href="classu22_1_1math_1_1_vector4_3_01float_01_4.html">u22::math::Vector4F</a> <a class="code" href="structu22_1_1graphics_1_1_color_vertex.html#a1cf5335829e701389ab91b1162ef63c0">color</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structu22_1_1graphics_1_1_sprite_vertex.html">   20</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structu22_1_1graphics_1_1_sprite_vertex.html">SpriteVertex</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structu22_1_1graphics_1_1_sprite_vertex.html#a01c1a8cdb68ad9cdbd9ea2ffba5c5ebc">   22</a></span>&#160;    <a class="code" href="classu22_1_1math_1_1_vector3_3_01float_01_4.html">u22::math::Vector3F</a> <a class="code" href="structu22_1_1graphics_1_1_sprite_vertex.html#a01c1a8cdb68ad9cdbd9ea2ffba5c5ebc">position</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structu22_1_1graphics_1_1_sprite_vertex.html#a6a7d8e7741f1bbc8fe75309e647fef29">   24</a></span>&#160;    <a class="code" href="classu22_1_1math_1_1_vector2_3_01float_01_4.html">u22::math::Vector2F</a> <a class="code" href="structu22_1_1graphics_1_1_sprite_vertex.html#a6a7d8e7741f1bbc8fe75309e647fef29">texcoord</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">static</span> std::vector&lt;SpriteVertex&gt; kSpriteVertices = {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {<a class="code" href="group__core__vector.html#ga4320b87e41013b7e875f845f439fc498">glm::vec3</a>(-0.5f, 0.5f, 0.0f), <a class="code" href="group__core__vector.html#ga6ebf1ff1f152ff34c800b6997d5f311f">glm::vec2</a>(0.0f, 0.0f)}, <span class="comment">// top left</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {<a class="code" href="group__core__vector.html#ga4320b87e41013b7e875f845f439fc498">glm::vec3</a>(-0.5f,-0.5f, 0.0f), <a class="code" href="group__core__vector.html#ga6ebf1ff1f152ff34c800b6997d5f311f">glm::vec2</a>(0.0f, 1.0f)}, <span class="comment">// bottom left</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {<a class="code" href="group__core__vector.html#ga4320b87e41013b7e875f845f439fc498">glm::vec3</a>( 0.5f,-0.5f, 0.0f), <a class="code" href="group__core__vector.html#ga6ebf1ff1f152ff34c800b6997d5f311f">glm::vec2</a>(1.0f, 1.0f)}, <span class="comment">// bottom right</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {<a class="code" href="group__core__vector.html#ga4320b87e41013b7e875f845f439fc498">glm::vec3</a>( 0.5f, 0.5f, 0.0f), <a class="code" href="group__core__vector.html#ga6ebf1ff1f152ff34c800b6997d5f311f">glm::vec2</a>(1.0f, 0.0f)}, <span class="comment">// top right</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">static</span> std::vector&lt;std::uint32_t&gt; kSpriteIndices = {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    0, 1, 2 , 2, 3, 0</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif // !U22_GRAPHICS_VERTEX_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="anamespaceu22_1_1graphics_html"><div class="ttname"><a href="namespaceu22_1_1graphics.html">u22::graphics</a></div><div class="ttdef"><b>Definition:</b> Buffer.h:8</div></div>
+<div class="ttc" id="aclassu22_1_1math_1_1_vector2_3_01float_01_4_html"><div class="ttname"><a href="classu22_1_1math_1_1_vector2_3_01float_01_4.html">u22::math::Vector2&lt; float &gt;</a></div><div class="ttdef"><b>Definition:</b> Vector2.h:16</div></div>
+<div class="ttc" id="agroup__core__vector_html_ga4320b87e41013b7e875f845f439fc498"><div class="ttname"><a href="group__core__vector.html#ga4320b87e41013b7e875f845f439fc498">glm::vec3</a></div><div class="ttdeci">vec&lt; 3, float, defaultp &gt; vec3</div><div class="ttdef"><b>Definition:</b> vector_float3.hpp:15</div></div>
+<div class="ttc" id="astructu22_1_1graphics_1_1_sprite_vertex_html_a6a7d8e7741f1bbc8fe75309e647fef29"><div class="ttname"><a href="structu22_1_1graphics_1_1_sprite_vertex.html#a6a7d8e7741f1bbc8fe75309e647fef29">u22::graphics::SpriteVertex::texcoord</a></div><div class="ttdeci">u22::math::Vector2F texcoord</div><div class="ttdoc">UV</div><div class="ttdef"><b>Definition:</b> Vertex.h:24</div></div>
+<div class="ttc" id="aclassu22_1_1math_1_1_vector3_3_01float_01_4_html"><div class="ttname"><a href="classu22_1_1math_1_1_vector3_3_01float_01_4.html">u22::math::Vector3&lt; float &gt;</a></div><div class="ttdef"><b>Definition:</b> Vector3.h:18</div></div>
+<div class="ttc" id="aclassu22_1_1math_1_1_vector4_3_01float_01_4_html"><div class="ttname"><a href="classu22_1_1math_1_1_vector4_3_01float_01_4.html">u22::math::Vector4&lt; float &gt;</a></div><div class="ttdef"><b>Definition:</b> Vector4.h:16</div></div>
+<div class="ttc" id="astructu22_1_1graphics_1_1_color_vertex_html_a1cf5335829e701389ab91b1162ef63c0"><div class="ttname"><a href="structu22_1_1graphics_1_1_color_vertex.html#a1cf5335829e701389ab91b1162ef63c0">u22::graphics::ColorVertex::color</a></div><div class="ttdeci">u22::math::Vector4F color</div><div class="ttdoc">色</div><div class="ttdef"><b>Definition:</b> Vertex.h:18</div></div>
+<div class="ttc" id="astructu22_1_1graphics_1_1_color_vertex_html"><div class="ttname"><a href="structu22_1_1graphics_1_1_color_vertex.html">u22::graphics::ColorVertex</a></div><div class="ttdef"><b>Definition:</b> Vertex.h:14</div></div>
+<div class="ttc" id="astructu22_1_1graphics_1_1_sprite_vertex_html_a01c1a8cdb68ad9cdbd9ea2ffba5c5ebc"><div class="ttname"><a href="structu22_1_1graphics_1_1_sprite_vertex.html#a01c1a8cdb68ad9cdbd9ea2ffba5c5ebc">u22::graphics::SpriteVertex::position</a></div><div class="ttdeci">u22::math::Vector3F position</div><div class="ttdoc">位置</div><div class="ttdef"><b>Definition:</b> Vertex.h:22</div></div>
+<div class="ttc" id="astructu22_1_1graphics_1_1_color_vertex_html_ae67acee1639fef5581dad6c16b139b68"><div class="ttname"><a href="structu22_1_1graphics_1_1_color_vertex.html#ae67acee1639fef5581dad6c16b139b68">u22::graphics::ColorVertex::position</a></div><div class="ttdeci">u22::math::Vector3F position</div><div class="ttdoc">位置</div><div class="ttdef"><b>Definition:</b> Vertex.h:16</div></div>
+<div class="ttc" id="agroup__core__vector_html_ga6ebf1ff1f152ff34c800b6997d5f311f"><div class="ttname"><a href="group__core__vector.html#ga6ebf1ff1f152ff34c800b6997d5f311f">glm::vec2</a></div><div class="ttdeci">vec&lt; 2, float, defaultp &gt; vec2</div><div class="ttdef"><b>Definition:</b> vector_float2.hpp:15</div></div>
+<div class="ttc" id="astructu22_1_1graphics_1_1_sprite_vertex_html"><div class="ttname"><a href="structu22_1_1graphics_1_1_sprite_vertex.html">u22::graphics::SpriteVertex</a></div><div class="ttdef"><b>Definition:</b> Vertex.h:20</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

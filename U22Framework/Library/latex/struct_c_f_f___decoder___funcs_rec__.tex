@@ -1,0 +1,41 @@
+\hypertarget{struct_c_f_f___decoder___funcs_rec__}{}\doxysection{C\+F\+F\+\_\+\+Decoder\+\_\+\+Funcs\+Rec\+\_\+ 構造体}
+\label{struct_c_f_f___decoder___funcs_rec__}\index{CFF\_Decoder\_FuncsRec\_@{CFF\_Decoder\_FuncsRec\_}}
+
+
+{\ttfamily \#include $<$psaux.\+h$>$}
+
+\doxysubsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+void($\ast$ \mbox{\hyperlink{struct_c_f_f___decoder___funcs_rec___ab14dfb18d414e72ca6b086b66968a5b1}{init}} )(\mbox{\hyperlink{psaux_8h_acb3ac047f4b618a7b5d12c4b0204161c}{C\+F\+F\+\_\+\+Decoder}} $\ast$decoder, \mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{cffotypes_8h_ac831d1b4f969ac28fd625dd7b668bb44}{C\+F\+F\+\_\+\+Size}} size, \mbox{\hyperlink{cffotypes_8h_ab0311d60969475c27e1347c46a37eabd}{C\+F\+F\+\_\+\+Glyph\+Slot}} slot, \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} hinting, \mbox{\hyperlink{freetype_8h_a42c69ed4922d28c7d8cc9173237f966b}{F\+T\+\_\+\+Render\+\_\+\+Mode}} hint\+\_\+mode, \mbox{\hyperlink{psaux_8h_a8b866d09d410c4db25ed5ae1c71e07d6}{C\+F\+F\+\_\+\+Decoder\+\_\+\+Get\+\_\+\+Glyph\+\_\+\+Callback}} get\+\_\+callback, \mbox{\hyperlink{psaux_8h_aab71d5ac9de7684f5cf1e0b9d4f69331}{C\+F\+F\+\_\+\+Decoder\+\_\+\+Free\+\_\+\+Glyph\+\_\+\+Callback}} free\+\_\+callback)
+\item 
+\mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{struct_c_f_f___decoder___funcs_rec___a43d9a068952578619462d014b93d3711}{prepare}} )(\mbox{\hyperlink{psaux_8h_acb3ac047f4b618a7b5d12c4b0204161c}{C\+F\+F\+\_\+\+Decoder}} $\ast$decoder, \mbox{\hyperlink{cffotypes_8h_ac831d1b4f969ac28fd625dd7b668bb44}{C\+F\+F\+\_\+\+Size}} size, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} glyph\+\_\+index)
+\item 
+\mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{struct_c_f_f___decoder___funcs_rec___a68995fa41dd952afbf0b59f2991984ab}{parse\+\_\+charstrings}} )(\mbox{\hyperlink{psaux_8h_a79a57c8203defe7bf110be78920c32ab}{P\+S\+\_\+\+Decoder}} $\ast$decoder, \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} $\ast$charstring\+\_\+base, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} charstring\+\_\+len)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{struct_c_f_f___decoder___funcs_rec___ab14dfb18d414e72ca6b086b66968a5b1}\label{struct_c_f_f___decoder___funcs_rec___ab14dfb18d414e72ca6b086b66968a5b1}} 
+\index{CFF\_Decoder\_FuncsRec\_@{CFF\_Decoder\_FuncsRec\_}!init@{init}}
+\index{init@{init}!CFF\_Decoder\_FuncsRec\_@{CFF\_Decoder\_FuncsRec\_}}
+\doxysubsubsection{\texorpdfstring{init}{init}}
+{\footnotesize\ttfamily void($\ast$ C\+F\+F\+\_\+\+Decoder\+\_\+\+Funcs\+Rec\+\_\+\+::init) (\mbox{\hyperlink{psaux_8h_acb3ac047f4b618a7b5d12c4b0204161c}{C\+F\+F\+\_\+\+Decoder}} $\ast$decoder, \mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{cffotypes_8h_ac831d1b4f969ac28fd625dd7b668bb44}{C\+F\+F\+\_\+\+Size}} size, \mbox{\hyperlink{cffotypes_8h_ab0311d60969475c27e1347c46a37eabd}{C\+F\+F\+\_\+\+Glyph\+Slot}} slot, \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} hinting, \mbox{\hyperlink{freetype_8h_a42c69ed4922d28c7d8cc9173237f966b}{F\+T\+\_\+\+Render\+\_\+\+Mode}} hint\+\_\+mode, \mbox{\hyperlink{psaux_8h_a8b866d09d410c4db25ed5ae1c71e07d6}{C\+F\+F\+\_\+\+Decoder\+\_\+\+Get\+\_\+\+Glyph\+\_\+\+Callback}} get\+\_\+callback, \mbox{\hyperlink{psaux_8h_aab71d5ac9de7684f5cf1e0b9d4f69331}{C\+F\+F\+\_\+\+Decoder\+\_\+\+Free\+\_\+\+Glyph\+\_\+\+Callback}} free\+\_\+callback)}
+
+\mbox{\Hypertarget{struct_c_f_f___decoder___funcs_rec___a68995fa41dd952afbf0b59f2991984ab}\label{struct_c_f_f___decoder___funcs_rec___a68995fa41dd952afbf0b59f2991984ab}} 
+\index{CFF\_Decoder\_FuncsRec\_@{CFF\_Decoder\_FuncsRec\_}!parse\_charstrings@{parse\_charstrings}}
+\index{parse\_charstrings@{parse\_charstrings}!CFF\_Decoder\_FuncsRec\_@{CFF\_Decoder\_FuncsRec\_}}
+\doxysubsubsection{\texorpdfstring{parse\_charstrings}{parse\_charstrings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ C\+F\+F\+\_\+\+Decoder\+\_\+\+Funcs\+Rec\+\_\+\+::parse\+\_\+charstrings) (\mbox{\hyperlink{psaux_8h_a79a57c8203defe7bf110be78920c32ab}{P\+S\+\_\+\+Decoder}} $\ast$decoder, \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} $\ast$charstring\+\_\+base, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} charstring\+\_\+len)}
+
+\mbox{\Hypertarget{struct_c_f_f___decoder___funcs_rec___a43d9a068952578619462d014b93d3711}\label{struct_c_f_f___decoder___funcs_rec___a43d9a068952578619462d014b93d3711}} 
+\index{CFF\_Decoder\_FuncsRec\_@{CFF\_Decoder\_FuncsRec\_}!prepare@{prepare}}
+\index{prepare@{prepare}!CFF\_Decoder\_FuncsRec\_@{CFF\_Decoder\_FuncsRec\_}}
+\doxysubsubsection{\texorpdfstring{prepare}{prepare}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ C\+F\+F\+\_\+\+Decoder\+\_\+\+Funcs\+Rec\+\_\+\+::prepare) (\mbox{\hyperlink{psaux_8h_acb3ac047f4b618a7b5d12c4b0204161c}{C\+F\+F\+\_\+\+Decoder}} $\ast$decoder, \mbox{\hyperlink{cffotypes_8h_ac831d1b4f969ac28fd625dd7b668bb44}{C\+F\+F\+\_\+\+Size}} size, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} glyph\+\_\+index)}
+
+
+
+この構造体詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+freetype/internal/\mbox{\hyperlink{psaux_8h}{psaux.\+h}}\end{DoxyCompactItemize}

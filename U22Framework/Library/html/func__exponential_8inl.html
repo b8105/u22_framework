@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: External/GLM/detail/func_exponential.inl ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_443fc37f241ba4018364a998c18d007b.html">External</a></li><li class="navelem"><a class="el" href="dir_c334883f19ec445d87470844289252ab.html">GLM</a></li><li class="navelem"><a class="el" href="dir_5687d23a6c9e9c09d3ede4266ecd3134.html">detail</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">func_exponential.inl ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="vector__relational_8hpp_source.html">../vector_relational.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="__vectorize_8hpp_source.html">_vectorize.hpp</a>&quot;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+func_exponential.inl の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="func__exponential_8inl__incl.png" border="0" usemap="#a_external_2_g_l_m_2detail_2func__exponential_8inl" alt=""/></div>
+<map name="_external_2_g_l_m_2detail_2func__exponential_8inl" id="_external_2_g_l_m_2detail_2func__exponential_8inl">
+<area shape="rect" title=" " alt="" coords="393,5,533,47"/>
+<area shape="rect" href="vector__relational_8hpp.html" title=" " alt="" coords="142,95,294,121"/>
+<area shape="rect" title=" " alt="" coords="304,348,369,375"/>
+<area shape="rect" href="__vectorize_8hpp.html" title=" " alt="" coords="411,95,516,121"/>
+<area shape="rect" title=" " alt="" coords="541,95,594,121"/>
+<area shape="rect" title=" " alt="" coords="618,95,677,121"/>
+<area shape="rect" href="qualifier_8hpp.html" title=" " alt="" coords="5,177,132,203"/>
+<area shape="rect" href="setup_8hpp.html" title=" " alt="" coords="85,266,164,293"/>
+<area shape="rect" href="func__vector__relational_8inl.html" title=" " alt="" coords="207,169,330,211"/>
+<area shape="rect" title=" " alt="" coords="34,348,98,375"/>
+<area shape="rect" href="platform_8h.html" title=" " alt="" coords="122,348,245,375"/>
+<area shape="rect" href="func__vector__relational__simd_8inl.html" title=" " alt="" coords="189,259,335,300"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="func__exponential_8inl__dep__incl.png" border="0" usemap="#a_external_2_g_l_m_2detail_2func__exponential_8inldep" alt=""/></div>
+<map name="_external_2_g_l_m_2detail_2func__exponential_8inldep" id="_external_2_g_l_m_2detail_2func__exponential_8inldep">
+<area shape="rect" title=" " alt="" coords="4676,5,4816,47"/>
+<area shape="rect" href="exponential_8hpp.html" title=" " alt="" coords="4648,95,4845,121"/>
+<area shape="rect" href="func__geometric_8inl.html" title=" " alt="" coords="4534,169,4671,211"/>
+<area shape="rect" href="quaternion__geometric_8hpp.html" title=" " alt="" coords="4810,348,4998,389"/>
+<area shape="rect" href="type__quat_8inl.html" title=" " alt="" coords="3948,437,4086,479"/>
+<area shape="rect" href="quaternion__common_8hpp.html" title=" " alt="" coords="4876,437,5064,479"/>
+<area shape="rect" href="glm_8hpp.html" title=" " alt="" coords="2918,534,3070,561"/>
+<area shape="rect" href="gtc_2quaternion_8inl.html" title=" " alt="" coords="4142,355,4348,382"/>
+<area shape="rect" href="random_8inl.html" title=" " alt="" coords="4423,355,4611,382"/>
+<area shape="rect" href="fast__square__root_8hpp.html" title=" " alt="" coords="4636,348,4785,389"/>
+<area shape="rect" href="quaternion__trigonometric_8hpp.html" title=" " alt="" coords="4283,259,4471,300"/>
+<area shape="rect" href="gtc_2color__space_8hpp.html" title=" " alt="" coords="5470,259,5626,300"/>
+<area shape="rect" href="gtc_2integer_8hpp.html" title=" " alt="" coords="5434,534,5626,561"/>
+<area shape="rect" href="functions_8inl.html" title=" " alt="" coords="5241,177,5438,203"/>
+<area shape="rect" href="geometric_8hpp.html" title=" " alt="" coords="4495,266,4683,293"/>
+<area shape="rect" href="intersect_8hpp.html" title=" " alt="" coords="10,713,213,739"/>
+<area shape="rect" href="gtc_2quaternion_8hpp.html" title=" " alt="" coords="4792,534,5005,561"/>
+<area shape="rect" href="ext_8hpp.html" title=" " alt="" coords="5650,623,5800,650"/>
+<area shape="rect" href="type__quat_8hpp.html" title=" " alt="" coords="3948,527,4086,568"/>
+<area shape="rect" href="compatibility_8hpp.html" title=" " alt="" coords="5184,623,5410,650"/>
+<area shape="rect" href="dual__quaternion_8hpp.html" title=" " alt="" coords="4720,616,4872,657"/>
+<area shape="rect" href="gtx_2quaternion_8hpp.html" title=" " alt="" coords="4896,623,5109,650"/>
+<area shape="rect" href="glm_8cpp.html" title=" " alt="" coords="4628,705,4766,747"/>
+<area shape="rect" href="_common_8h.html" title=" " alt="" coords="5061,713,5202,739"/>
+<area shape="rect" href="io_8hpp.html" title=" " alt="" coords="4846,713,5009,739"/>
+<area shape="rect" href="associated__min__max_8hpp.html" title=" " alt="" coords="222,616,412,657"/>
+<area shape="rect" href="closest__point_8hpp.html" title=" " alt="" coords="26,616,197,657"/>
+<area shape="rect" href="gtx_2color__space_8hpp.html" title=" " alt="" coords="488,616,644,657"/>
+<area shape="rect" href="color__space___y_co_cg_8hpp.html" title=" " alt="" coords="668,616,824,657"/>
+<area shape="rect" href="easing_8hpp.html" title=" " alt="" coords="848,623,1039,650"/>
+<area shape="rect" href="euler__angles_8hpp.html" title=" " alt="" coords="1063,616,1219,657"/>
+<area shape="rect" href="extend_8hpp.html" title=" " alt="" coords="1244,623,1436,650"/>
+<area shape="rect" href="extended__min__max_8hpp.html" title=" " alt="" coords="1460,616,1641,657"/>
+<area shape="rect" href="fast__exponential_8hpp.html" title=" " alt="" coords="1665,616,1814,657"/>
+<area shape="rect" href="gradient__paint_8hpp.html" title=" " alt="" coords="4167,705,4342,747"/>
+<area shape="rect" href="handed__coordinate__space_8hpp.html" title=" " alt="" coords="1889,616,2060,657"/>
+<area shape="rect" href="gtx_2integer_8hpp.html" title=" " alt="" coords="5434,623,5626,650"/>
+<area shape="rect" href="log__base_8hpp.html" title=" " alt="" coords="2084,616,2230,657"/>
+<area shape="rect" href="matrix__cross__product_8hpp.html" title=" " alt="" coords="2254,616,2418,657"/>
+<area shape="rect" href="matrix__factorisation_8hpp.html" title=" " alt="" coords="2442,616,2606,657"/>
+<area shape="rect" href="matrix__interpolation_8hpp.html" title=" " alt="" coords="2630,616,2794,657"/>
+<area shape="rect" href="matrix__major__storage_8hpp.html" title=" " alt="" coords="2818,616,2982,657"/>
+<area shape="rect" href="matrix__operation_8hpp.html" title=" " alt="" coords="3006,616,3170,657"/>
+<area shape="rect" href="matrix__query_8hpp.html" title=" " alt="" coords="3194,616,3358,657"/>
+<area shape="rect" href="mixed__product_8hpp.html" title=" " alt="" coords="3382,616,3545,657"/>
+<area shape="rect" href="normal_8hpp.html" title=" " alt="" coords="3569,623,3761,650"/>
+<area shape="rect" href="number__precision_8hpp.html" title=" " alt="" coords="3785,616,3956,657"/>
+<area shape="rect" href="optimum__pow_8hpp.html" title=" " alt="" coords="4466,616,4645,657"/>
+<area shape="rect" href="perpendicular_8hpp.html" title=" " alt="" coords="4031,623,4262,650"/>
+<area shape="rect" href="polar__coordinates_8hpp.html" title=" " alt="" coords="4286,616,4442,657"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structglm_1_1detail_1_1compute__log2.html">glm::detail::compute_log2&lt; L, T, Q, isFloat, Aligned &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structglm_1_1detail_1_1compute__sqrt.html">glm::detail::compute_sqrt&lt; L, T, Q, Aligned &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structglm_1_1detail_1_1compute__inversesqrt.html">glm::detail::compute_inversesqrt&lt; L, T, Q, Aligned &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structglm_1_1detail_1_1compute__inversesqrt_3_01_l_00_01float_00_01lowp_00_01_aligned_01_4.html">glm::detail::compute_inversesqrt&lt; L, float, lowp, Aligned &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:namespaceglm"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceglm.html">glm</a></td></tr>
+<tr class="memdesc:namespaceglm"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__core.html">Core features</a> <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceglm_1_1detail"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceglm_1_1detail.html">glm::detail</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a3d24a612f2c5fa4f3aaf97dcd979ef1c"><td class="memTemplParams" colspan="2">template&lt;typename genType &gt; </td></tr>
+<tr class="memitem:a3d24a612f2c5fa4f3aaf97dcd979ef1c"><td class="memTemplItemLeft" align="right" valign="top">genType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceglm_1_1detail.html#a3d24a612f2c5fa4f3aaf97dcd979ef1c">glm::detail::log2</a> (genType Value)</td></tr>
+<tr class="separator:a3d24a612f2c5fa4f3aaf97dcd979ef1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2254981952d4f333b900a6bf5167a6c4"><td class="memTemplParams" colspan="2">template&lt;length_t L, typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:ga2254981952d4f333b900a6bf5167a6c4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> vec&lt; <a class="el" href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a>, T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__core__func__exponential.html#ga2254981952d4f333b900a6bf5167a6c4">glm::pow</a> (vec&lt; <a class="el" href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a>, T, Q &gt; const &amp;base, vec&lt; <a class="el" href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a>, T, Q &gt; const &amp;exponent)</td></tr>
+<tr class="separator:ga2254981952d4f333b900a6bf5167a6c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga071566cadc7505455e611f2a0353f4d4"><td class="memTemplParams" colspan="2">template&lt;length_t L, typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:ga071566cadc7505455e611f2a0353f4d4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> vec&lt; <a class="el" href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a>, T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__core__func__exponential.html#ga071566cadc7505455e611f2a0353f4d4">glm::exp</a> (vec&lt; <a class="el" href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a>, T, Q &gt; const &amp;x)</td></tr>
+<tr class="separator:ga071566cadc7505455e611f2a0353f4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga918c9f3fd086ce20e6760c903bd30fa9"><td class="memTemplParams" colspan="2">template&lt;length_t L, typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:ga918c9f3fd086ce20e6760c903bd30fa9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> vec&lt; <a class="el" href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a>, T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__core__func__exponential.html#ga918c9f3fd086ce20e6760c903bd30fa9">glm::log</a> (vec&lt; <a class="el" href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a>, T, Q &gt; const &amp;x)</td></tr>
+<tr class="separator:ga918c9f3fd086ce20e6760c903bd30fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f6240c6756f850537398b1af2751c4b"><td class="memTemplParams" colspan="2">template&lt;typename genType &gt; </td></tr>
+<tr class="memitem:a8f6240c6756f850537398b1af2751c4b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> genType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceglm.html#a8f6240c6756f850537398b1af2751c4b">glm::exp2</a> (genType x)</td></tr>
+<tr class="separator:a8f6240c6756f850537398b1af2751c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff17ace6b579a03bf223ed4d1ed2cd16"><td class="memTemplParams" colspan="2">template&lt;length_t L, typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:gaff17ace6b579a03bf223ed4d1ed2cd16"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> vec&lt; <a class="el" href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a>, T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__core__func__exponential.html#gaff17ace6b579a03bf223ed4d1ed2cd16">glm::exp2</a> (vec&lt; <a class="el" href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a>, T, Q &gt; const &amp;x)</td></tr>
+<tr class="separator:gaff17ace6b579a03bf223ed4d1ed2cd16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab47f0f29ead9cefd62d62ba5f83fe81b"><td class="memTemplParams" colspan="2">template&lt;typename genType &gt; </td></tr>
+<tr class="memitem:ab47f0f29ead9cefd62d62ba5f83fe81b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> genType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceglm.html#ab47f0f29ead9cefd62d62ba5f83fe81b">glm::log2</a> (genType x)</td></tr>
+<tr class="separator:ab47f0f29ead9cefd62d62ba5f83fe81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga82831c7d9cca777cebedfe03a19c8d75"><td class="memTemplParams" colspan="2">template&lt;length_t L, typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:ga82831c7d9cca777cebedfe03a19c8d75"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> vec&lt; <a class="el" href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a>, T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__core__func__exponential.html#ga82831c7d9cca777cebedfe03a19c8d75">glm::log2</a> (vec&lt; <a class="el" href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a>, T, Q &gt; const &amp;x)</td></tr>
+<tr class="separator:ga82831c7d9cca777cebedfe03a19c8d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa83e5f1648b7ccdf33b87c07c76cb77c"><td class="memTemplParams" colspan="2">template&lt;length_t L, typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:gaa83e5f1648b7ccdf33b87c07c76cb77c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> vec&lt; <a class="el" href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a>, T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__core__func__exponential.html#gaa83e5f1648b7ccdf33b87c07c76cb77c">glm::sqrt</a> (vec&lt; <a class="el" href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a>, T, Q &gt; const &amp;x)</td></tr>
+<tr class="separator:gaa83e5f1648b7ccdf33b87c07c76cb77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e3dd2bba414db15477d43ca9d71acf5"><td class="memTemplParams" colspan="2">template&lt;typename genType &gt; </td></tr>
+<tr class="memitem:a5e3dd2bba414db15477d43ca9d71acf5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> genType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceglm.html#a5e3dd2bba414db15477d43ca9d71acf5">glm::inversesqrt</a> (genType x)</td></tr>
+<tr class="separator:a5e3dd2bba414db15477d43ca9d71acf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga523dd6bd0ad9f75ae2d24c8e4b017b7a"><td class="memTemplParams" colspan="2">template&lt;length_t L, typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:ga523dd6bd0ad9f75ae2d24c8e4b017b7a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> vec&lt; <a class="el" href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a>, T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__core__func__exponential.html#ga523dd6bd0ad9f75ae2d24c8e4b017b7a">glm::inversesqrt</a> (vec&lt; <a class="el" href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a>, T, Q &gt; const &amp;x)</td></tr>
+<tr class="separator:ga523dd6bd0ad9f75ae2d24c8e4b017b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p><a class="el" href="group__core.html">Core features</a> </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

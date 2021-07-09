@@ -1,0 +1,4 @@
+<map id="glfwSwapBuffers" name="glfwSwapBuffers">
+<area shape="rect" id="node1" title="Swaps the front and back buffers of the specified window." alt="" coords="204,5,320,32"/>
+<area shape="rect" id="node2" href="$classu22_1_1_window.html#a1aa98ac910cb99a9bd5f0a2e35ca8d97" title="フリップ" alt="" coords="5,5,156,32"/>
+</map>

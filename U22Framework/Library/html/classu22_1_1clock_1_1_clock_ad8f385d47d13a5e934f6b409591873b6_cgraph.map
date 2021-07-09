@@ -1,0 +1,4 @@
+<map id="u22::clock::Clock::Tick" name="u22::clock::Clock::Tick">
+<area shape="rect" id="node1" title="時間を進める" alt="" coords="5,5,160,32"/>
+<area shape="rect" id="node2" href="$group__input.html#ga03d4a1039b8662c71eeb40beea8cb622" title="Returns the value of the GLFW timer." alt="" coords="208,5,301,32"/>
+</map>

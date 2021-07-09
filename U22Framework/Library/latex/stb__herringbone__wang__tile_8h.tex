@@ -1,0 +1,93 @@
+\hypertarget{stb__herringbone__wang__tile_8h}{}\doxysection{External/stb/stb\+\_\+herringbone\+\_\+wang\+\_\+tile.h ファイル}
+\label{stb__herringbone__wang__tile_8h}\index{External/stb/stb\_herringbone\_wang\_tile.h@{External/stb/stb\_herringbone\_wang\_tile.h}}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structstbhw__tile}{stbhw\+\_\+tile}}
+\item 
+struct \mbox{\hyperlink{structstbhw__tileset}{stbhw\+\_\+tileset}}
+\item 
+struct \mbox{\hyperlink{structstbhw__config}{stbhw\+\_\+config}}
+\end{DoxyCompactItemize}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{stb__herringbone__wang__tile_8h_abae4ad45a64a26c12734be500710ba0d}{S\+T\+B\+H\+W\+\_\+\+E\+X\+T\+E\+RN}}~extern
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structstbhw__tileset}{stbhw\+\_\+tileset}} \mbox{\hyperlink{stb__herringbone__wang__tile_8h_a6f13a854aad33b8435eedd1e9b6bb2e0}{stbhw\+\_\+tileset}}
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{stb__herringbone__wang__tile_8h_abae4ad45a64a26c12734be500710ba0d}{S\+T\+B\+H\+W\+\_\+\+E\+X\+T\+E\+RN}} const char $\ast$ \mbox{\hyperlink{stb__herringbone__wang__tile_8h_a9b1a4d58407946c196032cb0bc997367}{stbhw\+\_\+get\+\_\+last\+\_\+error}} (void)
+\item 
+\mbox{\hyperlink{stb__herringbone__wang__tile_8h_abae4ad45a64a26c12734be500710ba0d}{S\+T\+B\+H\+W\+\_\+\+E\+X\+T\+E\+RN}} int \mbox{\hyperlink{stb__herringbone__wang__tile_8h_ab78f455914fcfdd6d81869ff4d8e944e}{stbhw\+\_\+build\+\_\+tileset\+\_\+from\+\_\+image}} (\mbox{\hyperlink{structstbhw__tileset}{stbhw\+\_\+tileset}} $\ast$ts, unsigned char $\ast$pixels, int stride\+\_\+in\+\_\+bytes, int w, int h)
+\item 
+\mbox{\hyperlink{stb__herringbone__wang__tile_8h_abae4ad45a64a26c12734be500710ba0d}{S\+T\+B\+H\+W\+\_\+\+E\+X\+T\+E\+RN}} void \mbox{\hyperlink{stb__herringbone__wang__tile_8h_a49f4e60e1d1dd0c8fdc89a48cac92a4b}{stbhw\+\_\+free\+\_\+tileset}} (\mbox{\hyperlink{structstbhw__tileset}{stbhw\+\_\+tileset}} $\ast$ts)
+\item 
+\mbox{\hyperlink{stb__herringbone__wang__tile_8h_abae4ad45a64a26c12734be500710ba0d}{S\+T\+B\+H\+W\+\_\+\+E\+X\+T\+E\+RN}} int \mbox{\hyperlink{stb__herringbone__wang__tile_8h_affacb0cc9ceed70b9d21221b0b957b61}{stbhw\+\_\+generate\+\_\+image}} (\mbox{\hyperlink{structstbhw__tileset}{stbhw\+\_\+tileset}} $\ast$ts, int $\ast$$\ast$weighting, unsigned char $\ast$pixels, int stride\+\_\+in\+\_\+bytes, int w, int h)
+\item 
+\mbox{\hyperlink{stb__herringbone__wang__tile_8h_abae4ad45a64a26c12734be500710ba0d}{S\+T\+B\+H\+W\+\_\+\+E\+X\+T\+E\+RN}} void \mbox{\hyperlink{stb__herringbone__wang__tile_8h_a98c5d9cf99dc60b099dadbe9f2c99d05}{stbhw\+\_\+get\+\_\+template\+\_\+size}} (\mbox{\hyperlink{structstbhw__config}{stbhw\+\_\+config}} $\ast$c, int $\ast$w, int $\ast$h)
+\item 
+\mbox{\hyperlink{stb__herringbone__wang__tile_8h_abae4ad45a64a26c12734be500710ba0d}{S\+T\+B\+H\+W\+\_\+\+E\+X\+T\+E\+RN}} int \mbox{\hyperlink{stb__herringbone__wang__tile_8h_a50f4b38fa86db29c0513598daf026871}{stbhw\+\_\+make\+\_\+template}} (\mbox{\hyperlink{structstbhw__config}{stbhw\+\_\+config}} $\ast$c, unsigned char $\ast$data, int w, int h, int stride\+\_\+in\+\_\+bytes)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{stb__herringbone__wang__tile_8h_abae4ad45a64a26c12734be500710ba0d}\label{stb__herringbone__wang__tile_8h_abae4ad45a64a26c12734be500710ba0d}} 
+\index{stb\_herringbone\_wang\_tile.h@{stb\_herringbone\_wang\_tile.h}!STBHW\_EXTERN@{STBHW\_EXTERN}}
+\index{STBHW\_EXTERN@{STBHW\_EXTERN}!stb\_herringbone\_wang\_tile.h@{stb\_herringbone\_wang\_tile.h}}
+\doxysubsubsection{\texorpdfstring{STBHW\_EXTERN}{STBHW\_EXTERN}}
+{\footnotesize\ttfamily \#define S\+T\+B\+H\+W\+\_\+\+E\+X\+T\+E\+RN~extern}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{stb__herringbone__wang__tile_8h_a6f13a854aad33b8435eedd1e9b6bb2e0}\label{stb__herringbone__wang__tile_8h_a6f13a854aad33b8435eedd1e9b6bb2e0}} 
+\index{stb\_herringbone\_wang\_tile.h@{stb\_herringbone\_wang\_tile.h}!stbhw\_tileset@{stbhw\_tileset}}
+\index{stbhw\_tileset@{stbhw\_tileset}!stb\_herringbone\_wang\_tile.h@{stb\_herringbone\_wang\_tile.h}}
+\doxysubsubsection{\texorpdfstring{stbhw\_tileset}{stbhw\_tileset}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structstbhw__tileset}{stbhw\+\_\+tileset}} \mbox{\hyperlink{structstbhw__tileset}{stbhw\+\_\+tileset}}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{stb__herringbone__wang__tile_8h_ab78f455914fcfdd6d81869ff4d8e944e}\label{stb__herringbone__wang__tile_8h_ab78f455914fcfdd6d81869ff4d8e944e}} 
+\index{stb\_herringbone\_wang\_tile.h@{stb\_herringbone\_wang\_tile.h}!stbhw\_build\_tileset\_from\_image@{stbhw\_build\_tileset\_from\_image}}
+\index{stbhw\_build\_tileset\_from\_image@{stbhw\_build\_tileset\_from\_image}!stb\_herringbone\_wang\_tile.h@{stb\_herringbone\_wang\_tile.h}}
+\doxysubsubsection{\texorpdfstring{stbhw\_build\_tileset\_from\_image()}{stbhw\_build\_tileset\_from\_image()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__herringbone__wang__tile_8h_abae4ad45a64a26c12734be500710ba0d}{S\+T\+B\+H\+W\+\_\+\+E\+X\+T\+E\+RN}} int stbhw\+\_\+build\+\_\+tileset\+\_\+from\+\_\+image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstbhw__tileset}{stbhw\+\_\+tileset}} $\ast$}]{ts,  }\item[{unsigned char $\ast$}]{pixels,  }\item[{int}]{stride\+\_\+in\+\_\+bytes,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__herringbone__wang__tile_8h_a49f4e60e1d1dd0c8fdc89a48cac92a4b}\label{stb__herringbone__wang__tile_8h_a49f4e60e1d1dd0c8fdc89a48cac92a4b}} 
+\index{stb\_herringbone\_wang\_tile.h@{stb\_herringbone\_wang\_tile.h}!stbhw\_free\_tileset@{stbhw\_free\_tileset}}
+\index{stbhw\_free\_tileset@{stbhw\_free\_tileset}!stb\_herringbone\_wang\_tile.h@{stb\_herringbone\_wang\_tile.h}}
+\doxysubsubsection{\texorpdfstring{stbhw\_free\_tileset()}{stbhw\_free\_tileset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__herringbone__wang__tile_8h_abae4ad45a64a26c12734be500710ba0d}{S\+T\+B\+H\+W\+\_\+\+E\+X\+T\+E\+RN}} void stbhw\+\_\+free\+\_\+tileset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstbhw__tileset}{stbhw\+\_\+tileset}} $\ast$}]{ts }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__herringbone__wang__tile_8h_affacb0cc9ceed70b9d21221b0b957b61}\label{stb__herringbone__wang__tile_8h_affacb0cc9ceed70b9d21221b0b957b61}} 
+\index{stb\_herringbone\_wang\_tile.h@{stb\_herringbone\_wang\_tile.h}!stbhw\_generate\_image@{stbhw\_generate\_image}}
+\index{stbhw\_generate\_image@{stbhw\_generate\_image}!stb\_herringbone\_wang\_tile.h@{stb\_herringbone\_wang\_tile.h}}
+\doxysubsubsection{\texorpdfstring{stbhw\_generate\_image()}{stbhw\_generate\_image()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__herringbone__wang__tile_8h_abae4ad45a64a26c12734be500710ba0d}{S\+T\+B\+H\+W\+\_\+\+E\+X\+T\+E\+RN}} int stbhw\+\_\+generate\+\_\+image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstbhw__tileset}{stbhw\+\_\+tileset}} $\ast$}]{ts,  }\item[{int $\ast$$\ast$}]{weighting,  }\item[{unsigned char $\ast$}]{pixels,  }\item[{int}]{stride\+\_\+in\+\_\+bytes,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__herringbone__wang__tile_8h_a9b1a4d58407946c196032cb0bc997367}\label{stb__herringbone__wang__tile_8h_a9b1a4d58407946c196032cb0bc997367}} 
+\index{stb\_herringbone\_wang\_tile.h@{stb\_herringbone\_wang\_tile.h}!stbhw\_get\_last\_error@{stbhw\_get\_last\_error}}
+\index{stbhw\_get\_last\_error@{stbhw\_get\_last\_error}!stb\_herringbone\_wang\_tile.h@{stb\_herringbone\_wang\_tile.h}}
+\doxysubsubsection{\texorpdfstring{stbhw\_get\_last\_error()}{stbhw\_get\_last\_error()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__herringbone__wang__tile_8h_abae4ad45a64a26c12734be500710ba0d}{S\+T\+B\+H\+W\+\_\+\+E\+X\+T\+E\+RN}} const char$\ast$ stbhw\+\_\+get\+\_\+last\+\_\+error (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__herringbone__wang__tile_8h_a98c5d9cf99dc60b099dadbe9f2c99d05}\label{stb__herringbone__wang__tile_8h_a98c5d9cf99dc60b099dadbe9f2c99d05}} 
+\index{stb\_herringbone\_wang\_tile.h@{stb\_herringbone\_wang\_tile.h}!stbhw\_get\_template\_size@{stbhw\_get\_template\_size}}
+\index{stbhw\_get\_template\_size@{stbhw\_get\_template\_size}!stb\_herringbone\_wang\_tile.h@{stb\_herringbone\_wang\_tile.h}}
+\doxysubsubsection{\texorpdfstring{stbhw\_get\_template\_size()}{stbhw\_get\_template\_size()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__herringbone__wang__tile_8h_abae4ad45a64a26c12734be500710ba0d}{S\+T\+B\+H\+W\+\_\+\+E\+X\+T\+E\+RN}} void stbhw\+\_\+get\+\_\+template\+\_\+size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstbhw__config}{stbhw\+\_\+config}} $\ast$}]{c,  }\item[{int $\ast$}]{w,  }\item[{int $\ast$}]{h }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{stb__herringbone__wang__tile_8h_a50f4b38fa86db29c0513598daf026871}\label{stb__herringbone__wang__tile_8h_a50f4b38fa86db29c0513598daf026871}} 
+\index{stb\_herringbone\_wang\_tile.h@{stb\_herringbone\_wang\_tile.h}!stbhw\_make\_template@{stbhw\_make\_template}}
+\index{stbhw\_make\_template@{stbhw\_make\_template}!stb\_herringbone\_wang\_tile.h@{stb\_herringbone\_wang\_tile.h}}
+\doxysubsubsection{\texorpdfstring{stbhw\_make\_template()}{stbhw\_make\_template()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{stb__herringbone__wang__tile_8h_abae4ad45a64a26c12734be500710ba0d}{S\+T\+B\+H\+W\+\_\+\+E\+X\+T\+E\+RN}} int stbhw\+\_\+make\+\_\+template (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstbhw__config}{stbhw\+\_\+config}} $\ast$}]{c,  }\item[{unsigned char $\ast$}]{data,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{int}]{stride\+\_\+in\+\_\+bytes }\end{DoxyParamCaption})}
+

@@ -1,0 +1,52 @@
+<map id="glm::abs" name="glm::abs">
+<area shape="rect" id="node1" title=" " alt="" coords="663,1187,735,1214"/>
+<area shape="rect" id="node2" href="$group__gtx__vector__query.html#gac7b95b3f798e3c293262b2bdaad47c57" title=" " alt="" coords="201,23,333,50"/>
+<area shape="rect" id="node4" href="$group__gtx__vector__query.html#ga1b091c3d7f9ee3b0708311c001c293e3" title=" " alt="" coords="439,219,579,246"/>
+<area shape="rect" id="node5" href="$namespaceglm.html#a95c8fa9b13f28e9bb3e232c67ad7e419" title=" " alt="" coords="468,270,551,297"/>
+<area shape="rect" id="node8" href="$namespaceglm.html#a97f30482bc92e985c2da212b97d40f10" title=" " alt="" coords="468,321,551,347"/>
+<area shape="rect" id="node11" href="$group__gtx__matrix__interpolation.html#gafefe32ce5a90a135287ba34fac3623bc" title=" " alt="" coords="455,371,563,398"/>
+<area shape="rect" id="node13" href="$structglm_1_1detail_1_1compute__is_comp_null_3_012_00_01_t_00_01_q_01_4.html#acec5e6ad7a0200dcbc038f9efcd97a36" title=" " alt="" coords="436,422,583,478"/>
+<area shape="rect" id="node14" href="$structglm_1_1detail_1_1compute__is_comp_null_3_013_00_01_t_00_01_q_01_4.html#a2bb0d3fb0e8d0a8c9e4571e92102f1c3" title=" " alt="" coords="436,502,583,558"/>
+<area shape="rect" id="node15" href="$structglm_1_1detail_1_1compute__is_comp_null_3_014_00_01_t_00_01_q_01_4.html#aff1dc41c1dcdc2849505c73ec3d392ac" title=" " alt="" coords="436,582,583,638"/>
+<area shape="rect" id="node16" href="$structglm_1_1detail_1_1compute__abs__vector.html#a994b357dcf8ab6c191426d9b6dbdb1f5" title=" " alt="" coords="439,663,579,704"/>
+<area shape="rect" id="node17" href="$structglm_1_1detail_1_1compute__ceil_power_of_two.html#aa074d3ad43e792925268c9295c734054" title=" " alt="" coords="435,728,584,769"/>
+<area shape="rect" id="node19" href="$classu22_1_1collision_1_1_rectangle_collision_detector.html#aaee85396ec34bb52529892da641b601d" title="判定" alt="" coords="404,793,615,835"/>
+<area shape="rect" id="node21" href="$namespaceglm.html#aded5e7ea9a0eacd03367ad77986c2a15" title=" " alt="" coords="447,859,572,886"/>
+<area shape="rect" id="node22" href="$namespaceglm.html#af4127d65f4afc6e447d461bae25f90fe" title=" " alt="" coords="437,910,582,937"/>
+<area shape="rect" id="node23" href="$group__ext__quaternion__relational.html#gaa001eecb91106463169a8e5ef1577b39" title=" " alt="" coords="468,961,551,987"/>
+<area shape="rect" id="node24" href="$group__gtx__fast__trigonometry.html#ga8d197c6ef564f5e5d59af3b3f8adcc2c" title=" " alt="" coords="460,1035,559,1062"/>
+<area shape="rect" id="node25" href="$group__gtx__fast__square__root.html#gafe697d6287719538346bbdf8b1367c59" title=" " alt="" coords="454,1086,565,1113"/>
+<area shape="rect" id="node26" href="$namespaceglm.html#a20e63c8483e37c9cdd7d9dc037815696" title=" " alt="" coords="444,1137,575,1163"/>
+<area shape="rect" id="node27" href="$namespaceglm.html#a9f531d81a978cdffac7c8257d513f59b" title=" " alt="" coords="446,1187,573,1214"/>
+<area shape="rect" id="node28" href="$namespaceglm_1_1gtc.html#a3e64854dc3369fadffdc335c55a90fd5" title=" " alt="" coords="455,1238,564,1265"/>
+<area shape="rect" id="node29" href="$namespaceglm.html#aa194d2ce350422b8c307778002a5429d" title=" " alt="" coords="451,1289,568,1315"/>
+<area shape="rect" id="node30" href="$namespaceglm.html#a8dc1b6d068dde72568fc1fcfa2238ca5" title=" " alt="" coords="458,1339,561,1366"/>
+<area shape="rect" id="node31" href="$group__gtx__vector__query.html#gac3c974f459fd75453134fad7ae89a39e" title=" " alt="" coords="203,81,330,107"/>
+<area shape="rect" id="node32" href="$group__ext__scalar__integer.html#gadf491730354aa7da67fbe23d4d688763" title=" " alt="" coords="443,1390,576,1417"/>
+<area shape="rect" id="node33" href="$group__gtx__norm.html#gae2fc0b2aa967bebfd6a244700bff6997" title=" " alt="" coords="463,1441,555,1467"/>
+<area shape="rect" id="node34" href="$namespaceglm.html#abcd8538aa95a8963803ec42c2fd654cd" title=" " alt="" coords="466,118,553,145"/>
+<area shape="rect" id="node35" href="$group__ext__quaternion__transform.html#gabfc57de6d4d2e11970f54119c5ccf0f5" title=" " alt="" coords="225,143,309,170"/>
+<area shape="rect" id="node36" href="$group__gtx__norm.html#gad58a8231fc32e38104a9e1c4d3c0cb64" title=" " alt="" coords="454,1491,565,1518"/>
+<area shape="rect" id="node37" href="$group__gtx__norm.html#gacad23d30497eb16f67709f2375d1f66a" title=" " alt="" coords="463,1542,555,1569"/>
+<area shape="rect" id="node38" href="$namespaceglm.html#af12378685ea2b5dacd7a06b026f3f519" title=" " alt="" coords="449,1593,570,1619"/>
+<area shape="rect" id="node39" href="$namespaceglm.html#a0df04698e1e331775337ec31c8967445" title=" " alt="" coords="447,1643,572,1670"/>
+<area shape="rect" id="node40" href="$namespaceglm_1_1detail.html#a3c14f8400407e8b4cff5be12ceef2c1e" title=" " alt="" coords="439,1694,579,1721"/>
+<area shape="rect" id="node41" href="$namespaceglm_1_1detail.html#ab0eb795c482130b1d6c83470bdb031e6" title=" " alt="" coords="438,1745,581,1771"/>
+<area shape="rect" id="node42" href="$group__ext__quaternion__relational.html#ga5117a44c1bf21af857cd23e44a96d313" title=" " alt="" coords="458,1795,561,1822"/>
+<area shape="rect" id="node43" href="$namespaceglm.html#a54326f7a6c7c00d7702fe6f15fa0d13f" title=" " alt="" coords="468,1846,551,1873"/>
+<area shape="rect" id="node44" href="$group__ext__matrix__clip__space.html#gaead4d049d1feab463b700b5641aa590e" title=" " alt="" coords="430,1897,589,1923"/>
+<area shape="rect" id="node45" href="$group__ext__matrix__clip__space.html#gaca32af88c2719005c02817ad1142986c" title=" " alt="" coords="431,1947,587,1974"/>
+<area shape="rect" id="node46" href="$group__ext__matrix__clip__space.html#gad1526cb2cbe796095284e8f34b01c582" title=" " alt="" coords="429,1998,589,2025"/>
+<area shape="rect" id="node47" href="$group__ext__matrix__clip__space.html#ga4da358d6e1b8e5b9ae35d1f3f2dc3b9a" title=" " alt="" coords="430,2049,589,2075"/>
+<area shape="rect" id="node48" href="$group__ext__quaternion__transform.html#ga4975ffcacd312a8c0bbd046a76c5607e" title=" " alt="" coords="472,2099,547,2126"/>
+<area shape="rect" id="node49" href="$structglm_1_1qua.html#a2e42c2862340654ea5ce26ad12554a8f" title="Explicit conversion operators" alt="" coords="459,2150,560,2177"/>
+<area shape="rect" id="node50" href="$namespaceglm.html#a09cb6ae89b52ee4c47e7b708b84e4d13" title=" " alt="" coords="461,2201,557,2227"/>
+<area shape="rect" id="node3" href="$namespaceglm.html#a4a14310285b0b47cd8357b63e3be0352" title=" " alt="" coords="5,23,129,50"/>
+<area shape="rect" id="node6" href="$group__gtc__reciprocal.html#ga4b50aa5e5afc7e19ec113ab91596c576" title=" " alt="" coords="223,219,310,246"/>
+<area shape="rect" id="node7" href="$group__core__func__trigonometric.html#ga3ef16b501ee859fddde88e22192a5950" title=" " alt="" coords="225,270,308,297"/>
+<area shape="rect" id="node9" href="$group__gtc__reciprocal.html#gafaca98a7100170db8841f446282debfa" title=" " alt="" coords="225,321,308,347"/>
+<area shape="rect" id="node10" href="$group__core__func__trigonometric.html#gabc925650e618357d07da255531658b87" title=" " alt="" coords="225,371,308,398"/>
+<area shape="rect" id="node12" href="$group__gtx__matrix__interpolation.html#ga4e67863d150724b10c1ac00972dc958c" title=" " alt="" coords="211,422,322,449"/>
+<area shape="rect" id="node18" href="$structglm_1_1detail_1_1compute__ceil_power_of_two_3_01_l_00_01_t_00_01_q_00_01false_01_4.html#af5cd62b52c3d45c1d7e0e0f1b83a32b4" title=" " alt="" coords="187,717,346,773"/>
+<area shape="rect" id="node20" href="$classu22_1_1collision_1_1_collisionable_rectangle.html#a43f4ba7ef7a5e8d87d1e83a7ec5da6ff" title=" " alt="" coords="177,797,356,839"/>
+</map>

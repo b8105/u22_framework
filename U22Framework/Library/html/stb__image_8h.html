@@ -1,0 +1,1921 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: External/stb/stb_image.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_443fc37f241ba4018364a998c18d007b.html">External</a></li><li class="navelem"><a class="el" href="dir_8cdafb5277d0f188f0ea90f41e2137ea.html">stb</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#typedef-members">型定義</a> &#124;
+<a href="#enum-members">列挙型</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">stb_image.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+stb_image.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="stb__image_8h__incl.png" border="0" usemap="#a_external_2stb_2stb__image_8h" alt=""/></div>
+<map name="_external_2stb_2stb__image_8h" id="_external_2stb_2stb__image_8h">
+<area shape="rect" title=" " alt="" coords="5,5,172,32"/>
+<area shape="rect" title=" " alt="" coords="15,80,77,107"/>
+<area shape="rect" title=" " alt="" coords="101,80,165,107"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="stb__image_8h__dep__incl.png" border="0" usemap="#a_external_2stb_2stb__image_8hdep" alt=""/></div>
+<map name="_external_2stb_2stb__image_8hdep" id="_external_2stb_2stb__image_8hdep">
+<area shape="rect" title=" " alt="" coords="5,5,172,32"/>
+<area shape="rect" href="_image_8cpp.html" title=" " alt="" coords="19,80,158,107"/>
+</map>
+</div>
+</div>
+<p><a href="stb__image_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstbi__io__callbacks.html">stbi_io_callbacks</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:aed6cd14a3bf678808c4c179e808866aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#aed6cd14a3bf678808c4c179e808866aa">STBI_VERSION</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:aed6cd14a3bf678808c4c179e808866aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d9ec9850cd12aefe7641b456266a4c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a>&#160;&#160;&#160;extern</td></tr>
+<tr class="separator:a2d9ec9850cd12aefe7641b456266a4c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:a28eb51a1512ce382ee50f20e1d04d50d"><td class="memItemLeft" align="right" valign="top">typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a></td></tr>
+<tr class="separator:a28eb51a1512ce382ee50f20e1d04d50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a648037d4c55689328ba08c8f5d293df2"><td class="memItemLeft" align="right" valign="top">typedef unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#a648037d4c55689328ba08c8f5d293df2">stbi_us</a></td></tr>
+<tr class="separator:a648037d4c55689328ba08c8f5d293df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:a06fc87d81c62e9abb8790b6e5713c55b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6c1fc181944f58b4bcd23a05acd34499">SF_FORMAT_WAV</a> = 0x010000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6b3c3276356e59c65552aa8dc81c8f8b">SF_FORMAT_AIFF</a> = 0x020000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf4bf74071da31239a8bbe3a34877d511">SF_FORMAT_AU</a> = 0x030000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba754f6ac6e6b293b1ffcb1d06412fa297">SF_FORMAT_RAW</a> = 0x040000, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba67e5cf6543280ccf166a2489658ab4ea">SF_FORMAT_PAF</a> = 0x050000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba589143a1c82410acb51792eba617ec02">SF_FORMAT_SVX</a> = 0x060000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8905ae7f3ab72cc5b667cf43a89d378b">SF_FORMAT_NIST</a> = 0x070000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baac658149adf5858ad555460103a72e36">SF_FORMAT_VOC</a> = 0x080000, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba876afc0cbbb2ef3bfce2ed0013c3a07c">SF_FORMAT_IRCAM</a> = 0x0A0000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba1550936375eaff26d88f01c5e57b679c">SF_FORMAT_W64</a> = 0x0B0000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bace8c193d02de42380758f1428b95603f">SF_FORMAT_MAT4</a> = 0x0C0000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba81a423e6776be321f518ddf39d49755d">SF_FORMAT_MAT5</a> = 0x0D0000, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba339137ced07d99c95c80cea58165c2b0">SF_FORMAT_PVF</a> = 0x0E0000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba61cf59e2b4e7782f59f21370397e3b42">SF_FORMAT_XI</a> = 0x0F0000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf9786f5a4824ff5c5a1f8b12e2ca1b8a">SF_FORMAT_HTK</a> = 0x100000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bacba7b7998062f1749acf67a17ad57cf2">SF_FORMAT_SDS</a> = 0x110000, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bad9e4eb2bce984e40515ba901c1e6fee6">SF_FORMAT_AVR</a> = 0x120000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf84597ff85285cec0ef7a253ee7ee03b">SF_FORMAT_WAVEX</a> = 0x130000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba09f74ea32b2c1e5f6e8860a63fee39c7">SF_FORMAT_SD2</a> = 0x160000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae7dd912842b509d648d62915b996b06f">SF_FORMAT_FLAC</a> = 0x170000, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baebb9b420892e6347299efea9b1de731a">SF_FORMAT_CAF</a> = 0x180000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba9fa3f8c0e1f841adbe18fff6afd9b225">SF_FORMAT_WVE</a> = 0x190000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baaaef1f7e663487eefbe4106de44ea7fd">SF_FORMAT_OGG</a> = 0x200000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6f9158b93d85b1589cf0c22e3d9ed762">SF_FORMAT_MPC2K</a> = 0x210000, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba412416b46a68961e0f3b5998a5003da4">SF_FORMAT_RF64</a> = 0x220000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8c9b17bb36d115f80ef61dcae7631b26">SF_FORMAT_PCM_S8</a> = 0x0001, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba63515ce839545c11d35dc8c8c4c5c261">SF_FORMAT_PCM_16</a> = 0x0002, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba160bd57540f1d3d6acbf2e29ea4769f4">SF_FORMAT_PCM_24</a> = 0x0003, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba741fa21e06429d59eb548d6f388d16b4">SF_FORMAT_PCM_32</a> = 0x0004, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba3828255dad74fc3ebb02b59afb28caae">SF_FORMAT_PCM_U8</a> = 0x0005, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8b19f7e84eb0556faff33623830b489b">SF_FORMAT_FLOAT</a> = 0x0006, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba7f5de05a45409d1ce72c9a2ecbff1bd3">SF_FORMAT_DOUBLE</a> = 0x0007, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae3fd36f90782efc0ee6d00cc4a6f4060">SF_FORMAT_ULAW</a> = 0x0010, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba88cd6729a685a388edbf6b971bc57d59">SF_FORMAT_ALAW</a> = 0x0011, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba84028970a006395da0454b107749238e">SF_FORMAT_IMA_ADPCM</a> = 0x0012, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae668a3aeec6b4ed1b13bf61bf826853e">SF_FORMAT_MS_ADPCM</a> = 0x0013, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf83aeb49bdbb825a72f7e28a917b3ff8">SF_FORMAT_GSM610</a> = 0x0020, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba313dc159c6ef2fbb2aa8a8527ae679d6">SF_FORMAT_VOX_ADPCM</a> = 0x0021, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baac83013f62a7f7b43d9cf7738b0752da">SF_FORMAT_G721_32</a> = 0x0030, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bada2bb516d73e8f64dbde9a30e9c2fe3a">SF_FORMAT_G723_24</a> = 0x0031, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baa5c30385e6f2292e273fd4c2897bee6b">SF_FORMAT_G723_40</a> = 0x0032, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba82f7b868e26a90aa9f35aca78dccd6cb">SF_FORMAT_DWVW_12</a> = 0x0040, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baa4e811170b266013a8e48089466b1eaa">SF_FORMAT_DWVW_16</a> = 0x0041, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba0f25d45633813e4d4e9115a635d4e44c">SF_FORMAT_DWVW_24</a> = 0x0042, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba90c0d2cd326ee0c8535500290ddac4c6">SF_FORMAT_DWVW_N</a> = 0x0043, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8fed18695608391eec4fde4ef6aca65e">SF_FORMAT_DPCM_8</a> = 0x0050, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba1760953aad0c96ca1c85cac5b353b919">SF_FORMAT_DPCM_16</a> = 0x0051, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba029114057a7956f3c94ae18d269faf61">SF_FORMAT_VORBIS</a> = 0x0060, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bacf21441e9a1c5b705b5669b63e4bae1e">SF_FORMAT_ALAC_16</a> = 0x0070, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba4ad8a6ee7d05d950e76319544f0e7e3f">SF_FORMAT_ALAC_20</a> = 0x0071, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba303b93fd601b13ec59f315f159713743">SF_FORMAT_ALAC_24</a> = 0x0072, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baff13be8653e6eb27f0a9be560bca32e1">SF_FORMAT_ALAC_32</a> = 0x0073, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba19c07acde7315bff90e2f4aafd91a0eb">SF_ENDIAN_FILE</a> = 0x00000000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba5e4eee211f84815fdc7932cf26e2cda2">SF_ENDIAN_LITTLE</a> = 0x10000000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba0c342389e92c7a1cbbf5267cd25db357">SF_ENDIAN_BIG</a> = 0x20000000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8cb50cf8159f5eca028506e847b3357f">SF_ENDIAN_CPU</a> = 0x30000000, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae792e42fc6619187743f7741e7044240">SF_FORMAT_SUBMASK</a> = 0x0000FFFF, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba4d9e4f32f119d026fdc74a88e9d41e87">SF_FORMAT_TYPEMASK</a> = 0x0FFF0000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba3ad64b85eba112d383ece8d58e612ced">SF_FORMAT_ENDMASK</a> = 0x30000000, 
+<a class="el" href="stb_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba24e950b5afa49d5dac392ca3dbac31cf">stb_keep_no</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="stb_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba78d897c2442e1e03a94787a224c34650">stb_keep_yes</a> = 1, 
+<a class="el" href="stb_8h.html#a06fc87d81c62e9abb8790b6e5713c55bafc277b5591965d4b85ff6a123d68f7bc">stb_keep_if_different</a> = 2, 
+<a class="el" href="stb__ds_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6190aa75494d401819f42525160a29df">STBDS_HM_BINARY</a>, 
+<a class="el" href="stb__ds_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba0eb29a259a93d6d37f0388a7c868adca">STBDS_HM_STRING</a>, 
+<br />
+&#160;&#160;<a class="el" href="stb__image_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba0177ac2c5002f4f251bb766d41752029">STBI_default</a> = 0, 
+<a class="el" href="stb__image_8h.html#a06fc87d81c62e9abb8790b6e5713c55bad1eb95ca1fa7706bf732bf35a0ed40aa">STBI_grey</a> = 1, 
+<a class="el" href="stb__image_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf5829d16d4cca6077465c5abd346e2f8">STBI_grey_alpha</a> = 2, 
+<a class="el" href="stb__image_8h.html#a06fc87d81c62e9abb8790b6e5713c55baa59123e5d0af25f9b1539f5cf1facddf">STBI_rgb</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="stb__image_8h.html#a06fc87d81c62e9abb8790b6e5713c55baa7b1af0c9f0310c3ada2aa29a32de293">STBI_rgb_alpha</a> = 4, 
+<a class="el" href="stb__rect__pack_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba5e4dd0b1cbee654bbfeebc5311f03525">STBRP_HEURISTIC_Skyline_default</a> =0, 
+<a class="el" href="stb__rect__pack_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba13530b067fb1f9707dc0f9d51f8b074a">STBRP_HEURISTIC_Skyline_BL_sortHeight</a> = STBRP_HEURISTIC_Skyline_default, 
+<a class="el" href="stb__rect__pack_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba11d62749c4405a231a6fd1dd9d46615c">STBRP_HEURISTIC_Skyline_BF_sortHeight</a>, 
+<br />
+&#160;&#160;<a class="el" href="stb__tilemap__editor_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba778bce82a2515bae94b3398971aee45b">STBTE_drawmode_deemphasize</a> = -1, 
+<a class="el" href="stb__tilemap__editor_8h.html#a06fc87d81c62e9abb8790b6e5713c55bafc38f2f3cc1c7fa986c121abdc30ffec">STBTE_drawmode_normal</a> = 0, 
+<a class="el" href="stb__tilemap__editor_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba088e1c4fcba12f43066438f0040eecc1">STBTE_drawmode_emphasize</a> = 1, 
+<a class="el" href="stb__truetype_8h.html#a06fc87d81c62e9abb8790b6e5713c55bab335ba97e1798b621313de85a9a6e69d">STBTT_vmove</a> =1, 
+<br />
+&#160;&#160;<a class="el" href="stb__truetype_8h.html#a06fc87d81c62e9abb8790b6e5713c55bade4bb6465c32e56588f35e5120769e2e">STBTT_vline</a>, 
+<a class="el" href="stb__truetype_8h.html#a06fc87d81c62e9abb8790b6e5713c55bab9ac3e527ce18873abeab556f6768ce4">STBTT_vcurve</a>, 
+<a class="el" href="stb__truetype_8h.html#a06fc87d81c62e9abb8790b6e5713c55bab6cd2670234c731eafba404d3a2470fd">STBTT_vcubic</a>, 
+<a class="el" href="stb__vorbis_8c.html#a06fc87d81c62e9abb8790b6e5713c55ba80ba889feb2380990384b027bd2905b4">VORBIS_packet_id</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="stb__vorbis_8c.html#a06fc87d81c62e9abb8790b6e5713c55ba01e28b89a67bc5705d2c44c1221fce8d">VORBIS_packet_comment</a> = 3, 
+<a class="el" href="stb__vorbis_8c.html#a06fc87d81c62e9abb8790b6e5713c55ba20b3079d6deb5a9d07566234f8f0eb1d">VORBIS_packet_setup</a> = 5, 
+<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae4a976805a2c137e4e56be03380ea2a2">STBVOX_UNIFORM_face_data</a>, 
+<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55bab955886cfcf0c2c881d633beeb99ad93">STBVOX_UNIFORM_transform</a>, 
+<br />
+&#160;&#160;<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba9415362fa2fe2833bbb221c12310dc81">STBVOX_UNIFORM_tex_array</a>, 
+<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf9b476df9befe12c8855d1ea20db22fe">STBVOX_UNIFORM_texscale</a>, 
+<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba1f8122611f70005180ede22ebffa840f">STBVOX_UNIFORM_color_table</a>, 
+<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba67cfb94d15198e0d936ca263a2077b5e">STBVOX_UNIFORM_normals</a>, 
+<br />
+&#160;&#160;<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba65f746116b3aa230da8bbb534e6cea97">STBVOX_UNIFORM_texgen</a>, 
+<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba87500607917aa427db2ff08fc3ea1ca8">STBVOX_UNIFORM_ambient</a>, 
+<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba82a48737d53c36a05fdf8138c17c349f">STBVOX_UNIFORM_camera_pos</a>, 
+<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba463fbe04a519703eaad7ce1434576696">STBVOX_UNIFORM_count</a>
+<br />
+ }</td></tr>
+<tr class="separator:a06fc87d81c62e9abb8790b6e5713c55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:acae25d31bfae29d75482f07fecf2935f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> <a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#acae25d31bfae29d75482f07fecf2935f">stbi_load_from_memory</a> (<a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> const *buffer, int len, int *x, int *y, int *channels_in_file, int desired_channels)</td></tr>
+<tr class="separator:acae25d31bfae29d75482f07fecf2935f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95ebc5c42c1a753200be8d465e933af7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> <a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#a95ebc5c42c1a753200be8d465e933af7">stbi_load_from_callbacks</a> (<a class="el" href="structstbi__io__callbacks.html">stbi_io_callbacks</a> const *clbk, void *user, int *x, int *y, int *channels_in_file, int desired_channels)</td></tr>
+<tr class="separator:a95ebc5c42c1a753200be8d465e933af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefdc7387857a14894bbf321e9ea4f048"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> <a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#aefdc7387857a14894bbf321e9ea4f048">stbi_load</a> (char const *filename, int *x, int *y, int *channels_in_file, int desired_channels)</td></tr>
+<tr class="separator:aefdc7387857a14894bbf321e9ea4f048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9994764695597161e8f3776e97caa99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> <a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#aa9994764695597161e8f3776e97caa99">stbi_load_from_file</a> (FILE *f, int *x, int *y, int *channels_in_file, int desired_channels)</td></tr>
+<tr class="separator:aa9994764695597161e8f3776e97caa99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab81ccbc3526368d651117ef48df82b01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> <a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#ab81ccbc3526368d651117ef48df82b01">stbi_load_gif_from_memory</a> (<a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> const *buffer, int len, int **delays, int *x, int *y, int *z, int *comp, int req_comp)</td></tr>
+<tr class="separator:ab81ccbc3526368d651117ef48df82b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad30fd870ed2138ce8f38c9dd29b2f76a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> <a class="el" href="stb__image_8h.html#a648037d4c55689328ba08c8f5d293df2">stbi_us</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#ad30fd870ed2138ce8f38c9dd29b2f76a">stbi_load_16_from_memory</a> (<a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> const *buffer, int len, int *x, int *y, int *channels_in_file, int desired_channels)</td></tr>
+<tr class="separator:ad30fd870ed2138ce8f38c9dd29b2f76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82bcc0957b6a4ebfdfa3d7f04fbaed18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> <a class="el" href="stb__image_8h.html#a648037d4c55689328ba08c8f5d293df2">stbi_us</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#a82bcc0957b6a4ebfdfa3d7f04fbaed18">stbi_load_16_from_callbacks</a> (<a class="el" href="structstbi__io__callbacks.html">stbi_io_callbacks</a> const *clbk, void *user, int *x, int *y, int *channels_in_file, int desired_channels)</td></tr>
+<tr class="separator:a82bcc0957b6a4ebfdfa3d7f04fbaed18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a58b6bcd805afa1bdb14f988dd37fee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> <a class="el" href="stb__image_8h.html#a648037d4c55689328ba08c8f5d293df2">stbi_us</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#a8a58b6bcd805afa1bdb14f988dd37fee">stbi_load_16</a> (char const *filename, int *x, int *y, int *channels_in_file, int desired_channels)</td></tr>
+<tr class="separator:a8a58b6bcd805afa1bdb14f988dd37fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ca2591f0987284129e82bf9dbcf7c6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> <a class="el" href="stb__image_8h.html#a648037d4c55689328ba08c8f5d293df2">stbi_us</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#a9ca2591f0987284129e82bf9dbcf7c6c">stbi_load_from_file_16</a> (FILE *f, int *x, int *y, int *channels_in_file, int desired_channels)</td></tr>
+<tr class="separator:a9ca2591f0987284129e82bf9dbcf7c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d47fb76ce1e34eb0729ad932c9c48e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#a5d47fb76ce1e34eb0729ad932c9c48e2">stbi_loadf_from_memory</a> (<a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> const *buffer, int len, int *x, int *y, int *channels_in_file, int desired_channels)</td></tr>
+<tr class="separator:a5d47fb76ce1e34eb0729ad932c9c48e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e7fd261af79ecef2208df3a6cc806bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#a6e7fd261af79ecef2208df3a6cc806bb">stbi_loadf_from_callbacks</a> (<a class="el" href="structstbi__io__callbacks.html">stbi_io_callbacks</a> const *clbk, void *user, int *x, int *y, int *channels_in_file, int desired_channels)</td></tr>
+<tr class="separator:a6e7fd261af79ecef2208df3a6cc806bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f17acd30945a75901fdc022f90575f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#af4f17acd30945a75901fdc022f90575f">stbi_loadf</a> (char const *filename, int *x, int *y, int *channels_in_file, int desired_channels)</td></tr>
+<tr class="separator:af4f17acd30945a75901fdc022f90575f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace82446ecd7b5c760cde062179660f46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#ace82446ecd7b5c760cde062179660f46">stbi_loadf_from_file</a> (FILE *f, int *x, int *y, int *channels_in_file, int desired_channels)</td></tr>
+<tr class="separator:ace82446ecd7b5c760cde062179660f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab18889e43518d6b4421b705782bb1b5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#ab18889e43518d6b4421b705782bb1b5e">stbi_hdr_to_ldr_gamma</a> (float gamma)</td></tr>
+<tr class="separator:ab18889e43518d6b4421b705782bb1b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae21cc1184eeb5cc814699f1ed62c5258"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#ae21cc1184eeb5cc814699f1ed62c5258">stbi_hdr_to_ldr_scale</a> (float scale)</td></tr>
+<tr class="separator:ae21cc1184eeb5cc814699f1ed62c5258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1feccdcf726dcc6b5502e3efa85b7dbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#a1feccdcf726dcc6b5502e3efa85b7dbb">stbi_ldr_to_hdr_gamma</a> (float gamma)</td></tr>
+<tr class="separator:a1feccdcf726dcc6b5502e3efa85b7dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af946583656a362a316b40c0421c20561"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#af946583656a362a316b40c0421c20561">stbi_ldr_to_hdr_scale</a> (float scale)</td></tr>
+<tr class="separator:af946583656a362a316b40c0421c20561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0e94f316fe1848f632517ca3c11d077"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#af0e94f316fe1848f632517ca3c11d077">stbi_is_hdr_from_callbacks</a> (<a class="el" href="structstbi__io__callbacks.html">stbi_io_callbacks</a> const *clbk, void *user)</td></tr>
+<tr class="separator:af0e94f316fe1848f632517ca3c11d077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cbc6f5cbb3b2d0d87ee959fcee9d23e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#a5cbc6f5cbb3b2d0d87ee959fcee9d23e">stbi_is_hdr_from_memory</a> (<a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> const *buffer, int len)</td></tr>
+<tr class="separator:a5cbc6f5cbb3b2d0d87ee959fcee9d23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae70f9a302f7e87fd971075e7f758d55c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#ae70f9a302f7e87fd971075e7f758d55c">stbi_is_hdr</a> (char const *filename)</td></tr>
+<tr class="separator:ae70f9a302f7e87fd971075e7f758d55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf10d41631e1e9214fde1688bdbd8524"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#aaf10d41631e1e9214fde1688bdbd8524">stbi_is_hdr_from_file</a> (FILE *f)</td></tr>
+<tr class="separator:aaf10d41631e1e9214fde1688bdbd8524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa874b3ba909f3281d499894909678336"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#aa874b3ba909f3281d499894909678336">stbi_failure_reason</a> (void)</td></tr>
+<tr class="separator:aa874b3ba909f3281d499894909678336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3e11bb44412a7ba348acfbad09caacb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#ad3e11bb44412a7ba348acfbad09caacb">stbi_image_free</a> (void *retval_from_stbi_load)</td></tr>
+<tr class="separator:ad3e11bb44412a7ba348acfbad09caacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfef077febce3bc3f1f339de478f3315"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#acfef077febce3bc3f1f339de478f3315">stbi_info_from_memory</a> (<a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> const *buffer, int len, int *x, int *y, int *comp)</td></tr>
+<tr class="separator:acfef077febce3bc3f1f339de478f3315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86291c64cb663f41a34647d5e1abf363"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#a86291c64cb663f41a34647d5e1abf363">stbi_info_from_callbacks</a> (<a class="el" href="structstbi__io__callbacks.html">stbi_io_callbacks</a> const *clbk, void *user, int *x, int *y, int *comp)</td></tr>
+<tr class="separator:a86291c64cb663f41a34647d5e1abf363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a548d486e07e0eb95671cb200d3a9530f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#a548d486e07e0eb95671cb200d3a9530f">stbi_is_16_bit_from_memory</a> (<a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> const *buffer, int len)</td></tr>
+<tr class="separator:a548d486e07e0eb95671cb200d3a9530f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a990e0e38ab6e600bd9cbf5d30abd2f8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#a990e0e38ab6e600bd9cbf5d30abd2f8f">stbi_is_16_bit_from_callbacks</a> (<a class="el" href="structstbi__io__callbacks.html">stbi_io_callbacks</a> const *clbk, void *user)</td></tr>
+<tr class="separator:a990e0e38ab6e600bd9cbf5d30abd2f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aede708cca1304520b2afcf4d5eb61d70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#aede708cca1304520b2afcf4d5eb61d70">stbi_info</a> (char const *filename, int *x, int *y, int *comp)</td></tr>
+<tr class="separator:aede708cca1304520b2afcf4d5eb61d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28abedef4a0a93909332080df6be0021"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#a28abedef4a0a93909332080df6be0021">stbi_info_from_file</a> (FILE *f, int *x, int *y, int *comp)</td></tr>
+<tr class="separator:a28abedef4a0a93909332080df6be0021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d9af55a35382c011cc186f7b62c00af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#a7d9af55a35382c011cc186f7b62c00af">stbi_is_16_bit</a> (char const *filename)</td></tr>
+<tr class="separator:a7d9af55a35382c011cc186f7b62c00af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42fa266b80bfde22a0781ba2112d1c62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#a42fa266b80bfde22a0781ba2112d1c62">stbi_is_16_bit_from_file</a> (FILE *f)</td></tr>
+<tr class="separator:a42fa266b80bfde22a0781ba2112d1c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f02e0053e1c8d08a3ed436e6a82c7c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#a3f02e0053e1c8d08a3ed436e6a82c7c9">stbi_set_unpremultiply_on_load</a> (int flag_true_if_should_unpremultiply)</td></tr>
+<tr class="separator:a3f02e0053e1c8d08a3ed436e6a82c7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23525ef2b882f3de426b47ecf8d9151b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#a23525ef2b882f3de426b47ecf8d9151b">stbi_convert_iphone_png_to_rgb</a> (int flag_true_if_should_convert)</td></tr>
+<tr class="separator:a23525ef2b882f3de426b47ecf8d9151b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab89c177fc52f1bb2dc1c05e48129a0a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#ab89c177fc52f1bb2dc1c05e48129a0a4">stbi_set_flip_vertically_on_load</a> (int flag_true_if_should_flip)</td></tr>
+<tr class="separator:ab89c177fc52f1bb2dc1c05e48129a0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa17a529bec51403cc23dc2e7c36d79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#aaaa17a529bec51403cc23dc2e7c36d79">stbi_zlib_decode_malloc_guesssize</a> (const char *buffer, int len, int initial_size, int *outlen)</td></tr>
+<tr class="separator:aaaa17a529bec51403cc23dc2e7c36d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a038b0e741859a482b8b9d60167e54d27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#a038b0e741859a482b8b9d60167e54d27">stbi_zlib_decode_malloc_guesssize_headerflag</a> (const char *buffer, int len, int initial_size, int *outlen, int parse_header)</td></tr>
+<tr class="separator:a038b0e741859a482b8b9d60167e54d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4919b67b12e0e3acc5301f185ca77e2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#a4919b67b12e0e3acc5301f185ca77e2e">stbi_zlib_decode_malloc</a> (const char *buffer, int len, int *outlen)</td></tr>
+<tr class="separator:a4919b67b12e0e3acc5301f185ca77e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8447830c49bc17f8491e12c1f0ded48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#ae8447830c49bc17f8491e12c1f0ded48">stbi_zlib_decode_buffer</a> (char *obuffer, int olen, const char *ibuffer, int ilen)</td></tr>
+<tr class="separator:ae8447830c49bc17f8491e12c1f0ded48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fbd65c83495f13f22469fe493775739"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#a7fbd65c83495f13f22469fe493775739">stbi_zlib_decode_noheader_malloc</a> (const char *buffer, int len, int *outlen)</td></tr>
+<tr class="separator:a7fbd65c83495f13f22469fe493775739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d12efc011adfff7521f3b924feb0b0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__image_8h.html#a0d12efc011adfff7521f3b924feb0b0e">stbi_zlib_decode_noheader_buffer</a> (char *obuffer, int olen, const char *ibuffer, int ilen)</td></tr>
+<tr class="separator:a0d12efc011adfff7521f3b924feb0b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">マクロ定義詳解</h2>
+<a id="aed6cd14a3bf678808c4c179e808866aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed6cd14a3bf678808c4c179e808866aa">&#9670;&nbsp;</a></span>STBI_VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STBI_VERSION&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d9ec9850cd12aefe7641b456266a4c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d9ec9850cd12aefe7641b456266a4c2">&#9670;&nbsp;</a></span>STBIDEF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STBIDEF&#160;&#160;&#160;extern</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">型定義詳解</h2>
+<a id="a28eb51a1512ce382ee50f20e1d04d50d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28eb51a1512ce382ee50f20e1d04d50d">&#9670;&nbsp;</a></span>stbi_uc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned char <a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a648037d4c55689328ba08c8f5d293df2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a648037d4c55689328ba08c8f5d293df2">&#9670;&nbsp;</a></span>stbi_us</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned short <a class="el" href="stb__image_8h.html#a648037d4c55689328ba08c8f5d293df2">stbi_us</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">列挙型詳解</h2>
+<a id="a06fc87d81c62e9abb8790b6e5713c55b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06fc87d81c62e9abb8790b6e5713c55b">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba6c1fc181944f58b4bcd23a05acd34499"></a>SF_FORMAT_WAV&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba6b3c3276356e59c65552aa8dc81c8f8b"></a>SF_FORMAT_AIFF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baf4bf74071da31239a8bbe3a34877d511"></a>SF_FORMAT_AU&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba754f6ac6e6b293b1ffcb1d06412fa297"></a>SF_FORMAT_RAW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba67e5cf6543280ccf166a2489658ab4ea"></a>SF_FORMAT_PAF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba589143a1c82410acb51792eba617ec02"></a>SF_FORMAT_SVX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba8905ae7f3ab72cc5b667cf43a89d378b"></a>SF_FORMAT_NIST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baac658149adf5858ad555460103a72e36"></a>SF_FORMAT_VOC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba876afc0cbbb2ef3bfce2ed0013c3a07c"></a>SF_FORMAT_IRCAM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba1550936375eaff26d88f01c5e57b679c"></a>SF_FORMAT_W64&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bace8c193d02de42380758f1428b95603f"></a>SF_FORMAT_MAT4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba81a423e6776be321f518ddf39d49755d"></a>SF_FORMAT_MAT5&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba339137ced07d99c95c80cea58165c2b0"></a>SF_FORMAT_PVF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba61cf59e2b4e7782f59f21370397e3b42"></a>SF_FORMAT_XI&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baf9786f5a4824ff5c5a1f8b12e2ca1b8a"></a>SF_FORMAT_HTK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bacba7b7998062f1749acf67a17ad57cf2"></a>SF_FORMAT_SDS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bad9e4eb2bce984e40515ba901c1e6fee6"></a>SF_FORMAT_AVR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baf84597ff85285cec0ef7a253ee7ee03b"></a>SF_FORMAT_WAVEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba09f74ea32b2c1e5f6e8860a63fee39c7"></a>SF_FORMAT_SD2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bae7dd912842b509d648d62915b996b06f"></a>SF_FORMAT_FLAC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baebb9b420892e6347299efea9b1de731a"></a>SF_FORMAT_CAF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba9fa3f8c0e1f841adbe18fff6afd9b225"></a>SF_FORMAT_WVE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baaaef1f7e663487eefbe4106de44ea7fd"></a>SF_FORMAT_OGG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba6f9158b93d85b1589cf0c22e3d9ed762"></a>SF_FORMAT_MPC2K&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba412416b46a68961e0f3b5998a5003da4"></a>SF_FORMAT_RF64&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba8c9b17bb36d115f80ef61dcae7631b26"></a>SF_FORMAT_PCM_S8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba63515ce839545c11d35dc8c8c4c5c261"></a>SF_FORMAT_PCM_16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba160bd57540f1d3d6acbf2e29ea4769f4"></a>SF_FORMAT_PCM_24&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba741fa21e06429d59eb548d6f388d16b4"></a>SF_FORMAT_PCM_32&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba3828255dad74fc3ebb02b59afb28caae"></a>SF_FORMAT_PCM_U8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba8b19f7e84eb0556faff33623830b489b"></a>SF_FORMAT_FLOAT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba7f5de05a45409d1ce72c9a2ecbff1bd3"></a>SF_FORMAT_DOUBLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bae3fd36f90782efc0ee6d00cc4a6f4060"></a>SF_FORMAT_ULAW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba88cd6729a685a388edbf6b971bc57d59"></a>SF_FORMAT_ALAW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba84028970a006395da0454b107749238e"></a>SF_FORMAT_IMA_ADPCM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bae668a3aeec6b4ed1b13bf61bf826853e"></a>SF_FORMAT_MS_ADPCM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baf83aeb49bdbb825a72f7e28a917b3ff8"></a>SF_FORMAT_GSM610&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba313dc159c6ef2fbb2aa8a8527ae679d6"></a>SF_FORMAT_VOX_ADPCM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baac83013f62a7f7b43d9cf7738b0752da"></a>SF_FORMAT_G721_32&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bada2bb516d73e8f64dbde9a30e9c2fe3a"></a>SF_FORMAT_G723_24&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baa5c30385e6f2292e273fd4c2897bee6b"></a>SF_FORMAT_G723_40&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba82f7b868e26a90aa9f35aca78dccd6cb"></a>SF_FORMAT_DWVW_12&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baa4e811170b266013a8e48089466b1eaa"></a>SF_FORMAT_DWVW_16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba0f25d45633813e4d4e9115a635d4e44c"></a>SF_FORMAT_DWVW_24&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba90c0d2cd326ee0c8535500290ddac4c6"></a>SF_FORMAT_DWVW_N&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba8fed18695608391eec4fde4ef6aca65e"></a>SF_FORMAT_DPCM_8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba1760953aad0c96ca1c85cac5b353b919"></a>SF_FORMAT_DPCM_16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba029114057a7956f3c94ae18d269faf61"></a>SF_FORMAT_VORBIS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bacf21441e9a1c5b705b5669b63e4bae1e"></a>SF_FORMAT_ALAC_16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba4ad8a6ee7d05d950e76319544f0e7e3f"></a>SF_FORMAT_ALAC_20&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba303b93fd601b13ec59f315f159713743"></a>SF_FORMAT_ALAC_24&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baff13be8653e6eb27f0a9be560bca32e1"></a>SF_FORMAT_ALAC_32&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba19c07acde7315bff90e2f4aafd91a0eb"></a>SF_ENDIAN_FILE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba5e4eee211f84815fdc7932cf26e2cda2"></a>SF_ENDIAN_LITTLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba0c342389e92c7a1cbbf5267cd25db357"></a>SF_ENDIAN_BIG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba8cb50cf8159f5eca028506e847b3357f"></a>SF_ENDIAN_CPU&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bae792e42fc6619187743f7741e7044240"></a>SF_FORMAT_SUBMASK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba4d9e4f32f119d026fdc74a88e9d41e87"></a>SF_FORMAT_TYPEMASK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba3ad64b85eba112d383ece8d58e612ced"></a>SF_FORMAT_ENDMASK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba24e950b5afa49d5dac392ca3dbac31cf"></a>stb_keep_no&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba78d897c2442e1e03a94787a224c34650"></a>stb_keep_yes&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bafc277b5591965d4b85ff6a123d68f7bc"></a>stb_keep_if_different&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba6190aa75494d401819f42525160a29df"></a>STBDS_HM_BINARY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba0eb29a259a93d6d37f0388a7c868adca"></a>STBDS_HM_STRING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba0177ac2c5002f4f251bb766d41752029"></a>STBI_default&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bad1eb95ca1fa7706bf732bf35a0ed40aa"></a>STBI_grey&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baf5829d16d4cca6077465c5abd346e2f8"></a>STBI_grey_alpha&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baa59123e5d0af25f9b1539f5cf1facddf"></a>STBI_rgb&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baa7b1af0c9f0310c3ada2aa29a32de293"></a>STBI_rgb_alpha&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba5e4dd0b1cbee654bbfeebc5311f03525"></a>STBRP_HEURISTIC_Skyline_default&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba13530b067fb1f9707dc0f9d51f8b074a"></a>STBRP_HEURISTIC_Skyline_BL_sortHeight&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba11d62749c4405a231a6fd1dd9d46615c"></a>STBRP_HEURISTIC_Skyline_BF_sortHeight&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba778bce82a2515bae94b3398971aee45b"></a>STBTE_drawmode_deemphasize&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bafc38f2f3cc1c7fa986c121abdc30ffec"></a>STBTE_drawmode_normal&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba088e1c4fcba12f43066438f0040eecc1"></a>STBTE_drawmode_emphasize&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bab335ba97e1798b621313de85a9a6e69d"></a>STBTT_vmove&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bade4bb6465c32e56588f35e5120769e2e"></a>STBTT_vline&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bab9ac3e527ce18873abeab556f6768ce4"></a>STBTT_vcurve&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bab6cd2670234c731eafba404d3a2470fd"></a>STBTT_vcubic&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba80ba889feb2380990384b027bd2905b4"></a>VORBIS_packet_id&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba01e28b89a67bc5705d2c44c1221fce8d"></a>VORBIS_packet_comment&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba20b3079d6deb5a9d07566234f8f0eb1d"></a>VORBIS_packet_setup&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bae4a976805a2c137e4e56be03380ea2a2"></a>STBVOX_UNIFORM_face_data&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bab955886cfcf0c2c881d633beeb99ad93"></a>STBVOX_UNIFORM_transform&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba9415362fa2fe2833bbb221c12310dc81"></a>STBVOX_UNIFORM_tex_array&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baf9b476df9befe12c8855d1ea20db22fe"></a>STBVOX_UNIFORM_texscale&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba1f8122611f70005180ede22ebffa840f"></a>STBVOX_UNIFORM_color_table&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba67cfb94d15198e0d936ca263a2077b5e"></a>STBVOX_UNIFORM_normals&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba65f746116b3aa230da8bbb534e6cea97"></a>STBVOX_UNIFORM_texgen&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba87500607917aa427db2ff08fc3ea1ca8"></a>STBVOX_UNIFORM_ambient&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba82a48737d53c36a05fdf8138c17c349f"></a>STBVOX_UNIFORM_camera_pos&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba463fbe04a519703eaad7ce1434576696"></a>STBVOX_UNIFORM_count&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a23525ef2b882f3de426b47ecf8d9151b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23525ef2b882f3de426b47ecf8d9151b">&#9670;&nbsp;</a></span>stbi_convert_iphone_png_to_rgb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> void stbi_convert_iphone_png_to_rgb </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flag_true_if_should_convert</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa874b3ba909f3281d499894909678336"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa874b3ba909f3281d499894909678336">&#9670;&nbsp;</a></span>stbi_failure_reason()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> const char* stbi_failure_reason </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab18889e43518d6b4421b705782bb1b5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab18889e43518d6b4421b705782bb1b5e">&#9670;&nbsp;</a></span>stbi_hdr_to_ldr_gamma()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> void stbi_hdr_to_ldr_gamma </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>gamma</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae21cc1184eeb5cc814699f1ed62c5258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae21cc1184eeb5cc814699f1ed62c5258">&#9670;&nbsp;</a></span>stbi_hdr_to_ldr_scale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> void stbi_hdr_to_ldr_scale </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scale</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3e11bb44412a7ba348acfbad09caacb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3e11bb44412a7ba348acfbad09caacb">&#9670;&nbsp;</a></span>stbi_image_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> void stbi_image_free </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>retval_from_stbi_load</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="stb__image_8h_ad3e11bb44412a7ba348acfbad09caacb_icgraph.png" border="0" usemap="#astb__image_8h_ad3e11bb44412a7ba348acfbad09caacb_icgraph" alt=""/></div>
+<map name="stb__image_8h_ad3e11bb44412a7ba348acfbad09caacb_icgraph" id="stb__image_8h_ad3e11bb44412a7ba348acfbad09caacb_icgraph">
+<area shape="rect" title=" " alt="" coords="196,13,309,39"/>
+<area shape="rect" href="classu22_1_1graphics_1_1_image.html#ac9599847b5b0f702f074964cef1e25ce" title="デストラクタ" alt="" coords="5,5,148,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aede708cca1304520b2afcf4d5eb61d70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aede708cca1304520b2afcf4d5eb61d70">&#9670;&nbsp;</a></span>stbi_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int stbi_info </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>comp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86291c64cb663f41a34647d5e1abf363"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86291c64cb663f41a34647d5e1abf363">&#9670;&nbsp;</a></span>stbi_info_from_callbacks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int stbi_info_from_callbacks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstbi__io__callbacks.html">stbi_io_callbacks</a> const *&#160;</td>
+          <td class="paramname"><em>clbk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>comp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a28abedef4a0a93909332080df6be0021"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28abedef4a0a93909332080df6be0021">&#9670;&nbsp;</a></span>stbi_info_from_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int stbi_info_from_file </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>comp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acfef077febce3bc3f1f339de478f3315"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfef077febce3bc3f1f339de478f3315">&#9670;&nbsp;</a></span>stbi_info_from_memory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int stbi_info_from_memory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> const *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>comp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d9af55a35382c011cc186f7b62c00af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d9af55a35382c011cc186f7b62c00af">&#9670;&nbsp;</a></span>stbi_is_16_bit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int stbi_is_16_bit </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a990e0e38ab6e600bd9cbf5d30abd2f8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a990e0e38ab6e600bd9cbf5d30abd2f8f">&#9670;&nbsp;</a></span>stbi_is_16_bit_from_callbacks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int stbi_is_16_bit_from_callbacks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstbi__io__callbacks.html">stbi_io_callbacks</a> const *&#160;</td>
+          <td class="paramname"><em>clbk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42fa266b80bfde22a0781ba2112d1c62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42fa266b80bfde22a0781ba2112d1c62">&#9670;&nbsp;</a></span>stbi_is_16_bit_from_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int stbi_is_16_bit_from_file </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a548d486e07e0eb95671cb200d3a9530f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a548d486e07e0eb95671cb200d3a9530f">&#9670;&nbsp;</a></span>stbi_is_16_bit_from_memory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int stbi_is_16_bit_from_memory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> const *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae70f9a302f7e87fd971075e7f758d55c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae70f9a302f7e87fd971075e7f758d55c">&#9670;&nbsp;</a></span>stbi_is_hdr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int stbi_is_hdr </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af0e94f316fe1848f632517ca3c11d077"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0e94f316fe1848f632517ca3c11d077">&#9670;&nbsp;</a></span>stbi_is_hdr_from_callbacks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int stbi_is_hdr_from_callbacks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstbi__io__callbacks.html">stbi_io_callbacks</a> const *&#160;</td>
+          <td class="paramname"><em>clbk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf10d41631e1e9214fde1688bdbd8524"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf10d41631e1e9214fde1688bdbd8524">&#9670;&nbsp;</a></span>stbi_is_hdr_from_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int stbi_is_hdr_from_file </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5cbc6f5cbb3b2d0d87ee959fcee9d23e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cbc6f5cbb3b2d0d87ee959fcee9d23e">&#9670;&nbsp;</a></span>stbi_is_hdr_from_memory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int stbi_is_hdr_from_memory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> const *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1feccdcf726dcc6b5502e3efa85b7dbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1feccdcf726dcc6b5502e3efa85b7dbb">&#9670;&nbsp;</a></span>stbi_ldr_to_hdr_gamma()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> void stbi_ldr_to_hdr_gamma </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>gamma</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af946583656a362a316b40c0421c20561"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af946583656a362a316b40c0421c20561">&#9670;&nbsp;</a></span>stbi_ldr_to_hdr_scale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> void stbi_ldr_to_hdr_scale </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scale</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aefdc7387857a14894bbf321e9ea4f048"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefdc7387857a14894bbf321e9ea4f048">&#9670;&nbsp;</a></span>stbi_load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> <a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>* stbi_load </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>channels_in_file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desired_channels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="stb__image_8h_aefdc7387857a14894bbf321e9ea4f048_icgraph.png" border="0" usemap="#astb__image_8h_aefdc7387857a14894bbf321e9ea4f048_icgraph" alt=""/></div>
+<map name="stb__image_8h_aefdc7387857a14894bbf321e9ea4f048_icgraph" id="stb__image_8h_aefdc7387857a14894bbf321e9ea4f048_icgraph">
+<area shape="rect" title=" " alt="" coords="196,13,271,39"/>
+<area shape="rect" href="classu22_1_1graphics_1_1_image.html#af2f5e8c5a1a35026ad7e82d1c5c1dbf3" title="読み込み" alt="" coords="5,5,148,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8a58b6bcd805afa1bdb14f988dd37fee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a58b6bcd805afa1bdb14f988dd37fee">&#9670;&nbsp;</a></span>stbi_load_16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> <a class="el" href="stb__image_8h.html#a648037d4c55689328ba08c8f5d293df2">stbi_us</a>* stbi_load_16 </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>channels_in_file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desired_channels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82bcc0957b6a4ebfdfa3d7f04fbaed18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82bcc0957b6a4ebfdfa3d7f04fbaed18">&#9670;&nbsp;</a></span>stbi_load_16_from_callbacks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> <a class="el" href="stb__image_8h.html#a648037d4c55689328ba08c8f5d293df2">stbi_us</a>* stbi_load_16_from_callbacks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstbi__io__callbacks.html">stbi_io_callbacks</a> const *&#160;</td>
+          <td class="paramname"><em>clbk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>channels_in_file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desired_channels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad30fd870ed2138ce8f38c9dd29b2f76a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad30fd870ed2138ce8f38c9dd29b2f76a">&#9670;&nbsp;</a></span>stbi_load_16_from_memory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> <a class="el" href="stb__image_8h.html#a648037d4c55689328ba08c8f5d293df2">stbi_us</a>* stbi_load_16_from_memory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> const *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>channels_in_file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desired_channels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a95ebc5c42c1a753200be8d465e933af7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95ebc5c42c1a753200be8d465e933af7">&#9670;&nbsp;</a></span>stbi_load_from_callbacks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> <a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>* stbi_load_from_callbacks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstbi__io__callbacks.html">stbi_io_callbacks</a> const *&#160;</td>
+          <td class="paramname"><em>clbk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>channels_in_file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desired_channels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa9994764695597161e8f3776e97caa99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9994764695597161e8f3776e97caa99">&#9670;&nbsp;</a></span>stbi_load_from_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> <a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>* stbi_load_from_file </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>channels_in_file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desired_channels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9ca2591f0987284129e82bf9dbcf7c6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ca2591f0987284129e82bf9dbcf7c6c">&#9670;&nbsp;</a></span>stbi_load_from_file_16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> <a class="el" href="stb__image_8h.html#a648037d4c55689328ba08c8f5d293df2">stbi_us</a>* stbi_load_from_file_16 </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>channels_in_file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desired_channels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acae25d31bfae29d75482f07fecf2935f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acae25d31bfae29d75482f07fecf2935f">&#9670;&nbsp;</a></span>stbi_load_from_memory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> <a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>* stbi_load_from_memory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> const *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>channels_in_file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desired_channels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab81ccbc3526368d651117ef48df82b01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab81ccbc3526368d651117ef48df82b01">&#9670;&nbsp;</a></span>stbi_load_gif_from_memory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> <a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a>* stbi_load_gif_from_memory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> const *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int **&#160;</td>
+          <td class="paramname"><em>delays</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>z</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>comp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>req_comp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af4f17acd30945a75901fdc022f90575f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4f17acd30945a75901fdc022f90575f">&#9670;&nbsp;</a></span>stbi_loadf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> float* stbi_loadf </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>channels_in_file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desired_channels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e7fd261af79ecef2208df3a6cc806bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e7fd261af79ecef2208df3a6cc806bb">&#9670;&nbsp;</a></span>stbi_loadf_from_callbacks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> float* stbi_loadf_from_callbacks </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstbi__io__callbacks.html">stbi_io_callbacks</a> const *&#160;</td>
+          <td class="paramname"><em>clbk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>channels_in_file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desired_channels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace82446ecd7b5c760cde062179660f46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace82446ecd7b5c760cde062179660f46">&#9670;&nbsp;</a></span>stbi_loadf_from_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> float* stbi_loadf_from_file </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>channels_in_file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desired_channels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d47fb76ce1e34eb0729ad932c9c48e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d47fb76ce1e34eb0729ad932c9c48e2">&#9670;&nbsp;</a></span>stbi_loadf_from_memory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> float* stbi_loadf_from_memory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stb__image_8h.html#a28eb51a1512ce382ee50f20e1d04d50d">stbi_uc</a> const *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>channels_in_file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>desired_channels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab89c177fc52f1bb2dc1c05e48129a0a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab89c177fc52f1bb2dc1c05e48129a0a4">&#9670;&nbsp;</a></span>stbi_set_flip_vertically_on_load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> void stbi_set_flip_vertically_on_load </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flag_true_if_should_flip</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f02e0053e1c8d08a3ed436e6a82c7c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f02e0053e1c8d08a3ed436e6a82c7c9">&#9670;&nbsp;</a></span>stbi_set_unpremultiply_on_load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> void stbi_set_unpremultiply_on_load </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flag_true_if_should_unpremultiply</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8447830c49bc17f8491e12c1f0ded48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8447830c49bc17f8491e12c1f0ded48">&#9670;&nbsp;</a></span>stbi_zlib_decode_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int stbi_zlib_decode_buffer </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>obuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>olen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ibuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ilen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4919b67b12e0e3acc5301f185ca77e2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4919b67b12e0e3acc5301f185ca77e2e">&#9670;&nbsp;</a></span>stbi_zlib_decode_malloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> char* stbi_zlib_decode_malloc </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>outlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaaa17a529bec51403cc23dc2e7c36d79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaa17a529bec51403cc23dc2e7c36d79">&#9670;&nbsp;</a></span>stbi_zlib_decode_malloc_guesssize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> char* stbi_zlib_decode_malloc_guesssize </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>initial_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>outlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a038b0e741859a482b8b9d60167e54d27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a038b0e741859a482b8b9d60167e54d27">&#9670;&nbsp;</a></span>stbi_zlib_decode_malloc_guesssize_headerflag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> char* stbi_zlib_decode_malloc_guesssize_headerflag </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>initial_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>outlen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>parse_header</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d12efc011adfff7521f3b924feb0b0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d12efc011adfff7521f3b924feb0b0e">&#9670;&nbsp;</a></span>stbi_zlib_decode_noheader_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> int stbi_zlib_decode_noheader_buffer </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>obuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>olen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ibuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ilen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7fbd65c83495f13f22469fe493775739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fbd65c83495f13f22469fe493775739">&#9670;&nbsp;</a></span>stbi_zlib_decode_noheader_malloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stb__image_8h.html#a2d9ec9850cd12aefe7641b456266a4c2">STBIDEF</a> char* stbi_zlib_decode_noheader_malloc </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>outlen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

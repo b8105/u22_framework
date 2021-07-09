@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: External/GLM/gtx/functions.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_443fc37f241ba4018364a998c18d007b.html">External</a></li><li class="navelem"><a class="el" href="dir_c334883f19ec445d87470844289252ab.html">GLM</a></li><li class="navelem"><a class="el" href="dir_7b5826385e0aa91a8f8bc4a2a2cc7ac3.html">gtx</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">functions.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="functions_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Dependencies</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;../detail/setup.hpp&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;../detail/qualifier.hpp&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;../detail/type_vec2.hpp&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#if GLM_MESSAGES == GLM_ENABLE &amp;&amp; !defined(GLM_EXT_INCLUDED)</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#   ifndef GLM_ENABLE_EXPERIMENTAL</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#       pragma message(&quot;GLM: GLM_GTX_functions is an experimental extension and may change in the future. Use #define GLM_ENABLE_EXPERIMENTAL before including it, if you really want to use it.&quot;)</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#   else</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#       pragma message(&quot;GLM: GLM_GTX_functions extension included&quot;)</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#   endif</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceglm.html">glm</a></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a> T <a class="code" href="group__gtx__functions.html#ga0b50b197ff74261a0fad90f4b8d24702">gauss</a>(</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        T x,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        T ExpectedValue,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        T StandardDeviation);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, qualifier Q&gt;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a> T <a class="code" href="group__gtx__functions.html#ga0b50b197ff74261a0fad90f4b8d24702">gauss</a>(</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        vec&lt;2, T, Q&gt; <span class="keyword">const</span>&amp; Coord,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        vec&lt;2, T, Q&gt; <span class="keyword">const</span>&amp; ExpectedValue,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        vec&lt;2, T, Q&gt; <span class="keyword">const</span>&amp; StandardDeviation);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}<span class="comment">//namespace glm</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="functions_8inl.html">functions.inl</a>&quot;</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="agroup__ext__quaternion__trigonometric_html_ga8aa248b31d5ade470c87304df5eb7bd8"><div class="ttname"><a href="group__ext__quaternion__trigonometric.html#ga8aa248b31d5ade470c87304df5eb7bd8">glm::angle</a></div><div class="ttdeci">GLM_FUNC_DECL T angle(qua&lt; T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> quaternion_trigonometric.inl:4</div></div>
+<div class="ttc" id="agroup__gtx__functions_html_ga0b50b197ff74261a0fad90f4b8d24702"><div class="ttname"><a href="group__gtx__functions.html#ga0b50b197ff74261a0fad90f4b8d24702">glm::gauss</a></div><div class="ttdeci">GLM_FUNC_DECL T gauss(T x, T ExpectedValue, T StandardDeviation)</div><div class="ttdef"><b>Definition:</b> functions.inl:9</div></div>
+<div class="ttc" id="anamespaceglm_1_1detail_html_a2cb8ceabe04661b078d956cf0a5e96c7"><div class="ttname"><a href="namespaceglm_1_1detail.html#a2cb8ceabe04661b078d956cf0a5e96c7">glm::detail::taylorCos</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER vec&lt; L, T, Q &gt; taylorCos(vec&lt; L, T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> fast_trigonometry.inl:7</div></div>
+<div class="ttc" id="agroup__gtx__fast__trigonometry_html_gaf29b9c1101a10007b4f79ee89df27ba2"><div class="ttname"><a href="group__gtx__fast__trigonometry.html#gaf29b9c1101a10007b4f79ee89df27ba2">glm::fastTan</a></div><div class="ttdeci">GLM_FUNC_DECL T fastTan(T angle)</div><div class="ttdef"><b>Definition:</b> fast_trigonometry.inl:80</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1functor1_html"><div class="ttname"><a href="structglm_1_1detail_1_1functor1.html">glm::detail::functor1</a></div><div class="ttdef"><b>Definition:</b> _vectorize.hpp:7</div></div>
+<div class="ttc" id="afunctions_8inl_html"><div class="ttname"><a href="functions_8inl.html">functions.inl</a></div></div>
+<div class="ttc" id="agroup__gtx__fast__trigonometry_html_ga562cb62c51fbfe7fac7db0bce706b81f"><div class="ttname"><a href="group__gtx__fast__trigonometry.html#ga562cb62c51fbfe7fac7db0bce706b81f">glm::fastAsin</a></div><div class="ttdeci">GLM_FUNC_DECL T fastAsin(T angle)</div><div class="ttdef"><b>Definition:</b> fast_trigonometry.inl:93</div></div>
+<div class="ttc" id="astb_8h_html_ac39d9cef6a5e030ba8d9e11121054268"><div class="ttname"><a href="stb_8h.html#ac39d9cef6a5e030ba8d9e11121054268">max</a></div><div class="ttdeci">#define max(x, y)</div><div class="ttdef"><b>Definition:</b> stb.h:292</div></div>
+<div class="ttc" id="agroup__gtx__fast__trigonometry_html_ga0aab3257bb3b628d10a1e0483e2c6915"><div class="ttname"><a href="group__gtx__fast__trigonometry.html#ga0aab3257bb3b628d10a1e0483e2c6915">glm::fastSin</a></div><div class="ttdeci">GLM_FUNC_DECL T fastSin(T angle)</div><div class="ttdef"><b>Definition:</b> fast_trigonometry.inl:67</div></div>
+<div class="ttc" id="agroup__gtx__fast__trigonometry_html_gab34c8b45c23c0165a64dcecfcc3b302a"><div class="ttname"><a href="group__gtx__fast__trigonometry.html#gab34c8b45c23c0165a64dcecfcc3b302a">glm::fastCos</a></div><div class="ttdeci">GLM_FUNC_DECL T fastCos(T angle)</div><div class="ttdef"><b>Definition:</b> fast_trigonometry.inl:45</div></div>
+<div class="ttc" id="agroup__core__func__common_html_ga1e2e5cfff800056540e32f6c9b604b28"><div class="ttname"><a href="group__core__func__common.html#ga1e2e5cfff800056540e32f6c9b604b28">glm::sign</a></div><div class="ttdeci">GLM_FUNC_DECL vec&lt; L, T, Q &gt; sign(vec&lt; L, T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> func_common.inl:294</div></div>
+<div class="ttc" id="agroup__core__func__common_html_ga439e60a72eadecfeda2df5449c613a64"><div class="ttname"><a href="group__core__func__common.html#ga439e60a72eadecfeda2df5449c613a64">glm::abs</a></div><div class="ttdeci">GLM_FUNC_DECL GLM_CONSTEXPR genType abs(genType x)</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1functor2_html"><div class="ttname"><a href="structglm_1_1detail_1_1functor2.html">glm::detail::functor2</a></div><div class="ttdef"><b>Definition:</b> _vectorize.hpp:46</div></div>
+<div class="ttc" id="anamespaceglm_1_1detail_html_a09055f8d723109dc95c8cc2309e20acc"><div class="ttname"><a href="namespaceglm_1_1detail.html#a09055f8d723109dc95c8cc2309e20acc">glm::detail::cos_52s</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER T cos_52s(T x)</div><div class="ttdef"><b>Definition:</b> fast_trigonometry.inl:17</div></div>
+<div class="ttc" id="anamespaceglm_html"><div class="ttname"><a href="namespaceglm.html">glm</a></div><div class="ttdoc">Core features</div><div class="ttdef"><b>Definition:</b> common.hpp:21</div></div>
+<div class="ttc" id="astructglm_1_1vec_html"><div class="ttname"><a href="structglm_1_1vec.html">glm::vec</a></div><div class="ttdef"><b>Definition:</b> qualifier.hpp:35</div></div>
+<div class="ttc" id="anamespaceglm_html_a230eaa5b8f1d37d6d9536d04d41ab49d"><div class="ttname"><a href="namespaceglm.html#a230eaa5b8f1d37d6d9536d04d41ab49d">glm::xx</a></div><div class="ttdeci">GLM_INLINE glm::vec&lt; 2, T, Q &gt; xx(const glm::vec&lt; 1, T, Q &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> vec_swizzle.hpp:28</div></div>
+<div class="ttc" id="anamespaceglm_html_abe353196ef510a000c1c6b74d27db1e1"><div class="ttname"><a href="namespaceglm.html#abe353196ef510a000c1c6b74d27db1e1">glm::floatNormalize</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER vec&lt; L, float, Q &gt; floatNormalize(vec&lt; L, T, Q &gt; const &amp;v)</div><div class="ttdef"><b>Definition:</b> float_notmalize.inl:8</div></div>
+<div class="ttc" id="asetup_8hpp_html_ab2d052de21a70539923e9bcbf6e83a51"><div class="ttname"><a href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a></div><div class="ttdeci">#define GLM_FUNC_DECL</div><div class="ttdef"><b>Definition:</b> setup.hpp:438</div></div>
+<div class="ttc" id="agroup__gtx__fast__trigonometry_html_ga9721d63356e5d94fdc4b393a426ab26b"><div class="ttname"><a href="group__gtx__fast__trigonometry.html#ga9721d63356e5d94fdc4b393a426ab26b">glm::fastAcos</a></div><div class="ttdeci">GLM_FUNC_DECL T fastAcos(T angle)</div><div class="ttdef"><b>Definition:</b> fast_trigonometry.inl:106</div></div>
+<div class="ttc" id="asetup_8hpp_html_a33fdea6f91c5f834105f7415e2a64407"><div class="ttname"><a href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a></div><div class="ttdeci">#define GLM_FUNC_QUALIFIER</div><div class="ttdef"><b>Definition:</b> setup.hpp:439</div></div>
+<div class="ttc" id="agroup__gtx__fast__trigonometry_html_ga069527c6dbd64f53435b8ebc4878b473"><div class="ttname"><a href="group__gtx__fast__trigonometry.html#ga069527c6dbd64f53435b8ebc4878b473">glm::wrapAngle</a></div><div class="ttdeci">GLM_FUNC_DECL T wrapAngle(T angle)</div><div class="ttdef"><b>Definition:</b> fast_trigonometry.inl:32</div></div>
+<div class="ttc" id="agroup__gtx__fast__trigonometry_html_ga8d197c6ef564f5e5d59af3b3f8adcc2c"><div class="ttname"><a href="group__gtx__fast__trigonometry.html#ga8d197c6ef564f5e5d59af3b3f8adcc2c">glm::fastAtan</a></div><div class="ttdeci">GLM_FUNC_DECL T fastAtan(T y, T x)</div><div class="ttdef"><b>Definition:</b> fast_trigonometry.inl:119</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

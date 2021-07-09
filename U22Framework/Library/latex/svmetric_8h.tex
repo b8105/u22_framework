@@ -1,0 +1,131 @@
+\hypertarget{svmetric_8h}{}\doxysection{freetype/internal/services/svmetric.h ファイル}
+\label{svmetric_8h}\index{freetype/internal/services/svmetric.h@{freetype/internal/services/svmetric.h}}
+{\ttfamily \#include $<$freetype/internal/ftserv.\+h$>$}\newline
+svmetric.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{svmetric_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{svmetric_8h_a4b63ac6afe16a3f8e69ed7528657375e}{F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+M\+E\+T\+R\+I\+C\+S\+\_\+\+V\+A\+R\+I\+A\+T\+I\+O\+NS}}~\char`\"{}metrics-\/variations\char`\"{}
+\item 
+\#define \mbox{\hyperlink{svmetric_8h_af9c9a86f106366b3167a7a3ab42ecbbf}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+E\+T\+R\+I\+C\+S\+V\+A\+R\+I\+A\+T\+I\+O\+N\+S\+R\+EC}}(class\+\_\+,  hadvance\+\_\+adjust\+\_\+,  lsb\+\_\+adjust\+\_\+,  rsb\+\_\+adjust\+\_\+,  vadvance\+\_\+adjust\+\_\+,  tsb\+\_\+adjust\+\_\+,  bsb\+\_\+adjust\+\_\+,  vorg\+\_\+adjust\+\_\+,  metrics\+\_\+adjust\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svmetric_8h_a27b9626cb32c0ff8fac467a761de11c5}{F\+T\+\_\+\+H\+Advance\+\_\+\+Adjust\+\_\+\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} gindex, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} $\ast$avalue)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svmetric_8h_a5f85b1d6277cbfd2bdfb70414a59d11b}{F\+T\+\_\+\+L\+S\+B\+\_\+\+Adjust\+\_\+\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} gindex, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} $\ast$avalue)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svmetric_8h_a776e0cb9ee1976725b4950c20458c912}{F\+T\+\_\+\+R\+S\+B\+\_\+\+Adjust\+\_\+\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} gindex, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} $\ast$avalue)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svmetric_8h_ab17b0dc0fb0543ab7ff9abf609064924}{F\+T\+\_\+\+V\+Advance\+\_\+\+Adjust\+\_\+\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} gindex, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} $\ast$avalue)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svmetric_8h_a67d10591d0b7cf5d988e87f7fec219b5}{F\+T\+\_\+\+T\+S\+B\+\_\+\+Adjust\+\_\+\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} gindex, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} $\ast$avalue)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svmetric_8h_af9d23a20a46f7cf440210b8fcc31a19a}{F\+T\+\_\+\+B\+S\+B\+\_\+\+Adjust\+\_\+\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} gindex, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} $\ast$avalue)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svmetric_8h_a3ecb339529de363446d10ee3c7aec098}{F\+T\+\_\+\+V\+Org\+\_\+\+Adjust\+\_\+\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} gindex, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} $\ast$avalue)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{svmetric_8h_a379248e3d14e88aa0e35496ed42ceaf8}{F\+T\+\_\+\+Metrics\+\_\+\+Adjust\+\_\+\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face)
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{svmetric_8h_aca54a1bf28025247363dc8ce5a8ca24a}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE}} (Metrics\+Variations)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{svmetric_8h_af9c9a86f106366b3167a7a3ab42ecbbf}\label{svmetric_8h_af9c9a86f106366b3167a7a3ab42ecbbf}} 
+\index{svmetric.h@{svmetric.h}!FT\_DEFINE\_SERVICE\_METRICSVARIATIONSREC@{FT\_DEFINE\_SERVICE\_METRICSVARIATIONSREC}}
+\index{FT\_DEFINE\_SERVICE\_METRICSVARIATIONSREC@{FT\_DEFINE\_SERVICE\_METRICSVARIATIONSREC}!svmetric.h@{svmetric.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE\_METRICSVARIATIONSREC}{FT\_DEFINE\_SERVICE\_METRICSVARIATIONSREC}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+E\+T\+R\+I\+C\+S\+V\+A\+R\+I\+A\+T\+I\+O\+N\+S\+R\+EC(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{hadvance\+\_\+adjust\+\_\+,  }\item[{}]{lsb\+\_\+adjust\+\_\+,  }\item[{}]{rsb\+\_\+adjust\+\_\+,  }\item[{}]{vadvance\+\_\+adjust\+\_\+,  }\item[{}]{tsb\+\_\+adjust\+\_\+,  }\item[{}]{bsb\+\_\+adjust\+\_\+,  }\item[{}]{vorg\+\_\+adjust\+\_\+,  }\item[{}]{metrics\+\_\+adjust\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{static} \textcolor{keyword}{const} FT\_Service\_MetricsVariationsRec  class\_ =           \(\backslash\)}
+\DoxyCodeLine{  \{                                                                \(\backslash\)}
+\DoxyCodeLine{    hadvance\_adjust\_,                                              \(\backslash\)}
+\DoxyCodeLine{    lsb\_adjust\_,                                                   \(\backslash\)}
+\DoxyCodeLine{    rsb\_adjust\_,                                                   \(\backslash\)}
+\DoxyCodeLine{    vadvance\_adjust\_,                                              \(\backslash\)}
+\DoxyCodeLine{    tsb\_adjust\_,                                                   \(\backslash\)}
+\DoxyCodeLine{    bsb\_adjust\_,                                                   \(\backslash\)}
+\DoxyCodeLine{    vorg\_adjust\_,                                                  \(\backslash\)}
+\DoxyCodeLine{    metrics\_adjust\_                                                \(\backslash\)}
+\DoxyCodeLine{  \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{svmetric_8h_a4b63ac6afe16a3f8e69ed7528657375e}\label{svmetric_8h_a4b63ac6afe16a3f8e69ed7528657375e}} 
+\index{svmetric.h@{svmetric.h}!FT\_SERVICE\_ID\_METRICS\_VARIATIONS@{FT\_SERVICE\_ID\_METRICS\_VARIATIONS}}
+\index{FT\_SERVICE\_ID\_METRICS\_VARIATIONS@{FT\_SERVICE\_ID\_METRICS\_VARIATIONS}!svmetric.h@{svmetric.h}}
+\doxysubsubsection{\texorpdfstring{FT\_SERVICE\_ID\_METRICS\_VARIATIONS}{FT\_SERVICE\_ID\_METRICS\_VARIATIONS}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+M\+E\+T\+R\+I\+C\+S\+\_\+\+V\+A\+R\+I\+A\+T\+I\+O\+NS~\char`\"{}metrics-\/variations\char`\"{}}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{svmetric_8h_af9d23a20a46f7cf440210b8fcc31a19a}\label{svmetric_8h_af9d23a20a46f7cf440210b8fcc31a19a}} 
+\index{svmetric.h@{svmetric.h}!FT\_BSB\_Adjust\_Func@{FT\_BSB\_Adjust\_Func}}
+\index{FT\_BSB\_Adjust\_Func@{FT\_BSB\_Adjust\_Func}!svmetric.h@{svmetric.h}}
+\doxysubsubsection{\texorpdfstring{FT\_BSB\_Adjust\_Func}{FT\_BSB\_Adjust\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+B\+S\+B\+\_\+\+Adjust\+\_\+\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} gindex, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} $\ast$avalue)}
+
+\mbox{\Hypertarget{svmetric_8h_a27b9626cb32c0ff8fac467a761de11c5}\label{svmetric_8h_a27b9626cb32c0ff8fac467a761de11c5}} 
+\index{svmetric.h@{svmetric.h}!FT\_HAdvance\_Adjust\_Func@{FT\_HAdvance\_Adjust\_Func}}
+\index{FT\_HAdvance\_Adjust\_Func@{FT\_HAdvance\_Adjust\_Func}!svmetric.h@{svmetric.h}}
+\doxysubsubsection{\texorpdfstring{FT\_HAdvance\_Adjust\_Func}{FT\_HAdvance\_Adjust\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+H\+Advance\+\_\+\+Adjust\+\_\+\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} gindex, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} $\ast$avalue)}
+
+\mbox{\Hypertarget{svmetric_8h_a5f85b1d6277cbfd2bdfb70414a59d11b}\label{svmetric_8h_a5f85b1d6277cbfd2bdfb70414a59d11b}} 
+\index{svmetric.h@{svmetric.h}!FT\_LSB\_Adjust\_Func@{FT\_LSB\_Adjust\_Func}}
+\index{FT\_LSB\_Adjust\_Func@{FT\_LSB\_Adjust\_Func}!svmetric.h@{svmetric.h}}
+\doxysubsubsection{\texorpdfstring{FT\_LSB\_Adjust\_Func}{FT\_LSB\_Adjust\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+L\+S\+B\+\_\+\+Adjust\+\_\+\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} gindex, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} $\ast$avalue)}
+
+\mbox{\Hypertarget{svmetric_8h_a379248e3d14e88aa0e35496ed42ceaf8}\label{svmetric_8h_a379248e3d14e88aa0e35496ed42ceaf8}} 
+\index{svmetric.h@{svmetric.h}!FT\_Metrics\_Adjust\_Func@{FT\_Metrics\_Adjust\_Func}}
+\index{FT\_Metrics\_Adjust\_Func@{FT\_Metrics\_Adjust\_Func}!svmetric.h@{svmetric.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Metrics\_Adjust\_Func}{FT\_Metrics\_Adjust\_Func}}
+{\footnotesize\ttfamily typedef void($\ast$ F\+T\+\_\+\+Metrics\+\_\+\+Adjust\+\_\+\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face)}
+
+\mbox{\Hypertarget{svmetric_8h_a776e0cb9ee1976725b4950c20458c912}\label{svmetric_8h_a776e0cb9ee1976725b4950c20458c912}} 
+\index{svmetric.h@{svmetric.h}!FT\_RSB\_Adjust\_Func@{FT\_RSB\_Adjust\_Func}}
+\index{FT\_RSB\_Adjust\_Func@{FT\_RSB\_Adjust\_Func}!svmetric.h@{svmetric.h}}
+\doxysubsubsection{\texorpdfstring{FT\_RSB\_Adjust\_Func}{FT\_RSB\_Adjust\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+R\+S\+B\+\_\+\+Adjust\+\_\+\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} gindex, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} $\ast$avalue)}
+
+\mbox{\Hypertarget{svmetric_8h_a67d10591d0b7cf5d988e87f7fec219b5}\label{svmetric_8h_a67d10591d0b7cf5d988e87f7fec219b5}} 
+\index{svmetric.h@{svmetric.h}!FT\_TSB\_Adjust\_Func@{FT\_TSB\_Adjust\_Func}}
+\index{FT\_TSB\_Adjust\_Func@{FT\_TSB\_Adjust\_Func}!svmetric.h@{svmetric.h}}
+\doxysubsubsection{\texorpdfstring{FT\_TSB\_Adjust\_Func}{FT\_TSB\_Adjust\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+T\+S\+B\+\_\+\+Adjust\+\_\+\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} gindex, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} $\ast$avalue)}
+
+\mbox{\Hypertarget{svmetric_8h_ab17b0dc0fb0543ab7ff9abf609064924}\label{svmetric_8h_ab17b0dc0fb0543ab7ff9abf609064924}} 
+\index{svmetric.h@{svmetric.h}!FT\_VAdvance\_Adjust\_Func@{FT\_VAdvance\_Adjust\_Func}}
+\index{FT\_VAdvance\_Adjust\_Func@{FT\_VAdvance\_Adjust\_Func}!svmetric.h@{svmetric.h}}
+\doxysubsubsection{\texorpdfstring{FT\_VAdvance\_Adjust\_Func}{FT\_VAdvance\_Adjust\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+V\+Advance\+\_\+\+Adjust\+\_\+\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} gindex, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} $\ast$avalue)}
+
+\mbox{\Hypertarget{svmetric_8h_a3ecb339529de363446d10ee3c7aec098}\label{svmetric_8h_a3ecb339529de363446d10ee3c7aec098}} 
+\index{svmetric.h@{svmetric.h}!FT\_VOrg\_Adjust\_Func@{FT\_VOrg\_Adjust\_Func}}
+\index{FT\_VOrg\_Adjust\_Func@{FT\_VOrg\_Adjust\_Func}!svmetric.h@{svmetric.h}}
+\doxysubsubsection{\texorpdfstring{FT\_VOrg\_Adjust\_Func}{FT\_VOrg\_Adjust\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+V\+Org\+\_\+\+Adjust\+\_\+\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} gindex, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} $\ast$avalue)}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{svmetric_8h_aca54a1bf28025247363dc8ce5a8ca24a}\label{svmetric_8h_aca54a1bf28025247363dc8ce5a8ca24a}} 
+\index{svmetric.h@{svmetric.h}!FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}}
+\index{FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}!svmetric.h@{svmetric.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE()}{FT\_DEFINE\_SERVICE()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE (\begin{DoxyParamCaption}\item[{Metrics\+Variations}]{ }\end{DoxyParamCaption})}
+

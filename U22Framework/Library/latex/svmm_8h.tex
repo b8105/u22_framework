@@ -1,0 +1,167 @@
+\hypertarget{svmm_8h}{}\doxysection{freetype/internal/services/svmm.h ファイル}
+\label{svmm_8h}\index{freetype/internal/services/svmm.h@{freetype/internal/services/svmm.h}}
+{\ttfamily \#include $<$freetype/internal/ftserv.\+h$>$}\newline
+svmm.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{svmm_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{svmm_8h_a63a030aa0c4eb0547881486ae48b92f8}{F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+M\+U\+L\+T\+I\+\_\+\+M\+A\+S\+T\+E\+RS}}~\char`\"{}multi-\/masters\char`\"{}
+\item 
+\#define \mbox{\hyperlink{svmm_8h_aaca8964b60f37ad18213fd5cea6e26f0}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+U\+L\+T\+I\+M\+A\+S\+T\+E\+R\+S\+R\+EC}}(class\+\_\+,  get\+\_\+mm\+\_\+,  set\+\_\+mm\+\_\+design\+\_\+,  set\+\_\+mm\+\_\+blend\+\_\+,  get\+\_\+mm\+\_\+blend\+\_\+,  get\+\_\+mm\+\_\+var\+\_\+,  set\+\_\+var\+\_\+design\+\_\+,  get\+\_\+var\+\_\+design\+\_\+,  set\+\_\+instance\+\_\+,  set\+\_\+weightvector\+\_\+,  get\+\_\+weightvector\+\_\+,  get\+\_\+var\+\_\+blend\+\_\+,  done\+\_\+blend\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svmm_8h_a146dcefb9222ba94dc66bd46afd4e935}{F\+T\+\_\+\+Get\+\_\+\+M\+M\+\_\+\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{ftmm_8h_a1526d6544240c5c3c714f513dcc42b60}{F\+T\+\_\+\+Multi\+\_\+\+Master}} $\ast$master)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svmm_8h_a546a8329ae21885fc5010a8a3f780d5b}{F\+T\+\_\+\+Get\+\_\+\+M\+M\+\_\+\+Var\+\_\+\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{ftmm_8h_a73d7469ac82ad9c90faee58ef36ccbdc}{F\+T\+\_\+\+M\+M\+\_\+\+Var}} $\ast$$\ast$master)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svmm_8h_a3d35ea2d443a734f3cd5810366dbc67b}{F\+T\+\_\+\+Set\+\_\+\+M\+M\+\_\+\+Design\+\_\+\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} num\+\_\+coords, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} $\ast$coords)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svmm_8h_aff307b45628209bd9960c53576341aa7}{F\+T\+\_\+\+Set\+\_\+\+Var\+\_\+\+Design\+\_\+\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} num\+\_\+coords, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$coords)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svmm_8h_a0ec4b0855287f182b2940634ac5a35b8}{F\+T\+\_\+\+Set\+\_\+\+M\+M\+\_\+\+Blend\+\_\+\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} num\+\_\+coords, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} $\ast$coords)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svmm_8h_ac18adafe8a1ac8241c5f89547500ef0c}{F\+T\+\_\+\+Get\+\_\+\+Var\+\_\+\+Design\+\_\+\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} num\+\_\+coords, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$coords)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svmm_8h_a0ce4a74436a14fa64ca1576b2cba6389}{F\+T\+\_\+\+Set\+\_\+\+Instance\+\_\+\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} instance\+\_\+index)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svmm_8h_a58cef410142e3b6e48d97967ff4987e2}{F\+T\+\_\+\+Get\+\_\+\+M\+M\+\_\+\+Blend\+\_\+\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} num\+\_\+coords, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} $\ast$coords)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svmm_8h_a9d3b7469f5080dfbb52c0ac968c00641}{F\+T\+\_\+\+Get\+\_\+\+Var\+\_\+\+Blend\+\_\+\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} $\ast$num\+\_\+coords, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$$\ast$coords, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$$\ast$normalizedcoords, \mbox{\hyperlink{ftmm_8h_a73d7469ac82ad9c90faee58ef36ccbdc}{F\+T\+\_\+\+M\+M\+\_\+\+Var}} $\ast$$\ast$mm\+\_\+var)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{svmm_8h_a7a05fd22c0fcd137058f932ff671ab86}{F\+T\+\_\+\+Done\+\_\+\+Blend\+\_\+\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}})
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svmm_8h_af911fbdf406f1ac9b42c15e9ffc7565c}{F\+T\+\_\+\+Set\+\_\+\+M\+M\+\_\+\+Weight\+Vector\+\_\+\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} len, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$weight\+\_\+vector)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svmm_8h_af6f20bc4e075992dfdc8336d5253c57a}{F\+T\+\_\+\+Get\+\_\+\+M\+M\+\_\+\+Weight\+Vector\+\_\+\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} $\ast$len, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$weight\+\_\+vector)
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{svmm_8h_af642d95ec3f75607f3352218c50f8338}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE}} (Multi\+Masters)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{svmm_8h_aaca8964b60f37ad18213fd5cea6e26f0}\label{svmm_8h_aaca8964b60f37ad18213fd5cea6e26f0}} 
+\index{svmm.h@{svmm.h}!FT\_DEFINE\_SERVICE\_MULTIMASTERSREC@{FT\_DEFINE\_SERVICE\_MULTIMASTERSREC}}
+\index{FT\_DEFINE\_SERVICE\_MULTIMASTERSREC@{FT\_DEFINE\_SERVICE\_MULTIMASTERSREC}!svmm.h@{svmm.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE\_MULTIMASTERSREC}{FT\_DEFINE\_SERVICE\_MULTIMASTERSREC}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+M\+U\+L\+T\+I\+M\+A\+S\+T\+E\+R\+S\+R\+EC(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{get\+\_\+mm\+\_\+,  }\item[{}]{set\+\_\+mm\+\_\+design\+\_\+,  }\item[{}]{set\+\_\+mm\+\_\+blend\+\_\+,  }\item[{}]{get\+\_\+mm\+\_\+blend\+\_\+,  }\item[{}]{get\+\_\+mm\+\_\+var\+\_\+,  }\item[{}]{set\+\_\+var\+\_\+design\+\_\+,  }\item[{}]{get\+\_\+var\+\_\+design\+\_\+,  }\item[{}]{set\+\_\+instance\+\_\+,  }\item[{}]{set\+\_\+weightvector\+\_\+,  }\item[{}]{get\+\_\+weightvector\+\_\+,  }\item[{}]{get\+\_\+var\+\_\+blend\+\_\+,  }\item[{}]{done\+\_\+blend\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{static} \textcolor{keyword}{const} FT\_Service\_MultiMastersRec  class\_ =           \(\backslash\)}
+\DoxyCodeLine{  \{                                                           \(\backslash\)}
+\DoxyCodeLine{    get\_mm\_,                                                  \(\backslash\)}
+\DoxyCodeLine{    set\_mm\_design\_,                                           \(\backslash\)}
+\DoxyCodeLine{    set\_mm\_blend\_,                                            \(\backslash\)}
+\DoxyCodeLine{    get\_mm\_blend\_,                                            \(\backslash\)}
+\DoxyCodeLine{    get\_mm\_var\_,                                              \(\backslash\)}
+\DoxyCodeLine{    set\_var\_design\_,                                          \(\backslash\)}
+\DoxyCodeLine{    get\_var\_design\_,                                          \(\backslash\)}
+\DoxyCodeLine{    set\_instance\_,                                            \(\backslash\)}
+\DoxyCodeLine{    set\_weightvector\_,                                        \(\backslash\)}
+\DoxyCodeLine{    get\_weightvector\_,                                        \(\backslash\)}
+\DoxyCodeLine{    get\_var\_blend\_,                                           \(\backslash\)}
+\DoxyCodeLine{    done\_blend\_                                               \(\backslash\)}
+\DoxyCodeLine{  \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{svmm_8h_a63a030aa0c4eb0547881486ae48b92f8}\label{svmm_8h_a63a030aa0c4eb0547881486ae48b92f8}} 
+\index{svmm.h@{svmm.h}!FT\_SERVICE\_ID\_MULTI\_MASTERS@{FT\_SERVICE\_ID\_MULTI\_MASTERS}}
+\index{FT\_SERVICE\_ID\_MULTI\_MASTERS@{FT\_SERVICE\_ID\_MULTI\_MASTERS}!svmm.h@{svmm.h}}
+\doxysubsubsection{\texorpdfstring{FT\_SERVICE\_ID\_MULTI\_MASTERS}{FT\_SERVICE\_ID\_MULTI\_MASTERS}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+M\+U\+L\+T\+I\+\_\+\+M\+A\+S\+T\+E\+RS~\char`\"{}multi-\/masters\char`\"{}}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{svmm_8h_a7a05fd22c0fcd137058f932ff671ab86}\label{svmm_8h_a7a05fd22c0fcd137058f932ff671ab86}} 
+\index{svmm.h@{svmm.h}!FT\_Done\_Blend\_Func@{FT\_Done\_Blend\_Func}}
+\index{FT\_Done\_Blend\_Func@{FT\_Done\_Blend\_Func}!svmm.h@{svmm.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Done\_Blend\_Func}{FT\_Done\_Blend\_Func}}
+{\footnotesize\ttfamily typedef void($\ast$ F\+T\+\_\+\+Done\+\_\+\+Blend\+\_\+\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}})}
+
+\mbox{\Hypertarget{svmm_8h_a58cef410142e3b6e48d97967ff4987e2}\label{svmm_8h_a58cef410142e3b6e48d97967ff4987e2}} 
+\index{svmm.h@{svmm.h}!FT\_Get\_MM\_Blend\_Func@{FT\_Get\_MM\_Blend\_Func}}
+\index{FT\_Get\_MM\_Blend\_Func@{FT\_Get\_MM\_Blend\_Func}!svmm.h@{svmm.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Get\_MM\_Blend\_Func}{FT\_Get\_MM\_Blend\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+Get\+\_\+\+M\+M\+\_\+\+Blend\+\_\+\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} num\+\_\+coords, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} $\ast$coords)}
+
+\mbox{\Hypertarget{svmm_8h_a146dcefb9222ba94dc66bd46afd4e935}\label{svmm_8h_a146dcefb9222ba94dc66bd46afd4e935}} 
+\index{svmm.h@{svmm.h}!FT\_Get\_MM\_Func@{FT\_Get\_MM\_Func}}
+\index{FT\_Get\_MM\_Func@{FT\_Get\_MM\_Func}!svmm.h@{svmm.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Get\_MM\_Func}{FT\_Get\_MM\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+Get\+\_\+\+M\+M\+\_\+\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{ftmm_8h_a1526d6544240c5c3c714f513dcc42b60}{F\+T\+\_\+\+Multi\+\_\+\+Master}} $\ast$master)}
+
+\mbox{\Hypertarget{svmm_8h_a546a8329ae21885fc5010a8a3f780d5b}\label{svmm_8h_a546a8329ae21885fc5010a8a3f780d5b}} 
+\index{svmm.h@{svmm.h}!FT\_Get\_MM\_Var\_Func@{FT\_Get\_MM\_Var\_Func}}
+\index{FT\_Get\_MM\_Var\_Func@{FT\_Get\_MM\_Var\_Func}!svmm.h@{svmm.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Get\_MM\_Var\_Func}{FT\_Get\_MM\_Var\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+Get\+\_\+\+M\+M\+\_\+\+Var\+\_\+\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{ftmm_8h_a73d7469ac82ad9c90faee58ef36ccbdc}{F\+T\+\_\+\+M\+M\+\_\+\+Var}} $\ast$$\ast$master)}
+
+\mbox{\Hypertarget{svmm_8h_af6f20bc4e075992dfdc8336d5253c57a}\label{svmm_8h_af6f20bc4e075992dfdc8336d5253c57a}} 
+\index{svmm.h@{svmm.h}!FT\_Get\_MM\_WeightVector\_Func@{FT\_Get\_MM\_WeightVector\_Func}}
+\index{FT\_Get\_MM\_WeightVector\_Func@{FT\_Get\_MM\_WeightVector\_Func}!svmm.h@{svmm.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Get\_MM\_WeightVector\_Func}{FT\_Get\_MM\_WeightVector\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+Get\+\_\+\+M\+M\+\_\+\+Weight\+Vector\+\_\+\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} $\ast$len, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$weight\+\_\+vector)}
+
+\mbox{\Hypertarget{svmm_8h_a9d3b7469f5080dfbb52c0ac968c00641}\label{svmm_8h_a9d3b7469f5080dfbb52c0ac968c00641}} 
+\index{svmm.h@{svmm.h}!FT\_Get\_Var\_Blend\_Func@{FT\_Get\_Var\_Blend\_Func}}
+\index{FT\_Get\_Var\_Blend\_Func@{FT\_Get\_Var\_Blend\_Func}!svmm.h@{svmm.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Get\_Var\_Blend\_Func}{FT\_Get\_Var\_Blend\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+Get\+\_\+\+Var\+\_\+\+Blend\+\_\+\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} $\ast$num\+\_\+coords, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$$\ast$coords, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$$\ast$normalizedcoords, \mbox{\hyperlink{ftmm_8h_a73d7469ac82ad9c90faee58ef36ccbdc}{F\+T\+\_\+\+M\+M\+\_\+\+Var}} $\ast$$\ast$mm\+\_\+var)}
+
+\mbox{\Hypertarget{svmm_8h_ac18adafe8a1ac8241c5f89547500ef0c}\label{svmm_8h_ac18adafe8a1ac8241c5f89547500ef0c}} 
+\index{svmm.h@{svmm.h}!FT\_Get\_Var\_Design\_Func@{FT\_Get\_Var\_Design\_Func}}
+\index{FT\_Get\_Var\_Design\_Func@{FT\_Get\_Var\_Design\_Func}!svmm.h@{svmm.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Get\_Var\_Design\_Func}{FT\_Get\_Var\_Design\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+Get\+\_\+\+Var\+\_\+\+Design\+\_\+\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} num\+\_\+coords, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$coords)}
+
+\mbox{\Hypertarget{svmm_8h_a0ce4a74436a14fa64ca1576b2cba6389}\label{svmm_8h_a0ce4a74436a14fa64ca1576b2cba6389}} 
+\index{svmm.h@{svmm.h}!FT\_Set\_Instance\_Func@{FT\_Set\_Instance\_Func}}
+\index{FT\_Set\_Instance\_Func@{FT\_Set\_Instance\_Func}!svmm.h@{svmm.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Set\_Instance\_Func}{FT\_Set\_Instance\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+Set\+\_\+\+Instance\+\_\+\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} instance\+\_\+index)}
+
+\mbox{\Hypertarget{svmm_8h_a0ec4b0855287f182b2940634ac5a35b8}\label{svmm_8h_a0ec4b0855287f182b2940634ac5a35b8}} 
+\index{svmm.h@{svmm.h}!FT\_Set\_MM\_Blend\_Func@{FT\_Set\_MM\_Blend\_Func}}
+\index{FT\_Set\_MM\_Blend\_Func@{FT\_Set\_MM\_Blend\_Func}!svmm.h@{svmm.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Set\_MM\_Blend\_Func}{FT\_Set\_MM\_Blend\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+Set\+\_\+\+M\+M\+\_\+\+Blend\+\_\+\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} num\+\_\+coords, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} $\ast$coords)}
+
+\mbox{\Hypertarget{svmm_8h_a3d35ea2d443a734f3cd5810366dbc67b}\label{svmm_8h_a3d35ea2d443a734f3cd5810366dbc67b}} 
+\index{svmm.h@{svmm.h}!FT\_Set\_MM\_Design\_Func@{FT\_Set\_MM\_Design\_Func}}
+\index{FT\_Set\_MM\_Design\_Func@{FT\_Set\_MM\_Design\_Func}!svmm.h@{svmm.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Set\_MM\_Design\_Func}{FT\_Set\_MM\_Design\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+Set\+\_\+\+M\+M\+\_\+\+Design\+\_\+\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} num\+\_\+coords, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} $\ast$coords)}
+
+\mbox{\Hypertarget{svmm_8h_af911fbdf406f1ac9b42c15e9ffc7565c}\label{svmm_8h_af911fbdf406f1ac9b42c15e9ffc7565c}} 
+\index{svmm.h@{svmm.h}!FT\_Set\_MM\_WeightVector\_Func@{FT\_Set\_MM\_WeightVector\_Func}}
+\index{FT\_Set\_MM\_WeightVector\_Func@{FT\_Set\_MM\_WeightVector\_Func}!svmm.h@{svmm.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Set\_MM\_WeightVector\_Func}{FT\_Set\_MM\_WeightVector\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+Set\+\_\+\+M\+M\+\_\+\+Weight\+Vector\+\_\+\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} len, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$weight\+\_\+vector)}
+
+\mbox{\Hypertarget{svmm_8h_aff307b45628209bd9960c53576341aa7}\label{svmm_8h_aff307b45628209bd9960c53576341aa7}} 
+\index{svmm.h@{svmm.h}!FT\_Set\_Var\_Design\_Func@{FT\_Set\_Var\_Design\_Func}}
+\index{FT\_Set\_Var\_Design\_Func@{FT\_Set\_Var\_Design\_Func}!svmm.h@{svmm.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Set\_Var\_Design\_Func}{FT\_Set\_Var\_Design\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+Set\+\_\+\+Var\+\_\+\+Design\+\_\+\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} num\+\_\+coords, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$coords)}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{svmm_8h_af642d95ec3f75607f3352218c50f8338}\label{svmm_8h_af642d95ec3f75607f3352218c50f8338}} 
+\index{svmm.h@{svmm.h}!FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}}
+\index{FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}!svmm.h@{svmm.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE()}{FT\_DEFINE\_SERVICE()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE (\begin{DoxyParamCaption}\item[{Multi\+Masters}]{ }\end{DoxyParamCaption})}
+

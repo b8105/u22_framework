@@ -1,0 +1,219 @@
+\hypertarget{sfnt_8h}{}\doxysection{freetype/internal/sfnt.h ファイル}
+\label{sfnt_8h}\index{freetype/internal/sfnt.h@{freetype/internal/sfnt.h}}
+{\ttfamily \#include $<$freetype/internal/ftdrv.\+h$>$}\newline
+{\ttfamily \#include $<$freetype/internal/tttypes.\+h$>$}\newline
+{\ttfamily \#include $<$freetype/internal/wofftypes.\+h$>$}\newline
+sfnt.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sfnt_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_s_f_n_t___interface__}{S\+F\+N\+T\+\_\+\+Interface\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{sfnt_8h_a7f3dd52ffb792770296207c73acc868a}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+F\+N\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}}( class\+\_\+,  goto\+\_\+table\+\_\+,  init\+\_\+face\+\_\+,  load\+\_\+face\+\_\+,  done\+\_\+face\+\_\+,  get\+\_\+interface\+\_\+,  load\+\_\+any\+\_\+,  load\+\_\+head\+\_\+,  load\+\_\+hhea\+\_\+,  load\+\_\+cmap\+\_\+,  load\+\_\+maxp\+\_\+,  load\+\_\+os2\+\_\+,  load\+\_\+post\+\_\+,  load\+\_\+name\+\_\+,  free\+\_\+name\+\_\+,  load\+\_\+kern\+\_\+,  load\+\_\+gasp\+\_\+,  load\+\_\+pclt\+\_\+,  load\+\_\+bhed\+\_\+,  load\+\_\+sbit\+\_\+image\+\_\+,  get\+\_\+psname\+\_\+,  free\+\_\+psnames\+\_\+,  get\+\_\+kerning\+\_\+,  load\+\_\+font\+\_\+dir\+\_\+,  load\+\_\+hmtx\+\_\+,  load\+\_\+eblc\+\_\+,  free\+\_\+eblc\+\_\+,  set\+\_\+sbit\+\_\+strike\+\_\+,  load\+\_\+strike\+\_\+metrics\+\_\+,  load\+\_\+cpal\+\_\+,  load\+\_\+colr\+\_\+,  free\+\_\+cpal\+\_\+,  free\+\_\+colr\+\_\+,  set\+\_\+palette\+\_\+,  get\+\_\+colr\+\_\+layer\+\_\+,  colr\+\_\+blend\+\_\+,  get\+\_\+metrics\+\_\+,  get\+\_\+name\+\_\+,  get\+\_\+name\+\_\+id\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{sfnt_8h_af44f51866c3ecaf56e5997193db76629}{T\+T\+\_\+\+Load\+\_\+\+Face\+\_\+\+Func}}) (\mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream, \mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} face\+\_\+index, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} num\+\_\+params, \mbox{\hyperlink{freetype_8h_a1647d861933dce4c11d35d33b264bcee}{F\+T\+\_\+\+Parameter}} $\ast$params)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{sfnt_8h_a83570595b779869436c17eb2c33b5b8d}{T\+T\+\_\+\+Done\+\_\+\+Face\+\_\+\+Func}}) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{sfnt_8h_ac62144c95ec36dd7251266fdb3e86e86}{T\+T\+\_\+\+Load\+\_\+\+Any\+\_\+\+Func}}) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} tag, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} offset, \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} $\ast$buffer, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$length)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{sfnt_8h_ad9dfe66b76c724b2c755dc855c1a93df}{T\+T\+\_\+\+Find\+\_\+\+S\+Bit\+\_\+\+Image\+\_\+\+Func}}) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} glyph\+\_\+index, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} strike\+\_\+index, \mbox{\hyperlink{tttypes_8h_aa8d90bac8664dd99e02e71c830cb8a03}{T\+T\+\_\+\+S\+Bit\+\_\+\+Range}} $\ast$arange, \mbox{\hyperlink{tttypes_8h_ac125f9b4c2e11189d9ad2676ef7d8634}{T\+T\+\_\+\+S\+Bit\+\_\+\+Strike}} $\ast$astrike, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$aglyph\+\_\+offset)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{sfnt_8h_ae8d01b4ec6a9a66f6b5cd86a814ee46d}{T\+T\+\_\+\+Load\+\_\+\+S\+Bit\+\_\+\+Metrics\+\_\+\+Func}}) (\mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream, \mbox{\hyperlink{tttypes_8h_aa8d90bac8664dd99e02e71c830cb8a03}{T\+T\+\_\+\+S\+Bit\+\_\+\+Range}} range, \mbox{\hyperlink{tttypes_8h_a67dc74ad6b510065a0f51287e4fde011}{T\+T\+\_\+\+S\+Bit\+\_\+\+Metrics}} \mbox{\hyperlink{fterrdef_8h_a8da424446f502b9d5ce1ba924c5316bc}{metrics}})
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{sfnt_8h_abae6a7db893650930aa739dab0478915}{T\+T\+\_\+\+Load\+\_\+\+S\+Bit\+\_\+\+Image\+\_\+\+Func}}) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} strike\+\_\+index, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} glyph\+\_\+index, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} load\+\_\+flags, \mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream, \mbox{\hyperlink{ftimage_8h_a1901381e05d5dd7ad6567c85ee2076c3}{F\+T\+\_\+\+Bitmap}} $\ast$amap, \mbox{\hyperlink{tttypes_8h_ae633ebb8b4be1dddce6c77216db4edf0}{T\+T\+\_\+\+S\+Bit\+\_\+\+Metrics\+Rec}} $\ast$ametrics)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{sfnt_8h_a04fcb750faf5bb1c3a803a7a846b6d5a}{T\+T\+\_\+\+Set\+\_\+\+S\+Bit\+\_\+\+Strike\+\_\+\+Func}}) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{freetype_8h_a7306d364ecf834b999a7d8462d0c8668}{F\+T\+\_\+\+Size\+\_\+\+Request}} req, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$astrike\+\_\+index)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{sfnt_8h_a568d42f3b57f5b97d5400cfd96bc044d}{T\+T\+\_\+\+Load\+\_\+\+Strike\+\_\+\+Metrics\+\_\+\+Func}}) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} strike\+\_\+index, \mbox{\hyperlink{freetype_8h_ad885552d186adaffc5fe385cd458a4a4}{F\+T\+\_\+\+Size\+\_\+\+Metrics}} $\ast$\mbox{\hyperlink{fterrdef_8h_a8da424446f502b9d5ce1ba924c5316bc}{metrics}})
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{sfnt_8h_aac69ef399654926bca22aee80dfcb9ae}{T\+T\+\_\+\+Get\+\_\+\+P\+S\+\_\+\+Name\+\_\+\+Func}}) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} idx, \mbox{\hyperlink{fttypes_8h_a9846214585359eb2ba6bbb0e6de30639}{F\+T\+\_\+\+String}} $\ast$$\ast$P\+Sname)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{sfnt_8h_a27cdff5e0d9606691b3139594935e4cb}{T\+T\+\_\+\+Load\+\_\+\+Metrics\+\_\+\+Func}}) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream, \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} vertical)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{sfnt_8h_a7afa69b4f583c8b1c16bdbaf8f6600b8}{T\+T\+\_\+\+Get\+\_\+\+Metrics\+\_\+\+Func}}) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} vertical, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} gindex, \mbox{\hyperlink{fttypes_8h_aa7279be89046a2563cd3d4d6651fbdcf}{F\+T\+\_\+\+Short}} $\ast$abearing, \mbox{\hyperlink{fttypes_8h_a937f6c17cf5ffd09086d8610c37b9f58}{F\+T\+\_\+\+U\+Short}} $\ast$aadvance)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{sfnt_8h_a7dae992b1b817de1fcb205f4e0f2ff64}{T\+T\+\_\+\+Set\+\_\+\+Palette\+\_\+\+Func}}) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} idx)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}}($\ast$ \mbox{\hyperlink{sfnt_8h_a61829b18c1bb953e803a3a6fd40cc943}{T\+T\+\_\+\+Get\+\_\+\+Colr\+\_\+\+Layer\+\_\+\+Func}}) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} base\+\_\+glyph, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} $\ast$aglyph\+\_\+index, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} $\ast$acolor\+\_\+index, \mbox{\hyperlink{freetype_8h_acdf9f09fe2836080dc6d9c5a11b62007}{F\+T\+\_\+\+Layer\+Iterator}} $\ast$iterator)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{sfnt_8h_a942ec069385988b0303e229916797978}{T\+T\+\_\+\+Blend\+\_\+\+Colr\+\_\+\+Func}}) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} color\+\_\+index, \mbox{\hyperlink{freetype_8h_a768daa0d9c3fa499e6c37034ee9f2ca3}{F\+T\+\_\+\+Glyph\+Slot}} base\+\_\+glyph, \mbox{\hyperlink{freetype_8h_a768daa0d9c3fa499e6c37034ee9f2ca3}{F\+T\+\_\+\+Glyph\+Slot}} new\+\_\+glyph)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{sfnt_8h_a588d1cd623e83212f874e1d883a5b5fd}{T\+T\+\_\+\+Get\+\_\+\+Name\+\_\+\+Func}}) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a937f6c17cf5ffd09086d8610c37b9f58}{F\+T\+\_\+\+U\+Short}} nameid, \mbox{\hyperlink{fttypes_8h_a9846214585359eb2ba6bbb0e6de30639}{F\+T\+\_\+\+String}} $\ast$$\ast$name)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}}($\ast$ \mbox{\hyperlink{sfnt_8h_ab148a1573c4dba9ebcee6989f717c8af}{T\+T\+\_\+\+Get\+\_\+\+Name\+\_\+\+I\+D\+\_\+\+Func}}) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a937f6c17cf5ffd09086d8610c37b9f58}{F\+T\+\_\+\+U\+Short}} nameid, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} $\ast$win, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} $\ast$apple)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{sfnt_8h_a34521f310942235a43699ea75620f3fe}{T\+T\+\_\+\+Load\+\_\+\+Table\+\_\+\+Func}}) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{sfnt_8h_a5ea3b615465cc4e800e37c96817d5559}{T\+T\+\_\+\+Free\+\_\+\+Table\+\_\+\+Func}}) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}}($\ast$ \mbox{\hyperlink{sfnt_8h_a0fad7224dcfa0ee7f2f800ff3c742856}{T\+T\+\_\+\+Face\+\_\+\+Get\+Kerning\+Func}}) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} left\+\_\+glyph, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} right\+\_\+glyph)
+\item 
+typedef struct \mbox{\hyperlink{struct_s_f_n_t___interface__}{S\+F\+N\+T\+\_\+\+Interface\+\_\+}} \mbox{\hyperlink{sfnt_8h_ac994b695d2292299e79840f04b5af70b}{S\+F\+N\+T\+\_\+\+Interface}}
+\item 
+typedef \mbox{\hyperlink{sfnt_8h_ac994b695d2292299e79840f04b5af70b}{S\+F\+N\+T\+\_\+\+Interface}} $\ast$ \mbox{\hyperlink{sfnt_8h_a3fc0c419268a93de27f855f267c2fc38}{S\+F\+N\+T\+\_\+\+Service}}
+\end{DoxyCompactItemize}
+\doxysubsection*{変数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{public-macros_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER}} typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{sfnt_8h_a89600dd1f4dcb61c7508a90a85bf4cfb}{T\+T\+\_\+\+Init\+\_\+\+Face\+\_\+\+Func}} )(\mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream, \mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} face\+\_\+index, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} num\+\_\+params, \mbox{\hyperlink{freetype_8h_a1647d861933dce4c11d35d33b264bcee}{F\+T\+\_\+\+Parameter}} $\ast$params)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{sfnt_8h_a7f3dd52ffb792770296207c73acc868a}\label{sfnt_8h_a7f3dd52ffb792770296207c73acc868a}} 
+\index{sfnt.h@{sfnt.h}!FT\_DEFINE\_SFNT\_INTERFACE@{FT\_DEFINE\_SFNT\_INTERFACE}}
+\index{FT\_DEFINE\_SFNT\_INTERFACE@{FT\_DEFINE\_SFNT\_INTERFACE}!sfnt.h@{sfnt.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SFNT\_INTERFACE}{FT\_DEFINE\_SFNT\_INTERFACE}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+F\+N\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{goto\+\_\+table\+\_\+,  }\item[{}]{init\+\_\+face\+\_\+,  }\item[{}]{load\+\_\+face\+\_\+,  }\item[{}]{done\+\_\+face\+\_\+,  }\item[{}]{get\+\_\+interface\+\_\+,  }\item[{}]{load\+\_\+any\+\_\+,  }\item[{}]{load\+\_\+head\+\_\+,  }\item[{}]{load\+\_\+hhea\+\_\+,  }\item[{}]{load\+\_\+cmap\+\_\+,  }\item[{}]{load\+\_\+maxp\+\_\+,  }\item[{}]{load\+\_\+os2\+\_\+,  }\item[{}]{load\+\_\+post\+\_\+,  }\item[{}]{load\+\_\+name\+\_\+,  }\item[{}]{free\+\_\+name\+\_\+,  }\item[{}]{load\+\_\+kern\+\_\+,  }\item[{}]{load\+\_\+gasp\+\_\+,  }\item[{}]{load\+\_\+pclt\+\_\+,  }\item[{}]{load\+\_\+bhed\+\_\+,  }\item[{}]{load\+\_\+sbit\+\_\+image\+\_\+,  }\item[{}]{get\+\_\+psname\+\_\+,  }\item[{}]{free\+\_\+psnames\+\_\+,  }\item[{}]{get\+\_\+kerning\+\_\+,  }\item[{}]{load\+\_\+font\+\_\+dir\+\_\+,  }\item[{}]{load\+\_\+hmtx\+\_\+,  }\item[{}]{load\+\_\+eblc\+\_\+,  }\item[{}]{free\+\_\+eblc\+\_\+,  }\item[{}]{set\+\_\+sbit\+\_\+strike\+\_\+,  }\item[{}]{load\+\_\+strike\+\_\+metrics\+\_\+,  }\item[{}]{load\+\_\+cpal\+\_\+,  }\item[{}]{load\+\_\+colr\+\_\+,  }\item[{}]{free\+\_\+cpal\+\_\+,  }\item[{}]{free\+\_\+colr\+\_\+,  }\item[{}]{set\+\_\+palette\+\_\+,  }\item[{}]{get\+\_\+colr\+\_\+layer\+\_\+,  }\item[{}]{colr\+\_\+blend\+\_\+,  }\item[{}]{get\+\_\+metrics\+\_\+,  }\item[{}]{get\+\_\+name\+\_\+,  }\item[{}]{get\+\_\+name\+\_\+id\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{sfnt_8h_ac994b695d2292299e79840f04b5af70b}\label{sfnt_8h_ac994b695d2292299e79840f04b5af70b}} 
+\index{sfnt.h@{sfnt.h}!SFNT\_Interface@{SFNT\_Interface}}
+\index{SFNT\_Interface@{SFNT\_Interface}!sfnt.h@{sfnt.h}}
+\doxysubsubsection{\texorpdfstring{SFNT\_Interface}{SFNT\_Interface}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_s_f_n_t___interface__}{S\+F\+N\+T\+\_\+\+Interface\+\_\+}} \mbox{\hyperlink{sfnt_8h_ac994b695d2292299e79840f04b5af70b}{S\+F\+N\+T\+\_\+\+Interface}}}
+
+\mbox{\Hypertarget{sfnt_8h_a3fc0c419268a93de27f855f267c2fc38}\label{sfnt_8h_a3fc0c419268a93de27f855f267c2fc38}} 
+\index{sfnt.h@{sfnt.h}!SFNT\_Service@{SFNT\_Service}}
+\index{SFNT\_Service@{SFNT\_Service}!sfnt.h@{sfnt.h}}
+\doxysubsubsection{\texorpdfstring{SFNT\_Service}{SFNT\_Service}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{sfnt_8h_ac994b695d2292299e79840f04b5af70b}{S\+F\+N\+T\+\_\+\+Interface}}$\ast$ \mbox{\hyperlink{sfnt_8h_a3fc0c419268a93de27f855f267c2fc38}{S\+F\+N\+T\+\_\+\+Service}}}
+
+\mbox{\Hypertarget{sfnt_8h_a942ec069385988b0303e229916797978}\label{sfnt_8h_a942ec069385988b0303e229916797978}} 
+\index{sfnt.h@{sfnt.h}!TT\_Blend\_Colr\_Func@{TT\_Blend\_Colr\_Func}}
+\index{TT\_Blend\_Colr\_Func@{TT\_Blend\_Colr\_Func}!sfnt.h@{sfnt.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Blend\_Colr\_Func}{TT\_Blend\_Colr\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T\+T\+\_\+\+Blend\+\_\+\+Colr\+\_\+\+Func) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} color\+\_\+index, \mbox{\hyperlink{freetype_8h_a768daa0d9c3fa499e6c37034ee9f2ca3}{F\+T\+\_\+\+Glyph\+Slot}} base\+\_\+glyph, \mbox{\hyperlink{freetype_8h_a768daa0d9c3fa499e6c37034ee9f2ca3}{F\+T\+\_\+\+Glyph\+Slot}} new\+\_\+glyph)}
+
+\mbox{\Hypertarget{sfnt_8h_a83570595b779869436c17eb2c33b5b8d}\label{sfnt_8h_a83570595b779869436c17eb2c33b5b8d}} 
+\index{sfnt.h@{sfnt.h}!TT\_Done\_Face\_Func@{TT\_Done\_Face\_Func}}
+\index{TT\_Done\_Face\_Func@{TT\_Done\_Face\_Func}!sfnt.h@{sfnt.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Done\_Face\_Func}{TT\_Done\_Face\_Func}}
+{\footnotesize\ttfamily typedef void($\ast$ T\+T\+\_\+\+Done\+\_\+\+Face\+\_\+\+Func) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face)}
+
+\mbox{\Hypertarget{sfnt_8h_a0fad7224dcfa0ee7f2f800ff3c742856}\label{sfnt_8h_a0fad7224dcfa0ee7f2f800ff3c742856}} 
+\index{sfnt.h@{sfnt.h}!TT\_Face\_GetKerningFunc@{TT\_Face\_GetKerningFunc}}
+\index{TT\_Face\_GetKerningFunc@{TT\_Face\_GetKerningFunc}!sfnt.h@{sfnt.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Face\_GetKerningFunc}{TT\_Face\_GetKerningFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}}($\ast$ T\+T\+\_\+\+Face\+\_\+\+Get\+Kerning\+Func) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} left\+\_\+glyph, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} right\+\_\+glyph)}
+
+\mbox{\Hypertarget{sfnt_8h_ad9dfe66b76c724b2c755dc855c1a93df}\label{sfnt_8h_ad9dfe66b76c724b2c755dc855c1a93df}} 
+\index{sfnt.h@{sfnt.h}!TT\_Find\_SBit\_Image\_Func@{TT\_Find\_SBit\_Image\_Func}}
+\index{TT\_Find\_SBit\_Image\_Func@{TT\_Find\_SBit\_Image\_Func}!sfnt.h@{sfnt.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Find\_SBit\_Image\_Func}{TT\_Find\_SBit\_Image\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T\+T\+\_\+\+Find\+\_\+\+S\+Bit\+\_\+\+Image\+\_\+\+Func) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} glyph\+\_\+index, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} strike\+\_\+index, \mbox{\hyperlink{tttypes_8h_aa8d90bac8664dd99e02e71c830cb8a03}{T\+T\+\_\+\+S\+Bit\+\_\+\+Range}} $\ast$arange, \mbox{\hyperlink{tttypes_8h_ac125f9b4c2e11189d9ad2676ef7d8634}{T\+T\+\_\+\+S\+Bit\+\_\+\+Strike}} $\ast$astrike, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$aglyph\+\_\+offset)}
+
+\mbox{\Hypertarget{sfnt_8h_a5ea3b615465cc4e800e37c96817d5559}\label{sfnt_8h_a5ea3b615465cc4e800e37c96817d5559}} 
+\index{sfnt.h@{sfnt.h}!TT\_Free\_Table\_Func@{TT\_Free\_Table\_Func}}
+\index{TT\_Free\_Table\_Func@{TT\_Free\_Table\_Func}!sfnt.h@{sfnt.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Free\_Table\_Func}{TT\_Free\_Table\_Func}}
+{\footnotesize\ttfamily typedef void($\ast$ T\+T\+\_\+\+Free\+\_\+\+Table\+\_\+\+Func) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face)}
+
+\mbox{\Hypertarget{sfnt_8h_a61829b18c1bb953e803a3a6fd40cc943}\label{sfnt_8h_a61829b18c1bb953e803a3a6fd40cc943}} 
+\index{sfnt.h@{sfnt.h}!TT\_Get\_Colr\_Layer\_Func@{TT\_Get\_Colr\_Layer\_Func}}
+\index{TT\_Get\_Colr\_Layer\_Func@{TT\_Get\_Colr\_Layer\_Func}!sfnt.h@{sfnt.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Get\_Colr\_Layer\_Func}{TT\_Get\_Colr\_Layer\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}}($\ast$ T\+T\+\_\+\+Get\+\_\+\+Colr\+\_\+\+Layer\+\_\+\+Func) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} base\+\_\+glyph, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} $\ast$aglyph\+\_\+index, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} $\ast$acolor\+\_\+index, \mbox{\hyperlink{freetype_8h_acdf9f09fe2836080dc6d9c5a11b62007}{F\+T\+\_\+\+Layer\+Iterator}} $\ast$iterator)}
+
+\mbox{\Hypertarget{sfnt_8h_a7afa69b4f583c8b1c16bdbaf8f6600b8}\label{sfnt_8h_a7afa69b4f583c8b1c16bdbaf8f6600b8}} 
+\index{sfnt.h@{sfnt.h}!TT\_Get\_Metrics\_Func@{TT\_Get\_Metrics\_Func}}
+\index{TT\_Get\_Metrics\_Func@{TT\_Get\_Metrics\_Func}!sfnt.h@{sfnt.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Get\_Metrics\_Func}{TT\_Get\_Metrics\_Func}}
+{\footnotesize\ttfamily typedef void($\ast$ T\+T\+\_\+\+Get\+\_\+\+Metrics\+\_\+\+Func) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} vertical, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} gindex, \mbox{\hyperlink{fttypes_8h_aa7279be89046a2563cd3d4d6651fbdcf}{F\+T\+\_\+\+Short}} $\ast$abearing, \mbox{\hyperlink{fttypes_8h_a937f6c17cf5ffd09086d8610c37b9f58}{F\+T\+\_\+\+U\+Short}} $\ast$aadvance)}
+
+\mbox{\Hypertarget{sfnt_8h_a588d1cd623e83212f874e1d883a5b5fd}\label{sfnt_8h_a588d1cd623e83212f874e1d883a5b5fd}} 
+\index{sfnt.h@{sfnt.h}!TT\_Get\_Name\_Func@{TT\_Get\_Name\_Func}}
+\index{TT\_Get\_Name\_Func@{TT\_Get\_Name\_Func}!sfnt.h@{sfnt.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Get\_Name\_Func}{TT\_Get\_Name\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T\+T\+\_\+\+Get\+\_\+\+Name\+\_\+\+Func) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a937f6c17cf5ffd09086d8610c37b9f58}{F\+T\+\_\+\+U\+Short}} nameid, \mbox{\hyperlink{fttypes_8h_a9846214585359eb2ba6bbb0e6de30639}{F\+T\+\_\+\+String}} $\ast$$\ast$name)}
+
+\mbox{\Hypertarget{sfnt_8h_ab148a1573c4dba9ebcee6989f717c8af}\label{sfnt_8h_ab148a1573c4dba9ebcee6989f717c8af}} 
+\index{sfnt.h@{sfnt.h}!TT\_Get\_Name\_ID\_Func@{TT\_Get\_Name\_ID\_Func}}
+\index{TT\_Get\_Name\_ID\_Func@{TT\_Get\_Name\_ID\_Func}!sfnt.h@{sfnt.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Get\_Name\_ID\_Func}{TT\_Get\_Name\_ID\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}}($\ast$ T\+T\+\_\+\+Get\+\_\+\+Name\+\_\+\+I\+D\+\_\+\+Func) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a937f6c17cf5ffd09086d8610c37b9f58}{F\+T\+\_\+\+U\+Short}} nameid, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} $\ast$win, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} $\ast$apple)}
+
+\mbox{\Hypertarget{sfnt_8h_aac69ef399654926bca22aee80dfcb9ae}\label{sfnt_8h_aac69ef399654926bca22aee80dfcb9ae}} 
+\index{sfnt.h@{sfnt.h}!TT\_Get\_PS\_Name\_Func@{TT\_Get\_PS\_Name\_Func}}
+\index{TT\_Get\_PS\_Name\_Func@{TT\_Get\_PS\_Name\_Func}!sfnt.h@{sfnt.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Get\_PS\_Name\_Func}{TT\_Get\_PS\_Name\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T\+T\+\_\+\+Get\+\_\+\+P\+S\+\_\+\+Name\+\_\+\+Func) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} idx, \mbox{\hyperlink{fttypes_8h_a9846214585359eb2ba6bbb0e6de30639}{F\+T\+\_\+\+String}} $\ast$$\ast$P\+Sname)}
+
+\mbox{\Hypertarget{sfnt_8h_ac62144c95ec36dd7251266fdb3e86e86}\label{sfnt_8h_ac62144c95ec36dd7251266fdb3e86e86}} 
+\index{sfnt.h@{sfnt.h}!TT\_Load\_Any\_Func@{TT\_Load\_Any\_Func}}
+\index{TT\_Load\_Any\_Func@{TT\_Load\_Any\_Func}!sfnt.h@{sfnt.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Load\_Any\_Func}{TT\_Load\_Any\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T\+T\+\_\+\+Load\+\_\+\+Any\+\_\+\+Func) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} tag, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} offset, \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} $\ast$buffer, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$length)}
+
+\mbox{\Hypertarget{sfnt_8h_af44f51866c3ecaf56e5997193db76629}\label{sfnt_8h_af44f51866c3ecaf56e5997193db76629}} 
+\index{sfnt.h@{sfnt.h}!TT\_Load\_Face\_Func@{TT\_Load\_Face\_Func}}
+\index{TT\_Load\_Face\_Func@{TT\_Load\_Face\_Func}!sfnt.h@{sfnt.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Load\_Face\_Func}{TT\_Load\_Face\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T\+T\+\_\+\+Load\+\_\+\+Face\+\_\+\+Func) (\mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream, \mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} face\+\_\+index, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} num\+\_\+params, \mbox{\hyperlink{freetype_8h_a1647d861933dce4c11d35d33b264bcee}{F\+T\+\_\+\+Parameter}} $\ast$params)}
+
+\mbox{\Hypertarget{sfnt_8h_a27cdff5e0d9606691b3139594935e4cb}\label{sfnt_8h_a27cdff5e0d9606691b3139594935e4cb}} 
+\index{sfnt.h@{sfnt.h}!TT\_Load\_Metrics\_Func@{TT\_Load\_Metrics\_Func}}
+\index{TT\_Load\_Metrics\_Func@{TT\_Load\_Metrics\_Func}!sfnt.h@{sfnt.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Load\_Metrics\_Func}{TT\_Load\_Metrics\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T\+T\+\_\+\+Load\+\_\+\+Metrics\+\_\+\+Func) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream, \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} vertical)}
+
+\mbox{\Hypertarget{sfnt_8h_abae6a7db893650930aa739dab0478915}\label{sfnt_8h_abae6a7db893650930aa739dab0478915}} 
+\index{sfnt.h@{sfnt.h}!TT\_Load\_SBit\_Image\_Func@{TT\_Load\_SBit\_Image\_Func}}
+\index{TT\_Load\_SBit\_Image\_Func@{TT\_Load\_SBit\_Image\_Func}!sfnt.h@{sfnt.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Load\_SBit\_Image\_Func}{TT\_Load\_SBit\_Image\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T\+T\+\_\+\+Load\+\_\+\+S\+Bit\+\_\+\+Image\+\_\+\+Func) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} strike\+\_\+index, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} glyph\+\_\+index, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} load\+\_\+flags, \mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream, \mbox{\hyperlink{ftimage_8h_a1901381e05d5dd7ad6567c85ee2076c3}{F\+T\+\_\+\+Bitmap}} $\ast$amap, \mbox{\hyperlink{tttypes_8h_ae633ebb8b4be1dddce6c77216db4edf0}{T\+T\+\_\+\+S\+Bit\+\_\+\+Metrics\+Rec}} $\ast$ametrics)}
+
+\mbox{\Hypertarget{sfnt_8h_ae8d01b4ec6a9a66f6b5cd86a814ee46d}\label{sfnt_8h_ae8d01b4ec6a9a66f6b5cd86a814ee46d}} 
+\index{sfnt.h@{sfnt.h}!TT\_Load\_SBit\_Metrics\_Func@{TT\_Load\_SBit\_Metrics\_Func}}
+\index{TT\_Load\_SBit\_Metrics\_Func@{TT\_Load\_SBit\_Metrics\_Func}!sfnt.h@{sfnt.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Load\_SBit\_Metrics\_Func}{TT\_Load\_SBit\_Metrics\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T\+T\+\_\+\+Load\+\_\+\+S\+Bit\+\_\+\+Metrics\+\_\+\+Func) (\mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream, \mbox{\hyperlink{tttypes_8h_aa8d90bac8664dd99e02e71c830cb8a03}{T\+T\+\_\+\+S\+Bit\+\_\+\+Range}} range, \mbox{\hyperlink{tttypes_8h_a67dc74ad6b510065a0f51287e4fde011}{T\+T\+\_\+\+S\+Bit\+\_\+\+Metrics}} \mbox{\hyperlink{fterrdef_8h_a8da424446f502b9d5ce1ba924c5316bc}{metrics}})}
+
+\mbox{\Hypertarget{sfnt_8h_a568d42f3b57f5b97d5400cfd96bc044d}\label{sfnt_8h_a568d42f3b57f5b97d5400cfd96bc044d}} 
+\index{sfnt.h@{sfnt.h}!TT\_Load\_Strike\_Metrics\_Func@{TT\_Load\_Strike\_Metrics\_Func}}
+\index{TT\_Load\_Strike\_Metrics\_Func@{TT\_Load\_Strike\_Metrics\_Func}!sfnt.h@{sfnt.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Load\_Strike\_Metrics\_Func}{TT\_Load\_Strike\_Metrics\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T\+T\+\_\+\+Load\+\_\+\+Strike\+\_\+\+Metrics\+\_\+\+Func) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} strike\+\_\+index, \mbox{\hyperlink{freetype_8h_ad885552d186adaffc5fe385cd458a4a4}{F\+T\+\_\+\+Size\+\_\+\+Metrics}} $\ast$\mbox{\hyperlink{fterrdef_8h_a8da424446f502b9d5ce1ba924c5316bc}{metrics}})}
+
+\mbox{\Hypertarget{sfnt_8h_a34521f310942235a43699ea75620f3fe}\label{sfnt_8h_a34521f310942235a43699ea75620f3fe}} 
+\index{sfnt.h@{sfnt.h}!TT\_Load\_Table\_Func@{TT\_Load\_Table\_Func}}
+\index{TT\_Load\_Table\_Func@{TT\_Load\_Table\_Func}!sfnt.h@{sfnt.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Load\_Table\_Func}{TT\_Load\_Table\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T\+T\+\_\+\+Load\+\_\+\+Table\+\_\+\+Func) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream)}
+
+\mbox{\Hypertarget{sfnt_8h_a7dae992b1b817de1fcb205f4e0f2ff64}\label{sfnt_8h_a7dae992b1b817de1fcb205f4e0f2ff64}} 
+\index{sfnt.h@{sfnt.h}!TT\_Set\_Palette\_Func@{TT\_Set\_Palette\_Func}}
+\index{TT\_Set\_Palette\_Func@{TT\_Set\_Palette\_Func}!sfnt.h@{sfnt.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Set\_Palette\_Func}{TT\_Set\_Palette\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T\+T\+\_\+\+Set\+\_\+\+Palette\+\_\+\+Func) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} idx)}
+
+\mbox{\Hypertarget{sfnt_8h_a04fcb750faf5bb1c3a803a7a846b6d5a}\label{sfnt_8h_a04fcb750faf5bb1c3a803a7a846b6d5a}} 
+\index{sfnt.h@{sfnt.h}!TT\_Set\_SBit\_Strike\_Func@{TT\_Set\_SBit\_Strike\_Func}}
+\index{TT\_Set\_SBit\_Strike\_Func@{TT\_Set\_SBit\_Strike\_Func}!sfnt.h@{sfnt.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Set\_SBit\_Strike\_Func}{TT\_Set\_SBit\_Strike\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T\+T\+\_\+\+Set\+\_\+\+S\+Bit\+\_\+\+Strike\+\_\+\+Func) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{freetype_8h_a7306d364ecf834b999a7d8462d0c8668}{F\+T\+\_\+\+Size\+\_\+\+Request}} req, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$astrike\+\_\+index)}
+
+
+
+\doxysubsection{変数詳解}
+\mbox{\Hypertarget{sfnt_8h_a89600dd1f4dcb61c7508a90a85bf4cfb}\label{sfnt_8h_a89600dd1f4dcb61c7508a90a85bf4cfb}} 
+\index{sfnt.h@{sfnt.h}!TT\_Init\_Face\_Func@{TT\_Init\_Face\_Func}}
+\index{TT\_Init\_Face\_Func@{TT\_Init\_Face\_Func}!sfnt.h@{sfnt.h}}
+\doxysubsubsection{\texorpdfstring{TT\_Init\_Face\_Func}{TT\_Init\_Face\_Func}}
+{\footnotesize\ttfamily \mbox{\hyperlink{public-macros_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER}} typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T\+T\+\_\+\+Init\+\_\+\+Face\+\_\+\+Func) (\mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} stream, \mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} face\+\_\+index, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} num\+\_\+params, \mbox{\hyperlink{freetype_8h_a1647d861933dce4c11d35d33b264bcee}{F\+T\+\_\+\+Parameter}} $\ast$params)}
+

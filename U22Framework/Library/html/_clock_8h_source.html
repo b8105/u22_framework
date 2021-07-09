@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: Clock/Clock.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_0dce0c02c985b217a0bacb773d6dc292.html">Clock</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Clock.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_clock_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef U22_FRAMEWORK_CLOCK_CLOCK_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define U22_FRAMEWORK_CLOCK_CLOCK_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../Common/Common.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;deque&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="namespaceu22_1_1clock.html">   10</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceu22_1_1clock.html">u22::clock</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classu22_1_1clock_1_1_clock.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classu22_1_1clock_1_1_clock.html">Clock</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">float</span> _delta_time;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">float</span> _previous_time;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">float</span> _ideal_fps;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">float</span> _now_fps;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> _sample_count;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">float</span> _delta_times_sum;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    std::deque&lt;float&gt; _delta_times;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> CalculateFPS(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classu22_1_1clock_1_1_clock.html#a9ad06d627ac37b42cb41d0ed862c904d">Clock</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classu22_1_1clock_1_1_clock.html#a5c495ec38734a53ffcbfc8cc6f8f0561">~Clock</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classu22_1_1clock_1_1_clock.html#a59d033631b67cbaa08d57c7fb79e4a09">GetFrameSecond</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classu22_1_1clock_1_1_clock.html#a9cb88630bf0ae52d1c8da546efa90a08">GetIdealFPS</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classu22_1_1clock_1_1_clock.html#aab10683ca39358e3be20e4d90aaf43d2">GetFPS</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1clock_1_1_clock.html#a797463fe4a5bf1d86bed9dc2e02d320e">IsFull</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classu22_1_1clock_1_1_clock.html#a78bc55abadb4f22c3835da45dbbdb105">Wait</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classu22_1_1clock_1_1_clock.html#ad8f385d47d13a5e934f6b409591873b6">Tick</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classu22_1_1clock_1_1_clock.html#a7a7d6016d0f7a0ae9a676cf1fbca52cd">Update</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif // !U22_FRAMEWORK_CLOCK_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassu22_1_1clock_1_1_clock_html_a797463fe4a5bf1d86bed9dc2e02d320e"><div class="ttname"><a href="classu22_1_1clock_1_1_clock.html#a797463fe4a5bf1d86bed9dc2e02d320e">u22::clock::Clock::IsFull</a></div><div class="ttdeci">bool IsFull(void)</div><div class="ttdoc">単位時間に到達したか判定する</div><div class="ttdef"><b>Definition:</b> Clock.cpp:46</div></div>
+<div class="ttc" id="aclassu22_1_1clock_1_1_clock_html_a78bc55abadb4f22c3835da45dbbdb105"><div class="ttname"><a href="classu22_1_1clock_1_1_clock.html#a78bc55abadb4f22c3835da45dbbdb105">u22::clock::Clock::Wait</a></div><div class="ttdeci">void Wait(void)</div><div class="ttdoc">単位時間になるまで待つ</div><div class="ttdef"><b>Definition:</b> Clock.cpp:50</div></div>
+<div class="ttc" id="anamespaceu22_1_1clock_html"><div class="ttname"><a href="namespaceu22_1_1clock.html">u22::clock</a></div><div class="ttdef"><b>Definition:</b> Clock.h:10</div></div>
+<div class="ttc" id="aclassu22_1_1clock_1_1_clock_html_ad8f385d47d13a5e934f6b409591873b6"><div class="ttname"><a href="classu22_1_1clock_1_1_clock.html#ad8f385d47d13a5e934f6b409591873b6">u22::clock::Clock::Tick</a></div><div class="ttdeci">void Tick(void)</div><div class="ttdoc">時間を進める</div><div class="ttdef"><b>Definition:</b> Clock.cpp:54</div></div>
+<div class="ttc" id="aclassu22_1_1clock_1_1_clock_html_a9ad06d627ac37b42cb41d0ed862c904d"><div class="ttname"><a href="classu22_1_1clock_1_1_clock.html#a9ad06d627ac37b42cb41d0ed862c904d">u22::clock::Clock::Clock</a></div><div class="ttdeci">Clock()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> Clock.cpp:16</div></div>
+<div class="ttc" id="aclassu22_1_1clock_1_1_clock_html_a9cb88630bf0ae52d1c8da546efa90a08"><div class="ttname"><a href="classu22_1_1clock_1_1_clock.html#a9cb88630bf0ae52d1c8da546efa90a08">u22::clock::Clock::GetIdealFPS</a></div><div class="ttdeci">float GetIdealFPS(void) const noexcept</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> Clock.cpp:38</div></div>
+<div class="ttc" id="aclassu22_1_1clock_1_1_clock_html_a5c495ec38734a53ffcbfc8cc6f8f0561"><div class="ttname"><a href="classu22_1_1clock_1_1_clock.html#a5c495ec38734a53ffcbfc8cc6f8f0561">u22::clock::Clock::~Clock</a></div><div class="ttdeci">~Clock()</div><div class="ttdoc">デンストラクタ</div><div class="ttdef"><b>Definition:</b> Clock.cpp:31</div></div>
+<div class="ttc" id="agroup__input_html_ga03d4a1039b8662c71eeb40beea8cb622"><div class="ttname"><a href="group__input.html#ga03d4a1039b8662c71eeb40beea8cb622">glfwGetTime</a></div><div class="ttdeci">GLFWAPI double glfwGetTime(void)</div><div class="ttdoc">Returns the value of the GLFW timer.</div></div>
+<div class="ttc" id="aclassu22_1_1clock_1_1_clock_html_aab10683ca39358e3be20e4d90aaf43d2"><div class="ttname"><a href="classu22_1_1clock_1_1_clock.html#aab10683ca39358e3be20e4d90aaf43d2">u22::clock::Clock::GetFPS</a></div><div class="ttdeci">float GetFPS(void) const noexcept</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> Clock.cpp:42</div></div>
+<div class="ttc" id="agroup__input_html_ga94360a3628a09f32708f83cc3fa48590"><div class="ttname"><a href="group__input.html#ga94360a3628a09f32708f83cc3fa48590">glfwSetTime</a></div><div class="ttdeci">GLFWAPI void glfwSetTime(double time)</div><div class="ttdoc">Sets the GLFW timer.</div></div>
+<div class="ttc" id="aclassu22_1_1clock_1_1_clock_html_a7a7d6016d0f7a0ae9a676cf1fbca52cd"><div class="ttname"><a href="classu22_1_1clock_1_1_clock.html#a7a7d6016d0f7a0ae9a676cf1fbca52cd">u22::clock::Clock::Update</a></div><div class="ttdeci">void Update(void)</div><div class="ttdoc">更新</div><div class="ttdef"><b>Definition:</b> Clock.cpp:60</div></div>
+<div class="ttc" id="a_clock_8h_html"><div class="ttname"><a href="_clock_8h.html">Clock.h</a></div></div>
+<div class="ttc" id="aclassu22_1_1clock_1_1_clock_html_a59d033631b67cbaa08d57c7fb79e4a09"><div class="ttname"><a href="classu22_1_1clock_1_1_clock.html#a59d033631b67cbaa08d57c7fb79e4a09">u22::clock::Clock::GetFrameSecond</a></div><div class="ttdeci">float GetFrameSecond(void) const</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> Clock.cpp:34</div></div>
+<div class="ttc" id="aclassu22_1_1clock_1_1_clock_html"><div class="ttname"><a href="classu22_1_1clock_1_1_clock.html">u22::clock::Clock</a></div><div class="ttdef"><b>Definition:</b> Clock.h:11</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

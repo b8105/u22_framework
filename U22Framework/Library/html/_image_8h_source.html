@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: Graphics/Image.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64f7452aef2cdad98d34a70f5ea329e2.html">Graphics</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Image.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_image_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef U22_FRAMEWORK_IMAGE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define U22_FRAMEWORK_IMAGE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../Common/Common.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceu22_1_1graphics.html">u22::graphics</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classu22_1_1graphics_1_1_image.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classu22_1_1graphics_1_1_image.html">Image</a> {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* _pixels;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">int</span> _width;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">int</span> _height;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">int</span> _internal_format;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">int</span> _format;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classu22_1_1graphics_1_1_image.html#af14e967a35ac43e3f04ad73ed03e70f2">Image</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classu22_1_1graphics_1_1_image.html#ac9599847b5b0f702f074964cef1e25ce">~Image</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* <a class="code" href="classu22_1_1graphics_1_1_image.html#a9a2584d8c826d835f78e8bebf67edd0e">GetPixel</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classu22_1_1graphics_1_1_image.html#aa5dee93b278a8d67c373de986413f55b">GetWidth</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classu22_1_1graphics_1_1_image.html#a7911c592dd5b8b94a41d216345659d04">GetHeight</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classu22_1_1graphics_1_1_image.html#aa34455d2c3a405f23ffb7e3fc390b908">GetInternalFormat</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classu22_1_1graphics_1_1_image.html#a5ae11ddb4e95114124058e91fdc84c3d">GetFormat</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1graphics_1_1_image.html#af2f5e8c5a1a35026ad7e82d1c5c1dbf3">Load</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif // !U22_FRAMEWORK_IMAGE_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassu22_1_1graphics_1_1_image_html_aa34455d2c3a405f23ffb7e3fc390b908"><div class="ttname"><a href="classu22_1_1graphics_1_1_image.html#aa34455d2c3a405f23ffb7e3fc390b908">u22::graphics::Image::GetInternalFormat</a></div><div class="ttdeci">int GetInternalFormat(void) const</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> Image.cpp:30</div></div>
+<div class="ttc" id="anamespaceu22_1_1graphics_html"><div class="ttname"><a href="namespaceu22_1_1graphics.html">u22::graphics</a></div><div class="ttdef"><b>Definition:</b> Buffer.h:8</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_image_html"><div class="ttname"><a href="classu22_1_1graphics_1_1_image.html">u22::graphics::Image</a></div><div class="ttdef"><b>Definition:</b> Image.h:9</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_image_html_af14e967a35ac43e3f04ad73ed03e70f2"><div class="ttname"><a href="classu22_1_1graphics_1_1_image.html#af14e967a35ac43e3f04ad73ed03e70f2">u22::graphics::Image::Image</a></div><div class="ttdeci">Image()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> Image.cpp:6</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_image_html_a9a2584d8c826d835f78e8bebf67edd0e"><div class="ttname"><a href="classu22_1_1graphics_1_1_image.html#a9a2584d8c826d835f78e8bebf67edd0e">u22::graphics::Image::GetPixel</a></div><div class="ttdeci">unsigned char * GetPixel(void) const</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> Image.cpp:18</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_image_html_aa5dee93b278a8d67c373de986413f55b"><div class="ttname"><a href="classu22_1_1graphics_1_1_image.html#aa5dee93b278a8d67c373de986413f55b">u22::graphics::Image::GetWidth</a></div><div class="ttdeci">int GetWidth(void) const</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> Image.cpp:22</div></div>
+<div class="ttc" id="a_image_8h_html"><div class="ttname"><a href="_image_8h.html">Image.h</a></div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_image_html_af2f5e8c5a1a35026ad7e82d1c5c1dbf3"><div class="ttname"><a href="classu22_1_1graphics_1_1_image.html#af2f5e8c5a1a35026ad7e82d1c5c1dbf3">u22::graphics::Image::Load</a></div><div class="ttdeci">bool Load(const char *path)</div><div class="ttdoc">読み込み</div><div class="ttdef"><b>Definition:</b> Image.cpp:38</div></div>
+<div class="ttc" id="astb__image_8h_html_aefdc7387857a14894bbf321e9ea4f048"><div class="ttname"><a href="stb__image_8h.html#aefdc7387857a14894bbf321e9ea4f048">stbi_load</a></div><div class="ttdeci">STBIDEF stbi_uc * stbi_load(char const *filename, int *x, int *y, int *channels_in_file, int desired_channels)</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_image_html_a7911c592dd5b8b94a41d216345659d04"><div class="ttname"><a href="classu22_1_1graphics_1_1_image.html#a7911c592dd5b8b94a41d216345659d04">u22::graphics::Image::GetHeight</a></div><div class="ttdeci">int GetHeight(void) const</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> Image.cpp:26</div></div>
+<div class="ttc" id="aglew_8h_html_a9f2854f4a91a0d83d2d54cb8110bfca4"><div class="ttname"><a href="glew_8h.html#a9f2854f4a91a0d83d2d54cb8110bfca4">GL_RGBA</a></div><div class="ttdeci">#define GL_RGBA</div><div class="ttdef"><b>Definition:</b> glew.h:681</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_image_html_a5ae11ddb4e95114124058e91fdc84c3d"><div class="ttname"><a href="classu22_1_1graphics_1_1_image.html#a5ae11ddb4e95114124058e91fdc84c3d">u22::graphics::Image::GetFormat</a></div><div class="ttdeci">int GetFormat(void) const</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> Image.cpp:34</div></div>
+<div class="ttc" id="astb__image_8h_html_a06fc87d81c62e9abb8790b6e5713c55baa7b1af0c9f0310c3ada2aa29a32de293"><div class="ttname"><a href="stb__image_8h.html#a06fc87d81c62e9abb8790b6e5713c55baa7b1af0c9f0310c3ada2aa29a32de293">STBI_rgb_alpha</a></div><div class="ttdeci">@ STBI_rgb_alpha</div><div class="ttdef"><b>Definition:</b> stb_image.h:332</div></div>
+<div class="ttc" id="astb__image_8h_html_ad3e11bb44412a7ba348acfbad09caacb"><div class="ttname"><a href="stb__image_8h.html#ad3e11bb44412a7ba348acfbad09caacb">stbi_image_free</a></div><div class="ttdeci">STBIDEF void stbi_image_free(void *retval_from_stbi_load)</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_image_html_ac9599847b5b0f702f074964cef1e25ce"><div class="ttname"><a href="classu22_1_1graphics_1_1_image.html#ac9599847b5b0f702f074964cef1e25ce">u22::graphics::Image::~Image</a></div><div class="ttdeci">~Image()</div><div class="ttdoc">デストラクタ</div><div class="ttdef"><b>Definition:</b> Image.cpp:14</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

@@ -1,0 +1,267 @@
+\hypertarget{pshints_8h}{}\doxysection{freetype/internal/pshints.h ファイル}
+\label{pshints_8h}\index{freetype/internal/pshints.h@{freetype/internal/pshints.h}}
+{\ttfamily \#include $<$freetype/freetype.\+h$>$}\newline
+{\ttfamily \#include $<$freetype/t1tables.\+h$>$}\newline
+pshints.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pshints_8h__incl}
+\end{center}
+\end{figure}
+被依存関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pshints_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_p_s_h___globals___funcs_rec__}{P\+S\+H\+\_\+\+Globals\+\_\+\+Funcs\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t1___hints___funcs_rec__}{T1\+\_\+\+Hints\+\_\+\+Funcs\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t2___hints___funcs_rec__}{T2\+\_\+\+Hints\+\_\+\+Funcs\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_p_s_hinter___interface__}{P\+S\+Hinter\+\_\+\+Interface\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{pshints_8h_a04b620fdf513c7156a64d91f7cad0573}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+P\+S\+H\+I\+N\+T\+E\+R\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}}( class\+\_\+,  get\+\_\+globals\+\_\+funcs\+\_\+,  get\+\_\+t1\+\_\+funcs\+\_\+,  get\+\_\+t2\+\_\+funcs\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef typedef\+F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER struct P\+S\+H\+\_\+\+Globals\+Rec\+\_\+ $\ast$ \mbox{\hyperlink{pshints_8h_aed4220b62b12a76456f9f47bafa5fe52}{P\+S\+H\+\_\+\+Globals}}
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{pshints_8h_afbf130386528b97978b50709b75124b4}{P\+S\+H\+\_\+\+Globals\+\_\+\+New\+Func}}) (\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} memory, \mbox{\hyperlink{t1tables_8h_a2bf51d2bd6c483a1db05dca29d7c01ce}{T1\+\_\+\+Private}} $\ast$private\+\_\+dict, \mbox{\hyperlink{pshints_8h_aed4220b62b12a76456f9f47bafa5fe52}{P\+S\+H\+\_\+\+Globals}} $\ast$aglobals)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{pshints_8h_a1bfdeb88ed68e496fbbaea9ee98a2df5}{P\+S\+H\+\_\+\+Globals\+\_\+\+Set\+Scale\+Func}}) (\mbox{\hyperlink{pshints_8h_aed4220b62b12a76456f9f47bafa5fe52}{P\+S\+H\+\_\+\+Globals}} globals, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} x\+\_\+scale, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} y\+\_\+scale, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} x\+\_\+delta, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} y\+\_\+delta)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{pshints_8h_a25e3190b7ca95e2164574e2b68274c29}{P\+S\+H\+\_\+\+Globals\+\_\+\+Destroy\+Func}}) (\mbox{\hyperlink{pshints_8h_aed4220b62b12a76456f9f47bafa5fe52}{P\+S\+H\+\_\+\+Globals}} globals)
+\item 
+typedef struct \mbox{\hyperlink{struct_p_s_h___globals___funcs_rec__}{P\+S\+H\+\_\+\+Globals\+\_\+\+Funcs\+Rec\+\_\+}} \mbox{\hyperlink{pshints_8h_a707b8ba43108294f65845a766c952b2d}{P\+S\+H\+\_\+\+Globals\+\_\+\+Funcs\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_p_s_h___globals___funcs_rec__}{P\+S\+H\+\_\+\+Globals\+\_\+\+Funcs\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{pshints_8h_ac83db932351480e591fa91ea38fca5ac}{P\+S\+H\+\_\+\+Globals\+\_\+\+Funcs}}
+\item 
+typedef struct T1\+\_\+\+Hints\+Rec\+\_\+ $\ast$ \mbox{\hyperlink{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}{T1\+\_\+\+Hints}}
+\item 
+typedef const struct \mbox{\hyperlink{struct_t1___hints___funcs_rec__}{T1\+\_\+\+Hints\+\_\+\+Funcs\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{pshints_8h_a58382619ef239247c0769c04dcd6e4d8}{T1\+\_\+\+Hints\+\_\+\+Funcs}}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{pshints_8h_a20fe0a578a0937e5f4d1d8f8191287b1}{T1\+\_\+\+Hints\+\_\+\+Open\+Func}}) (\mbox{\hyperlink{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}{T1\+\_\+\+Hints}} hints)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{pshints_8h_a1ab415d7c862212afb0e25cdbd91b685}{T1\+\_\+\+Hints\+\_\+\+Set\+Stem\+Func}}) (\mbox{\hyperlink{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}{T1\+\_\+\+Hints}} hints, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} dimension, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$coords)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{pshints_8h_a2c024a8f57a1cd46c51f06db7b6b6c3c}{T1\+\_\+\+Hints\+\_\+\+Set\+Stem3\+Func}}) (\mbox{\hyperlink{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}{T1\+\_\+\+Hints}} hints, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} dimension, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$coords)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{pshints_8h_ae0f27b7b6864d22befdb19901d3ff5a4}{T1\+\_\+\+Hints\+\_\+\+Reset\+Func}}) (\mbox{\hyperlink{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}{T1\+\_\+\+Hints}} hints, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} end\+\_\+point)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{pshints_8h_a5cec166fe2569a2808b0317b69c480e4}{T1\+\_\+\+Hints\+\_\+\+Close\+Func}}) (\mbox{\hyperlink{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}{T1\+\_\+\+Hints}} hints, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} end\+\_\+point)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{pshints_8h_abc0c6713cd8d4beea523000a30607a6c}{T1\+\_\+\+Hints\+\_\+\+Apply\+Func}}) (\mbox{\hyperlink{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}{T1\+\_\+\+Hints}} hints, \mbox{\hyperlink{ftimage_8h_a6b64eb35252e8829024c12c98cce37d4}{F\+T\+\_\+\+Outline}} $\ast$outline, \mbox{\hyperlink{pshints_8h_aed4220b62b12a76456f9f47bafa5fe52}{P\+S\+H\+\_\+\+Globals}} globals, \mbox{\hyperlink{freetype_8h_a42c69ed4922d28c7d8cc9173237f966b}{F\+T\+\_\+\+Render\+\_\+\+Mode}} hint\+\_\+mode)
+\item 
+typedef struct \mbox{\hyperlink{struct_t1___hints___funcs_rec__}{T1\+\_\+\+Hints\+\_\+\+Funcs\+Rec\+\_\+}} \mbox{\hyperlink{pshints_8h_a047570046a8eda8635d4c8156b831447}{T1\+\_\+\+Hints\+\_\+\+Funcs\+Rec}}
+\item 
+typedef struct T2\+\_\+\+Hints\+Rec\+\_\+ $\ast$ \mbox{\hyperlink{pshints_8h_af8b52db788301c01e97599916a2c819e}{T2\+\_\+\+Hints}}
+\item 
+typedef const struct \mbox{\hyperlink{struct_t2___hints___funcs_rec__}{T2\+\_\+\+Hints\+\_\+\+Funcs\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{pshints_8h_a0aa727e5db76dbf6b39051afd1ce1536}{T2\+\_\+\+Hints\+\_\+\+Funcs}}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{pshints_8h_a5e8490d4430395e57dae95bdbac6cff7}{T2\+\_\+\+Hints\+\_\+\+Open\+Func}}) (\mbox{\hyperlink{pshints_8h_af8b52db788301c01e97599916a2c819e}{T2\+\_\+\+Hints}} hints)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{pshints_8h_a3a7e02d7c2f03b37c37f44f6f2d8d194}{T2\+\_\+\+Hints\+\_\+\+Stems\+Func}}) (\mbox{\hyperlink{pshints_8h_af8b52db788301c01e97599916a2c819e}{T2\+\_\+\+Hints}} hints, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} dimension, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} count, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$coordinates)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{pshints_8h_a9c018e10457d088e6d5225cf905e5b2b}{T2\+\_\+\+Hints\+\_\+\+Mask\+Func}}) (\mbox{\hyperlink{pshints_8h_af8b52db788301c01e97599916a2c819e}{T2\+\_\+\+Hints}} hints, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} end\+\_\+point, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} bit\+\_\+count, const \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} $\ast$bytes)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{pshints_8h_a1390b9a89729bbb804abd35305e576c8}{T2\+\_\+\+Hints\+\_\+\+Counter\+Func}}) (\mbox{\hyperlink{pshints_8h_af8b52db788301c01e97599916a2c819e}{T2\+\_\+\+Hints}} hints, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} bit\+\_\+count, const \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} $\ast$bytes)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{pshints_8h_a066c99b26618748e5534b3d830b545f4}{T2\+\_\+\+Hints\+\_\+\+Close\+Func}}) (\mbox{\hyperlink{pshints_8h_af8b52db788301c01e97599916a2c819e}{T2\+\_\+\+Hints}} hints, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} end\+\_\+point)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{pshints_8h_ad50fae88020dff07eba4ab0385b7ccf9}{T2\+\_\+\+Hints\+\_\+\+Apply\+Func}}) (\mbox{\hyperlink{pshints_8h_af8b52db788301c01e97599916a2c819e}{T2\+\_\+\+Hints}} hints, \mbox{\hyperlink{ftimage_8h_a6b64eb35252e8829024c12c98cce37d4}{F\+T\+\_\+\+Outline}} $\ast$outline, \mbox{\hyperlink{pshints_8h_aed4220b62b12a76456f9f47bafa5fe52}{P\+S\+H\+\_\+\+Globals}} globals, \mbox{\hyperlink{freetype_8h_a42c69ed4922d28c7d8cc9173237f966b}{F\+T\+\_\+\+Render\+\_\+\+Mode}} hint\+\_\+mode)
+\item 
+typedef struct \mbox{\hyperlink{struct_t2___hints___funcs_rec__}{T2\+\_\+\+Hints\+\_\+\+Funcs\+Rec\+\_\+}} \mbox{\hyperlink{pshints_8h_af209103faf8a305ede3b6b8966a16216}{T2\+\_\+\+Hints\+\_\+\+Funcs\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_p_s_hinter___interface__}{P\+S\+Hinter\+\_\+\+Interface\+\_\+}} \mbox{\hyperlink{pshints_8h_ab4c976bc26a4f08ebdb2e3515d883f9d}{P\+S\+Hinter\+\_\+\+Interface}}
+\item 
+typedef \mbox{\hyperlink{pshints_8h_ab4c976bc26a4f08ebdb2e3515d883f9d}{P\+S\+Hinter\+\_\+\+Interface}} $\ast$ \mbox{\hyperlink{pshints_8h_ab04788eaf1f01cf5c72f8db0dd169e1c}{P\+S\+Hinter\+\_\+\+Service}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{pshints_8h_a04b620fdf513c7156a64d91f7cad0573}\label{pshints_8h_a04b620fdf513c7156a64d91f7cad0573}} 
+\index{pshints.h@{pshints.h}!FT\_DEFINE\_PSHINTER\_INTERFACE@{FT\_DEFINE\_PSHINTER\_INTERFACE}}
+\index{FT\_DEFINE\_PSHINTER\_INTERFACE@{FT\_DEFINE\_PSHINTER\_INTERFACE}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_PSHINTER\_INTERFACE}{FT\_DEFINE\_PSHINTER\_INTERFACE}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+P\+S\+H\+I\+N\+T\+E\+R\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{get\+\_\+globals\+\_\+funcs\+\_\+,  }\item[{}]{get\+\_\+t1\+\_\+funcs\+\_\+,  }\item[{}]{get\+\_\+t2\+\_\+funcs\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{static} \textcolor{keyword}{const} \mbox{\hyperlink{struct_p_s_hinter___interface__}{PSHinter\_Interface}}  class\_ =  \(\backslash\)}
+\DoxyCodeLine{  \{                                          \(\backslash\)}
+\DoxyCodeLine{    get\_globals\_funcs\_,                      \(\backslash\)}
+\DoxyCodeLine{    get\_t1\_funcs\_,                           \(\backslash\)}
+\DoxyCodeLine{    get\_t2\_funcs\_                            \(\backslash\)}
+\DoxyCodeLine{  \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{pshints_8h_aed4220b62b12a76456f9f47bafa5fe52}\label{pshints_8h_aed4220b62b12a76456f9f47bafa5fe52}} 
+\index{pshints.h@{pshints.h}!PSH\_Globals@{PSH\_Globals}}
+\index{PSH\_Globals@{PSH\_Globals}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{PSH\_Globals}{PSH\_Globals}}
+{\footnotesize\ttfamily typedef typedef\+F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER struct P\+S\+H\+\_\+\+Globals\+Rec\+\_\+$\ast$ \mbox{\hyperlink{pshints_8h_aed4220b62b12a76456f9f47bafa5fe52}{P\+S\+H\+\_\+\+Globals}}}
+
+\mbox{\Hypertarget{pshints_8h_a25e3190b7ca95e2164574e2b68274c29}\label{pshints_8h_a25e3190b7ca95e2164574e2b68274c29}} 
+\index{pshints.h@{pshints.h}!PSH\_Globals\_DestroyFunc@{PSH\_Globals\_DestroyFunc}}
+\index{PSH\_Globals\_DestroyFunc@{PSH\_Globals\_DestroyFunc}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{PSH\_Globals\_DestroyFunc}{PSH\_Globals\_DestroyFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ P\+S\+H\+\_\+\+Globals\+\_\+\+Destroy\+Func) (\mbox{\hyperlink{pshints_8h_aed4220b62b12a76456f9f47bafa5fe52}{P\+S\+H\+\_\+\+Globals}} globals)}
+
+\mbox{\Hypertarget{pshints_8h_ac83db932351480e591fa91ea38fca5ac}\label{pshints_8h_ac83db932351480e591fa91ea38fca5ac}} 
+\index{pshints.h@{pshints.h}!PSH\_Globals\_Funcs@{PSH\_Globals\_Funcs}}
+\index{PSH\_Globals\_Funcs@{PSH\_Globals\_Funcs}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{PSH\_Globals\_Funcs}{PSH\_Globals\_Funcs}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_p_s_h___globals___funcs_rec__}{P\+S\+H\+\_\+\+Globals\+\_\+\+Funcs\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{pshints_8h_ac83db932351480e591fa91ea38fca5ac}{P\+S\+H\+\_\+\+Globals\+\_\+\+Funcs}}}
+
+\mbox{\Hypertarget{pshints_8h_a707b8ba43108294f65845a766c952b2d}\label{pshints_8h_a707b8ba43108294f65845a766c952b2d}} 
+\index{pshints.h@{pshints.h}!PSH\_Globals\_FuncsRec@{PSH\_Globals\_FuncsRec}}
+\index{PSH\_Globals\_FuncsRec@{PSH\_Globals\_FuncsRec}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{PSH\_Globals\_FuncsRec}{PSH\_Globals\_FuncsRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_p_s_h___globals___funcs_rec__}{P\+S\+H\+\_\+\+Globals\+\_\+\+Funcs\+Rec\+\_\+}} \mbox{\hyperlink{pshints_8h_a707b8ba43108294f65845a766c952b2d}{P\+S\+H\+\_\+\+Globals\+\_\+\+Funcs\+Rec}}}
+
+\mbox{\Hypertarget{pshints_8h_afbf130386528b97978b50709b75124b4}\label{pshints_8h_afbf130386528b97978b50709b75124b4}} 
+\index{pshints.h@{pshints.h}!PSH\_Globals\_NewFunc@{PSH\_Globals\_NewFunc}}
+\index{PSH\_Globals\_NewFunc@{PSH\_Globals\_NewFunc}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{PSH\_Globals\_NewFunc}{PSH\_Globals\_NewFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ P\+S\+H\+\_\+\+Globals\+\_\+\+New\+Func) (\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} memory, \mbox{\hyperlink{t1tables_8h_a2bf51d2bd6c483a1db05dca29d7c01ce}{T1\+\_\+\+Private}} $\ast$private\+\_\+dict, \mbox{\hyperlink{pshints_8h_aed4220b62b12a76456f9f47bafa5fe52}{P\+S\+H\+\_\+\+Globals}} $\ast$aglobals)}
+
+\mbox{\Hypertarget{pshints_8h_a1bfdeb88ed68e496fbbaea9ee98a2df5}\label{pshints_8h_a1bfdeb88ed68e496fbbaea9ee98a2df5}} 
+\index{pshints.h@{pshints.h}!PSH\_Globals\_SetScaleFunc@{PSH\_Globals\_SetScaleFunc}}
+\index{PSH\_Globals\_SetScaleFunc@{PSH\_Globals\_SetScaleFunc}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{PSH\_Globals\_SetScaleFunc}{PSH\_Globals\_SetScaleFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ P\+S\+H\+\_\+\+Globals\+\_\+\+Set\+Scale\+Func) (\mbox{\hyperlink{pshints_8h_aed4220b62b12a76456f9f47bafa5fe52}{P\+S\+H\+\_\+\+Globals}} globals, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} x\+\_\+scale, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} y\+\_\+scale, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} x\+\_\+delta, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} y\+\_\+delta)}
+
+\mbox{\Hypertarget{pshints_8h_ab4c976bc26a4f08ebdb2e3515d883f9d}\label{pshints_8h_ab4c976bc26a4f08ebdb2e3515d883f9d}} 
+\index{pshints.h@{pshints.h}!PSHinter\_Interface@{PSHinter\_Interface}}
+\index{PSHinter\_Interface@{PSHinter\_Interface}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{PSHinter\_Interface}{PSHinter\_Interface}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_p_s_hinter___interface__}{P\+S\+Hinter\+\_\+\+Interface\+\_\+}} \mbox{\hyperlink{pshints_8h_ab4c976bc26a4f08ebdb2e3515d883f9d}{P\+S\+Hinter\+\_\+\+Interface}}}
+
+\mbox{\Hypertarget{pshints_8h_ab04788eaf1f01cf5c72f8db0dd169e1c}\label{pshints_8h_ab04788eaf1f01cf5c72f8db0dd169e1c}} 
+\index{pshints.h@{pshints.h}!PSHinter\_Service@{PSHinter\_Service}}
+\index{PSHinter\_Service@{PSHinter\_Service}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{PSHinter\_Service}{PSHinter\_Service}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{pshints_8h_ab4c976bc26a4f08ebdb2e3515d883f9d}{P\+S\+Hinter\+\_\+\+Interface}}$\ast$ \mbox{\hyperlink{pshints_8h_ab04788eaf1f01cf5c72f8db0dd169e1c}{P\+S\+Hinter\+\_\+\+Service}}}
+
+\mbox{\Hypertarget{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}\label{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}} 
+\index{pshints.h@{pshints.h}!T1\_Hints@{T1\_Hints}}
+\index{T1\_Hints@{T1\_Hints}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Hints}{T1\_Hints}}
+{\footnotesize\ttfamily typedef struct T1\+\_\+\+Hints\+Rec\+\_\+$\ast$ \mbox{\hyperlink{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}{T1\+\_\+\+Hints}}}
+
+\mbox{\Hypertarget{pshints_8h_abc0c6713cd8d4beea523000a30607a6c}\label{pshints_8h_abc0c6713cd8d4beea523000a30607a6c}} 
+\index{pshints.h@{pshints.h}!T1\_Hints\_ApplyFunc@{T1\_Hints\_ApplyFunc}}
+\index{T1\_Hints\_ApplyFunc@{T1\_Hints\_ApplyFunc}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Hints\_ApplyFunc}{T1\_Hints\_ApplyFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T1\+\_\+\+Hints\+\_\+\+Apply\+Func) (\mbox{\hyperlink{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}{T1\+\_\+\+Hints}} hints, \mbox{\hyperlink{ftimage_8h_a6b64eb35252e8829024c12c98cce37d4}{F\+T\+\_\+\+Outline}} $\ast$outline, \mbox{\hyperlink{pshints_8h_aed4220b62b12a76456f9f47bafa5fe52}{P\+S\+H\+\_\+\+Globals}} globals, \mbox{\hyperlink{freetype_8h_a42c69ed4922d28c7d8cc9173237f966b}{F\+T\+\_\+\+Render\+\_\+\+Mode}} hint\+\_\+mode)}
+
+\mbox{\Hypertarget{pshints_8h_a5cec166fe2569a2808b0317b69c480e4}\label{pshints_8h_a5cec166fe2569a2808b0317b69c480e4}} 
+\index{pshints.h@{pshints.h}!T1\_Hints\_CloseFunc@{T1\_Hints\_CloseFunc}}
+\index{T1\_Hints\_CloseFunc@{T1\_Hints\_CloseFunc}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Hints\_CloseFunc}{T1\_Hints\_CloseFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T1\+\_\+\+Hints\+\_\+\+Close\+Func) (\mbox{\hyperlink{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}{T1\+\_\+\+Hints}} hints, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} end\+\_\+point)}
+
+\mbox{\Hypertarget{pshints_8h_a58382619ef239247c0769c04dcd6e4d8}\label{pshints_8h_a58382619ef239247c0769c04dcd6e4d8}} 
+\index{pshints.h@{pshints.h}!T1\_Hints\_Funcs@{T1\_Hints\_Funcs}}
+\index{T1\_Hints\_Funcs@{T1\_Hints\_Funcs}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Hints\_Funcs}{T1\_Hints\_Funcs}}
+{\footnotesize\ttfamily typedef const struct \mbox{\hyperlink{struct_t1___hints___funcs_rec__}{T1\+\_\+\+Hints\+\_\+\+Funcs\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{pshints_8h_a58382619ef239247c0769c04dcd6e4d8}{T1\+\_\+\+Hints\+\_\+\+Funcs}}}
+
+\mbox{\Hypertarget{pshints_8h_a047570046a8eda8635d4c8156b831447}\label{pshints_8h_a047570046a8eda8635d4c8156b831447}} 
+\index{pshints.h@{pshints.h}!T1\_Hints\_FuncsRec@{T1\_Hints\_FuncsRec}}
+\index{T1\_Hints\_FuncsRec@{T1\_Hints\_FuncsRec}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Hints\_FuncsRec}{T1\_Hints\_FuncsRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t1___hints___funcs_rec__}{T1\+\_\+\+Hints\+\_\+\+Funcs\+Rec\+\_\+}} \mbox{\hyperlink{pshints_8h_a047570046a8eda8635d4c8156b831447}{T1\+\_\+\+Hints\+\_\+\+Funcs\+Rec}}}
+
+\mbox{\Hypertarget{pshints_8h_a20fe0a578a0937e5f4d1d8f8191287b1}\label{pshints_8h_a20fe0a578a0937e5f4d1d8f8191287b1}} 
+\index{pshints.h@{pshints.h}!T1\_Hints\_OpenFunc@{T1\_Hints\_OpenFunc}}
+\index{T1\_Hints\_OpenFunc@{T1\_Hints\_OpenFunc}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Hints\_OpenFunc}{T1\_Hints\_OpenFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ T1\+\_\+\+Hints\+\_\+\+Open\+Func) (\mbox{\hyperlink{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}{T1\+\_\+\+Hints}} hints)}
+
+\mbox{\Hypertarget{pshints_8h_ae0f27b7b6864d22befdb19901d3ff5a4}\label{pshints_8h_ae0f27b7b6864d22befdb19901d3ff5a4}} 
+\index{pshints.h@{pshints.h}!T1\_Hints\_ResetFunc@{T1\_Hints\_ResetFunc}}
+\index{T1\_Hints\_ResetFunc@{T1\_Hints\_ResetFunc}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Hints\_ResetFunc}{T1\_Hints\_ResetFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ T1\+\_\+\+Hints\+\_\+\+Reset\+Func) (\mbox{\hyperlink{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}{T1\+\_\+\+Hints}} hints, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} end\+\_\+point)}
+
+\mbox{\Hypertarget{pshints_8h_a2c024a8f57a1cd46c51f06db7b6b6c3c}\label{pshints_8h_a2c024a8f57a1cd46c51f06db7b6b6c3c}} 
+\index{pshints.h@{pshints.h}!T1\_Hints\_SetStem3Func@{T1\_Hints\_SetStem3Func}}
+\index{T1\_Hints\_SetStem3Func@{T1\_Hints\_SetStem3Func}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Hints\_SetStem3Func}{T1\_Hints\_SetStem3Func}}
+{\footnotesize\ttfamily typedef void($\ast$ T1\+\_\+\+Hints\+\_\+\+Set\+Stem3\+Func) (\mbox{\hyperlink{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}{T1\+\_\+\+Hints}} hints, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} dimension, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$coords)}
+
+\mbox{\Hypertarget{pshints_8h_a1ab415d7c862212afb0e25cdbd91b685}\label{pshints_8h_a1ab415d7c862212afb0e25cdbd91b685}} 
+\index{pshints.h@{pshints.h}!T1\_Hints\_SetStemFunc@{T1\_Hints\_SetStemFunc}}
+\index{T1\_Hints\_SetStemFunc@{T1\_Hints\_SetStemFunc}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Hints\_SetStemFunc}{T1\_Hints\_SetStemFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ T1\+\_\+\+Hints\+\_\+\+Set\+Stem\+Func) (\mbox{\hyperlink{pshints_8h_a86b4b4d3662e7a6eae4dd00eacf88719}{T1\+\_\+\+Hints}} hints, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} dimension, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$coords)}
+
+\mbox{\Hypertarget{pshints_8h_af8b52db788301c01e97599916a2c819e}\label{pshints_8h_af8b52db788301c01e97599916a2c819e}} 
+\index{pshints.h@{pshints.h}!T2\_Hints@{T2\_Hints}}
+\index{T2\_Hints@{T2\_Hints}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{T2\_Hints}{T2\_Hints}}
+{\footnotesize\ttfamily typedef struct T2\+\_\+\+Hints\+Rec\+\_\+$\ast$ \mbox{\hyperlink{pshints_8h_af8b52db788301c01e97599916a2c819e}{T2\+\_\+\+Hints}}}
+
+\mbox{\Hypertarget{pshints_8h_ad50fae88020dff07eba4ab0385b7ccf9}\label{pshints_8h_ad50fae88020dff07eba4ab0385b7ccf9}} 
+\index{pshints.h@{pshints.h}!T2\_Hints\_ApplyFunc@{T2\_Hints\_ApplyFunc}}
+\index{T2\_Hints\_ApplyFunc@{T2\_Hints\_ApplyFunc}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{T2\_Hints\_ApplyFunc}{T2\_Hints\_ApplyFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T2\+\_\+\+Hints\+\_\+\+Apply\+Func) (\mbox{\hyperlink{pshints_8h_af8b52db788301c01e97599916a2c819e}{T2\+\_\+\+Hints}} hints, \mbox{\hyperlink{ftimage_8h_a6b64eb35252e8829024c12c98cce37d4}{F\+T\+\_\+\+Outline}} $\ast$outline, \mbox{\hyperlink{pshints_8h_aed4220b62b12a76456f9f47bafa5fe52}{P\+S\+H\+\_\+\+Globals}} globals, \mbox{\hyperlink{freetype_8h_a42c69ed4922d28c7d8cc9173237f966b}{F\+T\+\_\+\+Render\+\_\+\+Mode}} hint\+\_\+mode)}
+
+\mbox{\Hypertarget{pshints_8h_a066c99b26618748e5534b3d830b545f4}\label{pshints_8h_a066c99b26618748e5534b3d830b545f4}} 
+\index{pshints.h@{pshints.h}!T2\_Hints\_CloseFunc@{T2\_Hints\_CloseFunc}}
+\index{T2\_Hints\_CloseFunc@{T2\_Hints\_CloseFunc}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{T2\_Hints\_CloseFunc}{T2\_Hints\_CloseFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T2\+\_\+\+Hints\+\_\+\+Close\+Func) (\mbox{\hyperlink{pshints_8h_af8b52db788301c01e97599916a2c819e}{T2\+\_\+\+Hints}} hints, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} end\+\_\+point)}
+
+\mbox{\Hypertarget{pshints_8h_a1390b9a89729bbb804abd35305e576c8}\label{pshints_8h_a1390b9a89729bbb804abd35305e576c8}} 
+\index{pshints.h@{pshints.h}!T2\_Hints\_CounterFunc@{T2\_Hints\_CounterFunc}}
+\index{T2\_Hints\_CounterFunc@{T2\_Hints\_CounterFunc}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{T2\_Hints\_CounterFunc}{T2\_Hints\_CounterFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ T2\+\_\+\+Hints\+\_\+\+Counter\+Func) (\mbox{\hyperlink{pshints_8h_af8b52db788301c01e97599916a2c819e}{T2\+\_\+\+Hints}} hints, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} bit\+\_\+count, const \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} $\ast$bytes)}
+
+\mbox{\Hypertarget{pshints_8h_a0aa727e5db76dbf6b39051afd1ce1536}\label{pshints_8h_a0aa727e5db76dbf6b39051afd1ce1536}} 
+\index{pshints.h@{pshints.h}!T2\_Hints\_Funcs@{T2\_Hints\_Funcs}}
+\index{T2\_Hints\_Funcs@{T2\_Hints\_Funcs}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{T2\_Hints\_Funcs}{T2\_Hints\_Funcs}}
+{\footnotesize\ttfamily typedef const struct \mbox{\hyperlink{struct_t2___hints___funcs_rec__}{T2\+\_\+\+Hints\+\_\+\+Funcs\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{pshints_8h_a0aa727e5db76dbf6b39051afd1ce1536}{T2\+\_\+\+Hints\+\_\+\+Funcs}}}
+
+\mbox{\Hypertarget{pshints_8h_af209103faf8a305ede3b6b8966a16216}\label{pshints_8h_af209103faf8a305ede3b6b8966a16216}} 
+\index{pshints.h@{pshints.h}!T2\_Hints\_FuncsRec@{T2\_Hints\_FuncsRec}}
+\index{T2\_Hints\_FuncsRec@{T2\_Hints\_FuncsRec}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{T2\_Hints\_FuncsRec}{T2\_Hints\_FuncsRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t2___hints___funcs_rec__}{T2\+\_\+\+Hints\+\_\+\+Funcs\+Rec\+\_\+}} \mbox{\hyperlink{pshints_8h_af209103faf8a305ede3b6b8966a16216}{T2\+\_\+\+Hints\+\_\+\+Funcs\+Rec}}}
+
+\mbox{\Hypertarget{pshints_8h_a9c018e10457d088e6d5225cf905e5b2b}\label{pshints_8h_a9c018e10457d088e6d5225cf905e5b2b}} 
+\index{pshints.h@{pshints.h}!T2\_Hints\_MaskFunc@{T2\_Hints\_MaskFunc}}
+\index{T2\_Hints\_MaskFunc@{T2\_Hints\_MaskFunc}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{T2\_Hints\_MaskFunc}{T2\_Hints\_MaskFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ T2\+\_\+\+Hints\+\_\+\+Mask\+Func) (\mbox{\hyperlink{pshints_8h_af8b52db788301c01e97599916a2c819e}{T2\+\_\+\+Hints}} hints, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} end\+\_\+point, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} bit\+\_\+count, const \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} $\ast$bytes)}
+
+\mbox{\Hypertarget{pshints_8h_a5e8490d4430395e57dae95bdbac6cff7}\label{pshints_8h_a5e8490d4430395e57dae95bdbac6cff7}} 
+\index{pshints.h@{pshints.h}!T2\_Hints\_OpenFunc@{T2\_Hints\_OpenFunc}}
+\index{T2\_Hints\_OpenFunc@{T2\_Hints\_OpenFunc}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{T2\_Hints\_OpenFunc}{T2\_Hints\_OpenFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ T2\+\_\+\+Hints\+\_\+\+Open\+Func) (\mbox{\hyperlink{pshints_8h_af8b52db788301c01e97599916a2c819e}{T2\+\_\+\+Hints}} hints)}
+
+\mbox{\Hypertarget{pshints_8h_a3a7e02d7c2f03b37c37f44f6f2d8d194}\label{pshints_8h_a3a7e02d7c2f03b37c37f44f6f2d8d194}} 
+\index{pshints.h@{pshints.h}!T2\_Hints\_StemsFunc@{T2\_Hints\_StemsFunc}}
+\index{T2\_Hints\_StemsFunc@{T2\_Hints\_StemsFunc}!pshints.h@{pshints.h}}
+\doxysubsubsection{\texorpdfstring{T2\_Hints\_StemsFunc}{T2\_Hints\_StemsFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ T2\+\_\+\+Hints\+\_\+\+Stems\+Func) (\mbox{\hyperlink{pshints_8h_af8b52db788301c01e97599916a2c819e}{T2\+\_\+\+Hints}} hints, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} dimension, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} count, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$coordinates)}
+

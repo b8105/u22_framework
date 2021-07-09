@@ -1,0 +1,102 @@
+\hypertarget{svpsinfo_8h}{}\doxysection{freetype/internal/services/svpsinfo.h ファイル}
+\label{svpsinfo_8h}\index{freetype/internal/services/svpsinfo.h@{freetype/internal/services/svpsinfo.h}}
+{\ttfamily \#include $<$freetype/internal/ftserv.\+h$>$}\newline
+{\ttfamily \#include $<$freetype/internal/t1types.\+h$>$}\newline
+svpsinfo.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{svpsinfo_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{svpsinfo_8h_ae0430cbf73ce03abf531919cd9acc675}{F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+P\+O\+S\+T\+S\+C\+R\+I\+P\+T\+\_\+\+I\+N\+FO}}~\char`\"{}postscript-\/info\char`\"{}
+\item 
+\#define \mbox{\hyperlink{svpsinfo_8h_a70bd4d514b9627e406783c03ded3c146}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+P\+S\+I\+N\+F\+O\+R\+EC}}(class\+\_\+,  get\+\_\+font\+\_\+info\+\_\+,  ps\+\_\+get\+\_\+font\+\_\+extra\+\_\+,  has\+\_\+glyph\+\_\+names\+\_\+,  get\+\_\+font\+\_\+private\+\_\+,  get\+\_\+font\+\_\+value\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svpsinfo_8h_a7f1d300373b95d647a3fd58a0be4bfab}{P\+S\+\_\+\+Get\+Font\+Info\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{t1tables_8h_ac4e1e326a11eadc1dd142f3772f4330e}{P\+S\+\_\+\+Font\+Info\+Rec}} $\ast$afont\+\_\+info)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svpsinfo_8h_aa89af59e17be1622882c9f274ec6440d}{P\+S\+\_\+\+Get\+Font\+Extra\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{t1types_8h_a5d4957dc4329b471b1a3cab8de87f770}{P\+S\+\_\+\+Font\+Extra\+Rec}} $\ast$afont\+\_\+extra)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}}($\ast$ \mbox{\hyperlink{svpsinfo_8h_aa6eecca6cf78c7a2a977a0bc809f1461}{P\+S\+\_\+\+Has\+Glyph\+Names\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svpsinfo_8h_adf867d5be9730ef3c11f3c5814368723}{P\+S\+\_\+\+Get\+Font\+Private\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{t1tables_8h_a274fc710e46de4825f7a0d2157e168e4}{P\+S\+\_\+\+Private\+Rec}} $\ast$afont\+\_\+private)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}}($\ast$ \mbox{\hyperlink{svpsinfo_8h_a671fb6ed0c3fce66126494fca540641b}{P\+S\+\_\+\+Get\+Font\+Value\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{t1tables_8h_a87507b0d18b8c77bcf517073c914e2d0}{P\+S\+\_\+\+Dict\+\_\+\+Keys}} key, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} idx, void $\ast$value, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} value\+\_\+len)
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{svpsinfo_8h_adf279bad07f4ce51e5bfbb1cc281b0a7}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE}} (Ps\+Info)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{svpsinfo_8h_a70bd4d514b9627e406783c03ded3c146}\label{svpsinfo_8h_a70bd4d514b9627e406783c03ded3c146}} 
+\index{svpsinfo.h@{svpsinfo.h}!FT\_DEFINE\_SERVICE\_PSINFOREC@{FT\_DEFINE\_SERVICE\_PSINFOREC}}
+\index{FT\_DEFINE\_SERVICE\_PSINFOREC@{FT\_DEFINE\_SERVICE\_PSINFOREC}!svpsinfo.h@{svpsinfo.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE\_PSINFOREC}{FT\_DEFINE\_SERVICE\_PSINFOREC}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+P\+S\+I\+N\+F\+O\+R\+EC(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{get\+\_\+font\+\_\+info\+\_\+,  }\item[{}]{ps\+\_\+get\+\_\+font\+\_\+extra\+\_\+,  }\item[{}]{has\+\_\+glyph\+\_\+names\+\_\+,  }\item[{}]{get\+\_\+font\+\_\+private\+\_\+,  }\item[{}]{get\+\_\+font\+\_\+value\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{static} \textcolor{keyword}{const} FT\_Service\_PsInfoRec  class\_ =                    \(\backslash\)}
+\DoxyCodeLine{  \{                                                              \(\backslash\)}
+\DoxyCodeLine{    get\_font\_info\_, ps\_get\_font\_extra\_, has\_glyph\_names\_,        \(\backslash\)}
+\DoxyCodeLine{    get\_font\_private\_, get\_font\_value\_                           \(\backslash\)}
+\DoxyCodeLine{  \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{svpsinfo_8h_ae0430cbf73ce03abf531919cd9acc675}\label{svpsinfo_8h_ae0430cbf73ce03abf531919cd9acc675}} 
+\index{svpsinfo.h@{svpsinfo.h}!FT\_SERVICE\_ID\_POSTSCRIPT\_INFO@{FT\_SERVICE\_ID\_POSTSCRIPT\_INFO}}
+\index{FT\_SERVICE\_ID\_POSTSCRIPT\_INFO@{FT\_SERVICE\_ID\_POSTSCRIPT\_INFO}!svpsinfo.h@{svpsinfo.h}}
+\doxysubsubsection{\texorpdfstring{FT\_SERVICE\_ID\_POSTSCRIPT\_INFO}{FT\_SERVICE\_ID\_POSTSCRIPT\_INFO}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+P\+O\+S\+T\+S\+C\+R\+I\+P\+T\+\_\+\+I\+N\+FO~\char`\"{}postscript-\/info\char`\"{}}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{svpsinfo_8h_aa89af59e17be1622882c9f274ec6440d}\label{svpsinfo_8h_aa89af59e17be1622882c9f274ec6440d}} 
+\index{svpsinfo.h@{svpsinfo.h}!PS\_GetFontExtraFunc@{PS\_GetFontExtraFunc}}
+\index{PS\_GetFontExtraFunc@{PS\_GetFontExtraFunc}!svpsinfo.h@{svpsinfo.h}}
+\doxysubsubsection{\texorpdfstring{PS\_GetFontExtraFunc}{PS\_GetFontExtraFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ P\+S\+\_\+\+Get\+Font\+Extra\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{t1types_8h_a5d4957dc4329b471b1a3cab8de87f770}{P\+S\+\_\+\+Font\+Extra\+Rec}} $\ast$afont\+\_\+extra)}
+
+\mbox{\Hypertarget{svpsinfo_8h_a7f1d300373b95d647a3fd58a0be4bfab}\label{svpsinfo_8h_a7f1d300373b95d647a3fd58a0be4bfab}} 
+\index{svpsinfo.h@{svpsinfo.h}!PS\_GetFontInfoFunc@{PS\_GetFontInfoFunc}}
+\index{PS\_GetFontInfoFunc@{PS\_GetFontInfoFunc}!svpsinfo.h@{svpsinfo.h}}
+\doxysubsubsection{\texorpdfstring{PS\_GetFontInfoFunc}{PS\_GetFontInfoFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ P\+S\+\_\+\+Get\+Font\+Info\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{t1tables_8h_ac4e1e326a11eadc1dd142f3772f4330e}{P\+S\+\_\+\+Font\+Info\+Rec}} $\ast$afont\+\_\+info)}
+
+\mbox{\Hypertarget{svpsinfo_8h_adf867d5be9730ef3c11f3c5814368723}\label{svpsinfo_8h_adf867d5be9730ef3c11f3c5814368723}} 
+\index{svpsinfo.h@{svpsinfo.h}!PS\_GetFontPrivateFunc@{PS\_GetFontPrivateFunc}}
+\index{PS\_GetFontPrivateFunc@{PS\_GetFontPrivateFunc}!svpsinfo.h@{svpsinfo.h}}
+\doxysubsubsection{\texorpdfstring{PS\_GetFontPrivateFunc}{PS\_GetFontPrivateFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ P\+S\+\_\+\+Get\+Font\+Private\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{t1tables_8h_a274fc710e46de4825f7a0d2157e168e4}{P\+S\+\_\+\+Private\+Rec}} $\ast$afont\+\_\+private)}
+
+\mbox{\Hypertarget{svpsinfo_8h_a671fb6ed0c3fce66126494fca540641b}\label{svpsinfo_8h_a671fb6ed0c3fce66126494fca540641b}} 
+\index{svpsinfo.h@{svpsinfo.h}!PS\_GetFontValueFunc@{PS\_GetFontValueFunc}}
+\index{PS\_GetFontValueFunc@{PS\_GetFontValueFunc}!svpsinfo.h@{svpsinfo.h}}
+\doxysubsubsection{\texorpdfstring{PS\_GetFontValueFunc}{PS\_GetFontValueFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}}($\ast$ P\+S\+\_\+\+Get\+Font\+Value\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{t1tables_8h_a87507b0d18b8c77bcf517073c914e2d0}{P\+S\+\_\+\+Dict\+\_\+\+Keys}} key, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} idx, void $\ast$value, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} value\+\_\+len)}
+
+\mbox{\Hypertarget{svpsinfo_8h_aa6eecca6cf78c7a2a977a0bc809f1461}\label{svpsinfo_8h_aa6eecca6cf78c7a2a977a0bc809f1461}} 
+\index{svpsinfo.h@{svpsinfo.h}!PS\_HasGlyphNamesFunc@{PS\_HasGlyphNamesFunc}}
+\index{PS\_HasGlyphNamesFunc@{PS\_HasGlyphNamesFunc}!svpsinfo.h@{svpsinfo.h}}
+\doxysubsubsection{\texorpdfstring{PS\_HasGlyphNamesFunc}{PS\_HasGlyphNamesFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}}($\ast$ P\+S\+\_\+\+Has\+Glyph\+Names\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face)}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{svpsinfo_8h_adf279bad07f4ce51e5bfbb1cc281b0a7}\label{svpsinfo_8h_adf279bad07f4ce51e5bfbb1cc281b0a7}} 
+\index{svpsinfo.h@{svpsinfo.h}!FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}}
+\index{FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}!svpsinfo.h@{svpsinfo.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE()}{FT\_DEFINE\_SERVICE()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE (\begin{DoxyParamCaption}\item[{Ps\+Info}]{ }\end{DoxyParamCaption})}
+

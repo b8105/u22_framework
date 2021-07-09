@@ -1,0 +1,69 @@
+\hypertarget{svprop_8h}{}\doxysection{freetype/internal/services/svprop.h ファイル}
+\label{svprop_8h}\index{freetype/internal/services/svprop.h@{freetype/internal/services/svprop.h}}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{svprop_8h_ad466ccab8764c668a6be0f6de0509bd7}{F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+P\+R\+O\+P\+E\+R\+T\+I\+ES}}~\char`\"{}properties\char`\"{}
+\item 
+\#define \mbox{\hyperlink{svprop_8h_a47a2dbb1211fb08eb95fda06baf60260}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+P\+R\+O\+P\+E\+R\+T\+I\+E\+S\+R\+EC}}(class\+\_\+,  set\+\_\+property\+\_\+,  get\+\_\+property\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svprop_8h_a8ad2136841ee3adabf704614ab77a40c}{F\+T\+\_\+\+Properties\+\_\+\+Set\+Func}}) (\mbox{\hyperlink{freetype_8h_a660c1bb333747abacdc433b7d73ca59b}{F\+T\+\_\+\+Module}} module, const char $\ast$property\+\_\+name, const void $\ast$value, \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} value\+\_\+is\+\_\+string)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svprop_8h_a80ef9fe0cbf31715f67b53f639a2ad58}{F\+T\+\_\+\+Properties\+\_\+\+Get\+Func}}) (\mbox{\hyperlink{freetype_8h_a660c1bb333747abacdc433b7d73ca59b}{F\+T\+\_\+\+Module}} module, const char $\ast$property\+\_\+name, void $\ast$value)
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{svprop_8h_a9d65df440f3658782090e82f592bb1d6}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE}} (Properties)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{svprop_8h_a47a2dbb1211fb08eb95fda06baf60260}\label{svprop_8h_a47a2dbb1211fb08eb95fda06baf60260}} 
+\index{svprop.h@{svprop.h}!FT\_DEFINE\_SERVICE\_PROPERTIESREC@{FT\_DEFINE\_SERVICE\_PROPERTIESREC}}
+\index{FT\_DEFINE\_SERVICE\_PROPERTIESREC@{FT\_DEFINE\_SERVICE\_PROPERTIESREC}!svprop.h@{svprop.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE\_PROPERTIESREC}{FT\_DEFINE\_SERVICE\_PROPERTIESREC}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+P\+R\+O\+P\+E\+R\+T\+I\+E\+S\+R\+EC(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{set\+\_\+property\+\_\+,  }\item[{}]{get\+\_\+property\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{static} \textcolor{keyword}{const} FT\_Service\_PropertiesRec  class\_ =         \(\backslash\)}
+\DoxyCodeLine{  \{                                                       \(\backslash\)}
+\DoxyCodeLine{    set\_property\_,                                        \(\backslash\)}
+\DoxyCodeLine{    get\_property\_                                         \(\backslash\)}
+\DoxyCodeLine{  \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{svprop_8h_ad466ccab8764c668a6be0f6de0509bd7}\label{svprop_8h_ad466ccab8764c668a6be0f6de0509bd7}} 
+\index{svprop.h@{svprop.h}!FT\_SERVICE\_ID\_PROPERTIES@{FT\_SERVICE\_ID\_PROPERTIES}}
+\index{FT\_SERVICE\_ID\_PROPERTIES@{FT\_SERVICE\_ID\_PROPERTIES}!svprop.h@{svprop.h}}
+\doxysubsubsection{\texorpdfstring{FT\_SERVICE\_ID\_PROPERTIES}{FT\_SERVICE\_ID\_PROPERTIES}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+P\+R\+O\+P\+E\+R\+T\+I\+ES~\char`\"{}properties\char`\"{}}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{svprop_8h_a80ef9fe0cbf31715f67b53f639a2ad58}\label{svprop_8h_a80ef9fe0cbf31715f67b53f639a2ad58}} 
+\index{svprop.h@{svprop.h}!FT\_Properties\_GetFunc@{FT\_Properties\_GetFunc}}
+\index{FT\_Properties\_GetFunc@{FT\_Properties\_GetFunc}!svprop.h@{svprop.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Properties\_GetFunc}{FT\_Properties\_GetFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+Properties\+\_\+\+Get\+Func) (\mbox{\hyperlink{freetype_8h_a660c1bb333747abacdc433b7d73ca59b}{F\+T\+\_\+\+Module}} module, const char $\ast$property\+\_\+name, void $\ast$value)}
+
+\mbox{\Hypertarget{svprop_8h_a8ad2136841ee3adabf704614ab77a40c}\label{svprop_8h_a8ad2136841ee3adabf704614ab77a40c}} 
+\index{svprop.h@{svprop.h}!FT\_Properties\_SetFunc@{FT\_Properties\_SetFunc}}
+\index{FT\_Properties\_SetFunc@{FT\_Properties\_SetFunc}!svprop.h@{svprop.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Properties\_SetFunc}{FT\_Properties\_SetFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+Properties\+\_\+\+Set\+Func) (\mbox{\hyperlink{freetype_8h_a660c1bb333747abacdc433b7d73ca59b}{F\+T\+\_\+\+Module}} module, const char $\ast$property\+\_\+name, const void $\ast$value, \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} value\+\_\+is\+\_\+string)}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{svprop_8h_a9d65df440f3658782090e82f592bb1d6}\label{svprop_8h_a9d65df440f3658782090e82f592bb1d6}} 
+\index{svprop.h@{svprop.h}!FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}}
+\index{FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}!svprop.h@{svprop.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE()}{FT\_DEFINE\_SERVICE()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE (\begin{DoxyParamCaption}\item[{Properties}]{ }\end{DoxyParamCaption})}
+

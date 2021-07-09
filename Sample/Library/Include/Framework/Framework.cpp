@@ -29,7 +29,7 @@ u22::Framework::~Framework() {
 
 bool u22::Framework::Setup(const std::shared_ptr<u22::IApplicaion>& ptr, u22::ApplicationInfo* info) {
     // ウインドウ
-    if (!_window->Create("None", info->window_width, info->window_height, info->window_position_x, info->window_position_y)) {
+    if (!_window->Create("None", info->window_width, info->window_height, info->window_position_x, info->window_position_y, info->full_screen_mode)) {
         return false;
     } // if
     // グラフィクス

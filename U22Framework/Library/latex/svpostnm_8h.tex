@@ -1,0 +1,68 @@
+\hypertarget{svpostnm_8h}{}\doxysection{freetype/internal/services/svpostnm.h ファイル}
+\label{svpostnm_8h}\index{freetype/internal/services/svpostnm.h@{freetype/internal/services/svpostnm.h}}
+{\ttfamily \#include $<$freetype/internal/ftserv.\+h$>$}\newline
+svpostnm.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{svpostnm_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{svpostnm_8h_a4278ed29769718d7616e5405b62da673}{F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+P\+O\+S\+T\+S\+C\+R\+I\+P\+T\+\_\+\+F\+O\+N\+T\+\_\+\+N\+A\+ME}}~\char`\"{}postscript-\/font-\/name\char`\"{}
+\item 
+\#define \mbox{\hyperlink{svpostnm_8h_ab4f9a7c70bce4c28aff7caf76f80ce40}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+P\+S\+F\+O\+N\+T\+N\+A\+M\+E\+R\+EC}}(class\+\_\+,  get\+\_\+ps\+\_\+font\+\_\+name\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef const char $\ast$($\ast$ \mbox{\hyperlink{svpostnm_8h_a567f54c8c445d524d0b76058b210009f}{F\+T\+\_\+\+Ps\+Name\+\_\+\+Get\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face)
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{svpostnm_8h_ab0a9786804fe42e792db8a4ccd810093}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE}} (Ps\+Font\+Name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{svpostnm_8h_ab4f9a7c70bce4c28aff7caf76f80ce40}\label{svpostnm_8h_ab4f9a7c70bce4c28aff7caf76f80ce40}} 
+\index{svpostnm.h@{svpostnm.h}!FT\_DEFINE\_SERVICE\_PSFONTNAMEREC@{FT\_DEFINE\_SERVICE\_PSFONTNAMEREC}}
+\index{FT\_DEFINE\_SERVICE\_PSFONTNAMEREC@{FT\_DEFINE\_SERVICE\_PSFONTNAMEREC}!svpostnm.h@{svpostnm.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE\_PSFONTNAMEREC}{FT\_DEFINE\_SERVICE\_PSFONTNAMEREC}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+P\+S\+F\+O\+N\+T\+N\+A\+M\+E\+R\+EC(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{get\+\_\+ps\+\_\+font\+\_\+name\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{static} \textcolor{keyword}{const} FT\_Service\_PsFontNameRec  class\_ =                    \(\backslash\)}
+\DoxyCodeLine{  \{                                                                  \(\backslash\)}
+\DoxyCodeLine{    get\_ps\_font\_name\_                                                \(\backslash\)}
+\DoxyCodeLine{  \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{svpostnm_8h_a4278ed29769718d7616e5405b62da673}\label{svpostnm_8h_a4278ed29769718d7616e5405b62da673}} 
+\index{svpostnm.h@{svpostnm.h}!FT\_SERVICE\_ID\_POSTSCRIPT\_FONT\_NAME@{FT\_SERVICE\_ID\_POSTSCRIPT\_FONT\_NAME}}
+\index{FT\_SERVICE\_ID\_POSTSCRIPT\_FONT\_NAME@{FT\_SERVICE\_ID\_POSTSCRIPT\_FONT\_NAME}!svpostnm.h@{svpostnm.h}}
+\doxysubsubsection{\texorpdfstring{FT\_SERVICE\_ID\_POSTSCRIPT\_FONT\_NAME}{FT\_SERVICE\_ID\_POSTSCRIPT\_FONT\_NAME}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+P\+O\+S\+T\+S\+C\+R\+I\+P\+T\+\_\+\+F\+O\+N\+T\+\_\+\+N\+A\+ME~\char`\"{}postscript-\/font-\/name\char`\"{}}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{svpostnm_8h_a567f54c8c445d524d0b76058b210009f}\label{svpostnm_8h_a567f54c8c445d524d0b76058b210009f}} 
+\index{svpostnm.h@{svpostnm.h}!FT\_PsName\_GetFunc@{FT\_PsName\_GetFunc}}
+\index{FT\_PsName\_GetFunc@{FT\_PsName\_GetFunc}!svpostnm.h@{svpostnm.h}}
+\doxysubsubsection{\texorpdfstring{FT\_PsName\_GetFunc}{FT\_PsName\_GetFunc}}
+{\footnotesize\ttfamily typedef const char$\ast$($\ast$ F\+T\+\_\+\+Ps\+Name\+\_\+\+Get\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face)}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{svpostnm_8h_ab0a9786804fe42e792db8a4ccd810093}\label{svpostnm_8h_ab0a9786804fe42e792db8a4ccd810093}} 
+\index{svpostnm.h@{svpostnm.h}!FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}}
+\index{FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}!svpostnm.h@{svpostnm.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE()}{FT\_DEFINE\_SERVICE()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE (\begin{DoxyParamCaption}\item[{Ps\+Font\+Name}]{ }\end{DoxyParamCaption})}
+

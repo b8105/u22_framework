@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: External/GLM/ext/quaternion_geometric.hpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_443fc37f241ba4018364a998c18d007b.html">External</a></li><li class="navelem"><a class="el" href="dir_c334883f19ec445d87470844289252ab.html">GLM</a></li><li class="navelem"><a class="el" href="dir_3ead7d7d98efc92dbd3a2f779851262e.html">ext</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">quaternion_geometric.hpp ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="geometric_8hpp_source.html">../geometric.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="exponential_8hpp_source.html">../exponential.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ext_2vector__relational_8hpp_source.html">../ext/vector_relational.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="quaternion__geometric_8inl.html">quaternion_geometric.inl</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+quaternion_geometric.hpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="quaternion__geometric_8hpp__incl.png" border="0" usemap="#a_external_2_g_l_m_2ext_2quaternion__geometric_8hpp" alt=""/></div>
+<map name="_external_2_g_l_m_2ext_2quaternion__geometric_8hpp" id="_external_2_g_l_m_2ext_2quaternion__geometric_8hpp">
+<area shape="rect" title=" " alt="" coords="649,5,837,47"/>
+<area shape="rect" href="geometric_8hpp.html" title=" " alt="" coords="743,95,859,121"/>
+<area shape="rect" href="exponential_8hpp.html" title=" " alt="" coords="751,244,876,271"/>
+<area shape="rect" href="ext_2vector__relational_8hpp.html" title=" " alt="" coords="170,95,345,121"/>
+<area shape="rect" href="quaternion__geometric_8inl.html" title=" " alt="" coords="884,95,1047,121"/>
+<area shape="rect" href="type__vec3_8hpp.html" title=" " alt="" coords="1342,393,1482,420"/>
+<area shape="rect" href="func__geometric_8inl.html" title=" " alt="" coords="732,169,895,196"/>
+<area shape="rect" href="qualifier_8hpp.html" title=" " alt="" coords="401,475,492,502"/>
+<area shape="rect" title=" " alt="" coords="1155,721,1219,748"/>
+<area shape="rect" href="type__vec3_8inl.html" title=" " alt="" coords="1346,475,1443,502"/>
+<area shape="rect" href="setup_8hpp.html" title=" " alt="" coords="410,647,489,673"/>
+<area shape="rect" title=" " alt="" coords="497,721,562,748"/>
+<area shape="rect" href="platform_8h.html" title=" " alt="" coords="349,721,472,748"/>
+<area shape="rect" href="compute__vector__relational_8hpp.html" title=" " alt="" coords="941,565,1139,591"/>
+<area shape="rect" title=" " alt="" coords="808,647,861,673"/>
+<area shape="rect" href="common_8hpp.html" title=" " alt="" coords="415,244,524,271"/>
+<area shape="rect" href="type__vec1_8hpp.html" title=" " alt="" coords="747,393,887,420"/>
+<area shape="rect" href="type__vec2_8hpp.html" title=" " alt="" coords="1014,393,1154,420"/>
+<area shape="rect" href="type__vec4_8hpp.html" title=" " alt="" coords="1178,393,1318,420"/>
+<area shape="rect" title=" " alt="" coords="433,393,492,420"/>
+<area shape="rect" href="func__exponential_8inl.html" title=" " alt="" coords="603,319,773,345"/>
+<area shape="rect" href="type__vec1_8inl.html" title=" " alt="" coords="930,475,1027,502"/>
+<area shape="rect" href="type__vec2_8inl.html" title=" " alt="" coords="1051,475,1149,502"/>
+<area shape="rect" href="type__vec4_8inl.html" title=" " alt="" coords="1225,475,1322,502"/>
+<area shape="rect" href="vector__relational_8hpp.html" title=" " alt="" coords="207,393,359,420"/>
+<area shape="rect" href="__vectorize_8hpp.html" title=" " alt="" coords="618,393,723,420"/>
+<area shape="rect" href="func__vector__relational_8inl.html" title=" " alt="" coords="255,468,377,509"/>
+<area shape="rect" href="func__vector__relational__simd_8inl.html" title=" " alt="" coords="255,557,401,599"/>
+<area shape="rect" href="__fixes_8hpp.html" title=" " alt="" coords="411,319,527,345"/>
+<area shape="rect" href="func__common_8inl.html" title=" " alt="" coords="851,319,1005,345"/>
+<area shape="rect" href="compute__common_8hpp.html" title=" " alt="" coords="700,565,855,591"/>
+<area shape="rect" href="vector__relational_8inl.html" title=" " alt="" coords="191,169,323,196"/>
+<area shape="rect" href="type__float_8hpp.html" title=" " alt="" coords="43,244,194,271"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="quaternion__geometric_8hpp__dep__incl.png" border="0" usemap="#a_external_2_g_l_m_2ext_2quaternion__geometric_8hppdep" alt=""/></div>
+<map name="_external_2_g_l_m_2ext_2quaternion__geometric_8hppdep" id="_external_2_g_l_m_2ext_2quaternion__geometric_8hppdep">
+<area shape="rect" title=" " alt="" coords="1765,5,1953,47"/>
+<area shape="rect" href="type__quat_8inl.html" title=" " alt="" coords="1845,95,1982,136"/>
+<area shape="rect" href="ext_8hpp.html" title=" " alt="" coords="1588,623,1737,650"/>
+<area shape="rect" href="gtc_2quaternion_8hpp.html" title=" " alt="" coords="1595,363,1808,389"/>
+<area shape="rect" href="quaternion__common_8hpp.html" title=" " alt="" coords="1567,184,1755,225"/>
+<area shape="rect" href="type__quat_8hpp.html" title=" " alt="" coords="1857,184,1994,225"/>
+<area shape="rect" href="quaternion__double_8hpp.html" title=" " alt="" coords="2255,273,2443,315"/>
+<area shape="rect" href="quaternion__double__precision_8hpp.html" title=" " alt="" coords="1475,273,1663,315"/>
+<area shape="rect" href="quaternion__float_8hpp.html" title=" " alt="" coords="2043,273,2231,315"/>
+<area shape="rect" href="quaternion__float__precision_8hpp.html" title=" " alt="" coords="1831,273,2019,315"/>
+<area shape="rect" href="type__precision_8hpp.html" title=" " alt="" coords="1254,437,1407,479"/>
+<area shape="rect" href="string__cast_8hpp.html" title=" " alt="" coords="1429,527,1589,568"/>
+<area shape="rect" href="gtx_2type__aligned_8hpp.html" title=" " alt="" coords="569,527,722,568"/>
+<area shape="rect" href="type__ptr_8hpp.html" title=" " alt="" coords="1025,437,1178,479"/>
+<area shape="rect" href="compatibility_8hpp.html" title=" " alt="" coords="5,445,232,471"/>
+<area shape="rect" href="dual__quaternion_8hpp.html" title=" " alt="" coords="1625,437,1777,479"/>
+<area shape="rect" href="hash_8hpp.html" title=" " alt="" coords="1776,534,1957,561"/>
+<area shape="rect" href="type__trait_8hpp.html" title=" " alt="" coords="2033,527,2186,568"/>
+<area shape="rect" href="matrix__decompose_8hpp.html" title=" " alt="" coords="651,437,815,479"/>
+<area shape="rect" href="gtx_2quaternion_8hpp.html" title=" " alt="" coords="2280,445,2493,471"/>
+<area shape="rect" href="rotate__normalized__axis_8hpp.html" title=" " alt="" coords="839,437,1001,479"/>
+<area shape="rect" href="bitfield_8hpp.html" title=" " alt="" coords="746,534,937,561"/>
+<area shape="rect" href="gtc_2packing_8hpp.html" title=" " alt="" coords="961,534,1159,561"/>
+<area shape="rect" href="number__precision_8hpp.html" title=" " alt="" coords="1184,527,1355,568"/>
+<area shape="rect" href="bit_8hpp.html" title=" " alt="" coords="758,623,925,650"/>
+<area shape="rect" href="range_8hpp.html" title=" " alt="" coords="307,534,493,561"/>
+<area shape="rect" href="euler__angles_8inl.html" title=" " alt="" coords="41,527,197,568"/>
+<area shape="rect" href="euler__angles_8hpp.html" title=" " alt="" coords="41,616,197,657"/>
+<area shape="rect" href="glm_8cpp.html" title=" " alt="" coords="1614,527,1751,568"/>
+<area shape="rect" href="io_8inl.html" title=" " alt="" coords="2209,623,2364,650"/>
+<area shape="rect" href="io_8hpp.html" title=" " alt="" coords="2384,705,2547,732"/>
+<area shape="rect" href="_common_8h.html" title=" " alt="" coords="3703,534,3844,561"/>
+<area shape="rect" href="norm_8hpp.html" title=" " alt="" coords="2210,534,2393,561"/>
+<area shape="rect" href="vector__angle_8hpp.html" title=" " alt="" coords="2417,527,2580,568"/>
+<area shape="rect" href="_audio_8h.html" title=" " alt="" coords="3055,623,3158,650"/>
+<area shape="rect" href="_framework_8h.html" title=" " alt="" coords="3087,705,3252,732"/>
+<area shape="rect" href="_audio_buffer_8h.html" title=" " alt="" coords="4189,705,4325,732"/>
+<area shape="rect" href="_sound_buffer_8h.html" title=" " alt="" coords="4122,780,4262,807"/>
+<area shape="rect" href="_sound_stream_buffer_8h.html" title=" " alt="" coords="4326,780,4509,807"/>
+<area shape="rect" href="_i_sound_buffer_8h.html" title=" " alt="" coords="4401,705,4543,732"/>
+<area shape="rect" href="_sound_file_8h.html" title=" " alt="" coords="4139,623,4267,650"/>
+<area shape="rect" href="_clock_8h.html" title=" " alt="" coords="3182,623,3285,650"/>
+<area shape="rect" href="_window_8h.html" title=" " alt="" coords="3309,623,3507,650"/>
+<area shape="rect" href="_buffer_8h.html" title=" " alt="" coords="2908,623,3031,650"/>
+<area shape="rect" href="_camera_8h.html" title=" " alt="" coords="3483,705,3618,732"/>
+<area shape="rect" href="_font_renderer_8h.html" title=" " alt="" coords="3810,780,3977,807"/>
+<area shape="rect" href="_effect_shader_8h.html" title=" " alt="" coords="3649,705,3812,732"/>
+<area shape="rect" href="_font_8h.html" title=" " alt="" coords="3836,705,3951,732"/>
+<area shape="rect" href="_font_image_8h.html" title=" " alt="" coords="3862,623,4013,650"/>
+<area shape="rect" href="_graphics_8cpp.html" title=" " alt="" coords="3581,623,3736,650"/>
+</map>
+</div>
+</div>
+<p><a href="quaternion__geometric_8hpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:namespaceglm"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceglm.html">glm</a></td></tr>
+<tr class="memdesc:namespaceglm"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__core.html">Core features</a> <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:gab703732449be6c7199369b3f9a91ed38"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:gab703732449be6c7199369b3f9a91ed38"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a> T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__ext__quaternion__geometric.html#gab703732449be6c7199369b3f9a91ed38">glm::length</a> (qua&lt; T, Q &gt; const &amp;q)</td></tr>
+<tr class="separator:gab703732449be6c7199369b3f9a91ed38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabf30e3263fffe8dcc6659aea76ae8927"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:gabf30e3263fffe8dcc6659aea76ae8927"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a> qua&lt; T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__ext__quaternion__geometric.html#gabf30e3263fffe8dcc6659aea76ae8927">glm::normalize</a> (qua&lt; T, Q &gt; const &amp;q)</td></tr>
+<tr class="separator:gabf30e3263fffe8dcc6659aea76ae8927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84865a56acb8fbd7bc4f5c0b928e3cfc"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:ga84865a56acb8fbd7bc4f5c0b928e3cfc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a> T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__ext__quaternion__geometric.html#ga84865a56acb8fbd7bc4f5c0b928e3cfc">glm::dot</a> (qua&lt; T, Q &gt; const &amp;x, qua&lt; T, Q &gt; const &amp;y)</td></tr>
+<tr class="separator:ga84865a56acb8fbd7bc4f5c0b928e3cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga63d6be2046911ac43234578b56e0b8fb"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:ga63d6be2046911ac43234578b56e0b8fb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> qua&lt; T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__ext__quaternion__geometric.html#ga63d6be2046911ac43234578b56e0b8fb">glm::cross</a> (qua&lt; T, Q &gt; const &amp;q1, qua&lt; T, Q &gt; const &amp;q2)</td></tr>
+<tr class="separator:ga63d6be2046911ac43234578b56e0b8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p><a class="el" href="group__ext__quaternion__geometric.html">GLM_EXT_quaternion_geometric</a> </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

@@ -1,0 +1,209 @@
+\hypertarget{compiler-macros_8h}{}\doxysection{freetype/internal/compiler-\/macros.h ファイル}
+\label{compiler-macros_8h}\index{freetype/internal/compiler-\/macros.h@{freetype/internal/compiler-\/macros.h}}
+{\ttfamily \#include $<$freetype/config/public-\/macros.\+h$>$}\newline
+compiler-\/macros.h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{compiler-macros_8h__incl}
+\end{center}
+\end{figure}
+被依存関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{compiler-macros_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{compiler-macros_8h_affa471c199b61ca40463017b6a6738d5}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+S\+T\+M\+NT}}~do \{
+\item 
+\#define \mbox{\hyperlink{compiler-macros_8h_a05ebe315c717e508cbb0f5cda7f8ca23}{F\+T\+\_\+\+E\+N\+D\+\_\+\+S\+T\+M\+NT}}~\} while ( 0 )
+\item 
+\#define \mbox{\hyperlink{compiler-macros_8h_aac188ac67da0a0f40d9bf75d40f81073}{F\+T\+\_\+\+D\+U\+M\+M\+Y\+\_\+\+S\+T\+M\+NT}}~\mbox{\hyperlink{compiler-macros_8h_affa471c199b61ca40463017b6a6738d5}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+S\+T\+M\+NT}} \mbox{\hyperlink{compiler-macros_8h_a05ebe315c717e508cbb0f5cda7f8ca23}{F\+T\+\_\+\+E\+N\+D\+\_\+\+S\+T\+M\+NT}}
+\item 
+\#define \mbox{\hyperlink{compiler-macros_8h_a96734505c5357b3bf1b5dbc47ee78ec3}{F\+T\+\_\+\+U\+I\+N\+T\+\_\+\+T\+O\+\_\+\+P\+O\+I\+N\+T\+ER}}(x)~(void $\ast$)(unsigned long)(x)
+\item 
+\#define \mbox{\hyperlink{compiler-macros_8h_afa7325739c5383905bb4d1543f16ce42}{F\+T\+\_\+\+T\+Y\+P\+E\+OF}}(type)~/$\ast$ empty $\ast$/
+\item 
+\#define \mbox{\hyperlink{compiler-macros_8h_a10f3be4788a152e4388b1b90cfcf6980}{F\+T\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}}~/$\ast$ empty $\ast$/
+\item 
+\#define \mbox{\hyperlink{compiler-macros_8h_a0c002cf78653e2f0629d8b61abdebfb0}{F\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+D\+E\+C\+L\+A\+R\+A\+T\+I\+ON}}(x)~extern x
+\item 
+\#define \mbox{\hyperlink{compiler-macros_8h_ad5e9aef6a2e8c0cdf264871052ce3324}{F\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON}}(x)~x
+\item 
+\#define \mbox{\hyperlink{compiler-macros_8h_a58a8b2fb387665ef9652a54a9ad80bd3}{F\+T\+\_\+\+L\+O\+C\+AL}}(x)
+\item 
+\#define \mbox{\hyperlink{compiler-macros_8h_a065cda933183dff5dc368794eefa7c93}{F\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+D\+EF}}(x)~\mbox{\hyperlink{compiler-macros_8h_ad5e9aef6a2e8c0cdf264871052ce3324}{F\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON}}( x )
+\item 
+\#define \mbox{\hyperlink{compiler-macros_8h_aad80b9425716f9bdcb60b79d9948f269}{F\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+A\+R\+R\+AY}}(x)
+\item 
+\#define \mbox{\hyperlink{compiler-macros_8h_a0da3e9e0b4f7072c33a971fdca1c51cb}{F\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+D\+EF}}(x)~\mbox{\hyperlink{compiler-macros_8h_ad5e9aef6a2e8c0cdf264871052ce3324}{F\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON}}( const x )
+\item 
+\#define \mbox{\hyperlink{compiler-macros_8h_ad9b0c555bd9c667187a720e265943bfc}{F\+T\+\_\+\+B\+A\+SE}}(x)
+\item 
+\#define \mbox{\hyperlink{compiler-macros_8h_ad69754ed04101caf947cd79168f16aff}{F\+T\+\_\+\+B\+A\+S\+E\+\_\+\+D\+EF}}(x)~\mbox{\hyperlink{compiler-macros_8h_ad5e9aef6a2e8c0cdf264871052ce3324}{F\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON}}( x )
+\item 
+\#define \mbox{\hyperlink{compiler-macros_8h_a440bcc3070d3958754bd7b6b9a15ce84}{F\+T\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+V\+AR}}(x)~\mbox{\hyperlink{compiler-macros_8h_a0c002cf78653e2f0629d8b61abdebfb0}{F\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+D\+E\+C\+L\+A\+R\+A\+T\+I\+ON}}( x )
+\item 
+\#define \mbox{\hyperlink{compiler-macros_8h_ad012d49d959527854f814cfd38299aab}{F\+T\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+D\+EF}}(x)~\mbox{\hyperlink{compiler-macros_8h_ad5e9aef6a2e8c0cdf264871052ce3324}{F\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON}}( x )
+\item 
+\#define \mbox{\hyperlink{compiler-macros_8h_a04749b69ac5a7fd07001364cc9f803fd}{F\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+D\+EF}}(x)~static  x
+\item 
+\#define \mbox{\hyperlink{compiler-macros_8h_a6332f15141fae16bdeba26c7e9d59529}{F\+T\+\_\+\+B\+A\+S\+E\+\_\+\+C\+A\+L\+L\+B\+A\+CK}}(x)~\mbox{\hyperlink{compiler-macros_8h_a0c002cf78653e2f0629d8b61abdebfb0}{F\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+D\+E\+C\+L\+A\+R\+A\+T\+I\+ON}}( x )
+\item 
+\#define \mbox{\hyperlink{compiler-macros_8h_a767da6f982d4f7944911c11de29fcca1}{F\+T\+\_\+\+B\+A\+S\+E\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+D\+EF}}(x)~\mbox{\hyperlink{compiler-macros_8h_ad5e9aef6a2e8c0cdf264871052ce3324}{F\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON}}( x )
+\item 
+\#define \mbox{\hyperlink{compiler-macros_8h_ab037b0107bb83cacaf7a8437564798f6}{F\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+T\+A\+B\+LE}}~extern
+\item 
+\#define \mbox{\hyperlink{compiler-macros_8h_a3e7304105563eb715cae1b9c213858ed}{F\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+T\+A\+B\+L\+E\+\_\+\+D\+EF}}~/$\ast$ nothing $\ast$/
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{compiler-macros_8h_ad9b0c555bd9c667187a720e265943bfc}\label{compiler-macros_8h_ad9b0c555bd9c667187a720e265943bfc}} 
+\index{compiler-\/macros.h@{compiler-\/macros.h}!FT\_BASE@{FT\_BASE}}
+\index{FT\_BASE@{FT\_BASE}!compiler-\/macros.h@{compiler-\/macros.h}}
+\doxysubsubsection{\texorpdfstring{FT\_BASE}{FT\_BASE}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+B\+A\+SE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{                          \mbox{\hyperlink{compiler-macros_8h_a0c002cf78653e2f0629d8b61abdebfb0}{FT\_INTERNAL\_FUNCTION\_ATTRIBUTE \(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{compiler-macros_8h_a0c002cf78653e2f0629d8b61abdebfb0}{                          FT\_FUNCTION\_DECLARATION}}( x )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{compiler-macros_8h_a6332f15141fae16bdeba26c7e9d59529}\label{compiler-macros_8h_a6332f15141fae16bdeba26c7e9d59529}} 
+\index{compiler-\/macros.h@{compiler-\/macros.h}!FT\_BASE\_CALLBACK@{FT\_BASE\_CALLBACK}}
+\index{FT\_BASE\_CALLBACK@{FT\_BASE\_CALLBACK}!compiler-\/macros.h@{compiler-\/macros.h}}
+\doxysubsubsection{\texorpdfstring{FT\_BASE\_CALLBACK}{FT\_BASE\_CALLBACK}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+B\+A\+S\+E\+\_\+\+C\+A\+L\+L\+B\+A\+CK(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\mbox{\hyperlink{compiler-macros_8h_a0c002cf78653e2f0629d8b61abdebfb0}{F\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+D\+E\+C\+L\+A\+R\+A\+T\+I\+ON}}( x )}
+
+\mbox{\Hypertarget{compiler-macros_8h_a767da6f982d4f7944911c11de29fcca1}\label{compiler-macros_8h_a767da6f982d4f7944911c11de29fcca1}} 
+\index{compiler-\/macros.h@{compiler-\/macros.h}!FT\_BASE\_CALLBACK\_DEF@{FT\_BASE\_CALLBACK\_DEF}}
+\index{FT\_BASE\_CALLBACK\_DEF@{FT\_BASE\_CALLBACK\_DEF}!compiler-\/macros.h@{compiler-\/macros.h}}
+\doxysubsubsection{\texorpdfstring{FT\_BASE\_CALLBACK\_DEF}{FT\_BASE\_CALLBACK\_DEF}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+B\+A\+S\+E\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+D\+EF(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\mbox{\hyperlink{compiler-macros_8h_ad5e9aef6a2e8c0cdf264871052ce3324}{F\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON}}( x )}
+
+\mbox{\Hypertarget{compiler-macros_8h_ad69754ed04101caf947cd79168f16aff}\label{compiler-macros_8h_ad69754ed04101caf947cd79168f16aff}} 
+\index{compiler-\/macros.h@{compiler-\/macros.h}!FT\_BASE\_DEF@{FT\_BASE\_DEF}}
+\index{FT\_BASE\_DEF@{FT\_BASE\_DEF}!compiler-\/macros.h@{compiler-\/macros.h}}
+\doxysubsubsection{\texorpdfstring{FT\_BASE\_DEF}{FT\_BASE\_DEF}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+B\+A\+S\+E\+\_\+\+D\+EF(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\mbox{\hyperlink{compiler-macros_8h_ad5e9aef6a2e8c0cdf264871052ce3324}{F\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON}}( x )}
+
+\mbox{\Hypertarget{compiler-macros_8h_affa471c199b61ca40463017b6a6738d5}\label{compiler-macros_8h_affa471c199b61ca40463017b6a6738d5}} 
+\index{compiler-\/macros.h@{compiler-\/macros.h}!FT\_BEGIN\_STMNT@{FT\_BEGIN\_STMNT}}
+\index{FT\_BEGIN\_STMNT@{FT\_BEGIN\_STMNT}!compiler-\/macros.h@{compiler-\/macros.h}}
+\doxysubsubsection{\texorpdfstring{FT\_BEGIN\_STMNT}{FT\_BEGIN\_STMNT}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+S\+T\+M\+NT~do \{}
+
+\mbox{\Hypertarget{compiler-macros_8h_a04749b69ac5a7fd07001364cc9f803fd}\label{compiler-macros_8h_a04749b69ac5a7fd07001364cc9f803fd}} 
+\index{compiler-\/macros.h@{compiler-\/macros.h}!FT\_CALLBACK\_DEF@{FT\_CALLBACK\_DEF}}
+\index{FT\_CALLBACK\_DEF@{FT\_CALLBACK\_DEF}!compiler-\/macros.h@{compiler-\/macros.h}}
+\doxysubsubsection{\texorpdfstring{FT\_CALLBACK\_DEF}{FT\_CALLBACK\_DEF}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+D\+EF(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~static  x}
+
+\mbox{\Hypertarget{compiler-macros_8h_ab037b0107bb83cacaf7a8437564798f6}\label{compiler-macros_8h_ab037b0107bb83cacaf7a8437564798f6}} 
+\index{compiler-\/macros.h@{compiler-\/macros.h}!FT\_CALLBACK\_TABLE@{FT\_CALLBACK\_TABLE}}
+\index{FT\_CALLBACK\_TABLE@{FT\_CALLBACK\_TABLE}!compiler-\/macros.h@{compiler-\/macros.h}}
+\doxysubsubsection{\texorpdfstring{FT\_CALLBACK\_TABLE}{FT\_CALLBACK\_TABLE}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+T\+A\+B\+LE~extern}
+
+\mbox{\Hypertarget{compiler-macros_8h_a3e7304105563eb715cae1b9c213858ed}\label{compiler-macros_8h_a3e7304105563eb715cae1b9c213858ed}} 
+\index{compiler-\/macros.h@{compiler-\/macros.h}!FT\_CALLBACK\_TABLE\_DEF@{FT\_CALLBACK\_TABLE\_DEF}}
+\index{FT\_CALLBACK\_TABLE\_DEF@{FT\_CALLBACK\_TABLE\_DEF}!compiler-\/macros.h@{compiler-\/macros.h}}
+\doxysubsubsection{\texorpdfstring{FT\_CALLBACK\_TABLE\_DEF}{FT\_CALLBACK\_TABLE\_DEF}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+T\+A\+B\+L\+E\+\_\+\+D\+EF~/$\ast$ nothing $\ast$/}
+
+\mbox{\Hypertarget{compiler-macros_8h_aac188ac67da0a0f40d9bf75d40f81073}\label{compiler-macros_8h_aac188ac67da0a0f40d9bf75d40f81073}} 
+\index{compiler-\/macros.h@{compiler-\/macros.h}!FT\_DUMMY\_STMNT@{FT\_DUMMY\_STMNT}}
+\index{FT\_DUMMY\_STMNT@{FT\_DUMMY\_STMNT}!compiler-\/macros.h@{compiler-\/macros.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DUMMY\_STMNT}{FT\_DUMMY\_STMNT}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+U\+M\+M\+Y\+\_\+\+S\+T\+M\+NT~\mbox{\hyperlink{compiler-macros_8h_affa471c199b61ca40463017b6a6738d5}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+S\+T\+M\+NT}} \mbox{\hyperlink{compiler-macros_8h_a05ebe315c717e508cbb0f5cda7f8ca23}{F\+T\+\_\+\+E\+N\+D\+\_\+\+S\+T\+M\+NT}}}
+
+\mbox{\Hypertarget{compiler-macros_8h_a05ebe315c717e508cbb0f5cda7f8ca23}\label{compiler-macros_8h_a05ebe315c717e508cbb0f5cda7f8ca23}} 
+\index{compiler-\/macros.h@{compiler-\/macros.h}!FT\_END\_STMNT@{FT\_END\_STMNT}}
+\index{FT\_END\_STMNT@{FT\_END\_STMNT}!compiler-\/macros.h@{compiler-\/macros.h}}
+\doxysubsubsection{\texorpdfstring{FT\_END\_STMNT}{FT\_END\_STMNT}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+E\+N\+D\+\_\+\+S\+T\+M\+NT~\} while ( 0 )}
+
+\mbox{\Hypertarget{compiler-macros_8h_ad012d49d959527854f814cfd38299aab}\label{compiler-macros_8h_ad012d49d959527854f814cfd38299aab}} 
+\index{compiler-\/macros.h@{compiler-\/macros.h}!FT\_EXPORT\_DEF@{FT\_EXPORT\_DEF}}
+\index{FT\_EXPORT\_DEF@{FT\_EXPORT\_DEF}!compiler-\/macros.h@{compiler-\/macros.h}}
+\doxysubsubsection{\texorpdfstring{FT\_EXPORT\_DEF}{FT\_EXPORT\_DEF}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+D\+EF(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\mbox{\hyperlink{compiler-macros_8h_ad5e9aef6a2e8c0cdf264871052ce3324}{F\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON}}( x )}
+
+\mbox{\Hypertarget{compiler-macros_8h_a440bcc3070d3958754bd7b6b9a15ce84}\label{compiler-macros_8h_a440bcc3070d3958754bd7b6b9a15ce84}} 
+\index{compiler-\/macros.h@{compiler-\/macros.h}!FT\_EXPORT\_VAR@{FT\_EXPORT\_VAR}}
+\index{FT\_EXPORT\_VAR@{FT\_EXPORT\_VAR}!compiler-\/macros.h@{compiler-\/macros.h}}
+\doxysubsubsection{\texorpdfstring{FT\_EXPORT\_VAR}{FT\_EXPORT\_VAR}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+E\+X\+P\+O\+R\+T\+\_\+\+V\+AR(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\mbox{\hyperlink{compiler-macros_8h_a0c002cf78653e2f0629d8b61abdebfb0}{F\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+D\+E\+C\+L\+A\+R\+A\+T\+I\+ON}}( x )}
+
+\mbox{\Hypertarget{compiler-macros_8h_a0c002cf78653e2f0629d8b61abdebfb0}\label{compiler-macros_8h_a0c002cf78653e2f0629d8b61abdebfb0}} 
+\index{compiler-\/macros.h@{compiler-\/macros.h}!FT\_FUNCTION\_DECLARATION@{FT\_FUNCTION\_DECLARATION}}
+\index{FT\_FUNCTION\_DECLARATION@{FT\_FUNCTION\_DECLARATION}!compiler-\/macros.h@{compiler-\/macros.h}}
+\doxysubsubsection{\texorpdfstring{FT\_FUNCTION\_DECLARATION}{FT\_FUNCTION\_DECLARATION}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+D\+E\+C\+L\+A\+R\+A\+T\+I\+ON(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~extern x}
+
+\mbox{\Hypertarget{compiler-macros_8h_ad5e9aef6a2e8c0cdf264871052ce3324}\label{compiler-macros_8h_ad5e9aef6a2e8c0cdf264871052ce3324}} 
+\index{compiler-\/macros.h@{compiler-\/macros.h}!FT\_FUNCTION\_DEFINITION@{FT\_FUNCTION\_DEFINITION}}
+\index{FT\_FUNCTION\_DEFINITION@{FT\_FUNCTION\_DEFINITION}!compiler-\/macros.h@{compiler-\/macros.h}}
+\doxysubsubsection{\texorpdfstring{FT\_FUNCTION\_DEFINITION}{FT\_FUNCTION\_DEFINITION}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~x}
+
+\mbox{\Hypertarget{compiler-macros_8h_a10f3be4788a152e4388b1b90cfcf6980}\label{compiler-macros_8h_a10f3be4788a152e4388b1b90cfcf6980}} 
+\index{compiler-\/macros.h@{compiler-\/macros.h}!FT\_INTERNAL\_FUNCTION\_ATTRIBUTE@{FT\_INTERNAL\_FUNCTION\_ATTRIBUTE}}
+\index{FT\_INTERNAL\_FUNCTION\_ATTRIBUTE@{FT\_INTERNAL\_FUNCTION\_ATTRIBUTE}!compiler-\/macros.h@{compiler-\/macros.h}}
+\doxysubsubsection{\texorpdfstring{FT\_INTERNAL\_FUNCTION\_ATTRIBUTE}{FT\_INTERNAL\_FUNCTION\_ATTRIBUTE}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE~/$\ast$ empty $\ast$/}
+
+\mbox{\Hypertarget{compiler-macros_8h_a58a8b2fb387665ef9652a54a9ad80bd3}\label{compiler-macros_8h_a58a8b2fb387665ef9652a54a9ad80bd3}} 
+\index{compiler-\/macros.h@{compiler-\/macros.h}!FT\_LOCAL@{FT\_LOCAL}}
+\index{FT\_LOCAL@{FT\_LOCAL}!compiler-\/macros.h@{compiler-\/macros.h}}
+\doxysubsubsection{\texorpdfstring{FT\_LOCAL}{FT\_LOCAL}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+L\+O\+C\+AL(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{                           \mbox{\hyperlink{compiler-macros_8h_a0c002cf78653e2f0629d8b61abdebfb0}{FT\_INTERNAL\_FUNCTION\_ATTRIBUTE \(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{compiler-macros_8h_a0c002cf78653e2f0629d8b61abdebfb0}{                           FT\_FUNCTION\_DECLARATION}}( x )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{compiler-macros_8h_aad80b9425716f9bdcb60b79d9948f269}\label{compiler-macros_8h_aad80b9425716f9bdcb60b79d9948f269}} 
+\index{compiler-\/macros.h@{compiler-\/macros.h}!FT\_LOCAL\_ARRAY@{FT\_LOCAL\_ARRAY}}
+\index{FT\_LOCAL\_ARRAY@{FT\_LOCAL\_ARRAY}!compiler-\/macros.h@{compiler-\/macros.h}}
+\doxysubsubsection{\texorpdfstring{FT\_LOCAL\_ARRAY}{FT\_LOCAL\_ARRAY}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+A\+R\+R\+AY(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{                                 FT\_INTERNAL\_FUNCTION\_ATTRIBUTE \(\backslash\)}
+\DoxyCodeLine{                                 extern \textcolor{keyword}{const} x}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{compiler-macros_8h_a0da3e9e0b4f7072c33a971fdca1c51cb}\label{compiler-macros_8h_a0da3e9e0b4f7072c33a971fdca1c51cb}} 
+\index{compiler-\/macros.h@{compiler-\/macros.h}!FT\_LOCAL\_ARRAY\_DEF@{FT\_LOCAL\_ARRAY\_DEF}}
+\index{FT\_LOCAL\_ARRAY\_DEF@{FT\_LOCAL\_ARRAY\_DEF}!compiler-\/macros.h@{compiler-\/macros.h}}
+\doxysubsubsection{\texorpdfstring{FT\_LOCAL\_ARRAY\_DEF}{FT\_LOCAL\_ARRAY\_DEF}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+D\+EF(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\mbox{\hyperlink{compiler-macros_8h_ad5e9aef6a2e8c0cdf264871052ce3324}{F\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON}}( const x )}
+
+\mbox{\Hypertarget{compiler-macros_8h_a065cda933183dff5dc368794eefa7c93}\label{compiler-macros_8h_a065cda933183dff5dc368794eefa7c93}} 
+\index{compiler-\/macros.h@{compiler-\/macros.h}!FT\_LOCAL\_DEF@{FT\_LOCAL\_DEF}}
+\index{FT\_LOCAL\_DEF@{FT\_LOCAL\_DEF}!compiler-\/macros.h@{compiler-\/macros.h}}
+\doxysubsubsection{\texorpdfstring{FT\_LOCAL\_DEF}{FT\_LOCAL\_DEF}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+L\+O\+C\+A\+L\+\_\+\+D\+EF(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\mbox{\hyperlink{compiler-macros_8h_ad5e9aef6a2e8c0cdf264871052ce3324}{F\+T\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+D\+E\+F\+I\+N\+I\+T\+I\+ON}}( x )}
+
+\mbox{\Hypertarget{compiler-macros_8h_afa7325739c5383905bb4d1543f16ce42}\label{compiler-macros_8h_afa7325739c5383905bb4d1543f16ce42}} 
+\index{compiler-\/macros.h@{compiler-\/macros.h}!FT\_TYPEOF@{FT\_TYPEOF}}
+\index{FT\_TYPEOF@{FT\_TYPEOF}!compiler-\/macros.h@{compiler-\/macros.h}}
+\doxysubsubsection{\texorpdfstring{FT\_TYPEOF}{FT\_TYPEOF}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+T\+Y\+P\+E\+OF(\begin{DoxyParamCaption}\item[{}]{type }\end{DoxyParamCaption})~/$\ast$ empty $\ast$/}
+
+\mbox{\Hypertarget{compiler-macros_8h_a96734505c5357b3bf1b5dbc47ee78ec3}\label{compiler-macros_8h_a96734505c5357b3bf1b5dbc47ee78ec3}} 
+\index{compiler-\/macros.h@{compiler-\/macros.h}!FT\_UINT\_TO\_POINTER@{FT\_UINT\_TO\_POINTER}}
+\index{FT\_UINT\_TO\_POINTER@{FT\_UINT\_TO\_POINTER}!compiler-\/macros.h@{compiler-\/macros.h}}
+\doxysubsubsection{\texorpdfstring{FT\_UINT\_TO\_POINTER}{FT\_UINT\_TO\_POINTER}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+U\+I\+N\+T\+\_\+\+T\+O\+\_\+\+P\+O\+I\+N\+T\+ER(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(void $\ast$)(unsigned long)(x)}
+

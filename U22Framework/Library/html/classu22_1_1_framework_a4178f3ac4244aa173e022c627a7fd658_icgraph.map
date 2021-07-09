@@ -1,0 +1,12 @@
+<map id="u22::Framework::GetInfomation" name="u22::Framework::GetInfomation">
+<area shape="rect" id="node1" title="ゲッター" alt="" coords="489,242,692,269"/>
+<area shape="rect" id="node2" href="$classu22_1_1graphics_1_1_font.html#ad59f1938b29d156f437edd5b31dfaf4d" title="生成" alt="" coords="273,5,407,47"/>
+<area shape="rect" id="node3" href="$classu22_1_1utility_1_1_c_utilities.html#a72d365a543e6c3e744181887bed43bb9" title="FPS" alt="" coords="269,71,411,112"/>
+<area shape="rect" id="node4" href="$classu22_1_1utility_1_1_c_utilities.html#a8575ae1c8df6a0563350aa4608c7e63b" title="フレーム当たりの時間" alt="" coords="269,136,411,177"/>
+<area shape="rect" id="node5" href="$classu22_1_1graphics_1_1_camera.html#a912540d072769f4060f49a3403b4f3fe" title="初期化" alt="" coords="263,201,417,243"/>
+<area shape="rect" id="node6" href="$classu22_1_1graphics_1_1_circle_renderer.html#a593b7c1d2d49fbbb04c72f1d27a1c546" title="初期化" alt="" coords="243,267,437,308"/>
+<area shape="rect" id="node8" href="$classu22_1_1graphics_1_1_rectangle_renderer.html#a561731f45b7a7f8468f1fb31bb48bc76" title="初期化" alt="" coords="257,332,423,373"/>
+<area shape="rect" id="node9" href="$classu22_1_1graphics_1_1_texture_renderer.html#aa51ef305fb6e68717b406fc489ebf139" title="読み込み" alt="" coords="239,397,441,439"/>
+<area shape="rect" id="node10" href="$classu22_1_1graphics_1_1_font_renderer.html#a8b3aa22c4453096b3465d6f5faa380f5" title="読み込み" alt="" coords="247,463,433,504"/>
+<area shape="rect" id="node7" href="$classu22_1_1utility_1_1_graphics_utilities.html#a60a3bfa562bab1b7a3c8def9712aa448" title="セットアップ" alt="" coords="5,332,191,373"/>
+</map>

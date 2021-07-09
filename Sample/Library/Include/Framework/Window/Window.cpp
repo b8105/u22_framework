@@ -31,12 +31,17 @@ bool u22::Window::ShouldClose(void) {
     return ::glfwWindowShouldClose(_handle);
 }
 
-bool u22::Window::Create(const char* title, int width, int height, int pos_x, int pos_y) {
+bool u22::Window::Create(const char* title, int width, int height, int pos_x, int pos_y, bool full_screen) {
     _title = title;
     _width = width;
     _height = height;
 
-    _handle = ::glfwCreateWindow(_width, _height, _title.c_str(), nullptr, nullptr);
+    if (full_screen) {
+        _handle = ::glfwCreateWindow(_width, _height, _title.c_str(), ::glfwGetPrimaryMonitor(), nullptr);
+    } // if
+    else {
+        _handle = ::glfwCreateWindow(_width, _height, _title.c_str(), nullptr, nullptr);
+    } // else
     if (!_handle) {
         ::glfwTerminate();
         return false;

@@ -1,0 +1,98 @@
+\hypertarget{ftcolor_8h}{}\doxysection{freetype/ftcolor.h ファイル}
+\label{ftcolor_8h}\index{freetype/ftcolor.h@{freetype/ftcolor.h}}
+{\ttfamily \#include $<$freetype/freetype.\+h$>$}\newline
+ftcolor.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ftcolor_8h__incl}
+\end{center}
+\end{figure}
+被依存関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ftcolor_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_f_t___color__}{F\+T\+\_\+\+Color\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_f_t___palette___data__}{F\+T\+\_\+\+Palette\+\_\+\+Data\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ftcolor_8h_a4359656c3c0507a5529fc633ee641ce1}{F\+T\+\_\+\+P\+A\+L\+E\+T\+T\+E\+\_\+\+F\+O\+R\+\_\+\+L\+I\+G\+H\+T\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+ND}}~0x01
+\item 
+\#define \mbox{\hyperlink{ftcolor_8h_a088cc90cb974acc0bedfe30d4f450a29}{F\+T\+\_\+\+P\+A\+L\+E\+T\+T\+E\+\_\+\+F\+O\+R\+\_\+\+D\+A\+R\+K\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+ND}}~0x02
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{public-macros_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER}} struct \mbox{\hyperlink{struct_f_t___color__}{F\+T\+\_\+\+Color\+\_\+}} \mbox{\hyperlink{ftcolor_8h_a2dfafc33e5e9d6af4961a0e9c687e250}{F\+T\+\_\+\+Color}}
+\item 
+typedef struct \mbox{\hyperlink{struct_f_t___palette___data__}{F\+T\+\_\+\+Palette\+\_\+\+Data\+\_\+}} \mbox{\hyperlink{ftcolor_8h_ab2bc294e65e6251d8a3581be7342cd59}{F\+T\+\_\+\+Palette\+\_\+\+Data}}
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ftcolor_8h_a64cac166a372c0980c75eb94df41718e}{F\+T\+\_\+\+Palette\+\_\+\+Data\+\_\+\+Get}} (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{ftcolor_8h_ab2bc294e65e6251d8a3581be7342cd59}{F\+T\+\_\+\+Palette\+\_\+\+Data}} $\ast$apalette)
+\item 
+\mbox{\hyperlink{ftcolor_8h_ac744666049785758585c03bcbd349138}{F\+T\+\_\+\+Palette\+\_\+\+Select}} (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a937f6c17cf5ffd09086d8610c37b9f58}{F\+T\+\_\+\+U\+Short}} palette\+\_\+index, \mbox{\hyperlink{ftcolor_8h_a2dfafc33e5e9d6af4961a0e9c687e250}{F\+T\+\_\+\+Color}} $\ast$$\ast$apalette)
+\item 
+\mbox{\hyperlink{ftcolor_8h_a87b5df5969998129860bda8e2c9e3de8}{F\+T\+\_\+\+Palette\+\_\+\+Set\+\_\+\+Foreground\+\_\+\+Color}} (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{ftcolor_8h_a2dfafc33e5e9d6af4961a0e9c687e250}{F\+T\+\_\+\+Color}} foreground\+\_\+color)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{ftcolor_8h_a088cc90cb974acc0bedfe30d4f450a29}\label{ftcolor_8h_a088cc90cb974acc0bedfe30d4f450a29}} 
+\index{ftcolor.h@{ftcolor.h}!FT\_PALETTE\_FOR\_DARK\_BACKGROUND@{FT\_PALETTE\_FOR\_DARK\_BACKGROUND}}
+\index{FT\_PALETTE\_FOR\_DARK\_BACKGROUND@{FT\_PALETTE\_FOR\_DARK\_BACKGROUND}!ftcolor.h@{ftcolor.h}}
+\doxysubsubsection{\texorpdfstring{FT\_PALETTE\_FOR\_DARK\_BACKGROUND}{FT\_PALETTE\_FOR\_DARK\_BACKGROUND}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+P\+A\+L\+E\+T\+T\+E\+\_\+\+F\+O\+R\+\_\+\+D\+A\+R\+K\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+ND~0x02}
+
+\mbox{\Hypertarget{ftcolor_8h_a4359656c3c0507a5529fc633ee641ce1}\label{ftcolor_8h_a4359656c3c0507a5529fc633ee641ce1}} 
+\index{ftcolor.h@{ftcolor.h}!FT\_PALETTE\_FOR\_LIGHT\_BACKGROUND@{FT\_PALETTE\_FOR\_LIGHT\_BACKGROUND}}
+\index{FT\_PALETTE\_FOR\_LIGHT\_BACKGROUND@{FT\_PALETTE\_FOR\_LIGHT\_BACKGROUND}!ftcolor.h@{ftcolor.h}}
+\doxysubsubsection{\texorpdfstring{FT\_PALETTE\_FOR\_LIGHT\_BACKGROUND}{FT\_PALETTE\_FOR\_LIGHT\_BACKGROUND}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+P\+A\+L\+E\+T\+T\+E\+\_\+\+F\+O\+R\+\_\+\+L\+I\+G\+H\+T\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+ND~0x01}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{ftcolor_8h_a2dfafc33e5e9d6af4961a0e9c687e250}\label{ftcolor_8h_a2dfafc33e5e9d6af4961a0e9c687e250}} 
+\index{ftcolor.h@{ftcolor.h}!FT\_Color@{FT\_Color}}
+\index{FT\_Color@{FT\_Color}!ftcolor.h@{ftcolor.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Color}{FT\_Color}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{public-macros_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER}} struct \mbox{\hyperlink{struct_f_t___color__}{F\+T\+\_\+\+Color\+\_\+}} \mbox{\hyperlink{ftcolor_8h_a2dfafc33e5e9d6af4961a0e9c687e250}{F\+T\+\_\+\+Color}}}
+
+\mbox{\Hypertarget{ftcolor_8h_ab2bc294e65e6251d8a3581be7342cd59}\label{ftcolor_8h_ab2bc294e65e6251d8a3581be7342cd59}} 
+\index{ftcolor.h@{ftcolor.h}!FT\_Palette\_Data@{FT\_Palette\_Data}}
+\index{FT\_Palette\_Data@{FT\_Palette\_Data}!ftcolor.h@{ftcolor.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Palette\_Data}{FT\_Palette\_Data}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_f_t___palette___data__}{F\+T\+\_\+\+Palette\+\_\+\+Data\+\_\+}} \mbox{\hyperlink{ftcolor_8h_ab2bc294e65e6251d8a3581be7342cd59}{F\+T\+\_\+\+Palette\+\_\+\+Data}}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{ftcolor_8h_a64cac166a372c0980c75eb94df41718e}\label{ftcolor_8h_a64cac166a372c0980c75eb94df41718e}} 
+\index{ftcolor.h@{ftcolor.h}!FT\_Palette\_Data\_Get@{FT\_Palette\_Data\_Get}}
+\index{FT\_Palette\_Data\_Get@{FT\_Palette\_Data\_Get}!ftcolor.h@{ftcolor.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Palette\_Data\_Get()}{FT\_Palette\_Data\_Get()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Palette\+\_\+\+Data\+\_\+\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}}}]{face,  }\item[{\mbox{\hyperlink{ftcolor_8h_ab2bc294e65e6251d8a3581be7342cd59}{F\+T\+\_\+\+Palette\+\_\+\+Data}} $\ast$}]{apalette }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftcolor_8h_ac744666049785758585c03bcbd349138}\label{ftcolor_8h_ac744666049785758585c03bcbd349138}} 
+\index{ftcolor.h@{ftcolor.h}!FT\_Palette\_Select@{FT\_Palette\_Select}}
+\index{FT\_Palette\_Select@{FT\_Palette\_Select}!ftcolor.h@{ftcolor.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Palette\_Select()}{FT\_Palette\_Select()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Palette\+\_\+\+Select (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}}}]{face,  }\item[{\mbox{\hyperlink{fttypes_8h_a937f6c17cf5ffd09086d8610c37b9f58}{F\+T\+\_\+\+U\+Short}}}]{palette\+\_\+index,  }\item[{\mbox{\hyperlink{ftcolor_8h_a2dfafc33e5e9d6af4961a0e9c687e250}{F\+T\+\_\+\+Color}} $\ast$$\ast$}]{apalette }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftcolor_8h_a87b5df5969998129860bda8e2c9e3de8}\label{ftcolor_8h_a87b5df5969998129860bda8e2c9e3de8}} 
+\index{ftcolor.h@{ftcolor.h}!FT\_Palette\_Set\_Foreground\_Color@{FT\_Palette\_Set\_Foreground\_Color}}
+\index{FT\_Palette\_Set\_Foreground\_Color@{FT\_Palette\_Set\_Foreground\_Color}!ftcolor.h@{ftcolor.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Palette\_Set\_Foreground\_Color()}{FT\_Palette\_Set\_Foreground\_Color()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Palette\+\_\+\+Set\+\_\+\+Foreground\+\_\+\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}}}]{face,  }\item[{\mbox{\hyperlink{ftcolor_8h_a2dfafc33e5e9d6af4961a0e9c687e250}{F\+T\+\_\+\+Color}}}]{foreground\+\_\+color }\end{DoxyParamCaption})}
+

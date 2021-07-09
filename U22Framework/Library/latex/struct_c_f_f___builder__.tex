@@ -1,0 +1,170 @@
+\hypertarget{struct_c_f_f___builder__}{}\doxysection{C\+F\+F\+\_\+\+Builder\+\_\+ 構造体}
+\label{struct_c_f_f___builder__}\index{CFF\_Builder\_@{CFF\_Builder\_}}
+
+
+{\ttfamily \#include $<$psaux.\+h$>$}
+
+
+
+C\+F\+F\+\_\+\+Builder\+\_\+ 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_c_f_f___builder____coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} \mbox{\hyperlink{struct_c_f_f___builder___a41fce66940ca6e0a746f0839d076142f}{memory}}
+\item 
+\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} \mbox{\hyperlink{struct_c_f_f___builder___a415e44897a8329823ff2cea2990d8935}{face}}
+\item 
+\mbox{\hyperlink{cffotypes_8h_ab0311d60969475c27e1347c46a37eabd}{C\+F\+F\+\_\+\+Glyph\+Slot}} \mbox{\hyperlink{struct_c_f_f___builder___a527ba659637b4e50be221d8b00d337c8}{glyph}}
+\item 
+\mbox{\hyperlink{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}{F\+T\+\_\+\+Glyph\+Loader}} \mbox{\hyperlink{struct_c_f_f___builder___a358be6966e4199e54d5551f81f496a5b}{loader}}
+\item 
+\mbox{\hyperlink{ftimage_8h_a6b64eb35252e8829024c12c98cce37d4}{F\+T\+\_\+\+Outline}} $\ast$ \mbox{\hyperlink{struct_c_f_f___builder___a7c351f6ae7233c249f85f2371d809bac}{base}}
+\item 
+\mbox{\hyperlink{ftimage_8h_a6b64eb35252e8829024c12c98cce37d4}{F\+T\+\_\+\+Outline}} $\ast$ \mbox{\hyperlink{struct_c_f_f___builder___acd27e804cd32054865ef4236e7f9dc93}{current}}
+\item 
+\mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} \mbox{\hyperlink{struct_c_f_f___builder___a045d91695d51a1fbfa307aab507fa46b}{pos\+\_\+x}}
+\item 
+\mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} \mbox{\hyperlink{struct_c_f_f___builder___a50a8bec8b857853829f42195101db472}{pos\+\_\+y}}
+\item 
+\mbox{\hyperlink{ftimage_8h_abfcb941b4b81f3a922d4ae57c620db27}{F\+T\+\_\+\+Vector}} \mbox{\hyperlink{struct_c_f_f___builder___a1bee78d88325239036b57761fdd0423c}{left\+\_\+bearing}}
+\item 
+\mbox{\hyperlink{ftimage_8h_abfcb941b4b81f3a922d4ae57c620db27}{F\+T\+\_\+\+Vector}} \mbox{\hyperlink{struct_c_f_f___builder___a943906425298bbbdc85e7a6d626224b5}{advance}}
+\item 
+\mbox{\hyperlink{ftimage_8h_a1e1422cfbeb7c3992d5d7b8f85732efd}{F\+T\+\_\+\+B\+Box}} \mbox{\hyperlink{struct_c_f_f___builder___a678703f4909900aa2d4c2f6a6e4e2553}{bbox}}
+\item 
+\mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} \mbox{\hyperlink{struct_c_f_f___builder___ac8770a979f76c1dc11575dfdf40f1f88}{path\+\_\+begun}}
+\item 
+\mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} \mbox{\hyperlink{struct_c_f_f___builder___abcce85e0ee7ffe37e1cbd3d6cea110c2}{load\+\_\+points}}
+\item 
+\mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} \mbox{\hyperlink{struct_c_f_f___builder___af2637a092e49c57e69a414a79f777743}{no\+\_\+recurse}}
+\item 
+\mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} \mbox{\hyperlink{struct_c_f_f___builder___a649801f2012fc5927cc2647fbb71609d}{metrics\+\_\+only}}
+\item 
+void $\ast$ \mbox{\hyperlink{struct_c_f_f___builder___a7eb0d9144e82e76d6fe4fbd03b678c69}{hints\+\_\+funcs}}
+\item 
+void $\ast$ \mbox{\hyperlink{struct_c_f_f___builder___a65eb4c3939cd9dc8a176d0f42db20137}{hints\+\_\+globals}}
+\item 
+\mbox{\hyperlink{psaux_8h_a84bce0810753d4e3f9e7078e3552ea44}{C\+F\+F\+\_\+\+Builder\+\_\+\+Funcs\+Rec}} \mbox{\hyperlink{struct_c_f_f___builder___aa0ee1ed33cb9afb916d709531b77c129}{funcs}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{struct_c_f_f___builder___a943906425298bbbdc85e7a6d626224b5}\label{struct_c_f_f___builder___a943906425298bbbdc85e7a6d626224b5}} 
+\index{CFF\_Builder\_@{CFF\_Builder\_}!advance@{advance}}
+\index{advance@{advance}!CFF\_Builder\_@{CFF\_Builder\_}}
+\doxysubsubsection{\texorpdfstring{advance}{advance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ftimage_8h_abfcb941b4b81f3a922d4ae57c620db27}{F\+T\+\_\+\+Vector}} C\+F\+F\+\_\+\+Builder\+\_\+\+::advance}
+
+\mbox{\Hypertarget{struct_c_f_f___builder___a7c351f6ae7233c249f85f2371d809bac}\label{struct_c_f_f___builder___a7c351f6ae7233c249f85f2371d809bac}} 
+\index{CFF\_Builder\_@{CFF\_Builder\_}!base@{base}}
+\index{base@{base}!CFF\_Builder\_@{CFF\_Builder\_}}
+\doxysubsubsection{\texorpdfstring{base}{base}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ftimage_8h_a6b64eb35252e8829024c12c98cce37d4}{F\+T\+\_\+\+Outline}}$\ast$ C\+F\+F\+\_\+\+Builder\+\_\+\+::base}
+
+\mbox{\Hypertarget{struct_c_f_f___builder___a678703f4909900aa2d4c2f6a6e4e2553}\label{struct_c_f_f___builder___a678703f4909900aa2d4c2f6a6e4e2553}} 
+\index{CFF\_Builder\_@{CFF\_Builder\_}!bbox@{bbox}}
+\index{bbox@{bbox}!CFF\_Builder\_@{CFF\_Builder\_}}
+\doxysubsubsection{\texorpdfstring{bbox}{bbox}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ftimage_8h_a1e1422cfbeb7c3992d5d7b8f85732efd}{F\+T\+\_\+\+B\+Box}} C\+F\+F\+\_\+\+Builder\+\_\+\+::bbox}
+
+\mbox{\Hypertarget{struct_c_f_f___builder___acd27e804cd32054865ef4236e7f9dc93}\label{struct_c_f_f___builder___acd27e804cd32054865ef4236e7f9dc93}} 
+\index{CFF\_Builder\_@{CFF\_Builder\_}!current@{current}}
+\index{current@{current}!CFF\_Builder\_@{CFF\_Builder\_}}
+\doxysubsubsection{\texorpdfstring{current}{current}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ftimage_8h_a6b64eb35252e8829024c12c98cce37d4}{F\+T\+\_\+\+Outline}}$\ast$ C\+F\+F\+\_\+\+Builder\+\_\+\+::current}
+
+\mbox{\Hypertarget{struct_c_f_f___builder___a415e44897a8329823ff2cea2990d8935}\label{struct_c_f_f___builder___a415e44897a8329823ff2cea2990d8935}} 
+\index{CFF\_Builder\_@{CFF\_Builder\_}!face@{face}}
+\index{face@{face}!CFF\_Builder\_@{CFF\_Builder\_}}
+\doxysubsubsection{\texorpdfstring{face}{face}}
+{\footnotesize\ttfamily \mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} C\+F\+F\+\_\+\+Builder\+\_\+\+::face}
+
+\mbox{\Hypertarget{struct_c_f_f___builder___aa0ee1ed33cb9afb916d709531b77c129}\label{struct_c_f_f___builder___aa0ee1ed33cb9afb916d709531b77c129}} 
+\index{CFF\_Builder\_@{CFF\_Builder\_}!funcs@{funcs}}
+\index{funcs@{funcs}!CFF\_Builder\_@{CFF\_Builder\_}}
+\doxysubsubsection{\texorpdfstring{funcs}{funcs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{psaux_8h_a84bce0810753d4e3f9e7078e3552ea44}{C\+F\+F\+\_\+\+Builder\+\_\+\+Funcs\+Rec}} C\+F\+F\+\_\+\+Builder\+\_\+\+::funcs}
+
+\mbox{\Hypertarget{struct_c_f_f___builder___a527ba659637b4e50be221d8b00d337c8}\label{struct_c_f_f___builder___a527ba659637b4e50be221d8b00d337c8}} 
+\index{CFF\_Builder\_@{CFF\_Builder\_}!glyph@{glyph}}
+\index{glyph@{glyph}!CFF\_Builder\_@{CFF\_Builder\_}}
+\doxysubsubsection{\texorpdfstring{glyph}{glyph}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cffotypes_8h_ab0311d60969475c27e1347c46a37eabd}{C\+F\+F\+\_\+\+Glyph\+Slot}} C\+F\+F\+\_\+\+Builder\+\_\+\+::glyph}
+
+\mbox{\Hypertarget{struct_c_f_f___builder___a7eb0d9144e82e76d6fe4fbd03b678c69}\label{struct_c_f_f___builder___a7eb0d9144e82e76d6fe4fbd03b678c69}} 
+\index{CFF\_Builder\_@{CFF\_Builder\_}!hints\_funcs@{hints\_funcs}}
+\index{hints\_funcs@{hints\_funcs}!CFF\_Builder\_@{CFF\_Builder\_}}
+\doxysubsubsection{\texorpdfstring{hints\_funcs}{hints\_funcs}}
+{\footnotesize\ttfamily void$\ast$ C\+F\+F\+\_\+\+Builder\+\_\+\+::hints\+\_\+funcs}
+
+\mbox{\Hypertarget{struct_c_f_f___builder___a65eb4c3939cd9dc8a176d0f42db20137}\label{struct_c_f_f___builder___a65eb4c3939cd9dc8a176d0f42db20137}} 
+\index{CFF\_Builder\_@{CFF\_Builder\_}!hints\_globals@{hints\_globals}}
+\index{hints\_globals@{hints\_globals}!CFF\_Builder\_@{CFF\_Builder\_}}
+\doxysubsubsection{\texorpdfstring{hints\_globals}{hints\_globals}}
+{\footnotesize\ttfamily void$\ast$ C\+F\+F\+\_\+\+Builder\+\_\+\+::hints\+\_\+globals}
+
+\mbox{\Hypertarget{struct_c_f_f___builder___a1bee78d88325239036b57761fdd0423c}\label{struct_c_f_f___builder___a1bee78d88325239036b57761fdd0423c}} 
+\index{CFF\_Builder\_@{CFF\_Builder\_}!left\_bearing@{left\_bearing}}
+\index{left\_bearing@{left\_bearing}!CFF\_Builder\_@{CFF\_Builder\_}}
+\doxysubsubsection{\texorpdfstring{left\_bearing}{left\_bearing}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ftimage_8h_abfcb941b4b81f3a922d4ae57c620db27}{F\+T\+\_\+\+Vector}} C\+F\+F\+\_\+\+Builder\+\_\+\+::left\+\_\+bearing}
+
+\mbox{\Hypertarget{struct_c_f_f___builder___abcce85e0ee7ffe37e1cbd3d6cea110c2}\label{struct_c_f_f___builder___abcce85e0ee7ffe37e1cbd3d6cea110c2}} 
+\index{CFF\_Builder\_@{CFF\_Builder\_}!load\_points@{load\_points}}
+\index{load\_points@{load\_points}!CFF\_Builder\_@{CFF\_Builder\_}}
+\doxysubsubsection{\texorpdfstring{load\_points}{load\_points}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} C\+F\+F\+\_\+\+Builder\+\_\+\+::load\+\_\+points}
+
+\mbox{\Hypertarget{struct_c_f_f___builder___a358be6966e4199e54d5551f81f496a5b}\label{struct_c_f_f___builder___a358be6966e4199e54d5551f81f496a5b}} 
+\index{CFF\_Builder\_@{CFF\_Builder\_}!loader@{loader}}
+\index{loader@{loader}!CFF\_Builder\_@{CFF\_Builder\_}}
+\doxysubsubsection{\texorpdfstring{loader}{loader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}{F\+T\+\_\+\+Glyph\+Loader}} C\+F\+F\+\_\+\+Builder\+\_\+\+::loader}
+
+\mbox{\Hypertarget{struct_c_f_f___builder___a41fce66940ca6e0a746f0839d076142f}\label{struct_c_f_f___builder___a41fce66940ca6e0a746f0839d076142f}} 
+\index{CFF\_Builder\_@{CFF\_Builder\_}!memory@{memory}}
+\index{memory@{memory}!CFF\_Builder\_@{CFF\_Builder\_}}
+\doxysubsubsection{\texorpdfstring{memory}{memory}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} C\+F\+F\+\_\+\+Builder\+\_\+\+::memory}
+
+\mbox{\Hypertarget{struct_c_f_f___builder___a649801f2012fc5927cc2647fbb71609d}\label{struct_c_f_f___builder___a649801f2012fc5927cc2647fbb71609d}} 
+\index{CFF\_Builder\_@{CFF\_Builder\_}!metrics\_only@{metrics\_only}}
+\index{metrics\_only@{metrics\_only}!CFF\_Builder\_@{CFF\_Builder\_}}
+\doxysubsubsection{\texorpdfstring{metrics\_only}{metrics\_only}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} C\+F\+F\+\_\+\+Builder\+\_\+\+::metrics\+\_\+only}
+
+\mbox{\Hypertarget{struct_c_f_f___builder___af2637a092e49c57e69a414a79f777743}\label{struct_c_f_f___builder___af2637a092e49c57e69a414a79f777743}} 
+\index{CFF\_Builder\_@{CFF\_Builder\_}!no\_recurse@{no\_recurse}}
+\index{no\_recurse@{no\_recurse}!CFF\_Builder\_@{CFF\_Builder\_}}
+\doxysubsubsection{\texorpdfstring{no\_recurse}{no\_recurse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} C\+F\+F\+\_\+\+Builder\+\_\+\+::no\+\_\+recurse}
+
+\mbox{\Hypertarget{struct_c_f_f___builder___ac8770a979f76c1dc11575dfdf40f1f88}\label{struct_c_f_f___builder___ac8770a979f76c1dc11575dfdf40f1f88}} 
+\index{CFF\_Builder\_@{CFF\_Builder\_}!path\_begun@{path\_begun}}
+\index{path\_begun@{path\_begun}!CFF\_Builder\_@{CFF\_Builder\_}}
+\doxysubsubsection{\texorpdfstring{path\_begun}{path\_begun}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} C\+F\+F\+\_\+\+Builder\+\_\+\+::path\+\_\+begun}
+
+\mbox{\Hypertarget{struct_c_f_f___builder___a045d91695d51a1fbfa307aab507fa46b}\label{struct_c_f_f___builder___a045d91695d51a1fbfa307aab507fa46b}} 
+\index{CFF\_Builder\_@{CFF\_Builder\_}!pos\_x@{pos\_x}}
+\index{pos\_x@{pos\_x}!CFF\_Builder\_@{CFF\_Builder\_}}
+\doxysubsubsection{\texorpdfstring{pos\_x}{pos\_x}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} C\+F\+F\+\_\+\+Builder\+\_\+\+::pos\+\_\+x}
+
+\mbox{\Hypertarget{struct_c_f_f___builder___a50a8bec8b857853829f42195101db472}\label{struct_c_f_f___builder___a50a8bec8b857853829f42195101db472}} 
+\index{CFF\_Builder\_@{CFF\_Builder\_}!pos\_y@{pos\_y}}
+\index{pos\_y@{pos\_y}!CFF\_Builder\_@{CFF\_Builder\_}}
+\doxysubsubsection{\texorpdfstring{pos\_y}{pos\_y}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} C\+F\+F\+\_\+\+Builder\+\_\+\+::pos\+\_\+y}
+
+
+
+この構造体詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+freetype/internal/\mbox{\hyperlink{psaux_8h}{psaux.\+h}}\end{DoxyCompactItemize}

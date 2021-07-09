@@ -1,0 +1,84 @@
+\hypertarget{svcid_8h}{}\doxysection{freetype/internal/services/svcid.h ファイル}
+\label{svcid_8h}\index{freetype/internal/services/svcid.h@{freetype/internal/services/svcid.h}}
+{\ttfamily \#include $<$freetype/internal/ftserv.\+h$>$}\newline
+svcid.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{svcid_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{svcid_8h_a5f2985d287734c094637cf811a46b965}{F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+C\+ID}}~\char`\"{}C\+ID\char`\"{}
+\item 
+\#define \mbox{\hyperlink{svcid_8h_ae8a0786ea9f3d3c696939ebb256c3abd}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+I\+D\+R\+EC}}(class\+\_\+,  get\+\_\+ros\+\_\+,  get\+\_\+is\+\_\+cid\+\_\+,  get\+\_\+cid\+\_\+from\+\_\+glyph\+\_\+index\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svcid_8h_ac2e5b0076a908f5022901b219fd8e3b4}{F\+T\+\_\+\+C\+I\+D\+\_\+\+Get\+Registry\+Ordering\+Supplement\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, const char $\ast$$\ast$registry, const char $\ast$$\ast$ordering, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} $\ast$supplement)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svcid_8h_a7b031830f38c90a26315c3459cf778d0}{F\+T\+\_\+\+C\+I\+D\+\_\+\+Get\+Is\+Internally\+C\+I\+D\+Keyed\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} $\ast$is\+\_\+cid)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svcid_8h_a1c2e73f86473c233aeef25d502be31e4}{F\+T\+\_\+\+C\+I\+D\+\_\+\+Get\+C\+I\+D\+From\+Glyph\+Index\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} glyph\+\_\+index, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} $\ast$cid)
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{svcid_8h_a9474c9836d0a8003275df13b167cd99c}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE}} (C\+ID)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{svcid_8h_ae8a0786ea9f3d3c696939ebb256c3abd}\label{svcid_8h_ae8a0786ea9f3d3c696939ebb256c3abd}} 
+\index{svcid.h@{svcid.h}!FT\_DEFINE\_SERVICE\_CIDREC@{FT\_DEFINE\_SERVICE\_CIDREC}}
+\index{FT\_DEFINE\_SERVICE\_CIDREC@{FT\_DEFINE\_SERVICE\_CIDREC}!svcid.h@{svcid.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE\_CIDREC}{FT\_DEFINE\_SERVICE\_CIDREC}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+C\+I\+D\+R\+EC(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{get\+\_\+ros\+\_\+,  }\item[{}]{get\+\_\+is\+\_\+cid\+\_\+,  }\item[{}]{get\+\_\+cid\+\_\+from\+\_\+glyph\+\_\+index\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{static} \textcolor{keyword}{const} FT\_Service\_CIDRec class\_ =                                   \(\backslash\)}
+\DoxyCodeLine{  \{                                                                         \(\backslash\)}
+\DoxyCodeLine{    get\_ros\_, get\_is\_cid\_, get\_cid\_from\_glyph\_index\_                        \(\backslash\)}
+\DoxyCodeLine{  \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{svcid_8h_a5f2985d287734c094637cf811a46b965}\label{svcid_8h_a5f2985d287734c094637cf811a46b965}} 
+\index{svcid.h@{svcid.h}!FT\_SERVICE\_ID\_CID@{FT\_SERVICE\_ID\_CID}}
+\index{FT\_SERVICE\_ID\_CID@{FT\_SERVICE\_ID\_CID}!svcid.h@{svcid.h}}
+\doxysubsubsection{\texorpdfstring{FT\_SERVICE\_ID\_CID}{FT\_SERVICE\_ID\_CID}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+C\+ID~\char`\"{}C\+ID\char`\"{}}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{svcid_8h_a1c2e73f86473c233aeef25d502be31e4}\label{svcid_8h_a1c2e73f86473c233aeef25d502be31e4}} 
+\index{svcid.h@{svcid.h}!FT\_CID\_GetCIDFromGlyphIndexFunc@{FT\_CID\_GetCIDFromGlyphIndexFunc}}
+\index{FT\_CID\_GetCIDFromGlyphIndexFunc@{FT\_CID\_GetCIDFromGlyphIndexFunc}!svcid.h@{svcid.h}}
+\doxysubsubsection{\texorpdfstring{FT\_CID\_GetCIDFromGlyphIndexFunc}{FT\_CID\_GetCIDFromGlyphIndexFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+C\+I\+D\+\_\+\+Get\+C\+I\+D\+From\+Glyph\+Index\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} glyph\+\_\+index, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} $\ast$cid)}
+
+\mbox{\Hypertarget{svcid_8h_a7b031830f38c90a26315c3459cf778d0}\label{svcid_8h_a7b031830f38c90a26315c3459cf778d0}} 
+\index{svcid.h@{svcid.h}!FT\_CID\_GetIsInternallyCIDKeyedFunc@{FT\_CID\_GetIsInternallyCIDKeyedFunc}}
+\index{FT\_CID\_GetIsInternallyCIDKeyedFunc@{FT\_CID\_GetIsInternallyCIDKeyedFunc}!svcid.h@{svcid.h}}
+\doxysubsubsection{\texorpdfstring{FT\_CID\_GetIsInternallyCIDKeyedFunc}{FT\_CID\_GetIsInternallyCIDKeyedFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+C\+I\+D\+\_\+\+Get\+Is\+Internally\+C\+I\+D\+Keyed\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} $\ast$is\+\_\+cid)}
+
+\mbox{\Hypertarget{svcid_8h_ac2e5b0076a908f5022901b219fd8e3b4}\label{svcid_8h_ac2e5b0076a908f5022901b219fd8e3b4}} 
+\index{svcid.h@{svcid.h}!FT\_CID\_GetRegistryOrderingSupplementFunc@{FT\_CID\_GetRegistryOrderingSupplementFunc}}
+\index{FT\_CID\_GetRegistryOrderingSupplementFunc@{FT\_CID\_GetRegistryOrderingSupplementFunc}!svcid.h@{svcid.h}}
+\doxysubsubsection{\texorpdfstring{FT\_CID\_GetRegistryOrderingSupplementFunc}{FT\_CID\_GetRegistryOrderingSupplementFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+C\+I\+D\+\_\+\+Get\+Registry\+Ordering\+Supplement\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, const char $\ast$$\ast$registry, const char $\ast$$\ast$ordering, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} $\ast$supplement)}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{svcid_8h_a9474c9836d0a8003275df13b167cd99c}\label{svcid_8h_a9474c9836d0a8003275df13b167cd99c}} 
+\index{svcid.h@{svcid.h}!FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}}
+\index{FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}!svcid.h@{svcid.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE()}{FT\_DEFINE\_SERVICE()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE (\begin{DoxyParamCaption}\item[{C\+ID}]{ }\end{DoxyParamCaption})}
+

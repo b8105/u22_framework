@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: Audio/SoundStreamBuffer.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_654f178923b1444d84ee2a4d88be6b27.html">Audio</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">SoundStreamBuffer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_sound_stream_buffer_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef U22_AUDIO_SOUND_STREAM_BUFFER_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define U22_AUDIO_SOUND_STREAM_BUFFER_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_i_sound_buffer_8h.html">ISoundBuffer.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../Common/Common.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_audio_buffer_8h.html">AudioBuffer.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sound_file_8h.html">SoundFile.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceu22_1_1audio.html">u22::audio</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classu22_1_1audio_1_1_sound_stream_buffer.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classu22_1_1audio_1_1_sound_stream_buffer.html">SoundStreamBuffer</a> : <span class="keyword">public</span> <a class="code" href="classu22_1_1audio_1_1_i_sound_buffer.html">u22::audio::ISoundBuffer</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="al_8h.html#ae0292edc5c1c47db9accee3f49933e6f">ALuint</a> _source;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    std::array&lt;ALuint,2&gt; _buffers;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="sndfile_8h.html#ac14209bc83d532b06a8cdf9ade6d544a">SNDFILE</a>* _file;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="struct_s_f___i_n_f_o.html">SF_INFO</a> _info;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    std::vector&lt;int&gt; _stream_buffers[2];</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="sndfile_8h.html#af2b12fded74bc949f1f1f392a2af4892">sf_count_t</a> _position;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">int</span> _current;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> _next;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">bool</span> _eof;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">bool</span> _end;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="al_8h.html#a715098c13211f3570a9288a27f87fdfa">ALenum</a> _format;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="al_8h.html#ae0292edc5c1c47db9accee3f49933e6f">ALuint</a> _buffer_size;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="group__gtc__type__precision.html#ga822ca53a9ad412504532838906276a99">std::uint32_t</a> _byte_size_coefficient;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">bool</span> _loop;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> Loop(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="al_8h.html#ae0292edc5c1c47db9accee3f49933e6f">ALuint</a> WhiteNextData(<a class="code" href="al_8h.html#ae0292edc5c1c47db9accee3f49933e6f">ALuint</a> buffer);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> Rewind(<span class="keywordtype">void</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetPitch(<span class="keywordtype">float</span> <a class="code" href="group__gtc__quaternion.html#ga7603e81477b46ddb448896909bc04928">pitch</a>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="classu22_1_1audio_1_1_sound_stream_buffer.html#ae1054282b963f4c2c465cd806acd12bf">SoundStreamBuffer</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classu22_1_1audio_1_1_sound_stream_buffer.html#a873a7b5fd688690014042db17207b30f">~SoundStreamBuffer</a>();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classu22_1_1audio_1_1_sound_stream_buffer.html#adf3d1b870293e41f478878d58a01333c">SetVolume</a>(<span class="keywordtype">float</span> volume) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classu22_1_1audio_1_1_sound_stream_buffer.html#aed9285edf0b6e87e35fc73b8acad566d">SetLoop</a>(<span class="keywordtype">bool</span> loop) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1audio_1_1_sound_stream_buffer.html#ac5f7b67278f8eb423cf4dc61587785b6">IsEnd</a>(<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1audio_1_1_sound_stream_buffer.html#af0829da4b04fa8d57dd871b0048fb73c">Load</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1audio_1_1_sound_stream_buffer.html#a05f4fe8de65589f426371ead75f902e0">Update</a>(<span class="keywordtype">void</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1audio_1_1_sound_stream_buffer.html#a3689e9725272b3c1bcb8dfbbb920ddf1">Release</a>(<span class="keywordtype">void</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1audio_1_1_sound_stream_buffer.html#ac61078b129964c0fb70ec442945104c1">Play</a>(<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1audio_1_1_sound_stream_buffer.html#a896a44f57544acac33cc19cb3fa198ae">Stop</a>(<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;};</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif // !U22_AUDIO_SOUND_STREAM_BUFFER_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astb__vorbis_8c_html_aa73214aa5f2f94f63d90bb4e3d99fe53"><div class="ttname"><a href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a></div><div class="ttdeci">#define L</div><div class="ttdef"><b>Definition:</b> stb_vorbis.c:5037</div></div>
+<div class="ttc" id="astruct_s_f___i_n_f_o_html"><div class="ttname"><a href="struct_s_f___i_n_f_o.html">SF_INFO</a></div><div class="ttdef"><b>Definition:</b> sndfile.h:351</div></div>
+<div class="ttc" id="aal_8h_html_af6239bc4ba2faedeb54a5ffd5917b405"><div class="ttname"><a href="al_8h.html#af6239bc4ba2faedeb54a5ffd5917b405">alSourceQueueBuffers</a></div><div class="ttdeci">AL_API void AL_APIENTRY alSourceQueueBuffers(ALuint sid, ALsizei numEntries, const ALuint *bids)</div></div>
+<div class="ttc" id="aal_8h_html_af220f665740bf8a54797e210cf551dfe"><div class="ttname"><a href="al_8h.html#af220f665740bf8a54797e210cf551dfe">alGenSources</a></div><div class="ttdeci">AL_API void AL_APIENTRY alGenSources(ALsizei n, ALuint *sources)</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_sound_stream_buffer_html_ae1054282b963f4c2c465cd806acd12bf"><div class="ttname"><a href="classu22_1_1audio_1_1_sound_stream_buffer.html#ae1054282b963f4c2c465cd806acd12bf">u22::audio::SoundStreamBuffer::SoundStreamBuffer</a></div><div class="ttdeci">SoundStreamBuffer()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> SoundStreamBuffer.cpp:38</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_sound_stream_buffer_html_a896a44f57544acac33cc19cb3fa198ae"><div class="ttname"><a href="classu22_1_1audio_1_1_sound_stream_buffer.html#a896a44f57544acac33cc19cb3fa198ae">u22::audio::SoundStreamBuffer::Stop</a></div><div class="ttdeci">virtual bool Stop(void) const override</div><div class="ttdoc">停止</div><div class="ttdef"><b>Definition:</b> SoundStreamBuffer.cpp:155</div></div>
+<div class="ttc" id="asndfile_8h_html_aa82f7bc9ad5058e9910c88c49a389777"><div class="ttname"><a href="sndfile_8h.html#aa82f7bc9ad5058e9910c88c49a389777">sf_readf_short</a></div><div class="ttdeci">sf_count_t sf_readf_short(SNDFILE *sndfile, short *ptr, sf_count_t frames)</div></div>
+<div class="ttc" id="aal_8h_html_a715098c13211f3570a9288a27f87fdfa"><div class="ttname"><a href="al_8h.html#a715098c13211f3570a9288a27f87fdfa">ALenum</a></div><div class="ttdeci">int ALenum</div><div class="ttdef"><b>Definition:</b> al.h:69</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_sound_stream_buffer_html_ac5f7b67278f8eb423cf4dc61587785b6"><div class="ttname"><a href="classu22_1_1audio_1_1_sound_stream_buffer.html#ac5f7b67278f8eb423cf4dc61587785b6">u22::audio::SoundStreamBuffer::IsEnd</a></div><div class="ttdeci">virtual bool IsEnd(void) const override</div><div class="ttdoc">判定</div><div class="ttdef"><b>Definition:</b> SoundStreamBuffer.cpp:72</div></div>
+<div class="ttc" id="aftobjs_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="ftobjs_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> ftobjs.h:61</div></div>
+<div class="ttc" id="asndfile_8h_html_a06fc87d81c62e9abb8790b6e5713c55baaaef1f7e663487eefbe4106de44ea7fd"><div class="ttname"><a href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baaaef1f7e663487eefbe4106de44ea7fd">SF_FORMAT_OGG</a></div><div class="ttdeci">@ SF_FORMAT_OGG</div><div class="ttdef"><b>Definition:</b> sndfile.h:71</div></div>
+<div class="ttc" id="asndfile_8h_html_a7a3ded72351d7bafe83358c5c312d352"><div class="ttname"><a href="sndfile_8h.html#a7a3ded72351d7bafe83358c5c312d352">sf_seek</a></div><div class="ttdeci">sf_count_t sf_seek(SNDFILE *sndfile, sf_count_t frames, int whence)</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_sound_stream_buffer_html_a05f4fe8de65589f426371ead75f902e0"><div class="ttname"><a href="classu22_1_1audio_1_1_sound_stream_buffer.html#a05f4fe8de65589f426371ead75f902e0">u22::audio::SoundStreamBuffer::Update</a></div><div class="ttdeci">virtual bool Update(void) override</div><div class="ttdoc">更新</div><div class="ttdef"><b>Definition:</b> SoundStreamBuffer.cpp:112</div></div>
+<div class="ttc" id="asndfile_8h_html_a276b87553823c937c62492206f0ed81e"><div class="ttname"><a href="sndfile_8h.html#a276b87553823c937c62492206f0ed81e">sf_close</a></div><div class="ttdeci">int sf_close(SNDFILE *sndfile)</div></div>
+<div class="ttc" id="aal_8h_html_a9d60e5097e855ecd28c2c46fee818d6d"><div class="ttname"><a href="al_8h.html#a9d60e5097e855ecd28c2c46fee818d6d">AL_GAIN</a></div><div class="ttdeci">#define AL_GAIN</div><div class="ttdef"><b>Definition:</b> al.h:165</div></div>
+<div class="ttc" id="aal_8h_html_ae410479f65274605b6aa6385f37c7e05"><div class="ttname"><a href="al_8h.html#ae410479f65274605b6aa6385f37c7e05">AL_BUFFERS_PROCESSED</a></div><div class="ttdeci">#define AL_BUFFERS_PROCESSED</div><div class="ttdef"><b>Definition:</b> al.h:213</div></div>
+<div class="ttc" id="aal_8h_html_ac10978ba0e4a873c5355a30d04c8a3a6"><div class="ttname"><a href="al_8h.html#ac10978ba0e4a873c5355a30d04c8a3a6">alSourcef</a></div><div class="ttdeci">AL_API void AL_APIENTRY alSourcef(ALuint sid, ALenum param, ALfloat value)</div></div>
+<div class="ttc" id="asndfile_8h_html_af2b12fded74bc949f1f1f392a2af4892"><div class="ttname"><a href="sndfile_8h.html#af2b12fded74bc949f1f1f392a2af4892">sf_count_t</a></div><div class="ttdeci">__int64 sf_count_t</div><div class="ttdef"><b>Definition:</b> sndfile.h:340</div></div>
+<div class="ttc" id="aal_8h_html_aa5ac516caadd0d377bd52c0db10bedcd"><div class="ttname"><a href="al_8h.html#aa5ac516caadd0d377bd52c0db10bedcd">alSourceStop</a></div><div class="ttdeci">AL_API void AL_APIENTRY alSourceStop(ALuint sid)</div></div>
+<div class="ttc" id="asndfile_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba6c1fc181944f58b4bcd23a05acd34499"><div class="ttname"><a href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6c1fc181944f58b4bcd23a05acd34499">SF_FORMAT_WAV</a></div><div class="ttdeci">@ SF_FORMAT_WAV</div><div class="ttdef"><b>Definition:</b> sndfile.h:49</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_sound_stream_buffer_html_adf3d1b870293e41f478878d58a01333c"><div class="ttname"><a href="classu22_1_1audio_1_1_sound_stream_buffer.html#adf3d1b870293e41f478878d58a01333c">u22::audio::SoundStreamBuffer::SetVolume</a></div><div class="ttdeci">virtual void SetVolume(float volume) override</div><div class="ttdoc">セッター</div><div class="ttdef"><b>Definition:</b> SoundStreamBuffer.cpp:58</div></div>
+<div class="ttc" id="asndfile_8h_html_abc6126af1d45847bc59afa0aa3216b04a125531fe9c895237bccd35736370e815"><div class="ttname"><a href="sndfile_8h.html#abc6126af1d45847bc59afa0aa3216b04a125531fe9c895237bccd35736370e815">SFM_READ</a></div><div class="ttdeci">@ SFM_READ</div><div class="ttdef"><b>Definition:</b> sndfile.h:265</div></div>
+<div class="ttc" id="aal_8h_html_a39accf64fd8aeacef4717c3246507151"><div class="ttname"><a href="al_8h.html#a39accf64fd8aeacef4717c3246507151">alSourceRewind</a></div><div class="ttdeci">AL_API void AL_APIENTRY alSourceRewind(ALuint sid)</div></div>
+<div class="ttc" id="asndfile_8h_html_ac14209bc83d532b06a8cdf9ade6d544a"><div class="ttname"><a href="sndfile_8h.html#ac14209bc83d532b06a8cdf9ade6d544a">SNDFILE</a></div><div class="ttdeci">struct SNDFILE_tag SNDFILE</div><div class="ttdef"><b>Definition:</b> sndfile.h:327</div></div>
+<div class="ttc" id="a_sound_file_8h_html"><div class="ttname"><a href="_sound_file_8h.html">SoundFile.h</a></div></div>
+<div class="ttc" id="aal_8h_html_a69aef56ec1b141152e7068f51d900549"><div class="ttname"><a href="al_8h.html#a69aef56ec1b141152e7068f51d900549">alSourceUnqueueBuffers</a></div><div class="ttdeci">AL_API void AL_APIENTRY alSourceUnqueueBuffers(ALuint sid, ALsizei numEntries, ALuint *bids)</div></div>
+<div class="ttc" id="a_i_sound_buffer_8h_html"><div class="ttname"><a href="_i_sound_buffer_8h.html">ISoundBuffer.h</a></div></div>
+<div class="ttc" id="agroup__gtc__type__precision_html_ga822ca53a9ad412504532838906276a99"><div class="ttname"><a href="group__gtc__type__precision.html#ga822ca53a9ad412504532838906276a99">glm::uint32_t</a></div><div class="ttdeci">uint32 uint32_t</div><div class="ttdef"><b>Definition:</b> fwd.hpp:129</div></div>
+<div class="ttc" id="anamespaceglm_1_1detail_html_acd5305bbd1c5417b1eb770faf8229d14"><div class="ttname"><a href="namespaceglm_1_1detail.html#acd5305bbd1c5417b1eb770faf8229d14">glm::detail::format</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER std::string format(const char *msg,...)</div><div class="ttdef"><b>Definition:</b> string_cast.inl:21</div></div>
+<div class="ttc" id="aal_8h_html_a6009f261a5a85507fdf4756d7c2c8787"><div class="ttname"><a href="al_8h.html#a6009f261a5a85507fdf4756d7c2c8787">AL_FORMAT_STEREO16</a></div><div class="ttdeci">#define AL_FORMAT_STEREO16</div><div class="ttdef"><b>Definition:</b> al.h:237</div></div>
+<div class="ttc" id="aal_8h_html_aab80ac4aad68b84363658bf498913c91"><div class="ttname"><a href="al_8h.html#aab80ac4aad68b84363658bf498913c91">alGetSourcei</a></div><div class="ttdeci">AL_API void AL_APIENTRY alGetSourcei(ALuint sid, ALenum param, ALint *value)</div></div>
+<div class="ttc" id="asndfile_8h_html_a61bb810d2581bc860cd8884e22d6c7d2"><div class="ttname"><a href="sndfile_8h.html#a61bb810d2581bc860cd8884e22d6c7d2">sf_open</a></div><div class="ttdeci">SNDFILE * sf_open(const char *path, int mode, SF_INFO *sfinfo)</div></div>
+<div class="ttc" id="anamespaceu22_1_1audio_html"><div class="ttname"><a href="namespaceu22_1_1audio.html">u22::audio</a></div><div class="ttdef"><b>Definition:</b> Audio.h:8</div></div>
+<div class="ttc" id="aal_8h_html_a9adbb1f7834f0f6aced97f9f29d6b98b"><div class="ttname"><a href="al_8h.html#a9adbb1f7834f0f6aced97f9f29d6b98b">AL_FORMAT_MONO16</a></div><div class="ttdeci">#define AL_FORMAT_MONO16</div><div class="ttdef"><b>Definition:</b> al.h:235</div></div>
+<div class="ttc" id="aal_8h_html_ab376e80e2404ae2611798d7f007871ef"><div class="ttname"><a href="al_8h.html#ab376e80e2404ae2611798d7f007871ef">alDeleteBuffers</a></div><div class="ttdeci">AL_API void AL_APIENTRY alDeleteBuffers(ALsizei n, const ALuint *buffers)</div></div>
+<div class="ttc" id="a_audio_buffer_8h_html"><div class="ttname"><a href="_audio_buffer_8h.html">AudioBuffer.h</a></div></div>
+<div class="ttc" id="aal_8h_html_a3720fc4a5dee4093aabe1b102335dae7"><div class="ttname"><a href="al_8h.html#a3720fc4a5dee4093aabe1b102335dae7">alBufferData</a></div><div class="ttdeci">AL_API void AL_APIENTRY alBufferData(ALuint bid, ALenum format, const ALvoid *data, ALsizei size, ALsizei freq)</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_sound_stream_buffer_html_aed9285edf0b6e87e35fc73b8acad566d"><div class="ttname"><a href="classu22_1_1audio_1_1_sound_stream_buffer.html#aed9285edf0b6e87e35fc73b8acad566d">u22::audio::SoundStreamBuffer::SetLoop</a></div><div class="ttdeci">virtual void SetLoop(bool loop) override</div><div class="ttdoc">セッター</div><div class="ttdef"><b>Definition:</b> SoundStreamBuffer.cpp:68</div></div>
+<div class="ttc" id="aal_8h_html_af2f5e685ee38a2c49e149797e8c2e86e"><div class="ttname"><a href="al_8h.html#af2f5e685ee38a2c49e149797e8c2e86e">alDeleteSources</a></div><div class="ttdeci">AL_API void AL_APIENTRY alDeleteSources(ALsizei n, const ALuint *sources)</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_sound_stream_buffer_html_a873a7b5fd688690014042db17207b30f"><div class="ttname"><a href="classu22_1_1audio_1_1_sound_stream_buffer.html#a873a7b5fd688690014042db17207b30f">u22::audio::SoundStreamBuffer::~SoundStreamBuffer</a></div><div class="ttdeci">virtual ~SoundStreamBuffer()</div><div class="ttdoc">デストラクタ</div><div class="ttdef"><b>Definition:</b> SoundStreamBuffer.cpp:55</div></div>
+<div class="ttc" id="asndfile_8h_html_abed82baf7f470b522273a3e37c24c600aef473c62f0714c0a794f0426dc7cd5d0"><div class="ttname"><a href="sndfile_8h.html#abed82baf7f470b522273a3e37c24c600aef473c62f0714c0a794f0426dc7cd5d0">SF_SEEK_SET</a></div><div class="ttdeci">@ SF_SEEK_SET</div><div class="ttdef"><b>Definition:</b> sndfile.h:636</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_sound_stream_buffer_html"><div class="ttname"><a href="classu22_1_1audio_1_1_sound_stream_buffer.html">u22::audio::SoundStreamBuffer</a></div><div class="ttdef"><b>Definition:</b> SoundStreamBuffer.h:16</div></div>
+<div class="ttc" id="aal_8h_html_ae0292edc5c1c47db9accee3f49933e6f"><div class="ttname"><a href="al_8h.html#ae0292edc5c1c47db9accee3f49933e6f">ALuint</a></div><div class="ttdeci">unsigned int ALuint</div><div class="ttdef"><b>Definition:</b> al.h:63</div></div>
+<div class="ttc" id="aal_8h_html_ab966c4d5d554fee3ae4e5c7774e83c7e"><div class="ttname"><a href="al_8h.html#ab966c4d5d554fee3ae4e5c7774e83c7e">ALsizei</a></div><div class="ttdeci">int ALsizei</div><div class="ttdef"><b>Definition:</b> al.h:66</div></div>
+<div class="ttc" id="agroup__gtc__quaternion_html_ga7603e81477b46ddb448896909bc04928"><div class="ttname"><a href="group__gtc__quaternion.html#ga7603e81477b46ddb448896909bc04928">glm::pitch</a></div><div class="ttdeci">GLM_FUNC_DECL T pitch(qua&lt; T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> quaternion.inl:22</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_sound_stream_buffer_html_a3689e9725272b3c1bcb8dfbbb920ddf1"><div class="ttname"><a href="classu22_1_1audio_1_1_sound_stream_buffer.html#a3689e9725272b3c1bcb8dfbbb920ddf1">u22::audio::SoundStreamBuffer::Release</a></div><div class="ttdeci">virtual bool Release(void) override</div><div class="ttdoc">解放</div><div class="ttdef"><b>Definition:</b> SoundStreamBuffer.cpp:138</div></div>
+<div class="ttc" id="aal_8h_html_afd2b03b38eb7ae35d0518ecc3f004d9f"><div class="ttname"><a href="al_8h.html#afd2b03b38eb7ae35d0518ecc3f004d9f">alGenBuffers</a></div><div class="ttdeci">AL_API void AL_APIENTRY alGenBuffers(ALsizei n, ALuint *buffers)</div></div>
+<div class="ttc" id="a_sound_stream_buffer_8h_html"><div class="ttname"><a href="_sound_stream_buffer_8h.html">SoundStreamBuffer.h</a></div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_sound_stream_buffer_html_ac61078b129964c0fb70ec442945104c1"><div class="ttname"><a href="classu22_1_1audio_1_1_sound_stream_buffer.html#ac61078b129964c0fb70ec442945104c1">u22::audio::SoundStreamBuffer::Play</a></div><div class="ttdeci">virtual bool Play(void) const override</div><div class="ttdoc">再生</div><div class="ttdef"><b>Definition:</b> SoundStreamBuffer.cpp:148</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_sound_stream_buffer_html_af0829da4b04fa8d57dd871b0048fb73c"><div class="ttname"><a href="classu22_1_1audio_1_1_sound_stream_buffer.html#af0829da4b04fa8d57dd871b0048fb73c">u22::audio::SoundStreamBuffer::Load</a></div><div class="ttdeci">virtual bool Load(const char *path) override</div><div class="ttdoc">読み込み</div><div class="ttdef"><b>Definition:</b> SoundStreamBuffer.cpp:76</div></div>
+<div class="ttc" id="aal_8h_html_aca454ba909c65b84c78e81edc08ca0c8"><div class="ttname"><a href="al_8h.html#aca454ba909c65b84c78e81edc08ca0c8">alSourcePlay</a></div><div class="ttdeci">AL_API void AL_APIENTRY alSourcePlay(ALuint sid)</div></div>
+<div class="ttc" id="astb_8h_html_af58906fd48ad60ad23c81ebef0f515f9"><div class="ttname"><a href="stb_8h.html#af58906fd48ad60ad23c81ebef0f515f9">swap</a></div><div class="ttdeci">#define swap(TYPE, a, b)</div><div class="ttdef"><b>Definition:</b> stb.h:313</div></div>
+<div class="ttc" id="aal_8h_html_a269e96e818771d14ea65a6b10d954d68"><div class="ttname"><a href="al_8h.html#a269e96e818771d14ea65a6b10d954d68">AL_PITCH</a></div><div class="ttdeci">#define AL_PITCH</div><div class="ttdef"><b>Definition:</b> al.h:119</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_i_sound_buffer_html"><div class="ttname"><a href="classu22_1_1audio_1_1_i_sound_buffer.html">u22::audio::ISoundBuffer</a></div><div class="ttdef"><b>Definition:</b> ISoundBuffer.h:9</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

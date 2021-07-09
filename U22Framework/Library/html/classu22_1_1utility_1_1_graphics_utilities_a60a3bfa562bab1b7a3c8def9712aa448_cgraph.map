@@ -1,0 +1,7 @@
+<map id="u22::utility::GraphicsUtilities::Setup" name="u22::utility::GraphicsUtilities::Setup">
+<area shape="rect" id="node1" title="セットアップ" alt="" coords="5,71,191,112"/>
+<area shape="rect" id="node2" href="$classu22_1_1graphics_1_1_circle_renderer.html#a593b7c1d2d49fbbb04c72f1d27a1c546" title="初期化" alt="" coords="239,5,432,47"/>
+<area shape="rect" id="node4" href="$classu22_1_1graphics_1_1_rectangle_renderer.html#a561731f45b7a7f8468f1fb31bb48bc76" title="初期化" alt="" coords="252,71,419,112"/>
+<area shape="rect" id="node5" href="$classu22_1_1graphics_1_1_font_renderer.html#a8b3aa22c4453096b3465d6f5faa380f5" title="読み込み" alt="" coords="242,136,429,177"/>
+<area shape="rect" id="node3" href="$classu22_1_1_framework.html#a4178f3ac4244aa173e022c627a7fd658" title="ゲッター" alt="" coords="480,78,683,105"/>
+</map>

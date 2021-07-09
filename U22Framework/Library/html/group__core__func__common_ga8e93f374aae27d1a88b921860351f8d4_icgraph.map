@@ -1,0 +1,20 @@
+<map id="glm::mix" name="glm::mix">
+<area shape="rect" id="node1" title=" " alt="" coords="420,354,492,381"/>
+<area shape="rect" id="node2" href="$structglm_1_1detail_1_1compute__rgb_to_srgb.html#a80f1b6c28ca418cc3eaf661e6714d7b5" title=" " alt="" coords="232,5,372,47"/>
+<area shape="rect" id="node4" href="$structglm_1_1detail_1_1compute__srgb_to_rgb.html#ab3c2c31d63a2548991596b8e460c4db7" title=" " alt="" coords="232,71,372,112"/>
+<area shape="rect" id="node6" href="$structglm_1_1detail_1_1compute__step__vector.html#a495017a548067602a85fc3b9eb8563be" title=" " alt="" coords="232,136,372,177"/>
+<area shape="rect" id="node7" href="$group__gtx__compatibility.html#ga5494ba3a95ea6594c86fc75236886864" title="Returns x * (1.0 &#45; a) + y * a, i.e., the linear blend of x and y using the floating&#45;point value a...." alt="" coords="266,202,338,229"/>
+<area shape="rect" id="node8" href="$namespaceglm.html#a0df04698e1e331775337ec31c8967445" title=" " alt="" coords="239,253,365,279"/>
+<area shape="rect" id="node9" href="$group__ext__quaternion__common.html#gafbfe587b8da11fb89a30c3d67dd5ccc2" title=" " alt="" coords="266,303,338,330"/>
+<area shape="rect" id="node10" href="$group__gtx__vector__angle.html#ga706fce3d111f485839756a64f5a48553" title=" " alt="" coords="237,354,367,381"/>
+<area shape="rect" id="node11" href="$namespaceglm.html#a54326f7a6c7c00d7702fe6f15fa0d13f" title=" " alt="" coords="261,405,343,431"/>
+<area shape="rect" id="node12" href="$group__ext__quaternion__common.html#gae7fc3c945be366b9942b842f55da428a" title=" " alt="" coords="263,455,341,482"/>
+<area shape="rect" id="node13" href="$group__gtx__quaternion.html#ga0b9bf3459e132ad8a18fe970669e3e35" title=" " alt="" coords="259,506,345,533"/>
+<area shape="rect" id="node14" href="$group__core__func__common.html#ga015a1261ff23e12650211aa872863cce" title=" " alt="" coords="264,557,340,583"/>
+<area shape="rect" id="node17" href="$group__core__func__integer.html#gaedcec48743632dff6786bcc492074b1b" title=" " alt="" coords="247,607,357,634"/>
+<area shape="rect" id="node18" href="$group__core__func__integer.html#gae3316ba1229ad9b9f09480833321b053" title=" " alt="" coords="243,658,361,685"/>
+<area shape="rect" id="node3" href="$group__gtc__color__space.html#ga42239e7b3da900f7ef37cec7e2476579" title=" " alt="" coords="5,13,184,39"/>
+<area shape="rect" id="node5" href="$group__gtc__color__space.html#ga16c798b7a226b2c3079dedc55083d187" title=" " alt="" coords="5,78,184,105"/>
+<area shape="rect" id="node15" href="$namespaceglm.html#add5d8345389c307da58e6916d949c4be" title=" " alt="" coords="53,531,136,558"/>
+<area shape="rect" id="node16" href="$namespaceglm.html#a9647df123e68432133be68c141dbee4a" title=" " alt="" coords="47,582,143,609"/>
+</map>

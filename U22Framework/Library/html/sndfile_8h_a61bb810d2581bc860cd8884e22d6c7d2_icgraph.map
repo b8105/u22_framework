@@ -1,0 +1,7 @@
+<map id="sf_open" name="sf_open">
+<area shape="rect" id="node1" title=" " alt="" coords="256,111,323,138"/>
+<area shape="rect" id="node2" href="$classu22_1_1audio_1_1_sound_file.html#a732e2b4dcd7b8747dd737a3f500d5239" title="読み込み" alt="" coords="33,5,181,47"/>
+<area shape="rect" id="node3" href="$classu22_1_1audio_1_1_sound_stream_buffer.html#af0829da4b04fa8d57dd871b0048fb73c" title="読み込み" alt="" coords="5,71,208,112"/>
+<area shape="rect" id="node4" href="$classu22_1_1audio_1_1_sound_file.html#a6c886a5c51ec06263db0f32a9c2010c7" title="開く" alt="" coords="33,136,181,177"/>
+<area shape="rect" id="node5" href="$class_sndfile_handle.html#a60e5ec8dac736c5f3a2fdc95e7e9c70e" title=" " alt="" coords="13,202,201,229"/>
+</map>

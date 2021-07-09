@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: freetype/internal/services/svttcmap.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_981d57b2e11530428c66a192ba91cfc7.html">freetype</a></li><li class="navelem"><a class="el" href="dir_ac174dc64ad36850d6be9a69f636b6c2.html">internal</a></li><li class="navelem"><a class="el" href="dir_35a0bb54f7f16cba82b70b986a88ff93.html">services</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#typedef-members">型定義</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">svttcmap.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="ftserv_8h_source.html">freetype/internal/ftserv.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="tttables_8h_source.html">freetype/tttables.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+svttcmap.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="svttcmap_8h__incl.png" border="0" usemap="#afreetype_2internal_2services_2svttcmap_8h" alt=""/></div>
+<map name="freetype_2internal_2services_2svttcmap_8h" id="freetype_2internal_2services_2svttcmap_8h">
+<area shape="rect" title=" " alt="" coords="115,5,281,47"/>
+<area shape="rect" href="ftserv_8h.html" title=" " alt="" coords="36,95,195,121"/>
+<area shape="rect" href="tttables_8h.html" title=" " alt="" coords="224,95,351,121"/>
+<area shape="rect" href="compiler-macros_8h.html" title=" " alt="" coords="40,169,169,196"/>
+<area shape="rect" href="public-macros_8h.html" title=" " alt="" coords="13,244,157,285"/>
+<area shape="rect" href="freetype_8h.html" title=" " alt="" coords="225,169,355,196"/>
+<area shape="rect" href="ft2build_8h.html" title=" " alt="" coords="51,333,126,360"/>
+<area shape="rect" href="fttypes_8h.html" title=" " alt="" coords="231,251,354,278"/>
+<area shape="rect" href="fterrors_8h.html" title=" " alt="" coords="554,251,677,278"/>
+<area shape="rect" href="ftheader_8h.html" title=" " alt="" coords="5,408,172,435"/>
+<area shape="rect" href="ftsystem_8h.html" title=" " alt="" coords="150,333,283,360"/>
+<area shape="rect" href="ftimage_8h.html" title=" " alt="" coords="307,333,433,360"/>
+<area shape="rect" title=" " alt="" coords="457,333,525,360"/>
+<area shape="rect" href="ftmoderr_8h.html" title=" " alt="" coords="550,333,681,360"/>
+<area shape="rect" href="fterrdef_8h.html" title=" " alt="" coords="705,333,827,360"/>
+</map>
+</div>
+</div>
+<p><a href="svttcmap_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_t___c_map_info__.html">TT_CMapInfo_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:ab338019855a7a6242574a31f568edf29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svttcmap_8h.html#ab338019855a7a6242574a31f568edf29">FT_SERVICE_ID_TT_CMAP</a>&#160;&#160;&#160;&quot;tt-cmaps&quot;</td></tr>
+<tr class="separator:ab338019855a7a6242574a31f568edf29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4b57bcbd7dae5ad52bf1c8646208251"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svttcmap_8h.html#ab4b57bcbd7dae5ad52bf1c8646208251">FT_DEFINE_SERVICE_TTCMAPSREC</a>(class_,  get_cmap_info_)</td></tr>
+<tr class="separator:ab4b57bcbd7dae5ad52bf1c8646208251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:afe7d26dfb6d03ae077dae07857c9a3ff"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_t_t___c_map_info__.html">TT_CMapInfo_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svttcmap_8h.html#afe7d26dfb6d03ae077dae07857c9a3ff">TT_CMapInfo</a></td></tr>
+<tr class="separator:afe7d26dfb6d03ae077dae07857c9a3ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1423be6057a02798d2d8b7024c58431f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svttcmap_8h.html#a1423be6057a02798d2d8b7024c58431f">TT_CMap_Info_GetFunc</a>) (<a class="el" href="freetype_8h.html#afc4717ddfd456a38ee15ec9c88fc7dac">FT_CharMap</a> charmap, <a class="el" href="svttcmap_8h.html#afe7d26dfb6d03ae077dae07857c9a3ff">TT_CMapInfo</a> *cmap_info)</td></tr>
+<tr class="separator:a1423be6057a02798d2d8b7024c58431f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:af800a6496267078aa7d1421e97acb51d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svttcmap_8h.html#af800a6496267078aa7d1421e97acb51d">FT_DEFINE_SERVICE</a> (TTCMaps)</td></tr>
+<tr class="separator:af800a6496267078aa7d1421e97acb51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">マクロ定義詳解</h2>
+<a id="ab4b57bcbd7dae5ad52bf1c8646208251"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4b57bcbd7dae5ad52bf1c8646208251">&#9670;&nbsp;</a></span>FT_DEFINE_SERVICE_TTCMAPSREC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_DEFINE_SERVICE_TTCMAPSREC</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">class_, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">get_cmap_info_&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">  <span class="keyword">static</span> <span class="keyword">const</span> FT_Service_TTCMapsRec  class_ =                  \</div>
+<div class="line">  {                                                             \</div>
+<div class="line">    get_cmap_info_                                              \</div>
+<div class="line">  };</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab338019855a7a6242574a31f568edf29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab338019855a7a6242574a31f568edf29">&#9670;&nbsp;</a></span>FT_SERVICE_ID_TT_CMAP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_SERVICE_ID_TT_CMAP&#160;&#160;&#160;&quot;tt-cmaps&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">型定義詳解</h2>
+<a id="a1423be6057a02798d2d8b7024c58431f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1423be6057a02798d2d8b7024c58431f">&#9670;&nbsp;</a></span>TT_CMap_Info_GetFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(* TT_CMap_Info_GetFunc) (<a class="el" href="freetype_8h.html#afc4717ddfd456a38ee15ec9c88fc7dac">FT_CharMap</a> charmap, <a class="el" href="svttcmap_8h.html#afe7d26dfb6d03ae077dae07857c9a3ff">TT_CMapInfo</a> *cmap_info)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe7d26dfb6d03ae077dae07857c9a3ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe7d26dfb6d03ae077dae07857c9a3ff">&#9670;&nbsp;</a></span>TT_CMapInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_t_t___c_map_info__.html">TT_CMapInfo_</a> <a class="el" href="svttcmap_8h.html#afe7d26dfb6d03ae077dae07857c9a3ff">TT_CMapInfo</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="af800a6496267078aa7d1421e97acb51d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af800a6496267078aa7d1421e97acb51d">&#9670;&nbsp;</a></span>FT_DEFINE_SERVICE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FT_DEFINE_SERVICE </td>
+          <td>(</td>
+          <td class="paramtype">TTCMaps&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

@@ -1,0 +1,118 @@
+\hypertarget{autohint_8h}{}\doxysection{freetype/internal/autohint.h ファイル}
+\label{autohint_8h}\index{freetype/internal/autohint.h@{freetype/internal/autohint.h}}
+{\ttfamily \#include $<$freetype/freetype.\+h$>$}\newline
+autohint.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{autohint_8h__incl}
+\end{center}
+\end{figure}
+被依存関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{autohint_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_f_t___auto_hinter___interface_rec__}{F\+T\+\_\+\+Auto\+Hinter\+\_\+\+Interface\+Rec\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{autohint_8h_adcda1e5e022d2ec1213d3bdd2da90fad}{F\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+U\+T\+O\+H\+I\+N\+T\+E\+R\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}}(class\+\_\+)~  \mbox{\hyperlink{compiler-macros_8h_ab037b0107bb83cacaf7a8437564798f6}{F\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+T\+A\+B\+LE}} const \mbox{\hyperlink{autohint_8h_ac088a06c8327a7a1e08a271fc29c5837}{F\+T\+\_\+\+Auto\+Hinter\+\_\+\+Interface\+Rec}}  class\+\_\+;
+\item 
+\#define \mbox{\hyperlink{autohint_8h_a68c4d9a45e28a0273d924dd1664eb874}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+A\+U\+T\+O\+H\+I\+N\+T\+E\+R\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}}( class\+\_\+,  reset\+\_\+face\+\_\+,  get\+\_\+global\+\_\+hints\+\_\+,  done\+\_\+global\+\_\+hints\+\_\+,  load\+\_\+glyph\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef typedef\+F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER struct F\+T\+\_\+\+Auto\+Hinter\+Rec\+\_\+ $\ast$ \mbox{\hyperlink{autohint_8h_a9277b7b6326ea2e0bf5d42e9f5a73a53}{F\+T\+\_\+\+Auto\+Hinter}}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{autohint_8h_adeafb5d8f1f0f2ab93c620c9693c8525}{F\+T\+\_\+\+Auto\+Hinter\+\_\+\+Global\+Get\+Func}}) (\mbox{\hyperlink{autohint_8h_a9277b7b6326ea2e0bf5d42e9f5a73a53}{F\+T\+\_\+\+Auto\+Hinter}} hinter, \mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, void $\ast$$\ast$global\+\_\+hints, long $\ast$global\+\_\+len)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{autohint_8h_a493eeb1b87871aa9f38d2f6190c455d6}{F\+T\+\_\+\+Auto\+Hinter\+\_\+\+Global\+Done\+Func}}) (\mbox{\hyperlink{autohint_8h_a9277b7b6326ea2e0bf5d42e9f5a73a53}{F\+T\+\_\+\+Auto\+Hinter}} hinter, void $\ast$global)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{autohint_8h_af5d22f50e557df33ebf5ea62685d52d2}{F\+T\+\_\+\+Auto\+Hinter\+\_\+\+Global\+Reset\+Func}}) (\mbox{\hyperlink{autohint_8h_a9277b7b6326ea2e0bf5d42e9f5a73a53}{F\+T\+\_\+\+Auto\+Hinter}} hinter, \mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{autohint_8h_a9f82e1fc8ba762df81bacba263999fcb}{F\+T\+\_\+\+Auto\+Hinter\+\_\+\+Glyph\+Load\+Func}}) (\mbox{\hyperlink{autohint_8h_a9277b7b6326ea2e0bf5d42e9f5a73a53}{F\+T\+\_\+\+Auto\+Hinter}} hinter, \mbox{\hyperlink{freetype_8h_a768daa0d9c3fa499e6c37034ee9f2ca3}{F\+T\+\_\+\+Glyph\+Slot}} slot, \mbox{\hyperlink{freetype_8h_a791d0ff3273ca9628a523efd98d138c1}{F\+T\+\_\+\+Size}} size, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} glyph\+\_\+index, F\+T\+\_\+\+Int32 load\+\_\+flags)
+\item 
+typedef struct \mbox{\hyperlink{struct_f_t___auto_hinter___interface_rec__}{F\+T\+\_\+\+Auto\+Hinter\+\_\+\+Interface\+Rec\+\_\+}} \mbox{\hyperlink{autohint_8h_ac088a06c8327a7a1e08a271fc29c5837}{F\+T\+\_\+\+Auto\+Hinter\+\_\+\+Interface\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_f_t___auto_hinter___interface_rec__}{F\+T\+\_\+\+Auto\+Hinter\+\_\+\+Interface\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{autohint_8h_a06d5a712cb96585035bbf45393c0bea6}{F\+T\+\_\+\+Auto\+Hinter\+\_\+\+Interface}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{autohint_8h_adcda1e5e022d2ec1213d3bdd2da90fad}\label{autohint_8h_adcda1e5e022d2ec1213d3bdd2da90fad}} 
+\index{autohint.h@{autohint.h}!FT\_DECLARE\_AUTOHINTER\_INTERFACE@{FT\_DECLARE\_AUTOHINTER\_INTERFACE}}
+\index{FT\_DECLARE\_AUTOHINTER\_INTERFACE@{FT\_DECLARE\_AUTOHINTER\_INTERFACE}!autohint.h@{autohint.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DECLARE\_AUTOHINTER\_INTERFACE}{FT\_DECLARE\_AUTOHINTER\_INTERFACE}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+U\+T\+O\+H\+I\+N\+T\+E\+R\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE(\begin{DoxyParamCaption}\item[{}]{class\+\_\+ }\end{DoxyParamCaption})~  \mbox{\hyperlink{compiler-macros_8h_ab037b0107bb83cacaf7a8437564798f6}{F\+T\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+T\+A\+B\+LE}} const \mbox{\hyperlink{autohint_8h_ac088a06c8327a7a1e08a271fc29c5837}{F\+T\+\_\+\+Auto\+Hinter\+\_\+\+Interface\+Rec}}  class\+\_\+;}
+
+\mbox{\Hypertarget{autohint_8h_a68c4d9a45e28a0273d924dd1664eb874}\label{autohint_8h_a68c4d9a45e28a0273d924dd1664eb874}} 
+\index{autohint.h@{autohint.h}!FT\_DEFINE\_AUTOHINTER\_INTERFACE@{FT\_DEFINE\_AUTOHINTER\_INTERFACE}}
+\index{FT\_DEFINE\_AUTOHINTER\_INTERFACE@{FT\_DEFINE\_AUTOHINTER\_INTERFACE}!autohint.h@{autohint.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_AUTOHINTER\_INTERFACE}{FT\_DEFINE\_AUTOHINTER\_INTERFACE}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+A\+U\+T\+O\+H\+I\+N\+T\+E\+R\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{reset\+\_\+face\+\_\+,  }\item[{}]{get\+\_\+global\+\_\+hints\+\_\+,  }\item[{}]{done\+\_\+global\+\_\+hints\+\_\+,  }\item[{}]{load\+\_\+glyph\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  FT\_CALLBACK\_TABLE\_DEF                       \(\backslash\)}
+\DoxyCodeLine{  const \mbox{\hyperlink{struct_f_t___auto_hinter___interface_rec__}{FT\_AutoHinter\_InterfaceRec}}  class\_ =  \(\backslash\)}
+\DoxyCodeLine{  \{                                           \(\backslash\)}
+\DoxyCodeLine{    reset\_face\_,                              \(\backslash\)}
+\DoxyCodeLine{    get\_global\_hints\_,                        \(\backslash\)}
+\DoxyCodeLine{    done\_global\_hints\_,                       \(\backslash\)}
+\DoxyCodeLine{    load\_glyph\_                               \(\backslash\)}
+\DoxyCodeLine{  \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{autohint_8h_a9277b7b6326ea2e0bf5d42e9f5a73a53}\label{autohint_8h_a9277b7b6326ea2e0bf5d42e9f5a73a53}} 
+\index{autohint.h@{autohint.h}!FT\_AutoHinter@{FT\_AutoHinter}}
+\index{FT\_AutoHinter@{FT\_AutoHinter}!autohint.h@{autohint.h}}
+\doxysubsubsection{\texorpdfstring{FT\_AutoHinter}{FT\_AutoHinter}}
+{\footnotesize\ttfamily typedef typedef\+F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER struct F\+T\+\_\+\+Auto\+Hinter\+Rec\+\_\+$\ast$ \mbox{\hyperlink{autohint_8h_a9277b7b6326ea2e0bf5d42e9f5a73a53}{F\+T\+\_\+\+Auto\+Hinter}}}
+
+\mbox{\Hypertarget{autohint_8h_a493eeb1b87871aa9f38d2f6190c455d6}\label{autohint_8h_a493eeb1b87871aa9f38d2f6190c455d6}} 
+\index{autohint.h@{autohint.h}!FT\_AutoHinter\_GlobalDoneFunc@{FT\_AutoHinter\_GlobalDoneFunc}}
+\index{FT\_AutoHinter\_GlobalDoneFunc@{FT\_AutoHinter\_GlobalDoneFunc}!autohint.h@{autohint.h}}
+\doxysubsubsection{\texorpdfstring{FT\_AutoHinter\_GlobalDoneFunc}{FT\_AutoHinter\_GlobalDoneFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ F\+T\+\_\+\+Auto\+Hinter\+\_\+\+Global\+Done\+Func) (\mbox{\hyperlink{autohint_8h_a9277b7b6326ea2e0bf5d42e9f5a73a53}{F\+T\+\_\+\+Auto\+Hinter}} hinter, void $\ast$global)}
+
+\mbox{\Hypertarget{autohint_8h_adeafb5d8f1f0f2ab93c620c9693c8525}\label{autohint_8h_adeafb5d8f1f0f2ab93c620c9693c8525}} 
+\index{autohint.h@{autohint.h}!FT\_AutoHinter\_GlobalGetFunc@{FT\_AutoHinter\_GlobalGetFunc}}
+\index{FT\_AutoHinter\_GlobalGetFunc@{FT\_AutoHinter\_GlobalGetFunc}!autohint.h@{autohint.h}}
+\doxysubsubsection{\texorpdfstring{FT\_AutoHinter\_GlobalGetFunc}{FT\_AutoHinter\_GlobalGetFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ F\+T\+\_\+\+Auto\+Hinter\+\_\+\+Global\+Get\+Func) (\mbox{\hyperlink{autohint_8h_a9277b7b6326ea2e0bf5d42e9f5a73a53}{F\+T\+\_\+\+Auto\+Hinter}} hinter, \mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, void $\ast$$\ast$global\+\_\+hints, long $\ast$global\+\_\+len)}
+
+\mbox{\Hypertarget{autohint_8h_af5d22f50e557df33ebf5ea62685d52d2}\label{autohint_8h_af5d22f50e557df33ebf5ea62685d52d2}} 
+\index{autohint.h@{autohint.h}!FT\_AutoHinter\_GlobalResetFunc@{FT\_AutoHinter\_GlobalResetFunc}}
+\index{FT\_AutoHinter\_GlobalResetFunc@{FT\_AutoHinter\_GlobalResetFunc}!autohint.h@{autohint.h}}
+\doxysubsubsection{\texorpdfstring{FT\_AutoHinter\_GlobalResetFunc}{FT\_AutoHinter\_GlobalResetFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ F\+T\+\_\+\+Auto\+Hinter\+\_\+\+Global\+Reset\+Func) (\mbox{\hyperlink{autohint_8h_a9277b7b6326ea2e0bf5d42e9f5a73a53}{F\+T\+\_\+\+Auto\+Hinter}} hinter, \mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face)}
+
+\mbox{\Hypertarget{autohint_8h_a9f82e1fc8ba762df81bacba263999fcb}\label{autohint_8h_a9f82e1fc8ba762df81bacba263999fcb}} 
+\index{autohint.h@{autohint.h}!FT\_AutoHinter\_GlyphLoadFunc@{FT\_AutoHinter\_GlyphLoadFunc}}
+\index{FT\_AutoHinter\_GlyphLoadFunc@{FT\_AutoHinter\_GlyphLoadFunc}!autohint.h@{autohint.h}}
+\doxysubsubsection{\texorpdfstring{FT\_AutoHinter\_GlyphLoadFunc}{FT\_AutoHinter\_GlyphLoadFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+Auto\+Hinter\+\_\+\+Glyph\+Load\+Func) (\mbox{\hyperlink{autohint_8h_a9277b7b6326ea2e0bf5d42e9f5a73a53}{F\+T\+\_\+\+Auto\+Hinter}} hinter, \mbox{\hyperlink{freetype_8h_a768daa0d9c3fa499e6c37034ee9f2ca3}{F\+T\+\_\+\+Glyph\+Slot}} slot, \mbox{\hyperlink{freetype_8h_a791d0ff3273ca9628a523efd98d138c1}{F\+T\+\_\+\+Size}} size, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} glyph\+\_\+index, F\+T\+\_\+\+Int32 load\+\_\+flags)}
+
+\mbox{\Hypertarget{autohint_8h_a06d5a712cb96585035bbf45393c0bea6}\label{autohint_8h_a06d5a712cb96585035bbf45393c0bea6}} 
+\index{autohint.h@{autohint.h}!FT\_AutoHinter\_Interface@{FT\_AutoHinter\_Interface}}
+\index{FT\_AutoHinter\_Interface@{FT\_AutoHinter\_Interface}!autohint.h@{autohint.h}}
+\doxysubsubsection{\texorpdfstring{FT\_AutoHinter\_Interface}{FT\_AutoHinter\_Interface}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_f_t___auto_hinter___interface_rec__}{F\+T\+\_\+\+Auto\+Hinter\+\_\+\+Interface\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{autohint_8h_a06d5a712cb96585035bbf45393c0bea6}{F\+T\+\_\+\+Auto\+Hinter\+\_\+\+Interface}}}
+
+\mbox{\Hypertarget{autohint_8h_ac088a06c8327a7a1e08a271fc29c5837}\label{autohint_8h_ac088a06c8327a7a1e08a271fc29c5837}} 
+\index{autohint.h@{autohint.h}!FT\_AutoHinter\_InterfaceRec@{FT\_AutoHinter\_InterfaceRec}}
+\index{FT\_AutoHinter\_InterfaceRec@{FT\_AutoHinter\_InterfaceRec}!autohint.h@{autohint.h}}
+\doxysubsubsection{\texorpdfstring{FT\_AutoHinter\_InterfaceRec}{FT\_AutoHinter\_InterfaceRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_f_t___auto_hinter___interface_rec__}{F\+T\+\_\+\+Auto\+Hinter\+\_\+\+Interface\+Rec\+\_\+}} \mbox{\hyperlink{autohint_8h_ac088a06c8327a7a1e08a271fc29c5837}{F\+T\+\_\+\+Auto\+Hinter\+\_\+\+Interface\+Rec}}}
+

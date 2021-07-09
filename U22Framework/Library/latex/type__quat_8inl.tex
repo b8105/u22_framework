@@ -1,0 +1,75 @@
+\hypertarget{type__quat_8inl}{}\doxysection{External/\+G\+L\+M/detail/type\+\_\+quat.inl ファイル}
+\label{type__quat_8inl}\index{External/GLM/detail/type\_quat.inl@{External/GLM/detail/type\_quat.inl}}
+{\ttfamily \#include \char`\"{}../trigonometric.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../exponential.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../ext/quaternion\+\_\+geometric.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+type\+\_\+quat.\+inl の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{type__quat_8inl__incl}
+\end{center}
+\end{figure}
+被依存関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{type__quat_8inl__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structglm_1_1detail_1_1gen_type_trait_3_01qua_3_01_t_01_4_01_4}{glm\+::detail\+::gen\+Type\+Trait$<$ qua$<$ T $>$ $>$}}
+\item 
+struct \mbox{\hyperlink{structglm_1_1detail_1_1compute__dot_3_01qua_3_01_t_00_01_q_01_4_00_01_t_00_01_aligned_01_4}{glm\+::detail\+::compute\+\_\+dot$<$ qua$<$ T, Q $>$, T, Aligned $>$}}
+\item 
+struct \mbox{\hyperlink{structglm_1_1detail_1_1compute__quat__add}{glm\+::detail\+::compute\+\_\+quat\+\_\+add$<$ T, Q, Aligned $>$}}
+\item 
+struct \mbox{\hyperlink{structglm_1_1detail_1_1compute__quat__sub}{glm\+::detail\+::compute\+\_\+quat\+\_\+sub$<$ T, Q, Aligned $>$}}
+\item 
+struct \mbox{\hyperlink{structglm_1_1detail_1_1compute__quat__mul__scalar}{glm\+::detail\+::compute\+\_\+quat\+\_\+mul\+\_\+scalar$<$ T, Q, Aligned $>$}}
+\item 
+struct \mbox{\hyperlink{structglm_1_1detail_1_1compute__quat__div__scalar}{glm\+::detail\+::compute\+\_\+quat\+\_\+div\+\_\+scalar$<$ T, Q, Aligned $>$}}
+\item 
+struct \mbox{\hyperlink{structglm_1_1detail_1_1compute__quat__mul__vec4}{glm\+::detail\+::compute\+\_\+quat\+\_\+mul\+\_\+vec4$<$ T, Q, Aligned $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{名前空間}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceglm}{glm}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{group__core}{Core features}} \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespaceglm_1_1detail}{glm\+::detail}}
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} qua$<$ T, Q $>$ \mbox{\hyperlink{namespaceglm_a43ce2c7db4ee404f0e4e4935fe254815}{glm\+::operator+}} (qua$<$ T, Q $>$ const \&q)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} qua$<$ T, Q $>$ \mbox{\hyperlink{namespaceglm_a8d63f0e3200c76449a3076c9a669cd32}{glm\+::operator-\/}} (qua$<$ T, Q $>$ const \&q)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} qua$<$ T, Q $>$ \mbox{\hyperlink{namespaceglm_acc1520ef0d9ef852fe341aba7931fdb4}{glm\+::operator+}} (qua$<$ T, Q $>$ const \&q, qua$<$ T, Q $>$ const \&p)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} qua$<$ T, Q $>$ \mbox{\hyperlink{namespaceglm_addb38153f7e1e505c1268def8f902a86}{glm\+::operator-\/}} (qua$<$ T, Q $>$ const \&q, qua$<$ T, Q $>$ const \&p)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} qua$<$ T, Q $>$ \mbox{\hyperlink{namespaceglm_a97c427b323417e9231df690ab1216416}{glm\+::operator$\ast$}} (qua$<$ T, Q $>$ const \&q, qua$<$ T, Q $>$ const \&p)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} vec$<$ 3, T, Q $>$ \mbox{\hyperlink{namespaceglm_a24e6e43969c0bf461c4ae8fbc881153b}{glm\+::operator$\ast$}} (qua$<$ T, Q $>$ const \&q, vec$<$ 3, T, Q $>$ const \&v)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} vec$<$ 3, T, Q $>$ \mbox{\hyperlink{namespaceglm_a140f6fdab11e45a40ee9c90ab2904245}{glm\+::operator$\ast$}} (vec$<$ 3, T, Q $>$ const \&v, qua$<$ T, Q $>$ const \&q)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} vec$<$ 4, T, Q $>$ \mbox{\hyperlink{namespaceglm_aa05b4d25e21b71e2e0113b7b8766ed68}{glm\+::operator$\ast$}} (qua$<$ T, Q $>$ const \&q, vec$<$ 4, T, Q $>$ const \&v)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} vec$<$ 4, T, Q $>$ \mbox{\hyperlink{namespaceglm_adcc10f1d1106659276ebfb12cfb45c92}{glm\+::operator$\ast$}} (vec$<$ 4, T, Q $>$ const \&v, qua$<$ T, Q $>$ const \&q)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} qua$<$ T, Q $>$ \mbox{\hyperlink{namespaceglm_a7c9e3ee589bea28fea1e155dca6ae7ff}{glm\+::operator$\ast$}} (qua$<$ T, Q $>$ const \&q, T const \&s)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} qua$<$ T, Q $>$ \mbox{\hyperlink{namespaceglm_a93008862438f282049b1c8c339344450}{glm\+::operator$\ast$}} (T const \&s, qua$<$ T, Q $>$ const \&q)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} qua$<$ T, Q $>$ \mbox{\hyperlink{namespaceglm_a0d6e9a2a7f06c5d9313729c9f7f83db9}{glm\+::operator/}} (qua$<$ T, Q $>$ const \&q, T const \&s)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} \mbox{\hyperlink{setup_8hpp_a08b807947b47031d3a511f03f89645ad}{G\+L\+M\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR}} bool \mbox{\hyperlink{namespaceglm_a09f216c6931788709a14bfe1652ef803}{glm\+::operator==}} (qua$<$ T, Q $>$ const \&q1, qua$<$ T, Q $>$ const \&q2)
+\item 
+{\footnotesize template$<$typename T , qualifier Q$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} \mbox{\hyperlink{setup_8hpp_a08b807947b47031d3a511f03f89645ad}{G\+L\+M\+\_\+\+C\+O\+N\+S\+T\+E\+X\+PR}} bool \mbox{\hyperlink{namespaceglm_a32b2f3cd7c0601736aa587704c5f6d86}{glm\+::operator!=}} (qua$<$ T, Q $>$ const \&q1, qua$<$ T, Q $>$ const \&q2)
+\end{DoxyCompactItemize}

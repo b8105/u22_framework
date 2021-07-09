@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: Graphics/CircleRenderer.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64f7452aef2cdad98d34a70f5ea329e2.html">Graphics</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">CircleRenderer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_circle_renderer_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef U22_GRAPHICS_CIRCLE_RENDERER_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define U22_GRAPHICS_CIRCLE_RENDERER_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../Math/Vector2.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../Math/Vector4.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../Shape/Circle.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_vertex_array_8h.html">VertexArray.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_effect_shader_8h.html">EffectShader.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_camera_8h.html">Camera.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceu22_1_1graphics.html">u22::graphics</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classu22_1_1graphics_1_1_circle_renderer.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classu22_1_1graphics_1_1_circle_renderer.html">CircleRenderer</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classu22_1_1graphics_1_1_vertex_array.html">u22::graphics::VertexArray</a> _line_vao;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classu22_1_1graphics_1_1_vertex_array.html">u22::graphics::VertexArray</a> _fill_vao;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    std::weak_ptr&lt;u22::graphics::EffectShader&gt; _shader;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">bool</span> GenerateLineVAO(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">bool</span> GenerateFillVAO(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">bool</span> RenderCircle(<span class="keyword">const</span> <a class="code" href="classu22_1_1shape_1_1_circle.html">u22::shape::Circle</a>&amp; circle, <span class="keyword">const</span> <a class="code" href="classu22_1_1math_1_1_vector4_3_01float_01_4.html">u22::math::Vector4F</a>&amp; <a class="code" href="namespacecolor.html">color</a>,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                         <span class="keyword">const</span> <a class="code" href="classu22_1_1graphics_1_1_camera.html">u22::graphics::Camera</a>&amp; camera, <span class="keyword">const</span> <a class="code" href="classu22_1_1graphics_1_1_vertex_array.html">u22::graphics::VertexArray</a>&amp; vao) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classu22_1_1graphics_1_1_circle_renderer.html#a540d41f24868f0673fdae8bc0646a76d">CircleRenderer</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classu22_1_1graphics_1_1_circle_renderer.html#a86fbfdce2c6b6cac3fedcdcfa3f5df08">~CircleRenderer</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1graphics_1_1_circle_renderer.html#a593b7c1d2d49fbbb04c72f1d27a1c546">Initialize</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//bool Render(const u22::shape::Circle&amp; circle, const u22::math::Vector4F&amp; color, const u22::graphics::Camera&amp; camera) const;</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"></span>    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1graphics_1_1_circle_renderer.html#ad03585ac142ed61c78a6d7c9114cbf5b">RenderLineCircle</a>(<span class="keyword">const</span> <a class="code" href="classu22_1_1shape_1_1_circle.html">u22::shape::Circle</a>&amp; circle, <span class="keyword">const</span> <a class="code" href="classu22_1_1math_1_1_vector4_3_01float_01_4.html">u22::math::Vector4F</a>&amp; <a class="code" href="namespacecolor.html">color</a>, <span class="keyword">const</span> <a class="code" href="classu22_1_1graphics_1_1_camera.html">u22::graphics::Camera</a>&amp; camera) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1graphics_1_1_circle_renderer.html#a052e0f77c924db88ad64c9df6828a537">RenderFillCircle</a>(<span class="keyword">const</span> <a class="code" href="classu22_1_1shape_1_1_circle.html">u22::shape::Circle</a>&amp; circle, <span class="keyword">const</span> <a class="code" href="classu22_1_1math_1_1_vector4_3_01float_01_4.html">u22::math::Vector4F</a>&amp; <a class="code" href="namespacecolor.html">color</a>, <span class="keyword">const</span> <a class="code" href="classu22_1_1graphics_1_1_camera.html">u22::graphics::Camera</a>&amp; camera) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1graphics_1_1_circle_renderer.html#a9f11a2db03fa069fbad3778c1d348a03">Release</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif // !U22_GRAPHICS_CIRCLE_RENDERER_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="anamespaceu22_1_1graphics_html_aeac9e83f7ce88cab997836ce2a61f77ea30954d90085f6eaaf5817917fc5fecb3"><div class="ttname"><a href="namespaceu22_1_1graphics.html#aeac9e83f7ce88cab997836ce2a61f77ea30954d90085f6eaaf5817917fc5fecb3">u22::graphics::EffectShaderType::Circle</a></div><div class="ttdeci">@ Circle</div></div>
+<div class="ttc" id="anamespaceu22_1_1graphics_html"><div class="ttname"><a href="namespaceu22_1_1graphics.html">u22::graphics</a></div><div class="ttdef"><b>Definition:</b> Buffer.h:8</div></div>
+<div class="ttc" id="agroup__core__vector_html_ga4320b87e41013b7e875f845f439fc498"><div class="ttname"><a href="group__core__vector.html#ga4320b87e41013b7e875f845f439fc498">glm::vec3</a></div><div class="ttdeci">vec&lt; 3, float, defaultp &gt; vec3</div><div class="ttdef"><b>Definition:</b> vector_float3.hpp:15</div></div>
+<div class="ttc" id="anamespacecolor_html"><div class="ttname"><a href="namespacecolor.html">color</a></div><div class="ttdef"><b>Definition:</b> MathDefine.h:52</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_1_1def_html_a22a11f69f910342aee312931bf1408df"><div class="ttname"><a href="namespaceu22_1_1math_1_1def.html#a22a11f69f910342aee312931bf1408df">u22::math::def::kPi</a></div><div class="ttdeci">constexpr float kPi</div><div class="ttdef"><b>Definition:</b> MathDefine.h:11</div></div>
+<div class="ttc" id="aclassu22_1_1math_1_1_vector4_3_01float_01_4_html"><div class="ttname"><a href="classu22_1_1math_1_1_vector4_3_01float_01_4.html">u22::math::Vector4&lt; float &gt;</a></div><div class="ttdef"><b>Definition:</b> Vector4.h:16</div></div>
+<div class="ttc" id="a_circle_renderer_8h_html"><div class="ttname"><a href="_circle_renderer_8h.html">CircleRenderer.h</a></div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_circle_renderer_html_a052e0f77c924db88ad64c9df6828a537"><div class="ttname"><a href="classu22_1_1graphics_1_1_circle_renderer.html#a052e0f77c924db88ad64c9df6828a537">u22::graphics::CircleRenderer::RenderFillCircle</a></div><div class="ttdeci">bool RenderFillCircle(const u22::shape::Circle &amp;circle, const u22::math::Vector4F &amp;color, const u22::graphics::Camera &amp;camera) const</div><div class="ttdoc">描画</div><div class="ttdef"><b>Definition:</b> CircleRenderer.cpp:118</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_vertex_array_html_a7c5adb58fea162de044d4b714dd29150"><div class="ttname"><a href="classu22_1_1graphics_1_1_vertex_array.html#a7c5adb58fea162de044d4b714dd29150">u22::graphics::VertexArray::UnBind</a></div><div class="ttdeci">void UnBind(void) const</div><div class="ttdoc">解除</div><div class="ttdef"><b>Definition:</b> VertexArray.cpp:50</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_html_abd3e525891449648c8321ac9495844db"><div class="ttname"><a href="namespaceu22_1_1math.html#abd3e525891449648c8321ac9495844db">u22::math::Vector2F</a></div><div class="ttdeci">Vector2&lt; float &gt; Vector2F</div><div class="ttdef"><b>Definition:</b> Vector2.h:61</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_circle_renderer_html_a86fbfdce2c6b6cac3fedcdcfa3f5df08"><div class="ttname"><a href="classu22_1_1graphics_1_1_circle_renderer.html#a86fbfdce2c6b6cac3fedcdcfa3f5df08">u22::graphics::CircleRenderer::~CircleRenderer</a></div><div class="ttdeci">~CircleRenderer()</div><div class="ttdoc">デストラクタ</div><div class="ttdef"><b>Definition:</b> CircleRenderer.cpp:95</div></div>
+<div class="ttc" id="astructu22_1_1graphics_1_1_color_vertex_html"><div class="ttname"><a href="structu22_1_1graphics_1_1_color_vertex.html">u22::graphics::ColorVertex</a></div><div class="ttdef"><b>Definition:</b> Vertex.h:14</div></div>
+<div class="ttc" id="a_vertex_array_8h_html"><div class="ttname"><a href="_vertex_array_8h.html">VertexArray.h</a></div></div>
+<div class="ttc" id="aclassu22_1_1shape_1_1_circle_html_a742fc9c8e32fb2fa0eb49915a3998805"><div class="ttname"><a href="classu22_1_1shape_1_1_circle.html#a742fc9c8e32fb2fa0eb49915a3998805">u22::shape::Circle::position</a></div><div class="ttdeci">u22::math::Vector2F position</div><div class="ttdoc">位置</div><div class="ttdef"><b>Definition:</b> Circle.h:20</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_vertex_array_html_abfb832b9a77a36b0c4d567672cfedcbd"><div class="ttname"><a href="classu22_1_1graphics_1_1_vertex_array.html#abfb832b9a77a36b0c4d567672cfedcbd">u22::graphics::VertexArray::Delete</a></div><div class="ttdeci">void Delete(void)</div><div class="ttdoc">削除</div><div class="ttdef"><b>Definition:</b> VertexArray.cpp:41</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_vertex_array_html_a62cd080f3866101666b1637c8c77a401"><div class="ttname"><a href="classu22_1_1graphics_1_1_vertex_array.html#a62cd080f3866101666b1637c8c77a401">u22::graphics::VertexArray::ToLineStrip</a></div><div class="ttdeci">void ToLineStrip(void)</div><div class="ttdoc">トポロジーをLINE_STRIPにする</div><div class="ttdef"><b>Definition:</b> VertexArray.cpp:66</div></div>
+<div class="ttc" id="aclassu22_1_1shape_1_1_circle_html_ad2ce7c791304ba0d4956b2b2b73c7c6d"><div class="ttname"><a href="classu22_1_1shape_1_1_circle.html#ad2ce7c791304ba0d4956b2b2b73c7c6d">u22::shape::Circle::radius</a></div><div class="ttdeci">float radius</div><div class="ttdoc">半径</div><div class="ttdef"><b>Definition:</b> Circle.h:24</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_circle_renderer_html"><div class="ttname"><a href="classu22_1_1graphics_1_1_circle_renderer.html">u22::graphics::CircleRenderer</a></div><div class="ttdef"><b>Definition:</b> CircleRenderer.h:16</div></div>
+<div class="ttc" id="astructu22_1_1_framework_info_html_ab4e65744eb3b47cdfd9babb95104b383"><div class="ttname"><a href="structu22_1_1_framework_info.html#ab4e65744eb3b47cdfd9babb95104b383">u22::FrameworkInfo::graphics</a></div><div class="ttdeci">std::shared_ptr&lt; u22::graphics::Graphics &gt; graphics</div><div class="ttdoc">グラフィックス</div><div class="ttdef"><b>Definition:</b> Framework.h:39</div></div>
+<div class="ttc" id="aclassu22_1_1shape_1_1_circle_html"><div class="ttname"><a href="classu22_1_1shape_1_1_circle.html">u22::shape::Circle</a></div><div class="ttdef"><b>Definition:</b> Circle.h:9</div></div>
+<div class="ttc" id="agroup__gtc__type__precision_html_ga822ca53a9ad412504532838906276a99"><div class="ttname"><a href="group__gtc__type__precision.html#ga822ca53a9ad412504532838906276a99">glm::uint32_t</a></div><div class="ttdeci">uint32 uint32_t</div><div class="ttdef"><b>Definition:</b> fwd.hpp:129</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_vertex_array_html"><div class="ttname"><a href="classu22_1_1graphics_1_1_vertex_array.html">u22::graphics::VertexArray</a></div><div class="ttdef"><b>Definition:</b> VertexArray.h:14</div></div>
+<div class="ttc" id="astructglm_1_1vec_html"><div class="ttname"><a href="structglm_1_1vec.html">glm::vec</a></div><div class="ttdef"><b>Definition:</b> qualifier.hpp:35</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_camera_html_aae795c05e9a9200053108a6f7e93bf55"><div class="ttname"><a href="classu22_1_1graphics_1_1_camera.html#aae795c05e9a9200053108a6f7e93bf55">u22::graphics::Camera::GetViewProjectionMatrix</a></div><div class="ttdeci">glm::mat4 GetViewProjectionMatrix(void) const</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> Camera.cpp:49</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_circle_renderer_html_a9f11a2db03fa069fbad3778c1d348a03"><div class="ttname"><a href="classu22_1_1graphics_1_1_circle_renderer.html#a9f11a2db03fa069fbad3778c1d348a03">u22::graphics::CircleRenderer::Release</a></div><div class="ttdeci">bool Release(void)</div><div class="ttdoc">解放</div><div class="ttdef"><b>Definition:</b> CircleRenderer.cpp:122</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_vertex_array_html_a8f70faf0b94cfdd54a411fe3ece39df3"><div class="ttname"><a href="classu22_1_1graphics_1_1_vertex_array.html#a8f70faf0b94cfdd54a411fe3ece39df3">u22::graphics::VertexArray::Bind</a></div><div class="ttdeci">void Bind(void) const</div><div class="ttdoc">使用</div><div class="ttdef"><b>Definition:</b> VertexArray.cpp:46</div></div>
+<div class="ttc" id="a_graphics_8h_html"><div class="ttname"><a href="_graphics_8h.html">Graphics.h</a></div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_vertex_array_html_a269e4092ef113f118f4b65b84110ed34"><div class="ttname"><a href="classu22_1_1graphics_1_1_vertex_array.html#a269e4092ef113f118f4b65b84110ed34">u22::graphics::VertexArray::Generate</a></div><div class="ttdeci">bool Generate(const std::vector&lt; Vertex &gt; &amp;vertices, const std::vector&lt; std::uint32_t &gt; &amp;indices)</div><div class="ttdoc">生成</div><div class="ttdef"><b>Definition:</b> VertexArray.h:62</div></div>
+<div class="ttc" id="agroup__core__vector_html_ga6ebf1ff1f152ff34c800b6997d5f311f"><div class="ttname"><a href="group__core__vector.html#ga6ebf1ff1f152ff34c800b6997d5f311f">glm::vec2</a></div><div class="ttdeci">vec&lt; 2, float, defaultp &gt; vec2</div><div class="ttdef"><b>Definition:</b> vector_float2.hpp:15</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_camera_html"><div class="ttname"><a href="classu22_1_1graphics_1_1_camera.html">u22::graphics::Camera</a></div><div class="ttdef"><b>Definition:</b> Camera.h:12</div></div>
+<div class="ttc" id="a_camera_8h_html"><div class="ttname"><a href="_camera_8h.html">Camera.h</a></div></div>
+<div class="ttc" id="agroup__ext__matrix__transform_html_ga1a4ecc4ad82652b8fb14dcb087879284"><div class="ttname"><a href="group__ext__matrix__transform.html#ga1a4ecc4ad82652b8fb14dcb087879284">glm::translate</a></div><div class="ttdeci">GLM_FUNC_DECL mat&lt; 4, 4, T, Q &gt; translate(mat&lt; 4, 4, T, Q &gt; const &amp;m, vec&lt; 3, T, Q &gt; const &amp;v)</div><div class="ttdef"><b>Definition:</b> matrix_transform.inl:10</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_vertex_array_html_a3712aa7bf3fec50b34cd8dcf71b6fe31"><div class="ttname"><a href="classu22_1_1graphics_1_1_vertex_array.html#a3712aa7bf3fec50b34cd8dcf71b6fe31">u22::graphics::VertexArray::DrawElements</a></div><div class="ttdeci">void DrawElements(void) const</div><div class="ttdoc">描画</div><div class="ttdef"><b>Definition:</b> VertexArray.cpp:54</div></div>
+<div class="ttc" id="a_effect_shader_8h_html"><div class="ttname"><a href="_effect_shader_8h.html">EffectShader.h</a></div></div>
+<div class="ttc" id="aclassu22_1_1_framework_html_a4178f3ac4244aa173e022c627a7fd658"><div class="ttname"><a href="classu22_1_1_framework.html#a4178f3ac4244aa173e022c627a7fd658">u22::Framework::GetInfomation</a></div><div class="ttdeci">static u22::FrameworkInfo * GetInfomation(void)</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> Framework.cpp:7</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_circle_renderer_html_a540d41f24868f0673fdae8bc0646a76d"><div class="ttname"><a href="classu22_1_1graphics_1_1_circle_renderer.html#a540d41f24868f0673fdae8bc0646a76d">u22::graphics::CircleRenderer::CircleRenderer</a></div><div class="ttdeci">CircleRenderer()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> CircleRenderer.cpp:89</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_circle_renderer_html_a593b7c1d2d49fbbb04c72f1d27a1c546"><div class="ttname"><a href="classu22_1_1graphics_1_1_circle_renderer.html#a593b7c1d2d49fbbb04c72f1d27a1c546">u22::graphics::CircleRenderer::Initialize</a></div><div class="ttdeci">bool Initialize(void)</div><div class="ttdoc">初期化</div><div class="ttdef"><b>Definition:</b> CircleRenderer.cpp:98</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_circle_renderer_html_ad03585ac142ed61c78a6d7c9114cbf5b"><div class="ttname"><a href="classu22_1_1graphics_1_1_circle_renderer.html#ad03585ac142ed61c78a6d7c9114cbf5b">u22::graphics::CircleRenderer::RenderLineCircle</a></div><div class="ttdeci">bool RenderLineCircle(const u22::shape::Circle &amp;circle, const u22::math::Vector4F &amp;color, const u22::graphics::Camera &amp;camera) const</div><div class="ttdoc">描画</div><div class="ttdef"><b>Definition:</b> CircleRenderer.cpp:114</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

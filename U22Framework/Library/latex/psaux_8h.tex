@@ -1,0 +1,1194 @@
+\hypertarget{psaux_8h}{}\doxysection{freetype/internal/psaux.h ファイル}
+\label{psaux_8h}\index{freetype/internal/psaux.h@{freetype/internal/psaux.h}}
+{\ttfamily \#include $<$freetype/internal/ftobjs.\+h$>$}\newline
+{\ttfamily \#include $<$freetype/internal/t1types.\+h$>$}\newline
+{\ttfamily \#include $<$freetype/internal/fthash.\+h$>$}\newline
+{\ttfamily \#include $<$freetype/internal/tttypes.\+h$>$}\newline
+{\ttfamily \#include $<$freetype/internal/services/svpscmap.\+h$>$}\newline
+{\ttfamily \#include $<$freetype/internal/cfftypes.\+h$>$}\newline
+{\ttfamily \#include $<$freetype/internal/cffotypes.\+h$>$}\newline
+psaux.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{psaux_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_p_s___driver_rec__}{P\+S\+\_\+\+Driver\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_p_s___table___funcs_rec__}{P\+S\+\_\+\+Table\+\_\+\+Funcs\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_p_s___table_rec__}{P\+S\+\_\+\+Table\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t1___token_rec__}{T1\+\_\+\+Token\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t1___field_rec__}{T1\+\_\+\+Field\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_p_s___parser___funcs_rec__}{P\+S\+\_\+\+Parser\+\_\+\+Funcs\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_p_s___parser_rec__}{P\+S\+\_\+\+Parser\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_p_s___builder___funcs_rec__}{P\+S\+\_\+\+Builder\+\_\+\+Funcs\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_p_s___builder__}{P\+S\+\_\+\+Builder\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_p_s___decoder___zone__}{P\+S\+\_\+\+Decoder\+\_\+\+Zone\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_p_s___decoder__}{P\+S\+\_\+\+Decoder\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t1___builder___funcs_rec__}{T1\+\_\+\+Builder\+\_\+\+Funcs\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t1___builder_rec__}{T1\+\_\+\+Builder\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t1___decoder___zone_rec__}{T1\+\_\+\+Decoder\+\_\+\+Zone\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t1___decoder___funcs_rec__}{T1\+\_\+\+Decoder\+\_\+\+Funcs\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t1___decoder_rec__}{T1\+\_\+\+Decoder\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_c_f_f___builder___funcs_rec__}{C\+F\+F\+\_\+\+Builder\+\_\+\+Funcs\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_c_f_f___builder__}{C\+F\+F\+\_\+\+Builder\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_c_f_f___decoder___zone__}{C\+F\+F\+\_\+\+Decoder\+\_\+\+Zone\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_c_f_f___decoder__}{C\+F\+F\+\_\+\+Decoder\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_c_f_f___decoder___funcs_rec__}{C\+F\+F\+\_\+\+Decoder\+\_\+\+Funcs\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_a_f_m___parser___funcs_rec__}{A\+F\+M\+\_\+\+Parser\+\_\+\+Funcs\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_a_f_m___parser_rec__}{A\+F\+M\+\_\+\+Parser\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_t1___c_map___classes_rec__}{T1\+\_\+\+C\+Map\+\_\+\+Classes\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_p_s_aux___service_rec__}{P\+S\+Aux\+\_\+\+Service\+Rec\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{psaux_8h_a664cbba7446407e6b11afa548fd32e64}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+D\+I\+C\+T\+\_\+\+F\+O\+N\+T\+D\+I\+CT}}~( 1 $<$$<$ 0 ) /$\ast$ also Font\+Info and F\+D\+Array $\ast$/
+\item 
+\#define \mbox{\hyperlink{psaux_8h_a764c985feb67e945a5e76e4b86a59efa}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+D\+I\+C\+T\+\_\+\+P\+R\+I\+V\+A\+TE}}~( 1 $<$$<$ 1 )
+\item 
+\#define \mbox{\hyperlink{psaux_8h_a28be05df2bbd33d93a565d73c3f7d032}{T1\+\_\+\+N\+E\+W\+\_\+\+S\+I\+M\+P\+L\+E\+\_\+\+F\+I\+E\+LD}}(\+\_\+ident,  \+\_\+type,  \+\_\+fname,  \+\_\+dict)
+\item 
+\#define \mbox{\hyperlink{psaux_8h_aee2b6691a0fbe9d5960dad732313953b}{T1\+\_\+\+N\+E\+W\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+F\+I\+E\+LD}}(\+\_\+ident,  \+\_\+reader,  \+\_\+dict)
+\item 
+\#define \mbox{\hyperlink{psaux_8h_adb28d4de711ed78d293041f91bd47b66}{T1\+\_\+\+N\+E\+W\+\_\+\+T\+A\+B\+L\+E\+\_\+\+F\+I\+E\+LD}}(\+\_\+ident,  \+\_\+type,  \+\_\+fname,  \+\_\+max,  \+\_\+dict)
+\item 
+\#define \mbox{\hyperlink{psaux_8h_a430360d8ed51760b0998490cbe643ada}{T1\+\_\+\+N\+E\+W\+\_\+\+T\+A\+B\+L\+E\+\_\+\+F\+I\+E\+L\+D2}}(\+\_\+ident,  \+\_\+type,  \+\_\+fname,  \+\_\+max,  \+\_\+dict)
+\item 
+\#define \mbox{\hyperlink{psaux_8h_a19f6f564b6822fbf21d612ac25373b1c}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+B\+O\+OL}}(\+\_\+ident,  \+\_\+fname,  \+\_\+dict)~          \mbox{\hyperlink{psaux_8h_a28be05df2bbd33d93a565d73c3f7d032}{T1\+\_\+\+N\+E\+W\+\_\+\+S\+I\+M\+P\+L\+E\+\_\+\+F\+I\+E\+LD}}( \+\_\+ident, \mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147dacae9dd21f090e7b7968d8a5f985ba9e008}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+O\+OL}}, \+\_\+fname, \+\_\+dict )
+\item 
+\#define \mbox{\hyperlink{psaux_8h_a34eaac6638eb0ce5f81c4ba14c428371}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+N\+UM}}(\+\_\+ident,  \+\_\+fname,  \+\_\+dict)~          \mbox{\hyperlink{psaux_8h_a28be05df2bbd33d93a565d73c3f7d032}{T1\+\_\+\+N\+E\+W\+\_\+\+S\+I\+M\+P\+L\+E\+\_\+\+F\+I\+E\+LD}}( \+\_\+ident, \mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca6e6193ed4c940adda4dc5596f870976f}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T\+E\+G\+ER}}, \+\_\+fname, \+\_\+dict )
+\item 
+\#define \mbox{\hyperlink{psaux_8h_a6878a49483729631adb34e8de27daacb}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+X\+ED}}(\+\_\+ident,  \+\_\+fname,  \+\_\+dict)~          \mbox{\hyperlink{psaux_8h_a28be05df2bbd33d93a565d73c3f7d032}{T1\+\_\+\+N\+E\+W\+\_\+\+S\+I\+M\+P\+L\+E\+\_\+\+F\+I\+E\+LD}}( \+\_\+ident, \mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca3e2feefac41dac167416bd1ddde8e44f}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+I\+X\+ED}}, \+\_\+fname, \+\_\+dict )
+\item 
+\#define \mbox{\hyperlink{psaux_8h_a248a022f7ea37bb04fed9a7093898674}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+X\+E\+D\+\_\+1000}}(\+\_\+ident,  \+\_\+fname,  \+\_\+dict)
+\item 
+\#define \mbox{\hyperlink{psaux_8h_abeec2ec3492087050ce924da0187eebe}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+S\+T\+R\+I\+NG}}(\+\_\+ident,  \+\_\+fname,  \+\_\+dict)~          \mbox{\hyperlink{psaux_8h_a28be05df2bbd33d93a565d73c3f7d032}{T1\+\_\+\+N\+E\+W\+\_\+\+S\+I\+M\+P\+L\+E\+\_\+\+F\+I\+E\+LD}}( \+\_\+ident, \mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca377307f98db50f1221a640fe8c492f97}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+T\+R\+I\+NG}}, \+\_\+fname, \+\_\+dict )
+\item 
+\#define \mbox{\hyperlink{psaux_8h_a949bd1fe5f204538315da54046dd7d90}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+K\+EY}}(\+\_\+ident,  \+\_\+fname,  \+\_\+dict)~          \mbox{\hyperlink{psaux_8h_a28be05df2bbd33d93a565d73c3f7d032}{T1\+\_\+\+N\+E\+W\+\_\+\+S\+I\+M\+P\+L\+E\+\_\+\+F\+I\+E\+LD}}( \+\_\+ident, \mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca03e7bfa08aec2c20d7b7935462e34643}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+K\+EY}}, \+\_\+fname, \+\_\+dict )
+\item 
+\#define \mbox{\hyperlink{psaux_8h_a9b839fb9c23b1a81bc6401d9ffb2cd1b}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+B\+B\+OX}}(\+\_\+ident,  \+\_\+fname,  \+\_\+dict)~          \mbox{\hyperlink{psaux_8h_a28be05df2bbd33d93a565d73c3f7d032}{T1\+\_\+\+N\+E\+W\+\_\+\+S\+I\+M\+P\+L\+E\+\_\+\+F\+I\+E\+LD}}( \+\_\+ident, \mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca160493d419d9fadaba60986b926e625d}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+B\+OX}}, \+\_\+fname, \+\_\+dict )
+\item 
+\#define \mbox{\hyperlink{psaux_8h_aad6acf3411833e2e2f866bef8c5a2b36}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+N\+U\+M\+\_\+\+T\+A\+B\+LE}}(\+\_\+ident,  \+\_\+fname,  \+\_\+fmax,  \+\_\+dict)
+\item 
+\#define \mbox{\hyperlink{psaux_8h_a2c1cfede5c3de4ee8b73f7fb23fb8ca4}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+X\+E\+D\+\_\+\+T\+A\+B\+LE}}(\+\_\+ident,  \+\_\+fname,  \+\_\+fmax,  \+\_\+dict)
+\item 
+\#define \mbox{\hyperlink{psaux_8h_a4453953ed99824443fa31c735598508a}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+N\+U\+M\+\_\+\+T\+A\+B\+L\+E2}}(\+\_\+ident,  \+\_\+fname,  \+\_\+fmax,  \+\_\+dict)
+\item 
+\#define \mbox{\hyperlink{psaux_8h_a757ccae0d59a8a856a2a19174fa87191}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+X\+E\+D\+\_\+\+T\+A\+B\+L\+E2}}(\+\_\+ident,  \+\_\+fname,  \+\_\+fmax,  \+\_\+dict)
+\item 
+\#define \mbox{\hyperlink{psaux_8h_ac85ce10972d96f7a0e5c32b60f498bd5}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+C\+A\+L\+L\+B\+A\+CK}}(\+\_\+ident,  \+\_\+name,  \+\_\+dict)~          \mbox{\hyperlink{psaux_8h_aee2b6691a0fbe9d5960dad732313953b}{T1\+\_\+\+N\+E\+W\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+F\+I\+E\+LD}}( \+\_\+ident, \+\_\+name, \+\_\+dict )
+\item 
+\#define \mbox{\hyperlink{psaux_8h_a8b1b1dc9ce1e79b4c4ffec2bd65cc76c}{P\+S\+\_\+\+M\+A\+X\+\_\+\+O\+P\+E\+R\+A\+N\+DS}}~48
+\item 
+\#define \mbox{\hyperlink{psaux_8h_ac8cf0a9fc3d1cc7546d01ffc6e61d24b}{P\+S\+\_\+\+M\+A\+X\+\_\+\+S\+U\+B\+R\+S\+\_\+\+C\+A\+L\+LS}}~16   /$\ast$ maximum subroutine nesting;         $\ast$/
+\item 
+\#define \mbox{\hyperlink{psaux_8h_a367507992a6ffd2188b3e6b257884855}{C\+F\+F\+\_\+\+M\+A\+X\+\_\+\+O\+P\+E\+R\+A\+N\+DS}}~48
+\item 
+\#define \mbox{\hyperlink{psaux_8h_a5e4d826e5f8e59a46314f87baa0b396a}{C\+F\+F\+\_\+\+M\+A\+X\+\_\+\+S\+U\+B\+R\+S\+\_\+\+C\+A\+L\+LS}}~16  /$\ast$ maximum subroutine nesting;         $\ast$/
+\item 
+\#define \mbox{\hyperlink{psaux_8h_ab9cf22434ef8ea67fb31e8093fecb6e6}{C\+F\+F\+\_\+\+M\+A\+X\+\_\+\+T\+R\+A\+N\+S\+\_\+\+E\+L\+E\+M\+E\+N\+TS}}~32
+\item 
+\#define \mbox{\hyperlink{psaux_8h_a36e8e29f78f36f3e294085654c031ce9}{I\+S\+\_\+\+P\+S\+\_\+\+N\+E\+W\+L\+I\+NE}}(ch)
+\item 
+\#define \mbox{\hyperlink{psaux_8h_a51890bc11cc6d65b4745121ca7ccdb87}{I\+S\+\_\+\+P\+S\+\_\+\+S\+P\+A\+CE}}(ch)
+\item 
+\#define \mbox{\hyperlink{psaux_8h_acc9dab6f74fe0e2d58384ec5245df1a1}{I\+S\+\_\+\+P\+S\+\_\+\+S\+P\+E\+C\+I\+AL}}(ch)
+\item 
+\#define \mbox{\hyperlink{psaux_8h_ab2feb0dfd2b66995919343ac3cdf719c}{I\+S\+\_\+\+P\+S\+\_\+\+D\+E\+L\+IM}}(ch)
+\item 
+\#define \mbox{\hyperlink{psaux_8h_ad0567bb8b36c77a8e604b18fab291438}{I\+S\+\_\+\+P\+S\+\_\+\+D\+I\+G\+IT}}(ch)~  ( (ch) $>$= \textquotesingle{}0\textquotesingle{} \&\& (ch) $<$= \textquotesingle{}9\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{psaux_8h_a259beac75bb7dedce5f223c1765e9982}{I\+S\+\_\+\+P\+S\+\_\+\+X\+D\+I\+G\+IT}}(ch)
+\item 
+\#define \mbox{\hyperlink{psaux_8h_aeb43d35f32a6e9ac3b9957e570d985ff}{I\+S\+\_\+\+P\+S\+\_\+\+B\+A\+S\+E85}}(ch)~  ( (ch) $>$= \textquotesingle{}!\textquotesingle{} \&\& (ch) $<$= \textquotesingle{}u\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{psaux_8h_acedddce12f0fc6c030351ec99a8eff83}{I\+S\+\_\+\+P\+S\+\_\+\+T\+O\+K\+EN}}(cur,  limit,  token)
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{public-macros_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER}} struct \mbox{\hyperlink{struct_p_s___driver_rec__}{P\+S\+\_\+\+Driver\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_a7aa19e671d2c40a894dc8f26c38d7d05}{P\+S\+\_\+\+Driver\+Rec}}
+\item 
+typedef \mbox{\hyperlink{public-macros_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER}} struct \mbox{\hyperlink{struct_p_s___driver_rec__}{P\+S\+\_\+\+Driver\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{psaux_8h_a3be782fddf46a085f8da178e9d647f1e}{P\+S\+\_\+\+Driver}}
+\item 
+typedef struct \mbox{\hyperlink{struct_p_s___table_rec__}{P\+S\+\_\+\+Table\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{psaux_8h_ac78670c028e51ac947632a2ee8810316}{P\+S\+\_\+\+Table}}
+\item 
+typedef const struct \mbox{\hyperlink{struct_p_s___table___funcs_rec__}{P\+S\+\_\+\+Table\+\_\+\+Funcs\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{psaux_8h_adea7bbddbe4d25164c880c10fee5b261}{P\+S\+\_\+\+Table\+\_\+\+Funcs}}
+\item 
+typedef struct \mbox{\hyperlink{struct_p_s___table___funcs_rec__}{P\+S\+\_\+\+Table\+\_\+\+Funcs\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_ae1dd1e776643bdb8aa3d4e9f34f8c322}{P\+S\+\_\+\+Table\+\_\+\+Funcs\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_p_s___table_rec__}{P\+S\+\_\+\+Table\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_afc6c56e8440eed3f2b3e1ee052c57a24}{P\+S\+\_\+\+Table\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_p_s___parser_rec__}{P\+S\+\_\+\+Parser\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t1___token_rec__}{T1\+\_\+\+Token\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{psaux_8h_aaee5fcb159a39e09f57597e140a6ce38}{T1\+\_\+\+Token}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t1___field_rec__}{T1\+\_\+\+Field\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{psaux_8h_aff7e8566a4f38b05a4dc5355a81facea}{T1\+\_\+\+Field}}
+\item 
+typedef enum \mbox{\hyperlink{psaux_8h_a27dd410c40d3600b4dd2a17049511304}{T1\+\_\+\+Token\+Type\+\_\+}} \mbox{\hyperlink{psaux_8h_ae46c356a496de174971b2264bbd8a54a}{T1\+\_\+\+Token\+Type}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t1___token_rec__}{T1\+\_\+\+Token\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_a49ffeb8f15fbfda5675cd3443f92644e}{T1\+\_\+\+Token\+Rec}}
+\item 
+typedef enum \mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147dac}{T1\+\_\+\+Field\+Type\+\_\+}} \mbox{\hyperlink{psaux_8h_a69f80bee58c822af6314b79d960253d4}{T1\+\_\+\+Field\+Type}}
+\item 
+typedef enum \mbox{\hyperlink{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32}{T1\+\_\+\+Field\+Location\+\_\+}} \mbox{\hyperlink{psaux_8h_aa1081e8b649021a2b35240d1cd6cdcf3}{T1\+\_\+\+Field\+Location}}
+\item 
+typedef void($\ast$ \mbox{\hyperlink{psaux_8h_a9a8162722cc5cbe41a78aadaffb7c8e7}{T1\+\_\+\+Field\+\_\+\+Parse\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{F\+T\+\_\+\+Pointer}} parser)
+\item 
+typedef struct \mbox{\hyperlink{struct_t1___field_rec__}{T1\+\_\+\+Field\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_a4d4d3541e7fa341d8699b39efe37973c}{T1\+\_\+\+Field\+Rec}}
+\item 
+typedef const struct \mbox{\hyperlink{struct_p_s___parser___funcs_rec__}{P\+S\+\_\+\+Parser\+\_\+\+Funcs\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{psaux_8h_ac7b6a8a1692a297389ba4b31406acf73}{P\+S\+\_\+\+Parser\+\_\+\+Funcs}}
+\item 
+typedef struct \mbox{\hyperlink{struct_p_s___parser___funcs_rec__}{P\+S\+\_\+\+Parser\+\_\+\+Funcs\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_a60c32aa3a1dd1f98fd236dc2ae24c418}{P\+S\+\_\+\+Parser\+\_\+\+Funcs\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_p_s___parser_rec__}{P\+S\+\_\+\+Parser\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_acc12279494c0a43d2a4715f1e8c30502}{P\+S\+\_\+\+Parser\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_p_s___builder__}{P\+S\+\_\+\+Builder\+\_\+}} \mbox{\hyperlink{psaux_8h_a8f40919164451fed4ea42375c723db5d}{P\+S\+\_\+\+Builder}}
+\item 
+typedef const struct \mbox{\hyperlink{struct_p_s___builder___funcs_rec__}{P\+S\+\_\+\+Builder\+\_\+\+Funcs\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{psaux_8h_a50e09515da38459c69b2074d41632c47}{P\+S\+\_\+\+Builder\+\_\+\+Funcs}}
+\item 
+typedef struct \mbox{\hyperlink{struct_p_s___builder___funcs_rec__}{P\+S\+\_\+\+Builder\+\_\+\+Funcs\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_a4a6edb53ea185544ef13d1e5bb8051e4}{P\+S\+\_\+\+Builder\+\_\+\+Funcs\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_p_s___decoder___zone__}{P\+S\+\_\+\+Decoder\+\_\+\+Zone\+\_\+}} \mbox{\hyperlink{psaux_8h_aa314f94b79e108091cd38a1dfb82f2f7}{P\+S\+\_\+\+Decoder\+\_\+\+Zone}}
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{psaux_8h_a8b866d09d410c4db25ed5ae1c71e07d6}{C\+F\+F\+\_\+\+Decoder\+\_\+\+Get\+\_\+\+Glyph\+\_\+\+Callback}}) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} glyph\+\_\+index, \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} $\ast$$\ast$pointer, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$length)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{psaux_8h_aab71d5ac9de7684f5cf1e0b9d4f69331}{C\+F\+F\+\_\+\+Decoder\+\_\+\+Free\+\_\+\+Glyph\+\_\+\+Callback}}) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} $\ast$$\ast$pointer, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} length)
+\item 
+typedef struct \mbox{\hyperlink{struct_p_s___decoder__}{P\+S\+\_\+\+Decoder\+\_\+}} \mbox{\hyperlink{psaux_8h_a79a57c8203defe7bf110be78920c32ab}{P\+S\+\_\+\+Decoder}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t1___builder_rec__}{T1\+\_\+\+Builder\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{psaux_8h_a663b21b57e6b519b1d1b7a80939e5c7c}{T1\+\_\+\+Builder}}
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{psaux_8h_a7b44e68bb84d39a8a9544aa88e4c114a}{T1\+\_\+\+Builder\+\_\+\+Check\+\_\+\+Points\+\_\+\+Func}}) (\mbox{\hyperlink{psaux_8h_a663b21b57e6b519b1d1b7a80939e5c7c}{T1\+\_\+\+Builder}} builder, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} count)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{psaux_8h_ab7e6fdc2c5a30770fd2e13d1d35d288a}{T1\+\_\+\+Builder\+\_\+\+Add\+\_\+\+Point\+\_\+\+Func}}) (\mbox{\hyperlink{psaux_8h_a663b21b57e6b519b1d1b7a80939e5c7c}{T1\+\_\+\+Builder}} builder, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} x, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} y, \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} flag)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{psaux_8h_aeaae3f02f5f42c076596c1c8b1a4e7c1}{T1\+\_\+\+Builder\+\_\+\+Add\+\_\+\+Point1\+\_\+\+Func}}) (\mbox{\hyperlink{psaux_8h_a663b21b57e6b519b1d1b7a80939e5c7c}{T1\+\_\+\+Builder}} builder, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} x, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} y)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{psaux_8h_ab882dcdc14825a7f782f6cec12bb6246}{T1\+\_\+\+Builder\+\_\+\+Add\+\_\+\+Contour\+\_\+\+Func}}) (\mbox{\hyperlink{psaux_8h_a663b21b57e6b519b1d1b7a80939e5c7c}{T1\+\_\+\+Builder}} builder)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{psaux_8h_acecdc496ed650b9e518ced3b7334638c}{T1\+\_\+\+Builder\+\_\+\+Start\+\_\+\+Point\+\_\+\+Func}}) (\mbox{\hyperlink{psaux_8h_a663b21b57e6b519b1d1b7a80939e5c7c}{T1\+\_\+\+Builder}} builder, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} x, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} y)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{psaux_8h_a6c064fec585b78db8ec45649dec8aa69}{T1\+\_\+\+Builder\+\_\+\+Close\+\_\+\+Contour\+\_\+\+Func}}) (\mbox{\hyperlink{psaux_8h_a663b21b57e6b519b1d1b7a80939e5c7c}{T1\+\_\+\+Builder}} builder)
+\item 
+typedef const struct \mbox{\hyperlink{struct_t1___builder___funcs_rec__}{T1\+\_\+\+Builder\+\_\+\+Funcs\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{psaux_8h_a59e79c63e82e4dcd405139fb5f557220}{T1\+\_\+\+Builder\+\_\+\+Funcs}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t1___builder___funcs_rec__}{T1\+\_\+\+Builder\+\_\+\+Funcs\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_ae82f1eae40f3b91789a38ecd2267f979}{T1\+\_\+\+Builder\+\_\+\+Funcs\+Rec}}
+\item 
+typedef enum \mbox{\hyperlink{psaux_8h_a7c39b57b37de0f35b9ae6a564fd6c76b}{T1\+\_\+\+Parse\+State\+\_\+}} \mbox{\hyperlink{psaux_8h_aa4032696616a13d020bb86f460ee80d6}{T1\+\_\+\+Parse\+State}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t1___builder_rec__}{T1\+\_\+\+Builder\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_a7e7000fa7222ecde3531ab9b12ab7090}{T1\+\_\+\+Builder\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t1___decoder___zone_rec__}{T1\+\_\+\+Decoder\+\_\+\+Zone\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_a1e3011ccffef1cad2439d3186985434f}{T1\+\_\+\+Decoder\+\_\+\+Zone\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t1___decoder___zone_rec__}{T1\+\_\+\+Decoder\+\_\+\+Zone\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{psaux_8h_a5cfd02fa4e8c74f182585e0853bc93b2}{T1\+\_\+\+Decoder\+\_\+\+Zone}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t1___decoder_rec__}{T1\+\_\+\+Decoder\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{psaux_8h_a428b7bd32678ab7b0a785ee699ecc2b6}{T1\+\_\+\+Decoder}}
+\item 
+typedef const struct \mbox{\hyperlink{struct_t1___decoder___funcs_rec__}{T1\+\_\+\+Decoder\+\_\+\+Funcs\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{psaux_8h_ad99385a93c66629383e3f13dd37041dc}{T1\+\_\+\+Decoder\+\_\+\+Funcs}}
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{psaux_8h_a261ae6af916d044be1b818e5dc8e8b9b}{T1\+\_\+\+Decoder\+\_\+\+Callback}}) (\mbox{\hyperlink{psaux_8h_a428b7bd32678ab7b0a785ee699ecc2b6}{T1\+\_\+\+Decoder}} decoder, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} glyph\+\_\+index)
+\item 
+typedef struct \mbox{\hyperlink{struct_t1___decoder___funcs_rec__}{T1\+\_\+\+Decoder\+\_\+\+Funcs\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_ab098a10d53329810072d1a9377403bd8}{T1\+\_\+\+Decoder\+\_\+\+Funcs\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t1___decoder_rec__}{T1\+\_\+\+Decoder\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_ab51f528af6ba38c517ca1ee4af926adb}{T1\+\_\+\+Decoder\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_c_f_f___builder__}{C\+F\+F\+\_\+\+Builder\+\_\+}} \mbox{\hyperlink{psaux_8h_a4aac82b1ba984b968ac0ab2370a3c86e}{C\+F\+F\+\_\+\+Builder}}
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{psaux_8h_a12e0b2529c5b643d94e36dd935bf1d16}{C\+F\+F\+\_\+\+Builder\+\_\+\+Check\+\_\+\+Points\+\_\+\+Func}}) (\mbox{\hyperlink{psaux_8h_a4aac82b1ba984b968ac0ab2370a3c86e}{C\+F\+F\+\_\+\+Builder}} $\ast$builder, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} count)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{psaux_8h_a7f4dccf69b3a43a54e35d9c0e657e4ba}{C\+F\+F\+\_\+\+Builder\+\_\+\+Add\+\_\+\+Point\+\_\+\+Func}}) (\mbox{\hyperlink{psaux_8h_a4aac82b1ba984b968ac0ab2370a3c86e}{C\+F\+F\+\_\+\+Builder}} $\ast$builder, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} x, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} y, \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} flag)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{psaux_8h_a9de0a7068e244a8ef315f8de594bcc1b}{C\+F\+F\+\_\+\+Builder\+\_\+\+Add\+\_\+\+Point1\+\_\+\+Func}}) (\mbox{\hyperlink{psaux_8h_a4aac82b1ba984b968ac0ab2370a3c86e}{C\+F\+F\+\_\+\+Builder}} $\ast$builder, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} x, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} y)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{psaux_8h_a06c1f1ed2df4153d29742b508f093b10}{C\+F\+F\+\_\+\+Builder\+\_\+\+Start\+\_\+\+Point\+\_\+\+Func}}) (\mbox{\hyperlink{psaux_8h_a4aac82b1ba984b968ac0ab2370a3c86e}{C\+F\+F\+\_\+\+Builder}} $\ast$builder, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} x, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} y)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{psaux_8h_a427c731ee725cc6130f9e7b8c68234b0}{C\+F\+F\+\_\+\+Builder\+\_\+\+Close\+\_\+\+Contour\+\_\+\+Func}}) (\mbox{\hyperlink{psaux_8h_a4aac82b1ba984b968ac0ab2370a3c86e}{C\+F\+F\+\_\+\+Builder}} $\ast$builder)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{psaux_8h_a8043e3039e6b720e15e8ab5e2f5d6701}{C\+F\+F\+\_\+\+Builder\+\_\+\+Add\+\_\+\+Contour\+\_\+\+Func}}) (\mbox{\hyperlink{psaux_8h_a4aac82b1ba984b968ac0ab2370a3c86e}{C\+F\+F\+\_\+\+Builder}} $\ast$builder)
+\item 
+typedef const struct \mbox{\hyperlink{struct_c_f_f___builder___funcs_rec__}{C\+F\+F\+\_\+\+Builder\+\_\+\+Funcs\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{psaux_8h_a301637c0e81f21a54430f3ab6fd08345}{C\+F\+F\+\_\+\+Builder\+\_\+\+Funcs}}
+\item 
+typedef struct \mbox{\hyperlink{struct_c_f_f___builder___funcs_rec__}{C\+F\+F\+\_\+\+Builder\+\_\+\+Funcs\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_a84bce0810753d4e3f9e7078e3552ea44}{C\+F\+F\+\_\+\+Builder\+\_\+\+Funcs\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_c_f_f___decoder___zone__}{C\+F\+F\+\_\+\+Decoder\+\_\+\+Zone\+\_\+}} \mbox{\hyperlink{psaux_8h_aac8fae69834d9ee531c5ba097ceb1553}{C\+F\+F\+\_\+\+Decoder\+\_\+\+Zone}}
+\item 
+typedef struct \mbox{\hyperlink{struct_c_f_f___decoder__}{C\+F\+F\+\_\+\+Decoder\+\_\+}} \mbox{\hyperlink{psaux_8h_acb3ac047f4b618a7b5d12c4b0204161c}{C\+F\+F\+\_\+\+Decoder}}
+\item 
+typedef const struct \mbox{\hyperlink{struct_c_f_f___decoder___funcs_rec__}{C\+F\+F\+\_\+\+Decoder\+\_\+\+Funcs\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{psaux_8h_ac7bcb26a0a6bc0003cb47d1ea4d77aed}{C\+F\+F\+\_\+\+Decoder\+\_\+\+Funcs}}
+\item 
+typedef struct \mbox{\hyperlink{struct_c_f_f___decoder___funcs_rec__}{C\+F\+F\+\_\+\+Decoder\+\_\+\+Funcs\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_a27d7523fbbbd51a7c6f682e078794f07}{C\+F\+F\+\_\+\+Decoder\+\_\+\+Funcs\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_a_f_m___parser_rec__}{A\+F\+M\+\_\+\+Parser\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{psaux_8h_a84b07e707e759851269989f0cafac12b}{A\+F\+M\+\_\+\+Parser}}
+\item 
+typedef struct \mbox{\hyperlink{struct_a_f_m___parser___funcs_rec__}{A\+F\+M\+\_\+\+Parser\+\_\+\+Funcs\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_aacd485af3f2664a6b8c91dccba33751e}{A\+F\+M\+\_\+\+Parser\+\_\+\+Funcs\+Rec}}
+\item 
+typedef struct A\+F\+M\+\_\+\+Stream\+Rec\+\_\+ $\ast$ \mbox{\hyperlink{psaux_8h_af4e38d53e29cf02398d053dc7e26fa68}{A\+F\+M\+\_\+\+Stream}}
+\item 
+typedef struct \mbox{\hyperlink{struct_a_f_m___parser_rec__}{A\+F\+M\+\_\+\+Parser\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_ad5cb0a0d58cfe4ccfcc6d139573b94ed}{A\+F\+M\+\_\+\+Parser\+Rec}}
+\item 
+typedef const struct \mbox{\hyperlink{struct_t1___c_map___classes_rec__}{T1\+\_\+\+C\+Map\+\_\+\+Classes\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{psaux_8h_a69a7c0a42a1bc1731862770f50a32bc2}{T1\+\_\+\+C\+Map\+\_\+\+Classes}}
+\item 
+typedef struct \mbox{\hyperlink{struct_t1___c_map___classes_rec__}{T1\+\_\+\+C\+Map\+\_\+\+Classes\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_aa5aa63f6cd3d8014228d77038ff3633a}{T1\+\_\+\+C\+Map\+\_\+\+Classes\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_p_s_aux___service_rec__}{P\+S\+Aux\+\_\+\+Service\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_a31301176199b817d1fcbc2adc844e6d3}{P\+S\+Aux\+\_\+\+Service\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_p_s_aux___service_rec__}{P\+S\+Aux\+\_\+\+Service\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{psaux_8h_a9f18cae2940f734d57781d4b4f3e5233}{P\+S\+Aux\+\_\+\+Service}}
+\item 
+typedef \mbox{\hyperlink{psaux_8h_a31301176199b817d1fcbc2adc844e6d3}{P\+S\+Aux\+\_\+\+Service\+Rec}} \mbox{\hyperlink{psaux_8h_a565700e2be9a57bb3676a857cc330edb}{P\+S\+Aux\+\_\+\+Interface}}
+\end{DoxyCompactItemize}
+\doxysubsection*{列挙型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{psaux_8h_a27dd410c40d3600b4dd2a17049511304}{T1\+\_\+\+Token\+Type\+\_\+}} \{ \newline
+\mbox{\hyperlink{psaux_8h_a27dd410c40d3600b4dd2a17049511304ae732cb63517d35ae3a41935554b8a2b6}{T1\+\_\+\+T\+O\+K\+E\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+NE}} = 0, 
+\mbox{\hyperlink{psaux_8h_a27dd410c40d3600b4dd2a17049511304ad919b90d6956adc76322a94780bd7739}{T1\+\_\+\+T\+O\+K\+E\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+NY}}, 
+\mbox{\hyperlink{psaux_8h_a27dd410c40d3600b4dd2a17049511304a286b7a4f4bbf1c622bd6a7d9558ca893}{T1\+\_\+\+T\+O\+K\+E\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+T\+R\+I\+NG}}, 
+\mbox{\hyperlink{psaux_8h_a27dd410c40d3600b4dd2a17049511304aa94a04ceee9f8fb58fad87fffe910c61}{T1\+\_\+\+T\+O\+K\+E\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+R\+R\+AY}}, 
+\newline
+\mbox{\hyperlink{psaux_8h_a27dd410c40d3600b4dd2a17049511304ac00b109231c385c29e79b4ea5276d98f}{T1\+\_\+\+T\+O\+K\+E\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+K\+EY}}, 
+\mbox{\hyperlink{psaux_8h_a27dd410c40d3600b4dd2a17049511304a80ccf1b4393e9272453ddd23764ad19b}{T1\+\_\+\+T\+O\+K\+E\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+AX}}
+ \}
+\item 
+enum \mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147dac}{T1\+\_\+\+Field\+Type\+\_\+}} \{ \newline
+\mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca43a68c20c9c0668183a1e8617e16cea0}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+NE}} = 0, 
+\mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147dacae9dd21f090e7b7968d8a5f985ba9e008}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+O\+OL}}, 
+\mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca6e6193ed4c940adda4dc5596f870976f}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T\+E\+G\+ER}}, 
+\mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca3e2feefac41dac167416bd1ddde8e44f}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+I\+X\+ED}}, 
+\newline
+\mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca1730fb1d649e4a103f09792ed7597511}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+I\+X\+E\+D\+\_\+1000}}, 
+\mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca377307f98db50f1221a640fe8c492f97}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+T\+R\+I\+NG}}, 
+\mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca03e7bfa08aec2c20d7b7935462e34643}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+K\+EY}}, 
+\mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca160493d419d9fadaba60986b926e625d}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+B\+OX}}, 
+\newline
+\mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147dacadb711a495978a679a5c4fd5129dd1f8a}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+M\+\_\+\+B\+B\+OX}}, 
+\mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca13b4957925c0032ae8a0aba3810132cf}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T\+E\+G\+E\+R\+\_\+\+A\+R\+R\+AY}}, 
+\mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca835150fea3b886ca1b56bdbc381356d3}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+I\+X\+E\+D\+\_\+\+A\+R\+R\+AY}}, 
+\mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca6e49aacdc676a249172d7e7d381b451e}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+A\+L\+L\+B\+A\+CK}}, 
+\newline
+\mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca58bac936780f63faf3133aa1a0f456de}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+AX}}
+ \}
+\item 
+enum \mbox{\hyperlink{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32}{T1\+\_\+\+Field\+Location\+\_\+}} \{ \newline
+\mbox{\hyperlink{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32a49a2c680f72e9b28197625a198f17bb6}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+C\+I\+D\+\_\+\+I\+N\+FO}}, 
+\mbox{\hyperlink{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32afa57448995b2f1f0876491e1ead3c26a}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+F\+O\+N\+T\+\_\+\+D\+I\+CT}}, 
+\mbox{\hyperlink{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32a08a16df06a4c9c24190040f4e31c1919}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+F\+O\+N\+T\+\_\+\+E\+X\+T\+RA}}, 
+\mbox{\hyperlink{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32a92b9d360faa31535e6b2d8023857e3fe}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+F\+O\+N\+T\+\_\+\+I\+N\+FO}}, 
+\newline
+\mbox{\hyperlink{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32a81c5858e601ee955b6c9eb6d4a7adfd0}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+P\+R\+I\+V\+A\+TE}}, 
+\mbox{\hyperlink{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32a6b09b93c7c1bb29c98c062588ad59372}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+B\+B\+OX}}, 
+\mbox{\hyperlink{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32a92129d5f5c606074a6e88aad7d86563d}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+L\+O\+A\+D\+ER}}, 
+\mbox{\hyperlink{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32a9ba33aed4f7ce8e6459534f217b94d75}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+F\+A\+CE}}, 
+\newline
+\mbox{\hyperlink{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32a18f7a67693ade79db6b9bb7eab9fa863}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+B\+L\+E\+ND}}, 
+\mbox{\hyperlink{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32aeb6ade426aafa02dc0b904cd56b8ed5f}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+M\+AX}}
+ \}
+\item 
+enum \mbox{\hyperlink{psaux_8h_a7c39b57b37de0f35b9ae6a564fd6c76b}{T1\+\_\+\+Parse\+State\+\_\+}} \{ \mbox{\hyperlink{psaux_8h_a7c39b57b37de0f35b9ae6a564fd6c76badc68b3e6a84b194d0b61e2d1dc74df63}{T1\+\_\+\+Parse\+\_\+\+Start}}, 
+\mbox{\hyperlink{psaux_8h_a7c39b57b37de0f35b9ae6a564fd6c76ba03da278b5f6cc13d9ddf9872a45d27c2}{T1\+\_\+\+Parse\+\_\+\+Have\+\_\+\+Width}}, 
+\mbox{\hyperlink{psaux_8h_a7c39b57b37de0f35b9ae6a564fd6c76baf45efbcef76ef2289f297cda0417efbd}{T1\+\_\+\+Parse\+\_\+\+Have\+\_\+\+Moveto}}, 
+\mbox{\hyperlink{psaux_8h_a7c39b57b37de0f35b9ae6a564fd6c76ba858490c5affc67cc3e95424b5bc81e04}{T1\+\_\+\+Parse\+\_\+\+Have\+\_\+\+Path}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{psaux_8h_a367507992a6ffd2188b3e6b257884855}\label{psaux_8h_a367507992a6ffd2188b3e6b257884855}} 
+\index{psaux.h@{psaux.h}!CFF\_MAX\_OPERANDS@{CFF\_MAX\_OPERANDS}}
+\index{CFF\_MAX\_OPERANDS@{CFF\_MAX\_OPERANDS}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{CFF\_MAX\_OPERANDS}{CFF\_MAX\_OPERANDS}}
+{\footnotesize\ttfamily \#define C\+F\+F\+\_\+\+M\+A\+X\+\_\+\+O\+P\+E\+R\+A\+N\+DS~48}
+
+\mbox{\Hypertarget{psaux_8h_a5e4d826e5f8e59a46314f87baa0b396a}\label{psaux_8h_a5e4d826e5f8e59a46314f87baa0b396a}} 
+\index{psaux.h@{psaux.h}!CFF\_MAX\_SUBRS\_CALLS@{CFF\_MAX\_SUBRS\_CALLS}}
+\index{CFF\_MAX\_SUBRS\_CALLS@{CFF\_MAX\_SUBRS\_CALLS}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{CFF\_MAX\_SUBRS\_CALLS}{CFF\_MAX\_SUBRS\_CALLS}}
+{\footnotesize\ttfamily \#define C\+F\+F\+\_\+\+M\+A\+X\+\_\+\+S\+U\+B\+R\+S\+\_\+\+C\+A\+L\+LS~16  /$\ast$ maximum subroutine nesting;         $\ast$/}
+
+\mbox{\Hypertarget{psaux_8h_ab9cf22434ef8ea67fb31e8093fecb6e6}\label{psaux_8h_ab9cf22434ef8ea67fb31e8093fecb6e6}} 
+\index{psaux.h@{psaux.h}!CFF\_MAX\_TRANS\_ELEMENTS@{CFF\_MAX\_TRANS\_ELEMENTS}}
+\index{CFF\_MAX\_TRANS\_ELEMENTS@{CFF\_MAX\_TRANS\_ELEMENTS}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{CFF\_MAX\_TRANS\_ELEMENTS}{CFF\_MAX\_TRANS\_ELEMENTS}}
+{\footnotesize\ttfamily \#define C\+F\+F\+\_\+\+M\+A\+X\+\_\+\+T\+R\+A\+N\+S\+\_\+\+E\+L\+E\+M\+E\+N\+TS~32}
+
+\mbox{\Hypertarget{psaux_8h_aeb43d35f32a6e9ac3b9957e570d985ff}\label{psaux_8h_aeb43d35f32a6e9ac3b9957e570d985ff}} 
+\index{psaux.h@{psaux.h}!IS\_PS\_BASE85@{IS\_PS\_BASE85}}
+\index{IS\_PS\_BASE85@{IS\_PS\_BASE85}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{IS\_PS\_BASE85}{IS\_PS\_BASE85}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+P\+S\+\_\+\+B\+A\+S\+E85(\begin{DoxyParamCaption}\item[{}]{ch }\end{DoxyParamCaption})~  ( (ch) $>$= \textquotesingle{}!\textquotesingle{} \&\& (ch) $<$= \textquotesingle{}u\textquotesingle{} )}
+
+\mbox{\Hypertarget{psaux_8h_ab2feb0dfd2b66995919343ac3cdf719c}\label{psaux_8h_ab2feb0dfd2b66995919343ac3cdf719c}} 
+\index{psaux.h@{psaux.h}!IS\_PS\_DELIM@{IS\_PS\_DELIM}}
+\index{IS\_PS\_DELIM@{IS\_PS\_DELIM}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{IS\_PS\_DELIM}{IS\_PS\_DELIM}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+P\+S\+\_\+\+D\+E\+L\+IM(\begin{DoxyParamCaption}\item[{}]{ch }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  ( \mbox{\hyperlink{psaux_8h_a51890bc11cc6d65b4745121ca7ccdb87}{IS\_PS\_SPACE}}( ch )   || \(\backslash\)}
+\DoxyCodeLine{    IS\_PS\_SPECIAL( ch ) )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{psaux_8h_ad0567bb8b36c77a8e604b18fab291438}\label{psaux_8h_ad0567bb8b36c77a8e604b18fab291438}} 
+\index{psaux.h@{psaux.h}!IS\_PS\_DIGIT@{IS\_PS\_DIGIT}}
+\index{IS\_PS\_DIGIT@{IS\_PS\_DIGIT}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{IS\_PS\_DIGIT}{IS\_PS\_DIGIT}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+P\+S\+\_\+\+D\+I\+G\+IT(\begin{DoxyParamCaption}\item[{}]{ch }\end{DoxyParamCaption})~  ( (ch) $>$= \textquotesingle{}0\textquotesingle{} \&\& (ch) $<$= \textquotesingle{}9\textquotesingle{} )}
+
+\mbox{\Hypertarget{psaux_8h_a36e8e29f78f36f3e294085654c031ce9}\label{psaux_8h_a36e8e29f78f36f3e294085654c031ce9}} 
+\index{psaux.h@{psaux.h}!IS\_PS\_NEWLINE@{IS\_PS\_NEWLINE}}
+\index{IS\_PS\_NEWLINE@{IS\_PS\_NEWLINE}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{IS\_PS\_NEWLINE}{IS\_PS\_NEWLINE}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+P\+S\+\_\+\+N\+E\+W\+L\+I\+NE(\begin{DoxyParamCaption}\item[{}]{ch }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  ( (ch) == \textcolor{charliteral}{'\(\backslash\)r'} ||         \(\backslash\)}
+\DoxyCodeLine{    (ch) == \textcolor{charliteral}{'\(\backslash\)n'} )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{psaux_8h_a51890bc11cc6d65b4745121ca7ccdb87}\label{psaux_8h_a51890bc11cc6d65b4745121ca7ccdb87}} 
+\index{psaux.h@{psaux.h}!IS\_PS\_SPACE@{IS\_PS\_SPACE}}
+\index{IS\_PS\_SPACE@{IS\_PS\_SPACE}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{IS\_PS\_SPACE}{IS\_PS\_SPACE}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+P\+S\+\_\+\+S\+P\+A\+CE(\begin{DoxyParamCaption}\item[{}]{ch }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  ( (ch) == \textcolor{charliteral}{' '}         || \(\backslash\)}
+\DoxyCodeLine{    \mbox{\hyperlink{psaux_8h_a36e8e29f78f36f3e294085654c031ce9}{IS\_PS\_NEWLINE}}( ch ) || \(\backslash\)}
+\DoxyCodeLine{    (ch) == \textcolor{charliteral}{'\(\backslash\)t'}        || \(\backslash\)}
+\DoxyCodeLine{    (ch) == \textcolor{charliteral}{'\(\backslash\)f'}        || \(\backslash\)}
+\DoxyCodeLine{    (ch) == \textcolor{charliteral}{'\(\backslash\)0'} )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{psaux_8h_acc9dab6f74fe0e2d58384ec5245df1a1}\label{psaux_8h_acc9dab6f74fe0e2d58384ec5245df1a1}} 
+\index{psaux.h@{psaux.h}!IS\_PS\_SPECIAL@{IS\_PS\_SPECIAL}}
+\index{IS\_PS\_SPECIAL@{IS\_PS\_SPECIAL}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{IS\_PS\_SPECIAL}{IS\_PS\_SPECIAL}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+P\+S\+\_\+\+S\+P\+E\+C\+I\+AL(\begin{DoxyParamCaption}\item[{}]{ch }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  ( (ch) == \textcolor{charliteral}{'/'}                || \(\backslash\)}
+\DoxyCodeLine{    (ch) == \textcolor{charliteral}{'('} || (ch) == \textcolor{charliteral}{')'} || \(\backslash\)}
+\DoxyCodeLine{    (ch) == \textcolor{charliteral}{'<'} || (ch) == \textcolor{charliteral}{'>'} || \(\backslash\)}
+\DoxyCodeLine{    (ch) == \textcolor{charliteral}{'['} || (ch) == \textcolor{charliteral}{']'} || \(\backslash\)}
+\DoxyCodeLine{    (ch) == \textcolor{charliteral}{'\{'} || (ch) == \textcolor{charliteral}{'\}'} || \(\backslash\)}
+\DoxyCodeLine{    (ch) == \textcolor{charliteral}{'\%'}                )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{psaux_8h_acedddce12f0fc6c030351ec99a8eff83}\label{psaux_8h_acedddce12f0fc6c030351ec99a8eff83}} 
+\index{psaux.h@{psaux.h}!IS\_PS\_TOKEN@{IS\_PS\_TOKEN}}
+\index{IS\_PS\_TOKEN@{IS\_PS\_TOKEN}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{IS\_PS\_TOKEN}{IS\_PS\_TOKEN}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+P\+S\+\_\+\+T\+O\+K\+EN(\begin{DoxyParamCaption}\item[{}]{cur,  }\item[{}]{limit,  }\item[{}]{token }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  ( (char)(cur)[0] == (token)[0]                                     \&\& \(\backslash\)}
+\DoxyCodeLine{    ( (cur) + \textcolor{keyword}{sizeof} ( (token) ) == (limit) ||                          \(\backslash\)}
+\DoxyCodeLine{      ( (cur) + \textcolor{keyword}{sizeof}( (token) ) < (limit)          \&\&                 \(\backslash\)}
+\DoxyCodeLine{        \mbox{\hyperlink{psaux_8h_ab2feb0dfd2b66995919343ac3cdf719c}{IS\_PS\_DELIM}}( (cur)[\textcolor{keyword}{sizeof} ( (token) ) -\/ 1] ) ) )             \&\& \(\backslash\)}
+\DoxyCodeLine{    \mbox{\hyperlink{ftstdlib_8h_a844765472a827c9185f0fd5ebfbf5903}{ft\_strncmp}}( (\textcolor{keywordtype}{char}*)(cur), (token), \textcolor{keyword}{sizeof} ( (token) ) -\/ 1 ) == 0 )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{psaux_8h_a259beac75bb7dedce5f223c1765e9982}\label{psaux_8h_a259beac75bb7dedce5f223c1765e9982}} 
+\index{psaux.h@{psaux.h}!IS\_PS\_XDIGIT@{IS\_PS\_XDIGIT}}
+\index{IS\_PS\_XDIGIT@{IS\_PS\_XDIGIT}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{IS\_PS\_XDIGIT}{IS\_PS\_XDIGIT}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+P\+S\+\_\+\+X\+D\+I\+G\+IT(\begin{DoxyParamCaption}\item[{}]{ch }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  ( \mbox{\hyperlink{psaux_8h_ad0567bb8b36c77a8e604b18fab291438}{IS\_PS\_DIGIT}}( ch )              || \(\backslash\)}
+\DoxyCodeLine{    ( (ch) >= \textcolor{charliteral}{'A'} \&\& (ch) <= \textcolor{charliteral}{'F'} ) || \(\backslash\)}
+\DoxyCodeLine{    ( (ch) >= \textcolor{charliteral}{'a'} \&\& (ch) <= \textcolor{charliteral}{'f'} ) )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{psaux_8h_a8b1b1dc9ce1e79b4c4ffec2bd65cc76c}\label{psaux_8h_a8b1b1dc9ce1e79b4c4ffec2bd65cc76c}} 
+\index{psaux.h@{psaux.h}!PS\_MAX\_OPERANDS@{PS\_MAX\_OPERANDS}}
+\index{PS\_MAX\_OPERANDS@{PS\_MAX\_OPERANDS}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{PS\_MAX\_OPERANDS}{PS\_MAX\_OPERANDS}}
+{\footnotesize\ttfamily \#define P\+S\+\_\+\+M\+A\+X\+\_\+\+O\+P\+E\+R\+A\+N\+DS~48}
+
+\mbox{\Hypertarget{psaux_8h_ac8cf0a9fc3d1cc7546d01ffc6e61d24b}\label{psaux_8h_ac8cf0a9fc3d1cc7546d01ffc6e61d24b}} 
+\index{psaux.h@{psaux.h}!PS\_MAX\_SUBRS\_CALLS@{PS\_MAX\_SUBRS\_CALLS}}
+\index{PS\_MAX\_SUBRS\_CALLS@{PS\_MAX\_SUBRS\_CALLS}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{PS\_MAX\_SUBRS\_CALLS}{PS\_MAX\_SUBRS\_CALLS}}
+{\footnotesize\ttfamily \#define P\+S\+\_\+\+M\+A\+X\+\_\+\+S\+U\+B\+R\+S\+\_\+\+C\+A\+L\+LS~16   /$\ast$ maximum subroutine nesting;         $\ast$/}
+
+\mbox{\Hypertarget{psaux_8h_a9b839fb9c23b1a81bc6401d9ffb2cd1b}\label{psaux_8h_a9b839fb9c23b1a81bc6401d9ffb2cd1b}} 
+\index{psaux.h@{psaux.h}!T1\_FIELD\_BBOX@{T1\_FIELD\_BBOX}}
+\index{T1\_FIELD\_BBOX@{T1\_FIELD\_BBOX}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_FIELD\_BBOX}{T1\_FIELD\_BBOX}}
+{\footnotesize\ttfamily \#define T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+B\+B\+OX(\begin{DoxyParamCaption}\item[{}]{\+\_\+ident,  }\item[{}]{\+\_\+fname,  }\item[{}]{\+\_\+dict }\end{DoxyParamCaption})~          \mbox{\hyperlink{psaux_8h_a28be05df2bbd33d93a565d73c3f7d032}{T1\+\_\+\+N\+E\+W\+\_\+\+S\+I\+M\+P\+L\+E\+\_\+\+F\+I\+E\+LD}}( \+\_\+ident, \mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca160493d419d9fadaba60986b926e625d}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+B\+OX}}, \+\_\+fname, \+\_\+dict )}
+
+\mbox{\Hypertarget{psaux_8h_a19f6f564b6822fbf21d612ac25373b1c}\label{psaux_8h_a19f6f564b6822fbf21d612ac25373b1c}} 
+\index{psaux.h@{psaux.h}!T1\_FIELD\_BOOL@{T1\_FIELD\_BOOL}}
+\index{T1\_FIELD\_BOOL@{T1\_FIELD\_BOOL}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_FIELD\_BOOL}{T1\_FIELD\_BOOL}}
+{\footnotesize\ttfamily \#define T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+B\+O\+OL(\begin{DoxyParamCaption}\item[{}]{\+\_\+ident,  }\item[{}]{\+\_\+fname,  }\item[{}]{\+\_\+dict }\end{DoxyParamCaption})~          \mbox{\hyperlink{psaux_8h_a28be05df2bbd33d93a565d73c3f7d032}{T1\+\_\+\+N\+E\+W\+\_\+\+S\+I\+M\+P\+L\+E\+\_\+\+F\+I\+E\+LD}}( \+\_\+ident, \mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147dacae9dd21f090e7b7968d8a5f985ba9e008}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+O\+OL}}, \+\_\+fname, \+\_\+dict )}
+
+\mbox{\Hypertarget{psaux_8h_ac85ce10972d96f7a0e5c32b60f498bd5}\label{psaux_8h_ac85ce10972d96f7a0e5c32b60f498bd5}} 
+\index{psaux.h@{psaux.h}!T1\_FIELD\_CALLBACK@{T1\_FIELD\_CALLBACK}}
+\index{T1\_FIELD\_CALLBACK@{T1\_FIELD\_CALLBACK}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_FIELD\_CALLBACK}{T1\_FIELD\_CALLBACK}}
+{\footnotesize\ttfamily \#define T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+C\+A\+L\+L\+B\+A\+CK(\begin{DoxyParamCaption}\item[{}]{\+\_\+ident,  }\item[{}]{\+\_\+name,  }\item[{}]{\+\_\+dict }\end{DoxyParamCaption})~          \mbox{\hyperlink{psaux_8h_aee2b6691a0fbe9d5960dad732313953b}{T1\+\_\+\+N\+E\+W\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+F\+I\+E\+LD}}( \+\_\+ident, \+\_\+name, \+\_\+dict )}
+
+\mbox{\Hypertarget{psaux_8h_a664cbba7446407e6b11afa548fd32e64}\label{psaux_8h_a664cbba7446407e6b11afa548fd32e64}} 
+\index{psaux.h@{psaux.h}!T1\_FIELD\_DICT\_FONTDICT@{T1\_FIELD\_DICT\_FONTDICT}}
+\index{T1\_FIELD\_DICT\_FONTDICT@{T1\_FIELD\_DICT\_FONTDICT}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_FIELD\_DICT\_FONTDICT}{T1\_FIELD\_DICT\_FONTDICT}}
+{\footnotesize\ttfamily \#define T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+D\+I\+C\+T\+\_\+\+F\+O\+N\+T\+D\+I\+CT~( 1 $<$$<$ 0 ) /$\ast$ also Font\+Info and F\+D\+Array $\ast$/}
+
+\mbox{\Hypertarget{psaux_8h_a764c985feb67e945a5e76e4b86a59efa}\label{psaux_8h_a764c985feb67e945a5e76e4b86a59efa}} 
+\index{psaux.h@{psaux.h}!T1\_FIELD\_DICT\_PRIVATE@{T1\_FIELD\_DICT\_PRIVATE}}
+\index{T1\_FIELD\_DICT\_PRIVATE@{T1\_FIELD\_DICT\_PRIVATE}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_FIELD\_DICT\_PRIVATE}{T1\_FIELD\_DICT\_PRIVATE}}
+{\footnotesize\ttfamily \#define T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+D\+I\+C\+T\+\_\+\+P\+R\+I\+V\+A\+TE~( 1 $<$$<$ 1 )}
+
+\mbox{\Hypertarget{psaux_8h_a6878a49483729631adb34e8de27daacb}\label{psaux_8h_a6878a49483729631adb34e8de27daacb}} 
+\index{psaux.h@{psaux.h}!T1\_FIELD\_FIXED@{T1\_FIELD\_FIXED}}
+\index{T1\_FIELD\_FIXED@{T1\_FIELD\_FIXED}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_FIELD\_FIXED}{T1\_FIELD\_FIXED}}
+{\footnotesize\ttfamily \#define T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+X\+ED(\begin{DoxyParamCaption}\item[{}]{\+\_\+ident,  }\item[{}]{\+\_\+fname,  }\item[{}]{\+\_\+dict }\end{DoxyParamCaption})~          \mbox{\hyperlink{psaux_8h_a28be05df2bbd33d93a565d73c3f7d032}{T1\+\_\+\+N\+E\+W\+\_\+\+S\+I\+M\+P\+L\+E\+\_\+\+F\+I\+E\+LD}}( \+\_\+ident, \mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca3e2feefac41dac167416bd1ddde8e44f}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+I\+X\+ED}}, \+\_\+fname, \+\_\+dict )}
+
+\mbox{\Hypertarget{psaux_8h_a248a022f7ea37bb04fed9a7093898674}\label{psaux_8h_a248a022f7ea37bb04fed9a7093898674}} 
+\index{psaux.h@{psaux.h}!T1\_FIELD\_FIXED\_1000@{T1\_FIELD\_FIXED\_1000}}
+\index{T1\_FIELD\_FIXED\_1000@{T1\_FIELD\_FIXED\_1000}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_FIELD\_FIXED\_1000}{T1\_FIELD\_FIXED\_1000}}
+{\footnotesize\ttfamily \#define T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+X\+E\+D\+\_\+1000(\begin{DoxyParamCaption}\item[{}]{\+\_\+ident,  }\item[{}]{\+\_\+fname,  }\item[{}]{\+\_\+dict }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{          \mbox{\hyperlink{psaux_8h_a28be05df2bbd33d93a565d73c3f7d032}{T1\_NEW\_SIMPLE\_FIELD}}( \_ident, \mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca1730fb1d649e4a103f09792ed7597511}{T1\_FIELD\_TYPE\_FIXED\_1000}}, \_fname, \(\backslash\)}
+\DoxyCodeLine{                               \_dict )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{psaux_8h_a2c1cfede5c3de4ee8b73f7fb23fb8ca4}\label{psaux_8h_a2c1cfede5c3de4ee8b73f7fb23fb8ca4}} 
+\index{psaux.h@{psaux.h}!T1\_FIELD\_FIXED\_TABLE@{T1\_FIELD\_FIXED\_TABLE}}
+\index{T1\_FIELD\_FIXED\_TABLE@{T1\_FIELD\_FIXED\_TABLE}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_FIELD\_FIXED\_TABLE}{T1\_FIELD\_FIXED\_TABLE}}
+{\footnotesize\ttfamily \#define T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+X\+E\+D\+\_\+\+T\+A\+B\+LE(\begin{DoxyParamCaption}\item[{}]{\+\_\+ident,  }\item[{}]{\+\_\+fname,  }\item[{}]{\+\_\+fmax,  }\item[{}]{\+\_\+dict }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{          \mbox{\hyperlink{psaux_8h_adb28d4de711ed78d293041f91bd47b66}{T1\_NEW\_TABLE\_FIELD}}( \_ident, \mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca835150fea3b886ca1b56bdbc381356d3}{T1\_FIELD\_TYPE\_FIXED\_ARRAY}}, \(\backslash\)}
+\DoxyCodeLine{                              \_fname, \_fmax, \_dict )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{psaux_8h_a757ccae0d59a8a856a2a19174fa87191}\label{psaux_8h_a757ccae0d59a8a856a2a19174fa87191}} 
+\index{psaux.h@{psaux.h}!T1\_FIELD\_FIXED\_TABLE2@{T1\_FIELD\_FIXED\_TABLE2}}
+\index{T1\_FIELD\_FIXED\_TABLE2@{T1\_FIELD\_FIXED\_TABLE2}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_FIELD\_FIXED\_TABLE2}{T1\_FIELD\_FIXED\_TABLE2}}
+{\footnotesize\ttfamily \#define T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+F\+I\+X\+E\+D\+\_\+\+T\+A\+B\+L\+E2(\begin{DoxyParamCaption}\item[{}]{\+\_\+ident,  }\item[{}]{\+\_\+fname,  }\item[{}]{\+\_\+fmax,  }\item[{}]{\+\_\+dict }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{          \mbox{\hyperlink{psaux_8h_a430360d8ed51760b0998490cbe643ada}{T1\_NEW\_TABLE\_FIELD2}}( \_ident, \mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca835150fea3b886ca1b56bdbc381356d3}{T1\_FIELD\_TYPE\_FIXED\_ARRAY}}, \(\backslash\)}
+\DoxyCodeLine{                               \_fname, \_fmax, \_dict )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{psaux_8h_a949bd1fe5f204538315da54046dd7d90}\label{psaux_8h_a949bd1fe5f204538315da54046dd7d90}} 
+\index{psaux.h@{psaux.h}!T1\_FIELD\_KEY@{T1\_FIELD\_KEY}}
+\index{T1\_FIELD\_KEY@{T1\_FIELD\_KEY}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_FIELD\_KEY}{T1\_FIELD\_KEY}}
+{\footnotesize\ttfamily \#define T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+K\+EY(\begin{DoxyParamCaption}\item[{}]{\+\_\+ident,  }\item[{}]{\+\_\+fname,  }\item[{}]{\+\_\+dict }\end{DoxyParamCaption})~          \mbox{\hyperlink{psaux_8h_a28be05df2bbd33d93a565d73c3f7d032}{T1\+\_\+\+N\+E\+W\+\_\+\+S\+I\+M\+P\+L\+E\+\_\+\+F\+I\+E\+LD}}( \+\_\+ident, \mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca03e7bfa08aec2c20d7b7935462e34643}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+K\+EY}}, \+\_\+fname, \+\_\+dict )}
+
+\mbox{\Hypertarget{psaux_8h_a34eaac6638eb0ce5f81c4ba14c428371}\label{psaux_8h_a34eaac6638eb0ce5f81c4ba14c428371}} 
+\index{psaux.h@{psaux.h}!T1\_FIELD\_NUM@{T1\_FIELD\_NUM}}
+\index{T1\_FIELD\_NUM@{T1\_FIELD\_NUM}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_FIELD\_NUM}{T1\_FIELD\_NUM}}
+{\footnotesize\ttfamily \#define T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+N\+UM(\begin{DoxyParamCaption}\item[{}]{\+\_\+ident,  }\item[{}]{\+\_\+fname,  }\item[{}]{\+\_\+dict }\end{DoxyParamCaption})~          \mbox{\hyperlink{psaux_8h_a28be05df2bbd33d93a565d73c3f7d032}{T1\+\_\+\+N\+E\+W\+\_\+\+S\+I\+M\+P\+L\+E\+\_\+\+F\+I\+E\+LD}}( \+\_\+ident, \mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca6e6193ed4c940adda4dc5596f870976f}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T\+E\+G\+ER}}, \+\_\+fname, \+\_\+dict )}
+
+\mbox{\Hypertarget{psaux_8h_aad6acf3411833e2e2f866bef8c5a2b36}\label{psaux_8h_aad6acf3411833e2e2f866bef8c5a2b36}} 
+\index{psaux.h@{psaux.h}!T1\_FIELD\_NUM\_TABLE@{T1\_FIELD\_NUM\_TABLE}}
+\index{T1\_FIELD\_NUM\_TABLE@{T1\_FIELD\_NUM\_TABLE}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_FIELD\_NUM\_TABLE}{T1\_FIELD\_NUM\_TABLE}}
+{\footnotesize\ttfamily \#define T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+N\+U\+M\+\_\+\+T\+A\+B\+LE(\begin{DoxyParamCaption}\item[{}]{\+\_\+ident,  }\item[{}]{\+\_\+fname,  }\item[{}]{\+\_\+fmax,  }\item[{}]{\+\_\+dict }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{          \mbox{\hyperlink{psaux_8h_adb28d4de711ed78d293041f91bd47b66}{T1\_NEW\_TABLE\_FIELD}}( \_ident, \mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca13b4957925c0032ae8a0aba3810132cf}{T1\_FIELD\_TYPE\_INTEGER\_ARRAY}}, \(\backslash\)}
+\DoxyCodeLine{                              \_fname, \_fmax, \_dict )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{psaux_8h_a4453953ed99824443fa31c735598508a}\label{psaux_8h_a4453953ed99824443fa31c735598508a}} 
+\index{psaux.h@{psaux.h}!T1\_FIELD\_NUM\_TABLE2@{T1\_FIELD\_NUM\_TABLE2}}
+\index{T1\_FIELD\_NUM\_TABLE2@{T1\_FIELD\_NUM\_TABLE2}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_FIELD\_NUM\_TABLE2}{T1\_FIELD\_NUM\_TABLE2}}
+{\footnotesize\ttfamily \#define T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+N\+U\+M\+\_\+\+T\+A\+B\+L\+E2(\begin{DoxyParamCaption}\item[{}]{\+\_\+ident,  }\item[{}]{\+\_\+fname,  }\item[{}]{\+\_\+fmax,  }\item[{}]{\+\_\+dict }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{          \mbox{\hyperlink{psaux_8h_a430360d8ed51760b0998490cbe643ada}{T1\_NEW\_TABLE\_FIELD2}}( \_ident, \mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca13b4957925c0032ae8a0aba3810132cf}{T1\_FIELD\_TYPE\_INTEGER\_ARRAY}}, \(\backslash\)}
+\DoxyCodeLine{                               \_fname, \_fmax, \_dict )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{psaux_8h_abeec2ec3492087050ce924da0187eebe}\label{psaux_8h_abeec2ec3492087050ce924da0187eebe}} 
+\index{psaux.h@{psaux.h}!T1\_FIELD\_STRING@{T1\_FIELD\_STRING}}
+\index{T1\_FIELD\_STRING@{T1\_FIELD\_STRING}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_FIELD\_STRING}{T1\_FIELD\_STRING}}
+{\footnotesize\ttfamily \#define T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+S\+T\+R\+I\+NG(\begin{DoxyParamCaption}\item[{}]{\+\_\+ident,  }\item[{}]{\+\_\+fname,  }\item[{}]{\+\_\+dict }\end{DoxyParamCaption})~          \mbox{\hyperlink{psaux_8h_a28be05df2bbd33d93a565d73c3f7d032}{T1\+\_\+\+N\+E\+W\+\_\+\+S\+I\+M\+P\+L\+E\+\_\+\+F\+I\+E\+LD}}( \+\_\+ident, \mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca377307f98db50f1221a640fe8c492f97}{T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+T\+R\+I\+NG}}, \+\_\+fname, \+\_\+dict )}
+
+\mbox{\Hypertarget{psaux_8h_aee2b6691a0fbe9d5960dad732313953b}\label{psaux_8h_aee2b6691a0fbe9d5960dad732313953b}} 
+\index{psaux.h@{psaux.h}!T1\_NEW\_CALLBACK\_FIELD@{T1\_NEW\_CALLBACK\_FIELD}}
+\index{T1\_NEW\_CALLBACK\_FIELD@{T1\_NEW\_CALLBACK\_FIELD}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_NEW\_CALLBACK\_FIELD}{T1\_NEW\_CALLBACK\_FIELD}}
+{\footnotesize\ttfamily \#define T1\+\_\+\+N\+E\+W\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\+\_\+\+F\+I\+E\+LD(\begin{DoxyParamCaption}\item[{}]{\+\_\+ident,  }\item[{}]{\+\_\+reader,  }\item[{}]{\+\_\+dict }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{          \{                                             \(\backslash\)}
+\DoxyCodeLine{            \_ident, T1CODE, \mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147daca6e49aacdc676a249172d7e7d381b451e}{T1\_FIELD\_TYPE\_CALLBACK}},     \(\backslash\)}
+\DoxyCodeLine{            (\mbox{\hyperlink{psaux_8h_a9a8162722cc5cbe41a78aadaffb7c8e7}{T1\_Field\_ParseFunc}})\_reader,                \(\backslash\)}
+\DoxyCodeLine{            0, 0,                                       \(\backslash\)}
+\DoxyCodeLine{            0, 0,                                       \(\backslash\)}
+\DoxyCodeLine{            \_dict                                       \(\backslash\)}
+\DoxyCodeLine{          \},}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{psaux_8h_a28be05df2bbd33d93a565d73c3f7d032}\label{psaux_8h_a28be05df2bbd33d93a565d73c3f7d032}} 
+\index{psaux.h@{psaux.h}!T1\_NEW\_SIMPLE\_FIELD@{T1\_NEW\_SIMPLE\_FIELD}}
+\index{T1\_NEW\_SIMPLE\_FIELD@{T1\_NEW\_SIMPLE\_FIELD}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_NEW\_SIMPLE\_FIELD}{T1\_NEW\_SIMPLE\_FIELD}}
+{\footnotesize\ttfamily \#define T1\+\_\+\+N\+E\+W\+\_\+\+S\+I\+M\+P\+L\+E\+\_\+\+F\+I\+E\+LD(\begin{DoxyParamCaption}\item[{}]{\+\_\+ident,  }\item[{}]{\+\_\+type,  }\item[{}]{\+\_\+fname,  }\item[{}]{\+\_\+dict }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{          \{                                                 \(\backslash\)}
+\DoxyCodeLine{            \_ident, T1CODE, \_type,                          \(\backslash\)}
+\DoxyCodeLine{            0,                                              \(\backslash\)}
+\DoxyCodeLine{            FT\_FIELD\_OFFSET( \_fname ),                      \(\backslash\)}
+\DoxyCodeLine{            FT\_FIELD\_SIZE( \_fname ),                        \(\backslash\)}
+\DoxyCodeLine{            0, 0,                                           \(\backslash\)}
+\DoxyCodeLine{            \_dict                                           \(\backslash\)}
+\DoxyCodeLine{          \},}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{psaux_8h_adb28d4de711ed78d293041f91bd47b66}\label{psaux_8h_adb28d4de711ed78d293041f91bd47b66}} 
+\index{psaux.h@{psaux.h}!T1\_NEW\_TABLE\_FIELD@{T1\_NEW\_TABLE\_FIELD}}
+\index{T1\_NEW\_TABLE\_FIELD@{T1\_NEW\_TABLE\_FIELD}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_NEW\_TABLE\_FIELD}{T1\_NEW\_TABLE\_FIELD}}
+{\footnotesize\ttfamily \#define T1\+\_\+\+N\+E\+W\+\_\+\+T\+A\+B\+L\+E\+\_\+\+F\+I\+E\+LD(\begin{DoxyParamCaption}\item[{}]{\+\_\+ident,  }\item[{}]{\+\_\+type,  }\item[{}]{\+\_\+fname,  }\item[{}]{\+\_\+max,  }\item[{}]{\+\_\+dict }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{          \{                                                      \(\backslash\)}
+\DoxyCodeLine{            \_ident, T1CODE, \_type,                               \(\backslash\)}
+\DoxyCodeLine{            0,                                                   \(\backslash\)}
+\DoxyCodeLine{            FT\_FIELD\_OFFSET( \_fname ),                           \(\backslash\)}
+\DoxyCodeLine{            FT\_FIELD\_SIZE\_DELTA( \_fname ),                       \(\backslash\)}
+\DoxyCodeLine{            \_max,                                                \(\backslash\)}
+\DoxyCodeLine{            FT\_FIELD\_OFFSET( num\_ \#\# \_fname ),                   \(\backslash\)}
+\DoxyCodeLine{            \_dict                                                \(\backslash\)}
+\DoxyCodeLine{          \},}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{psaux_8h_a430360d8ed51760b0998490cbe643ada}\label{psaux_8h_a430360d8ed51760b0998490cbe643ada}} 
+\index{psaux.h@{psaux.h}!T1\_NEW\_TABLE\_FIELD2@{T1\_NEW\_TABLE\_FIELD2}}
+\index{T1\_NEW\_TABLE\_FIELD2@{T1\_NEW\_TABLE\_FIELD2}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_NEW\_TABLE\_FIELD2}{T1\_NEW\_TABLE\_FIELD2}}
+{\footnotesize\ttfamily \#define T1\+\_\+\+N\+E\+W\+\_\+\+T\+A\+B\+L\+E\+\_\+\+F\+I\+E\+L\+D2(\begin{DoxyParamCaption}\item[{}]{\+\_\+ident,  }\item[{}]{\+\_\+type,  }\item[{}]{\+\_\+fname,  }\item[{}]{\+\_\+max,  }\item[{}]{\+\_\+dict }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{          \{                                                       \(\backslash\)}
+\DoxyCodeLine{            \_ident, T1CODE, \_type,                                \(\backslash\)}
+\DoxyCodeLine{            0,                                                    \(\backslash\)}
+\DoxyCodeLine{            FT\_FIELD\_OFFSET( \_fname ),                            \(\backslash\)}
+\DoxyCodeLine{            FT\_FIELD\_SIZE\_DELTA( \_fname ),                        \(\backslash\)}
+\DoxyCodeLine{            \_max, 0,                                              \(\backslash\)}
+\DoxyCodeLine{            \_dict                                                 \(\backslash\)}
+\DoxyCodeLine{          \},}
+
+\end{DoxyCode}
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{psaux_8h_a84b07e707e759851269989f0cafac12b}\label{psaux_8h_a84b07e707e759851269989f0cafac12b}} 
+\index{psaux.h@{psaux.h}!AFM\_Parser@{AFM\_Parser}}
+\index{AFM\_Parser@{AFM\_Parser}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{AFM\_Parser}{AFM\_Parser}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_a_f_m___parser_rec__}{A\+F\+M\+\_\+\+Parser\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{psaux_8h_a84b07e707e759851269989f0cafac12b}{A\+F\+M\+\_\+\+Parser}}}
+
+\mbox{\Hypertarget{psaux_8h_aacd485af3f2664a6b8c91dccba33751e}\label{psaux_8h_aacd485af3f2664a6b8c91dccba33751e}} 
+\index{psaux.h@{psaux.h}!AFM\_Parser\_FuncsRec@{AFM\_Parser\_FuncsRec}}
+\index{AFM\_Parser\_FuncsRec@{AFM\_Parser\_FuncsRec}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{AFM\_Parser\_FuncsRec}{AFM\_Parser\_FuncsRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_a_f_m___parser___funcs_rec__}{A\+F\+M\+\_\+\+Parser\+\_\+\+Funcs\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_aacd485af3f2664a6b8c91dccba33751e}{A\+F\+M\+\_\+\+Parser\+\_\+\+Funcs\+Rec}}}
+
+\mbox{\Hypertarget{psaux_8h_ad5cb0a0d58cfe4ccfcc6d139573b94ed}\label{psaux_8h_ad5cb0a0d58cfe4ccfcc6d139573b94ed}} 
+\index{psaux.h@{psaux.h}!AFM\_ParserRec@{AFM\_ParserRec}}
+\index{AFM\_ParserRec@{AFM\_ParserRec}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{AFM\_ParserRec}{AFM\_ParserRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_a_f_m___parser_rec__}{A\+F\+M\+\_\+\+Parser\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_ad5cb0a0d58cfe4ccfcc6d139573b94ed}{A\+F\+M\+\_\+\+Parser\+Rec}}}
+
+\mbox{\Hypertarget{psaux_8h_af4e38d53e29cf02398d053dc7e26fa68}\label{psaux_8h_af4e38d53e29cf02398d053dc7e26fa68}} 
+\index{psaux.h@{psaux.h}!AFM\_Stream@{AFM\_Stream}}
+\index{AFM\_Stream@{AFM\_Stream}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{AFM\_Stream}{AFM\_Stream}}
+{\footnotesize\ttfamily typedef struct A\+F\+M\+\_\+\+Stream\+Rec\+\_\+$\ast$ \mbox{\hyperlink{psaux_8h_af4e38d53e29cf02398d053dc7e26fa68}{A\+F\+M\+\_\+\+Stream}}}
+
+\mbox{\Hypertarget{psaux_8h_a4aac82b1ba984b968ac0ab2370a3c86e}\label{psaux_8h_a4aac82b1ba984b968ac0ab2370a3c86e}} 
+\index{psaux.h@{psaux.h}!CFF\_Builder@{CFF\_Builder}}
+\index{CFF\_Builder@{CFF\_Builder}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{CFF\_Builder}{CFF\_Builder}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_c_f_f___builder__}{C\+F\+F\+\_\+\+Builder\+\_\+}} \mbox{\hyperlink{psaux_8h_a4aac82b1ba984b968ac0ab2370a3c86e}{C\+F\+F\+\_\+\+Builder}}}
+
+\mbox{\Hypertarget{psaux_8h_a8043e3039e6b720e15e8ab5e2f5d6701}\label{psaux_8h_a8043e3039e6b720e15e8ab5e2f5d6701}} 
+\index{psaux.h@{psaux.h}!CFF\_Builder\_Add\_Contour\_Func@{CFF\_Builder\_Add\_Contour\_Func}}
+\index{CFF\_Builder\_Add\_Contour\_Func@{CFF\_Builder\_Add\_Contour\_Func}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{CFF\_Builder\_Add\_Contour\_Func}{CFF\_Builder\_Add\_Contour\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ C\+F\+F\+\_\+\+Builder\+\_\+\+Add\+\_\+\+Contour\+\_\+\+Func) (\mbox{\hyperlink{psaux_8h_a4aac82b1ba984b968ac0ab2370a3c86e}{C\+F\+F\+\_\+\+Builder}} $\ast$builder)}
+
+\mbox{\Hypertarget{psaux_8h_a9de0a7068e244a8ef315f8de594bcc1b}\label{psaux_8h_a9de0a7068e244a8ef315f8de594bcc1b}} 
+\index{psaux.h@{psaux.h}!CFF\_Builder\_Add\_Point1\_Func@{CFF\_Builder\_Add\_Point1\_Func}}
+\index{CFF\_Builder\_Add\_Point1\_Func@{CFF\_Builder\_Add\_Point1\_Func}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{CFF\_Builder\_Add\_Point1\_Func}{CFF\_Builder\_Add\_Point1\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ C\+F\+F\+\_\+\+Builder\+\_\+\+Add\+\_\+\+Point1\+\_\+\+Func) (\mbox{\hyperlink{psaux_8h_a4aac82b1ba984b968ac0ab2370a3c86e}{C\+F\+F\+\_\+\+Builder}} $\ast$builder, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} x, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} y)}
+
+\mbox{\Hypertarget{psaux_8h_a7f4dccf69b3a43a54e35d9c0e657e4ba}\label{psaux_8h_a7f4dccf69b3a43a54e35d9c0e657e4ba}} 
+\index{psaux.h@{psaux.h}!CFF\_Builder\_Add\_Point\_Func@{CFF\_Builder\_Add\_Point\_Func}}
+\index{CFF\_Builder\_Add\_Point\_Func@{CFF\_Builder\_Add\_Point\_Func}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{CFF\_Builder\_Add\_Point\_Func}{CFF\_Builder\_Add\_Point\_Func}}
+{\footnotesize\ttfamily typedef void($\ast$ C\+F\+F\+\_\+\+Builder\+\_\+\+Add\+\_\+\+Point\+\_\+\+Func) (\mbox{\hyperlink{psaux_8h_a4aac82b1ba984b968ac0ab2370a3c86e}{C\+F\+F\+\_\+\+Builder}} $\ast$builder, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} x, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} y, \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} flag)}
+
+\mbox{\Hypertarget{psaux_8h_a12e0b2529c5b643d94e36dd935bf1d16}\label{psaux_8h_a12e0b2529c5b643d94e36dd935bf1d16}} 
+\index{psaux.h@{psaux.h}!CFF\_Builder\_Check\_Points\_Func@{CFF\_Builder\_Check\_Points\_Func}}
+\index{CFF\_Builder\_Check\_Points\_Func@{CFF\_Builder\_Check\_Points\_Func}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{CFF\_Builder\_Check\_Points\_Func}{CFF\_Builder\_Check\_Points\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ C\+F\+F\+\_\+\+Builder\+\_\+\+Check\+\_\+\+Points\+\_\+\+Func) (\mbox{\hyperlink{psaux_8h_a4aac82b1ba984b968ac0ab2370a3c86e}{C\+F\+F\+\_\+\+Builder}} $\ast$builder, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} count)}
+
+\mbox{\Hypertarget{psaux_8h_a427c731ee725cc6130f9e7b8c68234b0}\label{psaux_8h_a427c731ee725cc6130f9e7b8c68234b0}} 
+\index{psaux.h@{psaux.h}!CFF\_Builder\_Close\_Contour\_Func@{CFF\_Builder\_Close\_Contour\_Func}}
+\index{CFF\_Builder\_Close\_Contour\_Func@{CFF\_Builder\_Close\_Contour\_Func}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{CFF\_Builder\_Close\_Contour\_Func}{CFF\_Builder\_Close\_Contour\_Func}}
+{\footnotesize\ttfamily typedef void($\ast$ C\+F\+F\+\_\+\+Builder\+\_\+\+Close\+\_\+\+Contour\+\_\+\+Func) (\mbox{\hyperlink{psaux_8h_a4aac82b1ba984b968ac0ab2370a3c86e}{C\+F\+F\+\_\+\+Builder}} $\ast$builder)}
+
+\mbox{\Hypertarget{psaux_8h_a301637c0e81f21a54430f3ab6fd08345}\label{psaux_8h_a301637c0e81f21a54430f3ab6fd08345}} 
+\index{psaux.h@{psaux.h}!CFF\_Builder\_Funcs@{CFF\_Builder\_Funcs}}
+\index{CFF\_Builder\_Funcs@{CFF\_Builder\_Funcs}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{CFF\_Builder\_Funcs}{CFF\_Builder\_Funcs}}
+{\footnotesize\ttfamily typedef const struct \mbox{\hyperlink{struct_c_f_f___builder___funcs_rec__}{C\+F\+F\+\_\+\+Builder\+\_\+\+Funcs\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{psaux_8h_a301637c0e81f21a54430f3ab6fd08345}{C\+F\+F\+\_\+\+Builder\+\_\+\+Funcs}}}
+
+\mbox{\Hypertarget{psaux_8h_a84bce0810753d4e3f9e7078e3552ea44}\label{psaux_8h_a84bce0810753d4e3f9e7078e3552ea44}} 
+\index{psaux.h@{psaux.h}!CFF\_Builder\_FuncsRec@{CFF\_Builder\_FuncsRec}}
+\index{CFF\_Builder\_FuncsRec@{CFF\_Builder\_FuncsRec}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{CFF\_Builder\_FuncsRec}{CFF\_Builder\_FuncsRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_c_f_f___builder___funcs_rec__}{C\+F\+F\+\_\+\+Builder\+\_\+\+Funcs\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_a84bce0810753d4e3f9e7078e3552ea44}{C\+F\+F\+\_\+\+Builder\+\_\+\+Funcs\+Rec}}}
+
+\mbox{\Hypertarget{psaux_8h_a06c1f1ed2df4153d29742b508f093b10}\label{psaux_8h_a06c1f1ed2df4153d29742b508f093b10}} 
+\index{psaux.h@{psaux.h}!CFF\_Builder\_Start\_Point\_Func@{CFF\_Builder\_Start\_Point\_Func}}
+\index{CFF\_Builder\_Start\_Point\_Func@{CFF\_Builder\_Start\_Point\_Func}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{CFF\_Builder\_Start\_Point\_Func}{CFF\_Builder\_Start\_Point\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ C\+F\+F\+\_\+\+Builder\+\_\+\+Start\+\_\+\+Point\+\_\+\+Func) (\mbox{\hyperlink{psaux_8h_a4aac82b1ba984b968ac0ab2370a3c86e}{C\+F\+F\+\_\+\+Builder}} $\ast$builder, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} x, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} y)}
+
+\mbox{\Hypertarget{psaux_8h_acb3ac047f4b618a7b5d12c4b0204161c}\label{psaux_8h_acb3ac047f4b618a7b5d12c4b0204161c}} 
+\index{psaux.h@{psaux.h}!CFF\_Decoder@{CFF\_Decoder}}
+\index{CFF\_Decoder@{CFF\_Decoder}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{CFF\_Decoder}{CFF\_Decoder}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_c_f_f___decoder__}{C\+F\+F\+\_\+\+Decoder\+\_\+}} \mbox{\hyperlink{psaux_8h_acb3ac047f4b618a7b5d12c4b0204161c}{C\+F\+F\+\_\+\+Decoder}}}
+
+\mbox{\Hypertarget{psaux_8h_aab71d5ac9de7684f5cf1e0b9d4f69331}\label{psaux_8h_aab71d5ac9de7684f5cf1e0b9d4f69331}} 
+\index{psaux.h@{psaux.h}!CFF\_Decoder\_Free\_Glyph\_Callback@{CFF\_Decoder\_Free\_Glyph\_Callback}}
+\index{CFF\_Decoder\_Free\_Glyph\_Callback@{CFF\_Decoder\_Free\_Glyph\_Callback}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{CFF\_Decoder\_Free\_Glyph\_Callback}{CFF\_Decoder\_Free\_Glyph\_Callback}}
+{\footnotesize\ttfamily typedef void($\ast$ C\+F\+F\+\_\+\+Decoder\+\_\+\+Free\+\_\+\+Glyph\+\_\+\+Callback) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} $\ast$$\ast$pointer, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} length)}
+
+\mbox{\Hypertarget{psaux_8h_ac7bcb26a0a6bc0003cb47d1ea4d77aed}\label{psaux_8h_ac7bcb26a0a6bc0003cb47d1ea4d77aed}} 
+\index{psaux.h@{psaux.h}!CFF\_Decoder\_Funcs@{CFF\_Decoder\_Funcs}}
+\index{CFF\_Decoder\_Funcs@{CFF\_Decoder\_Funcs}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{CFF\_Decoder\_Funcs}{CFF\_Decoder\_Funcs}}
+{\footnotesize\ttfamily typedef const struct \mbox{\hyperlink{struct_c_f_f___decoder___funcs_rec__}{C\+F\+F\+\_\+\+Decoder\+\_\+\+Funcs\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{psaux_8h_ac7bcb26a0a6bc0003cb47d1ea4d77aed}{C\+F\+F\+\_\+\+Decoder\+\_\+\+Funcs}}}
+
+\mbox{\Hypertarget{psaux_8h_a27d7523fbbbd51a7c6f682e078794f07}\label{psaux_8h_a27d7523fbbbd51a7c6f682e078794f07}} 
+\index{psaux.h@{psaux.h}!CFF\_Decoder\_FuncsRec@{CFF\_Decoder\_FuncsRec}}
+\index{CFF\_Decoder\_FuncsRec@{CFF\_Decoder\_FuncsRec}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{CFF\_Decoder\_FuncsRec}{CFF\_Decoder\_FuncsRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_c_f_f___decoder___funcs_rec__}{C\+F\+F\+\_\+\+Decoder\+\_\+\+Funcs\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_a27d7523fbbbd51a7c6f682e078794f07}{C\+F\+F\+\_\+\+Decoder\+\_\+\+Funcs\+Rec}}}
+
+\mbox{\Hypertarget{psaux_8h_a8b866d09d410c4db25ed5ae1c71e07d6}\label{psaux_8h_a8b866d09d410c4db25ed5ae1c71e07d6}} 
+\index{psaux.h@{psaux.h}!CFF\_Decoder\_Get\_Glyph\_Callback@{CFF\_Decoder\_Get\_Glyph\_Callback}}
+\index{CFF\_Decoder\_Get\_Glyph\_Callback@{CFF\_Decoder\_Get\_Glyph\_Callback}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{CFF\_Decoder\_Get\_Glyph\_Callback}{CFF\_Decoder\_Get\_Glyph\_Callback}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ C\+F\+F\+\_\+\+Decoder\+\_\+\+Get\+\_\+\+Glyph\+\_\+\+Callback) (\mbox{\hyperlink{tttypes_8h_a4579aa38b4b171acee676ce82638952c}{T\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} glyph\+\_\+index, \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} $\ast$$\ast$pointer, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$length)}
+
+\mbox{\Hypertarget{psaux_8h_aac8fae69834d9ee531c5ba097ceb1553}\label{psaux_8h_aac8fae69834d9ee531c5ba097ceb1553}} 
+\index{psaux.h@{psaux.h}!CFF\_Decoder\_Zone@{CFF\_Decoder\_Zone}}
+\index{CFF\_Decoder\_Zone@{CFF\_Decoder\_Zone}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{CFF\_Decoder\_Zone}{CFF\_Decoder\_Zone}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_c_f_f___decoder___zone__}{C\+F\+F\+\_\+\+Decoder\+\_\+\+Zone\+\_\+}} \mbox{\hyperlink{psaux_8h_aac8fae69834d9ee531c5ba097ceb1553}{C\+F\+F\+\_\+\+Decoder\+\_\+\+Zone}}}
+
+\mbox{\Hypertarget{psaux_8h_a8f40919164451fed4ea42375c723db5d}\label{psaux_8h_a8f40919164451fed4ea42375c723db5d}} 
+\index{psaux.h@{psaux.h}!PS\_Builder@{PS\_Builder}}
+\index{PS\_Builder@{PS\_Builder}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{PS\_Builder}{PS\_Builder}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_p_s___builder__}{P\+S\+\_\+\+Builder\+\_\+}} \mbox{\hyperlink{psaux_8h_a8f40919164451fed4ea42375c723db5d}{P\+S\+\_\+\+Builder}}}
+
+\mbox{\Hypertarget{psaux_8h_a50e09515da38459c69b2074d41632c47}\label{psaux_8h_a50e09515da38459c69b2074d41632c47}} 
+\index{psaux.h@{psaux.h}!PS\_Builder\_Funcs@{PS\_Builder\_Funcs}}
+\index{PS\_Builder\_Funcs@{PS\_Builder\_Funcs}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{PS\_Builder\_Funcs}{PS\_Builder\_Funcs}}
+{\footnotesize\ttfamily typedef const struct \mbox{\hyperlink{struct_p_s___builder___funcs_rec__}{P\+S\+\_\+\+Builder\+\_\+\+Funcs\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{psaux_8h_a50e09515da38459c69b2074d41632c47}{P\+S\+\_\+\+Builder\+\_\+\+Funcs}}}
+
+\mbox{\Hypertarget{psaux_8h_a4a6edb53ea185544ef13d1e5bb8051e4}\label{psaux_8h_a4a6edb53ea185544ef13d1e5bb8051e4}} 
+\index{psaux.h@{psaux.h}!PS\_Builder\_FuncsRec@{PS\_Builder\_FuncsRec}}
+\index{PS\_Builder\_FuncsRec@{PS\_Builder\_FuncsRec}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{PS\_Builder\_FuncsRec}{PS\_Builder\_FuncsRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_p_s___builder___funcs_rec__}{P\+S\+\_\+\+Builder\+\_\+\+Funcs\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_a4a6edb53ea185544ef13d1e5bb8051e4}{P\+S\+\_\+\+Builder\+\_\+\+Funcs\+Rec}}}
+
+\mbox{\Hypertarget{psaux_8h_a79a57c8203defe7bf110be78920c32ab}\label{psaux_8h_a79a57c8203defe7bf110be78920c32ab}} 
+\index{psaux.h@{psaux.h}!PS\_Decoder@{PS\_Decoder}}
+\index{PS\_Decoder@{PS\_Decoder}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{PS\_Decoder}{PS\_Decoder}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_p_s___decoder__}{P\+S\+\_\+\+Decoder\+\_\+}} \mbox{\hyperlink{psaux_8h_a79a57c8203defe7bf110be78920c32ab}{P\+S\+\_\+\+Decoder}}}
+
+\mbox{\Hypertarget{psaux_8h_aa314f94b79e108091cd38a1dfb82f2f7}\label{psaux_8h_aa314f94b79e108091cd38a1dfb82f2f7}} 
+\index{psaux.h@{psaux.h}!PS\_Decoder\_Zone@{PS\_Decoder\_Zone}}
+\index{PS\_Decoder\_Zone@{PS\_Decoder\_Zone}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{PS\_Decoder\_Zone}{PS\_Decoder\_Zone}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_p_s___decoder___zone__}{P\+S\+\_\+\+Decoder\+\_\+\+Zone\+\_\+}} \mbox{\hyperlink{psaux_8h_aa314f94b79e108091cd38a1dfb82f2f7}{P\+S\+\_\+\+Decoder\+\_\+\+Zone}}}
+
+\mbox{\Hypertarget{psaux_8h_a3be782fddf46a085f8da178e9d647f1e}\label{psaux_8h_a3be782fddf46a085f8da178e9d647f1e}} 
+\index{psaux.h@{psaux.h}!PS\_Driver@{PS\_Driver}}
+\index{PS\_Driver@{PS\_Driver}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{PS\_Driver}{PS\_Driver}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{public-macros_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER}} struct \mbox{\hyperlink{struct_p_s___driver_rec__}{P\+S\+\_\+\+Driver\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{psaux_8h_a3be782fddf46a085f8da178e9d647f1e}{P\+S\+\_\+\+Driver}}}
+
+\mbox{\Hypertarget{psaux_8h_a7aa19e671d2c40a894dc8f26c38d7d05}\label{psaux_8h_a7aa19e671d2c40a894dc8f26c38d7d05}} 
+\index{psaux.h@{psaux.h}!PS\_DriverRec@{PS\_DriverRec}}
+\index{PS\_DriverRec@{PS\_DriverRec}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{PS\_DriverRec}{PS\_DriverRec}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{public-macros_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER}} struct \mbox{\hyperlink{struct_p_s___driver_rec__}{P\+S\+\_\+\+Driver\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_a7aa19e671d2c40a894dc8f26c38d7d05}{P\+S\+\_\+\+Driver\+Rec}}}
+
+\mbox{\Hypertarget{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}\label{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}} 
+\index{psaux.h@{psaux.h}!PS\_Parser@{PS\_Parser}}
+\index{PS\_Parser@{PS\_Parser}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{PS\_Parser}{PS\_Parser}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_p_s___parser_rec__}{P\+S\+\_\+\+Parser\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{psaux_8h_ac4ccf6a7b29344497180cdbc540b31de}{P\+S\+\_\+\+Parser}}}
+
+\mbox{\Hypertarget{psaux_8h_ac7b6a8a1692a297389ba4b31406acf73}\label{psaux_8h_ac7b6a8a1692a297389ba4b31406acf73}} 
+\index{psaux.h@{psaux.h}!PS\_Parser\_Funcs@{PS\_Parser\_Funcs}}
+\index{PS\_Parser\_Funcs@{PS\_Parser\_Funcs}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{PS\_Parser\_Funcs}{PS\_Parser\_Funcs}}
+{\footnotesize\ttfamily typedef const struct \mbox{\hyperlink{struct_p_s___parser___funcs_rec__}{P\+S\+\_\+\+Parser\+\_\+\+Funcs\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{psaux_8h_ac7b6a8a1692a297389ba4b31406acf73}{P\+S\+\_\+\+Parser\+\_\+\+Funcs}}}
+
+\mbox{\Hypertarget{psaux_8h_a60c32aa3a1dd1f98fd236dc2ae24c418}\label{psaux_8h_a60c32aa3a1dd1f98fd236dc2ae24c418}} 
+\index{psaux.h@{psaux.h}!PS\_Parser\_FuncsRec@{PS\_Parser\_FuncsRec}}
+\index{PS\_Parser\_FuncsRec@{PS\_Parser\_FuncsRec}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{PS\_Parser\_FuncsRec}{PS\_Parser\_FuncsRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_p_s___parser___funcs_rec__}{P\+S\+\_\+\+Parser\+\_\+\+Funcs\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_a60c32aa3a1dd1f98fd236dc2ae24c418}{P\+S\+\_\+\+Parser\+\_\+\+Funcs\+Rec}}}
+
+\mbox{\Hypertarget{psaux_8h_acc12279494c0a43d2a4715f1e8c30502}\label{psaux_8h_acc12279494c0a43d2a4715f1e8c30502}} 
+\index{psaux.h@{psaux.h}!PS\_ParserRec@{PS\_ParserRec}}
+\index{PS\_ParserRec@{PS\_ParserRec}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{PS\_ParserRec}{PS\_ParserRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_p_s___parser_rec__}{P\+S\+\_\+\+Parser\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_acc12279494c0a43d2a4715f1e8c30502}{P\+S\+\_\+\+Parser\+Rec}}}
+
+\mbox{\Hypertarget{psaux_8h_ac78670c028e51ac947632a2ee8810316}\label{psaux_8h_ac78670c028e51ac947632a2ee8810316}} 
+\index{psaux.h@{psaux.h}!PS\_Table@{PS\_Table}}
+\index{PS\_Table@{PS\_Table}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{PS\_Table}{PS\_Table}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_p_s___table_rec__}{P\+S\+\_\+\+Table\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{psaux_8h_ac78670c028e51ac947632a2ee8810316}{P\+S\+\_\+\+Table}}}
+
+\mbox{\Hypertarget{psaux_8h_adea7bbddbe4d25164c880c10fee5b261}\label{psaux_8h_adea7bbddbe4d25164c880c10fee5b261}} 
+\index{psaux.h@{psaux.h}!PS\_Table\_Funcs@{PS\_Table\_Funcs}}
+\index{PS\_Table\_Funcs@{PS\_Table\_Funcs}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{PS\_Table\_Funcs}{PS\_Table\_Funcs}}
+{\footnotesize\ttfamily typedef const struct \mbox{\hyperlink{struct_p_s___table___funcs_rec__}{P\+S\+\_\+\+Table\+\_\+\+Funcs\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{psaux_8h_adea7bbddbe4d25164c880c10fee5b261}{P\+S\+\_\+\+Table\+\_\+\+Funcs}}}
+
+\mbox{\Hypertarget{psaux_8h_ae1dd1e776643bdb8aa3d4e9f34f8c322}\label{psaux_8h_ae1dd1e776643bdb8aa3d4e9f34f8c322}} 
+\index{psaux.h@{psaux.h}!PS\_Table\_FuncsRec@{PS\_Table\_FuncsRec}}
+\index{PS\_Table\_FuncsRec@{PS\_Table\_FuncsRec}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{PS\_Table\_FuncsRec}{PS\_Table\_FuncsRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_p_s___table___funcs_rec__}{P\+S\+\_\+\+Table\+\_\+\+Funcs\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_ae1dd1e776643bdb8aa3d4e9f34f8c322}{P\+S\+\_\+\+Table\+\_\+\+Funcs\+Rec}}}
+
+\mbox{\Hypertarget{psaux_8h_afc6c56e8440eed3f2b3e1ee052c57a24}\label{psaux_8h_afc6c56e8440eed3f2b3e1ee052c57a24}} 
+\index{psaux.h@{psaux.h}!PS\_TableRec@{PS\_TableRec}}
+\index{PS\_TableRec@{PS\_TableRec}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{PS\_TableRec}{PS\_TableRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_p_s___table_rec__}{P\+S\+\_\+\+Table\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_afc6c56e8440eed3f2b3e1ee052c57a24}{P\+S\+\_\+\+Table\+Rec}}}
+
+\mbox{\Hypertarget{psaux_8h_a565700e2be9a57bb3676a857cc330edb}\label{psaux_8h_a565700e2be9a57bb3676a857cc330edb}} 
+\index{psaux.h@{psaux.h}!PSAux\_Interface@{PSAux\_Interface}}
+\index{PSAux\_Interface@{PSAux\_Interface}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{PSAux\_Interface}{PSAux\_Interface}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{psaux_8h_a31301176199b817d1fcbc2adc844e6d3}{P\+S\+Aux\+\_\+\+Service\+Rec}} \mbox{\hyperlink{psaux_8h_a565700e2be9a57bb3676a857cc330edb}{P\+S\+Aux\+\_\+\+Interface}}}
+
+\mbox{\Hypertarget{psaux_8h_a9f18cae2940f734d57781d4b4f3e5233}\label{psaux_8h_a9f18cae2940f734d57781d4b4f3e5233}} 
+\index{psaux.h@{psaux.h}!PSAux\_Service@{PSAux\_Service}}
+\index{PSAux\_Service@{PSAux\_Service}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{PSAux\_Service}{PSAux\_Service}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_p_s_aux___service_rec__}{P\+S\+Aux\+\_\+\+Service\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{psaux_8h_a9f18cae2940f734d57781d4b4f3e5233}{P\+S\+Aux\+\_\+\+Service}}}
+
+\mbox{\Hypertarget{psaux_8h_a31301176199b817d1fcbc2adc844e6d3}\label{psaux_8h_a31301176199b817d1fcbc2adc844e6d3}} 
+\index{psaux.h@{psaux.h}!PSAux\_ServiceRec@{PSAux\_ServiceRec}}
+\index{PSAux\_ServiceRec@{PSAux\_ServiceRec}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{PSAux\_ServiceRec}{PSAux\_ServiceRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_p_s_aux___service_rec__}{P\+S\+Aux\+\_\+\+Service\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_a31301176199b817d1fcbc2adc844e6d3}{P\+S\+Aux\+\_\+\+Service\+Rec}}}
+
+\mbox{\Hypertarget{psaux_8h_a663b21b57e6b519b1d1b7a80939e5c7c}\label{psaux_8h_a663b21b57e6b519b1d1b7a80939e5c7c}} 
+\index{psaux.h@{psaux.h}!T1\_Builder@{T1\_Builder}}
+\index{T1\_Builder@{T1\_Builder}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Builder}{T1\_Builder}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t1___builder_rec__}{T1\+\_\+\+Builder\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{psaux_8h_a663b21b57e6b519b1d1b7a80939e5c7c}{T1\+\_\+\+Builder}}}
+
+\mbox{\Hypertarget{psaux_8h_ab882dcdc14825a7f782f6cec12bb6246}\label{psaux_8h_ab882dcdc14825a7f782f6cec12bb6246}} 
+\index{psaux.h@{psaux.h}!T1\_Builder\_Add\_Contour\_Func@{T1\_Builder\_Add\_Contour\_Func}}
+\index{T1\_Builder\_Add\_Contour\_Func@{T1\_Builder\_Add\_Contour\_Func}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Builder\_Add\_Contour\_Func}{T1\_Builder\_Add\_Contour\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T1\+\_\+\+Builder\+\_\+\+Add\+\_\+\+Contour\+\_\+\+Func) (\mbox{\hyperlink{psaux_8h_a663b21b57e6b519b1d1b7a80939e5c7c}{T1\+\_\+\+Builder}} builder)}
+
+\mbox{\Hypertarget{psaux_8h_aeaae3f02f5f42c076596c1c8b1a4e7c1}\label{psaux_8h_aeaae3f02f5f42c076596c1c8b1a4e7c1}} 
+\index{psaux.h@{psaux.h}!T1\_Builder\_Add\_Point1\_Func@{T1\_Builder\_Add\_Point1\_Func}}
+\index{T1\_Builder\_Add\_Point1\_Func@{T1\_Builder\_Add\_Point1\_Func}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Builder\_Add\_Point1\_Func}{T1\_Builder\_Add\_Point1\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T1\+\_\+\+Builder\+\_\+\+Add\+\_\+\+Point1\+\_\+\+Func) (\mbox{\hyperlink{psaux_8h_a663b21b57e6b519b1d1b7a80939e5c7c}{T1\+\_\+\+Builder}} builder, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} x, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} y)}
+
+\mbox{\Hypertarget{psaux_8h_ab7e6fdc2c5a30770fd2e13d1d35d288a}\label{psaux_8h_ab7e6fdc2c5a30770fd2e13d1d35d288a}} 
+\index{psaux.h@{psaux.h}!T1\_Builder\_Add\_Point\_Func@{T1\_Builder\_Add\_Point\_Func}}
+\index{T1\_Builder\_Add\_Point\_Func@{T1\_Builder\_Add\_Point\_Func}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Builder\_Add\_Point\_Func}{T1\_Builder\_Add\_Point\_Func}}
+{\footnotesize\ttfamily typedef void($\ast$ T1\+\_\+\+Builder\+\_\+\+Add\+\_\+\+Point\+\_\+\+Func) (\mbox{\hyperlink{psaux_8h_a663b21b57e6b519b1d1b7a80939e5c7c}{T1\+\_\+\+Builder}} builder, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} x, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} y, \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} flag)}
+
+\mbox{\Hypertarget{psaux_8h_a7b44e68bb84d39a8a9544aa88e4c114a}\label{psaux_8h_a7b44e68bb84d39a8a9544aa88e4c114a}} 
+\index{psaux.h@{psaux.h}!T1\_Builder\_Check\_Points\_Func@{T1\_Builder\_Check\_Points\_Func}}
+\index{T1\_Builder\_Check\_Points\_Func@{T1\_Builder\_Check\_Points\_Func}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Builder\_Check\_Points\_Func}{T1\_Builder\_Check\_Points\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T1\+\_\+\+Builder\+\_\+\+Check\+\_\+\+Points\+\_\+\+Func) (\mbox{\hyperlink{psaux_8h_a663b21b57e6b519b1d1b7a80939e5c7c}{T1\+\_\+\+Builder}} builder, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} count)}
+
+\mbox{\Hypertarget{psaux_8h_a6c064fec585b78db8ec45649dec8aa69}\label{psaux_8h_a6c064fec585b78db8ec45649dec8aa69}} 
+\index{psaux.h@{psaux.h}!T1\_Builder\_Close\_Contour\_Func@{T1\_Builder\_Close\_Contour\_Func}}
+\index{T1\_Builder\_Close\_Contour\_Func@{T1\_Builder\_Close\_Contour\_Func}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Builder\_Close\_Contour\_Func}{T1\_Builder\_Close\_Contour\_Func}}
+{\footnotesize\ttfamily typedef void($\ast$ T1\+\_\+\+Builder\+\_\+\+Close\+\_\+\+Contour\+\_\+\+Func) (\mbox{\hyperlink{psaux_8h_a663b21b57e6b519b1d1b7a80939e5c7c}{T1\+\_\+\+Builder}} builder)}
+
+\mbox{\Hypertarget{psaux_8h_a59e79c63e82e4dcd405139fb5f557220}\label{psaux_8h_a59e79c63e82e4dcd405139fb5f557220}} 
+\index{psaux.h@{psaux.h}!T1\_Builder\_Funcs@{T1\_Builder\_Funcs}}
+\index{T1\_Builder\_Funcs@{T1\_Builder\_Funcs}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Builder\_Funcs}{T1\_Builder\_Funcs}}
+{\footnotesize\ttfamily typedef const struct \mbox{\hyperlink{struct_t1___builder___funcs_rec__}{T1\+\_\+\+Builder\+\_\+\+Funcs\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{psaux_8h_a59e79c63e82e4dcd405139fb5f557220}{T1\+\_\+\+Builder\+\_\+\+Funcs}}}
+
+\mbox{\Hypertarget{psaux_8h_ae82f1eae40f3b91789a38ecd2267f979}\label{psaux_8h_ae82f1eae40f3b91789a38ecd2267f979}} 
+\index{psaux.h@{psaux.h}!T1\_Builder\_FuncsRec@{T1\_Builder\_FuncsRec}}
+\index{T1\_Builder\_FuncsRec@{T1\_Builder\_FuncsRec}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Builder\_FuncsRec}{T1\_Builder\_FuncsRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t1___builder___funcs_rec__}{T1\+\_\+\+Builder\+\_\+\+Funcs\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_ae82f1eae40f3b91789a38ecd2267f979}{T1\+\_\+\+Builder\+\_\+\+Funcs\+Rec}}}
+
+\mbox{\Hypertarget{psaux_8h_acecdc496ed650b9e518ced3b7334638c}\label{psaux_8h_acecdc496ed650b9e518ced3b7334638c}} 
+\index{psaux.h@{psaux.h}!T1\_Builder\_Start\_Point\_Func@{T1\_Builder\_Start\_Point\_Func}}
+\index{T1\_Builder\_Start\_Point\_Func@{T1\_Builder\_Start\_Point\_Func}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Builder\_Start\_Point\_Func}{T1\_Builder\_Start\_Point\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T1\+\_\+\+Builder\+\_\+\+Start\+\_\+\+Point\+\_\+\+Func) (\mbox{\hyperlink{psaux_8h_a663b21b57e6b519b1d1b7a80939e5c7c}{T1\+\_\+\+Builder}} builder, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} x, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} y)}
+
+\mbox{\Hypertarget{psaux_8h_a7e7000fa7222ecde3531ab9b12ab7090}\label{psaux_8h_a7e7000fa7222ecde3531ab9b12ab7090}} 
+\index{psaux.h@{psaux.h}!T1\_BuilderRec@{T1\_BuilderRec}}
+\index{T1\_BuilderRec@{T1\_BuilderRec}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_BuilderRec}{T1\_BuilderRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t1___builder_rec__}{T1\+\_\+\+Builder\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_a7e7000fa7222ecde3531ab9b12ab7090}{T1\+\_\+\+Builder\+Rec}}}
+
+\mbox{\Hypertarget{psaux_8h_a69a7c0a42a1bc1731862770f50a32bc2}\label{psaux_8h_a69a7c0a42a1bc1731862770f50a32bc2}} 
+\index{psaux.h@{psaux.h}!T1\_CMap\_Classes@{T1\_CMap\_Classes}}
+\index{T1\_CMap\_Classes@{T1\_CMap\_Classes}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_CMap\_Classes}{T1\_CMap\_Classes}}
+{\footnotesize\ttfamily typedef const struct \mbox{\hyperlink{struct_t1___c_map___classes_rec__}{T1\+\_\+\+C\+Map\+\_\+\+Classes\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{psaux_8h_a69a7c0a42a1bc1731862770f50a32bc2}{T1\+\_\+\+C\+Map\+\_\+\+Classes}}}
+
+\mbox{\Hypertarget{psaux_8h_aa5aa63f6cd3d8014228d77038ff3633a}\label{psaux_8h_aa5aa63f6cd3d8014228d77038ff3633a}} 
+\index{psaux.h@{psaux.h}!T1\_CMap\_ClassesRec@{T1\_CMap\_ClassesRec}}
+\index{T1\_CMap\_ClassesRec@{T1\_CMap\_ClassesRec}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_CMap\_ClassesRec}{T1\_CMap\_ClassesRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t1___c_map___classes_rec__}{T1\+\_\+\+C\+Map\+\_\+\+Classes\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_aa5aa63f6cd3d8014228d77038ff3633a}{T1\+\_\+\+C\+Map\+\_\+\+Classes\+Rec}}}
+
+\mbox{\Hypertarget{psaux_8h_a428b7bd32678ab7b0a785ee699ecc2b6}\label{psaux_8h_a428b7bd32678ab7b0a785ee699ecc2b6}} 
+\index{psaux.h@{psaux.h}!T1\_Decoder@{T1\_Decoder}}
+\index{T1\_Decoder@{T1\_Decoder}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Decoder}{T1\_Decoder}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t1___decoder_rec__}{T1\+\_\+\+Decoder\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{psaux_8h_a428b7bd32678ab7b0a785ee699ecc2b6}{T1\+\_\+\+Decoder}}}
+
+\mbox{\Hypertarget{psaux_8h_a261ae6af916d044be1b818e5dc8e8b9b}\label{psaux_8h_a261ae6af916d044be1b818e5dc8e8b9b}} 
+\index{psaux.h@{psaux.h}!T1\_Decoder\_Callback@{T1\_Decoder\_Callback}}
+\index{T1\_Decoder\_Callback@{T1\_Decoder\_Callback}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Decoder\_Callback}{T1\_Decoder\_Callback}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ T1\+\_\+\+Decoder\+\_\+\+Callback) (\mbox{\hyperlink{psaux_8h_a428b7bd32678ab7b0a785ee699ecc2b6}{T1\+\_\+\+Decoder}} decoder, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} glyph\+\_\+index)}
+
+\mbox{\Hypertarget{psaux_8h_ad99385a93c66629383e3f13dd37041dc}\label{psaux_8h_ad99385a93c66629383e3f13dd37041dc}} 
+\index{psaux.h@{psaux.h}!T1\_Decoder\_Funcs@{T1\_Decoder\_Funcs}}
+\index{T1\_Decoder\_Funcs@{T1\_Decoder\_Funcs}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Decoder\_Funcs}{T1\_Decoder\_Funcs}}
+{\footnotesize\ttfamily typedef const struct \mbox{\hyperlink{struct_t1___decoder___funcs_rec__}{T1\+\_\+\+Decoder\+\_\+\+Funcs\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{psaux_8h_ad99385a93c66629383e3f13dd37041dc}{T1\+\_\+\+Decoder\+\_\+\+Funcs}}}
+
+\mbox{\Hypertarget{psaux_8h_ab098a10d53329810072d1a9377403bd8}\label{psaux_8h_ab098a10d53329810072d1a9377403bd8}} 
+\index{psaux.h@{psaux.h}!T1\_Decoder\_FuncsRec@{T1\_Decoder\_FuncsRec}}
+\index{T1\_Decoder\_FuncsRec@{T1\_Decoder\_FuncsRec}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Decoder\_FuncsRec}{T1\_Decoder\_FuncsRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t1___decoder___funcs_rec__}{T1\+\_\+\+Decoder\+\_\+\+Funcs\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_ab098a10d53329810072d1a9377403bd8}{T1\+\_\+\+Decoder\+\_\+\+Funcs\+Rec}}}
+
+\mbox{\Hypertarget{psaux_8h_a5cfd02fa4e8c74f182585e0853bc93b2}\label{psaux_8h_a5cfd02fa4e8c74f182585e0853bc93b2}} 
+\index{psaux.h@{psaux.h}!T1\_Decoder\_Zone@{T1\_Decoder\_Zone}}
+\index{T1\_Decoder\_Zone@{T1\_Decoder\_Zone}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Decoder\_Zone}{T1\_Decoder\_Zone}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t1___decoder___zone_rec__}{T1\+\_\+\+Decoder\+\_\+\+Zone\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{psaux_8h_a5cfd02fa4e8c74f182585e0853bc93b2}{T1\+\_\+\+Decoder\+\_\+\+Zone}}}
+
+\mbox{\Hypertarget{psaux_8h_a1e3011ccffef1cad2439d3186985434f}\label{psaux_8h_a1e3011ccffef1cad2439d3186985434f}} 
+\index{psaux.h@{psaux.h}!T1\_Decoder\_ZoneRec@{T1\_Decoder\_ZoneRec}}
+\index{T1\_Decoder\_ZoneRec@{T1\_Decoder\_ZoneRec}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Decoder\_ZoneRec}{T1\_Decoder\_ZoneRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t1___decoder___zone_rec__}{T1\+\_\+\+Decoder\+\_\+\+Zone\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_a1e3011ccffef1cad2439d3186985434f}{T1\+\_\+\+Decoder\+\_\+\+Zone\+Rec}}}
+
+\mbox{\Hypertarget{psaux_8h_ab51f528af6ba38c517ca1ee4af926adb}\label{psaux_8h_ab51f528af6ba38c517ca1ee4af926adb}} 
+\index{psaux.h@{psaux.h}!T1\_DecoderRec@{T1\_DecoderRec}}
+\index{T1\_DecoderRec@{T1\_DecoderRec}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_DecoderRec}{T1\_DecoderRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t1___decoder_rec__}{T1\+\_\+\+Decoder\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_ab51f528af6ba38c517ca1ee4af926adb}{T1\+\_\+\+Decoder\+Rec}}}
+
+\mbox{\Hypertarget{psaux_8h_aff7e8566a4f38b05a4dc5355a81facea}\label{psaux_8h_aff7e8566a4f38b05a4dc5355a81facea}} 
+\index{psaux.h@{psaux.h}!T1\_Field@{T1\_Field}}
+\index{T1\_Field@{T1\_Field}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Field}{T1\_Field}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t1___field_rec__}{T1\+\_\+\+Field\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{psaux_8h_aff7e8566a4f38b05a4dc5355a81facea}{T1\+\_\+\+Field}}}
+
+\mbox{\Hypertarget{psaux_8h_a9a8162722cc5cbe41a78aadaffb7c8e7}\label{psaux_8h_a9a8162722cc5cbe41a78aadaffb7c8e7}} 
+\index{psaux.h@{psaux.h}!T1\_Field\_ParseFunc@{T1\_Field\_ParseFunc}}
+\index{T1\_Field\_ParseFunc@{T1\_Field\_ParseFunc}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Field\_ParseFunc}{T1\_Field\_ParseFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ T1\+\_\+\+Field\+\_\+\+Parse\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{F\+T\+\_\+\+Pointer}} parser)}
+
+\mbox{\Hypertarget{psaux_8h_aa1081e8b649021a2b35240d1cd6cdcf3}\label{psaux_8h_aa1081e8b649021a2b35240d1cd6cdcf3}} 
+\index{psaux.h@{psaux.h}!T1\_FieldLocation@{T1\_FieldLocation}}
+\index{T1\_FieldLocation@{T1\_FieldLocation}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_FieldLocation}{T1\_FieldLocation}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32}{T1\+\_\+\+Field\+Location\+\_\+}} \mbox{\hyperlink{psaux_8h_aa1081e8b649021a2b35240d1cd6cdcf3}{T1\+\_\+\+Field\+Location}}}
+
+\mbox{\Hypertarget{psaux_8h_a4d4d3541e7fa341d8699b39efe37973c}\label{psaux_8h_a4d4d3541e7fa341d8699b39efe37973c}} 
+\index{psaux.h@{psaux.h}!T1\_FieldRec@{T1\_FieldRec}}
+\index{T1\_FieldRec@{T1\_FieldRec}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_FieldRec}{T1\_FieldRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t1___field_rec__}{T1\+\_\+\+Field\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_a4d4d3541e7fa341d8699b39efe37973c}{T1\+\_\+\+Field\+Rec}}}
+
+\mbox{\Hypertarget{psaux_8h_a69f80bee58c822af6314b79d960253d4}\label{psaux_8h_a69f80bee58c822af6314b79d960253d4}} 
+\index{psaux.h@{psaux.h}!T1\_FieldType@{T1\_FieldType}}
+\index{T1\_FieldType@{T1\_FieldType}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_FieldType}{T1\_FieldType}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147dac}{T1\+\_\+\+Field\+Type\+\_\+}} \mbox{\hyperlink{psaux_8h_a69f80bee58c822af6314b79d960253d4}{T1\+\_\+\+Field\+Type}}}
+
+\mbox{\Hypertarget{psaux_8h_aa4032696616a13d020bb86f460ee80d6}\label{psaux_8h_aa4032696616a13d020bb86f460ee80d6}} 
+\index{psaux.h@{psaux.h}!T1\_ParseState@{T1\_ParseState}}
+\index{T1\_ParseState@{T1\_ParseState}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_ParseState}{T1\_ParseState}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{psaux_8h_a7c39b57b37de0f35b9ae6a564fd6c76b}{T1\+\_\+\+Parse\+State\+\_\+}} \mbox{\hyperlink{psaux_8h_aa4032696616a13d020bb86f460ee80d6}{T1\+\_\+\+Parse\+State}}}
+
+\mbox{\Hypertarget{psaux_8h_aaee5fcb159a39e09f57597e140a6ce38}\label{psaux_8h_aaee5fcb159a39e09f57597e140a6ce38}} 
+\index{psaux.h@{psaux.h}!T1\_Token@{T1\_Token}}
+\index{T1\_Token@{T1\_Token}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_Token}{T1\_Token}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t1___token_rec__}{T1\+\_\+\+Token\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{psaux_8h_aaee5fcb159a39e09f57597e140a6ce38}{T1\+\_\+\+Token}}}
+
+\mbox{\Hypertarget{psaux_8h_a49ffeb8f15fbfda5675cd3443f92644e}\label{psaux_8h_a49ffeb8f15fbfda5675cd3443f92644e}} 
+\index{psaux.h@{psaux.h}!T1\_TokenRec@{T1\_TokenRec}}
+\index{T1\_TokenRec@{T1\_TokenRec}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_TokenRec}{T1\_TokenRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_t1___token_rec__}{T1\+\_\+\+Token\+Rec\+\_\+}} \mbox{\hyperlink{psaux_8h_a49ffeb8f15fbfda5675cd3443f92644e}{T1\+\_\+\+Token\+Rec}}}
+
+\mbox{\Hypertarget{psaux_8h_ae46c356a496de174971b2264bbd8a54a}\label{psaux_8h_ae46c356a496de174971b2264bbd8a54a}} 
+\index{psaux.h@{psaux.h}!T1\_TokenType@{T1\_TokenType}}
+\index{T1\_TokenType@{T1\_TokenType}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_TokenType}{T1\_TokenType}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{psaux_8h_a27dd410c40d3600b4dd2a17049511304}{T1\+\_\+\+Token\+Type\+\_\+}} \mbox{\hyperlink{psaux_8h_ae46c356a496de174971b2264bbd8a54a}{T1\+\_\+\+Token\+Type}}}
+
+
+
+\doxysubsection{列挙型詳解}
+\mbox{\Hypertarget{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32}\label{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32}} 
+\index{psaux.h@{psaux.h}!T1\_FieldLocation\_@{T1\_FieldLocation\_}}
+\index{T1\_FieldLocation\_@{T1\_FieldLocation\_}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_FieldLocation\_}{T1\_FieldLocation\_}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32}{T1\+\_\+\+Field\+Location\+\_\+}}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_FIELD\_LOCATION\_CID\_INFO@{T1\_FIELD\_LOCATION\_CID\_INFO}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_FIELD\_LOCATION\_CID\_INFO@{T1\_FIELD\_LOCATION\_CID\_INFO}}}\mbox{\Hypertarget{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32a49a2c680f72e9b28197625a198f17bb6}\label{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32a49a2c680f72e9b28197625a198f17bb6}} 
+T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+C\+I\+D\+\_\+\+I\+N\+FO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_FIELD\_LOCATION\_FONT\_DICT@{T1\_FIELD\_LOCATION\_FONT\_DICT}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_FIELD\_LOCATION\_FONT\_DICT@{T1\_FIELD\_LOCATION\_FONT\_DICT}}}\mbox{\Hypertarget{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32afa57448995b2f1f0876491e1ead3c26a}\label{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32afa57448995b2f1f0876491e1ead3c26a}} 
+T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+F\+O\+N\+T\+\_\+\+D\+I\+CT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_FIELD\_LOCATION\_FONT\_EXTRA@{T1\_FIELD\_LOCATION\_FONT\_EXTRA}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_FIELD\_LOCATION\_FONT\_EXTRA@{T1\_FIELD\_LOCATION\_FONT\_EXTRA}}}\mbox{\Hypertarget{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32a08a16df06a4c9c24190040f4e31c1919}\label{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32a08a16df06a4c9c24190040f4e31c1919}} 
+T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+F\+O\+N\+T\+\_\+\+E\+X\+T\+RA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_FIELD\_LOCATION\_FONT\_INFO@{T1\_FIELD\_LOCATION\_FONT\_INFO}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_FIELD\_LOCATION\_FONT\_INFO@{T1\_FIELD\_LOCATION\_FONT\_INFO}}}\mbox{\Hypertarget{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32a92b9d360faa31535e6b2d8023857e3fe}\label{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32a92b9d360faa31535e6b2d8023857e3fe}} 
+T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+F\+O\+N\+T\+\_\+\+I\+N\+FO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_FIELD\_LOCATION\_PRIVATE@{T1\_FIELD\_LOCATION\_PRIVATE}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_FIELD\_LOCATION\_PRIVATE@{T1\_FIELD\_LOCATION\_PRIVATE}}}\mbox{\Hypertarget{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32a81c5858e601ee955b6c9eb6d4a7adfd0}\label{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32a81c5858e601ee955b6c9eb6d4a7adfd0}} 
+T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+P\+R\+I\+V\+A\+TE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_FIELD\_LOCATION\_BBOX@{T1\_FIELD\_LOCATION\_BBOX}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_FIELD\_LOCATION\_BBOX@{T1\_FIELD\_LOCATION\_BBOX}}}\mbox{\Hypertarget{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32a6b09b93c7c1bb29c98c062588ad59372}\label{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32a6b09b93c7c1bb29c98c062588ad59372}} 
+T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+B\+B\+OX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_FIELD\_LOCATION\_LOADER@{T1\_FIELD\_LOCATION\_LOADER}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_FIELD\_LOCATION\_LOADER@{T1\_FIELD\_LOCATION\_LOADER}}}\mbox{\Hypertarget{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32a92129d5f5c606074a6e88aad7d86563d}\label{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32a92129d5f5c606074a6e88aad7d86563d}} 
+T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+L\+O\+A\+D\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_FIELD\_LOCATION\_FACE@{T1\_FIELD\_LOCATION\_FACE}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_FIELD\_LOCATION\_FACE@{T1\_FIELD\_LOCATION\_FACE}}}\mbox{\Hypertarget{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32a9ba33aed4f7ce8e6459534f217b94d75}\label{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32a9ba33aed4f7ce8e6459534f217b94d75}} 
+T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+F\+A\+CE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_FIELD\_LOCATION\_BLEND@{T1\_FIELD\_LOCATION\_BLEND}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_FIELD\_LOCATION\_BLEND@{T1\_FIELD\_LOCATION\_BLEND}}}\mbox{\Hypertarget{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32a18f7a67693ade79db6b9bb7eab9fa863}\label{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32a18f7a67693ade79db6b9bb7eab9fa863}} 
+T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+B\+L\+E\+ND&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_FIELD\_LOCATION\_MAX@{T1\_FIELD\_LOCATION\_MAX}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_FIELD\_LOCATION\_MAX@{T1\_FIELD\_LOCATION\_MAX}}}\mbox{\Hypertarget{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32aeb6ade426aafa02dc0b904cd56b8ed5f}\label{psaux_8h_afd9a0a61ee6f01b027bd29b42b78de32aeb6ade426aafa02dc0b904cd56b8ed5f}} 
+T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+L\+O\+C\+A\+T\+I\+O\+N\+\_\+\+M\+AX&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{psaux_8h_aa1b654232870fc4919f59be569147dac}\label{psaux_8h_aa1b654232870fc4919f59be569147dac}} 
+\index{psaux.h@{psaux.h}!T1\_FieldType\_@{T1\_FieldType\_}}
+\index{T1\_FieldType\_@{T1\_FieldType\_}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_FieldType\_}{T1\_FieldType\_}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{psaux_8h_aa1b654232870fc4919f59be569147dac}{T1\+\_\+\+Field\+Type\+\_\+}}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_FIELD\_TYPE\_NONE@{T1\_FIELD\_TYPE\_NONE}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_FIELD\_TYPE\_NONE@{T1\_FIELD\_TYPE\_NONE}}}\mbox{\Hypertarget{psaux_8h_aa1b654232870fc4919f59be569147daca43a68c20c9c0668183a1e8617e16cea0}\label{psaux_8h_aa1b654232870fc4919f59be569147daca43a68c20c9c0668183a1e8617e16cea0}} 
+T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_FIELD\_TYPE\_BOOL@{T1\_FIELD\_TYPE\_BOOL}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_FIELD\_TYPE\_BOOL@{T1\_FIELD\_TYPE\_BOOL}}}\mbox{\Hypertarget{psaux_8h_aa1b654232870fc4919f59be569147dacae9dd21f090e7b7968d8a5f985ba9e008}\label{psaux_8h_aa1b654232870fc4919f59be569147dacae9dd21f090e7b7968d8a5f985ba9e008}} 
+T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+O\+OL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_FIELD\_TYPE\_INTEGER@{T1\_FIELD\_TYPE\_INTEGER}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_FIELD\_TYPE\_INTEGER@{T1\_FIELD\_TYPE\_INTEGER}}}\mbox{\Hypertarget{psaux_8h_aa1b654232870fc4919f59be569147daca6e6193ed4c940adda4dc5596f870976f}\label{psaux_8h_aa1b654232870fc4919f59be569147daca6e6193ed4c940adda4dc5596f870976f}} 
+T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T\+E\+G\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_FIELD\_TYPE\_FIXED@{T1\_FIELD\_TYPE\_FIXED}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_FIELD\_TYPE\_FIXED@{T1\_FIELD\_TYPE\_FIXED}}}\mbox{\Hypertarget{psaux_8h_aa1b654232870fc4919f59be569147daca3e2feefac41dac167416bd1ddde8e44f}\label{psaux_8h_aa1b654232870fc4919f59be569147daca3e2feefac41dac167416bd1ddde8e44f}} 
+T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+I\+X\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_FIELD\_TYPE\_FIXED\_1000@{T1\_FIELD\_TYPE\_FIXED\_1000}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_FIELD\_TYPE\_FIXED\_1000@{T1\_FIELD\_TYPE\_FIXED\_1000}}}\mbox{\Hypertarget{psaux_8h_aa1b654232870fc4919f59be569147daca1730fb1d649e4a103f09792ed7597511}\label{psaux_8h_aa1b654232870fc4919f59be569147daca1730fb1d649e4a103f09792ed7597511}} 
+T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+I\+X\+E\+D\+\_\+1000&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_FIELD\_TYPE\_STRING@{T1\_FIELD\_TYPE\_STRING}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_FIELD\_TYPE\_STRING@{T1\_FIELD\_TYPE\_STRING}}}\mbox{\Hypertarget{psaux_8h_aa1b654232870fc4919f59be569147daca377307f98db50f1221a640fe8c492f97}\label{psaux_8h_aa1b654232870fc4919f59be569147daca377307f98db50f1221a640fe8c492f97}} 
+T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+T\+R\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_FIELD\_TYPE\_KEY@{T1\_FIELD\_TYPE\_KEY}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_FIELD\_TYPE\_KEY@{T1\_FIELD\_TYPE\_KEY}}}\mbox{\Hypertarget{psaux_8h_aa1b654232870fc4919f59be569147daca03e7bfa08aec2c20d7b7935462e34643}\label{psaux_8h_aa1b654232870fc4919f59be569147daca03e7bfa08aec2c20d7b7935462e34643}} 
+T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+K\+EY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_FIELD\_TYPE\_BBOX@{T1\_FIELD\_TYPE\_BBOX}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_FIELD\_TYPE\_BBOX@{T1\_FIELD\_TYPE\_BBOX}}}\mbox{\Hypertarget{psaux_8h_aa1b654232870fc4919f59be569147daca160493d419d9fadaba60986b926e625d}\label{psaux_8h_aa1b654232870fc4919f59be569147daca160493d419d9fadaba60986b926e625d}} 
+T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+B\+B\+OX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_FIELD\_TYPE\_MM\_BBOX@{T1\_FIELD\_TYPE\_MM\_BBOX}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_FIELD\_TYPE\_MM\_BBOX@{T1\_FIELD\_TYPE\_MM\_BBOX}}}\mbox{\Hypertarget{psaux_8h_aa1b654232870fc4919f59be569147dacadb711a495978a679a5c4fd5129dd1f8a}\label{psaux_8h_aa1b654232870fc4919f59be569147dacadb711a495978a679a5c4fd5129dd1f8a}} 
+T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+M\+\_\+\+B\+B\+OX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_FIELD\_TYPE\_INTEGER\_ARRAY@{T1\_FIELD\_TYPE\_INTEGER\_ARRAY}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_FIELD\_TYPE\_INTEGER\_ARRAY@{T1\_FIELD\_TYPE\_INTEGER\_ARRAY}}}\mbox{\Hypertarget{psaux_8h_aa1b654232870fc4919f59be569147daca13b4957925c0032ae8a0aba3810132cf}\label{psaux_8h_aa1b654232870fc4919f59be569147daca13b4957925c0032ae8a0aba3810132cf}} 
+T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T\+E\+G\+E\+R\+\_\+\+A\+R\+R\+AY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_FIELD\_TYPE\_FIXED\_ARRAY@{T1\_FIELD\_TYPE\_FIXED\_ARRAY}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_FIELD\_TYPE\_FIXED\_ARRAY@{T1\_FIELD\_TYPE\_FIXED\_ARRAY}}}\mbox{\Hypertarget{psaux_8h_aa1b654232870fc4919f59be569147daca835150fea3b886ca1b56bdbc381356d3}\label{psaux_8h_aa1b654232870fc4919f59be569147daca835150fea3b886ca1b56bdbc381356d3}} 
+T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+F\+I\+X\+E\+D\+\_\+\+A\+R\+R\+AY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_FIELD\_TYPE\_CALLBACK@{T1\_FIELD\_TYPE\_CALLBACK}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_FIELD\_TYPE\_CALLBACK@{T1\_FIELD\_TYPE\_CALLBACK}}}\mbox{\Hypertarget{psaux_8h_aa1b654232870fc4919f59be569147daca6e49aacdc676a249172d7e7d381b451e}\label{psaux_8h_aa1b654232870fc4919f59be569147daca6e49aacdc676a249172d7e7d381b451e}} 
+T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+A\+L\+L\+B\+A\+CK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_FIELD\_TYPE\_MAX@{T1\_FIELD\_TYPE\_MAX}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_FIELD\_TYPE\_MAX@{T1\_FIELD\_TYPE\_MAX}}}\mbox{\Hypertarget{psaux_8h_aa1b654232870fc4919f59be569147daca58bac936780f63faf3133aa1a0f456de}\label{psaux_8h_aa1b654232870fc4919f59be569147daca58bac936780f63faf3133aa1a0f456de}} 
+T1\+\_\+\+F\+I\+E\+L\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+AX&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{psaux_8h_a7c39b57b37de0f35b9ae6a564fd6c76b}\label{psaux_8h_a7c39b57b37de0f35b9ae6a564fd6c76b}} 
+\index{psaux.h@{psaux.h}!T1\_ParseState\_@{T1\_ParseState\_}}
+\index{T1\_ParseState\_@{T1\_ParseState\_}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_ParseState\_}{T1\_ParseState\_}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{psaux_8h_a7c39b57b37de0f35b9ae6a564fd6c76b}{T1\+\_\+\+Parse\+State\+\_\+}}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_Parse\_Start@{T1\_Parse\_Start}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_Parse\_Start@{T1\_Parse\_Start}}}\mbox{\Hypertarget{psaux_8h_a7c39b57b37de0f35b9ae6a564fd6c76badc68b3e6a84b194d0b61e2d1dc74df63}\label{psaux_8h_a7c39b57b37de0f35b9ae6a564fd6c76badc68b3e6a84b194d0b61e2d1dc74df63}} 
+T1\+\_\+\+Parse\+\_\+\+Start&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_Parse\_Have\_Width@{T1\_Parse\_Have\_Width}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_Parse\_Have\_Width@{T1\_Parse\_Have\_Width}}}\mbox{\Hypertarget{psaux_8h_a7c39b57b37de0f35b9ae6a564fd6c76ba03da278b5f6cc13d9ddf9872a45d27c2}\label{psaux_8h_a7c39b57b37de0f35b9ae6a564fd6c76ba03da278b5f6cc13d9ddf9872a45d27c2}} 
+T1\+\_\+\+Parse\+\_\+\+Have\+\_\+\+Width&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_Parse\_Have\_Moveto@{T1\_Parse\_Have\_Moveto}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_Parse\_Have\_Moveto@{T1\_Parse\_Have\_Moveto}}}\mbox{\Hypertarget{psaux_8h_a7c39b57b37de0f35b9ae6a564fd6c76baf45efbcef76ef2289f297cda0417efbd}\label{psaux_8h_a7c39b57b37de0f35b9ae6a564fd6c76baf45efbcef76ef2289f297cda0417efbd}} 
+T1\+\_\+\+Parse\+\_\+\+Have\+\_\+\+Moveto&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_Parse\_Have\_Path@{T1\_Parse\_Have\_Path}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_Parse\_Have\_Path@{T1\_Parse\_Have\_Path}}}\mbox{\Hypertarget{psaux_8h_a7c39b57b37de0f35b9ae6a564fd6c76ba858490c5affc67cc3e95424b5bc81e04}\label{psaux_8h_a7c39b57b37de0f35b9ae6a564fd6c76ba858490c5affc67cc3e95424b5bc81e04}} 
+T1\+\_\+\+Parse\+\_\+\+Have\+\_\+\+Path&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{psaux_8h_a27dd410c40d3600b4dd2a17049511304}\label{psaux_8h_a27dd410c40d3600b4dd2a17049511304}} 
+\index{psaux.h@{psaux.h}!T1\_TokenType\_@{T1\_TokenType\_}}
+\index{T1\_TokenType\_@{T1\_TokenType\_}!psaux.h@{psaux.h}}
+\doxysubsubsection{\texorpdfstring{T1\_TokenType\_}{T1\_TokenType\_}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{psaux_8h_a27dd410c40d3600b4dd2a17049511304}{T1\+\_\+\+Token\+Type\+\_\+}}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_TOKEN\_TYPE\_NONE@{T1\_TOKEN\_TYPE\_NONE}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_TOKEN\_TYPE\_NONE@{T1\_TOKEN\_TYPE\_NONE}}}\mbox{\Hypertarget{psaux_8h_a27dd410c40d3600b4dd2a17049511304ae732cb63517d35ae3a41935554b8a2b6}\label{psaux_8h_a27dd410c40d3600b4dd2a17049511304ae732cb63517d35ae3a41935554b8a2b6}} 
+T1\+\_\+\+T\+O\+K\+E\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_TOKEN\_TYPE\_ANY@{T1\_TOKEN\_TYPE\_ANY}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_TOKEN\_TYPE\_ANY@{T1\_TOKEN\_TYPE\_ANY}}}\mbox{\Hypertarget{psaux_8h_a27dd410c40d3600b4dd2a17049511304ad919b90d6956adc76322a94780bd7739}\label{psaux_8h_a27dd410c40d3600b4dd2a17049511304ad919b90d6956adc76322a94780bd7739}} 
+T1\+\_\+\+T\+O\+K\+E\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+NY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_TOKEN\_TYPE\_STRING@{T1\_TOKEN\_TYPE\_STRING}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_TOKEN\_TYPE\_STRING@{T1\_TOKEN\_TYPE\_STRING}}}\mbox{\Hypertarget{psaux_8h_a27dd410c40d3600b4dd2a17049511304a286b7a4f4bbf1c622bd6a7d9558ca893}\label{psaux_8h_a27dd410c40d3600b4dd2a17049511304a286b7a4f4bbf1c622bd6a7d9558ca893}} 
+T1\+\_\+\+T\+O\+K\+E\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+T\+R\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_TOKEN\_TYPE\_ARRAY@{T1\_TOKEN\_TYPE\_ARRAY}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_TOKEN\_TYPE\_ARRAY@{T1\_TOKEN\_TYPE\_ARRAY}}}\mbox{\Hypertarget{psaux_8h_a27dd410c40d3600b4dd2a17049511304aa94a04ceee9f8fb58fad87fffe910c61}\label{psaux_8h_a27dd410c40d3600b4dd2a17049511304aa94a04ceee9f8fb58fad87fffe910c61}} 
+T1\+\_\+\+T\+O\+K\+E\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+R\+R\+AY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_TOKEN\_TYPE\_KEY@{T1\_TOKEN\_TYPE\_KEY}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_TOKEN\_TYPE\_KEY@{T1\_TOKEN\_TYPE\_KEY}}}\mbox{\Hypertarget{psaux_8h_a27dd410c40d3600b4dd2a17049511304ac00b109231c385c29e79b4ea5276d98f}\label{psaux_8h_a27dd410c40d3600b4dd2a17049511304ac00b109231c385c29e79b4ea5276d98f}} 
+T1\+\_\+\+T\+O\+K\+E\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+K\+EY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T1\_TOKEN\_TYPE\_MAX@{T1\_TOKEN\_TYPE\_MAX}!psaux.h@{psaux.h}}\index{psaux.h@{psaux.h}!T1\_TOKEN\_TYPE\_MAX@{T1\_TOKEN\_TYPE\_MAX}}}\mbox{\Hypertarget{psaux_8h_a27dd410c40d3600b4dd2a17049511304a80ccf1b4393e9272453ddd23764ad19b}\label{psaux_8h_a27dd410c40d3600b4dd2a17049511304a80ccf1b4393e9272453ddd23764ad19b}} 
+T1\+\_\+\+T\+O\+K\+E\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+AX&\\
+\hline
+
+\end{DoxyEnumFields}

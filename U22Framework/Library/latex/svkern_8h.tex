@@ -1,0 +1,53 @@
+\hypertarget{svkern_8h}{}\doxysection{freetype/internal/services/svkern.h ファイル}
+\label{svkern_8h}\index{freetype/internal/services/svkern.h@{freetype/internal/services/svkern.h}}
+{\ttfamily \#include $<$freetype/internal/ftserv.\+h$>$}\newline
+{\ttfamily \#include $<$freetype/tttables.\+h$>$}\newline
+svkern.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{svkern_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{svkern_8h_ae41a6e1e875d62ded59a77d292e62856}{F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+K\+E\+R\+N\+I\+NG}}~\char`\"{}kerning\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svkern_8h_a04407644fc10e9ab34fd156e1a9ea0bc}{F\+T\+\_\+\+Kerning\+\_\+\+Track\+Get\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} point\+\_\+size, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} degree, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$akerning)
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{svkern_8h_abb518ad14360bb321e5ad4ca962bd487}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE}} (Kerning)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{svkern_8h_ae41a6e1e875d62ded59a77d292e62856}\label{svkern_8h_ae41a6e1e875d62ded59a77d292e62856}} 
+\index{svkern.h@{svkern.h}!FT\_SERVICE\_ID\_KERNING@{FT\_SERVICE\_ID\_KERNING}}
+\index{FT\_SERVICE\_ID\_KERNING@{FT\_SERVICE\_ID\_KERNING}!svkern.h@{svkern.h}}
+\doxysubsubsection{\texorpdfstring{FT\_SERVICE\_ID\_KERNING}{FT\_SERVICE\_ID\_KERNING}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+K\+E\+R\+N\+I\+NG~\char`\"{}kerning\char`\"{}}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{svkern_8h_a04407644fc10e9ab34fd156e1a9ea0bc}\label{svkern_8h_a04407644fc10e9ab34fd156e1a9ea0bc}} 
+\index{svkern.h@{svkern.h}!FT\_Kerning\_TrackGetFunc@{FT\_Kerning\_TrackGetFunc}}
+\index{FT\_Kerning\_TrackGetFunc@{FT\_Kerning\_TrackGetFunc}!svkern.h@{svkern.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Kerning\_TrackGetFunc}{FT\_Kerning\_TrackGetFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+Kerning\+\_\+\+Track\+Get\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} point\+\_\+size, \mbox{\hyperlink{fttypes_8h_af90e5fb0d07e21be9fe6faa33f02484c}{F\+T\+\_\+\+Int}} degree, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$akerning)}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{svkern_8h_abb518ad14360bb321e5ad4ca962bd487}\label{svkern_8h_abb518ad14360bb321e5ad4ca962bd487}} 
+\index{svkern.h@{svkern.h}!FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}}
+\index{FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}!svkern.h@{svkern.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE()}{FT\_DEFINE\_SERVICE()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE (\begin{DoxyParamCaption}\item[{Kerning}]{ }\end{DoxyParamCaption})}
+

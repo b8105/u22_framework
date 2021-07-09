@@ -1,0 +1,164 @@
+\hypertarget{svpscmap_8h}{}\doxysection{freetype/internal/services/svpscmap.h ファイル}
+\label{svpscmap_8h}\index{freetype/internal/services/svpscmap.h@{freetype/internal/services/svpscmap.h}}
+{\ttfamily \#include $<$freetype/internal/ftobjs.\+h$>$}\newline
+svpscmap.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{svpscmap_8h__incl}
+\end{center}
+\end{figure}
+被依存関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{svpscmap_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_p_s___uni_map__}{P\+S\+\_\+\+Uni\+Map\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_p_s___unicodes_rec__}{P\+S\+\_\+\+Unicodes\+Rec\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{svpscmap_8h_a807c6aabfd460455bcc1500666871110}{F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+P\+O\+S\+T\+S\+C\+R\+I\+P\+T\+\_\+\+C\+M\+A\+PS}}~\char`\"{}postscript-\/cmaps\char`\"{}
+\item 
+\#define \mbox{\hyperlink{svpscmap_8h_a628788faed9c0a74f1311b826f16ec23}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+P\+S\+C\+M\+A\+P\+S\+R\+EC}}(class\+\_\+,  unicode\+\_\+value\+\_\+,  unicodes\+\_\+init\+\_\+,  unicodes\+\_\+char\+\_\+index\+\_\+,  unicodes\+\_\+char\+\_\+next\+\_\+,  macintosh\+\_\+name\+\_\+,  adobe\+\_\+std\+\_\+strings\+\_\+,  adobe\+\_\+std\+\_\+encoding\+\_\+,  adobe\+\_\+expert\+\_\+encoding\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef F\+T\+\_\+\+U\+Int32($\ast$ \mbox{\hyperlink{svpscmap_8h_a281fcdc3e77ccb3687368efb46870a96}{P\+S\+\_\+\+Unicode\+\_\+\+Value\+Func}}) (const char $\ast$glyph\+\_\+name)
+\item 
+typedef const char $\ast$($\ast$ \mbox{\hyperlink{svpscmap_8h_a1caa40c0cbdc59650fda49f539dcc4ab}{P\+S\+\_\+\+Macintosh\+\_\+\+Name\+Func}}) (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} name\+\_\+index)
+\item 
+typedef const char $\ast$($\ast$ \mbox{\hyperlink{svpscmap_8h_a2e18696936396e94f3c03fc28d00300e}{P\+S\+\_\+\+Adobe\+\_\+\+Std\+\_\+\+Strings\+Func}}) (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} string\+\_\+index)
+\item 
+typedef struct \mbox{\hyperlink{struct_p_s___uni_map__}{P\+S\+\_\+\+Uni\+Map\+\_\+}} \mbox{\hyperlink{svpscmap_8h_afd7d65d901864a603f4e32a88bc35c18}{P\+S\+\_\+\+Uni\+Map}}
+\item 
+typedef struct \mbox{\hyperlink{struct_p_s___unicodes_rec__}{P\+S\+\_\+\+Unicodes\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{svpscmap_8h_a8b558d4301f76250934f6c3c7d99ccf9}{P\+S\+\_\+\+Unicodes}}
+\item 
+typedef struct \mbox{\hyperlink{struct_p_s___unicodes_rec__}{P\+S\+\_\+\+Unicodes\+Rec\+\_\+}} \mbox{\hyperlink{svpscmap_8h_ad69dd668608f7a847da825d4d5ee408d}{P\+S\+\_\+\+Unicodes\+Rec}}
+\item 
+typedef const char $\ast$($\ast$ \mbox{\hyperlink{svpscmap_8h_a531967efb89e4977066c44c79af722ca}{P\+S\+\_\+\+Get\+Glyph\+Name\+Func}}) (\mbox{\hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{F\+T\+\_\+\+Pointer}} data, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} string\+\_\+index)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{svpscmap_8h_a7f60221450881f55170531297873888c}{P\+S\+\_\+\+Free\+Glyph\+Name\+Func}}) (\mbox{\hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{F\+T\+\_\+\+Pointer}} data, const char $\ast$name)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svpscmap_8h_a610614787d5337123a1fbca815ce8f48}{P\+S\+\_\+\+Unicodes\+\_\+\+Init\+Func}}) (\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} memory, \mbox{\hyperlink{svpscmap_8h_a8b558d4301f76250934f6c3c7d99ccf9}{P\+S\+\_\+\+Unicodes}} unicodes, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} num\+\_\+glyphs, \mbox{\hyperlink{svpscmap_8h_a531967efb89e4977066c44c79af722ca}{P\+S\+\_\+\+Get\+Glyph\+Name\+Func}} get\+\_\+glyph\+\_\+name, \mbox{\hyperlink{svpscmap_8h_a7f60221450881f55170531297873888c}{P\+S\+\_\+\+Free\+Glyph\+Name\+Func}} free\+\_\+glyph\+\_\+name, \mbox{\hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{F\+T\+\_\+\+Pointer}} glyph\+\_\+data)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}}($\ast$ \mbox{\hyperlink{svpscmap_8h_abe6ade805851f01216a81ba385cedd43}{P\+S\+\_\+\+Unicodes\+\_\+\+Char\+Index\+Func}}) (\mbox{\hyperlink{svpscmap_8h_a8b558d4301f76250934f6c3c7d99ccf9}{P\+S\+\_\+\+Unicodes}} unicodes, F\+T\+\_\+\+U\+Int32 unicode)
+\item 
+typedef F\+T\+\_\+\+U\+Int32($\ast$ \mbox{\hyperlink{svpscmap_8h_a5c60f9ff219eaf2b3bfd66863eb82729}{P\+S\+\_\+\+Unicodes\+\_\+\+Char\+Next\+Func}}) (\mbox{\hyperlink{svpscmap_8h_a8b558d4301f76250934f6c3c7d99ccf9}{P\+S\+\_\+\+Unicodes}} unicodes, F\+T\+\_\+\+U\+Int32 $\ast$unicode)
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{svpscmap_8h_a4883d38c4df552a364920771e3d8f59d}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE}} (Ps\+C\+Maps)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{svpscmap_8h_a628788faed9c0a74f1311b826f16ec23}\label{svpscmap_8h_a628788faed9c0a74f1311b826f16ec23}} 
+\index{svpscmap.h@{svpscmap.h}!FT\_DEFINE\_SERVICE\_PSCMAPSREC@{FT\_DEFINE\_SERVICE\_PSCMAPSREC}}
+\index{FT\_DEFINE\_SERVICE\_PSCMAPSREC@{FT\_DEFINE\_SERVICE\_PSCMAPSREC}!svpscmap.h@{svpscmap.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE\_PSCMAPSREC}{FT\_DEFINE\_SERVICE\_PSCMAPSREC}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+P\+S\+C\+M\+A\+P\+S\+R\+EC(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{unicode\+\_\+value\+\_\+,  }\item[{}]{unicodes\+\_\+init\+\_\+,  }\item[{}]{unicodes\+\_\+char\+\_\+index\+\_\+,  }\item[{}]{unicodes\+\_\+char\+\_\+next\+\_\+,  }\item[{}]{macintosh\+\_\+name\+\_\+,  }\item[{}]{adobe\+\_\+std\+\_\+strings\+\_\+,  }\item[{}]{adobe\+\_\+std\+\_\+encoding\+\_\+,  }\item[{}]{adobe\+\_\+expert\+\_\+encoding\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{static} \textcolor{keyword}{const} FT\_Service\_PsCMapsRec  class\_ =                              \(\backslash\)}
+\DoxyCodeLine{  \{                                                                         \(\backslash\)}
+\DoxyCodeLine{    unicode\_value\_, unicodes\_init\_,                                         \(\backslash\)}
+\DoxyCodeLine{    unicodes\_char\_index\_, unicodes\_char\_next\_, macintosh\_name\_,             \(\backslash\)}
+\DoxyCodeLine{    adobe\_std\_strings\_, adobe\_std\_encoding\_, adobe\_expert\_encoding\_         \(\backslash\)}
+\DoxyCodeLine{  \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{svpscmap_8h_a807c6aabfd460455bcc1500666871110}\label{svpscmap_8h_a807c6aabfd460455bcc1500666871110}} 
+\index{svpscmap.h@{svpscmap.h}!FT\_SERVICE\_ID\_POSTSCRIPT\_CMAPS@{FT\_SERVICE\_ID\_POSTSCRIPT\_CMAPS}}
+\index{FT\_SERVICE\_ID\_POSTSCRIPT\_CMAPS@{FT\_SERVICE\_ID\_POSTSCRIPT\_CMAPS}!svpscmap.h@{svpscmap.h}}
+\doxysubsubsection{\texorpdfstring{FT\_SERVICE\_ID\_POSTSCRIPT\_CMAPS}{FT\_SERVICE\_ID\_POSTSCRIPT\_CMAPS}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+P\+O\+S\+T\+S\+C\+R\+I\+P\+T\+\_\+\+C\+M\+A\+PS~\char`\"{}postscript-\/cmaps\char`\"{}}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{svpscmap_8h_a2e18696936396e94f3c03fc28d00300e}\label{svpscmap_8h_a2e18696936396e94f3c03fc28d00300e}} 
+\index{svpscmap.h@{svpscmap.h}!PS\_Adobe\_Std\_StringsFunc@{PS\_Adobe\_Std\_StringsFunc}}
+\index{PS\_Adobe\_Std\_StringsFunc@{PS\_Adobe\_Std\_StringsFunc}!svpscmap.h@{svpscmap.h}}
+\doxysubsubsection{\texorpdfstring{PS\_Adobe\_Std\_StringsFunc}{PS\_Adobe\_Std\_StringsFunc}}
+{\footnotesize\ttfamily typedef const char$\ast$($\ast$ P\+S\+\_\+\+Adobe\+\_\+\+Std\+\_\+\+Strings\+Func) (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} string\+\_\+index)}
+
+\mbox{\Hypertarget{svpscmap_8h_a7f60221450881f55170531297873888c}\label{svpscmap_8h_a7f60221450881f55170531297873888c}} 
+\index{svpscmap.h@{svpscmap.h}!PS\_FreeGlyphNameFunc@{PS\_FreeGlyphNameFunc}}
+\index{PS\_FreeGlyphNameFunc@{PS\_FreeGlyphNameFunc}!svpscmap.h@{svpscmap.h}}
+\doxysubsubsection{\texorpdfstring{PS\_FreeGlyphNameFunc}{PS\_FreeGlyphNameFunc}}
+{\footnotesize\ttfamily typedef void($\ast$ P\+S\+\_\+\+Free\+Glyph\+Name\+Func) (\mbox{\hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{F\+T\+\_\+\+Pointer}} data, const char $\ast$name)}
+
+\mbox{\Hypertarget{svpscmap_8h_a531967efb89e4977066c44c79af722ca}\label{svpscmap_8h_a531967efb89e4977066c44c79af722ca}} 
+\index{svpscmap.h@{svpscmap.h}!PS\_GetGlyphNameFunc@{PS\_GetGlyphNameFunc}}
+\index{PS\_GetGlyphNameFunc@{PS\_GetGlyphNameFunc}!svpscmap.h@{svpscmap.h}}
+\doxysubsubsection{\texorpdfstring{PS\_GetGlyphNameFunc}{PS\_GetGlyphNameFunc}}
+{\footnotesize\ttfamily typedef const char$\ast$($\ast$ P\+S\+\_\+\+Get\+Glyph\+Name\+Func) (\mbox{\hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{F\+T\+\_\+\+Pointer}} data, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} string\+\_\+index)}
+
+\mbox{\Hypertarget{svpscmap_8h_a1caa40c0cbdc59650fda49f539dcc4ab}\label{svpscmap_8h_a1caa40c0cbdc59650fda49f539dcc4ab}} 
+\index{svpscmap.h@{svpscmap.h}!PS\_Macintosh\_NameFunc@{PS\_Macintosh\_NameFunc}}
+\index{PS\_Macintosh\_NameFunc@{PS\_Macintosh\_NameFunc}!svpscmap.h@{svpscmap.h}}
+\doxysubsubsection{\texorpdfstring{PS\_Macintosh\_NameFunc}{PS\_Macintosh\_NameFunc}}
+{\footnotesize\ttfamily typedef const char$\ast$($\ast$ P\+S\+\_\+\+Macintosh\+\_\+\+Name\+Func) (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} name\+\_\+index)}
+
+\mbox{\Hypertarget{svpscmap_8h_a281fcdc3e77ccb3687368efb46870a96}\label{svpscmap_8h_a281fcdc3e77ccb3687368efb46870a96}} 
+\index{svpscmap.h@{svpscmap.h}!PS\_Unicode\_ValueFunc@{PS\_Unicode\_ValueFunc}}
+\index{PS\_Unicode\_ValueFunc@{PS\_Unicode\_ValueFunc}!svpscmap.h@{svpscmap.h}}
+\doxysubsubsection{\texorpdfstring{PS\_Unicode\_ValueFunc}{PS\_Unicode\_ValueFunc}}
+{\footnotesize\ttfamily typedef F\+T\+\_\+\+U\+Int32($\ast$ P\+S\+\_\+\+Unicode\+\_\+\+Value\+Func) (const char $\ast$glyph\+\_\+name)}
+
+\mbox{\Hypertarget{svpscmap_8h_a8b558d4301f76250934f6c3c7d99ccf9}\label{svpscmap_8h_a8b558d4301f76250934f6c3c7d99ccf9}} 
+\index{svpscmap.h@{svpscmap.h}!PS\_Unicodes@{PS\_Unicodes}}
+\index{PS\_Unicodes@{PS\_Unicodes}!svpscmap.h@{svpscmap.h}}
+\doxysubsubsection{\texorpdfstring{PS\_Unicodes}{PS\_Unicodes}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_p_s___unicodes_rec__}{P\+S\+\_\+\+Unicodes\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{svpscmap_8h_a8b558d4301f76250934f6c3c7d99ccf9}{P\+S\+\_\+\+Unicodes}}}
+
+\mbox{\Hypertarget{svpscmap_8h_abe6ade805851f01216a81ba385cedd43}\label{svpscmap_8h_abe6ade805851f01216a81ba385cedd43}} 
+\index{svpscmap.h@{svpscmap.h}!PS\_Unicodes\_CharIndexFunc@{PS\_Unicodes\_CharIndexFunc}}
+\index{PS\_Unicodes\_CharIndexFunc@{PS\_Unicodes\_CharIndexFunc}!svpscmap.h@{svpscmap.h}}
+\doxysubsubsection{\texorpdfstring{PS\_Unicodes\_CharIndexFunc}{PS\_Unicodes\_CharIndexFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}}($\ast$ P\+S\+\_\+\+Unicodes\+\_\+\+Char\+Index\+Func) (\mbox{\hyperlink{svpscmap_8h_a8b558d4301f76250934f6c3c7d99ccf9}{P\+S\+\_\+\+Unicodes}} unicodes, F\+T\+\_\+\+U\+Int32 unicode)}
+
+\mbox{\Hypertarget{svpscmap_8h_a5c60f9ff219eaf2b3bfd66863eb82729}\label{svpscmap_8h_a5c60f9ff219eaf2b3bfd66863eb82729}} 
+\index{svpscmap.h@{svpscmap.h}!PS\_Unicodes\_CharNextFunc@{PS\_Unicodes\_CharNextFunc}}
+\index{PS\_Unicodes\_CharNextFunc@{PS\_Unicodes\_CharNextFunc}!svpscmap.h@{svpscmap.h}}
+\doxysubsubsection{\texorpdfstring{PS\_Unicodes\_CharNextFunc}{PS\_Unicodes\_CharNextFunc}}
+{\footnotesize\ttfamily typedef F\+T\+\_\+\+U\+Int32($\ast$ P\+S\+\_\+\+Unicodes\+\_\+\+Char\+Next\+Func) (\mbox{\hyperlink{svpscmap_8h_a8b558d4301f76250934f6c3c7d99ccf9}{P\+S\+\_\+\+Unicodes}} unicodes, F\+T\+\_\+\+U\+Int32 $\ast$unicode)}
+
+\mbox{\Hypertarget{svpscmap_8h_a610614787d5337123a1fbca815ce8f48}\label{svpscmap_8h_a610614787d5337123a1fbca815ce8f48}} 
+\index{svpscmap.h@{svpscmap.h}!PS\_Unicodes\_InitFunc@{PS\_Unicodes\_InitFunc}}
+\index{PS\_Unicodes\_InitFunc@{PS\_Unicodes\_InitFunc}!svpscmap.h@{svpscmap.h}}
+\doxysubsubsection{\texorpdfstring{PS\_Unicodes\_InitFunc}{PS\_Unicodes\_InitFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ P\+S\+\_\+\+Unicodes\+\_\+\+Init\+Func) (\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} memory, \mbox{\hyperlink{svpscmap_8h_a8b558d4301f76250934f6c3c7d99ccf9}{P\+S\+\_\+\+Unicodes}} unicodes, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} num\+\_\+glyphs, \mbox{\hyperlink{svpscmap_8h_a531967efb89e4977066c44c79af722ca}{P\+S\+\_\+\+Get\+Glyph\+Name\+Func}} get\+\_\+glyph\+\_\+name, \mbox{\hyperlink{svpscmap_8h_a7f60221450881f55170531297873888c}{P\+S\+\_\+\+Free\+Glyph\+Name\+Func}} free\+\_\+glyph\+\_\+name, \mbox{\hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{F\+T\+\_\+\+Pointer}} glyph\+\_\+data)}
+
+\mbox{\Hypertarget{svpscmap_8h_ad69dd668608f7a847da825d4d5ee408d}\label{svpscmap_8h_ad69dd668608f7a847da825d4d5ee408d}} 
+\index{svpscmap.h@{svpscmap.h}!PS\_UnicodesRec@{PS\_UnicodesRec}}
+\index{PS\_UnicodesRec@{PS\_UnicodesRec}!svpscmap.h@{svpscmap.h}}
+\doxysubsubsection{\texorpdfstring{PS\_UnicodesRec}{PS\_UnicodesRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_p_s___unicodes_rec__}{P\+S\+\_\+\+Unicodes\+Rec\+\_\+}} \mbox{\hyperlink{svpscmap_8h_ad69dd668608f7a847da825d4d5ee408d}{P\+S\+\_\+\+Unicodes\+Rec}}}
+
+\mbox{\Hypertarget{svpscmap_8h_afd7d65d901864a603f4e32a88bc35c18}\label{svpscmap_8h_afd7d65d901864a603f4e32a88bc35c18}} 
+\index{svpscmap.h@{svpscmap.h}!PS\_UniMap@{PS\_UniMap}}
+\index{PS\_UniMap@{PS\_UniMap}!svpscmap.h@{svpscmap.h}}
+\doxysubsubsection{\texorpdfstring{PS\_UniMap}{PS\_UniMap}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_p_s___uni_map__}{P\+S\+\_\+\+Uni\+Map\+\_\+}} \mbox{\hyperlink{svpscmap_8h_afd7d65d901864a603f4e32a88bc35c18}{P\+S\+\_\+\+Uni\+Map}}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{svpscmap_8h_a4883d38c4df552a364920771e3d8f59d}\label{svpscmap_8h_a4883d38c4df552a364920771e3d8f59d}} 
+\index{svpscmap.h@{svpscmap.h}!FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}}
+\index{FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}!svpscmap.h@{svpscmap.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE()}{FT\_DEFINE\_SERVICE()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE (\begin{DoxyParamCaption}\item[{Ps\+C\+Maps}]{ }\end{DoxyParamCaption})}
+

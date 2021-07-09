@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['c_45943',['C',['../stb__vorbis_8c.html#ac4cf4b2ab929bd23951a8676eeac086b',1,'stb_vorbis.c']]],
+  ['cff_5fconfig_5foption_5fdarkening_5fparameter_5fx1_45944',['CFF_CONFIG_OPTION_DARKENING_PARAMETER_X1',['../ftoption_8h.html#a1252d3b8873cfca4e89c98f36f6fa901',1,'ftoption.h']]],
+  ['cff_5fconfig_5foption_5fdarkening_5fparameter_5fx2_45945',['CFF_CONFIG_OPTION_DARKENING_PARAMETER_X2',['../ftoption_8h.html#a9c8d36d7225e47161bbc8c416e6c9201',1,'ftoption.h']]],
+  ['cff_5fconfig_5foption_5fdarkening_5fparameter_5fx3_45946',['CFF_CONFIG_OPTION_DARKENING_PARAMETER_X3',['../ftoption_8h.html#ae35b5d97c572c567dfa7483b2de18a9d',1,'ftoption.h']]],
+  ['cff_5fconfig_5foption_5fdarkening_5fparameter_5fx4_45947',['CFF_CONFIG_OPTION_DARKENING_PARAMETER_X4',['../ftoption_8h.html#a58781b1a8a80427bbe7566a563f50db7',1,'ftoption.h']]],
+  ['cff_5fconfig_5foption_5fdarkening_5fparameter_5fy1_45948',['CFF_CONFIG_OPTION_DARKENING_PARAMETER_Y1',['../ftoption_8h.html#ab142c98454d0b55995ab79a8afb0f1ed',1,'ftoption.h']]],
+  ['cff_5fconfig_5foption_5fdarkening_5fparameter_5fy2_45949',['CFF_CONFIG_OPTION_DARKENING_PARAMETER_Y2',['../ftoption_8h.html#aa704548fa17b2216f204d8a34a9d6d23',1,'ftoption.h']]],
+  ['cff_5fconfig_5foption_5fdarkening_5fparameter_5fy3_45950',['CFF_CONFIG_OPTION_DARKENING_PARAMETER_Y3',['../ftoption_8h.html#ae84f325fab22dbf4f77bece6c18d6698',1,'ftoption.h']]],
+  ['cff_5fconfig_5foption_5fdarkening_5fparameter_5fy4_45951',['CFF_CONFIG_OPTION_DARKENING_PARAMETER_Y4',['../ftoption_8h.html#a4784323927f30464fec19057a1c65322',1,'ftoption.h']]],
+  ['cff_5fmax_5fcid_5ffonts_45952',['CFF_MAX_CID_FONTS',['../cfftypes_8h.html#ad14db5b244ed5d580801e298eb2e38db',1,'cfftypes.h']]],
+  ['cff_5fmax_5foperands_45953',['CFF_MAX_OPERANDS',['../psaux_8h.html#a367507992a6ffd2188b3e6b257884855',1,'psaux.h']]],
+  ['cff_5fmax_5fsubrs_5fcalls_45954',['CFF_MAX_SUBRS_CALLS',['../psaux_8h.html#a5e4d826e5f8e59a46314f87baa0b396a',1,'psaux.h']]],
+  ['cff_5fmax_5ftrans_5felements_45955',['CFF_MAX_TRANS_ELEMENTS',['../psaux_8h.html#ab9cf22434ef8ea67fb31e8093fecb6e6',1,'psaux.h']]],
+  ['check_45956',['CHECK',['../stb__vorbis_8c.html#aa59a70e2ff40af3af6c08aafdca8c713',1,'stb_vorbis.c']]],
+  ['check_5fendianness_45957',['check_endianness',['../stb__vorbis_8c.html#a9ae36ddc885a1a5859cb4b7b3ec364bb',1,'stb_vorbis.c']]],
+  ['codebook_5felement_45958',['CODEBOOK_ELEMENT',['../stb__vorbis_8c.html#a5b6245aaf9581e321d78824f20c6a3e2',1,'stb_vorbis.c']]],
+  ['codebook_5felement_5fbase_45959',['CODEBOOK_ELEMENT_BASE',['../stb__vorbis_8c.html#a9b19f433a0affa1ccf53e080bd9f908f',1,'stb_vorbis.c']]],
+  ['codebook_5felement_5ffast_45960',['CODEBOOK_ELEMENT_FAST',['../stb__vorbis_8c.html#a9e735a57f48058426af3c58dd3435965',1,'stb_vorbis.c']]],
+  ['crc32_5fpoly_45961',['CRC32_POLY',['../stb__vorbis_8c.html#a39e1b7cfc3c0d80ea907e6486d288796',1,'stb_vorbis.c']]]
+];

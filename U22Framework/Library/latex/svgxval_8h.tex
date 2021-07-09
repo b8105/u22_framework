@@ -1,0 +1,77 @@
+\hypertarget{svgxval_8h}{}\doxysection{freetype/internal/services/svgxval.h ファイル}
+\label{svgxval_8h}\index{freetype/internal/services/svgxval.h@{freetype/internal/services/svgxval.h}}
+{\ttfamily \#include $<$freetype/ftgxval.\+h$>$}\newline
+{\ttfamily \#include $<$freetype/internal/ftvalid.\+h$>$}\newline
+svgxval.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{svgxval_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{svgxval_8h_a4e87305cbad942d08be08533fc587091}{F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+G\+X\+\_\+\+V\+A\+L\+I\+D\+A\+TE}}~\char`\"{}truetypegx-\/validate\char`\"{}
+\item 
+\#define \mbox{\hyperlink{svgxval_8h_a440474bf2ba4feb4360a9f41bf78d12d}{F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+C\+L\+A\+S\+S\+I\+C\+K\+E\+R\+N\+\_\+\+V\+A\+L\+I\+D\+A\+TE}}~\char`\"{}classickern-\/validate\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svgxval_8h_a10afe886e8e30f09039c377c8ed18620}{gxv\+\_\+validate\+\_\+func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} gx\+\_\+flags, \mbox{\hyperlink{fttypes_8h_ac9cc3bb4d2035d3fc310baacd1bdd2d0}{F\+T\+\_\+\+Bytes}} tables\mbox{[}\mbox{\hyperlink{ftgxval_8h_a2e82bec877a15700bf14708a25507254}{F\+T\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+G\+X\+\_\+\+L\+E\+N\+G\+TH}}\mbox{]}, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} table\+\_\+length)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svgxval_8h_a8aeb11ab6b5d6d8196b74003c67dcab0}{ckern\+\_\+validate\+\_\+func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} ckern\+\_\+flags, \mbox{\hyperlink{fttypes_8h_ac9cc3bb4d2035d3fc310baacd1bdd2d0}{F\+T\+\_\+\+Bytes}} $\ast$ckern\+\_\+table)
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{svgxval_8h_a3214a26d48df3626cf31fb9dc575f0d1}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE}} (G\+Xvalidate)
+\item 
+\mbox{\hyperlink{svgxval_8h_a4e73a5a39aef8513bafe7e7fc88d7ef8}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE}} (C\+K\+E\+R\+Nvalidate)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{svgxval_8h_a440474bf2ba4feb4360a9f41bf78d12d}\label{svgxval_8h_a440474bf2ba4feb4360a9f41bf78d12d}} 
+\index{svgxval.h@{svgxval.h}!FT\_SERVICE\_ID\_CLASSICKERN\_VALIDATE@{FT\_SERVICE\_ID\_CLASSICKERN\_VALIDATE}}
+\index{FT\_SERVICE\_ID\_CLASSICKERN\_VALIDATE@{FT\_SERVICE\_ID\_CLASSICKERN\_VALIDATE}!svgxval.h@{svgxval.h}}
+\doxysubsubsection{\texorpdfstring{FT\_SERVICE\_ID\_CLASSICKERN\_VALIDATE}{FT\_SERVICE\_ID\_CLASSICKERN\_VALIDATE}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+C\+L\+A\+S\+S\+I\+C\+K\+E\+R\+N\+\_\+\+V\+A\+L\+I\+D\+A\+TE~\char`\"{}classickern-\/validate\char`\"{}}
+
+\mbox{\Hypertarget{svgxval_8h_a4e87305cbad942d08be08533fc587091}\label{svgxval_8h_a4e87305cbad942d08be08533fc587091}} 
+\index{svgxval.h@{svgxval.h}!FT\_SERVICE\_ID\_GX\_VALIDATE@{FT\_SERVICE\_ID\_GX\_VALIDATE}}
+\index{FT\_SERVICE\_ID\_GX\_VALIDATE@{FT\_SERVICE\_ID\_GX\_VALIDATE}!svgxval.h@{svgxval.h}}
+\doxysubsubsection{\texorpdfstring{FT\_SERVICE\_ID\_GX\_VALIDATE}{FT\_SERVICE\_ID\_GX\_VALIDATE}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+G\+X\+\_\+\+V\+A\+L\+I\+D\+A\+TE~\char`\"{}truetypegx-\/validate\char`\"{}}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{svgxval_8h_a8aeb11ab6b5d6d8196b74003c67dcab0}\label{svgxval_8h_a8aeb11ab6b5d6d8196b74003c67dcab0}} 
+\index{svgxval.h@{svgxval.h}!ckern\_validate\_func@{ckern\_validate\_func}}
+\index{ckern\_validate\_func@{ckern\_validate\_func}!svgxval.h@{svgxval.h}}
+\doxysubsubsection{\texorpdfstring{ckern\_validate\_func}{ckern\_validate\_func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ ckern\+\_\+validate\+\_\+func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} ckern\+\_\+flags, \mbox{\hyperlink{fttypes_8h_ac9cc3bb4d2035d3fc310baacd1bdd2d0}{F\+T\+\_\+\+Bytes}} $\ast$ckern\+\_\+table)}
+
+\mbox{\Hypertarget{svgxval_8h_a10afe886e8e30f09039c377c8ed18620}\label{svgxval_8h_a10afe886e8e30f09039c377c8ed18620}} 
+\index{svgxval.h@{svgxval.h}!gxv\_validate\_func@{gxv\_validate\_func}}
+\index{gxv\_validate\_func@{gxv\_validate\_func}!svgxval.h@{svgxval.h}}
+\doxysubsubsection{\texorpdfstring{gxv\_validate\_func}{gxv\_validate\_func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ gxv\+\_\+validate\+\_\+func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} gx\+\_\+flags, \mbox{\hyperlink{fttypes_8h_ac9cc3bb4d2035d3fc310baacd1bdd2d0}{F\+T\+\_\+\+Bytes}} tables\mbox{[}\mbox{\hyperlink{ftgxval_8h_a2e82bec877a15700bf14708a25507254}{F\+T\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+G\+X\+\_\+\+L\+E\+N\+G\+TH}}\mbox{]}, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} table\+\_\+length)}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{svgxval_8h_a4e73a5a39aef8513bafe7e7fc88d7ef8}\label{svgxval_8h_a4e73a5a39aef8513bafe7e7fc88d7ef8}} 
+\index{svgxval.h@{svgxval.h}!FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}}
+\index{FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}!svgxval.h@{svgxval.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE()}{FT\_DEFINE\_SERVICE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE (\begin{DoxyParamCaption}\item[{C\+K\+E\+R\+Nvalidate}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{svgxval_8h_a3214a26d48df3626cf31fb9dc575f0d1}\label{svgxval_8h_a3214a26d48df3626cf31fb9dc575f0d1}} 
+\index{svgxval.h@{svgxval.h}!FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}}
+\index{FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}!svgxval.h@{svgxval.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE()}{FT\_DEFINE\_SERVICE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE (\begin{DoxyParamCaption}\item[{G\+Xvalidate}]{ }\end{DoxyParamCaption})}
+

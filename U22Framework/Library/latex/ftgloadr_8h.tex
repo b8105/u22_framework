@@ -1,0 +1,206 @@
+\hypertarget{ftgloadr_8h}{}\doxysection{freetype/internal/ftgloadr.h ファイル}
+\label{ftgloadr_8h}\index{freetype/internal/ftgloadr.h@{freetype/internal/ftgloadr.h}}
+{\ttfamily \#include $<$freetype/freetype.\+h$>$}\newline
+ftgloadr.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ftgloadr_8h__incl}
+\end{center}
+\end{figure}
+被依存関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ftgloadr_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_f_t___sub_glyph_rec__}{F\+T\+\_\+\+Sub\+Glyph\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_f_t___glyph_load_rec__}{F\+T\+\_\+\+Glyph\+Load\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_f_t___glyph_loader_rec__}{F\+T\+\_\+\+Glyph\+Loader\+Rec\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ftgloadr_8h_a5b6ec9ed02722211aa0a21c41f671a6e}{F\+T\+\_\+\+G\+L\+Y\+P\+H\+L\+O\+A\+D\+E\+R\+\_\+\+C\+H\+E\+C\+K\+\_\+P}}(\+\_\+loader,  \+\_\+count)
+\item 
+\#define \mbox{\hyperlink{ftgloadr_8h_a089a454c6b0900eda705b75f82f74de9}{F\+T\+\_\+\+G\+L\+Y\+P\+H\+L\+O\+A\+D\+E\+R\+\_\+\+C\+H\+E\+C\+K\+\_\+C}}(\+\_\+loader,  \+\_\+count)
+\item 
+\#define \mbox{\hyperlink{ftgloadr_8h_a5aab8fc2b9b4b72e84710c8dbccb044e}{F\+T\+\_\+\+G\+L\+Y\+P\+H\+L\+O\+A\+D\+E\+R\+\_\+\+C\+H\+E\+C\+K\+\_\+\+P\+O\+I\+N\+TS}}(\+\_\+loader,  \+\_\+points,  \+\_\+contours)
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{public-macros_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER}} struct \mbox{\hyperlink{struct_f_t___sub_glyph_rec__}{F\+T\+\_\+\+Sub\+Glyph\+Rec\+\_\+}} \mbox{\hyperlink{ftgloadr_8h_ac263adb3926a541bef9864f9b0344eba}{F\+T\+\_\+\+Sub\+Glyph\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_f_t___glyph_load_rec__}{F\+T\+\_\+\+Glyph\+Load\+Rec\+\_\+}} \mbox{\hyperlink{ftgloadr_8h_adf7927ebda1aa6d4749d0d08afc0b5cd}{F\+T\+\_\+\+Glyph\+Load\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_f_t___glyph_load_rec__}{F\+T\+\_\+\+Glyph\+Load\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{ftgloadr_8h_a65bc5c2b0e147c181ea506e0ba4144c3}{F\+T\+\_\+\+Glyph\+Load}}
+\item 
+typedef struct \mbox{\hyperlink{struct_f_t___glyph_loader_rec__}{F\+T\+\_\+\+Glyph\+Loader\+Rec\+\_\+}} \mbox{\hyperlink{ftgloadr_8h_a9bc0b00c38fdb760c924442202d13a1d}{F\+T\+\_\+\+Glyph\+Loader\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_f_t___glyph_loader_rec__}{F\+T\+\_\+\+Glyph\+Loader\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}{F\+T\+\_\+\+Glyph\+Loader}}
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ftgloadr_8h_ad9956ad2ed4b3dfc8da30f4e3e274a49}{F\+T\+\_\+\+Glyph\+Loader\+\_\+\+New}} (\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} memory, \mbox{\hyperlink{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}{F\+T\+\_\+\+Glyph\+Loader}} $\ast$aloader)
+\item 
+\mbox{\hyperlink{ftgloadr_8h_a4bf9b9b6d22501794502a9081bb79607}{F\+T\+\_\+\+Glyph\+Loader\+\_\+\+Create\+Extra}} (\mbox{\hyperlink{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}{F\+T\+\_\+\+Glyph\+Loader}} loader)
+\item 
+\mbox{\hyperlink{ftgloadr_8h_a920c9ede2b8f63e3dd25f51daee360ab}{F\+T\+\_\+\+Glyph\+Loader\+\_\+\+Done}} (\mbox{\hyperlink{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}{F\+T\+\_\+\+Glyph\+Loader}} loader)
+\item 
+\mbox{\hyperlink{ftgloadr_8h_ac41dd5bfdbcc6c0158aaab4c0066f4b8}{F\+T\+\_\+\+Glyph\+Loader\+\_\+\+Reset}} (\mbox{\hyperlink{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}{F\+T\+\_\+\+Glyph\+Loader}} loader)
+\item 
+\mbox{\hyperlink{ftgloadr_8h_a4f4954b6e77f155ab5e46c3f2351f50e}{F\+T\+\_\+\+Glyph\+Loader\+\_\+\+Rewind}} (\mbox{\hyperlink{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}{F\+T\+\_\+\+Glyph\+Loader}} loader)
+\item 
+\mbox{\hyperlink{ftgloadr_8h_a33ec2edf52ffdde913e4ec66dcd16795}{F\+T\+\_\+\+Glyph\+Loader\+\_\+\+Check\+Points}} (\mbox{\hyperlink{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}{F\+T\+\_\+\+Glyph\+Loader}} loader, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} n\+\_\+points, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} n\+\_\+contours)
+\item 
+\mbox{\hyperlink{ftgloadr_8h_af54f34fd85b3c880b33635dc4d8e8963}{F\+T\+\_\+\+Glyph\+Loader\+\_\+\+Check\+Sub\+Glyphs}} (\mbox{\hyperlink{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}{F\+T\+\_\+\+Glyph\+Loader}} loader, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} n\+\_\+subs)
+\item 
+\mbox{\hyperlink{ftgloadr_8h_a8b24efd8846b09cfecb3534926d95931}{F\+T\+\_\+\+Glyph\+Loader\+\_\+\+Prepare}} (\mbox{\hyperlink{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}{F\+T\+\_\+\+Glyph\+Loader}} loader)
+\item 
+\mbox{\hyperlink{ftgloadr_8h_a05e75ff8be73536b15ebbc02f432e246}{F\+T\+\_\+\+Glyph\+Loader\+\_\+\+Add}} (\mbox{\hyperlink{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}{F\+T\+\_\+\+Glyph\+Loader}} loader)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{ftgloadr_8h_a089a454c6b0900eda705b75f82f74de9}\label{ftgloadr_8h_a089a454c6b0900eda705b75f82f74de9}} 
+\index{ftgloadr.h@{ftgloadr.h}!FT\_GLYPHLOADER\_CHECK\_C@{FT\_GLYPHLOADER\_CHECK\_C}}
+\index{FT\_GLYPHLOADER\_CHECK\_C@{FT\_GLYPHLOADER\_CHECK\_C}!ftgloadr.h@{ftgloadr.h}}
+\doxysubsubsection{\texorpdfstring{FT\_GLYPHLOADER\_CHECK\_C}{FT\_GLYPHLOADER\_CHECK\_C}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+G\+L\+Y\+P\+H\+L\+O\+A\+D\+E\+R\+\_\+\+C\+H\+E\+C\+K\+\_\+C(\begin{DoxyParamCaption}\item[{}]{\+\_\+loader,  }\item[{}]{\+\_\+count }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  ( (\_count) == 0                                      || \(\backslash\)}
+\DoxyCodeLine{    ( (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{FT\_UInt}})(\_loader)-\/>base.outline.n\_contours    +    \(\backslash\)}
+\DoxyCodeLine{      (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{FT\_UInt}})(\_loader)-\/>current.outline.n\_contours +    \(\backslash\)}
+\DoxyCodeLine{      (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{FT\_UInt}})(\_count) ) <= (\_loader)-\/>max\_contours   )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ftgloadr_8h_a5b6ec9ed02722211aa0a21c41f671a6e}\label{ftgloadr_8h_a5b6ec9ed02722211aa0a21c41f671a6e}} 
+\index{ftgloadr.h@{ftgloadr.h}!FT\_GLYPHLOADER\_CHECK\_P@{FT\_GLYPHLOADER\_CHECK\_P}}
+\index{FT\_GLYPHLOADER\_CHECK\_P@{FT\_GLYPHLOADER\_CHECK\_P}!ftgloadr.h@{ftgloadr.h}}
+\doxysubsubsection{\texorpdfstring{FT\_GLYPHLOADER\_CHECK\_P}{FT\_GLYPHLOADER\_CHECK\_P}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+G\+L\+Y\+P\+H\+L\+O\+A\+D\+E\+R\+\_\+\+C\+H\+E\+C\+K\+\_\+P(\begin{DoxyParamCaption}\item[{}]{\+\_\+loader,  }\item[{}]{\+\_\+count }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  ( (\_count) == 0                                    || \(\backslash\)}
+\DoxyCodeLine{    ( (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{FT\_UInt}})(\_loader)-\/>base.outline.n\_points    +    \(\backslash\)}
+\DoxyCodeLine{      (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{FT\_UInt}})(\_loader)-\/>current.outline.n\_points +    \(\backslash\)}
+\DoxyCodeLine{      (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{FT\_UInt}})(\_count) ) <= (\_loader)-\/>max\_points   )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ftgloadr_8h_a5aab8fc2b9b4b72e84710c8dbccb044e}\label{ftgloadr_8h_a5aab8fc2b9b4b72e84710c8dbccb044e}} 
+\index{ftgloadr.h@{ftgloadr.h}!FT\_GLYPHLOADER\_CHECK\_POINTS@{FT\_GLYPHLOADER\_CHECK\_POINTS}}
+\index{FT\_GLYPHLOADER\_CHECK\_POINTS@{FT\_GLYPHLOADER\_CHECK\_POINTS}!ftgloadr.h@{ftgloadr.h}}
+\doxysubsubsection{\texorpdfstring{FT\_GLYPHLOADER\_CHECK\_POINTS}{FT\_GLYPHLOADER\_CHECK\_POINTS}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+G\+L\+Y\+P\+H\+L\+O\+A\+D\+E\+R\+\_\+\+C\+H\+E\+C\+K\+\_\+\+P\+O\+I\+N\+TS(\begin{DoxyParamCaption}\item[{}]{\+\_\+loader,  }\item[{}]{\+\_\+points,  }\item[{}]{\+\_\+contours }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  ( ( \mbox{\hyperlink{ftgloadr_8h_a5b6ec9ed02722211aa0a21c41f671a6e}{FT\_GLYPHLOADER\_CHECK\_P}}( \_loader, \_points )   \&\&              \(\backslash\)}
+\DoxyCodeLine{      FT\_GLYPHLOADER\_CHECK\_C( \_loader, \_contours ) )               \(\backslash\)}
+\DoxyCodeLine{    ? 0                                                            \(\backslash\)}
+\DoxyCodeLine{    : \mbox{\hyperlink{ftgloadr_8h_a33ec2edf52ffdde913e4ec66dcd16795}{FT\_GlyphLoader\_CheckPoints}}( (\_loader),                       \(\backslash\)}
+\DoxyCodeLine{                                  (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{FT\_UInt}})(\_points),              \(\backslash\)}
+\DoxyCodeLine{                                  (\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{FT\_UInt}})(\_contours) ) )}
+
+\end{DoxyCode}
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{ftgloadr_8h_a65bc5c2b0e147c181ea506e0ba4144c3}\label{ftgloadr_8h_a65bc5c2b0e147c181ea506e0ba4144c3}} 
+\index{ftgloadr.h@{ftgloadr.h}!FT\_GlyphLoad@{FT\_GlyphLoad}}
+\index{FT\_GlyphLoad@{FT\_GlyphLoad}!ftgloadr.h@{ftgloadr.h}}
+\doxysubsubsection{\texorpdfstring{FT\_GlyphLoad}{FT\_GlyphLoad}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_f_t___glyph_load_rec__}{F\+T\+\_\+\+Glyph\+Load\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{ftgloadr_8h_a65bc5c2b0e147c181ea506e0ba4144c3}{F\+T\+\_\+\+Glyph\+Load}}}
+
+\mbox{\Hypertarget{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}\label{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}} 
+\index{ftgloadr.h@{ftgloadr.h}!FT\_GlyphLoader@{FT\_GlyphLoader}}
+\index{FT\_GlyphLoader@{FT\_GlyphLoader}!ftgloadr.h@{ftgloadr.h}}
+\doxysubsubsection{\texorpdfstring{FT\_GlyphLoader}{FT\_GlyphLoader}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_f_t___glyph_loader_rec__}{F\+T\+\_\+\+Glyph\+Loader\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}{F\+T\+\_\+\+Glyph\+Loader}}}
+
+\mbox{\Hypertarget{ftgloadr_8h_a9bc0b00c38fdb760c924442202d13a1d}\label{ftgloadr_8h_a9bc0b00c38fdb760c924442202d13a1d}} 
+\index{ftgloadr.h@{ftgloadr.h}!FT\_GlyphLoaderRec@{FT\_GlyphLoaderRec}}
+\index{FT\_GlyphLoaderRec@{FT\_GlyphLoaderRec}!ftgloadr.h@{ftgloadr.h}}
+\doxysubsubsection{\texorpdfstring{FT\_GlyphLoaderRec}{FT\_GlyphLoaderRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_f_t___glyph_loader_rec__}{F\+T\+\_\+\+Glyph\+Loader\+Rec\+\_\+}} \mbox{\hyperlink{ftgloadr_8h_a9bc0b00c38fdb760c924442202d13a1d}{F\+T\+\_\+\+Glyph\+Loader\+Rec}}}
+
+\mbox{\Hypertarget{ftgloadr_8h_adf7927ebda1aa6d4749d0d08afc0b5cd}\label{ftgloadr_8h_adf7927ebda1aa6d4749d0d08afc0b5cd}} 
+\index{ftgloadr.h@{ftgloadr.h}!FT\_GlyphLoadRec@{FT\_GlyphLoadRec}}
+\index{FT\_GlyphLoadRec@{FT\_GlyphLoadRec}!ftgloadr.h@{ftgloadr.h}}
+\doxysubsubsection{\texorpdfstring{FT\_GlyphLoadRec}{FT\_GlyphLoadRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_f_t___glyph_load_rec__}{F\+T\+\_\+\+Glyph\+Load\+Rec\+\_\+}} \mbox{\hyperlink{ftgloadr_8h_adf7927ebda1aa6d4749d0d08afc0b5cd}{F\+T\+\_\+\+Glyph\+Load\+Rec}}}
+
+\mbox{\Hypertarget{ftgloadr_8h_ac263adb3926a541bef9864f9b0344eba}\label{ftgloadr_8h_ac263adb3926a541bef9864f9b0344eba}} 
+\index{ftgloadr.h@{ftgloadr.h}!FT\_SubGlyphRec@{FT\_SubGlyphRec}}
+\index{FT\_SubGlyphRec@{FT\_SubGlyphRec}!ftgloadr.h@{ftgloadr.h}}
+\doxysubsubsection{\texorpdfstring{FT\_SubGlyphRec}{FT\_SubGlyphRec}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{public-macros_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER}} struct \mbox{\hyperlink{struct_f_t___sub_glyph_rec__}{F\+T\+\_\+\+Sub\+Glyph\+Rec\+\_\+}} \mbox{\hyperlink{ftgloadr_8h_ac263adb3926a541bef9864f9b0344eba}{F\+T\+\_\+\+Sub\+Glyph\+Rec}}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{ftgloadr_8h_a05e75ff8be73536b15ebbc02f432e246}\label{ftgloadr_8h_a05e75ff8be73536b15ebbc02f432e246}} 
+\index{ftgloadr.h@{ftgloadr.h}!FT\_GlyphLoader\_Add@{FT\_GlyphLoader\_Add}}
+\index{FT\_GlyphLoader\_Add@{FT\_GlyphLoader\_Add}!ftgloadr.h@{ftgloadr.h}}
+\doxysubsubsection{\texorpdfstring{FT\_GlyphLoader\_Add()}{FT\_GlyphLoader\_Add()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Glyph\+Loader\+\_\+\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}{F\+T\+\_\+\+Glyph\+Loader}}}]{loader }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftgloadr_8h_a33ec2edf52ffdde913e4ec66dcd16795}\label{ftgloadr_8h_a33ec2edf52ffdde913e4ec66dcd16795}} 
+\index{ftgloadr.h@{ftgloadr.h}!FT\_GlyphLoader\_CheckPoints@{FT\_GlyphLoader\_CheckPoints}}
+\index{FT\_GlyphLoader\_CheckPoints@{FT\_GlyphLoader\_CheckPoints}!ftgloadr.h@{ftgloadr.h}}
+\doxysubsubsection{\texorpdfstring{FT\_GlyphLoader\_CheckPoints()}{FT\_GlyphLoader\_CheckPoints()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Glyph\+Loader\+\_\+\+Check\+Points (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}{F\+T\+\_\+\+Glyph\+Loader}}}]{loader,  }\item[{\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}}}]{n\+\_\+points,  }\item[{\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}}}]{n\+\_\+contours }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftgloadr_8h_af54f34fd85b3c880b33635dc4d8e8963}\label{ftgloadr_8h_af54f34fd85b3c880b33635dc4d8e8963}} 
+\index{ftgloadr.h@{ftgloadr.h}!FT\_GlyphLoader\_CheckSubGlyphs@{FT\_GlyphLoader\_CheckSubGlyphs}}
+\index{FT\_GlyphLoader\_CheckSubGlyphs@{FT\_GlyphLoader\_CheckSubGlyphs}!ftgloadr.h@{ftgloadr.h}}
+\doxysubsubsection{\texorpdfstring{FT\_GlyphLoader\_CheckSubGlyphs()}{FT\_GlyphLoader\_CheckSubGlyphs()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Glyph\+Loader\+\_\+\+Check\+Sub\+Glyphs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}{F\+T\+\_\+\+Glyph\+Loader}}}]{loader,  }\item[{\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}}}]{n\+\_\+subs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftgloadr_8h_a4bf9b9b6d22501794502a9081bb79607}\label{ftgloadr_8h_a4bf9b9b6d22501794502a9081bb79607}} 
+\index{ftgloadr.h@{ftgloadr.h}!FT\_GlyphLoader\_CreateExtra@{FT\_GlyphLoader\_CreateExtra}}
+\index{FT\_GlyphLoader\_CreateExtra@{FT\_GlyphLoader\_CreateExtra}!ftgloadr.h@{ftgloadr.h}}
+\doxysubsubsection{\texorpdfstring{FT\_GlyphLoader\_CreateExtra()}{FT\_GlyphLoader\_CreateExtra()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Glyph\+Loader\+\_\+\+Create\+Extra (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}{F\+T\+\_\+\+Glyph\+Loader}}}]{loader }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftgloadr_8h_a920c9ede2b8f63e3dd25f51daee360ab}\label{ftgloadr_8h_a920c9ede2b8f63e3dd25f51daee360ab}} 
+\index{ftgloadr.h@{ftgloadr.h}!FT\_GlyphLoader\_Done@{FT\_GlyphLoader\_Done}}
+\index{FT\_GlyphLoader\_Done@{FT\_GlyphLoader\_Done}!ftgloadr.h@{ftgloadr.h}}
+\doxysubsubsection{\texorpdfstring{FT\_GlyphLoader\_Done()}{FT\_GlyphLoader\_Done()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Glyph\+Loader\+\_\+\+Done (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}{F\+T\+\_\+\+Glyph\+Loader}}}]{loader }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftgloadr_8h_ad9956ad2ed4b3dfc8da30f4e3e274a49}\label{ftgloadr_8h_ad9956ad2ed4b3dfc8da30f4e3e274a49}} 
+\index{ftgloadr.h@{ftgloadr.h}!FT\_GlyphLoader\_New@{FT\_GlyphLoader\_New}}
+\index{FT\_GlyphLoader\_New@{FT\_GlyphLoader\_New}!ftgloadr.h@{ftgloadr.h}}
+\doxysubsubsection{\texorpdfstring{FT\_GlyphLoader\_New()}{FT\_GlyphLoader\_New()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Glyph\+Loader\+\_\+\+New (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}}}]{memory,  }\item[{\mbox{\hyperlink{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}{F\+T\+\_\+\+Glyph\+Loader}} $\ast$}]{aloader }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftgloadr_8h_a8b24efd8846b09cfecb3534926d95931}\label{ftgloadr_8h_a8b24efd8846b09cfecb3534926d95931}} 
+\index{ftgloadr.h@{ftgloadr.h}!FT\_GlyphLoader\_Prepare@{FT\_GlyphLoader\_Prepare}}
+\index{FT\_GlyphLoader\_Prepare@{FT\_GlyphLoader\_Prepare}!ftgloadr.h@{ftgloadr.h}}
+\doxysubsubsection{\texorpdfstring{FT\_GlyphLoader\_Prepare()}{FT\_GlyphLoader\_Prepare()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Glyph\+Loader\+\_\+\+Prepare (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}{F\+T\+\_\+\+Glyph\+Loader}}}]{loader }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftgloadr_8h_ac41dd5bfdbcc6c0158aaab4c0066f4b8}\label{ftgloadr_8h_ac41dd5bfdbcc6c0158aaab4c0066f4b8}} 
+\index{ftgloadr.h@{ftgloadr.h}!FT\_GlyphLoader\_Reset@{FT\_GlyphLoader\_Reset}}
+\index{FT\_GlyphLoader\_Reset@{FT\_GlyphLoader\_Reset}!ftgloadr.h@{ftgloadr.h}}
+\doxysubsubsection{\texorpdfstring{FT\_GlyphLoader\_Reset()}{FT\_GlyphLoader\_Reset()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Glyph\+Loader\+\_\+\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}{F\+T\+\_\+\+Glyph\+Loader}}}]{loader }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftgloadr_8h_a4f4954b6e77f155ab5e46c3f2351f50e}\label{ftgloadr_8h_a4f4954b6e77f155ab5e46c3f2351f50e}} 
+\index{ftgloadr.h@{ftgloadr.h}!FT\_GlyphLoader\_Rewind@{FT\_GlyphLoader\_Rewind}}
+\index{FT\_GlyphLoader\_Rewind@{FT\_GlyphLoader\_Rewind}!ftgloadr.h@{ftgloadr.h}}
+\doxysubsubsection{\texorpdfstring{FT\_GlyphLoader\_Rewind()}{FT\_GlyphLoader\_Rewind()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Glyph\+Loader\+\_\+\+Rewind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}{F\+T\+\_\+\+Glyph\+Loader}}}]{loader }\end{DoxyParamCaption})}
+

@@ -1,0 +1,366 @@
+\hypertarget{classu22_1_1graphics_1_1_texture_renderer}{}\doxysection{u22\+::graphics\+::Texture\+Renderer クラス}
+\label{classu22_1_1graphics_1_1_texture_renderer}\index{u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}}
+
+
+{\ttfamily \#include $<$Texture\+Renderer.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_renderer_a0a1d2d98681aac4a86c340e1ed5fb78e}{Set\+Shader}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classu22_1_1graphics_1_1_effect_shader}{u22\+::graphics\+::\+Effect\+Shader}} $>$ \&ptr)
+\begin{DoxyCompactList}\small\item\em ~\newline
+ セッター \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_renderer_a2f472973c188eb2e7a264ca49aa655ea}{Get\+Width}} (void) const
+\begin{DoxyCompactList}\small\item\em ゲッター \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_renderer_abafc2795412567418b3d2ee5eb798f36}{Get\+Height}} (void) const
+\begin{DoxyCompactList}\small\item\em ゲッター \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceu22_1_1math_a538b674ab924be91c95315cef6457602}{u22\+::math\+::\+Vector2I}} \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_renderer_a881e8987fb65edc4e34017fd5c2c06e3}{Get\+Size}} (void) const
+\begin{DoxyCompactList}\small\item\em ゲッター \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_renderer_aa51ef305fb6e68717b406fc489ebf139}{Load}} (const char $\ast$path)
+\begin{DoxyCompactList}\small\item\em 読み込み \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_renderer_a891c1a842c80c7bdacce05511df6d2d4}{Render}} (const \mbox{\hyperlink{namespaceu22_1_1math_abd3e525891449648c8321ac9495844db}{u22\+::math\+::\+Vector2F}} \&position, const \mbox{\hyperlink{classu22_1_1graphics_1_1_camera}{u22\+::graphics\+::\+Camera}} \&camera) const
+\begin{DoxyCompactList}\small\item\em 描画 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_renderer_a8c5f93993336646e91128a35ef264c8a}{Render}} (const \mbox{\hyperlink{namespaceu22_1_1math_abd3e525891449648c8321ac9495844db}{u22\+::math\+::\+Vector2F}} \&position, const \mbox{\hyperlink{namespaceu22_1_1math_a4d1e97ba7f1e8c8170c4e2ba3f60f834}{u22\+::math\+::\+Vector4F}} \&color, const \mbox{\hyperlink{classu22_1_1graphics_1_1_camera}{u22\+::graphics\+::\+Camera}} \&camera) const
+\begin{DoxyCompactList}\small\item\em 描画 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_renderer_a719f7f34d90754dcbaf042642f34595b}{Render}} (const \mbox{\hyperlink{namespaceu22_1_1math_abd3e525891449648c8321ac9495844db}{u22\+::math\+::\+Vector2F}} \&position, const \mbox{\hyperlink{classu22_1_1shape_1_1_rectangle}{u22\+::shape\+::\+Rectangle}} \&rectangle, const \mbox{\hyperlink{classu22_1_1graphics_1_1_camera}{u22\+::graphics\+::\+Camera}} \&camera) const
+\begin{DoxyCompactList}\small\item\em 描画 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_renderer_a253a08e76af3a1225712a48f2a425741}{Render}} (const \mbox{\hyperlink{namespaceu22_1_1math_abd3e525891449648c8321ac9495844db}{u22\+::math\+::\+Vector2F}} \&position, const \mbox{\hyperlink{classu22_1_1shape_1_1_rectangle}{u22\+::shape\+::\+Rectangle}} \&rectangle, const \mbox{\hyperlink{namespaceu22_1_1math_a4d1e97ba7f1e8c8170c4e2ba3f60f834}{u22\+::math\+::\+Vector4F}} \&color, const \mbox{\hyperlink{classu22_1_1graphics_1_1_camera}{u22\+::graphics\+::\+Camera}} \&camera) const
+\begin{DoxyCompactList}\small\item\em 描画 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_renderer_a5f2427266d12ae5c5548b1f612f36be1}{Render\+Rotate}} (const \mbox{\hyperlink{namespaceu22_1_1math_abd3e525891449648c8321ac9495844db}{u22\+::math\+::\+Vector2F}} \&position, float rotate, const \mbox{\hyperlink{classu22_1_1graphics_1_1_camera}{u22\+::graphics\+::\+Camera}} \&camera) const
+\begin{DoxyCompactList}\small\item\em 描画 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_renderer_a54aef05d1866f981262a9183b72f5f68}{Render\+Rotate}} (const \mbox{\hyperlink{namespaceu22_1_1math_abd3e525891449648c8321ac9495844db}{u22\+::math\+::\+Vector2F}} \&position, float rotate, const \mbox{\hyperlink{classu22_1_1shape_1_1_rectangle}{u22\+::shape\+::\+Rectangle}} \&rectangle, const \mbox{\hyperlink{classu22_1_1graphics_1_1_camera}{u22\+::graphics\+::\+Camera}} \&camera) const
+\begin{DoxyCompactList}\small\item\em 描画 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_renderer_ad3cbeaffda67ac3e24d2f136f5a3479d}{Render\+Scale}} (const \mbox{\hyperlink{namespaceu22_1_1math_abd3e525891449648c8321ac9495844db}{u22\+::math\+::\+Vector2F}} \&position, float scale, const \mbox{\hyperlink{classu22_1_1graphics_1_1_camera}{u22\+::graphics\+::\+Camera}} \&camera) const
+\begin{DoxyCompactList}\small\item\em 描画 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_renderer_a29159d46a6288120f6dfb9d91aa7d0e1}{Render\+Scale}} (const \mbox{\hyperlink{namespaceu22_1_1math_abd3e525891449648c8321ac9495844db}{u22\+::math\+::\+Vector2F}} \&position, float scale, const \mbox{\hyperlink{classu22_1_1shape_1_1_rectangle}{u22\+::shape\+::\+Rectangle}} \&rectangle, const \mbox{\hyperlink{classu22_1_1graphics_1_1_camera}{u22\+::graphics\+::\+Camera}} \&camera) const
+\begin{DoxyCompactList}\small\item\em 描画 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1graphics_1_1_texture_renderer_a55c9328ebc2301260c01f566355a04c8}{Release}} (void)
+\begin{DoxyCompactList}\small\item\em 解放 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_renderer_abafc2795412567418b3d2ee5eb798f36}\label{classu22_1_1graphics_1_1_texture_renderer_abafc2795412567418b3d2ee5eb798f36}} 
+\index{u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}}
+\doxysubsubsection{\texorpdfstring{GetHeight()}{GetHeight()}}
+{\footnotesize\ttfamily int u22\+::graphics\+::\+Texture\+Renderer\+::\+Get\+Height (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+ゲッター 
+
+\begin{DoxyReturn}{戻り値}
+サイズ
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_renderer_a881e8987fb65edc4e34017fd5c2c06e3}\label{classu22_1_1graphics_1_1_texture_renderer_a881e8987fb65edc4e34017fd5c2c06e3}} 
+\index{u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}!GetSize@{GetSize}}
+\index{GetSize@{GetSize}!u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}}
+\doxysubsubsection{\texorpdfstring{GetSize()}{GetSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceu22_1_1math_a538b674ab924be91c95315cef6457602}{u22\+::math\+::\+Vector2I}} u22\+::graphics\+::\+Texture\+Renderer\+::\+Get\+Size (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+ゲッター 
+
+\begin{DoxyReturn}{戻り値}
+サイズ
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_renderer_a2f472973c188eb2e7a264ca49aa655ea}\label{classu22_1_1graphics_1_1_texture_renderer_a2f472973c188eb2e7a264ca49aa655ea}} 
+\index{u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}}
+\doxysubsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily int u22\+::graphics\+::\+Texture\+Renderer\+::\+Get\+Width (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+ゲッター 
+
+\begin{DoxyReturn}{戻り値}
+サイズ
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_renderer_aa51ef305fb6e68717b406fc489ebf139}\label{classu22_1_1graphics_1_1_texture_renderer_aa51ef305fb6e68717b406fc489ebf139}} 
+\index{u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}!Load@{Load}}
+\index{Load@{Load}!u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily bool u22\+::graphics\+::\+Texture\+Renderer\+::\+Load (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path }\end{DoxyParamCaption})}
+
+
+
+読み込み 
+
+
+\begin{DoxyParams}{引数}
+{\em path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classu22_1_1graphics_1_1_texture_renderer_aa51ef305fb6e68717b406fc489ebf139_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_renderer_a55c9328ebc2301260c01f566355a04c8}\label{classu22_1_1graphics_1_1_texture_renderer_a55c9328ebc2301260c01f566355a04c8}} 
+\index{u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}!Release@{Release}}
+\index{Release@{Release}!u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily bool u22\+::graphics\+::\+Texture\+Renderer\+::\+Release (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+解放 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_renderer_a891c1a842c80c7bdacce05511df6d2d4}\label{classu22_1_1graphics_1_1_texture_renderer_a891c1a842c80c7bdacce05511df6d2d4}} 
+\index{u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}!Render@{Render}}
+\index{Render@{Render}!u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily bool u22\+::graphics\+::\+Texture\+Renderer\+::\+Render (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceu22_1_1math_abd3e525891449648c8321ac9495844db}{u22\+::math\+::\+Vector2F}} \&}]{position,  }\item[{const \mbox{\hyperlink{classu22_1_1graphics_1_1_camera}{u22\+::graphics\+::\+Camera}} \&}]{camera }\end{DoxyParamCaption}) const}
+
+
+
+描画 
+
+
+\begin{DoxyParams}{引数}
+{\em position} & スクリーン座標\\
+\hline
+{\em camera} & カメラ\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_renderer_a8c5f93993336646e91128a35ef264c8a}\label{classu22_1_1graphics_1_1_texture_renderer_a8c5f93993336646e91128a35ef264c8a}} 
+\index{u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}!Render@{Render}}
+\index{Render@{Render}!u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily bool u22\+::graphics\+::\+Texture\+Renderer\+::\+Render (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceu22_1_1math_abd3e525891449648c8321ac9495844db}{u22\+::math\+::\+Vector2F}} \&}]{position,  }\item[{const \mbox{\hyperlink{namespaceu22_1_1math_a4d1e97ba7f1e8c8170c4e2ba3f60f834}{u22\+::math\+::\+Vector4F}} \&}]{color,  }\item[{const \mbox{\hyperlink{classu22_1_1graphics_1_1_camera}{u22\+::graphics\+::\+Camera}} \&}]{camera }\end{DoxyParamCaption}) const}
+
+
+
+描画 
+
+
+\begin{DoxyParams}{引数}
+{\em position} & スクリーン座標\\
+\hline
+{\em position} & 色\\
+\hline
+{\em camera} & カメラ\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_renderer_a719f7f34d90754dcbaf042642f34595b}\label{classu22_1_1graphics_1_1_texture_renderer_a719f7f34d90754dcbaf042642f34595b}} 
+\index{u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}!Render@{Render}}
+\index{Render@{Render}!u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily bool u22\+::graphics\+::\+Texture\+Renderer\+::\+Render (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceu22_1_1math_abd3e525891449648c8321ac9495844db}{u22\+::math\+::\+Vector2F}} \&}]{position,  }\item[{const \mbox{\hyperlink{classu22_1_1shape_1_1_rectangle}{u22\+::shape\+::\+Rectangle}} \&}]{rectangle,  }\item[{const \mbox{\hyperlink{classu22_1_1graphics_1_1_camera}{u22\+::graphics\+::\+Camera}} \&}]{camera }\end{DoxyParamCaption}) const}
+
+
+
+描画 
+
+
+\begin{DoxyParams}{引数}
+{\em position} & スクリーン座標\\
+\hline
+{\em rectangle} & 表示矩形\\
+\hline
+{\em camera} & カメラ\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_renderer_a253a08e76af3a1225712a48f2a425741}\label{classu22_1_1graphics_1_1_texture_renderer_a253a08e76af3a1225712a48f2a425741}} 
+\index{u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}!Render@{Render}}
+\index{Render@{Render}!u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily bool u22\+::graphics\+::\+Texture\+Renderer\+::\+Render (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceu22_1_1math_abd3e525891449648c8321ac9495844db}{u22\+::math\+::\+Vector2F}} \&}]{position,  }\item[{const \mbox{\hyperlink{classu22_1_1shape_1_1_rectangle}{u22\+::shape\+::\+Rectangle}} \&}]{rectangle,  }\item[{const \mbox{\hyperlink{namespaceu22_1_1math_a4d1e97ba7f1e8c8170c4e2ba3f60f834}{u22\+::math\+::\+Vector4F}} \&}]{color,  }\item[{const \mbox{\hyperlink{classu22_1_1graphics_1_1_camera}{u22\+::graphics\+::\+Camera}} \&}]{camera }\end{DoxyParamCaption}) const}
+
+
+
+描画 
+
+
+\begin{DoxyParams}{引数}
+{\em position} & スクリーン座標\\
+\hline
+{\em rectangle} & 表示矩形\\
+\hline
+{\em rectangle} & 色\\
+\hline
+{\em camera} & カメラ\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classu22_1_1graphics_1_1_texture_renderer_a253a08e76af3a1225712a48f2a425741_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_renderer_a5f2427266d12ae5c5548b1f612f36be1}\label{classu22_1_1graphics_1_1_texture_renderer_a5f2427266d12ae5c5548b1f612f36be1}} 
+\index{u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}!RenderRotate@{RenderRotate}}
+\index{RenderRotate@{RenderRotate}!u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}}
+\doxysubsubsection{\texorpdfstring{RenderRotate()}{RenderRotate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool u22\+::graphics\+::\+Texture\+Renderer\+::\+Render\+Rotate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceu22_1_1math_abd3e525891449648c8321ac9495844db}{u22\+::math\+::\+Vector2F}} \&}]{position,  }\item[{float}]{rotate,  }\item[{const \mbox{\hyperlink{classu22_1_1graphics_1_1_camera}{u22\+::graphics\+::\+Camera}} \&}]{camera }\end{DoxyParamCaption}) const}
+
+
+
+描画 
+
+
+\begin{DoxyParams}{引数}
+{\em position} & スクリーン座標\\
+\hline
+{\em rotate} & ラジアン\\
+\hline
+{\em camera} & カメラ\\
+\hline
+{\em axis} & 軸\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classu22_1_1graphics_1_1_texture_renderer_a5f2427266d12ae5c5548b1f612f36be1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_renderer_a54aef05d1866f981262a9183b72f5f68}\label{classu22_1_1graphics_1_1_texture_renderer_a54aef05d1866f981262a9183b72f5f68}} 
+\index{u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}!RenderRotate@{RenderRotate}}
+\index{RenderRotate@{RenderRotate}!u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}}
+\doxysubsubsection{\texorpdfstring{RenderRotate()}{RenderRotate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool u22\+::graphics\+::\+Texture\+Renderer\+::\+Render\+Rotate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceu22_1_1math_abd3e525891449648c8321ac9495844db}{u22\+::math\+::\+Vector2F}} \&}]{position,  }\item[{float}]{rotate,  }\item[{const \mbox{\hyperlink{classu22_1_1shape_1_1_rectangle}{u22\+::shape\+::\+Rectangle}} \&}]{rectangle,  }\item[{const \mbox{\hyperlink{classu22_1_1graphics_1_1_camera}{u22\+::graphics\+::\+Camera}} \&}]{camera }\end{DoxyParamCaption}) const}
+
+
+
+描画 
+
+
+\begin{DoxyParams}{引数}
+{\em position} & スクリーン座標\\
+\hline
+{\em rotate} & ラジアン\\
+\hline
+{\em rectangle} & 表示矩形\\
+\hline
+{\em camera} & カメラ\\
+\hline
+{\em axis} & 軸\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classu22_1_1graphics_1_1_texture_renderer_a54aef05d1866f981262a9183b72f5f68_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_renderer_ad3cbeaffda67ac3e24d2f136f5a3479d}\label{classu22_1_1graphics_1_1_texture_renderer_ad3cbeaffda67ac3e24d2f136f5a3479d}} 
+\index{u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}!RenderScale@{RenderScale}}
+\index{RenderScale@{RenderScale}!u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}}
+\doxysubsubsection{\texorpdfstring{RenderScale()}{RenderScale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool u22\+::graphics\+::\+Texture\+Renderer\+::\+Render\+Scale (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceu22_1_1math_abd3e525891449648c8321ac9495844db}{u22\+::math\+::\+Vector2F}} \&}]{position,  }\item[{float}]{scale,  }\item[{const \mbox{\hyperlink{classu22_1_1graphics_1_1_camera}{u22\+::graphics\+::\+Camera}} \&}]{camera }\end{DoxyParamCaption}) const}
+
+
+
+描画 
+
+
+\begin{DoxyParams}{引数}
+{\em position} & スクリーン座標\\
+\hline
+{\em scale} & 拡大率\\
+\hline
+{\em camera} & カメラ\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classu22_1_1graphics_1_1_texture_renderer_ad3cbeaffda67ac3e24d2f136f5a3479d_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classu22_1_1graphics_1_1_texture_renderer_ad3cbeaffda67ac3e24d2f136f5a3479d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_renderer_a29159d46a6288120f6dfb9d91aa7d0e1}\label{classu22_1_1graphics_1_1_texture_renderer_a29159d46a6288120f6dfb9d91aa7d0e1}} 
+\index{u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}!RenderScale@{RenderScale}}
+\index{RenderScale@{RenderScale}!u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}}
+\doxysubsubsection{\texorpdfstring{RenderScale()}{RenderScale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool u22\+::graphics\+::\+Texture\+Renderer\+::\+Render\+Scale (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceu22_1_1math_abd3e525891449648c8321ac9495844db}{u22\+::math\+::\+Vector2F}} \&}]{position,  }\item[{float}]{scale,  }\item[{const \mbox{\hyperlink{classu22_1_1shape_1_1_rectangle}{u22\+::shape\+::\+Rectangle}} \&}]{rectangle,  }\item[{const \mbox{\hyperlink{classu22_1_1graphics_1_1_camera}{u22\+::graphics\+::\+Camera}} \&}]{camera }\end{DoxyParamCaption}) const}
+
+
+
+描画 
+
+
+\begin{DoxyParams}{引数}
+{\em position} & スクリーン座標\\
+\hline
+{\em scale} & 拡大率\\
+\hline
+{\em rectangle} & 表示矩形\\
+\hline
+{\em camera} & カメラ\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classu22_1_1graphics_1_1_texture_renderer_a29159d46a6288120f6dfb9d91aa7d0e1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_texture_renderer_a0a1d2d98681aac4a86c340e1ed5fb78e}\label{classu22_1_1graphics_1_1_texture_renderer_a0a1d2d98681aac4a86c340e1ed5fb78e}} 
+\index{u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}!SetShader@{SetShader}}
+\index{SetShader@{SetShader}!u22::graphics::TextureRenderer@{u22::graphics::TextureRenderer}}
+\doxysubsubsection{\texorpdfstring{SetShader()}{SetShader()}}
+{\footnotesize\ttfamily void u22\+::graphics\+::\+Texture\+Renderer\+::\+Set\+Shader (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classu22_1_1graphics_1_1_effect_shader}{u22\+::graphics\+::\+Effect\+Shader}} $>$ \&}]{ptr }\end{DoxyParamCaption})}
+
+
+
+~\newline
+ セッター 
+
+
+\begin{DoxyParams}{引数}
+{\em ptr} & \\
+\hline
+\end{DoxyParams}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+Graphics/\mbox{\hyperlink{_texture_renderer_8h}{Texture\+Renderer.\+h}}\item 
+Graphics/\mbox{\hyperlink{_texture_renderer_8cpp}{Texture\+Renderer.\+cpp}}\end{DoxyCompactItemize}

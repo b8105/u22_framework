@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: freetype/internal/services/svcfftl.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_981d57b2e11530428c66a192ba91cfc7.html">freetype</a></li><li class="navelem"><a class="el" href="dir_ac174dc64ad36850d6be9a69f636b6c2.html">internal</a></li><li class="navelem"><a class="el" href="dir_35a0bb54f7f16cba82b70b986a88ff93.html">services</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#typedef-members">型定義</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">svcfftl.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="ftserv_8h_source.html">freetype/internal/ftserv.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="cfftypes_8h_source.html">freetype/internal/cfftypes.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+svcfftl.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="svcfftl_8h__incl.png" border="0" usemap="#afreetype_2internal_2services_2svcfftl_8h" alt=""/></div>
+<map name="freetype_2internal_2services_2svcfftl_8h" id="freetype_2internal_2services_2svcfftl_8h">
+<area shape="rect" title=" " alt="" coords="309,5,474,47"/>
+<area shape="rect" href="ftserv_8h.html" title=" " alt="" coords="5,408,164,435"/>
+<area shape="rect" href="cfftypes_8h.html" title=" " alt="" coords="895,95,1069,121"/>
+<area shape="rect" href="compiler-macros_8h.html" title=" " alt="" coords="161,483,291,509"/>
+<area shape="rect" href="public-macros_8h.html" title=" " alt="" coords="150,557,294,599"/>
+<area shape="rect" href="freetype_8h.html" title=" " alt="" coords="987,565,1116,591"/>
+<area shape="rect" href="t1tables_8h.html" title=" " alt="" coords="1164,333,1293,360"/>
+<area shape="rect" href="svpscmap_8h.html" title=" " alt="" coords="671,244,837,285"/>
+<area shape="rect" href="pshints_8h.html" title=" " alt="" coords="1143,251,1314,278"/>
+<area shape="rect" href="t1types_8h.html" title=" " alt="" coords="896,169,1068,196"/>
+<area shape="rect" href="ft2build_8h.html" title=" " alt="" coords="494,721,569,748"/>
+<area shape="rect" href="fttypes_8h.html" title=" " alt="" coords="269,647,391,673"/>
+<area shape="rect" href="fterrors_8h.html" title=" " alt="" coords="990,647,1113,673"/>
+<area shape="rect" href="ftheader_8h.html" title=" " alt="" coords="448,796,615,823"/>
+<area shape="rect" href="ftsystem_8h.html" title=" " alt="" coords="337,721,470,748"/>
+<area shape="rect" href="ftimage_8h.html" title=" " alt="" coords="94,721,219,748"/>
+<area shape="rect" title=" " alt="" coords="244,721,312,748"/>
+<area shape="rect" href="ftmoderr_8h.html" title=" " alt="" coords="911,721,1042,748"/>
+<area shape="rect" href="fterrdef_8h.html" title=" " alt="" coords="1066,721,1189,748"/>
+<area shape="rect" href="ftobjs_8h.html" title=" " alt="" coords="791,333,951,360"/>
+<area shape="rect" href="ftrender_8h.html" title=" " alt="" coords="808,408,935,435"/>
+<area shape="rect" href="ftsizes_8h.html" title=" " alt="" coords="1421,483,1543,509"/>
+<area shape="rect" href="ftlcdfil_8h.html" title=" " alt="" coords="959,408,1075,435"/>
+<area shape="rect" href="ftmemory_8h.html" title=" " alt="" coords="240,408,423,435"/>
+<area shape="rect" href="ftgloadr_8h.html" title=" " alt="" coords="1027,483,1198,509"/>
+<area shape="rect" href="ftdrv_8h.html" title=" " alt="" coords="631,408,783,435"/>
+<area shape="rect" href="autohint_8h.html" title=" " alt="" coords="1223,483,1397,509"/>
+<area shape="rect" href="ftcalc_8h.html" title=" " alt="" coords="447,408,607,435"/>
+<area shape="rect" href="ftmodapi_8h.html" title=" " alt="" coords="517,483,649,509"/>
+<area shape="rect" href="ftglyph_8h.html" title=" " alt="" coords="673,483,795,509"/>
+<area shape="rect" href="ftparams_8h.html" title=" " alt="" coords="819,483,953,509"/>
+<area shape="rect" href="fthash_8h.html" title=" " alt="" coords="976,333,1140,360"/>
+</map>
+</div>
+</div>
+<p><a href="svcfftl_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:ab81fca0043e0dbc74b3c0f0f52a5ec40"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svcfftl_8h.html#ab81fca0043e0dbc74b3c0f0f52a5ec40">FT_SERVICE_ID_CFF_LOAD</a>&#160;&#160;&#160;&quot;cff-load&quot;</td></tr>
+<tr class="separator:ab81fca0043e0dbc74b3c0f0f52a5ec40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a292ed9bcbd3aa22eb9b5db6d628b4fd7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svcfftl_8h.html#a292ed9bcbd3aa22eb9b5db6d628b4fd7">FT_DEFINE_SERVICE_CFFLOADREC</a>(class_,  get_standard_encoding_,  load_private_dict_,  fd_select_get_,  blend_check_vector_,  blend_build_vector_)</td></tr>
+<tr class="separator:a292ed9bcbd3aa22eb9b5db6d628b4fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:acf998426fd2b886b013e60341123f511"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="fttypes_8h.html#a937f6c17cf5ffd09086d8610c37b9f58">FT_UShort</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svcfftl_8h.html#acf998426fd2b886b013e60341123f511">FT_Get_Standard_Encoding_Func</a>) (<a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> charcode)</td></tr>
+<tr class="separator:acf998426fd2b886b013e60341123f511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7bb104fa9090ac4d6d0c3230b45e169"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svcfftl_8h.html#aa7bb104fa9090ac4d6d0c3230b45e169">FT_Load_Private_Dict_Func</a>) (<a class="el" href="cfftypes_8h.html#a76aa600c14d5973e2b9ea481b5d07311">CFF_Font</a> font, <a class="el" href="cfftypes_8h.html#a0aad5fff840536d64267a3d68383eda0">CFF_SubFont</a> subfont, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> lenNDV, <a class="el" href="fttypes_8h.html#a5f5a679cc09f758efdd0d1c5feed3c3d">FT_Fixed</a> *NDV)</td></tr>
+<tr class="separator:aa7bb104fa9090ac4d6d0c3230b45e169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca1d261071c58d213ea7130cefe04e78"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="fttypes_8h.html#a51f26183ca0c9f4af958939648caeccd">FT_Byte</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svcfftl_8h.html#aca1d261071c58d213ea7130cefe04e78">FT_FD_Select_Get_Func</a>) (<a class="el" href="cfftypes_8h.html#a593b67e1775c92534af5723c6115f58a">CFF_FDSelect</a> fdselect, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> glyph_index)</td></tr>
+<tr class="separator:aca1d261071c58d213ea7130cefe04e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8667479ef280dce63b603e1b88c0cc5e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="fttypes_8h.html#a1a832a256bb5a7e6e884afaa1a07f3ae">FT_Bool</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svcfftl_8h.html#a8667479ef280dce63b603e1b88c0cc5e">FT_Blend_Check_Vector_Func</a>) (<a class="el" href="cfftypes_8h.html#aeaaba6fb0914c3306536ad16880813fd">CFF_Blend</a> blend, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> vsindex, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> lenNDV, <a class="el" href="fttypes_8h.html#a5f5a679cc09f758efdd0d1c5feed3c3d">FT_Fixed</a> *NDV)</td></tr>
+<tr class="separator:a8667479ef280dce63b603e1b88c0cc5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af860222d4ed2e738bdc2a099c02308aa"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svcfftl_8h.html#af860222d4ed2e738bdc2a099c02308aa">FT_Blend_Build_Vector_Func</a>) (<a class="el" href="cfftypes_8h.html#aeaaba6fb0914c3306536ad16880813fd">CFF_Blend</a> blend, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> vsindex, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> lenNDV, <a class="el" href="fttypes_8h.html#a5f5a679cc09f758efdd0d1c5feed3c3d">FT_Fixed</a> *NDV)</td></tr>
+<tr class="separator:af860222d4ed2e738bdc2a099c02308aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:ad61ffb7e9bb4bd0cfab80b7cedc14315"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svcfftl_8h.html#ad61ffb7e9bb4bd0cfab80b7cedc14315">FT_DEFINE_SERVICE</a> (CFFLoad)</td></tr>
+<tr class="separator:ad61ffb7e9bb4bd0cfab80b7cedc14315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">マクロ定義詳解</h2>
+<a id="a292ed9bcbd3aa22eb9b5db6d628b4fd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a292ed9bcbd3aa22eb9b5db6d628b4fd7">&#9670;&nbsp;</a></span>FT_DEFINE_SERVICE_CFFLOADREC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_DEFINE_SERVICE_CFFLOADREC</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">class_, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">get_standard_encoding_, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">load_private_dict_, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fd_select_get_, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">blend_check_vector_, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">blend_build_vector_&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">  <span class="keyword">static</span> <span class="keyword">const</span> FT_Service_CFFLoadRec  class_ =                 \</div>
+<div class="line">  {                                                            \</div>
+<div class="line">    get_standard_encoding_,                                    \</div>
+<div class="line">    load_private_dict_,                                        \</div>
+<div class="line">    fd_select_get_,                                            \</div>
+<div class="line">    blend_check_vector_,                                       \</div>
+<div class="line">    blend_build_vector_                                        \</div>
+<div class="line">  };</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab81fca0043e0dbc74b3c0f0f52a5ec40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab81fca0043e0dbc74b3c0f0f52a5ec40">&#9670;&nbsp;</a></span>FT_SERVICE_ID_CFF_LOAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_SERVICE_ID_CFF_LOAD&#160;&#160;&#160;&quot;cff-load&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">型定義詳解</h2>
+<a id="af860222d4ed2e738bdc2a099c02308aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af860222d4ed2e738bdc2a099c02308aa">&#9670;&nbsp;</a></span>FT_Blend_Build_Vector_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(* FT_Blend_Build_Vector_Func) (<a class="el" href="cfftypes_8h.html#aeaaba6fb0914c3306536ad16880813fd">CFF_Blend</a> blend, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> vsindex, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> lenNDV, <a class="el" href="fttypes_8h.html#a5f5a679cc09f758efdd0d1c5feed3c3d">FT_Fixed</a> *NDV)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8667479ef280dce63b603e1b88c0cc5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8667479ef280dce63b603e1b88c0cc5e">&#9670;&nbsp;</a></span>FT_Blend_Check_Vector_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="fttypes_8h.html#a1a832a256bb5a7e6e884afaa1a07f3ae">FT_Bool</a>(* FT_Blend_Check_Vector_Func) (<a class="el" href="cfftypes_8h.html#aeaaba6fb0914c3306536ad16880813fd">CFF_Blend</a> blend, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> vsindex, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> lenNDV, <a class="el" href="fttypes_8h.html#a5f5a679cc09f758efdd0d1c5feed3c3d">FT_Fixed</a> *NDV)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca1d261071c58d213ea7130cefe04e78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca1d261071c58d213ea7130cefe04e78">&#9670;&nbsp;</a></span>FT_FD_Select_Get_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="fttypes_8h.html#a51f26183ca0c9f4af958939648caeccd">FT_Byte</a>(* FT_FD_Select_Get_Func) (<a class="el" href="cfftypes_8h.html#a593b67e1775c92534af5723c6115f58a">CFF_FDSelect</a> fdselect, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> glyph_index)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf998426fd2b886b013e60341123f511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf998426fd2b886b013e60341123f511">&#9670;&nbsp;</a></span>FT_Get_Standard_Encoding_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="fttypes_8h.html#a937f6c17cf5ffd09086d8610c37b9f58">FT_UShort</a>(* FT_Get_Standard_Encoding_Func) (<a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> charcode)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7bb104fa9090ac4d6d0c3230b45e169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7bb104fa9090ac4d6d0c3230b45e169">&#9670;&nbsp;</a></span>FT_Load_Private_Dict_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(* FT_Load_Private_Dict_Func) (<a class="el" href="cfftypes_8h.html#a76aa600c14d5973e2b9ea481b5d07311">CFF_Font</a> font, <a class="el" href="cfftypes_8h.html#a0aad5fff840536d64267a3d68383eda0">CFF_SubFont</a> subfont, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> lenNDV, <a class="el" href="fttypes_8h.html#a5f5a679cc09f758efdd0d1c5feed3c3d">FT_Fixed</a> *NDV)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="ad61ffb7e9bb4bd0cfab80b7cedc14315"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad61ffb7e9bb4bd0cfab80b7cedc14315">&#9670;&nbsp;</a></span>FT_DEFINE_SERVICE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FT_DEFINE_SERVICE </td>
+          <td>(</td>
+          <td class="paramtype">CFFLoad&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

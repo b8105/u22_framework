@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: Collision/RectangleCollisionDetector.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6a494f89b6caadb0fb3fe22646e1d1a0.html">Collision</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">RectangleCollisionDetector.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_rectangle_collision_detector_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef U22_COLLISION_RECTANGLE_COLLISION_DETECTOR_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define U22_COLLISION_RECTANGLE_COLLISION_DETECTOR_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../Shape/Circle.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../Shape/Rectangle.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceu22_1_1collision.html">u22::collision</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classu22_1_1collision_1_1_rectangle_collision_detector.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classu22_1_1collision_1_1_rectangle_collision_detector.html">RectangleCollisionDetector</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classu22_1_1collision_1_1_rectangle_collision_detector.html#a2aa0bf53684643d15cb938f520653eee">RectangleCollisionDetector</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classu22_1_1collision_1_1_rectangle_collision_detector.html#ae210ddd20d98e07b64d3b5f1d1fa3b68">~RectangleCollisionDetector</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1collision_1_1_rectangle_collision_detector.html#ae248a3540673b6575af42fe6e29402a9">CollisionRectangle</a>(<span class="keyword">const</span> <a class="code" href="classu22_1_1shape_1_1_rectangle.html">u22::shape::Rectangle</a>&amp; a, <span class="keyword">const</span> <a class="code" href="classu22_1_1shape_1_1_rectangle.html">u22::shape::Rectangle</a>&amp; b) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1collision_1_1_rectangle_collision_detector.html#aaee85396ec34bb52529892da641b601d">CollisionCircle</a>(<span class="keyword">const</span> <a class="code" href="classu22_1_1shape_1_1_rectangle.html">u22::shape::Rectangle</a>&amp; rect, <span class="keyword">const</span> <a class="code" href="classu22_1_1shape_1_1_circle.html">u22::shape::Circle</a>&amp; circle) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif // !U22_COLLISION_RECTANGLE_COLLISION_DETECTOR_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="anamespaceu22_1_1collision_html"><div class="ttname"><a href="namespaceu22_1_1collision.html">u22::collision</a></div><div class="ttdef"><b>Definition:</b> CircleCollisionDetector.h:11</div></div>
+<div class="ttc" id="aclassu22_1_1shape_1_1_circle_html_ae358f5b348cd0e99c335c4285d7c3859"><div class="ttname"><a href="classu22_1_1shape_1_1_circle.html#ae358f5b348cd0e99c335c4285d7c3859">u22::shape::Circle::y</a></div><div class="ttdeci">float y</div><div class="ttdoc">位置</div><div class="ttdef"><b>Definition:</b> Circle.h:16</div></div>
+<div class="ttc" id="aclassu22_1_1collision_1_1_rectangle_collision_detector_html_ae210ddd20d98e07b64d3b5f1d1fa3b68"><div class="ttname"><a href="classu22_1_1collision_1_1_rectangle_collision_detector.html#ae210ddd20d98e07b64d3b5f1d1fa3b68">u22::collision::RectangleCollisionDetector::~RectangleCollisionDetector</a></div><div class="ttdeci">~RectangleCollisionDetector()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> RectangleCollisionDetector.cpp:7</div></div>
+<div class="ttc" id="aclassu22_1_1shape_1_1_rectangle_html_ae9954296ee9732d8ec78ceca0f58ac89"><div class="ttname"><a href="classu22_1_1shape_1_1_rectangle.html#ae9954296ee9732d8ec78ceca0f58ac89">u22::shape::Rectangle::left</a></div><div class="ttdeci">float left</div><div class="ttdoc">左</div><div class="ttdef"><b>Definition:</b> Rectangle.h:12</div></div>
+<div class="ttc" id="aclassu22_1_1shape_1_1_circle_html_ad2ce7c791304ba0d4956b2b2b73c7c6d"><div class="ttname"><a href="classu22_1_1shape_1_1_circle.html#ad2ce7c791304ba0d4956b2b2b73c7c6d">u22::shape::Circle::radius</a></div><div class="ttdeci">float radius</div><div class="ttdoc">半径</div><div class="ttdef"><b>Definition:</b> Circle.h:24</div></div>
+<div class="ttc" id="aclassu22_1_1shape_1_1_circle_html"><div class="ttname"><a href="classu22_1_1shape_1_1_circle.html">u22::shape::Circle</a></div><div class="ttdef"><b>Definition:</b> Circle.h:9</div></div>
+<div class="ttc" id="aclassu22_1_1collision_1_1_rectangle_collision_detector_html_ae248a3540673b6575af42fe6e29402a9"><div class="ttname"><a href="classu22_1_1collision_1_1_rectangle_collision_detector.html#ae248a3540673b6575af42fe6e29402a9">u22::collision::RectangleCollisionDetector::CollisionRectangle</a></div><div class="ttdeci">bool CollisionRectangle(const u22::shape::Rectangle &amp;a, const u22::shape::Rectangle &amp;b) const</div><div class="ttdoc">判定</div><div class="ttdef"><b>Definition:</b> RectangleCollisionDetector.cpp:10</div></div>
+<div class="ttc" id="a_rectangle_collision_detector_8h_html"><div class="ttname"><a href="_rectangle_collision_detector_8h.html">RectangleCollisionDetector.h</a></div></div>
+<div class="ttc" id="agroup__core__func__common_html_ga439e60a72eadecfeda2df5449c613a64"><div class="ttname"><a href="group__core__func__common.html#ga439e60a72eadecfeda2df5449c613a64">glm::abs</a></div><div class="ttdeci">GLM_FUNC_DECL GLM_CONSTEXPR genType abs(genType x)</div></div>
+<div class="ttc" id="aclassu22_1_1shape_1_1_rectangle_html_aec29e5a2f2e3d211fdd620b5d80f37d5"><div class="ttname"><a href="classu22_1_1shape_1_1_rectangle.html#aec29e5a2f2e3d211fdd620b5d80f37d5">u22::shape::Rectangle::right</a></div><div class="ttdeci">float right</div><div class="ttdoc">右</div><div class="ttdef"><b>Definition:</b> Rectangle.h:16</div></div>
+<div class="ttc" id="aclassu22_1_1shape_1_1_circle_html_ab9eb55e46cf6fc951904f3e7bf2828cc"><div class="ttname"><a href="classu22_1_1shape_1_1_circle.html#ab9eb55e46cf6fc951904f3e7bf2828cc">u22::shape::Circle::x</a></div><div class="ttdeci">float x</div><div class="ttdoc">位置</div><div class="ttdef"><b>Definition:</b> Circle.h:14</div></div>
+<div class="ttc" id="aclassu22_1_1collision_1_1_rectangle_collision_detector_html_aaee85396ec34bb52529892da641b601d"><div class="ttname"><a href="classu22_1_1collision_1_1_rectangle_collision_detector.html#aaee85396ec34bb52529892da641b601d">u22::collision::RectangleCollisionDetector::CollisionCircle</a></div><div class="ttdeci">bool CollisionCircle(const u22::shape::Rectangle &amp;rect, const u22::shape::Circle &amp;circle) const</div><div class="ttdoc">判定</div><div class="ttdef"><b>Definition:</b> RectangleCollisionDetector.cpp:14</div></div>
+<div class="ttc" id="aclassu22_1_1collision_1_1_rectangle_collision_detector_html"><div class="ttname"><a href="classu22_1_1collision_1_1_rectangle_collision_detector.html">u22::collision::RectangleCollisionDetector</a></div><div class="ttdef"><b>Definition:</b> RectangleCollisionDetector.h:12</div></div>
+<div class="ttc" id="aclassu22_1_1collision_1_1_rectangle_collision_detector_html_a2aa0bf53684643d15cb938f520653eee"><div class="ttname"><a href="classu22_1_1collision_1_1_rectangle_collision_detector.html#a2aa0bf53684643d15cb938f520653eee">u22::collision::RectangleCollisionDetector::RectangleCollisionDetector</a></div><div class="ttdeci">RectangleCollisionDetector()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> RectangleCollisionDetector.cpp:4</div></div>
+<div class="ttc" id="aclassu22_1_1shape_1_1_rectangle_html_a47e1f2769fca14541a3dad1548ce618b"><div class="ttname"><a href="classu22_1_1shape_1_1_rectangle.html#a47e1f2769fca14541a3dad1548ce618b">u22::shape::Rectangle::top</a></div><div class="ttdeci">float top</div><div class="ttdoc">上</div><div class="ttdef"><b>Definition:</b> Rectangle.h:14</div></div>
+<div class="ttc" id="aclassu22_1_1shape_1_1_rectangle_html_a08f0df79f35d264471d12a0a1128d433"><div class="ttname"><a href="classu22_1_1shape_1_1_rectangle.html#a08f0df79f35d264471d12a0a1128d433">u22::shape::Rectangle::bottom</a></div><div class="ttdeci">float bottom</div><div class="ttdoc">下</div><div class="ttdef"><b>Definition:</b> Rectangle.h:18</div></div>
+<div class="ttc" id="aclassu22_1_1shape_1_1_rectangle_html"><div class="ttname"><a href="classu22_1_1shape_1_1_rectangle.html">u22::shape::Rectangle</a></div><div class="ttdef"><b>Definition:</b> Rectangle.h:9</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

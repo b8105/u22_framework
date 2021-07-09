@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: Math/MathDefine.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_5bce4665f02041fc00c7e7e07b63c945.html">Math</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">MathDefine.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_math_define_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef U22_MATH_DEFINE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define U22_MATH_DEFINE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_vector3_8h.html">Vector3.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_vector4_8h.html">Vector4.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_matrix4x4_8h.html">Matrix4x4.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="namespaceu22_1_1math_1_1def.html">   10</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceu22_1_1math_1_1def.html">u22::math::def</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="namespaceu22_1_1math_1_1def.html#a22a11f69f910342aee312931bf1408df">   11</a></span>&#160;constexpr <span class="keywordtype">float</span> <a class="code" href="namespaceu22_1_1math_1_1def.html#a22a11f69f910342aee312931bf1408df">kPi</a> = 3.14192f;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespaceu22_1_1math_1_1def.html#a862484fba3f1f4dc0d012517159d73db">   12</a></span>&#160;constexpr <span class="keywordtype">float</span> <a class="code" href="namespaceu22_1_1math_1_1def.html#a862484fba3f1f4dc0d012517159d73db">kHalfPi</a> = <a class="code" href="namespaceu22_1_1math_1_1def.html#a22a11f69f910342aee312931bf1408df">kPi</a> / 2.0f;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespaceu22_1_1math_1_1def.html#a902421ab543ec5eb3116761d89baba9b">   13</a></span>&#160;constexpr <span class="keywordtype">float</span> <a class="code" href="namespaceu22_1_1math_1_1def.html#a902421ab543ec5eb3116761d89baba9b">kTwoPi</a> = <a class="code" href="namespaceu22_1_1math_1_1def.html#a22a11f69f910342aee312931bf1408df">kPi</a> * 2.0f;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespaceu22_1_1math_1_1vec3.html">   15</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceu22_1_1math_1_1vec3.html">u22::math::vec3</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespaceu22_1_1math_1_1vec3.html#ae5a83c99dbafd19bf974c1f47a580394">   16</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceu22_1_1math_1_1vec3.html#ae5a83c99dbafd19bf974c1f47a580394">kZero</a> = <a class="code" href="namespaceu22_1_1math.html#a7541a7b83d972aaa30344cb4ee2192f1">u22::math::Vector3F</a>(0.0f, 0.0f, 0.0f);</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceu22_1_1math_1_1vec3.html#a9f2345d307407c31e3c720452a82728c">   17</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceu22_1_1math_1_1vec3.html#a9f2345d307407c31e3c720452a82728c">kOne</a> = <a class="code" href="namespaceu22_1_1math.html#a7541a7b83d972aaa30344cb4ee2192f1">u22::math::Vector3F</a>(1.0f, 1.0f, 1.0f);</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespaceu22_1_1math_1_1vec3.html#a0572a9186db4ed9ed7d4210f0bba0188">   18</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceu22_1_1math_1_1vec3.html#a0572a9186db4ed9ed7d4210f0bba0188">kUnitX</a> = <a class="code" href="namespaceu22_1_1math.html#a7541a7b83d972aaa30344cb4ee2192f1">u22::math::Vector3F</a>(1.0f, 0.0f, 0.0f);</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespaceu22_1_1math_1_1vec3.html#a4f308e7170a81ee74e52a090e69e9a6b">   19</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceu22_1_1math_1_1vec3.html#a4f308e7170a81ee74e52a090e69e9a6b">kUnitY</a> = <a class="code" href="namespaceu22_1_1math.html#a7541a7b83d972aaa30344cb4ee2192f1">u22::math::Vector3F</a>(0.0f, 1.0f, 0.0f);</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="namespaceu22_1_1math_1_1vec3.html#af5f6b2057152b974bf645f95994e12e2">   20</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceu22_1_1math_1_1vec3.html#af5f6b2057152b974bf645f95994e12e2">kUnitZ</a> = <a class="code" href="namespaceu22_1_1math.html#a7541a7b83d972aaa30344cb4ee2192f1">u22::math::Vector3F</a>(0.0f, 0.0f, 1.0f);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespaceu22_1_1math_1_1vec4.html">   22</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceu22_1_1math_1_1vec4.html">u22::math::vec4</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespaceu22_1_1math_1_1vec4.html#a7d9b4824ded51ed892b38c620cde7c6d">   23</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceu22_1_1math_1_1vec4.html#a7d9b4824ded51ed892b38c620cde7c6d">kZero</a> = <a class="code" href="namespaceu22_1_1math.html#a4d1e97ba7f1e8c8170c4e2ba3f60f834">u22::math::Vector4F</a>(0.0f, 0.0f, 0.0f, 0.0f);</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="namespaceu22_1_1math_1_1vec4.html#ac7aa79c0f80cb1c7d37ff82c38878f7a">   24</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceu22_1_1math_1_1vec4.html#ac7aa79c0f80cb1c7d37ff82c38878f7a">kOne</a> = <a class="code" href="namespaceu22_1_1math.html#a4d1e97ba7f1e8c8170c4e2ba3f60f834">u22::math::Vector4F</a>(1.0f, 1.0f, 1.0f, 1.0f);</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespaceu22_1_1math_1_1vec4.html#a229957c0f9f72435103fb922eeb895fd">   25</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceu22_1_1math_1_1vec4.html#a229957c0f9f72435103fb922eeb895fd">kUnitX</a> = <a class="code" href="namespaceu22_1_1math.html#a4d1e97ba7f1e8c8170c4e2ba3f60f834">u22::math::Vector4F</a>(1.0f, 0.0f, 0.0f, 0.0f);</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="namespaceu22_1_1math_1_1vec4.html#afadb398cb1f06f9be7e54765b9e2a940">   26</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceu22_1_1math_1_1vec4.html#afadb398cb1f06f9be7e54765b9e2a940">kUnitY</a> = <a class="code" href="namespaceu22_1_1math.html#a4d1e97ba7f1e8c8170c4e2ba3f60f834">u22::math::Vector4F</a>(0.0f, 1.0f, 0.0f, 0.0f);</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespaceu22_1_1math_1_1vec4.html#aa6c8f909caa1326d76fe07f6138a5068">   27</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceu22_1_1math_1_1vec4.html#aa6c8f909caa1326d76fe07f6138a5068">kUnitZ</a> = <a class="code" href="namespaceu22_1_1math.html#a4d1e97ba7f1e8c8170c4e2ba3f60f834">u22::math::Vector4F</a>(0.0f, 0.0f, 1.0f, 0.0f);</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="namespaceu22_1_1math_1_1vec4.html#a7cd14c3c727d5adb6e66a67bcfebf6df">   28</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceu22_1_1math_1_1vec4.html#a7cd14c3c727d5adb6e66a67bcfebf6df">kUnitW</a> = <a class="code" href="namespaceu22_1_1math.html#a4d1e97ba7f1e8c8170c4e2ba3f60f834">u22::math::Vector4F</a>(0.0f, 0.0f, 0.0f, 1.0f);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="namespaceu22_1_1math_1_1mat4x4.html">   31</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceu22_1_1math_1_1mat4x4.html">u22::math::mat4x4</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="namespaceu22_1_1math_1_1mat4x4.html#a4685a3c8197ed2b4428596348a304ca3">   32</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespaceu22_1_1math_1_1mat4x4.html#a4685a3c8197ed2b4428596348a304ca3">kIdentity</a> = glm::identity&lt;glm::mat4x4&gt;();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">//constexpr u22::math::Matrix4x4F kIdentity = glm::identity&lt;glm::mat4x4&gt;();</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">//constexpr auto kIdentity = u22::math::Matrix4x4F::Identity();</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="namespaceu22_1_1math_1_1utility.html">   37</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceu22_1_1math_1_1utility.html">u22::math::utility</a> {</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespaceu22_1_1math_1_1utility.html#adf06f59fd6b1e68ce34ff16aa571e54a">   38</a></span>&#160;constexpr <span class="keywordtype">float</span> <a class="code" href="namespaceu22_1_1math_1_1utility.html#adf06f59fd6b1e68ce34ff16aa571e54a">ToRadian</a>(<span class="keywordtype">float</span> degree) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> degree * (<a class="code" href="namespaceu22_1_1math_1_1def.html#a22a11f69f910342aee312931bf1408df">u22::math::def::kPi</a> / 180.0f);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="namespaceu22_1_1math_1_1utility.html#a3be472203e49063be3257caf0c9ed269">   41</a></span>&#160;constexpr <span class="keywordtype">float</span> <a class="code" href="namespaceu22_1_1math_1_1utility.html#a3be472203e49063be3257caf0c9ed269">ToDegree</a>(<span class="keywordtype">float</span> radian) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> radian * (180.0f / <a class="code" href="namespaceu22_1_1math_1_1def.html#a22a11f69f910342aee312931bf1408df">u22::math::def::kPi</a>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">static</span> <a class="code" href="classu22_1_1math_1_1_matrix4x4_3_01float_01_4.html">u22::math::Matrix4x4F</a> ConputeTransform(<span class="keyword">const</span> <a class="code" href="classu22_1_1math_1_1_vector3_3_01float_01_4.html">u22::math::Vector3F</a>&amp; pos, <span class="keyword">const</span> <a class="code" href="classu22_1_1math_1_1_vector3_3_01float_01_4.html">u22::math::Vector3F</a>&amp; rot, <span class="keyword">const</span> <a class="code" href="classu22_1_1math_1_1_vector3_3_01float_01_4.html">u22::math::Vector3F</a>&amp; sca) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="group__ext__matrix__transform.html#ga1a4ecc4ad82652b8fb14dcb087879284">glm::translate</a>(<a class="code" href="namespaceu22_1_1math_1_1mat4x4.html#a4685a3c8197ed2b4428596348a304ca3">math::mat4x4::kIdentity</a>, pos) * </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="group__gtx__quaternion.html#gadfa2c77094e8cc9adad321d938855ffb">glm::toMat4</a>(<a class="code" href="structglm_1_1qua.html">glm::quat</a>(rot)) * </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="group__ext__matrix__transform.html#ga05051adbee603fb3c5095d8cf5cc229b">glm::scale</a>(<a class="code" href="namespaceu22_1_1math_1_1mat4x4.html#a4685a3c8197ed2b4428596348a304ca3">math::mat4x4::kIdentity</a>, sca);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="namespacecolor_1_1rgba.html">   52</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacecolor_1_1rgba.html">color::rgba</a> {</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="namespacecolor_1_1rgba.html#a00a39ec39f2f64ab7b3fec388496ff3c">   53</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespacecolor_1_1rgba.html#a00a39ec39f2f64ab7b3fec388496ff3c">kBlack</a> = <a class="code" href="namespaceu22_1_1math.html#a4d1e97ba7f1e8c8170c4e2ba3f60f834">u22::math::Vector4F</a>(0.0f, 0.0f, 0.0f, 1.0f);</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="namespacecolor_1_1rgba.html#a632fd65138299aba49836381e8b9e1de">   54</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespacecolor_1_1rgba.html#a632fd65138299aba49836381e8b9e1de">kRed</a> = <a class="code" href="namespaceu22_1_1math.html#a4d1e97ba7f1e8c8170c4e2ba3f60f834">u22::math::Vector4F</a>(1.0f, 0.0f, 0.0f, 1.0f);</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="namespacecolor_1_1rgba.html#a6e852fcabb2210ac27d471f1cb5d7311">   55</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespacecolor_1_1rgba.html#a6e852fcabb2210ac27d471f1cb5d7311">kGreen</a> = <a class="code" href="namespaceu22_1_1math.html#a4d1e97ba7f1e8c8170c4e2ba3f60f834">u22::math::Vector4F</a>(0.0f, 1.0f, 0.0f, 1.0f);</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="namespacecolor_1_1rgba.html#a164aa280e871650ceaaec0c19c8469cb">   56</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespacecolor_1_1rgba.html#a164aa280e871650ceaaec0c19c8469cb">kBlue</a> = <a class="code" href="namespaceu22_1_1math.html#a4d1e97ba7f1e8c8170c4e2ba3f60f834">u22::math::Vector4F</a>(0.0f, 0.0f, 1.0f, 1.0f);</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="namespacecolor_1_1rgba.html#a5a452c7e93e2fb042d5bdcdc2fd0919c">   57</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="namespacecolor_1_1rgba.html#a5a452c7e93e2fb042d5bdcdc2fd0919c">kWhite</a> = <a class="code" href="namespaceu22_1_1math.html#a4d1e97ba7f1e8c8170c4e2ba3f60f834">u22::math::Vector4F</a>(1.0f, 1.0f, 1.0f, 1.0f);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif // !U22_MATH_DEFINE_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="a_matrix4x4_8h_html"><div class="ttname"><a href="_matrix4x4_8h.html">Matrix4x4.h</a></div></div>
+<div class="ttc" id="aclassu22_1_1math_1_1_vector3_3_01float_01_4_html"><div class="ttname"><a href="classu22_1_1math_1_1_vector3_3_01float_01_4.html">u22::math::Vector3&lt; float &gt;</a></div><div class="ttdef"><b>Definition:</b> Vector3.h:18</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_1_1def_html_a902421ab543ec5eb3116761d89baba9b"><div class="ttname"><a href="namespaceu22_1_1math_1_1def.html#a902421ab543ec5eb3116761d89baba9b">u22::math::def::kTwoPi</a></div><div class="ttdeci">constexpr float kTwoPi</div><div class="ttdef"><b>Definition:</b> MathDefine.h:13</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_1_1utility_html_a3be472203e49063be3257caf0c9ed269"><div class="ttname"><a href="namespaceu22_1_1math_1_1utility.html#a3be472203e49063be3257caf0c9ed269">u22::math::utility::ToDegree</a></div><div class="ttdeci">constexpr float ToDegree(float radian)</div><div class="ttdef"><b>Definition:</b> MathDefine.h:41</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_1_1def_html_a22a11f69f910342aee312931bf1408df"><div class="ttname"><a href="namespaceu22_1_1math_1_1def.html#a22a11f69f910342aee312931bf1408df">u22::math::def::kPi</a></div><div class="ttdeci">constexpr float kPi</div><div class="ttdef"><b>Definition:</b> MathDefine.h:11</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_1_1vec4_html"><div class="ttname"><a href="namespaceu22_1_1math_1_1vec4.html">u22::math::vec4</a></div><div class="ttdef"><b>Definition:</b> MathDefine.h:22</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_1_1vec4_html_aa6c8f909caa1326d76fe07f6138a5068"><div class="ttname"><a href="namespaceu22_1_1math_1_1vec4.html#aa6c8f909caa1326d76fe07f6138a5068">u22::math::vec4::kUnitZ</a></div><div class="ttdeci">constexpr auto kUnitZ</div><div class="ttdef"><b>Definition:</b> MathDefine.h:27</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_1_1vec3_html_a4f308e7170a81ee74e52a090e69e9a6b"><div class="ttname"><a href="namespaceu22_1_1math_1_1vec3.html#a4f308e7170a81ee74e52a090e69e9a6b">u22::math::vec3::kUnitY</a></div><div class="ttdeci">constexpr auto kUnitY</div><div class="ttdef"><b>Definition:</b> MathDefine.h:19</div></div>
+<div class="ttc" id="aclassu22_1_1math_1_1_matrix4x4_3_01float_01_4_html"><div class="ttname"><a href="classu22_1_1math_1_1_matrix4x4_3_01float_01_4.html">u22::math::Matrix4x4&lt; float &gt;</a></div><div class="ttdef"><b>Definition:</b> Matrix4x4.h:18</div></div>
+<div class="ttc" id="anamespacecolor_1_1rgba_html_a5a452c7e93e2fb042d5bdcdc2fd0919c"><div class="ttname"><a href="namespacecolor_1_1rgba.html#a5a452c7e93e2fb042d5bdcdc2fd0919c">color::rgba::kWhite</a></div><div class="ttdeci">constexpr auto kWhite</div><div class="ttdef"><b>Definition:</b> MathDefine.h:57</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_1_1vec4_html_afadb398cb1f06f9be7e54765b9e2a940"><div class="ttname"><a href="namespaceu22_1_1math_1_1vec4.html#afadb398cb1f06f9be7e54765b9e2a940">u22::math::vec4::kUnitY</a></div><div class="ttdeci">constexpr auto kUnitY</div><div class="ttdef"><b>Definition:</b> MathDefine.h:26</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_1_1def_html_a862484fba3f1f4dc0d012517159d73db"><div class="ttname"><a href="namespaceu22_1_1math_1_1def.html#a862484fba3f1f4dc0d012517159d73db">u22::math::def::kHalfPi</a></div><div class="ttdeci">constexpr float kHalfPi</div><div class="ttdef"><b>Definition:</b> MathDefine.h:12</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_1_1utility_html"><div class="ttname"><a href="namespaceu22_1_1math_1_1utility.html">u22::math::utility</a></div><div class="ttdef"><b>Definition:</b> MathDefine.h:37</div></div>
+<div class="ttc" id="anamespacecolor_1_1rgba_html_a6e852fcabb2210ac27d471f1cb5d7311"><div class="ttname"><a href="namespacecolor_1_1rgba.html#a6e852fcabb2210ac27d471f1cb5d7311">color::rgba::kGreen</a></div><div class="ttdeci">constexpr auto kGreen</div><div class="ttdef"><b>Definition:</b> MathDefine.h:55</div></div>
+<div class="ttc" id="a_vector4_8h_html"><div class="ttname"><a href="_vector4_8h.html">Vector4.h</a></div></div>
+<div class="ttc" id="anamespacecolor_1_1rgba_html_a164aa280e871650ceaaec0c19c8469cb"><div class="ttname"><a href="namespacecolor_1_1rgba.html#a164aa280e871650ceaaec0c19c8469cb">color::rgba::kBlue</a></div><div class="ttdeci">constexpr auto kBlue</div><div class="ttdef"><b>Definition:</b> MathDefine.h:56</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_1_1vec3_html_af5f6b2057152b974bf645f95994e12e2"><div class="ttname"><a href="namespaceu22_1_1math_1_1vec3.html#af5f6b2057152b974bf645f95994e12e2">u22::math::vec3::kUnitZ</a></div><div class="ttdeci">constexpr auto kUnitZ</div><div class="ttdef"><b>Definition:</b> MathDefine.h:20</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_1_1vec4_html_a229957c0f9f72435103fb922eeb895fd"><div class="ttname"><a href="namespaceu22_1_1math_1_1vec4.html#a229957c0f9f72435103fb922eeb895fd">u22::math::vec4::kUnitX</a></div><div class="ttdeci">constexpr auto kUnitX</div><div class="ttdef"><b>Definition:</b> MathDefine.h:25</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_1_1vec4_html_a7d9b4824ded51ed892b38c620cde7c6d"><div class="ttname"><a href="namespaceu22_1_1math_1_1vec4.html#a7d9b4824ded51ed892b38c620cde7c6d">u22::math::vec4::kZero</a></div><div class="ttdeci">constexpr auto kZero</div><div class="ttdef"><b>Definition:</b> MathDefine.h:23</div></div>
+<div class="ttc" id="astructglm_1_1qua_html"><div class="ttname"><a href="structglm_1_1qua.html">glm::qua</a></div><div class="ttdef"><b>Definition:</b> type_quat.hpp:20</div></div>
+<div class="ttc" id="a_vector3_8h_html"><div class="ttname"><a href="_vector3_8h.html">Vector3.h</a></div></div>
+<div class="ttc" id="anamespaceu22_1_1math_1_1vec4_html_ac7aa79c0f80cb1c7d37ff82c38878f7a"><div class="ttname"><a href="namespaceu22_1_1math_1_1vec4.html#ac7aa79c0f80cb1c7d37ff82c38878f7a">u22::math::vec4::kOne</a></div><div class="ttdeci">constexpr auto kOne</div><div class="ttdef"><b>Definition:</b> MathDefine.h:24</div></div>
+<div class="ttc" id="anamespacecolor_1_1rgba_html_a00a39ec39f2f64ab7b3fec388496ff3c"><div class="ttname"><a href="namespacecolor_1_1rgba.html#a00a39ec39f2f64ab7b3fec388496ff3c">color::rgba::kBlack</a></div><div class="ttdeci">constexpr auto kBlack</div><div class="ttdef"><b>Definition:</b> MathDefine.h:53</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_1_1mat4x4_html_a4685a3c8197ed2b4428596348a304ca3"><div class="ttname"><a href="namespaceu22_1_1math_1_1mat4x4.html#a4685a3c8197ed2b4428596348a304ca3">u22::math::mat4x4::kIdentity</a></div><div class="ttdeci">constexpr auto kIdentity</div><div class="ttdef"><b>Definition:</b> MathDefine.h:32</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_1_1def_html"><div class="ttname"><a href="namespaceu22_1_1math_1_1def.html">u22::math::def</a></div><div class="ttdef"><b>Definition:</b> MathDefine.h:10</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_html_a7541a7b83d972aaa30344cb4ee2192f1"><div class="ttname"><a href="namespaceu22_1_1math.html#a7541a7b83d972aaa30344cb4ee2192f1">u22::math::Vector3F</a></div><div class="ttdeci">Vector3&lt; float &gt; Vector3F</div><div class="ttdef"><b>Definition:</b> Vector3.h:81</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_html_a4d1e97ba7f1e8c8170c4e2ba3f60f834"><div class="ttname"><a href="namespaceu22_1_1math.html#a4d1e97ba7f1e8c8170c4e2ba3f60f834">u22::math::Vector4F</a></div><div class="ttdeci">Vector4&lt; float &gt; Vector4F</div><div class="ttdef"><b>Definition:</b> Vector4.h:41</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_1_1vec3_html_ae5a83c99dbafd19bf974c1f47a580394"><div class="ttname"><a href="namespaceu22_1_1math_1_1vec3.html#ae5a83c99dbafd19bf974c1f47a580394">u22::math::vec3::kZero</a></div><div class="ttdeci">constexpr auto kZero</div><div class="ttdef"><b>Definition:</b> MathDefine.h:16</div></div>
+<div class="ttc" id="agroup__ext__matrix__transform_html_ga1a4ecc4ad82652b8fb14dcb087879284"><div class="ttname"><a href="group__ext__matrix__transform.html#ga1a4ecc4ad82652b8fb14dcb087879284">glm::translate</a></div><div class="ttdeci">GLM_FUNC_DECL mat&lt; 4, 4, T, Q &gt; translate(mat&lt; 4, 4, T, Q &gt; const &amp;m, vec&lt; 3, T, Q &gt; const &amp;v)</div><div class="ttdef"><b>Definition:</b> matrix_transform.inl:10</div></div>
+<div class="ttc" id="anamespacecolor_1_1rgba_html"><div class="ttname"><a href="namespacecolor_1_1rgba.html">color::rgba</a></div><div class="ttdef"><b>Definition:</b> MathDefine.h:52</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_1_1mat4x4_html"><div class="ttname"><a href="namespaceu22_1_1math_1_1mat4x4.html">u22::math::mat4x4</a></div><div class="ttdef"><b>Definition:</b> MathDefine.h:31</div></div>
+<div class="ttc" id="agroup__gtx__quaternion_html_gadfa2c77094e8cc9adad321d938855ffb"><div class="ttname"><a href="group__gtx__quaternion.html#gadfa2c77094e8cc9adad321d938855ffb">glm::toMat4</a></div><div class="ttdeci">GLM_FUNC_DECL mat&lt; 4, 4, T, Q &gt; toMat4(qua&lt; T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> quaternion.hpp:120</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_1_1vec3_html_a0572a9186db4ed9ed7d4210f0bba0188"><div class="ttname"><a href="namespaceu22_1_1math_1_1vec3.html#a0572a9186db4ed9ed7d4210f0bba0188">u22::math::vec3::kUnitX</a></div><div class="ttdeci">constexpr auto kUnitX</div><div class="ttdef"><b>Definition:</b> MathDefine.h:18</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_1_1utility_html_adf06f59fd6b1e68ce34ff16aa571e54a"><div class="ttname"><a href="namespaceu22_1_1math_1_1utility.html#adf06f59fd6b1e68ce34ff16aa571e54a">u22::math::utility::ToRadian</a></div><div class="ttdeci">constexpr float ToRadian(float degree)</div><div class="ttdef"><b>Definition:</b> MathDefine.h:38</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_1_1vec4_html_a7cd14c3c727d5adb6e66a67bcfebf6df"><div class="ttname"><a href="namespaceu22_1_1math_1_1vec4.html#a7cd14c3c727d5adb6e66a67bcfebf6df">u22::math::vec4::kUnitW</a></div><div class="ttdeci">constexpr auto kUnitW</div><div class="ttdef"><b>Definition:</b> MathDefine.h:28</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_1_1vec3_html"><div class="ttname"><a href="namespaceu22_1_1math_1_1vec3.html">u22::math::vec3</a></div><div class="ttdef"><b>Definition:</b> MathDefine.h:15</div></div>
+<div class="ttc" id="agroup__ext__matrix__transform_html_ga05051adbee603fb3c5095d8cf5cc229b"><div class="ttname"><a href="group__ext__matrix__transform.html#ga05051adbee603fb3c5095d8cf5cc229b">glm::scale</a></div><div class="ttdeci">GLM_FUNC_DECL mat&lt; 4, 4, T, Q &gt; scale(mat&lt; 4, 4, T, Q &gt; const &amp;m, vec&lt; 3, T, Q &gt; const &amp;v)</div><div class="ttdef"><b>Definition:</b> matrix_transform.inl:78</div></div>
+<div class="ttc" id="anamespacecolor_1_1rgba_html_a632fd65138299aba49836381e8b9e1de"><div class="ttname"><a href="namespacecolor_1_1rgba.html#a632fd65138299aba49836381e8b9e1de">color::rgba::kRed</a></div><div class="ttdeci">constexpr auto kRed</div><div class="ttdef"><b>Definition:</b> MathDefine.h:54</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_1_1vec3_html_a9f2345d307407c31e3c720452a82728c"><div class="ttname"><a href="namespaceu22_1_1math_1_1vec3.html#a9f2345d307407c31e3c720452a82728c">u22::math::vec3::kOne</a></div><div class="ttdeci">constexpr auto kOne</div><div class="ttdef"><b>Definition:</b> MathDefine.h:17</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

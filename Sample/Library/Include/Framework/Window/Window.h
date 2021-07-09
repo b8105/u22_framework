@@ -64,8 +64,9 @@ public:
     /// <param name="height"></param>
     /// <param name="pos_x"></param>
     /// <param name="pos_y"></param>
+    /// <param name="full_screen"></param>
     /// <returns></returns>
-    bool Create(const char* title, int width, int height, int pos_x, int pos_y);
+    bool Create(const char* title, int width, int height, int pos_x, int pos_y, bool full_screen);
     /// <summary>
     /// íœ
     /// </summary>

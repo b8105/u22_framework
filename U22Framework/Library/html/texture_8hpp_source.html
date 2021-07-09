@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: External/GLM/gtx/texture.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_443fc37f241ba4018364a998c18d007b.html">External</a></li><li class="navelem"><a class="el" href="dir_c334883f19ec445d87470844289252ab.html">GLM</a></li><li class="navelem"><a class="el" href="dir_7b5826385e0aa91a8f8bc4a2a2cc7ac3.html">gtx</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">texture.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="texture_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// Dependency:</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;../glm.hpp&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;../gtc/integer.hpp&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;../gtx/component_wise.hpp&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#if GLM_MESSAGES == GLM_ENABLE &amp;&amp; !defined(GLM_EXT_INCLUDED)</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#   ifndef GLM_ENABLE_EXPERIMENTAL</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#       pragma message(&quot;GLM: GLM_GTX_texture is an experimental extension and may change in the future. Use #define GLM_ENABLE_EXPERIMENTAL before including it, if you really want to use it.&quot;)</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#   else</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#       pragma message(&quot;GLM: GLM_GTX_texture extension included&quot;)</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#   endif</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceglm.html">glm</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">template</span> &lt;length_t L, <span class="keyword">typename</span> T, qualifier Q&gt;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    T <a class="code" href="group__gtx__texture.html#gaa8c377f4e63486db4fa872d77880da73">levels</a>(vec&lt;L, T, Q&gt; <span class="keyword">const</span>&amp; Extent);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}<span class="comment">// namespace glm</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="texture_8inl.html">texture.inl</a>&quot;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astructglm_1_1detail_1_1compute__to__string_3_01vec_3_014_00_01_t_00_01_q_01_4_01_4_html_a7ad9df3e448b98637f2fa56c1b20817d"><div class="ttname"><a href="structglm_1_1detail_1_1compute__to__string_3_01vec_3_014_00_01_t_00_01_q_01_4_01_4.html#a7ad9df3e448b98637f2fa56c1b20817d">glm::detail::compute_to_string&lt; vec&lt; 4, T, Q &gt; &gt;::call</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER std::string call(vec&lt; 4, T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> string_cast.inl:243</div></div>
+<div class="ttc" id="astructglm_1_1tdualquat_html"><div class="ttname"><a href="structglm_1_1tdualquat.html">glm::tdualquat</a></div><div class="ttdef"><b>Definition:</b> dual_quaternion.hpp:38</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1compute__to__string_3_01vec_3_011_00_01bool_00_01_q_01_4_01_4_html_ad6119763fcff0254a57ae8a51a9f5915"><div class="ttname"><a href="structglm_1_1detail_1_1compute__to__string_3_01vec_3_011_00_01bool_00_01_q_01_4_01_4.html#ad6119763fcff0254a57ae8a51a9f5915">glm::detail::compute_to_string&lt; vec&lt; 1, bool, Q &gt; &gt;::call</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER std::string call(vec&lt; 1, bool, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> string_cast.inl:146</div></div>
+<div class="ttc" id="astructglm_1_1mat_3_012_00_012_00_01_t_00_01_q_01_4_html"><div class="ttname"><a href="structglm_1_1mat_3_012_00_012_00_01_t_00_01_q_01_4.html">glm::mat&lt; 2, 2, T, Q &gt;</a></div><div class="ttdef"><b>Definition:</b> type_mat2x2.hpp:14</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1prefix_3_01int16__t_01_4_html_a0ccbfcd8a1f5a2b777dbc43bad141bb6"><div class="ttname"><a href="structglm_1_1detail_1_1prefix_3_01int16__t_01_4.html#a0ccbfcd8a1f5a2b777dbc43bad141bb6">glm::detail::prefix&lt; int16_t &gt;::value</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER char const  * value()</div><div class="ttdef"><b>Definition:</b> string_cast.inl:112</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1compute__to__string_3_01vec_3_011_00_01_t_00_01_q_01_4_01_4_html_ad8aa70be55855aba1c6c6796caf5b0cf"><div class="ttname"><a href="structglm_1_1detail_1_1compute__to__string_3_01vec_3_011_00_01_t_00_01_q_01_4_01_4.html#ad8aa70be55855aba1c6c6796caf5b0cf">glm::detail::compute_to_string&lt; vec&lt; 1, T, Q &gt; &gt;::call</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER std::string call(vec&lt; 1, T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> string_cast.inl:192</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1prefix_3_01int32__t_01_4_html_a1e2bfac810e1195fa173ebca0dcdca57"><div class="ttname"><a href="structglm_1_1detail_1_1prefix_3_01int32__t_01_4.html#a1e2bfac810e1195fa173ebca0dcdca57">glm::detail::prefix&lt; int32_t &gt;::value</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER char const  * value()</div><div class="ttdef"><b>Definition:</b> string_cast.inl:124</div></div>
+<div class="ttc" id="astructglm_1_1mat_3_012_00_013_00_01_t_00_01_q_01_4_html"><div class="ttname"><a href="structglm_1_1mat_3_012_00_013_00_01_t_00_01_q_01_4.html">glm::mat&lt; 2, 3, T, Q &gt;</a></div><div class="ttdef"><b>Definition:</b> type_mat2x3.hpp:15</div></div>
+<div class="ttc" id="agroup__gtc__type__precision_html_ga6abb23fbf4e39c50ec5341160b5da5ab"><div class="ttname"><a href="group__gtc__type__precision.html#ga6abb23fbf4e39c50ec5341160b5da5ab">glm::int64_t</a></div><div class="ttdeci">int64 int64_t</div><div class="ttdef"><b>Definition:</b> fwd.hpp:85</div></div>
+<div class="ttc" id="astructglm_1_1vec_3_014_00_01_t_00_01_q_01_4_html"><div class="ttname"><a href="structglm_1_1vec_3_014_00_01_t_00_01_q_01_4.html">glm::vec&lt; 4, T, Q &gt;</a></div><div class="ttdef"><b>Definition:</b> type_vec4.hpp:18</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1compute__to__string_3_01mat_3_013_00_014_00_01_t_00_01_q_01_4_01_4_html_ae80e1ea4b5f28839ab5e906afe2811c2"><div class="ttname"><a href="structglm_1_1detail_1_1compute__to__string_3_01mat_3_013_00_014_00_01_t_00_01_q_01_4_01_4.html#ae80e1ea4b5f28839ab5e906afe2811c2">glm::detail::compute_to_string&lt; mat&lt; 3, 4, T, Q &gt; &gt;::call</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER std::string call(mat&lt; 3, 4, T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> string_cast.inl:357</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1prefix_html"><div class="ttname"><a href="structglm_1_1detail_1_1prefix.html">glm::detail::prefix</a></div><div class="ttdef"><b>Definition:</b> string_cast.inl:71</div></div>
+<div class="ttc" id="astructglm_1_1mat_3_014_00_014_00_01_t_00_01_q_01_4_html"><div class="ttname"><a href="structglm_1_1mat_3_014_00_014_00_01_t_00_01_q_01_4.html">glm::mat&lt; 4, 4, T, Q &gt;</a></div><div class="ttdef"><b>Definition:</b> type_mat4x4.hpp:14</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1compute__to__string_3_01vec_3_013_00_01_t_00_01_q_01_4_01_4_html_a61d57060d3b0c3f2dd672f7b8cf962a5"><div class="ttname"><a href="structglm_1_1detail_1_1compute__to__string_3_01vec_3_013_00_01_t_00_01_q_01_4_01_4.html#a61d57060d3b0c3f2dd672f7b8cf962a5">glm::detail::compute_to_string&lt; vec&lt; 3, T, Q &gt; &gt;::call</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER std::string call(vec&lt; 3, T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> string_cast.inl:225</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1prefix_3_01uint8__t_01_4_html_a890818b4dedbe09730336c1ae3913339"><div class="ttname"><a href="structglm_1_1detail_1_1prefix_3_01uint8__t_01_4.html#a890818b4dedbe09730336c1ae3913339">glm::detail::prefix&lt; uint8_t &gt;::value</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER char const  * value()</div><div class="ttdef"><b>Definition:</b> string_cast.inl:94</div></div>
+<div class="ttc" id="agroup__gtc__type__precision_html_gac4eb4f43cae8129b00086dc234d3b8fc"><div class="ttname"><a href="group__gtc__type__precision.html#gac4eb4f43cae8129b00086dc234d3b8fc">glm::uint16_t</a></div><div class="ttdeci">uint16 uint16_t</div><div class="ttdef"><b>Definition:</b> fwd.hpp:115</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1compute__to__string_3_01mat_3_014_00_013_00_01_t_00_01_q_01_4_01_4_html_a25c5199fbde991582ba0afe092c4ec17"><div class="ttname"><a href="structglm_1_1detail_1_1compute__to__string_3_01mat_3_014_00_013_00_01_t_00_01_q_01_4_01_4.html#a25c5199fbde991582ba0afe092c4ec17">glm::detail::compute_to_string&lt; mat&lt; 4, 3, T, Q &gt; &gt;::call</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER std::string call(mat&lt; 4, 3, T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> string_cast.inl:399</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1compute__to__string_3_01qua_3_01_t_00_01_q_01_4_01_4_html_a23a7c8c0bc9ac5c7abaab0e1f9165581"><div class="ttname"><a href="structglm_1_1detail_1_1compute__to__string_3_01qua_3_01_t_00_01_q_01_4_01_4.html#a23a7c8c0bc9ac5c7abaab0e1f9165581">glm::detail::compute_to_string&lt; qua&lt; T, Q &gt; &gt;::call</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER std::string call(qua&lt; T, Q &gt; const &amp;q)</div><div class="ttdef"><b>Definition:</b> string_cast.inl:444</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1prefix_3_01double_01_4_html_a39aa4646d7de33a2382c92db849d6eb5"><div class="ttname"><a href="structglm_1_1detail_1_1prefix_3_01double_01_4.html#a39aa4646d7de33a2382c92db849d6eb5">glm::detail::prefix&lt; double &gt;::value</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER char const  * value()</div><div class="ttdef"><b>Definition:</b> string_cast.inl:82</div></div>
+<div class="ttc" id="astructglm_1_1mat_3_013_00_012_00_01_t_00_01_q_01_4_html"><div class="ttname"><a href="structglm_1_1mat_3_013_00_012_00_01_t_00_01_q_01_4.html">glm::mat&lt; 3, 2, T, Q &gt;</a></div><div class="ttdef"><b>Definition:</b> type_mat3x2.hpp:15</div></div>
+<div class="ttc" id="astructglm_1_1tdualquat_html_a0ff8a104f6134db7fcd6765d6db31a50"><div class="ttname"><a href="structglm_1_1tdualquat.html#a0ff8a104f6134db7fcd6765d6db31a50">glm::tdualquat::real</a></div><div class="ttdeci">qua&lt; T, Q &gt; real</div><div class="ttdef"><b>Definition:</b> dual_quaternion.hpp:46</div></div>
+<div class="ttc" id="astructglm_1_1mat_3_012_00_014_00_01_t_00_01_q_01_4_html"><div class="ttname"><a href="structglm_1_1mat_3_012_00_014_00_01_t_00_01_q_01_4.html">glm::mat&lt; 2, 4, T, Q &gt;</a></div><div class="ttdef"><b>Definition:</b> type_mat2x4.hpp:15</div></div>
+<div class="ttc" id="astructglm_1_1mat_3_013_00_013_00_01_t_00_01_q_01_4_html"><div class="ttname"><a href="structglm_1_1mat_3_013_00_013_00_01_t_00_01_q_01_4.html">glm::mat&lt; 3, 3, T, Q &gt;</a></div><div class="ttdef"><b>Definition:</b> type_mat3x3.hpp:14</div></div>
+<div class="ttc" id="astructglm_1_1vec_3_013_00_01_t_00_01_q_01_4_html"><div class="ttname"><a href="structglm_1_1vec_3_013_00_01_t_00_01_q_01_4.html">glm::vec&lt; 3, T, Q &gt;</a></div><div class="ttdef"><b>Definition:</b> type_vec3.hpp:18</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1cast_3_01float_01_4_html_ada0eba4cef43496c87fbb3e3e42f1541"><div class="ttname"><a href="structglm_1_1detail_1_1cast_3_01float_01_4.html#ada0eba4cef43496c87fbb3e3e42f1541">glm::detail::cast&lt; float &gt;::value_type</a></div><div class="ttdeci">double value_type</div><div class="ttdef"><b>Definition:</b> string_cast.inl:18</div></div>
+<div class="ttc" id="agroup__gtc__type__precision_html_ga058f57c19e1befdcf12498944bd73e69"><div class="ttname"><a href="group__gtc__type__precision.html#ga058f57c19e1befdcf12498944bd73e69">glm::uint64_t</a></div><div class="ttdeci">uint64 uint64_t</div><div class="ttdef"><b>Definition:</b> fwd.hpp:143</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1compute__to__string_3_01mat_3_012_00_014_00_01_t_00_01_q_01_4_01_4_html_a33aa32e523377e9a404a6eb7b4048e76"><div class="ttname"><a href="structglm_1_1detail_1_1compute__to__string_3_01mat_3_012_00_014_00_01_t_00_01_q_01_4_01_4.html#a33aa32e523377e9a404a6eb7b4048e76">glm::detail::compute_to_string&lt; mat&lt; 2, 4, T, Q &gt; &gt;::call</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER std::string call(mat&lt; 2, 4, T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> string_cast.inl:299</div></div>
+<div class="ttc" id="asetup_8hpp_html_a105c350b9aa12c8a62f4a134e1ba1f6f"><div class="ttname"><a href="setup_8hpp.html#a105c350b9aa12c8a62f4a134e1ba1f6f">GLM_NULLPTR</a></div><div class="ttdeci">#define GLM_NULLPTR</div><div class="ttdef"><b>Definition:</b> setup.hpp:394</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1prefix_3_01int64__t_01_4_html_a845043fc18700790972ca73ebc80ac4d"><div class="ttname"><a href="structglm_1_1detail_1_1prefix_3_01int64__t_01_4.html#a845043fc18700790972ca73ebc80ac4d">glm::detail::prefix&lt; int64_t &gt;::value</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER char const  * value()</div><div class="ttdef"><b>Definition:</b> string_cast.inl:136</div></div>
+<div class="ttc" id="agroup__gtc__type__precision_html_gaf89ee61e0d34aa4a462104b7ae7f2da6"><div class="ttname"><a href="group__gtc__type__precision.html#gaf89ee61e0d34aa4a462104b7ae7f2da6">glm::int16_t</a></div><div class="ttdeci">int16 int16_t</div><div class="ttdef"><b>Definition:</b> fwd.hpp:57</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1compute__to__string_3_01mat_3_013_00_012_00_01_t_00_01_q_01_4_01_4_html_a1d5c4ef4e4daf9c8f5c0b85f098d0efd"><div class="ttname"><a href="structglm_1_1detail_1_1compute__to__string_3_01mat_3_013_00_012_00_01_t_00_01_q_01_4_01_4.html#a1d5c4ef4e4daf9c8f5c0b85f098d0efd">glm::detail::compute_to_string&lt; mat&lt; 3, 2, T, Q &gt; &gt;::call</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER std::string call(mat&lt; 3, 2, T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> string_cast.inl:317</div></div>
+<div class="ttc" id="astructglm_1_1mat_3_013_00_014_00_01_t_00_01_q_01_4_html"><div class="ttname"><a href="structglm_1_1mat_3_013_00_014_00_01_t_00_01_q_01_4.html">glm::mat&lt; 3, 4, T, Q &gt;</a></div><div class="ttdef"><b>Definition:</b> type_mat3x4.hpp:15</div></div>
+<div class="ttc" id="astructglm_1_1vec_3_012_00_01_t_00_01_q_01_4_html"><div class="ttname"><a href="structglm_1_1vec_3_012_00_01_t_00_01_q_01_4.html">glm::vec&lt; 2, T, Q &gt;</a></div><div class="ttdef"><b>Definition:</b> type_vec2.hpp:18</div></div>
+<div class="ttc" id="agroup__gtx__texture_html_gaa8c377f4e63486db4fa872d77880da73"><div class="ttname"><a href="group__gtx__texture.html#gaa8c377f4e63486db4fa872d77880da73">glm::levels</a></div><div class="ttdeci">T levels(vec&lt; L, T, Q &gt; const &amp;Extent)</div><div class="ttdef"><b>Definition:</b> texture.inl:6</div></div>
+<div class="ttc" id="astructglm_1_1qua_html_ae0e0786cb5ef565606ecc3d4d8255fd3"><div class="ttname"><a href="structglm_1_1qua.html#ae0e0786cb5ef565606ecc3d4d8255fd3">glm::qua::x</a></div><div class="ttdeci">T x</div><div class="ttdef"><b>Definition:</b> type_quat.hpp:50</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1compute__to__string_3_01mat_3_012_00_013_00_01_t_00_01_q_01_4_01_4_html_a1459d67dba1cee7c2467271a97fab304"><div class="ttname"><a href="structglm_1_1detail_1_1compute__to__string_3_01mat_3_012_00_013_00_01_t_00_01_q_01_4_01_4.html#a1459d67dba1cee7c2467271a97fab304">glm::detail::compute_to_string&lt; mat&lt; 2, 3, T, Q &gt; &gt;::call</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER std::string call(mat&lt; 2, 3, T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> string_cast.inl:281</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1prefix_3_01bool_01_4_html_ab6d6392aa906c684f1abdda98830adad"><div class="ttname"><a href="structglm_1_1detail_1_1prefix_3_01bool_01_4.html#ab6d6392aa906c684f1abdda98830adad">glm::detail::prefix&lt; bool &gt;::value</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER char const  * value()</div><div class="ttdef"><b>Definition:</b> string_cast.inl:88</div></div>
+<div class="ttc" id="agroup__gtc__type__precision_html_ga822ca53a9ad412504532838906276a99"><div class="ttname"><a href="group__gtc__type__precision.html#ga822ca53a9ad412504532838906276a99">glm::uint32_t</a></div><div class="ttdeci">uint32 uint32_t</div><div class="ttdef"><b>Definition:</b> fwd.hpp:129</div></div>
+<div class="ttc" id="anamespaceglm_1_1detail_html_acd5305bbd1c5417b1eb770faf8229d14"><div class="ttname"><a href="namespaceglm_1_1detail.html#acd5305bbd1c5417b1eb770faf8229d14">glm::detail::format</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER std::string format(const char *msg,...)</div><div class="ttdef"><b>Definition:</b> string_cast.inl:21</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1compute__to__string_3_01mat_3_014_00_012_00_01_t_00_01_q_01_4_01_4_html_af5b35e5a4cb38e51bcde9ae1eba1d126"><div class="ttname"><a href="structglm_1_1detail_1_1compute__to__string_3_01mat_3_014_00_012_00_01_t_00_01_q_01_4_01_4.html#af5b35e5a4cb38e51bcde9ae1eba1d126">glm::detail::compute_to_string&lt; mat&lt; 4, 2, T, Q &gt; &gt;::call</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER std::string call(mat&lt; 4, 2, T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> string_cast.inl:377</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1prefix_3_01float_01_4_html_a106cde8d6d62001a05cbf21367467591"><div class="ttname"><a href="structglm_1_1detail_1_1prefix_3_01float_01_4.html#a106cde8d6d62001a05cbf21367467591">glm::detail::prefix&lt; float &gt;::value</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER char const  * value()</div><div class="ttdef"><b>Definition:</b> string_cast.inl:76</div></div>
+<div class="ttc" id="astb__sprintf_8h_html_a5921ee084282c796114454863ebdb987"><div class="ttname"><a href="stb__sprintf_8h.html#a5921ee084282c796114454863ebdb987">vsprintf</a></div><div class="ttdeci">STBSP__PUBLICDEF int STB_SPRINTF_DECORATE() vsprintf(char *buf, char const *fmt, va_list va)</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1cast_html_aee0fcb3ea7c887fbc9fbe700a8b758b7"><div class="ttname"><a href="structglm_1_1detail_1_1cast.html#aee0fcb3ea7c887fbc9fbe700a8b758b7">glm::detail::cast::value_type</a></div><div class="ttdeci">T value_type</div><div class="ttdef"><b>Definition:</b> string_cast.inl:12</div></div>
+<div class="ttc" id="astructglm_1_1vec_3_011_00_01_t_00_01_q_01_4_html"><div class="ttname"><a href="structglm_1_1vec_3_011_00_01_t_00_01_q_01_4.html">glm::vec&lt; 1, T, Q &gt;</a></div><div class="ttdef"><b>Definition:</b> type_vec1.hpp:18</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1prefix_3_01int8__t_01_4_html_afb4b2223c44e4e8f75bde375b0f874a2"><div class="ttname"><a href="structglm_1_1detail_1_1prefix_3_01int8__t_01_4.html#afb4b2223c44e4e8f75bde375b0f874a2">glm::detail::prefix&lt; int8_t &gt;::value</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER char const  * value()</div><div class="ttdef"><b>Definition:</b> string_cast.inl:100</div></div>
+<div class="ttc" id="astructglm_1_1qua_html"><div class="ttname"><a href="structglm_1_1qua.html">glm::qua</a></div><div class="ttdef"><b>Definition:</b> type_quat.hpp:20</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1cast_html"><div class="ttname"><a href="structglm_1_1detail_1_1cast.html">glm::detail::cast</a></div><div class="ttdef"><b>Definition:</b> string_cast.inl:11</div></div>
+<div class="ttc" id="anamespaceglm_html"><div class="ttname"><a href="namespaceglm.html">glm</a></div><div class="ttdoc">Core features</div><div class="ttdef"><b>Definition:</b> common.hpp:21</div></div>
+<div class="ttc" id="astructglm_1_1vec_html"><div class="ttname"><a href="structglm_1_1vec.html">glm::vec</a></div><div class="ttdef"><b>Definition:</b> qualifier.hpp:35</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1literal_3_01_t_00_01true_01_4_html_ae18b91cfeeb373f6b7c62572f88cf239"><div class="ttname"><a href="structglm_1_1detail_1_1literal_3_01_t_00_01true_01_4.html#ae18b91cfeeb373f6b7c62572f88cf239">glm::detail::literal&lt; T, true &gt;::value</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER char const  * value()</div><div class="ttdef"><b>Definition:</b> string_cast.inl:53</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1prefix_3_01uint16__t_01_4_html_a9546e8aaf707c3f0028c8da94f6c06da"><div class="ttname"><a href="structglm_1_1detail_1_1prefix_3_01uint16__t_01_4.html#a9546e8aaf707c3f0028c8da94f6c06da">glm::detail::prefix&lt; uint16_t &gt;::value</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER char const  * value()</div><div class="ttdef"><b>Definition:</b> string_cast.inl:106</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1literal_html_a14fd9d6fec8d35f7a2fd3b0095d17b6a"><div class="ttname"><a href="structglm_1_1detail_1_1literal.html#a14fd9d6fec8d35f7a2fd3b0095d17b6a">glm::detail::literal::value</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER char const  * value()</div><div class="ttdef"><b>Definition:</b> string_cast.inl:47</div></div>
+<div class="ttc" id="astructglm_1_1qua_html_a751f58e48134d3bd65253a43708a552d"><div class="ttname"><a href="structglm_1_1qua.html#a751f58e48134d3bd65253a43708a552d">glm::qua::z</a></div><div class="ttdeci">T z</div><div class="ttdef"><b>Definition:</b> type_quat.hpp:50</div></div>
+<div class="ttc" id="agroup__gtc__type__precision_html_ga93adf6dd9803408f3e3aaf9dedda352b"><div class="ttname"><a href="group__gtc__type__precision.html#ga93adf6dd9803408f3e3aaf9dedda352b">glm::uint8_t</a></div><div class="ttdeci">uint8 uint8_t</div><div class="ttdef"><b>Definition:</b> fwd.hpp:101</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1compute__to__string_3_01mat_3_014_00_014_00_01_t_00_01_q_01_4_01_4_html_a2bcb205f92a1451a9292f463bbb41288"><div class="ttname"><a href="structglm_1_1detail_1_1compute__to__string_3_01mat_3_014_00_014_00_01_t_00_01_q_01_4_01_4.html#a2bcb205f92a1451a9292f463bbb41288">glm::detail::compute_to_string&lt; mat&lt; 4, 4, T, Q &gt; &gt;::call</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER std::string call(mat&lt; 4, 4, T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> string_cast.inl:421</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1compute__to__string_3_01vec_3_012_00_01_t_00_01_q_01_4_01_4_html_a53a9c1f76338785f54bb2638b69517ef"><div class="ttname"><a href="structglm_1_1detail_1_1compute__to__string_3_01vec_3_012_00_01_t_00_01_q_01_4_01_4.html#a53a9c1f76338785f54bb2638b69517ef">glm::detail::compute_to_string&lt; vec&lt; 2, T, Q &gt; &gt;::call</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER std::string call(vec&lt; 2, T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> string_cast.inl:208</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1compute__to__string_3_01mat_3_013_00_013_00_01_t_00_01_q_01_4_01_4_html_aebf52cc023615d49c480e8cde7cda457"><div class="ttname"><a href="structglm_1_1detail_1_1compute__to__string_3_01mat_3_013_00_013_00_01_t_00_01_q_01_4_01_4.html#aebf52cc023615d49c480e8cde7cda457">glm::detail::compute_to_string&lt; mat&lt; 3, 3, T, Q &gt; &gt;::call</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER std::string call(mat&lt; 3, 3, T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> string_cast.inl:337</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1compute__to__string_3_01vec_3_012_00_01bool_00_01_q_01_4_01_4_html_a08b55aa0b86bc8176b9fa02f0520c434"><div class="ttname"><a href="structglm_1_1detail_1_1compute__to__string_3_01vec_3_012_00_01bool_00_01_q_01_4_01_4.html#a08b55aa0b86bc8176b9fa02f0520c434">glm::detail::compute_to_string&lt; vec&lt; 2, bool, Q &gt; &gt;::call</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER std::string call(vec&lt; 2, bool, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> string_cast.inl:156</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1compute__to__string_3_01tdualquat_3_01_t_00_01_q_01_4_01_4_html_a312a529ab87f8e85ad185676dd31267d"><div class="ttname"><a href="structglm_1_1detail_1_1compute__to__string_3_01tdualquat_3_01_t_00_01_q_01_4_01_4.html#a312a529ab87f8e85ad185676dd31267d">glm::detail::compute_to_string&lt; tdualquat&lt; T, Q &gt; &gt;::call</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER std::string call(tdualquat&lt; T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> string_cast.inl:463</div></div>
+<div class="ttc" id="astructglm_1_1mat_html"><div class="ttname"><a href="structglm_1_1mat.html">glm::mat</a></div><div class="ttdef"><b>Definition:</b> qualifier.hpp:36</div></div>
+<div class="ttc" id="agroup__gtc__type__precision_html_ga673898d450b2a91186f3c4f40c5f8633"><div class="ttname"><a href="group__gtc__type__precision.html#ga673898d450b2a91186f3c4f40c5f8633">glm::int8_t</a></div><div class="ttdeci">int8 int8_t</div><div class="ttdef"><b>Definition:</b> fwd.hpp:43</div></div>
+<div class="ttc" id="atexture_8inl_html"><div class="ttname"><a href="texture_8inl.html">texture.inl</a></div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1compute__to__string_html"><div class="ttname"><a href="structglm_1_1detail_1_1compute__to__string.html">glm::detail::compute_to_string</a></div><div class="ttdef"><b>Definition:</b> string_cast.inl:141</div></div>
+<div class="ttc" id="astructglm_1_1tdualquat_html_a575a0e3f07a666b7b59d956eb49b4efe"><div class="ttname"><a href="structglm_1_1tdualquat.html#a575a0e3f07a666b7b59d956eb49b4efe">glm::tdualquat::dual</a></div><div class="ttdeci">qua&lt; T, Q &gt; dual</div><div class="ttdef"><b>Definition:</b> dual_quaternion.hpp:46</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1compute__to__string_3_01vec_3_014_00_01bool_00_01_q_01_4_01_4_html_acc9ef66b31a0aaa989ee98614e340e27"><div class="ttname"><a href="structglm_1_1detail_1_1compute__to__string_3_01vec_3_014_00_01bool_00_01_q_01_4_01_4.html#acc9ef66b31a0aaa989ee98614e340e27">glm::detail::compute_to_string&lt; vec&lt; 4, bool, Q &gt; &gt;::call</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER std::string call(vec&lt; 4, bool, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> string_cast.inl:179</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1compute__to__string_3_01mat_3_012_00_012_00_01_t_00_01_q_01_4_01_4_html_a107a920bb722084d0518a0ff50e8c118"><div class="ttname"><a href="structglm_1_1detail_1_1compute__to__string_3_01mat_3_012_00_012_00_01_t_00_01_q_01_4_01_4.html#a107a920bb722084d0518a0ff50e8c118">glm::detail::compute_to_string&lt; mat&lt; 2, 2, T, Q &gt; &gt;::call</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER std::string call(mat&lt; 2, 2, T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> string_cast.inl:263</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1prefix_3_01uint32__t_01_4_html_a8a36d8e3a869d300408dde031429352e"><div class="ttname"><a href="structglm_1_1detail_1_1prefix_3_01uint32__t_01_4.html#a8a36d8e3a869d300408dde031429352e">glm::detail::prefix&lt; uint32_t &gt;::value</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER char const  * value()</div><div class="ttdef"><b>Definition:</b> string_cast.inl:118</div></div>
+<div class="ttc" id="agroup__gtc__type__precision_html_gab870c0eb6f525b0c8c4716762e0fc3a8"><div class="ttname"><a href="group__gtc__type__precision.html#gab870c0eb6f525b0c8c4716762e0fc3a8">glm::int32_t</a></div><div class="ttdeci">int32 int32_t</div><div class="ttdef"><b>Definition:</b> fwd.hpp:71</div></div>
+<div class="ttc" id="astructglm_1_1qua_html_a3183bedd482933c6723e6ebcf409e178"><div class="ttname"><a href="structglm_1_1qua.html#a3183bedd482933c6723e6ebcf409e178">glm::qua::y</a></div><div class="ttdeci">T y</div><div class="ttdef"><b>Definition:</b> type_quat.hpp:50</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1literal_html"><div class="ttname"><a href="structglm_1_1detail_1_1literal.html">glm::detail::literal</a></div><div class="ttdef"><b>Definition:</b> string_cast.inl:46</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1prefix_3_01uint64__t_01_4_html_a70571c67b5d9aadad2b0d3ea937fa392"><div class="ttname"><a href="structglm_1_1detail_1_1prefix_3_01uint64__t_01_4.html#a70571c67b5d9aadad2b0d3ea937fa392">glm::detail::prefix&lt; uint64_t &gt;::value</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER char const  * value()</div><div class="ttdef"><b>Definition:</b> string_cast.inl:130</div></div>
+<div class="ttc" id="agroup__gtx__string__cast_html_ga8f0dced1fd45e67e2d77e80ab93c7af5"><div class="ttname"><a href="group__gtx__string__cast.html#ga8f0dced1fd45e67e2d77e80ab93c7af5">glm::to_string</a></div><div class="ttdeci">GLM_FUNC_DECL std::string to_string(genType const &amp;x)</div></div>
+<div class="ttc" id="asetup_8hpp_html_a33fdea6f91c5f834105f7415e2a64407"><div class="ttname"><a href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a></div><div class="ttdeci">#define GLM_FUNC_QUALIFIER</div><div class="ttdef"><b>Definition:</b> setup.hpp:439</div></div>
+<div class="ttc" id="astructglm_1_1mat_3_014_00_012_00_01_t_00_01_q_01_4_html"><div class="ttname"><a href="structglm_1_1mat_3_014_00_012_00_01_t_00_01_q_01_4.html">glm::mat&lt; 4, 2, T, Q &gt;</a></div><div class="ttdef"><b>Definition:</b> type_mat4x2.hpp:15</div></div>
+<div class="ttc" id="astructglm_1_1qua_html_ad8a7f933070e6e4382d9fce4a6efecd6"><div class="ttname"><a href="structglm_1_1qua.html#ad8a7f933070e6e4382d9fce4a6efecd6">glm::qua::w</a></div><div class="ttdeci">T w</div><div class="ttdef"><b>Definition:</b> type_quat.hpp:50</div></div>
+<div class="ttc" id="astructglm_1_1detail_1_1compute__to__string_3_01vec_3_013_00_01bool_00_01_q_01_4_01_4_html_a05dff60a280662ac95d5e22eae28c730"><div class="ttname"><a href="structglm_1_1detail_1_1compute__to__string_3_01vec_3_013_00_01bool_00_01_q_01_4_01_4.html#a05dff60a280662ac95d5e22eae28c730">glm::detail::compute_to_string&lt; vec&lt; 3, bool, Q &gt; &gt;::call</a></div><div class="ttdeci">static GLM_FUNC_QUALIFIER std::string call(vec&lt; 3, bool, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> string_cast.inl:167</div></div>
+<div class="ttc" id="astructglm_1_1mat_3_014_00_013_00_01_t_00_01_q_01_4_html"><div class="ttname"><a href="structglm_1_1mat_3_014_00_013_00_01_t_00_01_q_01_4.html">glm::mat&lt; 4, 3, T, Q &gt;</a></div><div class="ttdef"><b>Definition:</b> type_mat4x3.hpp:15</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

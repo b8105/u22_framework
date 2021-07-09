@@ -2,6 +2,7 @@
 #define U22_MATH_DEFINE_H
 
 
+#include "Vector2.h"
 #include "Vector3.h"
 #include "Vector4.h"
 #include "Matrix4x4.h"
@@ -11,6 +12,12 @@ namespace u22::math::def {
 constexpr float kPi = 3.14192f;
 constexpr float kHalfPi = kPi / 2.0f;
 constexpr float kTwoPi = kPi * 2.0f;
+}
+namespace u22::math::vec2 {
+constexpr auto kZero = u22::math::Vector2F(0.0f, 0.0f);
+constexpr auto kOne = u22::math::Vector2F(1.0f, 1.0f);
+constexpr auto kUnitX = u22::math::Vector2F(1.0f, 0.0f);
+constexpr auto kUnitY = u22::math::Vector2F(0.0f, 1.0f);
 }
 namespace u22::math::vec3 {
 constexpr auto kZero = u22::math::Vector3F(0.0f, 0.0f, 0.0f);

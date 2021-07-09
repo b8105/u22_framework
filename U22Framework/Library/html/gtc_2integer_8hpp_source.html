@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: External/GLM/gtc/integer.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_443fc37f241ba4018364a998c18d007b.html">External</a></li><li class="navelem"><a class="el" href="dir_c334883f19ec445d87470844289252ab.html">GLM</a></li><li class="navelem"><a class="el" href="dir_537b8871b7c5b83c64b0280177f30483.html">gtc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">integer.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="gtc_2integer_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Dependencies</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;../detail/setup.hpp&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;../detail/qualifier.hpp&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;../common.hpp&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;../integer.hpp&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;../exponential.hpp&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;limits&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if GLM_MESSAGES == GLM_ENABLE &amp;&amp; !defined(GLM_EXT_INCLUDED)</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#   pragma message(&quot;GLM: GLM_GTC_integer extension included&quot;)</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceglm.html">glm</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> genIUType&gt;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group__gtc__integer.html#ga9bd682e74bfacb005c735305207ec417">   36</a></span>&#160;    <a class="code" href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a> genIUType <a class="code" href="namespaceglm.html#ab47f0f29ead9cefd62d62ba5f83fe81b">log2</a>(genIUType x);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">template</span>&lt;length_t L, <span class="keyword">typename</span> T, qualifier Q&gt;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a> <a class="code" href="structglm_1_1vec.html">vec&lt;L, int, Q&gt;</a> <a class="code" href="group__gtc__integer.html#ga57824268ebe13a922f1d69a5d37f637f">iround</a>(<a class="code" href="structglm_1_1vec.html">vec&lt;L, T, Q&gt;</a> <span class="keyword">const</span>&amp; x);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">template</span>&lt;length_t L, <span class="keyword">typename</span> T, qualifier Q&gt;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a> <a class="code" href="structglm_1_1vec.html">vec&lt;L, uint, Q&gt;</a> <a class="code" href="group__gtc__integer.html#ga6715b9d573972a0f7763d30d45bcaec4">uround</a>(<a class="code" href="structglm_1_1vec.html">vec&lt;L, T, Q&gt;</a> <span class="keyword">const</span>&amp; x);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;} <span class="comment">//namespace glm</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gtx_2integer_8inl.html">integer.inl</a>&quot;</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="agroup__gtc__integer_html_ga57824268ebe13a922f1d69a5d37f637f"><div class="ttname"><a href="group__gtc__integer.html#ga57824268ebe13a922f1d69a5d37f637f">glm::iround</a></div><div class="ttdeci">GLM_FUNC_DECL vec&lt; L, int, Q &gt; iround(vec&lt; L, T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> integer.inl:43</div></div>
+<div class="ttc" id="astructglm_1_1vec_3_014_00_01_t_00_01_q_01_4_html"><div class="ttname"><a href="structglm_1_1vec_3_014_00_01_t_00_01_q_01_4.html">glm::vec&lt; 4, T, Q &gt;</a></div><div class="ttdef"><b>Definition:</b> type_vec4.hpp:18</div></div>
+<div class="ttc" id="agroup__core__func__vector__relational_html_ga859975f538940f8d18fe62f916b9abd7"><div class="ttname"><a href="group__core__func__vector__relational.html#ga859975f538940f8d18fe62f916b9abd7">glm::greaterThanEqual</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER GLM_CONSTEXPR vec&lt; L, bool, Q &gt; greaterThanEqual(vec&lt; L, T, Q &gt; const &amp;x, vec&lt; L, T, Q &gt; const &amp;y)</div><div class="ttdef"><b>Definition:</b> func_vector_relational.inl:31</div></div>
+<div class="ttc" id="astructglm_1_1qua_html_ae0e0786cb5ef565606ecc3d4d8255fd3"><div class="ttname"><a href="structglm_1_1qua.html#ae0e0786cb5ef565606ecc3d4d8255fd3">glm::qua::x</a></div><div class="ttdeci">T x</div><div class="ttdef"><b>Definition:</b> type_quat.hpp:50</div></div>
+<div class="ttc" id="agroup__core__func__common_html_ga439e60a72eadecfeda2df5449c613a64"><div class="ttname"><a href="group__core__func__common.html#ga439e60a72eadecfeda2df5449c613a64">glm::abs</a></div><div class="ttdeci">GLM_FUNC_DECL GLM_CONSTEXPR genType abs(genType x)</div></div>
+<div class="ttc" id="agroup__ext__scalar__constants_html_ga2a1e57fc5592b69cfae84174cbfc9429"><div class="ttname"><a href="group__ext__scalar__constants.html#ga2a1e57fc5592b69cfae84174cbfc9429">glm::epsilon</a></div><div class="ttdeci">GLM_FUNC_DECL GLM_CONSTEXPR genType epsilon()</div><div class="ttdoc">Return the epsilon constant for floating point types.</div><div class="ttdef"><b>Definition:</b> scalar_constants.inl:6</div></div>
+<div class="ttc" id="astructglm_1_1qua_html"><div class="ttname"><a href="structglm_1_1qua.html">glm::qua</a></div><div class="ttdef"><b>Definition:</b> type_quat.hpp:20</div></div>
+<div class="ttc" id="anamespaceglm_html"><div class="ttname"><a href="namespaceglm.html">glm</a></div><div class="ttdoc">Core features</div><div class="ttdef"><b>Definition:</b> common.hpp:21</div></div>
+<div class="ttc" id="astructglm_1_1vec_html"><div class="ttname"><a href="structglm_1_1vec.html">glm::vec</a></div><div class="ttdef"><b>Definition:</b> qualifier.hpp:35</div></div>
+<div class="ttc" id="agroup__core__func__vector__relational_html_gae90ed1592c395f93e3f3dfce6b2f39c6"><div class="ttname"><a href="group__core__func__vector__relational.html#gae90ed1592c395f93e3f3dfce6b2f39c6">glm::lessThan</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER GLM_CONSTEXPR vec&lt; L, bool, Q &gt; lessThan(vec&lt; L, T, Q &gt; const &amp;x, vec&lt; L, T, Q &gt; const &amp;y)</div><div class="ttdef"><b>Definition:</b> func_vector_relational.inl:4</div></div>
+<div class="ttc" id="anamespaceglm_html_ab47f0f29ead9cefd62d62ba5f83fe81b"><div class="ttname"><a href="namespaceglm.html#ab47f0f29ead9cefd62d62ba5f83fe81b">glm::log2</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER genType log2(genType x)</div><div class="ttdef"><b>Definition:</b> func_exponential.inl:114</div></div>
+<div class="ttc" id="astructglm_1_1qua_html_a751f58e48134d3bd65253a43708a552d"><div class="ttname"><a href="structglm_1_1qua.html#a751f58e48134d3bd65253a43708a552d">glm::qua::z</a></div><div class="ttdeci">T z</div><div class="ttdef"><b>Definition:</b> type_quat.hpp:50</div></div>
+<div class="ttc" id="agroup__gtc__epsilon_html_ga91b417866cafadd076004778217a1844"><div class="ttname"><a href="group__gtc__epsilon.html#ga91b417866cafadd076004778217a1844">glm::epsilonEqual</a></div><div class="ttdeci">GLM_FUNC_DECL vec&lt; L, bool, Q &gt; epsilonEqual(vec&lt; L, T, Q &gt; const &amp;x, vec&lt; L, T, Q &gt; const &amp;y, T const &amp;epsilon)</div><div class="ttdef"><b>Definition:</b> epsilon.inl:32</div></div>
+<div class="ttc" id="agroup__gtc__epsilon_html_gaf840d33b9a5261ec78dcd5125743b025"><div class="ttname"><a href="group__gtc__epsilon.html#gaf840d33b9a5261ec78dcd5125743b025">glm::epsilonNotEqual</a></div><div class="ttdeci">GLM_FUNC_DECL vec&lt; L, bool, Q &gt; epsilonNotEqual(vec&lt; L, T, Q &gt; const &amp;x, vec&lt; L, T, Q &gt; const &amp;y, T const &amp;epsilon)</div><div class="ttdef"><b>Definition:</b> epsilon.inl:56</div></div>
+<div class="ttc" id="agroup__gtc__integer_html_ga6715b9d573972a0f7763d30d45bcaec4"><div class="ttname"><a href="group__gtc__integer.html#ga6715b9d573972a0f7763d30d45bcaec4">glm::uround</a></div><div class="ttdeci">GLM_FUNC_DECL vec&lt; L, uint, Q &gt; uround(vec&lt; L, T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> integer.inl:61</div></div>
+<div class="ttc" id="agtx_2integer_8inl_html"><div class="ttname"><a href="gtx_2integer_8inl.html">integer.inl</a></div></div>
+<div class="ttc" id="astructglm_1_1qua_html_a3183bedd482933c6723e6ebcf409e178"><div class="ttname"><a href="structglm_1_1qua.html#a3183bedd482933c6723e6ebcf409e178">glm::qua::y</a></div><div class="ttdeci">T y</div><div class="ttdef"><b>Definition:</b> type_quat.hpp:50</div></div>
+<div class="ttc" id="asetup_8hpp_html_ab2d052de21a70539923e9bcbf6e83a51"><div class="ttname"><a href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a></div><div class="ttdeci">#define GLM_FUNC_DECL</div><div class="ttdef"><b>Definition:</b> setup.hpp:438</div></div>
+<div class="ttc" id="asetup_8hpp_html_a33fdea6f91c5f834105f7415e2a64407"><div class="ttname"><a href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a></div><div class="ttdeci">#define GLM_FUNC_QUALIFIER</div><div class="ttdef"><b>Definition:</b> setup.hpp:439</div></div>
+<div class="ttc" id="astructglm_1_1qua_html_ad8a7f933070e6e4382d9fce4a6efecd6"><div class="ttname"><a href="structglm_1_1qua.html#ad8a7f933070e6e4382d9fce4a6efecd6">glm::qua::w</a></div><div class="ttdeci">T w</div><div class="ttdef"><b>Definition:</b> type_quat.hpp:50</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

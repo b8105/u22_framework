@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: External/GLM/gtx/matrix_major_storage.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_443fc37f241ba4018364a998c18d007b.html">External</a></li><li class="navelem"><a class="el" href="dir_c334883f19ec445d87470844289252ab.html">GLM</a></li><li class="navelem"><a class="el" href="dir_7b5826385e0aa91a8f8bc4a2a2cc7ac3.html">gtx</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">matrix_major_storage.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="matrix__major__storage_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Dependency:</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;../glm.hpp&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#if GLM_MESSAGES == GLM_ENABLE &amp;&amp; !defined(GLM_EXT_INCLUDED)</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#   ifndef GLM_ENABLE_EXPERIMENTAL</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#       pragma message(&quot;GLM: GLM_GTX_matrix_major_storage is an experimental extension and may change in the future. Use #define GLM_ENABLE_EXPERIMENTAL before including it, if you really want to use it.&quot;)</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#   else</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#       pragma message(&quot;GLM: GLM_GTX_matrix_major_storage extension included&quot;)</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#   endif</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceglm.html">glm</a></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, qualifier Q&gt;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a> mat&lt;2, 2, T, Q&gt; <a class="code" href="group__gtx__matrix__major__storage.html#gaf5b1aee9e3eb1acf9d6c3c8be1e73bb8">rowMajor2</a>(</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        vec&lt;2, T, Q&gt; <span class="keyword">const</span>&amp; v1,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        vec&lt;2, T, Q&gt; <span class="keyword">const</span>&amp; v2);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, qualifier Q&gt;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a> mat&lt;2, 2, T, Q&gt; <a class="code" href="group__gtx__matrix__major__storage.html#gaf5b1aee9e3eb1acf9d6c3c8be1e73bb8">rowMajor2</a>(</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        mat&lt;2, 2, T, Q&gt; <span class="keyword">const</span>&amp; m);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, qualifier Q&gt;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a> mat&lt;3, 3, T, Q&gt; <a class="code" href="group__gtx__matrix__major__storage.html#ga2ae46497493339f745754e40f438442e">rowMajor3</a>(</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        vec&lt;3, T, Q&gt; <span class="keyword">const</span>&amp; v1,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        vec&lt;3, T, Q&gt; <span class="keyword">const</span>&amp; v2,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        vec&lt;3, T, Q&gt; <span class="keyword">const</span>&amp; v3);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, qualifier Q&gt;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a> mat&lt;3, 3, T, Q&gt; <a class="code" href="group__gtx__matrix__major__storage.html#ga2ae46497493339f745754e40f438442e">rowMajor3</a>(</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        mat&lt;3, 3, T, Q&gt; <span class="keyword">const</span>&amp; m);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, qualifier Q&gt;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a> mat&lt;4, 4, T, Q&gt; <a class="code" href="group__gtx__matrix__major__storage.html#ga9636cd6bbe2c32a8d0c03ffb8b1ef284">rowMajor4</a>(</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        vec&lt;4, T, Q&gt; <span class="keyword">const</span>&amp; v1,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        vec&lt;4, T, Q&gt; <span class="keyword">const</span>&amp; v2,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        vec&lt;4, T, Q&gt; <span class="keyword">const</span>&amp; v3,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        vec&lt;4, T, Q&gt; <span class="keyword">const</span>&amp; v4);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, qualifier Q&gt;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a> mat&lt;4, 4, T, Q&gt; <a class="code" href="group__gtx__matrix__major__storage.html#ga9636cd6bbe2c32a8d0c03ffb8b1ef284">rowMajor4</a>(</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        mat&lt;4, 4, T, Q&gt; <span class="keyword">const</span>&amp; m);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, qualifier Q&gt;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a> mat&lt;2, 2, T, Q&gt; <a class="code" href="group__gtx__matrix__major__storage.html#gaaff72f11286e59a4a88ed21a347f284c">colMajor2</a>(</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        vec&lt;2, T, Q&gt; <span class="keyword">const</span>&amp; v1,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        vec&lt;2, T, Q&gt; <span class="keyword">const</span>&amp; v2);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, qualifier Q&gt;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a> mat&lt;2, 2, T, Q&gt; <a class="code" href="group__gtx__matrix__major__storage.html#gaaff72f11286e59a4a88ed21a347f284c">colMajor2</a>(</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        mat&lt;2, 2, T, Q&gt; <span class="keyword">const</span>&amp; m);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, qualifier Q&gt;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a> mat&lt;3, 3, T, Q&gt; <a class="code" href="group__gtx__matrix__major__storage.html#ga1e25b72b085087740c92f5c70f3b051f">colMajor3</a>(</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        vec&lt;3, T, Q&gt; <span class="keyword">const</span>&amp; v1,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        vec&lt;3, T, Q&gt; <span class="keyword">const</span>&amp; v2,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        vec&lt;3, T, Q&gt; <span class="keyword">const</span>&amp; v3);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, qualifier Q&gt;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a> mat&lt;3, 3, T, Q&gt; <a class="code" href="group__gtx__matrix__major__storage.html#ga1e25b72b085087740c92f5c70f3b051f">colMajor3</a>(</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        mat&lt;3, 3, T, Q&gt; <span class="keyword">const</span>&amp; m);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, qualifier Q&gt;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a> mat&lt;4, 4, T, Q&gt; <a class="code" href="group__gtx__matrix__major__storage.html#gaf4aa6c7e17bfce41a6c13bf6469fab05">colMajor4</a>(</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        vec&lt;4, T, Q&gt; <span class="keyword">const</span>&amp; v1,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        vec&lt;4, T, Q&gt; <span class="keyword">const</span>&amp; v2,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        vec&lt;4, T, Q&gt; <span class="keyword">const</span>&amp; v3,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        vec&lt;4, T, Q&gt; <span class="keyword">const</span>&amp; v4);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, qualifier Q&gt;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a> mat&lt;4, 4, T, Q&gt; <a class="code" href="group__gtx__matrix__major__storage.html#gaf4aa6c7e17bfce41a6c13bf6469fab05">colMajor4</a>(</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        mat&lt;4, 4, T, Q&gt; <span class="keyword">const</span>&amp; m);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}<span class="comment">//namespace glm</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="matrix__major__storage_8inl.html">matrix_major_storage.inl</a>&quot;</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="agroup__ext__quaternion__trigonometric_html_ga8aa248b31d5ade470c87304df5eb7bd8"><div class="ttname"><a href="group__ext__quaternion__trigonometric.html#ga8aa248b31d5ade470c87304df5eb7bd8">glm::angle</a></div><div class="ttdeci">GLM_FUNC_DECL T angle(qua&lt; T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> quaternion_trigonometric.inl:4</div></div>
+<div class="ttc" id="anamespaceglm_html_a4f75a67491923e264890267daa6457cb"><div class="ttname"><a href="namespaceglm.html#a4f75a67491923e264890267daa6457cb">glm::yy</a></div><div class="ttdeci">GLM_INLINE glm::vec&lt; 2, T, Q &gt; yy(const glm::vec&lt; 2, T, Q &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> vec_swizzle.hpp:98</div></div>
+<div class="ttc" id="agroup__core__func__trigonometric_html_ga6a41efc740e3b3c937447d3a6284130e"><div class="ttname"><a href="group__core__func__trigonometric.html#ga6a41efc740e3b3c937447d3a6284130e">glm::cos</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER vec&lt; L, T, Q &gt; cos(vec&lt; L, T, Q &gt; const &amp;v)</div><div class="ttdef"><b>Definition:</b> func_trigonometric.inl:50</div></div>
+<div class="ttc" id="agroup__gtx__matrix__major__storage_html_ga9636cd6bbe2c32a8d0c03ffb8b1ef284"><div class="ttname"><a href="group__gtx__matrix__major__storage.html#ga9636cd6bbe2c32a8d0c03ffb8b1ef284">glm::rowMajor4</a></div><div class="ttdeci">GLM_FUNC_DECL mat&lt; 4, 4, T, Q &gt; rowMajor4(vec&lt; 4, T, Q &gt; const &amp;v1, vec&lt; 4, T, Q &gt; const &amp;v2, vec&lt; 4, T, Q &gt; const &amp;v3, vec&lt; 4, T, Q &gt; const &amp;v4)</div><div class="ttdef"><b>Definition:</b> matrix_major_storage.inl:69</div></div>
+<div class="ttc" id="astructglm_1_1mat_3_014_00_014_00_01_t_00_01_q_01_4_html"><div class="ttname"><a href="structglm_1_1mat_3_014_00_014_00_01_t_00_01_q_01_4.html">glm::mat&lt; 4, 4, T, Q &gt;</a></div><div class="ttdef"><b>Definition:</b> type_mat4x4.hpp:14</div></div>
+<div class="ttc" id="astructglm_1_1vec_3_013_00_01_t_00_01_q_01_4_html_a33809116048db7caf55162a670dec598"><div class="ttname"><a href="structglm_1_1vec_3_013_00_01_t_00_01_q_01_4.html#a33809116048db7caf55162a670dec598">glm::vec&lt; 3, T, Q &gt;::z</a></div><div class="ttdeci">T z</div><div class="ttdef"><b>Definition:</b> type_vec3.hpp:70</div></div>
+<div class="ttc" id="anamespaceglm_html_ad2c750b00baa4f519ccc028aefd496dd"><div class="ttname"><a href="namespaceglm.html#ad2c750b00baa4f519ccc028aefd496dd">glm::xz</a></div><div class="ttdeci">GLM_INLINE glm::vec&lt; 2, T, Q &gt; xz(const glm::vec&lt; 3, T, Q &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> vec_swizzle.hpp:65</div></div>
+<div class="ttc" id="astructglm_1_1vec_3_013_00_01_t_00_01_q_01_4_html"><div class="ttname"><a href="structglm_1_1vec_3_013_00_01_t_00_01_q_01_4.html">glm::vec&lt; 3, T, Q &gt;</a></div><div class="ttdef"><b>Definition:</b> type_vec3.hpp:18</div></div>
+<div class="ttc" id="anamespaceglm_html_aacde182ab014f120e39b626eaf253921"><div class="ttname"><a href="namespaceglm.html#aacde182ab014f120e39b626eaf253921">glm::yz</a></div><div class="ttdeci">GLM_INLINE glm::vec&lt; 2, T, Q &gt; yz(const glm::vec&lt; 3, T, Q &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> vec_swizzle.hpp:114</div></div>
+<div class="ttc" id="anamespaceglm_html_a9ba95a2ad2f6be186c2c42c224645ff8"><div class="ttname"><a href="namespaceglm.html#a9ba95a2ad2f6be186c2c42c224645ff8">glm::xy</a></div><div class="ttdeci">GLM_INLINE glm::vec&lt; 2, T, Q &gt; xy(const glm::vec&lt; 2, T, Q &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> vec_swizzle.hpp:49</div></div>
+<div class="ttc" id="agroup__core__func__geometric_html_ga3b8d3dcae77870781392ed2902cce597"><div class="ttname"><a href="group__core__func__geometric.html#ga3b8d3dcae77870781392ed2902cce597">glm::normalize</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER vec&lt; L, T, Q &gt; normalize(vec&lt; L, T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> func_geometric.inl:190</div></div>
+<div class="ttc" id="agroup__core__func__common_html_ga439e60a72eadecfeda2df5449c613a64"><div class="ttname"><a href="group__core__func__common.html#ga439e60a72eadecfeda2df5449c613a64">glm::abs</a></div><div class="ttdeci">GLM_FUNC_DECL GLM_CONSTEXPR genType abs(genType x)</div></div>
+<div class="ttc" id="agroup__ext__scalar__constants_html_ga2a1e57fc5592b69cfae84174cbfc9429"><div class="ttname"><a href="group__ext__scalar__constants.html#ga2a1e57fc5592b69cfae84174cbfc9429">glm::epsilon</a></div><div class="ttdeci">GLM_FUNC_DECL GLM_CONSTEXPR genType epsilon()</div><div class="ttdoc">Return the epsilon constant for floating point types.</div><div class="ttdef"><b>Definition:</b> scalar_constants.inl:6</div></div>
+<div class="ttc" id="agroup__gtx__matrix__interpolation_html_gabbc1c7385a145f04b5c54228965df145"><div class="ttname"><a href="group__gtx__matrix__interpolation.html#gabbc1c7385a145f04b5c54228965df145">glm::extractMatrixRotation</a></div><div class="ttdeci">GLM_FUNC_DECL mat&lt; 4, 4, T, Q &gt; extractMatrixRotation(mat&lt; 4, 4, T, Q &gt; const &amp;Mat)</div><div class="ttdef"><b>Definition:</b> matrix_interpolation.inl:106</div></div>
+<div class="ttc" id="astructglm_1_1vec_3_013_00_01_t_00_01_q_01_4_html_aa124b422bca85bd1e079c5880591d056"><div class="ttname"><a href="structglm_1_1vec_3_013_00_01_t_00_01_q_01_4.html#aa124b422bca85bd1e079c5880591d056">glm::vec&lt; 3, T, Q &gt;::x</a></div><div class="ttdeci">T x</div><div class="ttdef"><b>Definition:</b> type_vec3.hpp:68</div></div>
+<div class="ttc" id="agroup__gtx__matrix__interpolation_html_gafefe32ce5a90a135287ba34fac3623bc"><div class="ttname"><a href="group__gtx__matrix__interpolation.html#gafefe32ce5a90a135287ba34fac3623bc">glm::axisAngle</a></div><div class="ttdeci">GLM_FUNC_DECL void axisAngle(mat&lt; 4, 4, T, Q &gt; const &amp;Mat, vec&lt; 3, T, Q &gt; &amp;Axis, T &amp;Angle)</div><div class="ttdef"><b>Definition:</b> matrix_interpolation.inl:8</div></div>
+<div class="ttc" id="anamespaceglm_html"><div class="ttname"><a href="namespaceglm.html">glm</a></div><div class="ttdoc">Core features</div><div class="ttdef"><b>Definition:</b> common.hpp:21</div></div>
+<div class="ttc" id="anamespaceglm_html_a230eaa5b8f1d37d6d9536d04d41ab49d"><div class="ttname"><a href="namespaceglm.html#a230eaa5b8f1d37d6d9536d04d41ab49d">glm::xx</a></div><div class="ttdeci">GLM_INLINE glm::vec&lt; 2, T, Q &gt; xx(const glm::vec&lt; 1, T, Q &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> vec_swizzle.hpp:28</div></div>
+<div class="ttc" id="anamespaceglm_html_a65b89dec4358cba1e6ff77d97980bd46"><div class="ttname"><a href="namespaceglm.html#a65b89dec4358cba1e6ff77d97980bd46">glm::zz</a></div><div class="ttdeci">GLM_INLINE glm::vec&lt; 2, T, Q &gt; zz(const glm::vec&lt; 3, T, Q &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> vec_swizzle.hpp:153</div></div>
+<div class="ttc" id="agroup__gtx__matrix__major__storage_html_ga1e25b72b085087740c92f5c70f3b051f"><div class="ttname"><a href="group__gtx__matrix__major__storage.html#ga1e25b72b085087740c92f5c70f3b051f">glm::colMajor3</a></div><div class="ttdeci">GLM_FUNC_DECL mat&lt; 3, 3, T, Q &gt; colMajor3(vec&lt; 3, T, Q &gt; const &amp;v1, vec&lt; 3, T, Q &gt; const &amp;v2, vec&lt; 3, T, Q &gt; const &amp;v3)</div><div class="ttdef"><b>Definition:</b> matrix_major_storage.inl:135</div></div>
+<div class="ttc" id="agroup__gtx__matrix__interpolation_html_ga3a788e2f5223397df5c426413ecc2f6b"><div class="ttname"><a href="group__gtx__matrix__interpolation.html#ga3a788e2f5223397df5c426413ecc2f6b">glm::axisAngleMatrix</a></div><div class="ttdeci">GLM_FUNC_DECL mat&lt; 4, 4, T, Q &gt; axisAngleMatrix(vec&lt; 3, T, Q &gt; const &amp;Axis, T const Angle)</div><div class="ttdef"><b>Definition:</b> matrix_interpolation.inl:91</div></div>
+<div class="ttc" id="agroup__gtx__matrix__major__storage_html_gaf5b1aee9e3eb1acf9d6c3c8be1e73bb8"><div class="ttname"><a href="group__gtx__matrix__major__storage.html#gaf5b1aee9e3eb1acf9d6c3c8be1e73bb8">glm::rowMajor2</a></div><div class="ttdeci">GLM_FUNC_DECL mat&lt; 2, 2, T, Q &gt; rowMajor2(vec&lt; 2, T, Q &gt; const &amp;v1, vec&lt; 2, T, Q &gt; const &amp;v2)</div><div class="ttdef"><b>Definition:</b> matrix_major_storage.inl:7</div></div>
+<div class="ttc" id="agroup__gtx__matrix__major__storage_html_gaaff72f11286e59a4a88ed21a347f284c"><div class="ttname"><a href="group__gtx__matrix__major__storage.html#gaaff72f11286e59a4a88ed21a347f284c">glm::colMajor2</a></div><div class="ttdeci">GLM_FUNC_DECL mat&lt; 2, 2, T, Q &gt; colMajor2(vec&lt; 2, T, Q &gt; const &amp;v1, vec&lt; 2, T, Q &gt; const &amp;v2)</div><div class="ttdef"><b>Definition:</b> matrix_major_storage.inl:120</div></div>
+<div class="ttc" id="agroup__gtx__matrix__major__storage_html_gaf4aa6c7e17bfce41a6c13bf6469fab05"><div class="ttname"><a href="group__gtx__matrix__major__storage.html#gaf4aa6c7e17bfce41a6c13bf6469fab05">glm::colMajor4</a></div><div class="ttdeci">GLM_FUNC_DECL mat&lt; 4, 4, T, Q &gt; colMajor4(vec&lt; 4, T, Q &gt; const &amp;v1, vec&lt; 4, T, Q &gt; const &amp;v2, vec&lt; 4, T, Q &gt; const &amp;v3, vec&lt; 4, T, Q &gt; const &amp;v4)</div><div class="ttdef"><b>Definition:</b> matrix_major_storage.inl:151</div></div>
+<div class="ttc" id="agroup__core__func__trigonometric_html_ga29747fd108cb7292ae5a284f69691a69"><div class="ttname"><a href="group__core__func__trigonometric.html#ga29747fd108cb7292ae5a284f69691a69">glm::sin</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER vec&lt; L, T, Q &gt; sin(vec&lt; L, T, Q &gt; const &amp;v)</div><div class="ttdef"><b>Definition:</b> func_trigonometric.inl:41</div></div>
+<div class="ttc" id="amatrix__major__storage_8inl_html"><div class="ttname"><a href="matrix__major__storage_8inl.html">matrix_major_storage.inl</a></div></div>
+<div class="ttc" id="agroup__gtx__matrix__interpolation_html_ga4e67863d150724b10c1ac00972dc958c"><div class="ttname"><a href="group__gtx__matrix__interpolation.html#ga4e67863d150724b10c1ac00972dc958c">glm::interpolate</a></div><div class="ttdeci">GLM_FUNC_DECL mat&lt; 4, 4, T, Q &gt; interpolate(mat&lt; 4, 4, T, Q &gt; const &amp;m1, mat&lt; 4, 4, T, Q &gt; const &amp;m2, T const Delta)</div><div class="ttdef"><b>Definition:</b> matrix_interpolation.inl:116</div></div>
+<div class="ttc" id="astructglm_1_1vec_3_013_00_01_t_00_01_q_01_4_html_a3ff0c9672e374f78b7403d0c04ddc329"><div class="ttname"><a href="structglm_1_1vec_3_013_00_01_t_00_01_q_01_4.html#a3ff0c9672e374f78b7403d0c04ddc329">glm::vec&lt; 3, T, Q &gt;::y</a></div><div class="ttdeci">T y</div><div class="ttdef"><b>Definition:</b> type_vec3.hpp:69</div></div>
+<div class="ttc" id="agroup__core__func__trigonometric_html_gacc9b092df8257c68f19c9053703e2563"><div class="ttname"><a href="group__core__func__trigonometric.html#gacc9b092df8257c68f19c9053703e2563">glm::acos</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER vec&lt; L, T, Q &gt; acos(vec&lt; L, T, Q &gt; const &amp;v)</div><div class="ttdef"><b>Definition:</b> func_trigonometric.inl:77</div></div>
+<div class="ttc" id="agroup__ext__quaternion__trigonometric_html_ga764254f10248b505e936e5309a88c23d"><div class="ttname"><a href="group__ext__quaternion__trigonometric.html#ga764254f10248b505e936e5309a88c23d">glm::axis</a></div><div class="ttdeci">GLM_FUNC_DECL vec&lt; 3, T, Q &gt; axis(qua&lt; T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> quaternion_trigonometric.inl:10</div></div>
+<div class="ttc" id="asetup_8hpp_html_ab2d052de21a70539923e9bcbf6e83a51"><div class="ttname"><a href="setup_8hpp.html#ab2d052de21a70539923e9bcbf6e83a51">GLM_FUNC_DECL</a></div><div class="ttdeci">#define GLM_FUNC_DECL</div><div class="ttdef"><b>Definition:</b> setup.hpp:438</div></div>
+<div class="ttc" id="asetup_8hpp_html_a33fdea6f91c5f834105f7415e2a64407"><div class="ttname"><a href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a></div><div class="ttdeci">#define GLM_FUNC_QUALIFIER</div><div class="ttdef"><b>Definition:</b> setup.hpp:439</div></div>
+<div class="ttc" id="agroup__core__func__matrix_html_gae679d841da8ce9dbcc6c2d454f15bc35"><div class="ttname"><a href="group__core__func__matrix.html#gae679d841da8ce9dbcc6c2d454f15bc35">glm::transpose</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER mat&lt; C, R, T, Q &gt;::transpose_type transpose(mat&lt; C, R, T, Q &gt; const &amp;m)</div><div class="ttdef"><b>Definition:</b> func_matrix.inl:374</div></div>
+<div class="ttc" id="agroup__core__func__exponential_html_gaa83e5f1648b7ccdf33b87c07c76cb77c"><div class="ttname"><a href="group__core__func__exponential.html#gaa83e5f1648b7ccdf33b87c07c76cb77c">glm::sqrt</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER vec&lt; L, T, Q &gt; sqrt(vec&lt; L, T, Q &gt; const &amp;x)</div><div class="ttdef"><b>Definition:</b> func_exponential.inl:128</div></div>
+<div class="ttc" id="agroup__gtx__matrix__major__storage_html_ga2ae46497493339f745754e40f438442e"><div class="ttname"><a href="group__gtx__matrix__major__storage.html#ga2ae46497493339f745754e40f438442e">glm::rowMajor3</a></div><div class="ttdeci">GLM_FUNC_DECL mat&lt; 3, 3, T, Q &gt; rowMajor3(vec&lt; 3, T, Q &gt; const &amp;v1, vec&lt; 3, T, Q &gt; const &amp;v2, vec&lt; 3, T, Q &gt; const &amp;v3)</div><div class="ttdef"><b>Definition:</b> matrix_major_storage.inl:33</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

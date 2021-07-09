@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: External/GLM/gtx/dual_quaternion.inl ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_443fc37f241ba4018364a998c18d007b.html">External</a></li><li class="navelem"><a class="el" href="dir_c334883f19ec445d87470844289252ab.html">GLM</a></li><li class="navelem"><a class="el" href="dir_7b5826385e0aa91a8f8bc4a2a2cc7ac3.html">gtx</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">dual_quaternion.inl ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="geometric_8hpp_source.html">../geometric.hpp</a>&quot;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+dual_quaternion.inl の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="dual__quaternion_8inl__incl.png" border="0" usemap="#a_external_2_g_l_m_2gtx_2dual__quaternion_8inl" alt=""/></div>
+<map name="_external_2_g_l_m_2gtx_2dual__quaternion_8inl" id="_external_2_g_l_m_2gtx_2dual__quaternion_8inl">
+<area shape="rect" title=" " alt="" coords="5,5,157,47"/>
+<area shape="rect" href="geometric_8hpp.html" title=" " alt="" coords="78,95,194,121"/>
+<area shape="rect" title=" " alt="" coords="543,647,596,673"/>
+<area shape="rect" href="type__vec3_8hpp.html" title=" " alt="" coords="66,393,206,420"/>
+<area shape="rect" href="func__geometric_8inl.html" title=" " alt="" coords="391,169,553,196"/>
+<area shape="rect" href="qualifier_8hpp.html" title=" " alt="" coords="833,475,924,502"/>
+<area shape="rect" title=" " alt="" coords="124,721,188,748"/>
+<area shape="rect" href="type__vec3_8inl.html" title=" " alt="" coords="194,475,291,502"/>
+<area shape="rect" href="setup_8hpp.html" title=" " alt="" coords="887,647,966,673"/>
+<area shape="rect" title=" " alt="" coords="1095,721,1161,748"/>
+<area shape="rect" href="platform_8h.html" title=" " alt="" coords="865,721,988,748"/>
+<area shape="rect" href="compute__vector__relational_8hpp.html" title=" " alt="" coords="335,565,532,591"/>
+<area shape="rect" href="exponential_8hpp.html" title=" " alt="" coords="409,244,535,271"/>
+<area shape="rect" href="common_8hpp.html" title=" " alt="" coords="880,244,989,271"/>
+<area shape="rect" href="type__vec1_8hpp.html" title=" " alt="" coords="394,393,534,420"/>
+<area shape="rect" href="type__vec2_8hpp.html" title=" " alt="" coords="661,393,801,420"/>
+<area shape="rect" href="type__vec4_8hpp.html" title=" " alt="" coords="230,393,370,420"/>
+<area shape="rect" title=" " alt="" coords="1240,393,1299,420"/>
+<area shape="rect" href="func__exponential_8inl.html" title=" " alt="" coords="951,319,1121,345"/>
+<area shape="rect" href="type__vec1_8inl.html" title=" " alt="" coords="437,475,534,502"/>
+<area shape="rect" href="type__vec2_8inl.html" title=" " alt="" coords="661,475,758,502"/>
+<area shape="rect" href="type__vec4_8inl.html" title=" " alt="" coords="315,475,413,502"/>
+<area shape="rect" href="vector__relational_8hpp.html" title=" " alt="" coords="825,393,977,420"/>
+<area shape="rect" href="__vectorize_8hpp.html" title=" " alt="" coords="1002,393,1107,420"/>
+<area shape="rect" href="func__vector__relational_8inl.html" title=" " alt="" coords="948,468,1071,509"/>
+<area shape="rect" href="func__vector__relational__simd_8inl.html" title=" " alt="" coords="937,557,1084,599"/>
+<area shape="rect" href="__fixes_8hpp.html" title=" " alt="" coords="1197,319,1313,345"/>
+<area shape="rect" href="func__common_8inl.html" title=" " alt="" coords="539,319,693,345"/>
+<area shape="rect" href="compute__common_8hpp.html" title=" " alt="" coords="607,565,761,591"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="dual__quaternion_8inl__dep__incl.png" border="0" usemap="#a_external_2_g_l_m_2gtx_2dual__quaternion_8inldep" alt=""/></div>
+<map name="_external_2_g_l_m_2gtx_2dual__quaternion_8inldep" id="_external_2_g_l_m_2gtx_2dual__quaternion_8inldep">
+<area shape="rect" title=" " alt="" coords="279,5,431,47"/>
+<area shape="rect" href="dual__quaternion_8hpp.html" title=" " alt="" coords="279,95,431,136"/>
+<area shape="rect" href="glm_8cpp.html" title=" " alt="" coords="5,184,143,225"/>
+<area shape="rect" href="hash_8hpp.html" title=" " alt="" coords="167,191,349,218"/>
+<area shape="rect" href="string__cast_8hpp.html" title=" " alt="" coords="373,184,533,225"/>
+<area shape="rect" href="type__trait_8hpp.html" title=" " alt="" coords="557,184,711,225"/>
+<area shape="rect" href="io_8inl.html" title=" " alt="" coords="557,273,711,300"/>
+<area shape="rect" href="io_8hpp.html" title=" " alt="" coords="553,348,715,375"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:namespaceglm"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceglm.html">glm</a></td></tr>
+<tr class="memdesc:namespaceglm"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__core.html">Core features</a> <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:ga11a89ba9d2bc5ef4ab9bd77ac231fe63"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:ga11a89ba9d2bc5ef4ab9bd77ac231fe63"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> tdualquat&lt; T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtx__dual__quaternion.html#ga11a89ba9d2bc5ef4ab9bd77ac231fe63">glm::operator+</a> (tdualquat&lt; T, Q &gt; const &amp;q)</td></tr>
+<tr class="separator:ga11a89ba9d2bc5ef4ab9bd77ac231fe63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2245f8ea1b7c8a3fccfc92ca97ef03de"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:ga2245f8ea1b7c8a3fccfc92ca97ef03de"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> tdualquat&lt; T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtx__dual__quaternion.html#ga2245f8ea1b7c8a3fccfc92ca97ef03de">glm::operator-</a> (tdualquat&lt; T, Q &gt; const &amp;q)</td></tr>
+<tr class="separator:ga2245f8ea1b7c8a3fccfc92ca97ef03de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga55e10eaaabe1166be6314df62591c134"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:ga55e10eaaabe1166be6314df62591c134"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> tdualquat&lt; T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtx__dual__quaternion.html#ga55e10eaaabe1166be6314df62591c134">glm::operator+</a> (tdualquat&lt; T, Q &gt; const &amp;q, tdualquat&lt; T, Q &gt; const &amp;p)</td></tr>
+<tr class="separator:ga55e10eaaabe1166be6314df62591c134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga01828eee9e1cf1f56e4018fcdc910aa0"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:ga01828eee9e1cf1f56e4018fcdc910aa0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> tdualquat&lt; T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtx__dual__quaternion.html#ga01828eee9e1cf1f56e4018fcdc910aa0">glm::operator*</a> (tdualquat&lt; T, Q &gt; const &amp;p, tdualquat&lt; T, Q &gt; const &amp;o)</td></tr>
+<tr class="separator:ga01828eee9e1cf1f56e4018fcdc910aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3489c5fcf23fd302ef3713f443585cbd"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:ga3489c5fcf23fd302ef3713f443585cbd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> vec&lt; 3, T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtx__dual__quaternion.html#ga3489c5fcf23fd302ef3713f443585cbd">glm::operator*</a> (tdualquat&lt; T, Q &gt; const &amp;q, vec&lt; 3, T, Q &gt; const &amp;v)</td></tr>
+<tr class="separator:ga3489c5fcf23fd302ef3713f443585cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84dc00cb210525a28d3a185c9a0ba176"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:ga84dc00cb210525a28d3a185c9a0ba176"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> vec&lt; 3, T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtx__dual__quaternion.html#ga84dc00cb210525a28d3a185c9a0ba176">glm::operator*</a> (vec&lt; 3, T, Q &gt; const &amp;v, tdualquat&lt; T, Q &gt; const &amp;q)</td></tr>
+<tr class="separator:ga84dc00cb210525a28d3a185c9a0ba176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e415497e00977106ec263f86b61e84c"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:ga5e415497e00977106ec263f86b61e84c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> vec&lt; 4, T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtx__dual__quaternion.html#ga5e415497e00977106ec263f86b61e84c">glm::operator*</a> (tdualquat&lt; T, Q &gt; const &amp;q, vec&lt; 4, T, Q &gt; const &amp;v)</td></tr>
+<tr class="separator:ga5e415497e00977106ec263f86b61e84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fd4e646fe49daed7aabbf0cb8736685"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:ga9fd4e646fe49daed7aabbf0cb8736685"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> vec&lt; 4, T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtx__dual__quaternion.html#ga9fd4e646fe49daed7aabbf0cb8736685">glm::operator*</a> (vec&lt; 4, T, Q &gt; const &amp;v, tdualquat&lt; T, Q &gt; const &amp;q)</td></tr>
+<tr class="separator:ga9fd4e646fe49daed7aabbf0cb8736685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga03c35eae969f074f10fa2bf473670ad7"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:ga03c35eae969f074f10fa2bf473670ad7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> tdualquat&lt; T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtx__dual__quaternion.html#ga03c35eae969f074f10fa2bf473670ad7">glm::operator*</a> (tdualquat&lt; T, Q &gt; const &amp;q, T const &amp;s)</td></tr>
+<tr class="separator:ga03c35eae969f074f10fa2bf473670ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafbd543470cb70432624e046ab85a00e4"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:gafbd543470cb70432624e046ab85a00e4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> tdualquat&lt; T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtx__dual__quaternion.html#gafbd543470cb70432624e046ab85a00e4">glm::operator*</a> (T const &amp;s, tdualquat&lt; T, Q &gt; const &amp;q)</td></tr>
+<tr class="separator:gafbd543470cb70432624e046ab85a00e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac31fa68a57186cd22388eb385ca115d"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:gaac31fa68a57186cd22388eb385ca115d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> tdualquat&lt; T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtx__dual__quaternion.html#gaac31fa68a57186cd22388eb385ca115d">glm::operator/</a> (tdualquat&lt; T, Q &gt; const &amp;q, T const &amp;s)</td></tr>
+<tr class="separator:gaac31fa68a57186cd22388eb385ca115d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga82faf668287e9ca3c9751d873a85970d"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:ga82faf668287e9ca3c9751d873a85970d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtx__dual__quaternion.html#ga82faf668287e9ca3c9751d873a85970d">glm::operator==</a> (tdualquat&lt; T, Q &gt; const &amp;q1, tdualquat&lt; T, Q &gt; const &amp;q2)</td></tr>
+<tr class="separator:ga82faf668287e9ca3c9751d873a85970d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41964adca31c6e6b52f1367104d15646"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:ga41964adca31c6e6b52f1367104d15646"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtx__dual__quaternion.html#ga41964adca31c6e6b52f1367104d15646">glm::operator!=</a> (tdualquat&lt; T, Q &gt; const &amp;q1, tdualquat&lt; T, Q &gt; const &amp;q2)</td></tr>
+<tr class="separator:ga41964adca31c6e6b52f1367104d15646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b35c0e30df8a875dbaa751e0bd800e0"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:ga0b35c0e30df8a875dbaa751e0bd800e0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> tdualquat&lt; T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtx__dual__quaternion.html#ga0b35c0e30df8a875dbaa751e0bd800e0">glm::dual_quat_identity</a> ()</td></tr>
+<tr class="separator:ga0b35c0e30df8a875dbaa751e0bd800e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga299b8641509606b1958ffa104a162cfe"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:ga299b8641509606b1958ffa104a162cfe"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> tdualquat&lt; T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtx__dual__quaternion.html#ga299b8641509606b1958ffa104a162cfe">glm::normalize</a> (tdualquat&lt; T, Q &gt; const &amp;q)</td></tr>
+<tr class="separator:ga299b8641509606b1958ffa104a162cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace8380112d16d33f520839cb35a4d173"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:gace8380112d16d33f520839cb35a4d173"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> tdualquat&lt; T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtx__dual__quaternion.html#gace8380112d16d33f520839cb35a4d173">glm::lerp</a> (tdualquat&lt; T, Q &gt; const &amp;x, tdualquat&lt; T, Q &gt; const &amp;y, T const &amp;a)</td></tr>
+<tr class="separator:gace8380112d16d33f520839cb35a4d173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga070f521a953f6461af4ab4cf8ccbf27e"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:ga070f521a953f6461af4ab4cf8ccbf27e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> tdualquat&lt; T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtx__dual__quaternion.html#ga070f521a953f6461af4ab4cf8ccbf27e">glm::inverse</a> (tdualquat&lt; T, Q &gt; const &amp;q)</td></tr>
+<tr class="separator:ga070f521a953f6461af4ab4cf8ccbf27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae99d143b37f9cad4cd9285571aab685a"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:gae99d143b37f9cad4cd9285571aab685a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> mat&lt; 2, 4, T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtx__dual__quaternion.html#gae99d143b37f9cad4cd9285571aab685a">glm::mat2x4_cast</a> (tdualquat&lt; T, Q &gt; const &amp;x)</td></tr>
+<tr class="separator:gae99d143b37f9cad4cd9285571aab685a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf59f5bb69620d2891c3795c6f2639179"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:gaf59f5bb69620d2891c3795c6f2639179"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> mat&lt; 3, 4, T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtx__dual__quaternion.html#gaf59f5bb69620d2891c3795c6f2639179">glm::mat3x4_cast</a> (tdualquat&lt; T, Q &gt; const &amp;x)</td></tr>
+<tr class="separator:gaf59f5bb69620d2891c3795c6f2639179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac4064ff813759740201765350eac4236"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:gac4064ff813759740201765350eac4236"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> tdualquat&lt; T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtx__dual__quaternion.html#gac4064ff813759740201765350eac4236">glm::dualquat_cast</a> (mat&lt; 2, 4, T, Q &gt; const &amp;x)</td></tr>
+<tr class="separator:gac4064ff813759740201765350eac4236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga91025ebdca0f4ea54da08497b00e8c84"><td class="memTemplParams" colspan="2">template&lt;typename T , qualifier Q&gt; </td></tr>
+<tr class="memitem:ga91025ebdca0f4ea54da08497b00e8c84"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="setup_8hpp.html#a33fdea6f91c5f834105f7415e2a64407">GLM_FUNC_QUALIFIER</a> tdualquat&lt; T, Q &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gtx__dual__quaternion.html#ga91025ebdca0f4ea54da08497b00e8c84">glm::dualquat_cast</a> (mat&lt; 3, 4, T, Q &gt; const &amp;x)</td></tr>
+<tr class="separator:ga91025ebdca0f4ea54da08497b00e8c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

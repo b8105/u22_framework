@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: Audio/SoundFile.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_654f178923b1444d84ee2a4d88be6b27.html">Audio</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">SoundFile.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_sound_file_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef U22_AUDIO_SOUND_FILE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define U22_AUDIO_SOUND_FILE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../Common/Common.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceu22_1_1audio.html">u22::audio</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classu22_1_1audio_1_1_sound_file.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classu22_1_1audio_1_1_sound_file.html">SoundFile</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="sndfile_8h.html#ac14209bc83d532b06a8cdf9ade6d544a">SNDFILE</a>* _file;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="struct_s_f___i_n_f_o.html">SF_INFO</a> _info;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::vector&lt;int&gt; _data;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classu22_1_1audio_1_1_sound_file.html#a55993ec7366a486f42efbc2eb88c53b5">SoundFile</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classu22_1_1audio_1_1_sound_file.html#ac15b018968d74fb28d34f88a605cf8de">~SoundFile</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="al_8h.html#a715098c13211f3570a9288a27f87fdfa">ALenum</a> <a class="code" href="classu22_1_1audio_1_1_sound_file.html#ac1153d18b27a279c5b268a611efe70c2">GetFormat</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">void</span>* <a class="code" href="classu22_1_1audio_1_1_sound_file.html#a964d250fb6eaa7014ea3bf4d6edfc0ea">GetData</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="al_8h.html#ab966c4d5d554fee3ae4e5c7774e83c7e">ALsizei</a> <a class="code" href="classu22_1_1audio_1_1_sound_file.html#af2a8fada7dfb2d0124875f30c0de5c81">GetSize</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="al_8h.html#ab966c4d5d554fee3ae4e5c7774e83c7e">ALsizei</a> <a class="code" href="classu22_1_1audio_1_1_sound_file.html#a7e9201fd94c16a76fa0bfe1820a94482">GetFrequency</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1audio_1_1_sound_file.html#a6c886a5c51ec06263db0f32a9c2010c7">Open</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1audio_1_1_sound_file.html#a732e2b4dcd7b8747dd737a3f500d5239">Load</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* path);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classu22_1_1audio_1_1_sound_file.html#a6468986683ec617caad095baa3ae2ebc">Read</a>(<span class="keywordtype">int</span> offset, <span class="keywordtype">int</span> size);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1audio_1_1_sound_file.html#a8f095cd4fa5cbd283c38712ab6bbc943">Release</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif // !U22_AUDIO_SOUND_FILE_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astb__vorbis_8c_html_aa73214aa5f2f94f63d90bb4e3d99fe53"><div class="ttname"><a href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a></div><div class="ttdeci">#define L</div><div class="ttdef"><b>Definition:</b> stb_vorbis.c:5037</div></div>
+<div class="ttc" id="astruct_s_f___i_n_f_o_html"><div class="ttname"><a href="struct_s_f___i_n_f_o.html">SF_INFO</a></div><div class="ttdef"><b>Definition:</b> sndfile.h:351</div></div>
+<div class="ttc" id="asndfile_8h_html_aa82f7bc9ad5058e9910c88c49a389777"><div class="ttname"><a href="sndfile_8h.html#aa82f7bc9ad5058e9910c88c49a389777">sf_readf_short</a></div><div class="ttdeci">sf_count_t sf_readf_short(SNDFILE *sndfile, short *ptr, sf_count_t frames)</div></div>
+<div class="ttc" id="aal_8h_html_a715098c13211f3570a9288a27f87fdfa"><div class="ttname"><a href="al_8h.html#a715098c13211f3570a9288a27f87fdfa">ALenum</a></div><div class="ttdeci">int ALenum</div><div class="ttdef"><b>Definition:</b> al.h:69</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_sound_file_html_a7e9201fd94c16a76fa0bfe1820a94482"><div class="ttname"><a href="classu22_1_1audio_1_1_sound_file.html#a7e9201fd94c16a76fa0bfe1820a94482">u22::audio::SoundFile::GetFrequency</a></div><div class="ttdeci">ALsizei GetFrequency(void) const</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> SoundFile.cpp:32</div></div>
+<div class="ttc" id="asndfile_8h_html_a06fc87d81c62e9abb8790b6e5713c55baaaef1f7e663487eefbe4106de44ea7fd"><div class="ttname"><a href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baaaef1f7e663487eefbe4106de44ea7fd">SF_FORMAT_OGG</a></div><div class="ttdeci">@ SF_FORMAT_OGG</div><div class="ttdef"><b>Definition:</b> sndfile.h:71</div></div>
+<div class="ttc" id="asndfile_8h_html_a7a3ded72351d7bafe83358c5c312d352"><div class="ttname"><a href="sndfile_8h.html#a7a3ded72351d7bafe83358c5c312d352">sf_seek</a></div><div class="ttdeci">sf_count_t sf_seek(SNDFILE *sndfile, sf_count_t frames, int whence)</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_sound_file_html_a964d250fb6eaa7014ea3bf4d6edfc0ea"><div class="ttname"><a href="classu22_1_1audio_1_1_sound_file.html#a964d250fb6eaa7014ea3bf4d6edfc0ea">u22::audio::SoundFile::GetData</a></div><div class="ttdeci">const void * GetData(void) const</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> SoundFile.cpp:24</div></div>
+<div class="ttc" id="asndfile_8h_html_a276b87553823c937c62492206f0ed81e"><div class="ttname"><a href="sndfile_8h.html#a276b87553823c937c62492206f0ed81e">sf_close</a></div><div class="ttdeci">int sf_close(SNDFILE *sndfile)</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_sound_file_html_ac1153d18b27a279c5b268a611efe70c2"><div class="ttname"><a href="classu22_1_1audio_1_1_sound_file.html#ac1153d18b27a279c5b268a611efe70c2">u22::audio::SoundFile::GetFormat</a></div><div class="ttdeci">ALenum GetFormat(void) const</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> SoundFile.cpp:12</div></div>
+<div class="ttc" id="asndfile_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba6c1fc181944f58b4bcd23a05acd34499"><div class="ttname"><a href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6c1fc181944f58b4bcd23a05acd34499">SF_FORMAT_WAV</a></div><div class="ttdeci">@ SF_FORMAT_WAV</div><div class="ttdef"><b>Definition:</b> sndfile.h:49</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_sound_file_html_af2a8fada7dfb2d0124875f30c0de5c81"><div class="ttname"><a href="classu22_1_1audio_1_1_sound_file.html#af2a8fada7dfb2d0124875f30c0de5c81">u22::audio::SoundFile::GetSize</a></div><div class="ttdeci">ALsizei GetSize(void) const</div><div class="ttdoc">:: ゲッター</div><div class="ttdef"><b>Definition:</b> SoundFile.cpp:28</div></div>
+<div class="ttc" id="asndfile_8h_html_abc6126af1d45847bc59afa0aa3216b04a125531fe9c895237bccd35736370e815"><div class="ttname"><a href="sndfile_8h.html#abc6126af1d45847bc59afa0aa3216b04a125531fe9c895237bccd35736370e815">SFM_READ</a></div><div class="ttdeci">@ SFM_READ</div><div class="ttdef"><b>Definition:</b> sndfile.h:265</div></div>
+<div class="ttc" id="asndfile_8h_html_ac14209bc83d532b06a8cdf9ade6d544a"><div class="ttname"><a href="sndfile_8h.html#ac14209bc83d532b06a8cdf9ade6d544a">SNDFILE</a></div><div class="ttdeci">struct SNDFILE_tag SNDFILE</div><div class="ttdef"><b>Definition:</b> sndfile.h:327</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_sound_file_html_a55993ec7366a486f42efbc2eb88c53b5"><div class="ttname"><a href="classu22_1_1audio_1_1_sound_file.html#a55993ec7366a486f42efbc2eb88c53b5">u22::audio::SoundFile::SoundFile</a></div><div class="ttdeci">SoundFile()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> SoundFile.cpp:3</div></div>
+<div class="ttc" id="a_sound_file_8h_html"><div class="ttname"><a href="_sound_file_8h.html">SoundFile.h</a></div></div>
+<div class="ttc" id="anamespaceglm_1_1detail_html_acd5305bbd1c5417b1eb770faf8229d14"><div class="ttname"><a href="namespaceglm_1_1detail.html#acd5305bbd1c5417b1eb770faf8229d14">glm::detail::format</a></div><div class="ttdeci">GLM_FUNC_QUALIFIER std::string format(const char *msg,...)</div><div class="ttdef"><b>Definition:</b> string_cast.inl:21</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_sound_file_html_a6c886a5c51ec06263db0f32a9c2010c7"><div class="ttname"><a href="classu22_1_1audio_1_1_sound_file.html#a6c886a5c51ec06263db0f32a9c2010c7">u22::audio::SoundFile::Open</a></div><div class="ttdeci">bool Open(const char *path)</div><div class="ttdoc">開く</div><div class="ttdef"><b>Definition:</b> SoundFile.cpp:36</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_sound_file_html_a732e2b4dcd7b8747dd737a3f500d5239"><div class="ttname"><a href="classu22_1_1audio_1_1_sound_file.html#a732e2b4dcd7b8747dd737a3f500d5239">u22::audio::SoundFile::Load</a></div><div class="ttdeci">bool Load(const char *path)</div><div class="ttdoc">読み込み</div><div class="ttdef"><b>Definition:</b> SoundFile.cpp:56</div></div>
+<div class="ttc" id="asndfile_8h_html_a61bb810d2581bc860cd8884e22d6c7d2"><div class="ttname"><a href="sndfile_8h.html#a61bb810d2581bc860cd8884e22d6c7d2">sf_open</a></div><div class="ttdeci">SNDFILE * sf_open(const char *path, int mode, SF_INFO *sfinfo)</div></div>
+<div class="ttc" id="anamespaceu22_1_1audio_html"><div class="ttname"><a href="namespaceu22_1_1audio.html">u22::audio</a></div><div class="ttdef"><b>Definition:</b> Audio.h:8</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_sound_file_html_a8f095cd4fa5cbd283c38712ab6bbc943"><div class="ttname"><a href="classu22_1_1audio_1_1_sound_file.html#a8f095cd4fa5cbd283c38712ab6bbc943">u22::audio::SoundFile::Release</a></div><div class="ttdeci">bool Release(void)</div><div class="ttdoc">解放</div><div class="ttdef"><b>Definition:</b> SoundFile.cpp:85</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_sound_file_html"><div class="ttname"><a href="classu22_1_1audio_1_1_sound_file.html">u22::audio::SoundFile</a></div><div class="ttdef"><b>Definition:</b> SoundFile.h:11</div></div>
+<div class="ttc" id="asndfile_8h_html_abed82baf7f470b522273a3e37c24c600aef473c62f0714c0a794f0426dc7cd5d0"><div class="ttname"><a href="sndfile_8h.html#abed82baf7f470b522273a3e37c24c600aef473c62f0714c0a794f0426dc7cd5d0">SF_SEEK_SET</a></div><div class="ttdeci">@ SF_SEEK_SET</div><div class="ttdef"><b>Definition:</b> sndfile.h:636</div></div>
+<div class="ttc" id="aal_8h_html_ac2d8746a9a24355746d07a940bae8d39"><div class="ttname"><a href="al_8h.html#ac2d8746a9a24355746d07a940bae8d39">alGetEnumValue</a></div><div class="ttdeci">AL_API ALenum AL_APIENTRY alGetEnumValue(const ALchar *ename)</div></div>
+<div class="ttc" id="aal_8h_html_ab966c4d5d554fee3ae4e5c7774e83c7e"><div class="ttname"><a href="al_8h.html#ab966c4d5d554fee3ae4e5c7774e83c7e">ALsizei</a></div><div class="ttdeci">int ALsizei</div><div class="ttdef"><b>Definition:</b> al.h:66</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_sound_file_html_a6468986683ec617caad095baa3ae2ebc"><div class="ttname"><a href="classu22_1_1audio_1_1_sound_file.html#a6468986683ec617caad095baa3ae2ebc">u22::audio::SoundFile::Read</a></div><div class="ttdeci">int Read(int offset, int size)</div><div class="ttdoc">読み込み</div><div class="ttdef"><b>Definition:</b> SoundFile.cpp:81</div></div>
+<div class="ttc" id="aclassu22_1_1audio_1_1_sound_file_html_ac15b018968d74fb28d34f88a605cf8de"><div class="ttname"><a href="classu22_1_1audio_1_1_sound_file.html#ac15b018968d74fb28d34f88a605cf8de">u22::audio::SoundFile::~SoundFile</a></div><div class="ttdeci">~SoundFile()</div><div class="ttdoc">デストラクタ</div><div class="ttdef"><b>Definition:</b> SoundFile.cpp:9</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

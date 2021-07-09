@@ -1,0 +1,169 @@
+\hypertarget{classu22_1_1graphics_1_1_graphics}{}\doxysection{u22\+::graphics\+::Graphics クラス}
+\label{classu22_1_1graphics_1_1_graphics}\index{u22::graphics::Graphics@{u22::graphics::Graphics}}
+
+
+{\ttfamily \#include $<$Graphics.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classu22_1_1graphics_1_1_graphics_a1f1a9f8af2bdb8289d24c50717187319}{Graphics}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classu22_1_1graphics_1_1_graphics_a6b1cf4cff697b8457de73f067860a33d}{$\sim$\+Graphics}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\+T\+\_\+\+Library}} \mbox{\hyperlink{classu22_1_1graphics_1_1_graphics_ad150a98adbbbe166968cda61c228389a}{Get\+Font\+Ptr}} (void) const
+\begin{DoxyCompactList}\small\item\em ゲッター \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classu22_1_1graphics_1_1_effect_shader}{u22\+::graphics\+::\+Effect\+Shader}} $>$ \mbox{\hyperlink{classu22_1_1graphics_1_1_graphics_a1c9354efd30cb2790bd3331561f4941e}{Get\+Effect\+Shader}} (\mbox{\hyperlink{namespaceu22_1_1graphics_aeac9e83f7ce88cab997836ce2a61f77e}{u22\+::graphics\+::\+Effect\+Shader\+Type}} type) const
+\begin{DoxyCompactList}\small\item\em ゲッター \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classu22_1_1graphics_1_1_graphics_a4778c5d692c412b71548552438125ee5}{Clear\+Target}} (const \mbox{\hyperlink{namespaceu22_1_1math_a4d1e97ba7f1e8c8170c4e2ba3f60f834}{u22\+::math\+::\+Vector4F}} \&color, float depth, float stencil)
+\begin{DoxyCompactList}\small\item\em クリア \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classu22_1_1graphics_1_1_graphics_a6de61f19dbe411e98d136bfba61c3e88}{Render\+Start}} (void)
+\begin{DoxyCompactList}\small\item\em 描画開始 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1graphics_1_1_graphics_abf668a5d285131d7a065fdf806f0e4c6}{Initialize}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classu22_1_1_window}{u22\+::\+Window}} $>$ \&window)
+\begin{DoxyCompactList}\small\item\em 初期化 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1graphics_1_1_graphics_a8f6c61bef2f5aa08a2bd533f22ac99ae}{Release}} (void)
+\begin{DoxyCompactList}\small\item\em 解放 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_graphics_a1f1a9f8af2bdb8289d24c50717187319}\label{classu22_1_1graphics_1_1_graphics_a1f1a9f8af2bdb8289d24c50717187319}} 
+\index{u22::graphics::Graphics@{u22::graphics::Graphics}!Graphics@{Graphics}}
+\index{Graphics@{Graphics}!u22::graphics::Graphics@{u22::graphics::Graphics}}
+\doxysubsubsection{\texorpdfstring{Graphics()}{Graphics()}}
+{\footnotesize\ttfamily u22\+::graphics\+::\+Graphics\+::\+Graphics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+コンストラクタ 
+
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_graphics_a6b1cf4cff697b8457de73f067860a33d}\label{classu22_1_1graphics_1_1_graphics_a6b1cf4cff697b8457de73f067860a33d}} 
+\index{u22::graphics::Graphics@{u22::graphics::Graphics}!````~Graphics@{$\sim$Graphics}}
+\index{````~Graphics@{$\sim$Graphics}!u22::graphics::Graphics@{u22::graphics::Graphics}}
+\doxysubsubsection{\texorpdfstring{$\sim$Graphics()}{~Graphics()}}
+{\footnotesize\ttfamily u22\+::graphics\+::\+Graphics\+::$\sim$\+Graphics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+デストラクタ 
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_graphics_a4778c5d692c412b71548552438125ee5}\label{classu22_1_1graphics_1_1_graphics_a4778c5d692c412b71548552438125ee5}} 
+\index{u22::graphics::Graphics@{u22::graphics::Graphics}!ClearTarget@{ClearTarget}}
+\index{ClearTarget@{ClearTarget}!u22::graphics::Graphics@{u22::graphics::Graphics}}
+\doxysubsubsection{\texorpdfstring{ClearTarget()}{ClearTarget()}}
+{\footnotesize\ttfamily void u22\+::graphics\+::\+Graphics\+::\+Clear\+Target (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceu22_1_1math_a4d1e97ba7f1e8c8170c4e2ba3f60f834}{u22\+::math\+::\+Vector4F}} \&}]{color,  }\item[{float}]{depth,  }\item[{float}]{stencil }\end{DoxyParamCaption})}
+
+
+
+クリア 
+
+
+\begin{DoxyParams}{引数}
+{\em color} & 色\\
+\hline
+{\em depth} & 深度\\
+\hline
+{\em stencil} & ステンシル\\
+\hline
+\end{DoxyParams}
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classu22_1_1graphics_1_1_graphics_a4778c5d692c412b71548552438125ee5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_graphics_a1c9354efd30cb2790bd3331561f4941e}\label{classu22_1_1graphics_1_1_graphics_a1c9354efd30cb2790bd3331561f4941e}} 
+\index{u22::graphics::Graphics@{u22::graphics::Graphics}!GetEffectShader@{GetEffectShader}}
+\index{GetEffectShader@{GetEffectShader}!u22::graphics::Graphics@{u22::graphics::Graphics}}
+\doxysubsubsection{\texorpdfstring{GetEffectShader()}{GetEffectShader()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classu22_1_1graphics_1_1_effect_shader}{u22\+::graphics\+::\+Effect\+Shader}} $>$ u22\+::graphics\+::\+Graphics\+::\+Get\+Effect\+Shader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceu22_1_1graphics_aeac9e83f7ce88cab997836ce2a61f77e}{u22\+::graphics\+::\+Effect\+Shader\+Type}}}]{type }\end{DoxyParamCaption}) const}
+
+
+
+ゲッター 
+
+
+\begin{DoxyParams}{引数}
+{\em type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_graphics_ad150a98adbbbe166968cda61c228389a}\label{classu22_1_1graphics_1_1_graphics_ad150a98adbbbe166968cda61c228389a}} 
+\index{u22::graphics::Graphics@{u22::graphics::Graphics}!GetFontPtr@{GetFontPtr}}
+\index{GetFontPtr@{GetFontPtr}!u22::graphics::Graphics@{u22::graphics::Graphics}}
+\doxysubsubsection{\texorpdfstring{GetFontPtr()}{GetFontPtr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{freetype_8h_a92857f8bf079b7b9ef5d3ce74cf89ef5}{F\+T\+\_\+\+Library}} u22\+::graphics\+::\+Graphics\+::\+Get\+Font\+Ptr (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+ゲッター 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_graphics_abf668a5d285131d7a065fdf806f0e4c6}\label{classu22_1_1graphics_1_1_graphics_abf668a5d285131d7a065fdf806f0e4c6}} 
+\index{u22::graphics::Graphics@{u22::graphics::Graphics}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!u22::graphics::Graphics@{u22::graphics::Graphics}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily bool u22\+::graphics\+::\+Graphics\+::\+Initialize (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classu22_1_1_window}{u22\+::\+Window}} $>$ \&}]{window }\end{DoxyParamCaption})}
+
+
+
+初期化 
+
+
+\begin{DoxyParams}{引数}
+{\em window} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_graphics_a8f6c61bef2f5aa08a2bd533f22ac99ae}\label{classu22_1_1graphics_1_1_graphics_a8f6c61bef2f5aa08a2bd533f22ac99ae}} 
+\index{u22::graphics::Graphics@{u22::graphics::Graphics}!Release@{Release}}
+\index{Release@{Release}!u22::graphics::Graphics@{u22::graphics::Graphics}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily bool u22\+::graphics\+::\+Graphics\+::\+Release (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+解放 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classu22_1_1graphics_1_1_graphics_a8f6c61bef2f5aa08a2bd533f22ac99ae_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_graphics_a6de61f19dbe411e98d136bfba61c3e88}\label{classu22_1_1graphics_1_1_graphics_a6de61f19dbe411e98d136bfba61c3e88}} 
+\index{u22::graphics::Graphics@{u22::graphics::Graphics}!RenderStart@{RenderStart}}
+\index{RenderStart@{RenderStart}!u22::graphics::Graphics@{u22::graphics::Graphics}}
+\doxysubsubsection{\texorpdfstring{RenderStart()}{RenderStart()}}
+{\footnotesize\ttfamily void u22\+::graphics\+::\+Graphics\+::\+Render\+Start (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+描画開始 
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{classu22_1_1graphics_1_1_graphics_a6de61f19dbe411e98d136bfba61c3e88_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+Graphics/\mbox{\hyperlink{_graphics_8h}{Graphics.\+h}}\item 
+Graphics/\mbox{\hyperlink{_graphics_8cpp}{Graphics.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,391 @@
+\hypertarget{ftserv_8h}{}\doxysection{freetype/internal/ftserv.h ファイル}
+\label{ftserv_8h}\index{freetype/internal/ftserv.h@{freetype/internal/ftserv.h}}
+{\ttfamily \#include \char`\"{}compiler-\/macros.\+h\char`\"{}}\newline
+ftserv.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{ftserv_8h__incl}
+\end{center}
+\end{figure}
+被依存関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ftserv_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_f_t___service_desc_rec__}{F\+T\+\_\+\+Service\+Desc\+Rec\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_f_t___service_cache_rec__}{F\+T\+\_\+\+Service\+Cache\+Rec\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ftserv_8h_ad47fb84d86812f286123ea4e39c466ed}{F\+T\+\_\+\+F\+A\+C\+E\+\_\+\+F\+I\+N\+D\+\_\+\+S\+E\+R\+V\+I\+CE}}(face,  ptr,  id)
+\item 
+\#define \mbox{\hyperlink{ftserv_8h_aa973049b6fb899357e6f4561af8223f0}{F\+T\+\_\+\+F\+A\+C\+E\+\_\+\+F\+I\+N\+D\+\_\+\+G\+L\+O\+B\+A\+L\+\_\+\+S\+E\+R\+V\+I\+CE}}(face,  ptr,  id)
+\item 
+\#define \mbox{\hyperlink{ftserv_8h_aee1b3a8132a98877e62645661cb78734}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+D\+E\+S\+C\+R\+E\+C1}}(class\+\_\+,  serv\+\_\+id\+\_\+1,  serv\+\_\+data\+\_\+1)
+\item 
+\#define \mbox{\hyperlink{ftserv_8h_a0874b2014fe3fce937ca2d29b25607dd}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+D\+E\+S\+C\+R\+E\+C2}}(class\+\_\+,  serv\+\_\+id\+\_\+1,  serv\+\_\+data\+\_\+1,  serv\+\_\+id\+\_\+2,  serv\+\_\+data\+\_\+2)
+\item 
+\#define \mbox{\hyperlink{ftserv_8h_a1208f5339b7bdcdfa142971c9cbbf1df}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+D\+E\+S\+C\+R\+E\+C3}}(class\+\_\+,  serv\+\_\+id\+\_\+1,  serv\+\_\+data\+\_\+1,  serv\+\_\+id\+\_\+2,  serv\+\_\+data\+\_\+2,  serv\+\_\+id\+\_\+3,  serv\+\_\+data\+\_\+3)
+\item 
+\#define \mbox{\hyperlink{ftserv_8h_a6aaac36f0cd2d626b3496e0cecad16d9}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+D\+E\+S\+C\+R\+E\+C4}}(class\+\_\+,  serv\+\_\+id\+\_\+1,  serv\+\_\+data\+\_\+1,  serv\+\_\+id\+\_\+2,  serv\+\_\+data\+\_\+2,  serv\+\_\+id\+\_\+3,  serv\+\_\+data\+\_\+3,  serv\+\_\+id\+\_\+4,  serv\+\_\+data\+\_\+4)
+\item 
+\#define \mbox{\hyperlink{ftserv_8h_a99ca3315273de4893f060461d873d9e6}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+D\+E\+S\+C\+R\+E\+C5}}(class\+\_\+,  serv\+\_\+id\+\_\+1,  serv\+\_\+data\+\_\+1,  serv\+\_\+id\+\_\+2,  serv\+\_\+data\+\_\+2,  serv\+\_\+id\+\_\+3,  serv\+\_\+data\+\_\+3,  serv\+\_\+id\+\_\+4,  serv\+\_\+data\+\_\+4,  serv\+\_\+id\+\_\+5,  serv\+\_\+data\+\_\+5)
+\item 
+\#define \mbox{\hyperlink{ftserv_8h_a3dadbbc1c50a02d5c976cc0d61249e97}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+D\+E\+S\+C\+R\+E\+C6}}(class\+\_\+,  serv\+\_\+id\+\_\+1,  serv\+\_\+data\+\_\+1,  serv\+\_\+id\+\_\+2,  serv\+\_\+data\+\_\+2,  serv\+\_\+id\+\_\+3,  serv\+\_\+data\+\_\+3,  serv\+\_\+id\+\_\+4,  serv\+\_\+data\+\_\+4,  serv\+\_\+id\+\_\+5,  serv\+\_\+data\+\_\+5,  serv\+\_\+id\+\_\+6,  serv\+\_\+data\+\_\+6)
+\item 
+\#define \mbox{\hyperlink{ftserv_8h_ad194becd654ec5d0b535078455e23888}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+D\+E\+S\+C\+R\+E\+C7}}(class\+\_\+,  serv\+\_\+id\+\_\+1,  serv\+\_\+data\+\_\+1,  serv\+\_\+id\+\_\+2,  serv\+\_\+data\+\_\+2,  serv\+\_\+id\+\_\+3,  serv\+\_\+data\+\_\+3,  serv\+\_\+id\+\_\+4,  serv\+\_\+data\+\_\+4,  serv\+\_\+id\+\_\+5,  serv\+\_\+data\+\_\+5,  serv\+\_\+id\+\_\+6,  serv\+\_\+data\+\_\+6,  serv\+\_\+id\+\_\+7,  serv\+\_\+data\+\_\+7)
+\item 
+\#define \mbox{\hyperlink{ftserv_8h_af3c3003dd22f62f6908b4549e4da4c7e}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+D\+E\+S\+C\+R\+E\+C8}}(class\+\_\+,  serv\+\_\+id\+\_\+1,  serv\+\_\+data\+\_\+1,  serv\+\_\+id\+\_\+2,  serv\+\_\+data\+\_\+2,  serv\+\_\+id\+\_\+3,  serv\+\_\+data\+\_\+3,  serv\+\_\+id\+\_\+4,  serv\+\_\+data\+\_\+4,  serv\+\_\+id\+\_\+5,  serv\+\_\+data\+\_\+5,  serv\+\_\+id\+\_\+6,  serv\+\_\+data\+\_\+6,  serv\+\_\+id\+\_\+7,  serv\+\_\+data\+\_\+7,  serv\+\_\+id\+\_\+8,  serv\+\_\+data\+\_\+8)
+\item 
+\#define \mbox{\hyperlink{ftserv_8h_a5b37313550bbe7ed963671df04e050f0}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+D\+E\+S\+C\+R\+E\+C9}}(class\+\_\+,  serv\+\_\+id\+\_\+1,  serv\+\_\+data\+\_\+1,  serv\+\_\+id\+\_\+2,  serv\+\_\+data\+\_\+2,  serv\+\_\+id\+\_\+3,  serv\+\_\+data\+\_\+3,  serv\+\_\+id\+\_\+4,  serv\+\_\+data\+\_\+4,  serv\+\_\+id\+\_\+5,  serv\+\_\+data\+\_\+5,  serv\+\_\+id\+\_\+6,  serv\+\_\+data\+\_\+6,  serv\+\_\+id\+\_\+7,  serv\+\_\+data\+\_\+7,  serv\+\_\+id\+\_\+8,  serv\+\_\+data\+\_\+8,  serv\+\_\+id\+\_\+9,  serv\+\_\+data\+\_\+9)
+\item 
+\#define \mbox{\hyperlink{ftserv_8h_af9e0ab3d695428968fb657a993cbd511}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+D\+E\+S\+C\+R\+E\+C10}}(class\+\_\+,  serv\+\_\+id\+\_\+1,  serv\+\_\+data\+\_\+1,  serv\+\_\+id\+\_\+2,  serv\+\_\+data\+\_\+2,  serv\+\_\+id\+\_\+3,  serv\+\_\+data\+\_\+3,  serv\+\_\+id\+\_\+4,  serv\+\_\+data\+\_\+4,  serv\+\_\+id\+\_\+5,  serv\+\_\+data\+\_\+5,  serv\+\_\+id\+\_\+6,  serv\+\_\+data\+\_\+6,  serv\+\_\+id\+\_\+7,  serv\+\_\+data\+\_\+7,  serv\+\_\+id\+\_\+8,  serv\+\_\+data\+\_\+8,  serv\+\_\+id\+\_\+9,  serv\+\_\+data\+\_\+9,  serv\+\_\+id\+\_\+10,  serv\+\_\+data\+\_\+10)
+\item 
+\#define \mbox{\hyperlink{ftserv_8h_af952892475f447a16744d7d5bc085756}{F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}}~((\mbox{\hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{F\+T\+\_\+\+Pointer}})$\sim$(\mbox{\hyperlink{fttypes_8h_a2469cb02129d36e468be22f7a8bf5b33}{F\+T\+\_\+\+Ptr\+Dist}})1)
+\item 
+\#define \mbox{\hyperlink{ftserv_8h_a39b85562363751f35afcc821fcb320fc}{F\+T\+\_\+\+F\+A\+C\+E\+\_\+\+L\+O\+O\+K\+U\+P\+\_\+\+S\+E\+R\+V\+I\+CE}}(face,  ptr,  id)
+\item 
+\#define \mbox{\hyperlink{ftserv_8h_a8b5632fff44151a55025c8505d553cd0}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE}}(name)
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_f_t___service_desc_rec__}{F\+T\+\_\+\+Service\+Desc\+Rec\+\_\+}} \mbox{\hyperlink{ftserv_8h_a76173d362173dd707e5b0672a2188a1d}{F\+T\+\_\+\+Service\+Desc\+Rec}}
+\item 
+typedef const \mbox{\hyperlink{ftserv_8h_a76173d362173dd707e5b0672a2188a1d}{F\+T\+\_\+\+Service\+Desc\+Rec}} $\ast$ \mbox{\hyperlink{ftserv_8h_ae9ffc63fa7afa00dd1d69acc5c0f6d71}{F\+T\+\_\+\+Service\+Desc}}
+\item 
+typedef struct \mbox{\hyperlink{struct_f_t___service_cache_rec__}{F\+T\+\_\+\+Service\+Cache\+Rec\+\_\+}} \mbox{\hyperlink{ftserv_8h_a66d5ca8edd81f695c4018446f80e5be3}{F\+T\+\_\+\+Service\+Cache\+Rec}}
+\item 
+typedef struct \mbox{\hyperlink{struct_f_t___service_cache_rec__}{F\+T\+\_\+\+Service\+Cache\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{ftserv_8h_ae0ee6eda6f109406c92735fde1a7b912}{F\+T\+\_\+\+Service\+Cache}}
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ftserv_8h_aec9a5aefeef799ff91ad8adf228242ab}{ft\+\_\+service\+\_\+list\+\_\+lookup}} (\mbox{\hyperlink{ftserv_8h_ae9ffc63fa7afa00dd1d69acc5c0f6d71}{F\+T\+\_\+\+Service\+Desc}} service\+\_\+descriptors, const char $\ast$service\+\_\+id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{ftserv_8h_a8b5632fff44151a55025c8505d553cd0}\label{ftserv_8h_a8b5632fff44151a55025c8505d553cd0}} 
+\index{ftserv.h@{ftserv.h}!FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}}
+\index{FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}!ftserv.h@{ftserv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE}{FT\_DEFINE\_SERVICE}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE(\begin{DoxyParamCaption}\item[{}]{name }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{typedef} \textcolor{keyword}{struct }FT\_Service\_ \#\# name \#\# Rec\_ \(\backslash\)}
+\DoxyCodeLine{    FT\_Service\_ \#\# name \#\# Rec ;             \(\backslash\)}
+\DoxyCodeLine{  typedef \textcolor{keyword}{struct }FT\_Service\_ \#\# name \#\# Rec\_ \(\backslash\)}
+\DoxyCodeLine{    const * FT\_Service\_ \#\# name ;            \(\backslash\)}
+\DoxyCodeLine{  struct FT\_Service\_ \#\# name \#\# Rec\_}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ftserv_8h_aee1b3a8132a98877e62645661cb78734}\label{ftserv_8h_aee1b3a8132a98877e62645661cb78734}} 
+\index{ftserv.h@{ftserv.h}!FT\_DEFINE\_SERVICEDESCREC1@{FT\_DEFINE\_SERVICEDESCREC1}}
+\index{FT\_DEFINE\_SERVICEDESCREC1@{FT\_DEFINE\_SERVICEDESCREC1}!ftserv.h@{ftserv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICEDESCREC1}{FT\_DEFINE\_SERVICEDESCREC1}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+D\+E\+S\+C\+R\+E\+C1(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{serv\+\_\+id\+\_\+1,  }\item[{}]{serv\+\_\+data\+\_\+1 }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{static} \textcolor{keyword}{const} \mbox{\hyperlink{struct_f_t___service_desc_rec__}{FT\_ServiceDescRec}}  class\_[] =                                \(\backslash\)}
+\DoxyCodeLine{  \{                                                                         \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_1, serv\_data\_1 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ \mbox{\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}, \mbox{\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}} \}                                                          \(\backslash\)}
+\DoxyCodeLine{  \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ftserv_8h_af9e0ab3d695428968fb657a993cbd511}\label{ftserv_8h_af9e0ab3d695428968fb657a993cbd511}} 
+\index{ftserv.h@{ftserv.h}!FT\_DEFINE\_SERVICEDESCREC10@{FT\_DEFINE\_SERVICEDESCREC10}}
+\index{FT\_DEFINE\_SERVICEDESCREC10@{FT\_DEFINE\_SERVICEDESCREC10}!ftserv.h@{ftserv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICEDESCREC10}{FT\_DEFINE\_SERVICEDESCREC10}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+D\+E\+S\+C\+R\+E\+C10(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{serv\+\_\+id\+\_\+1,  }\item[{}]{serv\+\_\+data\+\_\+1,  }\item[{}]{serv\+\_\+id\+\_\+2,  }\item[{}]{serv\+\_\+data\+\_\+2,  }\item[{}]{serv\+\_\+id\+\_\+3,  }\item[{}]{serv\+\_\+data\+\_\+3,  }\item[{}]{serv\+\_\+id\+\_\+4,  }\item[{}]{serv\+\_\+data\+\_\+4,  }\item[{}]{serv\+\_\+id\+\_\+5,  }\item[{}]{serv\+\_\+data\+\_\+5,  }\item[{}]{serv\+\_\+id\+\_\+6,  }\item[{}]{serv\+\_\+data\+\_\+6,  }\item[{}]{serv\+\_\+id\+\_\+7,  }\item[{}]{serv\+\_\+data\+\_\+7,  }\item[{}]{serv\+\_\+id\+\_\+8,  }\item[{}]{serv\+\_\+data\+\_\+8,  }\item[{}]{serv\+\_\+id\+\_\+9,  }\item[{}]{serv\+\_\+data\+\_\+9,  }\item[{}]{serv\+\_\+id\+\_\+10,  }\item[{}]{serv\+\_\+data\+\_\+10 }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{static} \textcolor{keyword}{const} \mbox{\hyperlink{struct_f_t___service_desc_rec__}{FT\_ServiceDescRec}}  class\_[] =                                \(\backslash\)}
+\DoxyCodeLine{  \{                                                                         \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_1, serv\_data\_1 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_2, serv\_data\_2 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_3, serv\_data\_3 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_4, serv\_data\_4 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_5, serv\_data\_5 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_6, serv\_data\_6 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_7, serv\_data\_7 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_8, serv\_data\_8 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_9, serv\_data\_9 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_10, serv\_data\_10 \},                                           \(\backslash\)}
+\DoxyCodeLine{    \{ \mbox{\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}, \mbox{\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}} \}                                                          \(\backslash\)}
+\DoxyCodeLine{  \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ftserv_8h_a0874b2014fe3fce937ca2d29b25607dd}\label{ftserv_8h_a0874b2014fe3fce937ca2d29b25607dd}} 
+\index{ftserv.h@{ftserv.h}!FT\_DEFINE\_SERVICEDESCREC2@{FT\_DEFINE\_SERVICEDESCREC2}}
+\index{FT\_DEFINE\_SERVICEDESCREC2@{FT\_DEFINE\_SERVICEDESCREC2}!ftserv.h@{ftserv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICEDESCREC2}{FT\_DEFINE\_SERVICEDESCREC2}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+D\+E\+S\+C\+R\+E\+C2(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{serv\+\_\+id\+\_\+1,  }\item[{}]{serv\+\_\+data\+\_\+1,  }\item[{}]{serv\+\_\+id\+\_\+2,  }\item[{}]{serv\+\_\+data\+\_\+2 }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{static} \textcolor{keyword}{const} \mbox{\hyperlink{struct_f_t___service_desc_rec__}{FT\_ServiceDescRec}}  class\_[] =                                \(\backslash\)}
+\DoxyCodeLine{  \{                                                                         \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_1, serv\_data\_1 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_2, serv\_data\_2 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ \mbox{\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}, \mbox{\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}} \}                                                          \(\backslash\)}
+\DoxyCodeLine{  \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ftserv_8h_a1208f5339b7bdcdfa142971c9cbbf1df}\label{ftserv_8h_a1208f5339b7bdcdfa142971c9cbbf1df}} 
+\index{ftserv.h@{ftserv.h}!FT\_DEFINE\_SERVICEDESCREC3@{FT\_DEFINE\_SERVICEDESCREC3}}
+\index{FT\_DEFINE\_SERVICEDESCREC3@{FT\_DEFINE\_SERVICEDESCREC3}!ftserv.h@{ftserv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICEDESCREC3}{FT\_DEFINE\_SERVICEDESCREC3}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+D\+E\+S\+C\+R\+E\+C3(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{serv\+\_\+id\+\_\+1,  }\item[{}]{serv\+\_\+data\+\_\+1,  }\item[{}]{serv\+\_\+id\+\_\+2,  }\item[{}]{serv\+\_\+data\+\_\+2,  }\item[{}]{serv\+\_\+id\+\_\+3,  }\item[{}]{serv\+\_\+data\+\_\+3 }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{static} \textcolor{keyword}{const} \mbox{\hyperlink{struct_f_t___service_desc_rec__}{FT\_ServiceDescRec}}  class\_[] =                                \(\backslash\)}
+\DoxyCodeLine{  \{                                                                         \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_1, serv\_data\_1 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_2, serv\_data\_2 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_3, serv\_data\_3 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ \mbox{\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}, \mbox{\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}} \}                                                          \(\backslash\)}
+\DoxyCodeLine{  \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ftserv_8h_a6aaac36f0cd2d626b3496e0cecad16d9}\label{ftserv_8h_a6aaac36f0cd2d626b3496e0cecad16d9}} 
+\index{ftserv.h@{ftserv.h}!FT\_DEFINE\_SERVICEDESCREC4@{FT\_DEFINE\_SERVICEDESCREC4}}
+\index{FT\_DEFINE\_SERVICEDESCREC4@{FT\_DEFINE\_SERVICEDESCREC4}!ftserv.h@{ftserv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICEDESCREC4}{FT\_DEFINE\_SERVICEDESCREC4}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+D\+E\+S\+C\+R\+E\+C4(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{serv\+\_\+id\+\_\+1,  }\item[{}]{serv\+\_\+data\+\_\+1,  }\item[{}]{serv\+\_\+id\+\_\+2,  }\item[{}]{serv\+\_\+data\+\_\+2,  }\item[{}]{serv\+\_\+id\+\_\+3,  }\item[{}]{serv\+\_\+data\+\_\+3,  }\item[{}]{serv\+\_\+id\+\_\+4,  }\item[{}]{serv\+\_\+data\+\_\+4 }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{static} \textcolor{keyword}{const} \mbox{\hyperlink{struct_f_t___service_desc_rec__}{FT\_ServiceDescRec}}  class\_[] =                                \(\backslash\)}
+\DoxyCodeLine{  \{                                                                         \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_1, serv\_data\_1 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_2, serv\_data\_2 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_3, serv\_data\_3 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_4, serv\_data\_4 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ \mbox{\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}, \mbox{\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}} \}                                                          \(\backslash\)}
+\DoxyCodeLine{  \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ftserv_8h_a99ca3315273de4893f060461d873d9e6}\label{ftserv_8h_a99ca3315273de4893f060461d873d9e6}} 
+\index{ftserv.h@{ftserv.h}!FT\_DEFINE\_SERVICEDESCREC5@{FT\_DEFINE\_SERVICEDESCREC5}}
+\index{FT\_DEFINE\_SERVICEDESCREC5@{FT\_DEFINE\_SERVICEDESCREC5}!ftserv.h@{ftserv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICEDESCREC5}{FT\_DEFINE\_SERVICEDESCREC5}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+D\+E\+S\+C\+R\+E\+C5(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{serv\+\_\+id\+\_\+1,  }\item[{}]{serv\+\_\+data\+\_\+1,  }\item[{}]{serv\+\_\+id\+\_\+2,  }\item[{}]{serv\+\_\+data\+\_\+2,  }\item[{}]{serv\+\_\+id\+\_\+3,  }\item[{}]{serv\+\_\+data\+\_\+3,  }\item[{}]{serv\+\_\+id\+\_\+4,  }\item[{}]{serv\+\_\+data\+\_\+4,  }\item[{}]{serv\+\_\+id\+\_\+5,  }\item[{}]{serv\+\_\+data\+\_\+5 }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{static} \textcolor{keyword}{const} \mbox{\hyperlink{struct_f_t___service_desc_rec__}{FT\_ServiceDescRec}}  class\_[] =                                \(\backslash\)}
+\DoxyCodeLine{  \{                                                                         \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_1, serv\_data\_1 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_2, serv\_data\_2 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_3, serv\_data\_3 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_4, serv\_data\_4 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_5, serv\_data\_5 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ \mbox{\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}, \mbox{\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}} \}                                                          \(\backslash\)}
+\DoxyCodeLine{  \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ftserv_8h_a3dadbbc1c50a02d5c976cc0d61249e97}\label{ftserv_8h_a3dadbbc1c50a02d5c976cc0d61249e97}} 
+\index{ftserv.h@{ftserv.h}!FT\_DEFINE\_SERVICEDESCREC6@{FT\_DEFINE\_SERVICEDESCREC6}}
+\index{FT\_DEFINE\_SERVICEDESCREC6@{FT\_DEFINE\_SERVICEDESCREC6}!ftserv.h@{ftserv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICEDESCREC6}{FT\_DEFINE\_SERVICEDESCREC6}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+D\+E\+S\+C\+R\+E\+C6(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{serv\+\_\+id\+\_\+1,  }\item[{}]{serv\+\_\+data\+\_\+1,  }\item[{}]{serv\+\_\+id\+\_\+2,  }\item[{}]{serv\+\_\+data\+\_\+2,  }\item[{}]{serv\+\_\+id\+\_\+3,  }\item[{}]{serv\+\_\+data\+\_\+3,  }\item[{}]{serv\+\_\+id\+\_\+4,  }\item[{}]{serv\+\_\+data\+\_\+4,  }\item[{}]{serv\+\_\+id\+\_\+5,  }\item[{}]{serv\+\_\+data\+\_\+5,  }\item[{}]{serv\+\_\+id\+\_\+6,  }\item[{}]{serv\+\_\+data\+\_\+6 }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{static} \textcolor{keyword}{const} \mbox{\hyperlink{struct_f_t___service_desc_rec__}{FT\_ServiceDescRec}}  class\_[] =                                \(\backslash\)}
+\DoxyCodeLine{  \{                                                                         \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_1, serv\_data\_1 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_2, serv\_data\_2 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_3, serv\_data\_3 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_4, serv\_data\_4 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_5, serv\_data\_5 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_6, serv\_data\_6 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ \mbox{\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}, \mbox{\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}} \}                                                          \(\backslash\)}
+\DoxyCodeLine{  \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ftserv_8h_ad194becd654ec5d0b535078455e23888}\label{ftserv_8h_ad194becd654ec5d0b535078455e23888}} 
+\index{ftserv.h@{ftserv.h}!FT\_DEFINE\_SERVICEDESCREC7@{FT\_DEFINE\_SERVICEDESCREC7}}
+\index{FT\_DEFINE\_SERVICEDESCREC7@{FT\_DEFINE\_SERVICEDESCREC7}!ftserv.h@{ftserv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICEDESCREC7}{FT\_DEFINE\_SERVICEDESCREC7}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+D\+E\+S\+C\+R\+E\+C7(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{serv\+\_\+id\+\_\+1,  }\item[{}]{serv\+\_\+data\+\_\+1,  }\item[{}]{serv\+\_\+id\+\_\+2,  }\item[{}]{serv\+\_\+data\+\_\+2,  }\item[{}]{serv\+\_\+id\+\_\+3,  }\item[{}]{serv\+\_\+data\+\_\+3,  }\item[{}]{serv\+\_\+id\+\_\+4,  }\item[{}]{serv\+\_\+data\+\_\+4,  }\item[{}]{serv\+\_\+id\+\_\+5,  }\item[{}]{serv\+\_\+data\+\_\+5,  }\item[{}]{serv\+\_\+id\+\_\+6,  }\item[{}]{serv\+\_\+data\+\_\+6,  }\item[{}]{serv\+\_\+id\+\_\+7,  }\item[{}]{serv\+\_\+data\+\_\+7 }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{static} \textcolor{keyword}{const} \mbox{\hyperlink{struct_f_t___service_desc_rec__}{FT\_ServiceDescRec}}  class\_[] =                                \(\backslash\)}
+\DoxyCodeLine{  \{                                                                         \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_1, serv\_data\_1 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_2, serv\_data\_2 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_3, serv\_data\_3 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_4, serv\_data\_4 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_5, serv\_data\_5 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_6, serv\_data\_6 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_7, serv\_data\_7 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ \mbox{\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}, \mbox{\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}} \}                                                          \(\backslash\)}
+\DoxyCodeLine{  \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ftserv_8h_af3c3003dd22f62f6908b4549e4da4c7e}\label{ftserv_8h_af3c3003dd22f62f6908b4549e4da4c7e}} 
+\index{ftserv.h@{ftserv.h}!FT\_DEFINE\_SERVICEDESCREC8@{FT\_DEFINE\_SERVICEDESCREC8}}
+\index{FT\_DEFINE\_SERVICEDESCREC8@{FT\_DEFINE\_SERVICEDESCREC8}!ftserv.h@{ftserv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICEDESCREC8}{FT\_DEFINE\_SERVICEDESCREC8}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+D\+E\+S\+C\+R\+E\+C8(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{serv\+\_\+id\+\_\+1,  }\item[{}]{serv\+\_\+data\+\_\+1,  }\item[{}]{serv\+\_\+id\+\_\+2,  }\item[{}]{serv\+\_\+data\+\_\+2,  }\item[{}]{serv\+\_\+id\+\_\+3,  }\item[{}]{serv\+\_\+data\+\_\+3,  }\item[{}]{serv\+\_\+id\+\_\+4,  }\item[{}]{serv\+\_\+data\+\_\+4,  }\item[{}]{serv\+\_\+id\+\_\+5,  }\item[{}]{serv\+\_\+data\+\_\+5,  }\item[{}]{serv\+\_\+id\+\_\+6,  }\item[{}]{serv\+\_\+data\+\_\+6,  }\item[{}]{serv\+\_\+id\+\_\+7,  }\item[{}]{serv\+\_\+data\+\_\+7,  }\item[{}]{serv\+\_\+id\+\_\+8,  }\item[{}]{serv\+\_\+data\+\_\+8 }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{static} \textcolor{keyword}{const} \mbox{\hyperlink{struct_f_t___service_desc_rec__}{FT\_ServiceDescRec}}  class\_[] =                                \(\backslash\)}
+\DoxyCodeLine{  \{                                                                         \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_1, serv\_data\_1 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_2, serv\_data\_2 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_3, serv\_data\_3 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_4, serv\_data\_4 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_5, serv\_data\_5 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_6, serv\_data\_6 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_7, serv\_data\_7 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_8, serv\_data\_8 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ \mbox{\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}, \mbox{\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}} \}                                                          \(\backslash\)}
+\DoxyCodeLine{  \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ftserv_8h_a5b37313550bbe7ed963671df04e050f0}\label{ftserv_8h_a5b37313550bbe7ed963671df04e050f0}} 
+\index{ftserv.h@{ftserv.h}!FT\_DEFINE\_SERVICEDESCREC9@{FT\_DEFINE\_SERVICEDESCREC9}}
+\index{FT\_DEFINE\_SERVICEDESCREC9@{FT\_DEFINE\_SERVICEDESCREC9}!ftserv.h@{ftserv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICEDESCREC9}{FT\_DEFINE\_SERVICEDESCREC9}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+D\+E\+S\+C\+R\+E\+C9(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{serv\+\_\+id\+\_\+1,  }\item[{}]{serv\+\_\+data\+\_\+1,  }\item[{}]{serv\+\_\+id\+\_\+2,  }\item[{}]{serv\+\_\+data\+\_\+2,  }\item[{}]{serv\+\_\+id\+\_\+3,  }\item[{}]{serv\+\_\+data\+\_\+3,  }\item[{}]{serv\+\_\+id\+\_\+4,  }\item[{}]{serv\+\_\+data\+\_\+4,  }\item[{}]{serv\+\_\+id\+\_\+5,  }\item[{}]{serv\+\_\+data\+\_\+5,  }\item[{}]{serv\+\_\+id\+\_\+6,  }\item[{}]{serv\+\_\+data\+\_\+6,  }\item[{}]{serv\+\_\+id\+\_\+7,  }\item[{}]{serv\+\_\+data\+\_\+7,  }\item[{}]{serv\+\_\+id\+\_\+8,  }\item[{}]{serv\+\_\+data\+\_\+8,  }\item[{}]{serv\+\_\+id\+\_\+9,  }\item[{}]{serv\+\_\+data\+\_\+9 }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{static} \textcolor{keyword}{const} \mbox{\hyperlink{struct_f_t___service_desc_rec__}{FT\_ServiceDescRec}}  class\_[] =                                \(\backslash\)}
+\DoxyCodeLine{  \{                                                                         \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_1, serv\_data\_1 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_2, serv\_data\_2 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_3, serv\_data\_3 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_4, serv\_data\_4 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_5, serv\_data\_5 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_6, serv\_data\_6 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_7, serv\_data\_7 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_8, serv\_data\_8 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ serv\_id\_9, serv\_data\_9 \},                                             \(\backslash\)}
+\DoxyCodeLine{    \{ \mbox{\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}, \mbox{\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}} \}                                                          \(\backslash\)}
+\DoxyCodeLine{  \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ftserv_8h_aa973049b6fb899357e6f4561af8223f0}\label{ftserv_8h_aa973049b6fb899357e6f4561af8223f0}} 
+\index{ftserv.h@{ftserv.h}!FT\_FACE\_FIND\_GLOBAL\_SERVICE@{FT\_FACE\_FIND\_GLOBAL\_SERVICE}}
+\index{FT\_FACE\_FIND\_GLOBAL\_SERVICE@{FT\_FACE\_FIND\_GLOBAL\_SERVICE}!ftserv.h@{ftserv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_FACE\_FIND\_GLOBAL\_SERVICE}{FT\_FACE\_FIND\_GLOBAL\_SERVICE}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+F\+A\+C\+E\+\_\+\+F\+I\+N\+D\+\_\+\+G\+L\+O\+B\+A\+L\+\_\+\+S\+E\+R\+V\+I\+CE(\begin{DoxyParamCaption}\item[{}]{face,  }\item[{}]{ptr,  }\item[{}]{id }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  FT\_BEGIN\_STMNT                                                      \(\backslash\)}
+\DoxyCodeLine{    FT\_Module   module = \mbox{\hyperlink{ftobjs_8h_ad1095b4efedd489940fc21f655e9256b}{FT\_MODULE}}( \mbox{\hyperlink{ftobjs_8h_a21690c7a26f879786d49726d558d29ab}{FT\_FACE}}( face )-\/>driver );        \(\backslash\)}
+\DoxyCodeLine{    FT\_Pointer  \_tmp\_;                                                \(\backslash\)}
+\DoxyCodeLine{                                                                      \(\backslash\)}
+\DoxyCodeLine{                                                                      \(\backslash\)}
+\DoxyCodeLine{    \_tmp\_ = \mbox{\hyperlink{ftobjs_8h_a823288742f6908c24ca5caa58ca15500}{ft\_module\_get\_service}}( module, FT\_SERVICE\_ID\_ \#\# \textcolor{keywordtype}{id}, 1 ); \(\backslash\)}
+\DoxyCodeLine{    ptr   = \_tmp\_;                                                    \(\backslash\)}
+\DoxyCodeLine{  FT\_END\_STMNT}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ftserv_8h_ad47fb84d86812f286123ea4e39c466ed}\label{ftserv_8h_ad47fb84d86812f286123ea4e39c466ed}} 
+\index{ftserv.h@{ftserv.h}!FT\_FACE\_FIND\_SERVICE@{FT\_FACE\_FIND\_SERVICE}}
+\index{FT\_FACE\_FIND\_SERVICE@{FT\_FACE\_FIND\_SERVICE}!ftserv.h@{ftserv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_FACE\_FIND\_SERVICE}{FT\_FACE\_FIND\_SERVICE}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+F\+A\+C\+E\+\_\+\+F\+I\+N\+D\+\_\+\+S\+E\+R\+V\+I\+CE(\begin{DoxyParamCaption}\item[{}]{face,  }\item[{}]{ptr,  }\item[{}]{id }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  FT\_BEGIN\_STMNT                                                            \(\backslash\)}
+\DoxyCodeLine{    FT\_Module   module = \mbox{\hyperlink{ftobjs_8h_ad1095b4efedd489940fc21f655e9256b}{FT\_MODULE}}( \mbox{\hyperlink{ftobjs_8h_a21690c7a26f879786d49726d558d29ab}{FT\_FACE}}( face )-\/>driver );              \(\backslash\)}
+\DoxyCodeLine{    FT\_Pointer  \_tmp\_  = \mbox{\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}};                                              \(\backslash\)}
+\DoxyCodeLine{                                                                            \(\backslash\)}
+\DoxyCodeLine{    if ( module-\/>clazz-\/>get\_interface )                                     \(\backslash\)}
+\DoxyCodeLine{      \_tmp\_ = module-\/>clazz-\/>get\_interface( module, FT\_SERVICE\_ID\_ \#\# \textcolor{keywordtype}{id} ); \(\backslash\)}
+\DoxyCodeLine{    ptr = \_tmp\_;                                                            \(\backslash\)}
+\DoxyCodeLine{  FT\_END\_STMNT}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ftserv_8h_a39b85562363751f35afcc821fcb320fc}\label{ftserv_8h_a39b85562363751f35afcc821fcb320fc}} 
+\index{ftserv.h@{ftserv.h}!FT\_FACE\_LOOKUP\_SERVICE@{FT\_FACE\_LOOKUP\_SERVICE}}
+\index{FT\_FACE\_LOOKUP\_SERVICE@{FT\_FACE\_LOOKUP\_SERVICE}!ftserv.h@{ftserv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_FACE\_LOOKUP\_SERVICE}{FT\_FACE\_LOOKUP\_SERVICE}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+F\+A\+C\+E\+\_\+\+L\+O\+O\+K\+U\+P\+\_\+\+S\+E\+R\+V\+I\+CE(\begin{DoxyParamCaption}\item[{}]{face,  }\item[{}]{ptr,  }\item[{}]{id }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  FT\_BEGIN\_STMNT                                               \(\backslash\)}
+\DoxyCodeLine{    FT\_Pointer  svc;                                           \(\backslash\)}
+\DoxyCodeLine{                                                               \(\backslash\)}
+\DoxyCodeLine{                                                               \(\backslash\)}
+\DoxyCodeLine{    svc = \mbox{\hyperlink{ftobjs_8h_a21690c7a26f879786d49726d558d29ab}{FT\_FACE}}( face )-\/>internal-\/>services. service\_ \#\# id; \(\backslash\)}
+\DoxyCodeLine{    if ( svc == \mbox{\hyperlink{ftserv_8h_af952892475f447a16744d7d5bc085756}{FT\_SERVICE\_UNAVAILABLE}} )                       \(\backslash\)}
+\DoxyCodeLine{      svc = \mbox{\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}};                                              \(\backslash\)}
+\DoxyCodeLine{    else \textcolor{keywordflow}{if} ( svc == \mbox{\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}} )                                    \(\backslash\)}
+\DoxyCodeLine{    \{                                                          \(\backslash\)}
+\DoxyCodeLine{      FT\_FACE\_FIND\_SERVICE( face, svc, \textcolor{keywordtype}{id} );                   \mbox{\hyperlink{ftobjs_8h_a21690c7a26f879786d49726d558d29ab}{\(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{ftobjs_8h_a21690c7a26f879786d49726d558d29ab}{                                                               \(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{ftobjs_8h_a21690c7a26f879786d49726d558d29ab}{      FT\_FACE}}( face )-\/>internal-\/>services. service\_ \#\# \textcolor{keywordtype}{id} =    \(\backslash\)}
+\DoxyCodeLine{        (\mbox{\hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{FT\_Pointer}})( svc != \mbox{\hyperlink{ftobjs_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}} ? svc                        \(\backslash\)}
+\DoxyCodeLine{                                  : \mbox{\hyperlink{ftserv_8h_af952892475f447a16744d7d5bc085756}{FT\_SERVICE\_UNAVAILABLE}} );  \(\backslash\)}
+\DoxyCodeLine{    \}                                                          \(\backslash\)}
+\DoxyCodeLine{    ptr = svc;                                                 \(\backslash\)}
+\DoxyCodeLine{  FT\_END\_STMNT}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{ftserv_8h_af952892475f447a16744d7d5bc085756}\label{ftserv_8h_af952892475f447a16744d7d5bc085756}} 
+\index{ftserv.h@{ftserv.h}!FT\_SERVICE\_UNAVAILABLE@{FT\_SERVICE\_UNAVAILABLE}}
+\index{FT\_SERVICE\_UNAVAILABLE@{FT\_SERVICE\_UNAVAILABLE}!ftserv.h@{ftserv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_SERVICE\_UNAVAILABLE}{FT\_SERVICE\_UNAVAILABLE}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE~((\mbox{\hyperlink{fttypes_8h_a00f9e6a0ddd7bc55f79b2f4b5b867266}{F\+T\+\_\+\+Pointer}})$\sim$(\mbox{\hyperlink{fttypes_8h_a2469cb02129d36e468be22f7a8bf5b33}{F\+T\+\_\+\+Ptr\+Dist}})1)}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{ftserv_8h_ae0ee6eda6f109406c92735fde1a7b912}\label{ftserv_8h_ae0ee6eda6f109406c92735fde1a7b912}} 
+\index{ftserv.h@{ftserv.h}!FT\_ServiceCache@{FT\_ServiceCache}}
+\index{FT\_ServiceCache@{FT\_ServiceCache}!ftserv.h@{ftserv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_ServiceCache}{FT\_ServiceCache}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_f_t___service_cache_rec__}{F\+T\+\_\+\+Service\+Cache\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{ftserv_8h_ae0ee6eda6f109406c92735fde1a7b912}{F\+T\+\_\+\+Service\+Cache}}}
+
+\mbox{\Hypertarget{ftserv_8h_a66d5ca8edd81f695c4018446f80e5be3}\label{ftserv_8h_a66d5ca8edd81f695c4018446f80e5be3}} 
+\index{ftserv.h@{ftserv.h}!FT\_ServiceCacheRec@{FT\_ServiceCacheRec}}
+\index{FT\_ServiceCacheRec@{FT\_ServiceCacheRec}!ftserv.h@{ftserv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_ServiceCacheRec}{FT\_ServiceCacheRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_f_t___service_cache_rec__}{F\+T\+\_\+\+Service\+Cache\+Rec\+\_\+}} \mbox{\hyperlink{ftserv_8h_a66d5ca8edd81f695c4018446f80e5be3}{F\+T\+\_\+\+Service\+Cache\+Rec}}}
+
+\mbox{\Hypertarget{ftserv_8h_ae9ffc63fa7afa00dd1d69acc5c0f6d71}\label{ftserv_8h_ae9ffc63fa7afa00dd1d69acc5c0f6d71}} 
+\index{ftserv.h@{ftserv.h}!FT\_ServiceDesc@{FT\_ServiceDesc}}
+\index{FT\_ServiceDesc@{FT\_ServiceDesc}!ftserv.h@{ftserv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_ServiceDesc}{FT\_ServiceDesc}}
+{\footnotesize\ttfamily typedef const \mbox{\hyperlink{ftserv_8h_a76173d362173dd707e5b0672a2188a1d}{F\+T\+\_\+\+Service\+Desc\+Rec}}$\ast$ \mbox{\hyperlink{ftserv_8h_ae9ffc63fa7afa00dd1d69acc5c0f6d71}{F\+T\+\_\+\+Service\+Desc}}}
+
+\mbox{\Hypertarget{ftserv_8h_a76173d362173dd707e5b0672a2188a1d}\label{ftserv_8h_a76173d362173dd707e5b0672a2188a1d}} 
+\index{ftserv.h@{ftserv.h}!FT\_ServiceDescRec@{FT\_ServiceDescRec}}
+\index{FT\_ServiceDescRec@{FT\_ServiceDescRec}!ftserv.h@{ftserv.h}}
+\doxysubsubsection{\texorpdfstring{FT\_ServiceDescRec}{FT\_ServiceDescRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_f_t___service_desc_rec__}{F\+T\+\_\+\+Service\+Desc\+Rec\+\_\+}} \mbox{\hyperlink{ftserv_8h_a76173d362173dd707e5b0672a2188a1d}{F\+T\+\_\+\+Service\+Desc\+Rec}}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{ftserv_8h_aec9a5aefeef799ff91ad8adf228242ab}\label{ftserv_8h_aec9a5aefeef799ff91ad8adf228242ab}} 
+\index{ftserv.h@{ftserv.h}!ft\_service\_list\_lookup@{ft\_service\_list\_lookup}}
+\index{ft\_service\_list\_lookup@{ft\_service\_list\_lookup}!ftserv.h@{ftserv.h}}
+\doxysubsubsection{\texorpdfstring{ft\_service\_list\_lookup()}{ft\_service\_list\_lookup()}}
+{\footnotesize\ttfamily ft\+\_\+service\+\_\+list\+\_\+lookup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ftserv_8h_ae9ffc63fa7afa00dd1d69acc5c0f6d71}{F\+T\+\_\+\+Service\+Desc}}}]{service\+\_\+descriptors,  }\item[{const char $\ast$}]{service\+\_\+id }\end{DoxyParamCaption})}
+

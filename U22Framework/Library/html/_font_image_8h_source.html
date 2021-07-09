@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: Graphics/FontImage.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_64f7452aef2cdad98d34a70f5ea329e2.html">Graphics</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">FontImage.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_font_image_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef U22_GRAPHICS_FONT_IMAGE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define U22_GRAPHICS_FONT_IMAGE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../Common/Common.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceu22_1_1graphics.html">u22::graphics</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classu22_1_1graphics_1_1_font_image.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classu22_1_1graphics_1_1_font_image.html">FontImage</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classu22_1_1graphics_1_1_font_image.html#a33d4bcc04c7cf6d091d93023f9c36ed3">   14</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classu22_1_1graphics_1_1_font_image.html#a33d4bcc04c7cf6d091d93023f9c36ed3">offset_x</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classu22_1_1graphics_1_1_font_image.html#a3d7c5216b2c01d4572f0b932bdc6ecdd">   16</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classu22_1_1graphics_1_1_font_image.html#a3d7c5216b2c01d4572f0b932bdc6ecdd">offset_y</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classu22_1_1graphics_1_1_font_image.html#a8fe1c7f3159c43482f130701cc7b4791">   18</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classu22_1_1graphics_1_1_font_image.html#a8fe1c7f3159c43482f130701cc7b4791">width</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classu22_1_1graphics_1_1_font_image.html#a45b958101be716b6e5b70e9dbee91c1a">   20</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classu22_1_1graphics_1_1_font_image.html#a45b958101be716b6e5b70e9dbee91c1a">height</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classu22_1_1graphics_1_1_font_image.html#a1918aa9ea75661cbeec4b50467ebd52d">   22</a></span>&#160;    <a class="code" href="group__gtc__type__precision.html#ga93adf6dd9803408f3e3aaf9dedda352b">uint8_t</a>* <a class="code" href="classu22_1_1graphics_1_1_font_image.html#a1918aa9ea75661cbeec4b50467ebd52d">pixels</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classu22_1_1graphics_1_1_font_image.html#a63feed8dfb008963fa3ba8b128523eda">FontImage</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classu22_1_1graphics_1_1_font_image.html#a8c851e87b18e2419a873dd8e0a81bdd9">~FontImage</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif // !U22_GRAPHICS_FONT_IMAGE_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="anamespaceu22_1_1graphics_html"><div class="ttname"><a href="namespaceu22_1_1graphics.html">u22::graphics</a></div><div class="ttdef"><b>Definition:</b> Buffer.h:8</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_font_image_html_a1918aa9ea75661cbeec4b50467ebd52d"><div class="ttname"><a href="classu22_1_1graphics_1_1_font_image.html#a1918aa9ea75661cbeec4b50467ebd52d">u22::graphics::FontImage::pixels</a></div><div class="ttdeci">uint8_t * pixels</div><div class="ttdoc">データ</div><div class="ttdef"><b>Definition:</b> FontImage.h:22</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_font_image_html_a8c851e87b18e2419a873dd8e0a81bdd9"><div class="ttname"><a href="classu22_1_1graphics_1_1_font_image.html#a8c851e87b18e2419a873dd8e0a81bdd9">u22::graphics::FontImage::~FontImage</a></div><div class="ttdeci">~FontImage()</div><div class="ttdoc">デストラクタ</div><div class="ttdef"><b>Definition:</b> FontImage.cpp:12</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_font_image_html"><div class="ttname"><a href="classu22_1_1graphics_1_1_font_image.html">u22::graphics::FontImage</a></div><div class="ttdef"><b>Definition:</b> FontImage.h:11</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_font_image_html_a3d7c5216b2c01d4572f0b932bdc6ecdd"><div class="ttname"><a href="classu22_1_1graphics_1_1_font_image.html#a3d7c5216b2c01d4572f0b932bdc6ecdd">u22::graphics::FontImage::offset_y</a></div><div class="ttdeci">int offset_y</div><div class="ttdoc">オフセット</div><div class="ttdef"><b>Definition:</b> FontImage.h:16</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_font_image_html_a45b958101be716b6e5b70e9dbee91c1a"><div class="ttname"><a href="classu22_1_1graphics_1_1_font_image.html#a45b958101be716b6e5b70e9dbee91c1a">u22::graphics::FontImage::height</a></div><div class="ttdeci">int height</div><div class="ttdoc">サイズ</div><div class="ttdef"><b>Definition:</b> FontImage.h:20</div></div>
+<div class="ttc" id="agroup__gtc__type__precision_html_ga93adf6dd9803408f3e3aaf9dedda352b"><div class="ttname"><a href="group__gtc__type__precision.html#ga93adf6dd9803408f3e3aaf9dedda352b">glm::uint8_t</a></div><div class="ttdeci">uint8 uint8_t</div><div class="ttdef"><b>Definition:</b> fwd.hpp:101</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_font_image_html_a63feed8dfb008963fa3ba8b128523eda"><div class="ttname"><a href="classu22_1_1graphics_1_1_font_image.html#a63feed8dfb008963fa3ba8b128523eda">u22::graphics::FontImage::FontImage</a></div><div class="ttdeci">FontImage()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> FontImage.cpp:4</div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_font_image_html_a33d4bcc04c7cf6d091d93023f9c36ed3"><div class="ttname"><a href="classu22_1_1graphics_1_1_font_image.html#a33d4bcc04c7cf6d091d93023f9c36ed3">u22::graphics::FontImage::offset_x</a></div><div class="ttdeci">int offset_x</div><div class="ttdoc">オフセット</div><div class="ttdef"><b>Definition:</b> FontImage.h:14</div></div>
+<div class="ttc" id="a_font_image_8h_html"><div class="ttname"><a href="_font_image_8h.html">FontImage.h</a></div></div>
+<div class="ttc" id="aclassu22_1_1graphics_1_1_font_image_html_a8fe1c7f3159c43482f130701cc7b4791"><div class="ttname"><a href="classu22_1_1graphics_1_1_font_image.html#a8fe1c7f3159c43482f130701cc7b4791">u22::graphics::FontImage::width</a></div><div class="ttdeci">int width</div><div class="ttdoc">サイズ</div><div class="ttdef"><b>Definition:</b> FontImage.h:18</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

@@ -11,6 +11,7 @@ int main(int argc, char* argv[]) {
     info.window_height = 768;
     info.window_position_x = 40;
     info.window_position_y = 40;
+    info.full_screen_mode = false;
 
     framework->Setup(app, &info);
     int result = framework->Run();

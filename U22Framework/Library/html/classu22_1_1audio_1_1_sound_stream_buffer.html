@@ -1,0 +1,521 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: u22::audio::SoundStreamBuffer クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceu22.html">u22</a></li><li class="navelem"><a class="el" href="namespaceu22_1_1audio.html">audio</a></li><li class="navelem"><a class="el" href="classu22_1_1audio_1_1_sound_stream_buffer.html">SoundStreamBuffer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="classu22_1_1audio_1_1_sound_stream_buffer-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">u22::audio::SoundStreamBuffer クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_sound_stream_buffer_8h_source.html">SoundStreamBuffer.h</a>&gt;</code></p>
+<div class="dynheader">
+u22::audio::SoundStreamBuffer の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classu22_1_1audio_1_1_sound_stream_buffer__inherit__graph.png" border="0" usemap="#au22_1_1audio_1_1_sound_stream_buffer_inherit__map" alt="Inheritance graph"/></div>
+<map name="u22_1_1audio_1_1_sound_stream_buffer_inherit__map" id="u22_1_1audio_1_1_sound_stream_buffer_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,80,208,107"/>
+<area shape="rect" href="classu22_1_1audio_1_1_i_sound_buffer.html" title=" " alt="" coords="25,5,188,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+u22::audio::SoundStreamBuffer 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classu22_1_1audio_1_1_sound_stream_buffer__coll__graph.png" border="0" usemap="#au22_1_1audio_1_1_sound_stream_buffer_coll__map" alt="Collaboration graph"/></div>
+<map name="u22_1_1audio_1_1_sound_stream_buffer_coll__map" id="u22_1_1audio_1_1_sound_stream_buffer_coll__map">
+<area shape="rect" title=" " alt="" coords="5,80,208,107"/>
+<area shape="rect" href="classu22_1_1audio_1_1_i_sound_buffer.html" title=" " alt="" coords="25,5,188,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ae1054282b963f4c2c465cd806acd12bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu22_1_1audio_1_1_sound_stream_buffer.html#ae1054282b963f4c2c465cd806acd12bf">SoundStreamBuffer</a> ()</td></tr>
+<tr class="memdesc:ae1054282b963f4c2c465cd806acd12bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classu22_1_1audio_1_1_sound_stream_buffer.html#ae1054282b963f4c2c465cd806acd12bf">[詳解]</a><br /></td></tr>
+<tr class="separator:ae1054282b963f4c2c465cd806acd12bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a873a7b5fd688690014042db17207b30f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu22_1_1audio_1_1_sound_stream_buffer.html#a873a7b5fd688690014042db17207b30f">~SoundStreamBuffer</a> ()</td></tr>
+<tr class="memdesc:a873a7b5fd688690014042db17207b30f"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <a href="classu22_1_1audio_1_1_sound_stream_buffer.html#a873a7b5fd688690014042db17207b30f">[詳解]</a><br /></td></tr>
+<tr class="separator:a873a7b5fd688690014042db17207b30f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf3d1b870293e41f478878d58a01333c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu22_1_1audio_1_1_sound_stream_buffer.html#adf3d1b870293e41f478878d58a01333c">SetVolume</a> (float volume) override</td></tr>
+<tr class="memdesc:adf3d1b870293e41f478878d58a01333c"><td class="mdescLeft">&#160;</td><td class="mdescRight">セッター  <a href="classu22_1_1audio_1_1_sound_stream_buffer.html#adf3d1b870293e41f478878d58a01333c">[詳解]</a><br /></td></tr>
+<tr class="separator:adf3d1b870293e41f478878d58a01333c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed9285edf0b6e87e35fc73b8acad566d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu22_1_1audio_1_1_sound_stream_buffer.html#aed9285edf0b6e87e35fc73b8acad566d">SetLoop</a> (bool loop) override</td></tr>
+<tr class="memdesc:aed9285edf0b6e87e35fc73b8acad566d"><td class="mdescLeft">&#160;</td><td class="mdescRight">セッター  <a href="classu22_1_1audio_1_1_sound_stream_buffer.html#aed9285edf0b6e87e35fc73b8acad566d">[詳解]</a><br /></td></tr>
+<tr class="separator:aed9285edf0b6e87e35fc73b8acad566d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5f7b67278f8eb423cf4dc61587785b6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu22_1_1audio_1_1_sound_stream_buffer.html#ac5f7b67278f8eb423cf4dc61587785b6">IsEnd</a> (void) const override</td></tr>
+<tr class="memdesc:ac5f7b67278f8eb423cf4dc61587785b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">判定  <a href="classu22_1_1audio_1_1_sound_stream_buffer.html#ac5f7b67278f8eb423cf4dc61587785b6">[詳解]</a><br /></td></tr>
+<tr class="separator:ac5f7b67278f8eb423cf4dc61587785b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0829da4b04fa8d57dd871b0048fb73c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu22_1_1audio_1_1_sound_stream_buffer.html#af0829da4b04fa8d57dd871b0048fb73c">Load</a> (const char *path) override</td></tr>
+<tr class="memdesc:af0829da4b04fa8d57dd871b0048fb73c"><td class="mdescLeft">&#160;</td><td class="mdescRight">読み込み  <a href="classu22_1_1audio_1_1_sound_stream_buffer.html#af0829da4b04fa8d57dd871b0048fb73c">[詳解]</a><br /></td></tr>
+<tr class="separator:af0829da4b04fa8d57dd871b0048fb73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05f4fe8de65589f426371ead75f902e0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu22_1_1audio_1_1_sound_stream_buffer.html#a05f4fe8de65589f426371ead75f902e0">Update</a> (void) override</td></tr>
+<tr class="memdesc:a05f4fe8de65589f426371ead75f902e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新  <a href="classu22_1_1audio_1_1_sound_stream_buffer.html#a05f4fe8de65589f426371ead75f902e0">[詳解]</a><br /></td></tr>
+<tr class="separator:a05f4fe8de65589f426371ead75f902e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3689e9725272b3c1bcb8dfbbb920ddf1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu22_1_1audio_1_1_sound_stream_buffer.html#a3689e9725272b3c1bcb8dfbbb920ddf1">Release</a> (void) override</td></tr>
+<tr class="memdesc:a3689e9725272b3c1bcb8dfbbb920ddf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">解放  <a href="classu22_1_1audio_1_1_sound_stream_buffer.html#a3689e9725272b3c1bcb8dfbbb920ddf1">[詳解]</a><br /></td></tr>
+<tr class="separator:a3689e9725272b3c1bcb8dfbbb920ddf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac61078b129964c0fb70ec442945104c1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu22_1_1audio_1_1_sound_stream_buffer.html#ac61078b129964c0fb70ec442945104c1">Play</a> (void) const override</td></tr>
+<tr class="memdesc:ac61078b129964c0fb70ec442945104c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">再生  <a href="classu22_1_1audio_1_1_sound_stream_buffer.html#ac61078b129964c0fb70ec442945104c1">[詳解]</a><br /></td></tr>
+<tr class="separator:ac61078b129964c0fb70ec442945104c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a896a44f57544acac33cc19cb3fa198ae"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu22_1_1audio_1_1_sound_stream_buffer.html#a896a44f57544acac33cc19cb3fa198ae">Stop</a> (void) const override</td></tr>
+<tr class="memdesc:a896a44f57544acac33cc19cb3fa198ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止  <a href="classu22_1_1audio_1_1_sound_stream_buffer.html#a896a44f57544acac33cc19cb3fa198ae">[詳解]</a><br /></td></tr>
+<tr class="separator:a896a44f57544acac33cc19cb3fa198ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classu22_1_1audio_1_1_i_sound_buffer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classu22_1_1audio_1_1_i_sound_buffer')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classu22_1_1audio_1_1_i_sound_buffer.html">u22::audio::ISoundBuffer</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a7423ffc5e174d908bfac8580975ac1a4 inherit pub_methods_classu22_1_1audio_1_1_i_sound_buffer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu22_1_1audio_1_1_i_sound_buffer.html#a7423ffc5e174d908bfac8580975ac1a4">ISoundBuffer</a> ()=default</td></tr>
+<tr class="memdesc:a7423ffc5e174d908bfac8580975ac1a4 inherit pub_methods_classu22_1_1audio_1_1_i_sound_buffer"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <a href="classu22_1_1audio_1_1_i_sound_buffer.html#a7423ffc5e174d908bfac8580975ac1a4">[詳解]</a><br /></td></tr>
+<tr class="separator:a7423ffc5e174d908bfac8580975ac1a4 inherit pub_methods_classu22_1_1audio_1_1_i_sound_buffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47c5ccc1f9b3030c05de7d51125f44e3 inherit pub_methods_classu22_1_1audio_1_1_i_sound_buffer"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classu22_1_1audio_1_1_i_sound_buffer.html#a47c5ccc1f9b3030c05de7d51125f44e3">~ISoundBuffer</a> ()=default</td></tr>
+<tr class="memdesc:a47c5ccc1f9b3030c05de7d51125f44e3 inherit pub_methods_classu22_1_1audio_1_1_i_sound_buffer"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <a href="classu22_1_1audio_1_1_i_sound_buffer.html#a47c5ccc1f9b3030c05de7d51125f44e3">[詳解]</a><br /></td></tr>
+<tr class="separator:a47c5ccc1f9b3030c05de7d51125f44e3 inherit pub_methods_classu22_1_1audio_1_1_i_sound_buffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="ae1054282b963f4c2c465cd806acd12bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1054282b963f4c2c465cd806acd12bf">&#9670;&nbsp;</a></span>SoundStreamBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u22::audio::SoundStreamBuffer::SoundStreamBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+
+</div>
+</div>
+<a id="a873a7b5fd688690014042db17207b30f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a873a7b5fd688690014042db17207b30f">&#9670;&nbsp;</a></span>~SoundStreamBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">u22::audio::SoundStreamBuffer::~SoundStreamBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>デストラクタ </p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="ac5f7b67278f8eb423cf4dc61587785b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5f7b67278f8eb423cf4dc61587785b6">&#9670;&nbsp;</a></span>IsEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool u22::audio::SoundStreamBuffer::IsEnd </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>判定 </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+<p><a class="el" href="classu22_1_1audio_1_1_i_sound_buffer.html#aff6f9191fc9dda512d021f6ed5ec89e3">u22::audio::ISoundBuffer</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="af0829da4b04fa8d57dd871b0048fb73c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0829da4b04fa8d57dd871b0048fb73c">&#9670;&nbsp;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool u22::audio::SoundStreamBuffer::Load </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>読み込み </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>パス</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+<p><a class="el" href="classu22_1_1audio_1_1_i_sound_buffer.html#a9a59d2366b492d63c24d2ec37fef9ce4">u22::audio::ISoundBuffer</a>を実装しています。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classu22_1_1audio_1_1_sound_stream_buffer_af0829da4b04fa8d57dd871b0048fb73c_cgraph.png" border="0" usemap="#aclassu22_1_1audio_1_1_sound_stream_buffer_af0829da4b04fa8d57dd871b0048fb73c_cgraph" alt=""/></div>
+<map name="classu22_1_1audio_1_1_sound_stream_buffer_af0829da4b04fa8d57dd871b0048fb73c_cgraph" id="classu22_1_1audio_1_1_sound_stream_buffer_af0829da4b04fa8d57dd871b0048fb73c_cgraph">
+<area shape="rect" title="読み込み" alt="" coords="5,74,208,115"/>
+<area shape="rect" href="al_8h.html#af220f665740bf8a54797e210cf551dfe" title=" " alt="" coords="279,5,383,32"/>
+<area shape="rect" href="al_8h.html#af6239bc4ba2faedeb54a5ffd5917b405" title=" " alt="" coords="256,56,407,83"/>
+<area shape="rect" href="namespaceglm_1_1detail.html#acd5305bbd1c5417b1eb770faf8229d14" title=" " alt="" coords="268,107,395,133"/>
+<area shape="rect" href="sndfile_8h.html#a61bb810d2581bc860cd8884e22d6c7d2" title=" " alt="" coords="298,157,365,184"/>
+<area shape="rect" href="stb__sprintf_8h.html#a5921ee084282c796114454863ebdb987" title=" " alt="" coords="455,107,517,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac61078b129964c0fb70ec442945104c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac61078b129964c0fb70ec442945104c1">&#9670;&nbsp;</a></span>Play()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool u22::audio::SoundStreamBuffer::Play </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>再生 </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+<p><a class="el" href="classu22_1_1audio_1_1_i_sound_buffer.html#a600077f00974f45f2c3125ac99128633">u22::audio::ISoundBuffer</a>を実装しています。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classu22_1_1audio_1_1_sound_stream_buffer_ac61078b129964c0fb70ec442945104c1_cgraph.png" border="0" usemap="#aclassu22_1_1audio_1_1_sound_stream_buffer_ac61078b129964c0fb70ec442945104c1_cgraph" alt=""/></div>
+<map name="classu22_1_1audio_1_1_sound_stream_buffer_ac61078b129964c0fb70ec442945104c1_cgraph" id="classu22_1_1audio_1_1_sound_stream_buffer_ac61078b129964c0fb70ec442945104c1_cgraph">
+<area shape="rect" title="再生" alt="" coords="5,5,208,47"/>
+<area shape="rect" href="al_8h.html#aca454ba909c65b84c78e81edc08ca0c8" title=" " alt="" coords="256,13,355,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3689e9725272b3c1bcb8dfbbb920ddf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3689e9725272b3c1bcb8dfbbb920ddf1">&#9670;&nbsp;</a></span>Release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool u22::audio::SoundStreamBuffer::Release </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>解放 </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+<p><a class="el" href="classu22_1_1audio_1_1_i_sound_buffer.html#a11e9427f0ebbf188f5ca31564091490f">u22::audio::ISoundBuffer</a>を実装しています。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classu22_1_1audio_1_1_sound_stream_buffer_a3689e9725272b3c1bcb8dfbbb920ddf1_cgraph.png" border="0" usemap="#aclassu22_1_1audio_1_1_sound_stream_buffer_a3689e9725272b3c1bcb8dfbbb920ddf1_cgraph" alt=""/></div>
+<map name="classu22_1_1audio_1_1_sound_stream_buffer_a3689e9725272b3c1bcb8dfbbb920ddf1_cgraph" id="classu22_1_1audio_1_1_sound_stream_buffer_a3689e9725272b3c1bcb8dfbbb920ddf1_cgraph">
+<area shape="rect" title="解放" alt="" coords="5,74,208,115"/>
+<area shape="rect" href="al_8h.html#ab376e80e2404ae2611798d7f007871ef" title=" " alt="" coords="260,5,369,32"/>
+<area shape="rect" href="al_8h.html#af2f5e685ee38a2c49e149797e8c2e86e" title=" " alt="" coords="256,56,373,83"/>
+<area shape="rect" href="al_8h.html#aa5ac516caadd0d377bd52c0db10bedcd" title=" " alt="" coords="265,107,365,133"/>
+<area shape="rect" href="sndfile_8h.html#a276b87553823c937c62492206f0ed81e" title=" " alt="" coords="279,157,350,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aed9285edf0b6e87e35fc73b8acad566d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed9285edf0b6e87e35fc73b8acad566d">&#9670;&nbsp;</a></span>SetLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void u22::audio::SoundStreamBuffer::SetLoop </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>loop</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>セッター </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loop</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="classu22_1_1audio_1_1_i_sound_buffer.html#a449a823465c7bb4fd51659a0b18a04df">u22::audio::ISoundBuffer</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="adf3d1b870293e41f478878d58a01333c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf3d1b870293e41f478878d58a01333c">&#9670;&nbsp;</a></span>SetVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void u22::audio::SoundStreamBuffer::SetVolume </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>volume</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>セッター </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">volume</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="classu22_1_1audio_1_1_i_sound_buffer.html#ae83695244a3846b30e7f960047b768e9">u22::audio::ISoundBuffer</a>を実装しています。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classu22_1_1audio_1_1_sound_stream_buffer_adf3d1b870293e41f478878d58a01333c_cgraph.png" border="0" usemap="#aclassu22_1_1audio_1_1_sound_stream_buffer_adf3d1b870293e41f478878d58a01333c_cgraph" alt=""/></div>
+<map name="classu22_1_1audio_1_1_sound_stream_buffer_adf3d1b870293e41f478878d58a01333c_cgraph" id="classu22_1_1audio_1_1_sound_stream_buffer_adf3d1b870293e41f478878d58a01333c_cgraph">
+<area shape="rect" title="セッター" alt="" coords="5,5,208,47"/>
+<area shape="rect" href="al_8h.html#ac10978ba0e4a873c5355a30d04c8a3a6" title=" " alt="" coords="256,13,332,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a896a44f57544acac33cc19cb3fa198ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a896a44f57544acac33cc19cb3fa198ae">&#9670;&nbsp;</a></span>Stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool u22::audio::SoundStreamBuffer::Stop </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>停止 </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+<p><a class="el" href="classu22_1_1audio_1_1_i_sound_buffer.html#a1c573f266e9bd45109126abde4f1747f">u22::audio::ISoundBuffer</a>を実装しています。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classu22_1_1audio_1_1_sound_stream_buffer_a896a44f57544acac33cc19cb3fa198ae_cgraph.png" border="0" usemap="#aclassu22_1_1audio_1_1_sound_stream_buffer_a896a44f57544acac33cc19cb3fa198ae_cgraph" alt=""/></div>
+<map name="classu22_1_1audio_1_1_sound_stream_buffer_a896a44f57544acac33cc19cb3fa198ae_cgraph" id="classu22_1_1audio_1_1_sound_stream_buffer_a896a44f57544acac33cc19cb3fa198ae_cgraph">
+<area shape="rect" title="停止" alt="" coords="5,5,208,47"/>
+<area shape="rect" href="al_8h.html#aa5ac516caadd0d377bd52c0db10bedcd" title=" " alt="" coords="256,13,356,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a05f4fe8de65589f426371ead75f902e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05f4fe8de65589f426371ead75f902e0">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool u22::audio::SoundStreamBuffer::Update </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新 </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+<p><a class="el" href="classu22_1_1audio_1_1_i_sound_buffer.html#a5fb067d493981d24ddfe6ca99d250a65">u22::audio::ISoundBuffer</a>を実装しています。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classu22_1_1audio_1_1_sound_stream_buffer_a05f4fe8de65589f426371ead75f902e0_cgraph.png" border="0" usemap="#aclassu22_1_1audio_1_1_sound_stream_buffer_a05f4fe8de65589f426371ead75f902e0_cgraph" alt=""/></div>
+<map name="classu22_1_1audio_1_1_sound_stream_buffer_a05f4fe8de65589f426371ead75f902e0_cgraph" id="classu22_1_1audio_1_1_sound_stream_buffer_a05f4fe8de65589f426371ead75f902e0_cgraph">
+<area shape="rect" title="更新" alt="" coords="5,49,208,90"/>
+<area shape="rect" href="al_8h.html#aab80ac4aad68b84363658bf498913c91" title=" " alt="" coords="289,5,387,32"/>
+<area shape="rect" href="al_8h.html#af6239bc4ba2faedeb54a5ffd5917b405" title=" " alt="" coords="263,56,413,83"/>
+<area shape="rect" href="al_8h.html#a69aef56ec1b141152e7068f51d900549" title=" " alt="" coords="256,107,420,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Audio/<a class="el" href="_sound_stream_buffer_8h_source.html">SoundStreamBuffer.h</a></li>
+<li>Audio/<a class="el" href="_sound_stream_buffer_8cpp.html">SoundStreamBuffer.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

@@ -1,0 +1,226 @@
+\hypertarget{classu22_1_1_window}{}\doxysection{u22\+::Window クラス}
+\label{classu22_1_1_window}\index{u22::Window@{u22::Window}}
+
+
+{\ttfamily \#include $<$Window.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classu22_1_1_window_aeccd1eafa2f0ecc961bb6854ef699c75}{Window}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classu22_1_1_window_a0bd63ca69b8e1099620f95be7417299e}{$\sim$\+Window}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classu22_1_1_window_a0e231c79f2d158448baae5f3861409eb}{Set\+Handle}} (\+::\mbox{\hyperlink{group__window_ga3c96d80d363e67d13a41b5d1821f3242}{G\+L\+F\+Wwindow}} $\ast$ptr)
+\begin{DoxyCompactList}\small\item\em セッター \end{DoxyCompactList}\item 
+\+::\mbox{\hyperlink{group__window_ga3c96d80d363e67d13a41b5d1821f3242}{G\+L\+F\+Wwindow}} $\ast$ \mbox{\hyperlink{classu22_1_1_window_ae3ea511def33789dc9b859b2a12caa63}{Get\+Handle}} (void)
+\begin{DoxyCompactList}\small\item\em ゲッター \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classu22_1_1_window_a27629eea95252d35b1e7d0c4c7c57553}{Get\+Width}} (void) const
+\begin{DoxyCompactList}\small\item\em ゲッター \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classu22_1_1_window_ac5fdfff9e00ba1882631bed659657ff2}{Get\+Height}} (void) const
+\begin{DoxyCompactList}\small\item\em ゲッター \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1_window_a6694016543a86ba134cf47a1d9243e97}{Should\+Close}} (void)
+\begin{DoxyCompactList}\small\item\em 判定 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1_window_a31daccb42cdd4864068a25b0d84b7306}{Create}} (const char $\ast$title, int width, int height, int pos\+\_\+x, int pos\+\_\+y, bool full\+\_\+screen)
+\begin{DoxyCompactList}\small\item\em 作成 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1_window_ad2404c9f49c1b08eed6ebffa4e32761e}{Destroy}} (void)
+\begin{DoxyCompactList}\small\item\em 削除 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classu22_1_1_window_a1aa98ac910cb99a9bd5f0a2e35ca8d97}{Present}} (void) const
+\begin{DoxyCompactList}\small\item\em フリップ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classu22_1_1_window_adcffbadcaafc9e172dde4fe55a27d930}{Poll\+Events}} (void) const
+\begin{DoxyCompactList}\small\item\em イベントポーリング \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{classu22_1_1_window_aeccd1eafa2f0ecc961bb6854ef699c75}\label{classu22_1_1_window_aeccd1eafa2f0ecc961bb6854ef699c75}} 
+\index{u22::Window@{u22::Window}!Window@{Window}}
+\index{Window@{Window}!u22::Window@{u22::Window}}
+\doxysubsubsection{\texorpdfstring{Window()}{Window()}}
+{\footnotesize\ttfamily u22\+::\+Window\+::\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+コンストラクタ 
+
+\mbox{\Hypertarget{classu22_1_1_window_a0bd63ca69b8e1099620f95be7417299e}\label{classu22_1_1_window_a0bd63ca69b8e1099620f95be7417299e}} 
+\index{u22::Window@{u22::Window}!````~Window@{$\sim$Window}}
+\index{````~Window@{$\sim$Window}!u22::Window@{u22::Window}}
+\doxysubsubsection{\texorpdfstring{$\sim$Window()}{~Window()}}
+{\footnotesize\ttfamily u22\+::\+Window\+::$\sim$\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+デストラクタ 
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{classu22_1_1_window_a31daccb42cdd4864068a25b0d84b7306}\label{classu22_1_1_window_a31daccb42cdd4864068a25b0d84b7306}} 
+\index{u22::Window@{u22::Window}!Create@{Create}}
+\index{Create@{Create}!u22::Window@{u22::Window}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily bool u22\+::\+Window\+::\+Create (\begin{DoxyParamCaption}\item[{const char $\ast$}]{title,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{pos\+\_\+x,  }\item[{int}]{pos\+\_\+y,  }\item[{bool}]{full\+\_\+screen }\end{DoxyParamCaption})}
+
+
+
+作成 
+
+
+\begin{DoxyParams}{引数}
+{\em タイトル} & \\
+\hline
+{\em width} & \\
+\hline
+{\em height} & \\
+\hline
+{\em pos\+\_\+x} & \\
+\hline
+{\em pos\+\_\+y} & \\
+\hline
+{\em full\+\_\+screen} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{classu22_1_1_window_a31daccb42cdd4864068a25b0d84b7306_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1_window_ad2404c9f49c1b08eed6ebffa4e32761e}\label{classu22_1_1_window_ad2404c9f49c1b08eed6ebffa4e32761e}} 
+\index{u22::Window@{u22::Window}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!u22::Window@{u22::Window}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily bool u22\+::\+Window\+::\+Destroy (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+削除 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classu22_1_1_window_ad2404c9f49c1b08eed6ebffa4e32761e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1_window_ae3ea511def33789dc9b859b2a12caa63}\label{classu22_1_1_window_ae3ea511def33789dc9b859b2a12caa63}} 
+\index{u22::Window@{u22::Window}!GetHandle@{GetHandle}}
+\index{GetHandle@{GetHandle}!u22::Window@{u22::Window}}
+\doxysubsubsection{\texorpdfstring{GetHandle()}{GetHandle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__window_ga3c96d80d363e67d13a41b5d1821f3242}{G\+L\+F\+Wwindow}} $\ast$ u22\+::\+Window\+::\+Get\+Handle (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+ゲッター 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1_window_ac5fdfff9e00ba1882631bed659657ff2}\label{classu22_1_1_window_ac5fdfff9e00ba1882631bed659657ff2}} 
+\index{u22::Window@{u22::Window}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!u22::Window@{u22::Window}}
+\doxysubsubsection{\texorpdfstring{GetHeight()}{GetHeight()}}
+{\footnotesize\ttfamily int u22\+::\+Window\+::\+Get\+Height (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+ゲッター 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1_window_a27629eea95252d35b1e7d0c4c7c57553}\label{classu22_1_1_window_a27629eea95252d35b1e7d0c4c7c57553}} 
+\index{u22::Window@{u22::Window}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!u22::Window@{u22::Window}}
+\doxysubsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily int u22\+::\+Window\+::\+Get\+Width (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+ゲッター 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1_window_adcffbadcaafc9e172dde4fe55a27d930}\label{classu22_1_1_window_adcffbadcaafc9e172dde4fe55a27d930}} 
+\index{u22::Window@{u22::Window}!PollEvents@{PollEvents}}
+\index{PollEvents@{PollEvents}!u22::Window@{u22::Window}}
+\doxysubsubsection{\texorpdfstring{PollEvents()}{PollEvents()}}
+{\footnotesize\ttfamily void u22\+::\+Window\+::\+Poll\+Events (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+イベントポーリング 
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classu22_1_1_window_adcffbadcaafc9e172dde4fe55a27d930_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1_window_a1aa98ac910cb99a9bd5f0a2e35ca8d97}\label{classu22_1_1_window_a1aa98ac910cb99a9bd5f0a2e35ca8d97}} 
+\index{u22::Window@{u22::Window}!Present@{Present}}
+\index{Present@{Present}!u22::Window@{u22::Window}}
+\doxysubsubsection{\texorpdfstring{Present()}{Present()}}
+{\footnotesize\ttfamily void u22\+::\+Window\+::\+Present (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+フリップ 
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classu22_1_1_window_a1aa98ac910cb99a9bd5f0a2e35ca8d97_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1_window_a0e231c79f2d158448baae5f3861409eb}\label{classu22_1_1_window_a0e231c79f2d158448baae5f3861409eb}} 
+\index{u22::Window@{u22::Window}!SetHandle@{SetHandle}}
+\index{SetHandle@{SetHandle}!u22::Window@{u22::Window}}
+\doxysubsubsection{\texorpdfstring{SetHandle()}{SetHandle()}}
+{\footnotesize\ttfamily void u22\+::\+Window\+::\+Set\+Handle (\begin{DoxyParamCaption}\item[{\+::\mbox{\hyperlink{group__window_ga3c96d80d363e67d13a41b5d1821f3242}{G\+L\+F\+Wwindow}} $\ast$}]{ptr }\end{DoxyParamCaption})}
+
+
+
+セッター 
+
+
+\begin{DoxyParams}{引数}
+{\em ptr} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classu22_1_1_window_a6694016543a86ba134cf47a1d9243e97}\label{classu22_1_1_window_a6694016543a86ba134cf47a1d9243e97}} 
+\index{u22::Window@{u22::Window}!ShouldClose@{ShouldClose}}
+\index{ShouldClose@{ShouldClose}!u22::Window@{u22::Window}}
+\doxysubsubsection{\texorpdfstring{ShouldClose()}{ShouldClose()}}
+{\footnotesize\ttfamily bool u22\+::\+Window\+::\+Should\+Close (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+判定 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classu22_1_1_window_a6694016543a86ba134cf47a1d9243e97_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+Framework/\+Window/\mbox{\hyperlink{_window_8h}{Window.\+h}}\item 
+Framework/\+Window/\mbox{\hyperlink{_window_8cpp}{Window.\+cpp}}\end{DoxyCompactItemize}

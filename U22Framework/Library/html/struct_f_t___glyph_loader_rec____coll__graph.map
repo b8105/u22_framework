@@ -1,0 +1,9 @@
+<map id="FT_GlyphLoaderRec_" name="FT_GlyphLoaderRec_">
+<area shape="rect" id="node1" title=" " alt="" coords="34,291,181,317"/>
+<area shape="rect" id="node2" href="$struct_f_t___memory_rec__.html" title=" " alt="" coords="5,187,127,213"/>
+<area shape="rect" id="node3" href="$struct_f_t___glyph_load_rec__.html" title=" " alt="" coords="151,187,287,213"/>
+<area shape="rect" id="node4" href="$struct_f_t___vector__.html" title=" " alt="" coords="75,5,164,32"/>
+<area shape="rect" id="node5" href="$struct_f_t___outline__.html" title=" " alt="" coords="173,96,265,123"/>
+<area shape="rect" id="node6" href="$struct_f_t___sub_glyph_rec__.html" title=" " alt="" coords="290,96,421,123"/>
+<area shape="rect" id="node7" href="$struct_f_t___matrix__.html" title=" " alt="" coords="312,5,399,32"/>
+</map>

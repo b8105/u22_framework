@@ -1,0 +1,6 @@
+<map id="u22::graphics::Graphics::Release" name="u22::graphics::Graphics::Release">
+<area shape="rect" id="node1" title="解放" alt="" coords="5,64,165,105"/>
+<area shape="rect" id="node2" href="$classu22_1_1utility_1_1_graphics_utilities.html#aa52f6d57416c0d1dba2f446721914cfa" title="クリーンナップ" alt="" coords="213,5,399,47"/>
+<area shape="rect" id="node3" href="$freetype_8h.html#abcae5780e604026b1994f140864ffbcb" title=" " alt="" coords="239,71,373,98"/>
+<area shape="rect" id="node4" href="$group__init.html#gafd90e6fd4819ea9e22e5e739519a6504" title="Terminates the GLFW library." alt="" coords="255,122,357,149"/>
+</map>

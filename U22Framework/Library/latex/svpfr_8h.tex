@@ -1,0 +1,69 @@
+\hypertarget{svpfr_8h}{}\doxysection{freetype/internal/services/svpfr.h ファイル}
+\label{svpfr_8h}\index{freetype/internal/services/svpfr.h@{freetype/internal/services/svpfr.h}}
+{\ttfamily \#include $<$freetype/ftpfr.\+h$>$}\newline
+{\ttfamily \#include $<$freetype/internal/ftserv.\+h$>$}\newline
+svpfr.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{svpfr_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{svpfr_8h_a78584e29dc0af2688d99174fdc17e824}{F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+P\+F\+R\+\_\+\+M\+E\+T\+R\+I\+CS}}~\char`\"{}pfr-\/\mbox{\hyperlink{fterrdef_8h_a8da424446f502b9d5ce1ba924c5316bc}{metrics}}\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svpfr_8h_a35c416c0f10a4d5f67c11e4256a29eb5}{F\+T\+\_\+\+P\+F\+R\+\_\+\+Get\+Metrics\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} $\ast$aoutline, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} $\ast$ametrics, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$ax\+\_\+scale, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$ay\+\_\+scale)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svpfr_8h_a20eaaef20dc0096e67973f240c5b121e}{F\+T\+\_\+\+P\+F\+R\+\_\+\+Get\+Kerning\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} left, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} right, \mbox{\hyperlink{ftimage_8h_abfcb941b4b81f3a922d4ae57c620db27}{F\+T\+\_\+\+Vector}} $\ast$avector)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svpfr_8h_aabfd6d5f6302418e87a808f7e1c77525}{F\+T\+\_\+\+P\+F\+R\+\_\+\+Get\+Advance\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} gindex, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} $\ast$aadvance)
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{svpfr_8h_abdded45abe8257d5804ded590d75d536}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE}} (Pfr\+Metrics)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{svpfr_8h_a78584e29dc0af2688d99174fdc17e824}\label{svpfr_8h_a78584e29dc0af2688d99174fdc17e824}} 
+\index{svpfr.h@{svpfr.h}!FT\_SERVICE\_ID\_PFR\_METRICS@{FT\_SERVICE\_ID\_PFR\_METRICS}}
+\index{FT\_SERVICE\_ID\_PFR\_METRICS@{FT\_SERVICE\_ID\_PFR\_METRICS}!svpfr.h@{svpfr.h}}
+\doxysubsubsection{\texorpdfstring{FT\_SERVICE\_ID\_PFR\_METRICS}{FT\_SERVICE\_ID\_PFR\_METRICS}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+P\+F\+R\+\_\+\+M\+E\+T\+R\+I\+CS~\char`\"{}pfr-\/\mbox{\hyperlink{fterrdef_8h_a8da424446f502b9d5ce1ba924c5316bc}{metrics}}\char`\"{}}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{svpfr_8h_aabfd6d5f6302418e87a808f7e1c77525}\label{svpfr_8h_aabfd6d5f6302418e87a808f7e1c77525}} 
+\index{svpfr.h@{svpfr.h}!FT\_PFR\_GetAdvanceFunc@{FT\_PFR\_GetAdvanceFunc}}
+\index{FT\_PFR\_GetAdvanceFunc@{FT\_PFR\_GetAdvanceFunc}!svpfr.h@{svpfr.h}}
+\doxysubsubsection{\texorpdfstring{FT\_PFR\_GetAdvanceFunc}{FT\_PFR\_GetAdvanceFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+P\+F\+R\+\_\+\+Get\+Advance\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} gindex, \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} $\ast$aadvance)}
+
+\mbox{\Hypertarget{svpfr_8h_a20eaaef20dc0096e67973f240c5b121e}\label{svpfr_8h_a20eaaef20dc0096e67973f240c5b121e}} 
+\index{svpfr.h@{svpfr.h}!FT\_PFR\_GetKerningFunc@{FT\_PFR\_GetKerningFunc}}
+\index{FT\_PFR\_GetKerningFunc@{FT\_PFR\_GetKerningFunc}!svpfr.h@{svpfr.h}}
+\doxysubsubsection{\texorpdfstring{FT\_PFR\_GetKerningFunc}{FT\_PFR\_GetKerningFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+P\+F\+R\+\_\+\+Get\+Kerning\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} left, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} right, \mbox{\hyperlink{ftimage_8h_abfcb941b4b81f3a922d4ae57c620db27}{F\+T\+\_\+\+Vector}} $\ast$avector)}
+
+\mbox{\Hypertarget{svpfr_8h_a35c416c0f10a4d5f67c11e4256a29eb5}\label{svpfr_8h_a35c416c0f10a4d5f67c11e4256a29eb5}} 
+\index{svpfr.h@{svpfr.h}!FT\_PFR\_GetMetricsFunc@{FT\_PFR\_GetMetricsFunc}}
+\index{FT\_PFR\_GetMetricsFunc@{FT\_PFR\_GetMetricsFunc}!svpfr.h@{svpfr.h}}
+\doxysubsubsection{\texorpdfstring{FT\_PFR\_GetMetricsFunc}{FT\_PFR\_GetMetricsFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+P\+F\+R\+\_\+\+Get\+Metrics\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} $\ast$aoutline, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} $\ast$ametrics, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$ax\+\_\+scale, \mbox{\hyperlink{fttypes_8h_a5f5a679cc09f758efdd0d1c5feed3c3d}{F\+T\+\_\+\+Fixed}} $\ast$ay\+\_\+scale)}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{svpfr_8h_abdded45abe8257d5804ded590d75d536}\label{svpfr_8h_abdded45abe8257d5804ded590d75d536}} 
+\index{svpfr.h@{svpfr.h}!FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}}
+\index{FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}!svpfr.h@{svpfr.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE()}{FT\_DEFINE\_SERVICE()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE (\begin{DoxyParamCaption}\item[{Pfr\+Metrics}]{ }\end{DoxyParamCaption})}
+

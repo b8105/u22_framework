@@ -1,0 +1,2732 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: External/stb/stb_vorbis.c ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_443fc37f241ba4018364a998c18d007b.html">External</a></li><li class="navelem"><a class="el" href="dir_8cdafb5277d0f188f0ea90f41e2137ea.html">stb</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#typedef-members">型定義</a> &#124;
+<a href="#enum-members">列挙型</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">stb_vorbis.c ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &lt;limits.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+stb_vorbis.c の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="stb__vorbis_8c__incl.png" border="0" usemap="#a_external_2stb_2stb__vorbis_8c" alt=""/></div>
+<map name="_external_2stb_2stb__vorbis_8c" id="_external_2stb_2stb__vorbis_8c">
+<area shape="rect" title=" " alt="" coords="175,5,340,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,67,107"/>
+<area shape="rect" title=" " alt="" coords="91,80,155,107"/>
+<area shape="rect" title=" " alt="" coords="179,80,245,107"/>
+<area shape="rect" title=" " alt="" coords="269,80,339,107"/>
+<area shape="rect" title=" " alt="" coords="363,80,426,107"/>
+<area shape="rect" title=" " alt="" coords="451,80,515,107"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstb__vorbis__alloc.html">stb_vorbis_alloc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstb__vorbis__info.html">stb_vorbis_info</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_codebook.html">Codebook</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_floor0.html">Floor0</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_floor1.html">Floor1</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union_floor.html">Floor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_residue.html">Residue</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mapping_channel.html">MappingChannel</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mapping.html">Mapping</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_mode.html">Mode</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_r_cscan.html">CRCscan</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_probed_page.html">ProbedPage</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstb__vorbis.html">stb_vorbis</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstbv____floor__ordering.html">stbv__floor_ordering</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionfloat__conv.html">float_conv</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a00e12c885a678a051ff4c867cd966bac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a00e12c885a678a051ff4c867cd966bac">STB_VORBIS_INCLUDE_STB_VORBIS_H</a></td></tr>
+<tr class="separator:a00e12c885a678a051ff4c867cd966bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8616da99977cbd16f6b6cd0d4c947df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#ac8616da99977cbd16f6b6cd0d4c947df">STB_VORBIS_MAX_CHANNELS</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:ac8616da99977cbd16f6b6cd0d4c947df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89065f619109d612aadfeea480fcc38f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a89065f619109d612aadfeea480fcc38f">STB_VORBIS_PUSHDATA_CRC_COUNT</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a89065f619109d612aadfeea480fcc38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42fed8d4cc187ad72ac8a8e09b98a169"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a42fed8d4cc187ad72ac8a8e09b98a169">STB_VORBIS_FAST_HUFFMAN_LENGTH</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a42fed8d4cc187ad72ac8a8e09b98a169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabcc470f653273b1bc381f69a3b37bfc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#aabcc470f653273b1bc381f69a3b37bfc">STB_VORBIS_FAST_HUFFMAN_SHORT</a></td></tr>
+<tr class="separator:aabcc470f653273b1bc381f69a3b37bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a648fecb5222c45c687d8aa40e63a1242"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a648fecb5222c45c687d8aa40e63a1242">STB_VORBIS_ENDIAN</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a648fecb5222c45c687d8aa40e63a1242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af93b819ac40799ac392e16f6a90729fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#af93b819ac40799ac392e16f6a90729fd">__forceinline</a></td></tr>
+<tr class="separator:af93b819ac40799ac392e16f6a90729fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa59a70e2ff40af3af6c08aafdca8c713"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#aa59a70e2ff40af3af6c08aafdca8c713">CHECK</a>(f)&#160;&#160;&#160;((void) 0)</td></tr>
+<tr class="separator:aa59a70e2ff40af3af6c08aafdca8c713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a132e82a3e3172536840b66279fe79cdb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a132e82a3e3172536840b66279fe79cdb">MAX_BLOCKSIZE_LOG</a>&#160;&#160;&#160;13</td></tr>
+<tr class="separator:a132e82a3e3172536840b66279fe79cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a1d2ed31f7c9a00fec46a798edb61b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#af8a1d2ed31f7c9a00fec46a798edb61b">MAX_BLOCKSIZE</a>&#160;&#160;&#160;(1 &lt;&lt; <a class="el" href="stb__vorbis_8c.html#a132e82a3e3172536840b66279fe79cdb">MAX_BLOCKSIZE_LOG</a>)</td></tr>
+<tr class="separator:af8a1d2ed31f7c9a00fec46a798edb61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8cecfc5c5c054d2875c03e77b7be15d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:aa8cecfc5c5c054d2875c03e77b7be15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa93f0eb578d23995850d61f7d61c55c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:aa93f0eb578d23995850d61f7d61c55c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29853ba560b0648c7eaef420322b79db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a29853ba560b0648c7eaef420322b79db">FAST_HUFFMAN_TABLE_SIZE</a>&#160;&#160;&#160;(1 &lt;&lt; <a class="el" href="stb__vorbis_8c.html#a42fed8d4cc187ad72ac8a8e09b98a169">STB_VORBIS_FAST_HUFFMAN_LENGTH</a>)</td></tr>
+<tr class="separator:a29853ba560b0648c7eaef420322b79db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a327d73597c7d58637bc626518c731e74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a327d73597c7d58637bc626518c731e74">FAST_HUFFMAN_TABLE_MASK</a>&#160;&#160;&#160;(<a class="el" href="stb__vorbis_8c.html#a29853ba560b0648c7eaef420322b79db">FAST_HUFFMAN_TABLE_SIZE</a> - 1)</td></tr>
+<tr class="separator:a327d73597c7d58637bc626518c731e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a9cd26d6325f220d322d7e5347c802b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a2a9cd26d6325f220d322d7e5347c802b">IS_PUSH_MODE</a>(f)&#160;&#160;&#160;((f)-&gt;push_mode)</td></tr>
+<tr class="separator:a2a9cd26d6325f220d322d7e5347c802b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aefe202c0399c3940251d8c9d2e8191"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a6aefe202c0399c3940251d8c9d2e8191">array_size_required</a>(count,  size)&#160;&#160;&#160;(count*(sizeof(void *)+(size)))</td></tr>
+<tr class="separator:a6aefe202c0399c3940251d8c9d2e8191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18bff79a06523cdbdcf30e3c7ee88d3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a18bff79a06523cdbdcf30e3c7ee88d3e">temp_alloc</a>(f,  size)&#160;&#160;&#160;(f-&gt;alloc.alloc_buffer ? setup_temp_malloc(f,size) : alloca(size))</td></tr>
+<tr class="separator:a18bff79a06523cdbdcf30e3c7ee88d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ae34dbb4c575226ac7fe7e064bdba32"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a2ae34dbb4c575226ac7fe7e064bdba32">temp_free</a>(f,  p)&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a2ae34dbb4c575226ac7fe7e064bdba32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0348ae28ddb0f5fe40e4f31be9392d8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a0348ae28ddb0f5fe40e4f31be9392d8b">temp_alloc_save</a>(f)&#160;&#160;&#160;((f)-&gt;temp_offset)</td></tr>
+<tr class="separator:a0348ae28ddb0f5fe40e4f31be9392d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a312e087f6b96d2784f4f691791de8024"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a312e087f6b96d2784f4f691791de8024">temp_alloc_restore</a>(f,  p)&#160;&#160;&#160;((f)-&gt;temp_offset = (p))</td></tr>
+<tr class="separator:a312e087f6b96d2784f4f691791de8024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89dd36235e7b6a3ecc52fed6bb11b87b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a89dd36235e7b6a3ecc52fed6bb11b87b">temp_block_array</a>(f,  count,  size)&#160;&#160;&#160;make_block_array(<a class="el" href="stb__vorbis_8c.html#a18bff79a06523cdbdcf30e3c7ee88d3e">temp_alloc</a>(f,<a class="el" href="stb__vorbis_8c.html#a6aefe202c0399c3940251d8c9d2e8191">array_size_required</a>(count,size)), count, size)</td></tr>
+<tr class="separator:a89dd36235e7b6a3ecc52fed6bb11b87b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e1b7cfc3c0d80ea907e6486d288796"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a39e1b7cfc3c0d80ea907e6486d288796">CRC32_POLY</a>&#160;&#160;&#160;0x04c11db7</td></tr>
+<tr class="separator:a39e1b7cfc3c0d80ea907e6486d288796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae71449b1cc6e6250b91f539153a7a0d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a>&#160;&#160;&#160;3.14159265358979323846264f</td></tr>
+<tr class="separator:ae71449b1cc6e6250b91f539153a7a0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e39aa88524d5256414c688880a0a8bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a4e39aa88524d5256414c688880a0a8bb">NO_CODE</a>&#160;&#160;&#160;255</td></tr>
+<tr class="separator:a4e39aa88524d5256414c688880a0a8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af60aefea255c38f9c7fc87c1f1f6abd9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#af60aefea255c38f9c7fc87c1f1f6abd9">STBV_CDECL</a></td></tr>
+<tr class="separator:af60aefea255c38f9c7fc87c1f1f6abd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abffa4dff1f2cb303b2501ea2dea75e6f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#abffa4dff1f2cb303b2501ea2dea75e6f">USE_MEMORY</a>(z)&#160;&#160;&#160;((z)-&gt;stream)</td></tr>
+<tr class="separator:abffa4dff1f2cb303b2501ea2dea75e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a3999c21c1e5e522959ef3b98418cb8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a6a3999c21c1e5e522959ef3b98418cb8">PAGEFLAG_continued_packet</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a6a3999c21c1e5e522959ef3b98418cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e2cff6293266e5366a11d082aaafd64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a7e2cff6293266e5366a11d082aaafd64">PAGEFLAG_first_page</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a7e2cff6293266e5366a11d082aaafd64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4136c4035568b91645d4a6896fbe9cec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a4136c4035568b91645d4a6896fbe9cec">PAGEFLAG_last_page</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a4136c4035568b91645d4a6896fbe9cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a734579b908509b57151ac02b946056d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a734579b908509b57151ac02b946056d1">EOP</a>&#160;&#160;&#160;(-1)</td></tr>
+<tr class="separator:a734579b908509b57151ac02b946056d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aaa7b300d74e1fe252792111eb7539a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a4aaa7b300d74e1fe252792111eb7539a">INVALID_BITS</a>&#160;&#160;&#160;(-1)</td></tr>
+<tr class="separator:a4aaa7b300d74e1fe252792111eb7539a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c23d1b38c11a185d8cf8a30010f5537"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a0c23d1b38c11a185d8cf8a30010f5537">DECODE_RAW</a>(var,  f,  c)</td></tr>
+<tr class="separator:a0c23d1b38c11a185d8cf8a30010f5537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e9bac3b3e48646f9a430d0c7411ae5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#ac9e9bac3b3e48646f9a430d0c7411ae5">DECODE</a>(var,  f,  c)</td></tr>
+<tr class="separator:ac9e9bac3b3e48646f9a430d0c7411ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8daba892ecc7da0dace8b1a1f7d2a18"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#ae8daba892ecc7da0dace8b1a1f7d2a18">DECODE_VQ</a>(var,  f,  c)&#160;&#160;&#160;<a class="el" href="stb__vorbis_8c.html#a0c23d1b38c11a185d8cf8a30010f5537">DECODE_RAW</a>(var,f,c)</td></tr>
+<tr class="separator:ae8daba892ecc7da0dace8b1a1f7d2a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b6245aaf9581e321d78824f20c6a3e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a5b6245aaf9581e321d78824f20c6a3e2">CODEBOOK_ELEMENT</a>(c,  off)&#160;&#160;&#160;(c-&gt;multiplicands[off])</td></tr>
+<tr class="separator:a5b6245aaf9581e321d78824f20c6a3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e735a57f48058426af3c58dd3435965"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a9e735a57f48058426af3c58dd3435965">CODEBOOK_ELEMENT_FAST</a>(c,  off)&#160;&#160;&#160;(c-&gt;multiplicands[off])</td></tr>
+<tr class="separator:a9e735a57f48058426af3c58dd3435965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b19f433a0affa1ccf53e080bd9f908f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a9b19f433a0affa1ccf53e080bd9f908f">CODEBOOK_ELEMENT_BASE</a>(c)&#160;&#160;&#160;(0)</td></tr>
+<tr class="separator:a9b19f433a0affa1ccf53e080bd9f908f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01d2d5321eca3aed48a939b7b4f5164b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a01d2d5321eca3aed48a939b7b4f5164b">LINE_OP</a>(a,  b)&#160;&#160;&#160;a *= b</td></tr>
+<tr class="separator:a01d2d5321eca3aed48a939b7b4f5164b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85274fc4609880d74f6b4f9e8c85a273"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a85274fc4609880d74f6b4f9e8c85a273">LIBVORBIS_MDCT</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a85274fc4609880d74f6b4f9e8c85a273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a143d61ff41bad3fa7c278a440d02e271"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a143d61ff41bad3fa7c278a440d02e271">SAMPLE_unknown</a>&#160;&#160;&#160;0xffffffff</td></tr>
+<tr class="separator:a143d61ff41bad3fa7c278a440d02e271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67e49a8a3499ae7b17bcb5ccb499eb48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a67e49a8a3499ae7b17bcb5ccb499eb48">PLAYBACK_MONO</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a67e49a8a3499ae7b17bcb5ccb499eb48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dd9dae616d5194730d0261cccfa26f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a1dd9dae616d5194730d0261cccfa26f7">PLAYBACK_LEFT</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a1dd9dae616d5194730d0261cccfa26f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e0bc7897855e12b666ccf034fc0b6da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a5e0bc7897855e12b666ccf034fc0b6da">PLAYBACK_RIGHT</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:a5e0bc7897855e12b666ccf034fc0b6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa73214aa5f2f94f63d90bb4e3d99fe53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a>&#160;&#160;&#160;(<a class="el" href="stb__vorbis_8c.html#a1dd9dae616d5194730d0261cccfa26f7">PLAYBACK_LEFT</a>  | <a class="el" href="stb__vorbis_8c.html#a67e49a8a3499ae7b17bcb5ccb499eb48">PLAYBACK_MONO</a>)</td></tr>
+<tr class="separator:aa73214aa5f2f94f63d90bb4e3d99fe53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4cf4b2ab929bd23951a8676eeac086b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#ac4cf4b2ab929bd23951a8676eeac086b">C</a>&#160;&#160;&#160;(<a class="el" href="stb__vorbis_8c.html#a1dd9dae616d5194730d0261cccfa26f7">PLAYBACK_LEFT</a>  | <a class="el" href="stb__vorbis_8c.html#a5e0bc7897855e12b666ccf034fc0b6da">PLAYBACK_RIGHT</a> | <a class="el" href="stb__vorbis_8c.html#a67e49a8a3499ae7b17bcb5ccb499eb48">PLAYBACK_MONO</a>)</td></tr>
+<tr class="separator:ac4cf4b2ab929bd23951a8676eeac086b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c71a5e59a53413cd6c270266d63b031"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a5c71a5e59a53413cd6c270266d63b031">R</a>&#160;&#160;&#160;(<a class="el" href="stb__vorbis_8c.html#a5e0bc7897855e12b666ccf034fc0b6da">PLAYBACK_RIGHT</a> | <a class="el" href="stb__vorbis_8c.html#a67e49a8a3499ae7b17bcb5ccb499eb48">PLAYBACK_MONO</a>)</td></tr>
+<tr class="separator:a5c71a5e59a53413cd6c270266d63b031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a200ac0447d052a2baaf3dfded88e3954"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a200ac0447d052a2baaf3dfded88e3954">FASTDEF</a>(x)&#160;&#160;&#160;<a class="el" href="unionfloat__conv.html">float_conv</a> x</td></tr>
+<tr class="separator:a200ac0447d052a2baaf3dfded88e3954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e544ec1d282f0d9630c09e0313abc76"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a9e544ec1d282f0d9630c09e0313abc76">MAGIC</a>(SHIFT)&#160;&#160;&#160;(1.5f * (1 &lt;&lt; (23-SHIFT)) + 0.5f/(1 &lt;&lt; SHIFT))</td></tr>
+<tr class="separator:a9e544ec1d282f0d9630c09e0313abc76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaee1afdab464950c6c0eb917fdbfcb70"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#aaee1afdab464950c6c0eb917fdbfcb70">ADDEND</a>(SHIFT)&#160;&#160;&#160;(((150-SHIFT) &lt;&lt; 23) + (1 &lt;&lt; 22))</td></tr>
+<tr class="separator:aaee1afdab464950c6c0eb917fdbfcb70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac741112328b2e6d25852d76efa030708"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#ac741112328b2e6d25852d76efa030708">FAST_SCALED_FLOAT_TO_INT</a>(temp,  x,  s)&#160;&#160;&#160;(temp.f = (x) + <a class="el" href="stb__vorbis_8c.html#a9e544ec1d282f0d9630c09e0313abc76">MAGIC</a>(s), temp.i - <a class="el" href="stb__vorbis_8c.html#aaee1afdab464950c6c0eb917fdbfcb70">ADDEND</a>(s))</td></tr>
+<tr class="separator:ac741112328b2e6d25852d76efa030708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ae36ddc885a1a5859cb4b7b3ec364bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a9ae36ddc885a1a5859cb4b7b3ec364bb">check_endianness</a>()</td></tr>
+<tr class="separator:a9ae36ddc885a1a5859cb4b7b3ec364bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b20d41d6252e9871430c242cb1a56e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a6b20d41d6252e9871430c242cb1a56e7">BUFFER_SIZE</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:a6b20d41d6252e9871430c242cb1a56e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b20d41d6252e9871430c242cb1a56e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a6b20d41d6252e9871430c242cb1a56e7">BUFFER_SIZE</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:a6b20d41d6252e9871430c242cb1a56e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:ac67810bd2e7c1a2590015ef0ed708930"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structstb__vorbis.html">stb_vorbis</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#ac67810bd2e7c1a2590015ef0ed708930">stb_vorbis</a></td></tr>
+<tr class="separator:ac67810bd2e7c1a2590015ef0ed708930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adde6aaee8457bee49c2a92621fe22b79"><td class="memItemLeft" align="right" valign="top">typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a></td></tr>
+<tr class="separator:adde6aaee8457bee49c2a92621fe22b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b956fe1df85f3c132b21edb4e116458"><td class="memItemLeft" align="right" valign="top">typedef signed char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a1b956fe1df85f3c132b21edb4e116458">int8</a></td></tr>
+<tr class="separator:a1b956fe1df85f3c132b21edb4e116458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05f6b0ae8f6a6e135b0e290c25fe0e4e"><td class="memItemLeft" align="right" valign="top">typedef unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a></td></tr>
+<tr class="separator:a05f6b0ae8f6a6e135b0e290c25fe0e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a259fa4834387bd68627ddf37bb3ebdb9"><td class="memItemLeft" align="right" valign="top">typedef signed short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a259fa4834387bd68627ddf37bb3ebdb9">int16</a></td></tr>
+<tr class="separator:a259fa4834387bd68627ddf37bb3ebdb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1134b580f8da4de94ca6b1de4d37975e"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a></td></tr>
+<tr class="separator:a1134b580f8da4de94ca6b1de4d37975e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43d43196463bde49cb067f5c20ab8481"><td class="memItemLeft" align="right" valign="top">typedef signed int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a43d43196463bde49cb067f5c20ab8481">int32</a></td></tr>
+<tr class="separator:a43d43196463bde49cb067f5c20ab8481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20d3044e421c0bea1119854fdb687f75"><td class="memItemLeft" align="right" valign="top">typedef float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a20d3044e421c0bea1119854fdb687f75">codetype</a></td></tr>
+<tr class="separator:a20d3044e421c0bea1119854fdb687f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2a08bf33a1eb072ed9e2aef4f36a827"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structstb__vorbis.html">stb_vorbis</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#ad2a08bf33a1eb072ed9e2aef4f36a827">vorb</a></td></tr>
+<tr class="separator:ad2a08bf33a1eb072ed9e2aef4f36a827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac09448f53783c6802f40f2f56976c4c9"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="stb_8h.html#a259fa4834387bd68627ddf37bb3ebdb9">int16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#ac09448f53783c6802f40f2f56976c4c9">YTYPE</a></td></tr>
+<tr class="separator:ac09448f53783c6802f40f2f56976c4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bf83e3a39c0410652eab86fc787757c"><td class="memItemLeft" align="right" valign="top">typedef char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a5bf83e3a39c0410652eab86fc787757c">stb_vorbis_float_size_test</a>[sizeof(float)==4 &amp;&amp;sizeof(int)==4]</td></tr>
+<tr class="separator:a5bf83e3a39c0410652eab86fc787757c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:a2827ae29a055de005d8769ef0e0cd644"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a2827ae29a055de005d8769ef0e0cd644">STBVorbisError</a> { <br />
+&#160;&#160;<a class="el" href="stb__vorbis_8c.html#a2827ae29a055de005d8769ef0e0cd644a8fb17b5792b1463fe7e6152195d26f19">VORBIS__no_error</a>, 
+<a class="el" href="stb__vorbis_8c.html#a2827ae29a055de005d8769ef0e0cd644a03255ba6dfd62d6530c8f67e8bc04861">VORBIS_need_more_data</a> =1, 
+<a class="el" href="stb__vorbis_8c.html#a2827ae29a055de005d8769ef0e0cd644a7f6a5d2c76b796bb56bcf5f41e183dde">VORBIS_invalid_api_mixing</a>, 
+<a class="el" href="stb__vorbis_8c.html#a2827ae29a055de005d8769ef0e0cd644a9f9f1fc7205e4745ebe278ee6dcff5a9">VORBIS_outofmem</a>, 
+<br />
+&#160;&#160;<a class="el" href="stb__vorbis_8c.html#a2827ae29a055de005d8769ef0e0cd644a6d4bef85b593d569b17ec5f5eef8eccc">VORBIS_feature_not_supported</a>, 
+<a class="el" href="stb__vorbis_8c.html#a2827ae29a055de005d8769ef0e0cd644a5d8a45ddaddf102b73c40a1857826159">VORBIS_too_many_channels</a>, 
+<a class="el" href="stb__vorbis_8c.html#a2827ae29a055de005d8769ef0e0cd644aba12de4c5865bae04137ac7ddd5a9830">VORBIS_file_open_failure</a>, 
+<a class="el" href="stb__vorbis_8c.html#a2827ae29a055de005d8769ef0e0cd644a02fb188ec8eab3d98b0d804110a3afe1">VORBIS_seek_without_length</a>, 
+<br />
+&#160;&#160;<a class="el" href="stb__vorbis_8c.html#a2827ae29a055de005d8769ef0e0cd644a27dd0deb7a2b9c1b4904e0a74ee2dbff">VORBIS_unexpected_eof</a> =10, 
+<a class="el" href="stb__vorbis_8c.html#a2827ae29a055de005d8769ef0e0cd644a4a1160dd71b457811cb9d8d6ee0c37a6">VORBIS_seek_invalid</a>, 
+<a class="el" href="stb__vorbis_8c.html#a2827ae29a055de005d8769ef0e0cd644a72bb5f27569f3e6b64ccd6ef10abe242">VORBIS_invalid_setup</a> =20, 
+<a class="el" href="stb__vorbis_8c.html#a2827ae29a055de005d8769ef0e0cd644ab391db45d817609255602c76b2ccf0c1">VORBIS_invalid_stream</a>, 
+<br />
+&#160;&#160;<a class="el" href="stb__vorbis_8c.html#a2827ae29a055de005d8769ef0e0cd644a399244ebaba15c4c7fedfd8e7231adb0">VORBIS_missing_capture_pattern</a> =30, 
+<a class="el" href="stb__vorbis_8c.html#a2827ae29a055de005d8769ef0e0cd644ad88a7e313975aa9bf140e4a8db5f5e53">VORBIS_invalid_stream_structure_version</a>, 
+<a class="el" href="stb__vorbis_8c.html#a2827ae29a055de005d8769ef0e0cd644a3b2e936724f1ac37d491b06325163d8b">VORBIS_continued_packet_flag_invalid</a>, 
+<a class="el" href="stb__vorbis_8c.html#a2827ae29a055de005d8769ef0e0cd644a295f6c7912e05a89ceb1a217d6705369">VORBIS_incorrect_stream_serial_number</a>, 
+<br />
+&#160;&#160;<a class="el" href="stb__vorbis_8c.html#a2827ae29a055de005d8769ef0e0cd644a09cab39192d56d72b8ad2fb334593775">VORBIS_invalid_first_page</a>, 
+<a class="el" href="stb__vorbis_8c.html#a2827ae29a055de005d8769ef0e0cd644a07706341bbd7190ea2909e79d1922798">VORBIS_bad_packet_type</a>, 
+<a class="el" href="stb__vorbis_8c.html#a2827ae29a055de005d8769ef0e0cd644a555029d9dbfc200a2e5bd155089eb30c">VORBIS_cant_find_last_page</a>, 
+<a class="el" href="stb__vorbis_8c.html#a2827ae29a055de005d8769ef0e0cd644a08640b74e73325d965e69da1a2752c7a">VORBIS_seek_failed</a>, 
+<br />
+&#160;&#160;<a class="el" href="stb__vorbis_8c.html#a2827ae29a055de005d8769ef0e0cd644ac417a1b1323f6b923d0fd09a349bf7d0">VORBIS_ogg_skeleton_not_supported</a>
+<br />
+ }</td></tr>
+<tr class="separator:a2827ae29a055de005d8769ef0e0cd644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06fc87d81c62e9abb8790b6e5713c55b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6c1fc181944f58b4bcd23a05acd34499">SF_FORMAT_WAV</a> = 0x010000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6b3c3276356e59c65552aa8dc81c8f8b">SF_FORMAT_AIFF</a> = 0x020000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf4bf74071da31239a8bbe3a34877d511">SF_FORMAT_AU</a> = 0x030000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba754f6ac6e6b293b1ffcb1d06412fa297">SF_FORMAT_RAW</a> = 0x040000, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba67e5cf6543280ccf166a2489658ab4ea">SF_FORMAT_PAF</a> = 0x050000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba589143a1c82410acb51792eba617ec02">SF_FORMAT_SVX</a> = 0x060000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8905ae7f3ab72cc5b667cf43a89d378b">SF_FORMAT_NIST</a> = 0x070000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baac658149adf5858ad555460103a72e36">SF_FORMAT_VOC</a> = 0x080000, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba876afc0cbbb2ef3bfce2ed0013c3a07c">SF_FORMAT_IRCAM</a> = 0x0A0000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba1550936375eaff26d88f01c5e57b679c">SF_FORMAT_W64</a> = 0x0B0000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bace8c193d02de42380758f1428b95603f">SF_FORMAT_MAT4</a> = 0x0C0000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba81a423e6776be321f518ddf39d49755d">SF_FORMAT_MAT5</a> = 0x0D0000, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba339137ced07d99c95c80cea58165c2b0">SF_FORMAT_PVF</a> = 0x0E0000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba61cf59e2b4e7782f59f21370397e3b42">SF_FORMAT_XI</a> = 0x0F0000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf9786f5a4824ff5c5a1f8b12e2ca1b8a">SF_FORMAT_HTK</a> = 0x100000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bacba7b7998062f1749acf67a17ad57cf2">SF_FORMAT_SDS</a> = 0x110000, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bad9e4eb2bce984e40515ba901c1e6fee6">SF_FORMAT_AVR</a> = 0x120000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf84597ff85285cec0ef7a253ee7ee03b">SF_FORMAT_WAVEX</a> = 0x130000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba09f74ea32b2c1e5f6e8860a63fee39c7">SF_FORMAT_SD2</a> = 0x160000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae7dd912842b509d648d62915b996b06f">SF_FORMAT_FLAC</a> = 0x170000, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baebb9b420892e6347299efea9b1de731a">SF_FORMAT_CAF</a> = 0x180000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba9fa3f8c0e1f841adbe18fff6afd9b225">SF_FORMAT_WVE</a> = 0x190000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baaaef1f7e663487eefbe4106de44ea7fd">SF_FORMAT_OGG</a> = 0x200000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6f9158b93d85b1589cf0c22e3d9ed762">SF_FORMAT_MPC2K</a> = 0x210000, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba412416b46a68961e0f3b5998a5003da4">SF_FORMAT_RF64</a> = 0x220000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8c9b17bb36d115f80ef61dcae7631b26">SF_FORMAT_PCM_S8</a> = 0x0001, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba63515ce839545c11d35dc8c8c4c5c261">SF_FORMAT_PCM_16</a> = 0x0002, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba160bd57540f1d3d6acbf2e29ea4769f4">SF_FORMAT_PCM_24</a> = 0x0003, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba741fa21e06429d59eb548d6f388d16b4">SF_FORMAT_PCM_32</a> = 0x0004, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba3828255dad74fc3ebb02b59afb28caae">SF_FORMAT_PCM_U8</a> = 0x0005, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8b19f7e84eb0556faff33623830b489b">SF_FORMAT_FLOAT</a> = 0x0006, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba7f5de05a45409d1ce72c9a2ecbff1bd3">SF_FORMAT_DOUBLE</a> = 0x0007, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae3fd36f90782efc0ee6d00cc4a6f4060">SF_FORMAT_ULAW</a> = 0x0010, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba88cd6729a685a388edbf6b971bc57d59">SF_FORMAT_ALAW</a> = 0x0011, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba84028970a006395da0454b107749238e">SF_FORMAT_IMA_ADPCM</a> = 0x0012, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae668a3aeec6b4ed1b13bf61bf826853e">SF_FORMAT_MS_ADPCM</a> = 0x0013, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf83aeb49bdbb825a72f7e28a917b3ff8">SF_FORMAT_GSM610</a> = 0x0020, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba313dc159c6ef2fbb2aa8a8527ae679d6">SF_FORMAT_VOX_ADPCM</a> = 0x0021, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baac83013f62a7f7b43d9cf7738b0752da">SF_FORMAT_G721_32</a> = 0x0030, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bada2bb516d73e8f64dbde9a30e9c2fe3a">SF_FORMAT_G723_24</a> = 0x0031, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baa5c30385e6f2292e273fd4c2897bee6b">SF_FORMAT_G723_40</a> = 0x0032, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba82f7b868e26a90aa9f35aca78dccd6cb">SF_FORMAT_DWVW_12</a> = 0x0040, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baa4e811170b266013a8e48089466b1eaa">SF_FORMAT_DWVW_16</a> = 0x0041, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba0f25d45633813e4d4e9115a635d4e44c">SF_FORMAT_DWVW_24</a> = 0x0042, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba90c0d2cd326ee0c8535500290ddac4c6">SF_FORMAT_DWVW_N</a> = 0x0043, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8fed18695608391eec4fde4ef6aca65e">SF_FORMAT_DPCM_8</a> = 0x0050, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba1760953aad0c96ca1c85cac5b353b919">SF_FORMAT_DPCM_16</a> = 0x0051, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba029114057a7956f3c94ae18d269faf61">SF_FORMAT_VORBIS</a> = 0x0060, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bacf21441e9a1c5b705b5669b63e4bae1e">SF_FORMAT_ALAC_16</a> = 0x0070, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba4ad8a6ee7d05d950e76319544f0e7e3f">SF_FORMAT_ALAC_20</a> = 0x0071, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba303b93fd601b13ec59f315f159713743">SF_FORMAT_ALAC_24</a> = 0x0072, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55baff13be8653e6eb27f0a9be560bca32e1">SF_FORMAT_ALAC_32</a> = 0x0073, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba19c07acde7315bff90e2f4aafd91a0eb">SF_ENDIAN_FILE</a> = 0x00000000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba5e4eee211f84815fdc7932cf26e2cda2">SF_ENDIAN_LITTLE</a> = 0x10000000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba0c342389e92c7a1cbbf5267cd25db357">SF_ENDIAN_BIG</a> = 0x20000000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8cb50cf8159f5eca028506e847b3357f">SF_ENDIAN_CPU</a> = 0x30000000, 
+<br />
+&#160;&#160;<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae792e42fc6619187743f7741e7044240">SF_FORMAT_SUBMASK</a> = 0x0000FFFF, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba4d9e4f32f119d026fdc74a88e9d41e87">SF_FORMAT_TYPEMASK</a> = 0x0FFF0000, 
+<a class="el" href="sndfile_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba3ad64b85eba112d383ece8d58e612ced">SF_FORMAT_ENDMASK</a> = 0x30000000, 
+<a class="el" href="stb_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba24e950b5afa49d5dac392ca3dbac31cf">stb_keep_no</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="stb_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba78d897c2442e1e03a94787a224c34650">stb_keep_yes</a> = 1, 
+<a class="el" href="stb_8h.html#a06fc87d81c62e9abb8790b6e5713c55bafc277b5591965d4b85ff6a123d68f7bc">stb_keep_if_different</a> = 2, 
+<a class="el" href="stb__ds_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6190aa75494d401819f42525160a29df">STBDS_HM_BINARY</a>, 
+<a class="el" href="stb__ds_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba0eb29a259a93d6d37f0388a7c868adca">STBDS_HM_STRING</a>, 
+<br />
+&#160;&#160;<a class="el" href="stb__image_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba0177ac2c5002f4f251bb766d41752029">STBI_default</a> = 0, 
+<a class="el" href="stb__image_8h.html#a06fc87d81c62e9abb8790b6e5713c55bad1eb95ca1fa7706bf732bf35a0ed40aa">STBI_grey</a> = 1, 
+<a class="el" href="stb__image_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf5829d16d4cca6077465c5abd346e2f8">STBI_grey_alpha</a> = 2, 
+<a class="el" href="stb__image_8h.html#a06fc87d81c62e9abb8790b6e5713c55baa59123e5d0af25f9b1539f5cf1facddf">STBI_rgb</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="stb__image_8h.html#a06fc87d81c62e9abb8790b6e5713c55baa7b1af0c9f0310c3ada2aa29a32de293">STBI_rgb_alpha</a> = 4, 
+<a class="el" href="stb__rect__pack_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba5e4dd0b1cbee654bbfeebc5311f03525">STBRP_HEURISTIC_Skyline_default</a> =0, 
+<a class="el" href="stb__rect__pack_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba13530b067fb1f9707dc0f9d51f8b074a">STBRP_HEURISTIC_Skyline_BL_sortHeight</a> = STBRP_HEURISTIC_Skyline_default, 
+<a class="el" href="stb__rect__pack_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba11d62749c4405a231a6fd1dd9d46615c">STBRP_HEURISTIC_Skyline_BF_sortHeight</a>, 
+<br />
+&#160;&#160;<a class="el" href="stb__tilemap__editor_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba778bce82a2515bae94b3398971aee45b">STBTE_drawmode_deemphasize</a> = -1, 
+<a class="el" href="stb__tilemap__editor_8h.html#a06fc87d81c62e9abb8790b6e5713c55bafc38f2f3cc1c7fa986c121abdc30ffec">STBTE_drawmode_normal</a> = 0, 
+<a class="el" href="stb__tilemap__editor_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba088e1c4fcba12f43066438f0040eecc1">STBTE_drawmode_emphasize</a> = 1, 
+<a class="el" href="stb__truetype_8h.html#a06fc87d81c62e9abb8790b6e5713c55bab335ba97e1798b621313de85a9a6e69d">STBTT_vmove</a> =1, 
+<br />
+&#160;&#160;<a class="el" href="stb__truetype_8h.html#a06fc87d81c62e9abb8790b6e5713c55bade4bb6465c32e56588f35e5120769e2e">STBTT_vline</a>, 
+<a class="el" href="stb__truetype_8h.html#a06fc87d81c62e9abb8790b6e5713c55bab9ac3e527ce18873abeab556f6768ce4">STBTT_vcurve</a>, 
+<a class="el" href="stb__truetype_8h.html#a06fc87d81c62e9abb8790b6e5713c55bab6cd2670234c731eafba404d3a2470fd">STBTT_vcubic</a>, 
+<a class="el" href="stb__vorbis_8c.html#a06fc87d81c62e9abb8790b6e5713c55ba80ba889feb2380990384b027bd2905b4">VORBIS_packet_id</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="stb__vorbis_8c.html#a06fc87d81c62e9abb8790b6e5713c55ba01e28b89a67bc5705d2c44c1221fce8d">VORBIS_packet_comment</a> = 3, 
+<a class="el" href="stb__vorbis_8c.html#a06fc87d81c62e9abb8790b6e5713c55ba20b3079d6deb5a9d07566234f8f0eb1d">VORBIS_packet_setup</a> = 5, 
+<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae4a976805a2c137e4e56be03380ea2a2">STBVOX_UNIFORM_face_data</a>, 
+<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55bab955886cfcf0c2c881d633beeb99ad93">STBVOX_UNIFORM_transform</a>, 
+<br />
+&#160;&#160;<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba9415362fa2fe2833bbb221c12310dc81">STBVOX_UNIFORM_tex_array</a>, 
+<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf9b476df9befe12c8855d1ea20db22fe">STBVOX_UNIFORM_texscale</a>, 
+<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba1f8122611f70005180ede22ebffa840f">STBVOX_UNIFORM_color_table</a>, 
+<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba67cfb94d15198e0d936ca263a2077b5e">STBVOX_UNIFORM_normals</a>, 
+<br />
+&#160;&#160;<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba65f746116b3aa230da8bbb534e6cea97">STBVOX_UNIFORM_texgen</a>, 
+<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba87500607917aa427db2ff08fc3ea1ca8">STBVOX_UNIFORM_ambient</a>, 
+<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba82a48737d53c36a05fdf8138c17c349f">STBVOX_UNIFORM_camera_pos</a>, 
+<a class="el" href="stb__voxel__render_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba463fbe04a519703eaad7ce1434576696">STBVOX_UNIFORM_count</a>
+<br />
+ }</td></tr>
+<tr class="separator:a06fc87d81c62e9abb8790b6e5713c55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a3a3b2986c40459438b26b2cf7747c171"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structstb__vorbis__info.html">stb_vorbis_info</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a3a3b2986c40459438b26b2cf7747c171">stb_vorbis_get_info</a> (<a class="el" href="structstb__vorbis.html">stb_vorbis</a> *f)</td></tr>
+<tr class="separator:a3a3b2986c40459438b26b2cf7747c171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc16af7813a3c8320ff4dd5dd215cd0a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#abc16af7813a3c8320ff4dd5dd215cd0a">stb_vorbis_get_error</a> (<a class="el" href="structstb__vorbis.html">stb_vorbis</a> *f)</td></tr>
+<tr class="separator:abc16af7813a3c8320ff4dd5dd215cd0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4dca2244a6db648d2e6f3cbf6961e3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#ac4dca2244a6db648d2e6f3cbf6961e3e">stb_vorbis_close</a> (<a class="el" href="structstb__vorbis.html">stb_vorbis</a> *f)</td></tr>
+<tr class="separator:ac4dca2244a6db648d2e6f3cbf6961e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b01e61138433dce092f334f2a449b4f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a9b01e61138433dce092f334f2a449b4f">stb_vorbis_get_sample_offset</a> (<a class="el" href="structstb__vorbis.html">stb_vorbis</a> *f)</td></tr>
+<tr class="separator:a9b01e61138433dce092f334f2a449b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91bf63ae7792007878687351cc9eb02b"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a91bf63ae7792007878687351cc9eb02b">stb_vorbis_get_file_offset</a> (<a class="el" href="structstb__vorbis.html">stb_vorbis</a> *f)</td></tr>
+<tr class="separator:a91bf63ae7792007878687351cc9eb02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80219fb2ae6194e72dba7f3ed52c25cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a80219fb2ae6194e72dba7f3ed52c25cb">stb_vorbis_open_pushdata</a> (const unsigned char *datablock, int datablock_length_in_bytes, int *datablock_memory_consumed_in_bytes, int *error, const <a class="el" href="structstb__vorbis__alloc.html">stb_vorbis_alloc</a> *alloc_buffer)</td></tr>
+<tr class="separator:a80219fb2ae6194e72dba7f3ed52c25cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d1ea980f5872eaa4f92605238a2c7b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a7d1ea980f5872eaa4f92605238a2c7b3">stb_vorbis_decode_frame_pushdata</a> (<a class="el" href="structstb__vorbis.html">stb_vorbis</a> *f, const unsigned char *datablock, int datablock_length_in_bytes, int *channels, float ***output, int *samples)</td></tr>
+<tr class="separator:a7d1ea980f5872eaa4f92605238a2c7b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30e9bdeec5be888c7b5090415e7dce42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a30e9bdeec5be888c7b5090415e7dce42">stb_vorbis_flush_pushdata</a> (<a class="el" href="structstb__vorbis.html">stb_vorbis</a> *f)</td></tr>
+<tr class="separator:a30e9bdeec5be888c7b5090415e7dce42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a690147b6b125eb33e5f77d8f8453e97f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a690147b6b125eb33e5f77d8f8453e97f">stb_vorbis_decode_filename</a> (const char *filename, int *channels, int *sample_rate, short **output)</td></tr>
+<tr class="separator:a690147b6b125eb33e5f77d8f8453e97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd541d13b13dbe2c43cd36d0a406804a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#abd541d13b13dbe2c43cd36d0a406804a">stb_vorbis_decode_memory</a> (const unsigned char *mem, int len, int *channels, int *sample_rate, short **output)</td></tr>
+<tr class="separator:abd541d13b13dbe2c43cd36d0a406804a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1e71be707b2259dd5a8c5fd9db50f05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#aa1e71be707b2259dd5a8c5fd9db50f05">stb_vorbis_open_memory</a> (const unsigned char *data, int len, int *error, const <a class="el" href="structstb__vorbis__alloc.html">stb_vorbis_alloc</a> *alloc_buffer)</td></tr>
+<tr class="separator:aa1e71be707b2259dd5a8c5fd9db50f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae32061695d3dca3f5aa042793ef30329"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#ae32061695d3dca3f5aa042793ef30329">stb_vorbis_open_filename</a> (const char *filename, int *error, const <a class="el" href="structstb__vorbis__alloc.html">stb_vorbis_alloc</a> *alloc_buffer)</td></tr>
+<tr class="separator:ae32061695d3dca3f5aa042793ef30329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a945f997624c658fdf581ff84c7a9e534"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a945f997624c658fdf581ff84c7a9e534">stb_vorbis_open_file</a> (FILE *f, int close_handle_on_close, int *error, const <a class="el" href="structstb__vorbis__alloc.html">stb_vorbis_alloc</a> *alloc_buffer)</td></tr>
+<tr class="separator:a945f997624c658fdf581ff84c7a9e534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53534e3cb90f3074420997c21ac92827"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a53534e3cb90f3074420997c21ac92827">stb_vorbis_open_file_section</a> (FILE *f, int close_handle_on_close, int *error, const <a class="el" href="structstb__vorbis__alloc.html">stb_vorbis_alloc</a> *alloc_buffer, unsigned int len)</td></tr>
+<tr class="separator:a53534e3cb90f3074420997c21ac92827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c9ff20e01e6270e9cc3bf58f3248ef0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a4c9ff20e01e6270e9cc3bf58f3248ef0">stb_vorbis_seek_frame</a> (<a class="el" href="structstb__vorbis.html">stb_vorbis</a> *f, unsigned int sample_number)</td></tr>
+<tr class="separator:a4c9ff20e01e6270e9cc3bf58f3248ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a1f6add009ac3e63ed57cabf9941566"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a2a1f6add009ac3e63ed57cabf9941566">stb_vorbis_seek</a> (<a class="el" href="structstb__vorbis.html">stb_vorbis</a> *f, unsigned int sample_number)</td></tr>
+<tr class="separator:a2a1f6add009ac3e63ed57cabf9941566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e7cb71cdf8073dc887c356e52c3aacd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a4e7cb71cdf8073dc887c356e52c3aacd">stb_vorbis_seek_start</a> (<a class="el" href="structstb__vorbis.html">stb_vorbis</a> *f)</td></tr>
+<tr class="separator:a4e7cb71cdf8073dc887c356e52c3aacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb847e190ac0976bb84d78e00b8048b0"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#adb847e190ac0976bb84d78e00b8048b0">stb_vorbis_stream_length_in_samples</a> (<a class="el" href="structstb__vorbis.html">stb_vorbis</a> *f)</td></tr>
+<tr class="separator:adb847e190ac0976bb84d78e00b8048b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a083b951dcf8c73812332bf2034de412b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a083b951dcf8c73812332bf2034de412b">stb_vorbis_stream_length_in_seconds</a> (<a class="el" href="structstb__vorbis.html">stb_vorbis</a> *f)</td></tr>
+<tr class="separator:a083b951dcf8c73812332bf2034de412b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b2691d598485e0c5e1b4ac56173a0ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a3b2691d598485e0c5e1b4ac56173a0ce">stb_vorbis_get_frame_float</a> (<a class="el" href="structstb__vorbis.html">stb_vorbis</a> *f, int *channels, float ***output)</td></tr>
+<tr class="separator:a3b2691d598485e0c5e1b4ac56173a0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a585f1c5ea5ca33d961891b8f5a1574a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a585f1c5ea5ca33d961891b8f5a1574a4">stb_vorbis_get_frame_short_interleaved</a> (<a class="el" href="structstb__vorbis.html">stb_vorbis</a> *f, int num_c, short *buffer, int num_shorts)</td></tr>
+<tr class="separator:a585f1c5ea5ca33d961891b8f5a1574a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2887b05a26e310a9c5e370b2ab30fbae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a2887b05a26e310a9c5e370b2ab30fbae">stb_vorbis_get_frame_short</a> (<a class="el" href="structstb__vorbis.html">stb_vorbis</a> *f, int num_c, short **buffer, int num_samples)</td></tr>
+<tr class="separator:a2887b05a26e310a9c5e370b2ab30fbae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5117081109b12a483b44bb395be8ead7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a5117081109b12a483b44bb395be8ead7">stb_vorbis_get_samples_float_interleaved</a> (<a class="el" href="structstb__vorbis.html">stb_vorbis</a> *f, int channels, float *buffer, int num_floats)</td></tr>
+<tr class="separator:a5117081109b12a483b44bb395be8ead7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35ba8d6c02ebe1de4741d2603b554de6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a35ba8d6c02ebe1de4741d2603b554de6">stb_vorbis_get_samples_float</a> (<a class="el" href="structstb__vorbis.html">stb_vorbis</a> *f, int channels, float **buffer, int num_samples)</td></tr>
+<tr class="separator:a35ba8d6c02ebe1de4741d2603b554de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade776d535501af37f599e05ff289f3fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#ade776d535501af37f599e05ff289f3fe">stb_vorbis_get_samples_short_interleaved</a> (<a class="el" href="structstb__vorbis.html">stb_vorbis</a> *f, int channels, short *buffer, int num_shorts)</td></tr>
+<tr class="separator:ade776d535501af37f599e05ff289f3fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a871c4b38fe90aa7f7dd26ecc1fc93a3b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stb__vorbis_8c.html#a871c4b38fe90aa7f7dd26ecc1fc93a3b">stb_vorbis_get_samples_short</a> (<a class="el" href="structstb__vorbis.html">stb_vorbis</a> *f, int channels, short **buffer, int num_samples)</td></tr>
+<tr class="separator:a871c4b38fe90aa7f7dd26ecc1fc93a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">マクロ定義詳解</h2>
+<a id="af93b819ac40799ac392e16f6a90729fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af93b819ac40799ac392e16f6a90729fd">&#9670;&nbsp;</a></span>__forceinline</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __forceinline</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaee1afdab464950c6c0eb917fdbfcb70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaee1afdab464950c6c0eb917fdbfcb70">&#9670;&nbsp;</a></span>ADDEND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADDEND</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">SHIFT</td><td>)</td>
+          <td>&#160;&#160;&#160;(((150-SHIFT) &lt;&lt; 23) + (1 &lt;&lt; 22))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6aefe202c0399c3940251d8c9d2e8191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aefe202c0399c3940251d8c9d2e8191">&#9670;&nbsp;</a></span>array_size_required</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define array_size_required</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">count, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(count*(sizeof(void *)+(size)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b20d41d6252e9871430c242cb1a56e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b20d41d6252e9871430c242cb1a56e7">&#9670;&nbsp;</a></span>BUFFER_SIZE <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUFFER_SIZE&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b20d41d6252e9871430c242cb1a56e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b20d41d6252e9871430c242cb1a56e7">&#9670;&nbsp;</a></span>BUFFER_SIZE <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUFFER_SIZE&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac4cf4b2ab929bd23951a8676eeac086b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4cf4b2ab929bd23951a8676eeac086b">&#9670;&nbsp;</a></span>C</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define C&#160;&#160;&#160;(<a class="el" href="stb__vorbis_8c.html#a1dd9dae616d5194730d0261cccfa26f7">PLAYBACK_LEFT</a>  | <a class="el" href="stb__vorbis_8c.html#a5e0bc7897855e12b666ccf034fc0b6da">PLAYBACK_RIGHT</a> | <a class="el" href="stb__vorbis_8c.html#a67e49a8a3499ae7b17bcb5ccb499eb48">PLAYBACK_MONO</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa59a70e2ff40af3af6c08aafdca8c713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa59a70e2ff40af3af6c08aafdca8c713">&#9670;&nbsp;</a></span>CHECK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CHECK</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">f</td><td>)</td>
+          <td>&#160;&#160;&#160;((void) 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9ae36ddc885a1a5859cb4b7b3ec364bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ae36ddc885a1a5859cb4b7b3ec364bb">&#9670;&nbsp;</a></span>check_endianness</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define check_endianness</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b6245aaf9581e321d78824f20c6a3e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b6245aaf9581e321d78824f20c6a3e2">&#9670;&nbsp;</a></span>CODEBOOK_ELEMENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CODEBOOK_ELEMENT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">c, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">off&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(c-&gt;multiplicands[off])</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b19f433a0affa1ccf53e080bd9f908f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b19f433a0affa1ccf53e080bd9f908f">&#9670;&nbsp;</a></span>CODEBOOK_ELEMENT_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CODEBOOK_ELEMENT_BASE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">c</td><td>)</td>
+          <td>&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e735a57f48058426af3c58dd3435965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e735a57f48058426af3c58dd3435965">&#9670;&nbsp;</a></span>CODEBOOK_ELEMENT_FAST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CODEBOOK_ELEMENT_FAST</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">c, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">off&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(c-&gt;multiplicands[off])</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39e1b7cfc3c0d80ea907e6486d288796"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39e1b7cfc3c0d80ea907e6486d288796">&#9670;&nbsp;</a></span>CRC32_POLY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CRC32_POLY&#160;&#160;&#160;0x04c11db7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9e9bac3b3e48646f9a430d0c7411ae5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9e9bac3b3e48646f9a430d0c7411ae5">&#9670;&nbsp;</a></span>DECODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DECODE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">var, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">f, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">c&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">   <a class="code" href="stb__vorbis_8c.html#a0c23d1b38c11a185d8cf8a30010f5537">DECODE_RAW</a>(var,f,c)                                        \</div>
+<div class="line">   if (c-&gt;sparse) var = c-&gt;sorted_values[var];</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0c23d1b38c11a185d8cf8a30010f5537"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c23d1b38c11a185d8cf8a30010f5537">&#9670;&nbsp;</a></span>DECODE_RAW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DECODE_RAW</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">var, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">f, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">c&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">   <span class="keywordflow">if</span> (f-&gt;valid_bits &lt; <a class="code" href="stb__vorbis_8c.html#a42fed8d4cc187ad72ac8a8e09b98a169">STB_VORBIS_FAST_HUFFMAN_LENGTH</a>)        \</div>
+<div class="line">      prep_huffman(f);                                        \</div>
+<div class="line">   var = f-&gt;acc &amp; <a class="code" href="stb__vorbis_8c.html#a327d73597c7d58637bc626518c731e74">FAST_HUFFMAN_TABLE_MASK</a>;                    \</div>
+<div class="line">   var = c-&gt;fast_huffman[var];                                \</div>
+<div class="line">   if (var &gt;= 0) {                                            \</div>
+<div class="line">      int n = c-&gt;codeword_lengths[var];                       \</div>
+<div class="line">      f-&gt;acc &gt;&gt;= n;                                           \</div>
+<div class="line">      f-&gt;valid_bits -= n;                                     \</div>
+<div class="line">      if (f-&gt;valid_bits &lt; 0) { f-&gt;valid_bits = 0; var = -1; } \</div>
+<div class="line">   } <span class="keywordflow">else</span> {                                                   \</div>
+<div class="line">      var = codebook_decode_scalar_raw(f,c);                  \</div>
+<div class="line">   }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae8daba892ecc7da0dace8b1a1f7d2a18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8daba892ecc7da0dace8b1a1f7d2a18">&#9670;&nbsp;</a></span>DECODE_VQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DECODE_VQ</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">var, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">f, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">c&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="stb__vorbis_8c.html#a0c23d1b38c11a185d8cf8a30010f5537">DECODE_RAW</a>(var,f,c)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a734579b908509b57151ac02b946056d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a734579b908509b57151ac02b946056d1">&#9670;&nbsp;</a></span>EOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EOP&#160;&#160;&#160;(-1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa93f0eb578d23995850d61f7d61c55c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa93f0eb578d23995850d61f7d61c55c1">&#9670;&nbsp;</a></span>FALSE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FALSE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a327d73597c7d58637bc626518c731e74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a327d73597c7d58637bc626518c731e74">&#9670;&nbsp;</a></span>FAST_HUFFMAN_TABLE_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FAST_HUFFMAN_TABLE_MASK&#160;&#160;&#160;(<a class="el" href="stb__vorbis_8c.html#a29853ba560b0648c7eaef420322b79db">FAST_HUFFMAN_TABLE_SIZE</a> - 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29853ba560b0648c7eaef420322b79db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29853ba560b0648c7eaef420322b79db">&#9670;&nbsp;</a></span>FAST_HUFFMAN_TABLE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FAST_HUFFMAN_TABLE_SIZE&#160;&#160;&#160;(1 &lt;&lt; <a class="el" href="stb__vorbis_8c.html#a42fed8d4cc187ad72ac8a8e09b98a169">STB_VORBIS_FAST_HUFFMAN_LENGTH</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac741112328b2e6d25852d76efa030708"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac741112328b2e6d25852d76efa030708">&#9670;&nbsp;</a></span>FAST_SCALED_FLOAT_TO_INT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FAST_SCALED_FLOAT_TO_INT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">temp, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">s&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(temp.f = (x) + <a class="el" href="stb__vorbis_8c.html#a9e544ec1d282f0d9630c09e0313abc76">MAGIC</a>(s), temp.i - <a class="el" href="stb__vorbis_8c.html#aaee1afdab464950c6c0eb917fdbfcb70">ADDEND</a>(s))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a200ac0447d052a2baaf3dfded88e3954"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a200ac0447d052a2baaf3dfded88e3954">&#9670;&nbsp;</a></span>FASTDEF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FASTDEF</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="unionfloat__conv.html">float_conv</a> x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4aaa7b300d74e1fe252792111eb7539a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aaa7b300d74e1fe252792111eb7539a">&#9670;&nbsp;</a></span>INVALID_BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INVALID_BITS&#160;&#160;&#160;(-1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a9cd26d6325f220d322d7e5347c802b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a9cd26d6325f220d322d7e5347c802b">&#9670;&nbsp;</a></span>IS_PUSH_MODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IS_PUSH_MODE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">f</td><td>)</td>
+          <td>&#160;&#160;&#160;((f)-&gt;push_mode)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa73214aa5f2f94f63d90bb4e3d99fe53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa73214aa5f2f94f63d90bb4e3d99fe53">&#9670;&nbsp;</a></span>L</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define L&#160;&#160;&#160;(<a class="el" href="stb__vorbis_8c.html#a1dd9dae616d5194730d0261cccfa26f7">PLAYBACK_LEFT</a>  | <a class="el" href="stb__vorbis_8c.html#a67e49a8a3499ae7b17bcb5ccb499eb48">PLAYBACK_MONO</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a85274fc4609880d74f6b4f9e8c85a273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85274fc4609880d74f6b4f9e8c85a273">&#9670;&nbsp;</a></span>LIBVORBIS_MDCT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIBVORBIS_MDCT&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01d2d5321eca3aed48a939b7b4f5164b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01d2d5321eca3aed48a939b7b4f5164b">&#9670;&nbsp;</a></span>LINE_OP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LINE_OP</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;a *= b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae71449b1cc6e6250b91f539153a7a0d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae71449b1cc6e6250b91f539153a7a0d3">&#9670;&nbsp;</a></span>M_PI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define M_PI&#160;&#160;&#160;3.14159265358979323846264f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e544ec1d282f0d9630c09e0313abc76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e544ec1d282f0d9630c09e0313abc76">&#9670;&nbsp;</a></span>MAGIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAGIC</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">SHIFT</td><td>)</td>
+          <td>&#160;&#160;&#160;(1.5f * (1 &lt;&lt; (23-SHIFT)) + 0.5f/(1 &lt;&lt; SHIFT))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af8a1d2ed31f7c9a00fec46a798edb61b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8a1d2ed31f7c9a00fec46a798edb61b">&#9670;&nbsp;</a></span>MAX_BLOCKSIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_BLOCKSIZE&#160;&#160;&#160;(1 &lt;&lt; <a class="el" href="stb__vorbis_8c.html#a132e82a3e3172536840b66279fe79cdb">MAX_BLOCKSIZE_LOG</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a132e82a3e3172536840b66279fe79cdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a132e82a3e3172536840b66279fe79cdb">&#9670;&nbsp;</a></span>MAX_BLOCKSIZE_LOG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_BLOCKSIZE_LOG&#160;&#160;&#160;13</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e39aa88524d5256414c688880a0a8bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e39aa88524d5256414c688880a0a8bb">&#9670;&nbsp;</a></span>NO_CODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NO_CODE&#160;&#160;&#160;255</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a3999c21c1e5e522959ef3b98418cb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a3999c21c1e5e522959ef3b98418cb8">&#9670;&nbsp;</a></span>PAGEFLAG_continued_packet</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PAGEFLAG_continued_packet&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7e2cff6293266e5366a11d082aaafd64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e2cff6293266e5366a11d082aaafd64">&#9670;&nbsp;</a></span>PAGEFLAG_first_page</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PAGEFLAG_first_page&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4136c4035568b91645d4a6896fbe9cec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4136c4035568b91645d4a6896fbe9cec">&#9670;&nbsp;</a></span>PAGEFLAG_last_page</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PAGEFLAG_last_page&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1dd9dae616d5194730d0261cccfa26f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dd9dae616d5194730d0261cccfa26f7">&#9670;&nbsp;</a></span>PLAYBACK_LEFT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PLAYBACK_LEFT&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67e49a8a3499ae7b17bcb5ccb499eb48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67e49a8a3499ae7b17bcb5ccb499eb48">&#9670;&nbsp;</a></span>PLAYBACK_MONO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PLAYBACK_MONO&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e0bc7897855e12b666ccf034fc0b6da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e0bc7897855e12b666ccf034fc0b6da">&#9670;&nbsp;</a></span>PLAYBACK_RIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PLAYBACK_RIGHT&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5c71a5e59a53413cd6c270266d63b031"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c71a5e59a53413cd6c270266d63b031">&#9670;&nbsp;</a></span>R</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define R&#160;&#160;&#160;(<a class="el" href="stb__vorbis_8c.html#a5e0bc7897855e12b666ccf034fc0b6da">PLAYBACK_RIGHT</a> | <a class="el" href="stb__vorbis_8c.html#a67e49a8a3499ae7b17bcb5ccb499eb48">PLAYBACK_MONO</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a143d61ff41bad3fa7c278a440d02e271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a143d61ff41bad3fa7c278a440d02e271">&#9670;&nbsp;</a></span>SAMPLE_unknown</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SAMPLE_unknown&#160;&#160;&#160;0xffffffff</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a648fecb5222c45c687d8aa40e63a1242"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a648fecb5222c45c687d8aa40e63a1242">&#9670;&nbsp;</a></span>STB_VORBIS_ENDIAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STB_VORBIS_ENDIAN&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42fed8d4cc187ad72ac8a8e09b98a169"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42fed8d4cc187ad72ac8a8e09b98a169">&#9670;&nbsp;</a></span>STB_VORBIS_FAST_HUFFMAN_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STB_VORBIS_FAST_HUFFMAN_LENGTH&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aabcc470f653273b1bc381f69a3b37bfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabcc470f653273b1bc381f69a3b37bfc">&#9670;&nbsp;</a></span>STB_VORBIS_FAST_HUFFMAN_SHORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STB_VORBIS_FAST_HUFFMAN_SHORT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a00e12c885a678a051ff4c867cd966bac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00e12c885a678a051ff4c867cd966bac">&#9670;&nbsp;</a></span>STB_VORBIS_INCLUDE_STB_VORBIS_H</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STB_VORBIS_INCLUDE_STB_VORBIS_H</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8616da99977cbd16f6b6cd0d4c947df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8616da99977cbd16f6b6cd0d4c947df">&#9670;&nbsp;</a></span>STB_VORBIS_MAX_CHANNELS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STB_VORBIS_MAX_CHANNELS&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a89065f619109d612aadfeea480fcc38f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89065f619109d612aadfeea480fcc38f">&#9670;&nbsp;</a></span>STB_VORBIS_PUSHDATA_CRC_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STB_VORBIS_PUSHDATA_CRC_COUNT&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af60aefea255c38f9c7fc87c1f1f6abd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af60aefea255c38f9c7fc87c1f1f6abd9">&#9670;&nbsp;</a></span>STBV_CDECL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STBV_CDECL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a18bff79a06523cdbdcf30e3c7ee88d3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18bff79a06523cdbdcf30e3c7ee88d3e">&#9670;&nbsp;</a></span>temp_alloc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define temp_alloc</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">f, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(f-&gt;alloc.alloc_buffer ? setup_temp_malloc(f,size) : alloca(size))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a312e087f6b96d2784f4f691791de8024"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a312e087f6b96d2784f4f691791de8024">&#9670;&nbsp;</a></span>temp_alloc_restore</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define temp_alloc_restore</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">f, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((f)-&gt;temp_offset = (p))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0348ae28ddb0f5fe40e4f31be9392d8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0348ae28ddb0f5fe40e4f31be9392d8b">&#9670;&nbsp;</a></span>temp_alloc_save</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define temp_alloc_save</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">f</td><td>)</td>
+          <td>&#160;&#160;&#160;((f)-&gt;temp_offset)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a89dd36235e7b6a3ecc52fed6bb11b87b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89dd36235e7b6a3ecc52fed6bb11b87b">&#9670;&nbsp;</a></span>temp_block_array</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define temp_block_array</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">f, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">count, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;make_block_array(<a class="el" href="stb__vorbis_8c.html#a18bff79a06523cdbdcf30e3c7ee88d3e">temp_alloc</a>(f,<a class="el" href="stb__vorbis_8c.html#a6aefe202c0399c3940251d8c9d2e8191">array_size_required</a>(count,size)), count, size)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2ae34dbb4c575226ac7fe7e064bdba32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ae34dbb4c575226ac7fe7e064bdba32">&#9670;&nbsp;</a></span>temp_free</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define temp_free</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">f, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa8cecfc5c5c054d2875c03e77b7be15d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8cecfc5c5c054d2875c03e77b7be15d">&#9670;&nbsp;</a></span>TRUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TRUE&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abffa4dff1f2cb303b2501ea2dea75e6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abffa4dff1f2cb303b2501ea2dea75e6f">&#9670;&nbsp;</a></span>USE_MEMORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USE_MEMORY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">z</td><td>)</td>
+          <td>&#160;&#160;&#160;((z)-&gt;stream)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">型定義詳解</h2>
+<a id="a20d3044e421c0bea1119854fdb687f75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20d3044e421c0bea1119854fdb687f75">&#9670;&nbsp;</a></span>codetype</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef float <a class="el" href="stb__vorbis_8c.html#a20d3044e421c0bea1119854fdb687f75">codetype</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a259fa4834387bd68627ddf37bb3ebdb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a259fa4834387bd68627ddf37bb3ebdb9">&#9670;&nbsp;</a></span>int16</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef signed short <a class="el" href="stb_8h.html#a259fa4834387bd68627ddf37bb3ebdb9">int16</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43d43196463bde49cb067f5c20ab8481"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43d43196463bde49cb067f5c20ab8481">&#9670;&nbsp;</a></span>int32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef signed int <a class="el" href="stb_8h.html#a43d43196463bde49cb067f5c20ab8481">int32</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b956fe1df85f3c132b21edb4e116458"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b956fe1df85f3c132b21edb4e116458">&#9670;&nbsp;</a></span>int8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef signed char <a class="el" href="stb_8h.html#a1b956fe1df85f3c132b21edb4e116458">int8</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac67810bd2e7c1a2590015ef0ed708930"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac67810bd2e7c1a2590015ef0ed708930">&#9670;&nbsp;</a></span>stb_vorbis</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structstb__vorbis.html">stb_vorbis</a> <a class="el" href="structstb__vorbis.html">stb_vorbis</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5bf83e3a39c0410652eab86fc787757c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bf83e3a39c0410652eab86fc787757c">&#9670;&nbsp;</a></span>stb_vorbis_float_size_test</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef char stb_vorbis_float_size_test[sizeof(float)==4 &amp;&amp;sizeof(int)==4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a05f6b0ae8f6a6e135b0e290c25fe0e4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05f6b0ae8f6a6e135b0e290c25fe0e4e">&#9670;&nbsp;</a></span>uint16</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned short <a class="el" href="stb_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1134b580f8da4de94ca6b1de4d37975e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1134b580f8da4de94ca6b1de4d37975e">&#9670;&nbsp;</a></span>uint32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned int <a class="el" href="stb_8h.html#a1134b580f8da4de94ca6b1de4d37975e">uint32</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adde6aaee8457bee49c2a92621fe22b79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adde6aaee8457bee49c2a92621fe22b79">&#9670;&nbsp;</a></span>uint8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned char <a class="el" href="stb_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2a08bf33a1eb072ed9e2aef4f36a827"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2a08bf33a1eb072ed9e2aef4f36a827">&#9670;&nbsp;</a></span>vorb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structstb__vorbis.html">stb_vorbis</a> <a class="el" href="stb__vorbis_8c.html#ad2a08bf33a1eb072ed9e2aef4f36a827">vorb</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac09448f53783c6802f40f2f56976c4c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac09448f53783c6802f40f2f56976c4c9">&#9670;&nbsp;</a></span>YTYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="stb_8h.html#a259fa4834387bd68627ddf37bb3ebdb9">int16</a> <a class="el" href="stb__vorbis_8c.html#ac09448f53783c6802f40f2f56976c4c9">YTYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">列挙型詳解</h2>
+<a id="a06fc87d81c62e9abb8790b6e5713c55b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06fc87d81c62e9abb8790b6e5713c55b">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba6c1fc181944f58b4bcd23a05acd34499"></a>SF_FORMAT_WAV&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba6b3c3276356e59c65552aa8dc81c8f8b"></a>SF_FORMAT_AIFF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baf4bf74071da31239a8bbe3a34877d511"></a>SF_FORMAT_AU&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba754f6ac6e6b293b1ffcb1d06412fa297"></a>SF_FORMAT_RAW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba67e5cf6543280ccf166a2489658ab4ea"></a>SF_FORMAT_PAF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba589143a1c82410acb51792eba617ec02"></a>SF_FORMAT_SVX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba8905ae7f3ab72cc5b667cf43a89d378b"></a>SF_FORMAT_NIST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baac658149adf5858ad555460103a72e36"></a>SF_FORMAT_VOC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba876afc0cbbb2ef3bfce2ed0013c3a07c"></a>SF_FORMAT_IRCAM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba1550936375eaff26d88f01c5e57b679c"></a>SF_FORMAT_W64&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bace8c193d02de42380758f1428b95603f"></a>SF_FORMAT_MAT4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba81a423e6776be321f518ddf39d49755d"></a>SF_FORMAT_MAT5&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba339137ced07d99c95c80cea58165c2b0"></a>SF_FORMAT_PVF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba61cf59e2b4e7782f59f21370397e3b42"></a>SF_FORMAT_XI&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baf9786f5a4824ff5c5a1f8b12e2ca1b8a"></a>SF_FORMAT_HTK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bacba7b7998062f1749acf67a17ad57cf2"></a>SF_FORMAT_SDS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bad9e4eb2bce984e40515ba901c1e6fee6"></a>SF_FORMAT_AVR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baf84597ff85285cec0ef7a253ee7ee03b"></a>SF_FORMAT_WAVEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba09f74ea32b2c1e5f6e8860a63fee39c7"></a>SF_FORMAT_SD2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bae7dd912842b509d648d62915b996b06f"></a>SF_FORMAT_FLAC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baebb9b420892e6347299efea9b1de731a"></a>SF_FORMAT_CAF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba9fa3f8c0e1f841adbe18fff6afd9b225"></a>SF_FORMAT_WVE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baaaef1f7e663487eefbe4106de44ea7fd"></a>SF_FORMAT_OGG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba6f9158b93d85b1589cf0c22e3d9ed762"></a>SF_FORMAT_MPC2K&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba412416b46a68961e0f3b5998a5003da4"></a>SF_FORMAT_RF64&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba8c9b17bb36d115f80ef61dcae7631b26"></a>SF_FORMAT_PCM_S8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba63515ce839545c11d35dc8c8c4c5c261"></a>SF_FORMAT_PCM_16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba160bd57540f1d3d6acbf2e29ea4769f4"></a>SF_FORMAT_PCM_24&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba741fa21e06429d59eb548d6f388d16b4"></a>SF_FORMAT_PCM_32&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba3828255dad74fc3ebb02b59afb28caae"></a>SF_FORMAT_PCM_U8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba8b19f7e84eb0556faff33623830b489b"></a>SF_FORMAT_FLOAT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba7f5de05a45409d1ce72c9a2ecbff1bd3"></a>SF_FORMAT_DOUBLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bae3fd36f90782efc0ee6d00cc4a6f4060"></a>SF_FORMAT_ULAW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba88cd6729a685a388edbf6b971bc57d59"></a>SF_FORMAT_ALAW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba84028970a006395da0454b107749238e"></a>SF_FORMAT_IMA_ADPCM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bae668a3aeec6b4ed1b13bf61bf826853e"></a>SF_FORMAT_MS_ADPCM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baf83aeb49bdbb825a72f7e28a917b3ff8"></a>SF_FORMAT_GSM610&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba313dc159c6ef2fbb2aa8a8527ae679d6"></a>SF_FORMAT_VOX_ADPCM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baac83013f62a7f7b43d9cf7738b0752da"></a>SF_FORMAT_G721_32&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bada2bb516d73e8f64dbde9a30e9c2fe3a"></a>SF_FORMAT_G723_24&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baa5c30385e6f2292e273fd4c2897bee6b"></a>SF_FORMAT_G723_40&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba82f7b868e26a90aa9f35aca78dccd6cb"></a>SF_FORMAT_DWVW_12&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baa4e811170b266013a8e48089466b1eaa"></a>SF_FORMAT_DWVW_16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba0f25d45633813e4d4e9115a635d4e44c"></a>SF_FORMAT_DWVW_24&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba90c0d2cd326ee0c8535500290ddac4c6"></a>SF_FORMAT_DWVW_N&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba8fed18695608391eec4fde4ef6aca65e"></a>SF_FORMAT_DPCM_8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba1760953aad0c96ca1c85cac5b353b919"></a>SF_FORMAT_DPCM_16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba029114057a7956f3c94ae18d269faf61"></a>SF_FORMAT_VORBIS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bacf21441e9a1c5b705b5669b63e4bae1e"></a>SF_FORMAT_ALAC_16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba4ad8a6ee7d05d950e76319544f0e7e3f"></a>SF_FORMAT_ALAC_20&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba303b93fd601b13ec59f315f159713743"></a>SF_FORMAT_ALAC_24&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baff13be8653e6eb27f0a9be560bca32e1"></a>SF_FORMAT_ALAC_32&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba19c07acde7315bff90e2f4aafd91a0eb"></a>SF_ENDIAN_FILE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba5e4eee211f84815fdc7932cf26e2cda2"></a>SF_ENDIAN_LITTLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba0c342389e92c7a1cbbf5267cd25db357"></a>SF_ENDIAN_BIG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba8cb50cf8159f5eca028506e847b3357f"></a>SF_ENDIAN_CPU&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bae792e42fc6619187743f7741e7044240"></a>SF_FORMAT_SUBMASK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba4d9e4f32f119d026fdc74a88e9d41e87"></a>SF_FORMAT_TYPEMASK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba3ad64b85eba112d383ece8d58e612ced"></a>SF_FORMAT_ENDMASK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba24e950b5afa49d5dac392ca3dbac31cf"></a>stb_keep_no&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba78d897c2442e1e03a94787a224c34650"></a>stb_keep_yes&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bafc277b5591965d4b85ff6a123d68f7bc"></a>stb_keep_if_different&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba6190aa75494d401819f42525160a29df"></a>STBDS_HM_BINARY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba0eb29a259a93d6d37f0388a7c868adca"></a>STBDS_HM_STRING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba0177ac2c5002f4f251bb766d41752029"></a>STBI_default&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bad1eb95ca1fa7706bf732bf35a0ed40aa"></a>STBI_grey&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baf5829d16d4cca6077465c5abd346e2f8"></a>STBI_grey_alpha&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baa59123e5d0af25f9b1539f5cf1facddf"></a>STBI_rgb&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baa7b1af0c9f0310c3ada2aa29a32de293"></a>STBI_rgb_alpha&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba5e4dd0b1cbee654bbfeebc5311f03525"></a>STBRP_HEURISTIC_Skyline_default&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba13530b067fb1f9707dc0f9d51f8b074a"></a>STBRP_HEURISTIC_Skyline_BL_sortHeight&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba11d62749c4405a231a6fd1dd9d46615c"></a>STBRP_HEURISTIC_Skyline_BF_sortHeight&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba778bce82a2515bae94b3398971aee45b"></a>STBTE_drawmode_deemphasize&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bafc38f2f3cc1c7fa986c121abdc30ffec"></a>STBTE_drawmode_normal&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba088e1c4fcba12f43066438f0040eecc1"></a>STBTE_drawmode_emphasize&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bab335ba97e1798b621313de85a9a6e69d"></a>STBTT_vmove&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bade4bb6465c32e56588f35e5120769e2e"></a>STBTT_vline&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bab9ac3e527ce18873abeab556f6768ce4"></a>STBTT_vcurve&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bab6cd2670234c731eafba404d3a2470fd"></a>STBTT_vcubic&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba80ba889feb2380990384b027bd2905b4"></a>VORBIS_packet_id&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba01e28b89a67bc5705d2c44c1221fce8d"></a>VORBIS_packet_comment&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba20b3079d6deb5a9d07566234f8f0eb1d"></a>VORBIS_packet_setup&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bae4a976805a2c137e4e56be03380ea2a2"></a>STBVOX_UNIFORM_face_data&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bab955886cfcf0c2c881d633beeb99ad93"></a>STBVOX_UNIFORM_transform&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba9415362fa2fe2833bbb221c12310dc81"></a>STBVOX_UNIFORM_tex_array&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baf9b476df9befe12c8855d1ea20db22fe"></a>STBVOX_UNIFORM_texscale&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba1f8122611f70005180ede22ebffa840f"></a>STBVOX_UNIFORM_color_table&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba67cfb94d15198e0d936ca263a2077b5e"></a>STBVOX_UNIFORM_normals&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba65f746116b3aa230da8bbb534e6cea97"></a>STBVOX_UNIFORM_texgen&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba87500607917aa427db2ff08fc3ea1ca8"></a>STBVOX_UNIFORM_ambient&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba82a48737d53c36a05fdf8138c17c349f"></a>STBVOX_UNIFORM_camera_pos&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba463fbe04a519703eaad7ce1434576696"></a>STBVOX_UNIFORM_count&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a2827ae29a055de005d8769ef0e0cd644"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2827ae29a055de005d8769ef0e0cd644">&#9670;&nbsp;</a></span>STBVorbisError</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="stb__vorbis_8c.html#a2827ae29a055de005d8769ef0e0cd644">STBVorbisError</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a2827ae29a055de005d8769ef0e0cd644a8fb17b5792b1463fe7e6152195d26f19"></a>VORBIS__no_error&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2827ae29a055de005d8769ef0e0cd644a03255ba6dfd62d6530c8f67e8bc04861"></a>VORBIS_need_more_data&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2827ae29a055de005d8769ef0e0cd644a7f6a5d2c76b796bb56bcf5f41e183dde"></a>VORBIS_invalid_api_mixing&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2827ae29a055de005d8769ef0e0cd644a9f9f1fc7205e4745ebe278ee6dcff5a9"></a>VORBIS_outofmem&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2827ae29a055de005d8769ef0e0cd644a6d4bef85b593d569b17ec5f5eef8eccc"></a>VORBIS_feature_not_supported&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2827ae29a055de005d8769ef0e0cd644a5d8a45ddaddf102b73c40a1857826159"></a>VORBIS_too_many_channels&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2827ae29a055de005d8769ef0e0cd644aba12de4c5865bae04137ac7ddd5a9830"></a>VORBIS_file_open_failure&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2827ae29a055de005d8769ef0e0cd644a02fb188ec8eab3d98b0d804110a3afe1"></a>VORBIS_seek_without_length&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2827ae29a055de005d8769ef0e0cd644a27dd0deb7a2b9c1b4904e0a74ee2dbff"></a>VORBIS_unexpected_eof&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2827ae29a055de005d8769ef0e0cd644a4a1160dd71b457811cb9d8d6ee0c37a6"></a>VORBIS_seek_invalid&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2827ae29a055de005d8769ef0e0cd644a72bb5f27569f3e6b64ccd6ef10abe242"></a>VORBIS_invalid_setup&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2827ae29a055de005d8769ef0e0cd644ab391db45d817609255602c76b2ccf0c1"></a>VORBIS_invalid_stream&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2827ae29a055de005d8769ef0e0cd644a399244ebaba15c4c7fedfd8e7231adb0"></a>VORBIS_missing_capture_pattern&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2827ae29a055de005d8769ef0e0cd644ad88a7e313975aa9bf140e4a8db5f5e53"></a>VORBIS_invalid_stream_structure_version&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2827ae29a055de005d8769ef0e0cd644a3b2e936724f1ac37d491b06325163d8b"></a>VORBIS_continued_packet_flag_invalid&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2827ae29a055de005d8769ef0e0cd644a295f6c7912e05a89ceb1a217d6705369"></a>VORBIS_incorrect_stream_serial_number&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2827ae29a055de005d8769ef0e0cd644a09cab39192d56d72b8ad2fb334593775"></a>VORBIS_invalid_first_page&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2827ae29a055de005d8769ef0e0cd644a07706341bbd7190ea2909e79d1922798"></a>VORBIS_bad_packet_type&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2827ae29a055de005d8769ef0e0cd644a555029d9dbfc200a2e5bd155089eb30c"></a>VORBIS_cant_find_last_page&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2827ae29a055de005d8769ef0e0cd644a08640b74e73325d965e69da1a2752c7a"></a>VORBIS_seek_failed&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2827ae29a055de005d8769ef0e0cd644ac417a1b1323f6b923d0fd09a349bf7d0"></a>VORBIS_ogg_skeleton_not_supported&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="ac4dca2244a6db648d2e6f3cbf6961e3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4dca2244a6db648d2e6f3cbf6961e3e">&#9670;&nbsp;</a></span>stb_vorbis_close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stb_vorbis_close </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a690147b6b125eb33e5f77d8f8453e97f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a690147b6b125eb33e5f77d8f8453e97f">&#9670;&nbsp;</a></span>stb_vorbis_decode_filename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stb_vorbis_decode_filename </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>channels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>sample_rate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short **&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d1ea980f5872eaa4f92605238a2c7b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d1ea980f5872eaa4f92605238a2c7b3">&#9670;&nbsp;</a></span>stb_vorbis_decode_frame_pushdata()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stb_vorbis_decode_frame_pushdata </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>datablock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>datablock_length_in_bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>channels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float ***&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>samples</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd541d13b13dbe2c43cd36d0a406804a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd541d13b13dbe2c43cd36d0a406804a">&#9670;&nbsp;</a></span>stb_vorbis_decode_memory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stb_vorbis_decode_memory </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>mem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>channels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>sample_rate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short **&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30e9bdeec5be888c7b5090415e7dce42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30e9bdeec5be888c7b5090415e7dce42">&#9670;&nbsp;</a></span>stb_vorbis_flush_pushdata()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stb_vorbis_flush_pushdata </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc16af7813a3c8320ff4dd5dd215cd0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc16af7813a3c8320ff4dd5dd215cd0a">&#9670;&nbsp;</a></span>stb_vorbis_get_error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stb_vorbis_get_error </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="stb__vorbis_8c_abc16af7813a3c8320ff4dd5dd215cd0a_cgraph.png" border="0" usemap="#astb__vorbis_8c_abc16af7813a3c8320ff4dd5dd215cd0a_cgraph" alt=""/></div>
+<map name="stb__vorbis_8c_abc16af7813a3c8320ff4dd5dd215cd0a_cgraph" id="stb__vorbis_8c_abc16af7813a3c8320ff4dd5dd215cd0a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,144,32"/>
+<area shape="rect" href="group__gtc__constants.html#ga4b7956eb6e2fbedfc7cf2e46e85c5139" title=" " alt="" coords="192,5,251,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a91bf63ae7792007878687351cc9eb02b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91bf63ae7792007878687351cc9eb02b">&#9670;&nbsp;</a></span>stb_vorbis_get_file_offset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int stb_vorbis_get_file_offset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b2691d598485e0c5e1b4ac56173a0ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b2691d598485e0c5e1b4ac56173a0ce">&#9670;&nbsp;</a></span>stb_vorbis_get_frame_float()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stb_vorbis_get_frame_float </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>channels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float ***&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="stb__vorbis_8c_a3b2691d598485e0c5e1b4ac56173a0ce_icgraph.png" border="0" usemap="#astb__vorbis_8c_a3b2691d598485e0c5e1b4ac56173a0ce_icgraph" alt=""/></div>
+<map name="stb__vorbis_8c_a3b2691d598485e0c5e1b4ac56173a0ce_icgraph" id="stb__vorbis_8c_a3b2691d598485e0c5e1b4ac56173a0ce_icgraph">
+<area shape="rect" title=" " alt="" coords="407,123,551,164"/>
+<area shape="rect" href="stb__vorbis_8c.html#a2887b05a26e310a9c5e370b2ab30fbae" title=" " alt="" coords="206,5,350,47"/>
+<area shape="rect" href="stb__vorbis_8c.html#a585f1c5ea5ca33d961891b8f5a1574a4" title=" " alt="" coords="5,35,149,76"/>
+<area shape="rect" href="stb__vorbis_8c.html#a35ba8d6c02ebe1de4741d2603b554de6" title=" " alt="" coords="197,123,359,164"/>
+<area shape="rect" href="stb__vorbis_8c.html#a5117081109b12a483b44bb395be8ead7" title=" " alt="" coords="197,188,359,229"/>
+<area shape="rect" href="stb__vorbis_8c.html#a2a1f6add009ac3e63ed57cabf9941566" title=" " alt="" coords="221,254,335,281"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2887b05a26e310a9c5e370b2ab30fbae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2887b05a26e310a9c5e370b2ab30fbae">&#9670;&nbsp;</a></span>stb_vorbis_get_frame_short()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stb_vorbis_get_frame_short </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short **&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_samples</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="stb__vorbis_8c_a2887b05a26e310a9c5e370b2ab30fbae_cgraph.png" border="0" usemap="#astb__vorbis_8c_a2887b05a26e310a9c5e370b2ab30fbae_cgraph" alt=""/></div>
+<map name="stb__vorbis_8c_a2887b05a26e310a9c5e370b2ab30fbae_cgraph" id="stb__vorbis_8c_a2887b05a26e310a9c5e370b2ab30fbae_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,149,47"/>
+<area shape="rect" href="stb__vorbis_8c.html#a3b2691d598485e0c5e1b4ac56173a0ce" title=" " alt="" coords="197,5,341,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="stb__vorbis_8c_a2887b05a26e310a9c5e370b2ab30fbae_icgraph.png" border="0" usemap="#astb__vorbis_8c_a2887b05a26e310a9c5e370b2ab30fbae_icgraph" alt=""/></div>
+<map name="stb__vorbis_8c_a2887b05a26e310a9c5e370b2ab30fbae_icgraph" id="stb__vorbis_8c_a2887b05a26e310a9c5e370b2ab30fbae_icgraph">
+<area shape="rect" title=" " alt="" coords="197,5,341,47"/>
+<area shape="rect" href="stb__vorbis_8c.html#a585f1c5ea5ca33d961891b8f5a1574a4" title=" " alt="" coords="5,5,149,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a585f1c5ea5ca33d961891b8f5a1574a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a585f1c5ea5ca33d961891b8f5a1574a4">&#9670;&nbsp;</a></span>stb_vorbis_get_frame_short_interleaved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stb_vorbis_get_frame_short_interleaved </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_shorts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="stb__vorbis_8c_a585f1c5ea5ca33d961891b8f5a1574a4_cgraph.png" border="0" usemap="#astb__vorbis_8c_a585f1c5ea5ca33d961891b8f5a1574a4_cgraph" alt=""/></div>
+<map name="stb__vorbis_8c_a585f1c5ea5ca33d961891b8f5a1574a4_cgraph" id="stb__vorbis_8c_a585f1c5ea5ca33d961891b8f5a1574a4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,149,47"/>
+<area shape="rect" href="stb__vorbis_8c.html#a3b2691d598485e0c5e1b4ac56173a0ce" title=" " alt="" coords="389,5,533,47"/>
+<area shape="rect" href="stb__vorbis_8c.html#a2887b05a26e310a9c5e370b2ab30fbae" title=" " alt="" coords="197,35,341,76"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3a3b2986c40459438b26b2cf7747c171"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a3b2986c40459438b26b2cf7747c171">&#9670;&nbsp;</a></span>stb_vorbis_get_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structstb__vorbis__info.html">stb_vorbis_info</a> stb_vorbis_get_info </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b01e61138433dce092f334f2a449b4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b01e61138433dce092f334f2a449b4f">&#9670;&nbsp;</a></span>stb_vorbis_get_sample_offset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stb_vorbis_get_sample_offset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a35ba8d6c02ebe1de4741d2603b554de6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35ba8d6c02ebe1de4741d2603b554de6">&#9670;&nbsp;</a></span>stb_vorbis_get_samples_float()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stb_vorbis_get_samples_float </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>channels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float **&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_samples</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="stb__vorbis_8c_a35ba8d6c02ebe1de4741d2603b554de6_cgraph.png" border="0" usemap="#astb__vorbis_8c_a35ba8d6c02ebe1de4741d2603b554de6_cgraph" alt=""/></div>
+<map name="stb__vorbis_8c_a35ba8d6c02ebe1de4741d2603b554de6_cgraph" id="stb__vorbis_8c_a35ba8d6c02ebe1de4741d2603b554de6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,167,47"/>
+<area shape="rect" href="stb__vorbis_8c.html#a3b2691d598485e0c5e1b4ac56173a0ce" title=" " alt="" coords="215,5,359,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5117081109b12a483b44bb395be8ead7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5117081109b12a483b44bb395be8ead7">&#9670;&nbsp;</a></span>stb_vorbis_get_samples_float_interleaved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stb_vorbis_get_samples_float_interleaved </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>channels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_floats</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="stb__vorbis_8c_a5117081109b12a483b44bb395be8ead7_cgraph.png" border="0" usemap="#astb__vorbis_8c_a5117081109b12a483b44bb395be8ead7_cgraph" alt=""/></div>
+<map name="stb__vorbis_8c_a5117081109b12a483b44bb395be8ead7_cgraph" id="stb__vorbis_8c_a5117081109b12a483b44bb395be8ead7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,167,47"/>
+<area shape="rect" href="stb__vorbis_8c.html#a3b2691d598485e0c5e1b4ac56173a0ce" title=" " alt="" coords="215,5,359,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a871c4b38fe90aa7f7dd26ecc1fc93a3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a871c4b38fe90aa7f7dd26ecc1fc93a3b">&#9670;&nbsp;</a></span>stb_vorbis_get_samples_short()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stb_vorbis_get_samples_short </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>channels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short **&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_samples</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade776d535501af37f599e05ff289f3fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade776d535501af37f599e05ff289f3fe">&#9670;&nbsp;</a></span>stb_vorbis_get_samples_short_interleaved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stb_vorbis_get_samples_short_interleaved </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>channels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_shorts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a945f997624c658fdf581ff84c7a9e534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a945f997624c658fdf581ff84c7a9e534">&#9670;&nbsp;</a></span>stb_vorbis_open_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> * stb_vorbis_open_file </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>close_handle_on_close</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structstb__vorbis__alloc.html">stb_vorbis_alloc</a> *&#160;</td>
+          <td class="paramname"><em>alloc_buffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a53534e3cb90f3074420997c21ac92827"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53534e3cb90f3074420997c21ac92827">&#9670;&nbsp;</a></span>stb_vorbis_open_file_section()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> * stb_vorbis_open_file_section </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>close_handle_on_close</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structstb__vorbis__alloc.html">stb_vorbis_alloc</a> *&#160;</td>
+          <td class="paramname"><em>alloc_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae32061695d3dca3f5aa042793ef30329"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae32061695d3dca3f5aa042793ef30329">&#9670;&nbsp;</a></span>stb_vorbis_open_filename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> * stb_vorbis_open_filename </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structstb__vorbis__alloc.html">stb_vorbis_alloc</a> *&#160;</td>
+          <td class="paramname"><em>alloc_buffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa1e71be707b2259dd5a8c5fd9db50f05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1e71be707b2259dd5a8c5fd9db50f05">&#9670;&nbsp;</a></span>stb_vorbis_open_memory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> * stb_vorbis_open_memory </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structstb__vorbis__alloc.html">stb_vorbis_alloc</a> *&#160;</td>
+          <td class="paramname"><em>alloc_buffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80219fb2ae6194e72dba7f3ed52c25cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80219fb2ae6194e72dba7f3ed52c25cb">&#9670;&nbsp;</a></span>stb_vorbis_open_pushdata()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> * stb_vorbis_open_pushdata </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>datablock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>datablock_length_in_bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>datablock_memory_consumed_in_bytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structstb__vorbis__alloc.html">stb_vorbis_alloc</a> *&#160;</td>
+          <td class="paramname"><em>alloc_buffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a1f6add009ac3e63ed57cabf9941566"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a1f6add009ac3e63ed57cabf9941566">&#9670;&nbsp;</a></span>stb_vorbis_seek()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stb_vorbis_seek </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>sample_number</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="stb__vorbis_8c_a2a1f6add009ac3e63ed57cabf9941566_cgraph.png" border="0" usemap="#astb__vorbis_8c_a2a1f6add009ac3e63ed57cabf9941566_cgraph" alt=""/></div>
+<map name="stb__vorbis_8c_a2a1f6add009ac3e63ed57cabf9941566_cgraph" id="stb__vorbis_8c_a2a1f6add009ac3e63ed57cabf9941566_cgraph">
+<area shape="rect" title=" " alt="" coords="5,42,120,69"/>
+<area shape="rect" href="stb__vorbis_8c.html#a3b2691d598485e0c5e1b4ac56173a0ce" title=" " alt="" coords="173,5,317,47"/>
+<area shape="rect" href="stb__vorbis_8c.html#a4c9ff20e01e6270e9cc3bf58f3248ef0" title=" " alt="" coords="168,71,323,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4c9ff20e01e6270e9cc3bf58f3248ef0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c9ff20e01e6270e9cc3bf58f3248ef0">&#9670;&nbsp;</a></span>stb_vorbis_seek_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stb_vorbis_seek_frame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>sample_number</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="stb__vorbis_8c_a4c9ff20e01e6270e9cc3bf58f3248ef0_icgraph.png" border="0" usemap="#astb__vorbis_8c_a4c9ff20e01e6270e9cc3bf58f3248ef0_icgraph" alt=""/></div>
+<map name="stb__vorbis_8c_a4c9ff20e01e6270e9cc3bf58f3248ef0_icgraph" id="stb__vorbis_8c_a4c9ff20e01e6270e9cc3bf58f3248ef0_icgraph">
+<area shape="rect" title=" " alt="" coords="168,5,323,32"/>
+<area shape="rect" href="stb__vorbis_8c.html#a2a1f6add009ac3e63ed57cabf9941566" title=" " alt="" coords="5,5,120,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4e7cb71cdf8073dc887c356e52c3aacd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e7cb71cdf8073dc887c356e52c3aacd">&#9670;&nbsp;</a></span>stb_vorbis_seek_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int stb_vorbis_seek_start </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb847e190ac0976bb84d78e00b8048b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb847e190ac0976bb84d78e00b8048b0">&#9670;&nbsp;</a></span>stb_vorbis_stream_length_in_samples()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int stb_vorbis_stream_length_in_samples </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="stb__vorbis_8c_adb847e190ac0976bb84d78e00b8048b0_cgraph.png" border="0" usemap="#astb__vorbis_8c_adb847e190ac0976bb84d78e00b8048b0_cgraph" alt=""/></div>
+<map name="stb__vorbis_8c_adb847e190ac0976bb84d78e00b8048b0_cgraph" id="stb__vorbis_8c_adb847e190ac0976bb84d78e00b8048b0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,27,175,69"/>
+<area shape="rect" href="group__gtx__range.html#ga785aa0c9cf7d925318863f950eb81618" title=" " alt="" coords="223,35,295,61"/>
+<area shape="rect" href="group__gtx__range.html#gaadcca0cd1ffc54deb39e983bfdcbcdd2" title=" " alt="" coords="363,8,445,35"/>
+<area shape="rect" href="group__gtx__range.html#gaf2831875a8cee7cc000abadba2aa1265" title=" " alt="" coords="343,60,465,87"/>
+<area shape="rect" href="group__gtc__type__ptr.html#ga1c64669e1ba1160ad9386e43dc57569a" title=" " alt="" coords="529,5,632,32"/>
+<area shape="rect" href="structglm_1_1vec_3_011_00_01_t_00_01_q_01_4.html#a225b4ffa0391c3f0c64d1b43cf7a662d" title=" " alt="" coords="513,57,648,98"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="stb__vorbis_8c_adb847e190ac0976bb84d78e00b8048b0_icgraph.png" border="0" usemap="#astb__vorbis_8c_adb847e190ac0976bb84d78e00b8048b0_icgraph" alt=""/></div>
+<map name="stb__vorbis_8c_adb847e190ac0976bb84d78e00b8048b0_icgraph" id="stb__vorbis_8c_adb847e190ac0976bb84d78e00b8048b0_icgraph">
+<area shape="rect" title=" " alt="" coords="223,5,392,47"/>
+<area shape="rect" href="stb__vorbis_8c.html#a083b951dcf8c73812332bf2034de412b" title=" " alt="" coords="5,5,175,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a083b951dcf8c73812332bf2034de412b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a083b951dcf8c73812332bf2034de412b">&#9670;&nbsp;</a></span>stb_vorbis_stream_length_in_seconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float stb_vorbis_stream_length_in_seconds </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstb__vorbis.html">stb_vorbis</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="stb__vorbis_8c_a083b951dcf8c73812332bf2034de412b_cgraph.png" border="0" usemap="#astb__vorbis_8c_a083b951dcf8c73812332bf2034de412b_cgraph" alt=""/></div>
+<map name="stb__vorbis_8c_a083b951dcf8c73812332bf2034de412b_cgraph" id="stb__vorbis_8c_a083b951dcf8c73812332bf2034de412b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,27,175,69"/>
+<area shape="rect" href="stb__vorbis_8c.html#adb847e190ac0976bb84d78e00b8048b0" title=" " alt="" coords="223,27,392,69"/>
+<area shape="rect" href="group__gtx__range.html#ga785aa0c9cf7d925318863f950eb81618" title=" " alt="" coords="440,35,512,61"/>
+<area shape="rect" href="group__gtx__range.html#gaadcca0cd1ffc54deb39e983bfdcbcdd2" title=" " alt="" coords="580,8,663,35"/>
+<area shape="rect" href="group__gtx__range.html#gaf2831875a8cee7cc000abadba2aa1265" title=" " alt="" coords="560,60,683,87"/>
+<area shape="rect" href="group__gtc__type__ptr.html#ga1c64669e1ba1160ad9386e43dc57569a" title=" " alt="" coords="747,5,849,32"/>
+<area shape="rect" href="structglm_1_1vec_3_011_00_01_t_00_01_q_01_4.html#a225b4ffa0391c3f0c64d1b43cf7a662d" title=" " alt="" coords="731,57,865,98"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<div class="ttc" id="astb__vorbis_8c_html_a0c23d1b38c11a185d8cf8a30010f5537"><div class="ttname"><a href="stb__vorbis_8c.html#a0c23d1b38c11a185d8cf8a30010f5537">DECODE_RAW</a></div><div class="ttdeci">#define DECODE_RAW(var, f, c)</div><div class="ttdef"><b>Definition:</b> stb_vorbis.c:1663</div></div>
+<div class="ttc" id="astb__vorbis_8c_html_a327d73597c7d58637bc626518c731e74"><div class="ttname"><a href="stb__vorbis_8c.html#a327d73597c7d58637bc626518c731e74">FAST_HUFFMAN_TABLE_MASK</a></div><div class="ttdeci">#define FAST_HUFFMAN_TABLE_MASK</div><div class="ttdef"><b>Definition:</b> stb_vorbis.c:644</div></div>
+<div class="ttc" id="astb__vorbis_8c_html_a42fed8d4cc187ad72ac8a8e09b98a169"><div class="ttname"><a href="stb__vorbis_8c.html#a42fed8d4cc187ad72ac8a8e09b98a169">STB_VORBIS_FAST_HUFFMAN_LENGTH</a></div><div class="ttdeci">#define STB_VORBIS_FAST_HUFFMAN_LENGTH</div><div class="ttdef"><b>Definition:</b> stb_vorbis.c:460</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

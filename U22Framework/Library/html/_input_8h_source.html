@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: Input/Input.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e540aa96518235b344e655c4cbbe7889.html">Input</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Input.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_input_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef U22_FRAMEWORK_INPUT_INPUT_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define U22_FRAMEWORK_INPUT_INPUT_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../Framework/Window/Window.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_keycode_8h.html">Keycode.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespaceu22_1_1input.html">   13</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceu22_1_1input.html">u22::input</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classu22_1_1input_1_1_input.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classu22_1_1input_1_1_input.html">Input</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    std::weak_ptr&lt;u22::Window&gt; _window;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    std::unordered_map&lt;u22::input::KeyCode, bool&gt; _previous_key_status;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    std::unordered_map&lt;u22::input::KeyCode, bool&gt; _current_key_status;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    std::unordered_map&lt;u22::input::MouseButton, bool&gt; _previous_mouse_button_status;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    std::unordered_map&lt;u22::input::MouseButton, bool&gt; _current_mouse_button_status;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">double</span> _mouse_x;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">double</span> _mouse_y;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Key, <span class="keyword">typename</span> Value&gt;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">bool</span> Contain(Key key, <span class="keyword">const</span> std::unordered_map&lt;Key, Value&gt;&amp; map)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">auto</span> it = map.find(key);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">if</span> (it != map.end()) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        } <span class="comment">// if</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Key, <span class="keyword">typename</span> Value&gt;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">bool</span> IsPush(Key key, <span class="keyword">const</span> std::unordered_map&lt;Key, Value&gt;&amp; previous, <span class="keyword">const</span> std::unordered_map&lt;Key, Value&gt;&amp; current)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        _ASSERT_EXPR(this-&gt;Contain(key, previous), <a class="code" href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a><span class="stringliteral">&quot;存在しないキーについて判定しようとしています&quot;</span>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        _ASSERT_EXPR(this-&gt;Contain(key, current), <a class="code" href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a><span class="stringliteral">&quot;存在しないキーについて判定しようとしています&quot;</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">bool</span> prev = previous.at(key);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">bool</span> now = current.at(key);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">return</span> prev == <span class="keyword">false</span> &amp;&amp; now == <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Key, <span class="keyword">typename</span> Value&gt;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">bool</span> IsHold(Key key, <span class="keyword">const</span> std::unordered_map&lt;Key, Value&gt;&amp; previous, <span class="keyword">const</span> std::unordered_map&lt;Key, Value&gt;&amp; current)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        _ASSERT_EXPR(this-&gt;Contain(key, previous), <a class="code" href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a><span class="stringliteral">&quot;存在しないキーについて判定しようとしています&quot;</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        _ASSERT_EXPR(this-&gt;Contain(key, current), <a class="code" href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a><span class="stringliteral">&quot;存在しないキーについて判定しようとしています&quot;</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">bool</span> prev = previous.at(key);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordtype">bool</span> now = current.at(key);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">return</span> prev == <span class="keyword">true</span> &amp;&amp; now == <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Key, <span class="keyword">typename</span> Value&gt;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">bool</span> IsPull(Key key, <span class="keyword">const</span> std::unordered_map&lt;Key, Value&gt;&amp; previous, <span class="keyword">const</span> std::unordered_map&lt;Key, Value&gt;&amp; current)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        _ASSERT_EXPR(this-&gt;Contain(key, previous), <a class="code" href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a><span class="stringliteral">&quot;存在しないキーについて判定しようとしています&quot;</span>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        _ASSERT_EXPR(this-&gt;Contain(key, current), <a class="code" href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a><span class="stringliteral">&quot;存在しないキーについて判定しようとしています&quot;</span>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">bool</span> prev = previous.at(key);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">bool</span> now = current.at(key);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">return</span> prev == <span class="keyword">true</span> &amp;&amp; now == <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="classu22_1_1input_1_1_input.html#ab9af679379f7830930c68a8458551e63">Input</a>();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="classu22_1_1input_1_1_input.html#a968b8d273ebec66eca000f0706ef3ac8">~Input</a>();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classu22_1_1input_1_1_input.html#a3fd9c784af5d18fb5e1ca864ccb6a903">SetWindow</a>(<span class="keyword">const</span> std::shared_ptr&lt;u22::Window&gt;&amp; ptr);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classu22_1_1input_1_1_input.html#ad6f10c81ad046f90c0c578aee36b49f2">GetMouseX</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classu22_1_1input_1_1_input.html#a561ffc780b52850b791044bb1d71709f">GetMouseY</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">bool</span> IsPush(<a class="code" href="namespaceu22_1_1input.html#a49c48d72760f3356307f8290de5ed483">u22::input::KeyCode</a> keycode) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">bool</span> IsPush(<a class="code" href="namespaceu22_1_1input.html#a38074ea61858009575d7336c43be8515">u22::input::MouseButton</a> button) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordtype">bool</span> IsHold(<a class="code" href="namespaceu22_1_1input.html#a49c48d72760f3356307f8290de5ed483">u22::input::KeyCode</a> keycode) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">bool</span> IsHold(<a class="code" href="namespaceu22_1_1input.html#a38074ea61858009575d7336c43be8515">u22::input::MouseButton</a> button) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordtype">bool</span> IsPull(<a class="code" href="namespaceu22_1_1input.html#a49c48d72760f3356307f8290de5ed483">u22::input::KeyCode</a> keycode) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordtype">bool</span> IsPull(<a class="code" href="namespaceu22_1_1input.html#a38074ea61858009575d7336c43be8515">u22::input::MouseButton</a> button) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1input_1_1_input.html#aebf85144ed5077a4c7e832f83df7d599">AddKey</a>(<a class="code" href="namespaceu22_1_1input.html#a49c48d72760f3356307f8290de5ed483">u22::input::KeyCode</a> keycode);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classu22_1_1input_1_1_input.html#a393b30e7b7d8f2b0bab4395633abbaf1">AddMouse</a>(<a class="code" href="namespaceu22_1_1input.html#a38074ea61858009575d7336c43be8515">u22::input::MouseButton</a> button);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classu22_1_1input_1_1_input.html#acbde613328622ecaa0c1f0193a9b5df8">Refresh</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;};</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;}</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor">#endif // !U22_FRAMEWORK_INPUT_INPUT_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astb__vorbis_8c_html_aa73214aa5f2f94f63d90bb4e3d99fe53"><div class="ttname"><a href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a></div><div class="ttdeci">#define L</div><div class="ttdef"><b>Definition:</b> stb_vorbis.c:5037</div></div>
+<div class="ttc" id="a_input_8h_html"><div class="ttname"><a href="_input_8h.html">Input.h</a></div></div>
+<div class="ttc" id="aclassu22_1_1input_1_1_input_html_ab9af679379f7830930c68a8458551e63"><div class="ttname"><a href="classu22_1_1input_1_1_input.html#ab9af679379f7830930c68a8458551e63">u22::input::Input::Input</a></div><div class="ttdeci">Input()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> Input.cpp:4</div></div>
+<div class="ttc" id="aclassu22_1_1input_1_1_input_html_a3fd9c784af5d18fb5e1ca864ccb6a903"><div class="ttname"><a href="classu22_1_1input_1_1_input.html#a3fd9c784af5d18fb5e1ca864ccb6a903">u22::input::Input::SetWindow</a></div><div class="ttdeci">void SetWindow(const std::shared_ptr&lt; u22::Window &gt; &amp;ptr)</div><div class="ttdoc">セッター</div><div class="ttdef"><b>Definition:</b> Input.cpp:73</div></div>
+<div class="ttc" id="aclassu22_1_1input_1_1_input_html_aebf85144ed5077a4c7e832f83df7d599"><div class="ttname"><a href="classu22_1_1input_1_1_input.html#aebf85144ed5077a4c7e832f83df7d599">u22::input::Input::AddKey</a></div><div class="ttdeci">bool AddKey(u22::input::KeyCode keycode)</div><div class="ttdoc">追加</div><div class="ttdef"><b>Definition:</b> Input.cpp:109</div></div>
+<div class="ttc" id="aclassu22_1_1input_1_1_input_html_a968b8d273ebec66eca000f0706ef3ac8"><div class="ttname"><a href="classu22_1_1input_1_1_input.html#a968b8d273ebec66eca000f0706ef3ac8">u22::input::Input::~Input</a></div><div class="ttdeci">~Input()</div><div class="ttdoc">デストラクタ</div><div class="ttdef"><b>Definition:</b> Input.cpp:70</div></div>
+<div class="ttc" id="agroup__core__func__common_html_ga7cd77683da6361e297c56443fc70806d"><div class="ttname"><a href="group__core__func__common.html#ga7cd77683da6361e297c56443fc70806d">glm::clamp</a></div><div class="ttdeci">GLM_FUNC_DECL GLM_CONSTEXPR genType clamp(genType x, genType minVal, genType maxVal)</div><div class="ttdef"><b>Definition:</b> func_common.inl:504</div></div>
+<div class="ttc" id="anamespaceu22_1_1input_html_a49c48d72760f3356307f8290de5ed483a7fc56270e7a70fa81a5935b72eacbe29"><div class="ttname"><a href="namespaceu22_1_1input.html#a49c48d72760f3356307f8290de5ed483a7fc56270e7a70fa81a5935b72eacbe29">u22::input::KeyCode::A</a></div><div class="ttdeci">@ A</div></div>
+<div class="ttc" id="anamespaceu22_1_1input_html_a49c48d72760f3356307f8290de5ed483"><div class="ttname"><a href="namespaceu22_1_1input.html#a49c48d72760f3356307f8290de5ed483">u22::input::KeyCode</a></div><div class="ttdeci">KeyCode</div><div class="ttdef"><b>Definition:</b> Keycode.h:12</div></div>
+<div class="ttc" id="aclassu22_1_1input_1_1_input_html_ad6f10c81ad046f90c0c578aee36b49f2"><div class="ttname"><a href="classu22_1_1input_1_1_input.html#ad6f10c81ad046f90c0c578aee36b49f2">u22::input::Input::GetMouseX</a></div><div class="ttdeci">float GetMouseX(void) const noexcept</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> Input.cpp:77</div></div>
+<div class="ttc" id="anamespaceu22_1_1input_html_a38074ea61858009575d7336c43be8515a92b09c7c48c520c3c55e497875da437c"><div class="ttname"><a href="namespaceu22_1_1input.html#a38074ea61858009575d7336c43be8515a92b09c7c48c520c3c55e497875da437c">u22::input::MouseButton::Right</a></div><div class="ttdeci">@ Right</div></div>
+<div class="ttc" id="agroup__input_html_gad289438eb7cf53d11eca685373f44105"><div class="ttname"><a href="group__input.html#gad289438eb7cf53d11eca685373f44105">glfwGetCursorPos</a></div><div class="ttdeci">GLFWAPI void glfwGetCursorPos(GLFWwindow *window, double *xpos, double *ypos)</div><div class="ttdoc">Retrieves the position of the cursor relative to the client area of the window.</div></div>
+<div class="ttc" id="aclassu22_1_1input_1_1_input_html"><div class="ttname"><a href="classu22_1_1input_1_1_input.html">u22::input::Input</a></div><div class="ttdef"><b>Definition:</b> Input.h:14</div></div>
+<div class="ttc" id="anamespaceu22_1_1input_html_a38074ea61858009575d7336c43be8515"><div class="ttname"><a href="namespaceu22_1_1input.html#a38074ea61858009575d7336c43be8515">u22::input::MouseButton</a></div><div class="ttdeci">MouseButton</div><div class="ttdef"><b>Definition:</b> Keycode.h:59</div></div>
+<div class="ttc" id="agroup__input_html_ga6da5efb04f700c312a57a169fa9393a0"><div class="ttname"><a href="group__input.html#ga6da5efb04f700c312a57a169fa9393a0">glfwGetMouseButton</a></div><div class="ttdeci">GLFWAPI int glfwGetMouseButton(GLFWwindow *window, int button)</div><div class="ttdoc">Returns the last reported state of a mouse button for the specified window.</div></div>
+<div class="ttc" id="aclassu22_1_1input_1_1_input_html_a393b30e7b7d8f2b0bab4395633abbaf1"><div class="ttname"><a href="classu22_1_1input_1_1_input.html#a393b30e7b7d8f2b0bab4395633abbaf1">u22::input::Input::AddMouse</a></div><div class="ttdeci">bool AddMouse(u22::input::MouseButton button)</div><div class="ttdoc">追加</div><div class="ttdef"><b>Definition:</b> Input.cpp:120</div></div>
+<div class="ttc" id="aclassu22_1_1input_1_1_input_html_a561ffc780b52850b791044bb1d71709f"><div class="ttname"><a href="classu22_1_1input_1_1_input.html#a561ffc780b52850b791044bb1d71709f">u22::input::Input::GetMouseY</a></div><div class="ttdeci">float GetMouseY(void) const noexcept</div><div class="ttdoc">ゲッター</div><div class="ttdef"><b>Definition:</b> Input.cpp:81</div></div>
+<div class="ttc" id="agroup__input_html_ga7d8ad8ffaf272808f04e1d5d33ec8859"><div class="ttname"><a href="group__input.html#ga7d8ad8ffaf272808f04e1d5d33ec8859">glfwGetKey</a></div><div class="ttdeci">GLFWAPI int glfwGetKey(GLFWwindow *window, int key)</div><div class="ttdoc">Returns the last reported state of a keyboard key for the specified window.</div></div>
+<div class="ttc" id="anamespaceu22_1_1input_html"><div class="ttname"><a href="namespaceu22_1_1input.html">u22::input</a></div><div class="ttdef"><b>Definition:</b> Input.h:13</div></div>
+<div class="ttc" id="aclassu22_1_1input_1_1_input_html_acbde613328622ecaa0c1f0193a9b5df8"><div class="ttname"><a href="classu22_1_1input_1_1_input.html#acbde613328622ecaa0c1f0193a9b5df8">u22::input::Input::Refresh</a></div><div class="ttdeci">void Refresh(void)</div><div class="ttdoc">更新</div><div class="ttdef"><b>Definition:</b> Input.cpp:130</div></div>
+<div class="ttc" id="a_keycode_8h_html"><div class="ttname"><a href="_keycode_8h.html">Keycode.h</a></div></div>
+<div class="ttc" id="astb__vorbis_8c_html_a5c71a5e59a53413cd6c270266d63b031"><div class="ttname"><a href="stb__vorbis_8c.html#a5c71a5e59a53413cd6c270266d63b031">R</a></div><div class="ttdeci">#define R</div><div class="ttdef"><b>Definition:</b> stb_vorbis.c:5039</div></div>
+<div class="ttc" id="anamespaceu22_1_1input_html_a49c48d72760f3356307f8290de5ed483a0d61f8370cad1d412f80b84d143e1257"><div class="ttname"><a href="namespaceu22_1_1input.html#a49c48d72760f3356307f8290de5ed483a0d61f8370cad1d412f80b84d143e1257">u22::input::KeyCode::C</a></div><div class="ttdeci">@ C</div></div>
+<div class="ttc" id="anamespaceu22_1_1input_html_a49c48d72760f3356307f8290de5ed483a9d5ed678fe57bcca610140957afab571"><div class="ttname"><a href="namespaceu22_1_1input.html#a49c48d72760f3356307f8290de5ed483a9d5ed678fe57bcca610140957afab571">u22::input::KeyCode::B</a></div><div class="ttdeci">@ B</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

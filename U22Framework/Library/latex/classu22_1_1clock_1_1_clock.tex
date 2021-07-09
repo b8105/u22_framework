@@ -1,0 +1,162 @@
+\hypertarget{classu22_1_1clock_1_1_clock}{}\doxysection{u22\+::clock\+::Clock クラス}
+\label{classu22_1_1clock_1_1_clock}\index{u22::clock::Clock@{u22::clock::Clock}}
+
+
+{\ttfamily \#include $<$Clock.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classu22_1_1clock_1_1_clock_a9ad06d627ac37b42cb41d0ed862c904d}{Clock}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classu22_1_1clock_1_1_clock_a5c495ec38734a53ffcbfc8cc6f8f0561}{$\sim$\+Clock}} ()
+\begin{DoxyCompactList}\small\item\em デンストラクタ \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classu22_1_1clock_1_1_clock_a59d033631b67cbaa08d57c7fb79e4a09}{Get\+Frame\+Second}} (void) const
+\begin{DoxyCompactList}\small\item\em ゲッター \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classu22_1_1clock_1_1_clock_a9cb88630bf0ae52d1c8da546efa90a08}{Get\+Ideal\+F\+PS}} (void) const noexcept
+\begin{DoxyCompactList}\small\item\em ゲッター \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classu22_1_1clock_1_1_clock_aab10683ca39358e3be20e4d90aaf43d2}{Get\+F\+PS}} (void) const noexcept
+\begin{DoxyCompactList}\small\item\em ゲッター \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1clock_1_1_clock_a797463fe4a5bf1d86bed9dc2e02d320e}{Is\+Full}} (void)
+\begin{DoxyCompactList}\small\item\em 単位時間に到達したか判定する \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classu22_1_1clock_1_1_clock_a78bc55abadb4f22c3835da45dbbdb105}{Wait}} (void)
+\begin{DoxyCompactList}\small\item\em 単位時間になるまで待つ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classu22_1_1clock_1_1_clock_ad8f385d47d13a5e934f6b409591873b6}{Tick}} (void)
+\begin{DoxyCompactList}\small\item\em 時間を進める \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classu22_1_1clock_1_1_clock_a7a7d6016d0f7a0ae9a676cf1fbca52cd}{Update}} (void)
+\begin{DoxyCompactList}\small\item\em 更新 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{classu22_1_1clock_1_1_clock_a9ad06d627ac37b42cb41d0ed862c904d}\label{classu22_1_1clock_1_1_clock_a9ad06d627ac37b42cb41d0ed862c904d}} 
+\index{u22::clock::Clock@{u22::clock::Clock}!Clock@{Clock}}
+\index{Clock@{Clock}!u22::clock::Clock@{u22::clock::Clock}}
+\doxysubsubsection{\texorpdfstring{Clock()}{Clock()}}
+{\footnotesize\ttfamily u22\+::clock\+::\+Clock\+::\+Clock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+コンストラクタ 
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{classu22_1_1clock_1_1_clock_a9ad06d627ac37b42cb41d0ed862c904d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1clock_1_1_clock_a5c495ec38734a53ffcbfc8cc6f8f0561}\label{classu22_1_1clock_1_1_clock_a5c495ec38734a53ffcbfc8cc6f8f0561}} 
+\index{u22::clock::Clock@{u22::clock::Clock}!````~Clock@{$\sim$Clock}}
+\index{````~Clock@{$\sim$Clock}!u22::clock::Clock@{u22::clock::Clock}}
+\doxysubsubsection{\texorpdfstring{$\sim$Clock()}{~Clock()}}
+{\footnotesize\ttfamily u22\+::clock\+::\+Clock\+::$\sim$\+Clock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+デンストラクタ 
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{classu22_1_1clock_1_1_clock_aab10683ca39358e3be20e4d90aaf43d2}\label{classu22_1_1clock_1_1_clock_aab10683ca39358e3be20e4d90aaf43d2}} 
+\index{u22::clock::Clock@{u22::clock::Clock}!GetFPS@{GetFPS}}
+\index{GetFPS@{GetFPS}!u22::clock::Clock@{u22::clock::Clock}}
+\doxysubsubsection{\texorpdfstring{GetFPS()}{GetFPS()}}
+{\footnotesize\ttfamily float u22\+::clock\+::\+Clock\+::\+Get\+F\+PS (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+ゲッター 
+
+\begin{DoxyReturn}{戻り値}
+現在の\+F\+PS
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1clock_1_1_clock_a59d033631b67cbaa08d57c7fb79e4a09}\label{classu22_1_1clock_1_1_clock_a59d033631b67cbaa08d57c7fb79e4a09}} 
+\index{u22::clock::Clock@{u22::clock::Clock}!GetFrameSecond@{GetFrameSecond}}
+\index{GetFrameSecond@{GetFrameSecond}!u22::clock::Clock@{u22::clock::Clock}}
+\doxysubsubsection{\texorpdfstring{GetFrameSecond()}{GetFrameSecond()}}
+{\footnotesize\ttfamily float u22\+::clock\+::\+Clock\+::\+Get\+Frame\+Second (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+ゲッター 
+
+\begin{DoxyReturn}{戻り値}
+時間
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1clock_1_1_clock_a9cb88630bf0ae52d1c8da546efa90a08}\label{classu22_1_1clock_1_1_clock_a9cb88630bf0ae52d1c8da546efa90a08}} 
+\index{u22::clock::Clock@{u22::clock::Clock}!GetIdealFPS@{GetIdealFPS}}
+\index{GetIdealFPS@{GetIdealFPS}!u22::clock::Clock@{u22::clock::Clock}}
+\doxysubsubsection{\texorpdfstring{GetIdealFPS()}{GetIdealFPS()}}
+{\footnotesize\ttfamily float u22\+::clock\+::\+Clock\+::\+Get\+Ideal\+F\+PS (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+ゲッター 
+
+\begin{DoxyReturn}{戻り値}
+理想的な\+F\+PS
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1clock_1_1_clock_a797463fe4a5bf1d86bed9dc2e02d320e}\label{classu22_1_1clock_1_1_clock_a797463fe4a5bf1d86bed9dc2e02d320e}} 
+\index{u22::clock::Clock@{u22::clock::Clock}!IsFull@{IsFull}}
+\index{IsFull@{IsFull}!u22::clock::Clock@{u22::clock::Clock}}
+\doxysubsubsection{\texorpdfstring{IsFull()}{IsFull()}}
+{\footnotesize\ttfamily bool u22\+::clock\+::\+Clock\+::\+Is\+Full (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+単位時間に到達したか判定する 
+
+\begin{DoxyReturn}{戻り値}
+しているならtrueを返す
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1clock_1_1_clock_ad8f385d47d13a5e934f6b409591873b6}\label{classu22_1_1clock_1_1_clock_ad8f385d47d13a5e934f6b409591873b6}} 
+\index{u22::clock::Clock@{u22::clock::Clock}!Tick@{Tick}}
+\index{Tick@{Tick}!u22::clock::Clock@{u22::clock::Clock}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily void u22\+::clock\+::\+Clock\+::\+Tick (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+時間を進める 
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{classu22_1_1clock_1_1_clock_ad8f385d47d13a5e934f6b409591873b6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1clock_1_1_clock_a7a7d6016d0f7a0ae9a676cf1fbca52cd}\label{classu22_1_1clock_1_1_clock_a7a7d6016d0f7a0ae9a676cf1fbca52cd}} 
+\index{u22::clock::Clock@{u22::clock::Clock}!Update@{Update}}
+\index{Update@{Update}!u22::clock::Clock@{u22::clock::Clock}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void u22\+::clock\+::\+Clock\+::\+Update (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+更新 
+
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{classu22_1_1clock_1_1_clock_a7a7d6016d0f7a0ae9a676cf1fbca52cd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1clock_1_1_clock_a78bc55abadb4f22c3835da45dbbdb105}\label{classu22_1_1clock_1_1_clock_a78bc55abadb4f22c3835da45dbbdb105}} 
+\index{u22::clock::Clock@{u22::clock::Clock}!Wait@{Wait}}
+\index{Wait@{Wait}!u22::clock::Clock@{u22::clock::Clock}}
+\doxysubsubsection{\texorpdfstring{Wait()}{Wait()}}
+{\footnotesize\ttfamily void u22\+::clock\+::\+Clock\+::\+Wait (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+単位時間になるまで待つ 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+Clock/\mbox{\hyperlink{_clock_8h}{Clock.\+h}}\item 
+Clock/\mbox{\hyperlink{_clock_8cpp}{Clock.\+cpp}}\end{DoxyCompactItemize}

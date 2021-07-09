@@ -1,0 +1,70 @@
+\hypertarget{ftsnames_8h}{}\doxysection{freetype/ftsnames.h ファイル}
+\label{ftsnames_8h}\index{freetype/ftsnames.h@{freetype/ftsnames.h}}
+{\ttfamily \#include $<$freetype/freetype.\+h$>$}\newline
+{\ttfamily \#include $<$freetype/ftparams.\+h$>$}\newline
+ftsnames.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ftsnames_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_f_t___sfnt_name__}{F\+T\+\_\+\+Sfnt\+Name\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_f_t___sfnt_lang_tag__}{F\+T\+\_\+\+Sfnt\+Lang\+Tag\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{public-macros_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER}} struct \mbox{\hyperlink{struct_f_t___sfnt_name__}{F\+T\+\_\+\+Sfnt\+Name\+\_\+}} \mbox{\hyperlink{ftsnames_8h_ab114c00b7f2b1944b01bdca9375cc5d0}{F\+T\+\_\+\+Sfnt\+Name}}
+\item 
+typedef struct \mbox{\hyperlink{struct_f_t___sfnt_lang_tag__}{F\+T\+\_\+\+Sfnt\+Lang\+Tag\+\_\+}} \mbox{\hyperlink{ftsnames_8h_a8e4b3f5b43001f26a849eeb4d8bc156c}{F\+T\+\_\+\+Sfnt\+Lang\+Tag}}
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ftsnames_8h_a3ef7496741da58eadb90d455649f5eda}{F\+T\+\_\+\+Get\+\_\+\+Sfnt\+\_\+\+Name\+\_\+\+Count}} (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face)
+\item 
+\mbox{\hyperlink{ftsnames_8h_ad6d1af5af193d6f42b76f733d924eed7}{F\+T\+\_\+\+Get\+\_\+\+Sfnt\+\_\+\+Name}} (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} idx, \mbox{\hyperlink{ftsnames_8h_ab114c00b7f2b1944b01bdca9375cc5d0}{F\+T\+\_\+\+Sfnt\+Name}} $\ast$aname)
+\item 
+\mbox{\hyperlink{ftsnames_8h_ae4b917c2171e3eb3ea0791f33a88b203}{F\+T\+\_\+\+Get\+\_\+\+Sfnt\+\_\+\+Lang\+Tag}} (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} lang\+ID, \mbox{\hyperlink{ftsnames_8h_a8e4b3f5b43001f26a849eeb4d8bc156c}{F\+T\+\_\+\+Sfnt\+Lang\+Tag}} $\ast$alang\+Tag)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{ftsnames_8h_a8e4b3f5b43001f26a849eeb4d8bc156c}\label{ftsnames_8h_a8e4b3f5b43001f26a849eeb4d8bc156c}} 
+\index{ftsnames.h@{ftsnames.h}!FT\_SfntLangTag@{FT\_SfntLangTag}}
+\index{FT\_SfntLangTag@{FT\_SfntLangTag}!ftsnames.h@{ftsnames.h}}
+\doxysubsubsection{\texorpdfstring{FT\_SfntLangTag}{FT\_SfntLangTag}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_f_t___sfnt_lang_tag__}{F\+T\+\_\+\+Sfnt\+Lang\+Tag\+\_\+}} \mbox{\hyperlink{ftsnames_8h_a8e4b3f5b43001f26a849eeb4d8bc156c}{F\+T\+\_\+\+Sfnt\+Lang\+Tag}}}
+
+\mbox{\Hypertarget{ftsnames_8h_ab114c00b7f2b1944b01bdca9375cc5d0}\label{ftsnames_8h_ab114c00b7f2b1944b01bdca9375cc5d0}} 
+\index{ftsnames.h@{ftsnames.h}!FT\_SfntName@{FT\_SfntName}}
+\index{FT\_SfntName@{FT\_SfntName}!ftsnames.h@{ftsnames.h}}
+\doxysubsubsection{\texorpdfstring{FT\_SfntName}{FT\_SfntName}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{public-macros_8h_a72ee5814b3ae378ebb7fd3a8e3ddec14}{F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER}} struct \mbox{\hyperlink{struct_f_t___sfnt_name__}{F\+T\+\_\+\+Sfnt\+Name\+\_\+}} \mbox{\hyperlink{ftsnames_8h_ab114c00b7f2b1944b01bdca9375cc5d0}{F\+T\+\_\+\+Sfnt\+Name}}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{ftsnames_8h_ae4b917c2171e3eb3ea0791f33a88b203}\label{ftsnames_8h_ae4b917c2171e3eb3ea0791f33a88b203}} 
+\index{ftsnames.h@{ftsnames.h}!FT\_Get\_Sfnt\_LangTag@{FT\_Get\_Sfnt\_LangTag}}
+\index{FT\_Get\_Sfnt\_LangTag@{FT\_Get\_Sfnt\_LangTag}!ftsnames.h@{ftsnames.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Get\_Sfnt\_LangTag()}{FT\_Get\_Sfnt\_LangTag()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Get\+\_\+\+Sfnt\+\_\+\+Lang\+Tag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}}}]{face,  }\item[{\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}}}]{lang\+ID,  }\item[{\mbox{\hyperlink{ftsnames_8h_a8e4b3f5b43001f26a849eeb4d8bc156c}{F\+T\+\_\+\+Sfnt\+Lang\+Tag}} $\ast$}]{alang\+Tag }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftsnames_8h_ad6d1af5af193d6f42b76f733d924eed7}\label{ftsnames_8h_ad6d1af5af193d6f42b76f733d924eed7}} 
+\index{ftsnames.h@{ftsnames.h}!FT\_Get\_Sfnt\_Name@{FT\_Get\_Sfnt\_Name}}
+\index{FT\_Get\_Sfnt\_Name@{FT\_Get\_Sfnt\_Name}!ftsnames.h@{ftsnames.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Get\_Sfnt\_Name()}{FT\_Get\_Sfnt\_Name()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Get\+\_\+\+Sfnt\+\_\+\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}}}]{face,  }\item[{\mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}}}]{idx,  }\item[{\mbox{\hyperlink{ftsnames_8h_ab114c00b7f2b1944b01bdca9375cc5d0}{F\+T\+\_\+\+Sfnt\+Name}} $\ast$}]{aname }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ftsnames_8h_a3ef7496741da58eadb90d455649f5eda}\label{ftsnames_8h_a3ef7496741da58eadb90d455649f5eda}} 
+\index{ftsnames.h@{ftsnames.h}!FT\_Get\_Sfnt\_Name\_Count@{FT\_Get\_Sfnt\_Name\_Count}}
+\index{FT\_Get\_Sfnt\_Name\_Count@{FT\_Get\_Sfnt\_Name\_Count}!ftsnames.h@{ftsnames.h}}
+\doxysubsubsection{\texorpdfstring{FT\_Get\_Sfnt\_Name\_Count()}{FT\_Get\_Sfnt\_Name\_Count()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+Get\+\_\+\+Sfnt\+\_\+\+Name\+\_\+\+Count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}}}]{face }\end{DoxyParamCaption})}
+

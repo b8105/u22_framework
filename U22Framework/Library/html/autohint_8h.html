@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: freetype/internal/autohint.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_981d57b2e11530428c66a192ba91cfc7.html">freetype</a></li><li class="navelem"><a class="el" href="dir_ac174dc64ad36850d6be9a69f636b6c2.html">internal</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#typedef-members">型定義</a>  </div>
+  <div class="headertitle">
+<div class="title">autohint.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="freetype_8h_source.html">freetype/freetype.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+autohint.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="autohint_8h__incl.png" border="0" usemap="#afreetype_2internal_2autohint_8h" alt=""/></div>
+<map name="freetype_2internal_2autohint_8h" id="freetype_2internal_2autohint_8h">
+<area shape="rect" title=" " alt="" coords="205,5,380,32"/>
+<area shape="rect" href="freetype_8h.html" title=" " alt="" coords="228,80,357,107"/>
+<area shape="rect" href="ft2build_8h.html" title=" " alt="" coords="51,229,126,256"/>
+<area shape="rect" href="fttypes_8h.html" title=" " alt="" coords="231,155,354,181"/>
+<area shape="rect" href="fterrors_8h.html" title=" " alt="" coords="554,155,677,181"/>
+<area shape="rect" href="ftheader_8h.html" title=" " alt="" coords="5,304,172,331"/>
+<area shape="rect" href="ftsystem_8h.html" title=" " alt="" coords="150,229,283,256"/>
+<area shape="rect" href="ftimage_8h.html" title=" " alt="" coords="307,229,433,256"/>
+<area shape="rect" title=" " alt="" coords="457,229,525,256"/>
+<area shape="rect" href="ftmoderr_8h.html" title=" " alt="" coords="550,229,681,256"/>
+<area shape="rect" href="fterrdef_8h.html" title=" " alt="" coords="705,229,827,256"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="autohint_8h__dep__incl.png" border="0" usemap="#afreetype_2internal_2autohint_8hdep" alt=""/></div>
+<map name="freetype_2internal_2autohint_8hdep" id="freetype_2internal_2autohint_8hdep">
+<area shape="rect" title=" " alt="" coords="685,5,859,32"/>
+<area shape="rect" href="ftobjs_8h.html" title=" " alt="" coords="692,80,852,107"/>
+<area shape="rect" href="cffotypes_8h.html" title=" " alt="" coords="408,415,589,442"/>
+<area shape="rect" href="psaux_8h.html" title=" " alt="" coords="258,497,422,524"/>
+<area shape="rect" href="ftrfork_8h.html" title=" " alt="" coords="498,162,659,189"/>
+<area shape="rect" href="ftstream_8h.html" title=" " alt="" coords="684,162,860,189"/>
+<area shape="rect" href="svpscmap_8h.html" title=" " alt="" coords="229,155,395,196"/>
+<area shape="rect" href="tttypes_8h.html" title=" " alt="" coords="885,162,1054,189"/>
+<area shape="rect" href="wofftypes_8h.html" title=" " alt="" coords="1078,162,1261,189"/>
+<area shape="rect" href="cfftypes_8h.html" title=" " alt="" coords="225,326,399,353"/>
+<area shape="rect" href="t1types_8h.html" title=" " alt="" coords="66,244,238,271"/>
+<area shape="rect" href="svcfftl_8h.html" title=" " alt="" coords="219,408,384,449"/>
+<area shape="rect" href="svpsinfo_8h.html" title=" " alt="" coords="35,319,200,360"/>
+<area shape="rect" href="sfnt_8h.html" title=" " alt="" coords="994,244,1145,271"/>
+</map>
+</div>
+</div>
+<p><a href="autohint_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_f_t___auto_hinter___interface_rec__.html">FT_AutoHinter_InterfaceRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:adcda1e5e022d2ec1213d3bdd2da90fad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="autohint_8h.html#adcda1e5e022d2ec1213d3bdd2da90fad">FT_DECLARE_AUTOHINTER_INTERFACE</a>(class_)&#160;&#160;&#160;  <a class="el" href="compiler-macros_8h.html#ab037b0107bb83cacaf7a8437564798f6">FT_CALLBACK_TABLE</a> const <a class="el" href="autohint_8h.html#ac088a06c8327a7a1e08a271fc29c5837">FT_AutoHinter_InterfaceRec</a>  class_;</td></tr>
+<tr class="separator:adcda1e5e022d2ec1213d3bdd2da90fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68c4d9a45e28a0273d924dd1664eb874"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="autohint_8h.html#a68c4d9a45e28a0273d924dd1664eb874">FT_DEFINE_AUTOHINTER_INTERFACE</a>( class_,  reset_face_,  get_global_hints_,  done_global_hints_,  load_glyph_)</td></tr>
+<tr class="separator:a68c4d9a45e28a0273d924dd1664eb874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:a9277b7b6326ea2e0bf5d42e9f5a73a53"><td class="memItemLeft" align="right" valign="top">typedef typedefFT_BEGIN_HEADER struct FT_AutoHinterRec_ *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="autohint_8h.html#a9277b7b6326ea2e0bf5d42e9f5a73a53">FT_AutoHinter</a></td></tr>
+<tr class="separator:a9277b7b6326ea2e0bf5d42e9f5a73a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeafb5d8f1f0f2ab93c620c9693c8525"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="autohint_8h.html#adeafb5d8f1f0f2ab93c620c9693c8525">FT_AutoHinter_GlobalGetFunc</a>) (<a class="el" href="autohint_8h.html#a9277b7b6326ea2e0bf5d42e9f5a73a53">FT_AutoHinter</a> hinter, <a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face, void **global_hints, long *global_len)</td></tr>
+<tr class="separator:adeafb5d8f1f0f2ab93c620c9693c8525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a493eeb1b87871aa9f38d2f6190c455d6"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="autohint_8h.html#a493eeb1b87871aa9f38d2f6190c455d6">FT_AutoHinter_GlobalDoneFunc</a>) (<a class="el" href="autohint_8h.html#a9277b7b6326ea2e0bf5d42e9f5a73a53">FT_AutoHinter</a> hinter, void *global)</td></tr>
+<tr class="separator:a493eeb1b87871aa9f38d2f6190c455d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5d22f50e557df33ebf5ea62685d52d2"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="autohint_8h.html#af5d22f50e557df33ebf5ea62685d52d2">FT_AutoHinter_GlobalResetFunc</a>) (<a class="el" href="autohint_8h.html#a9277b7b6326ea2e0bf5d42e9f5a73a53">FT_AutoHinter</a> hinter, <a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face)</td></tr>
+<tr class="separator:af5d22f50e557df33ebf5ea62685d52d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f82e1fc8ba762df81bacba263999fcb"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="autohint_8h.html#a9f82e1fc8ba762df81bacba263999fcb">FT_AutoHinter_GlyphLoadFunc</a>) (<a class="el" href="autohint_8h.html#a9277b7b6326ea2e0bf5d42e9f5a73a53">FT_AutoHinter</a> hinter, <a class="el" href="freetype_8h.html#a768daa0d9c3fa499e6c37034ee9f2ca3">FT_GlyphSlot</a> slot, <a class="el" href="freetype_8h.html#a791d0ff3273ca9628a523efd98d138c1">FT_Size</a> size, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> glyph_index, FT_Int32 load_flags)</td></tr>
+<tr class="separator:a9f82e1fc8ba762df81bacba263999fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac088a06c8327a7a1e08a271fc29c5837"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_f_t___auto_hinter___interface_rec__.html">FT_AutoHinter_InterfaceRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="autohint_8h.html#ac088a06c8327a7a1e08a271fc29c5837">FT_AutoHinter_InterfaceRec</a></td></tr>
+<tr class="separator:ac088a06c8327a7a1e08a271fc29c5837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06d5a712cb96585035bbf45393c0bea6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_f_t___auto_hinter___interface_rec__.html">FT_AutoHinter_InterfaceRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="autohint_8h.html#a06d5a712cb96585035bbf45393c0bea6">FT_AutoHinter_Interface</a></td></tr>
+<tr class="separator:a06d5a712cb96585035bbf45393c0bea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">マクロ定義詳解</h2>
+<a id="adcda1e5e022d2ec1213d3bdd2da90fad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcda1e5e022d2ec1213d3bdd2da90fad">&#9670;&nbsp;</a></span>FT_DECLARE_AUTOHINTER_INTERFACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_DECLARE_AUTOHINTER_INTERFACE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">class_</td><td>)</td>
+          <td>&#160;&#160;&#160;  <a class="el" href="compiler-macros_8h.html#ab037b0107bb83cacaf7a8437564798f6">FT_CALLBACK_TABLE</a> const <a class="el" href="autohint_8h.html#ac088a06c8327a7a1e08a271fc29c5837">FT_AutoHinter_InterfaceRec</a>  class_;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68c4d9a45e28a0273d924dd1664eb874"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68c4d9a45e28a0273d924dd1664eb874">&#9670;&nbsp;</a></span>FT_DEFINE_AUTOHINTER_INTERFACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_DEFINE_AUTOHINTER_INTERFACE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">class_, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">reset_face_, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">get_global_hints_, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">done_global_hints_, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">load_glyph_&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">  FT_CALLBACK_TABLE_DEF                       \</div>
+<div class="line">  const <a class="code" href="struct_f_t___auto_hinter___interface_rec__.html">FT_AutoHinter_InterfaceRec</a>  class_ =  \</div>
+<div class="line">  {                                           \</div>
+<div class="line">    reset_face_,                              \</div>
+<div class="line">    get_global_hints_,                        \</div>
+<div class="line">    done_global_hints_,                       \</div>
+<div class="line">    load_glyph_                               \</div>
+<div class="line">  };</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">型定義詳解</h2>
+<a id="a9277b7b6326ea2e0bf5d42e9f5a73a53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9277b7b6326ea2e0bf5d42e9f5a73a53">&#9670;&nbsp;</a></span>FT_AutoHinter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef typedefFT_BEGIN_HEADER struct FT_AutoHinterRec_* <a class="el" href="autohint_8h.html#a9277b7b6326ea2e0bf5d42e9f5a73a53">FT_AutoHinter</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a493eeb1b87871aa9f38d2f6190c455d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a493eeb1b87871aa9f38d2f6190c455d6">&#9670;&nbsp;</a></span>FT_AutoHinter_GlobalDoneFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* FT_AutoHinter_GlobalDoneFunc) (<a class="el" href="autohint_8h.html#a9277b7b6326ea2e0bf5d42e9f5a73a53">FT_AutoHinter</a> hinter, void *global)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adeafb5d8f1f0f2ab93c620c9693c8525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeafb5d8f1f0f2ab93c620c9693c8525">&#9670;&nbsp;</a></span>FT_AutoHinter_GlobalGetFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* FT_AutoHinter_GlobalGetFunc) (<a class="el" href="autohint_8h.html#a9277b7b6326ea2e0bf5d42e9f5a73a53">FT_AutoHinter</a> hinter, <a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face, void **global_hints, long *global_len)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5d22f50e557df33ebf5ea62685d52d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5d22f50e557df33ebf5ea62685d52d2">&#9670;&nbsp;</a></span>FT_AutoHinter_GlobalResetFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* FT_AutoHinter_GlobalResetFunc) (<a class="el" href="autohint_8h.html#a9277b7b6326ea2e0bf5d42e9f5a73a53">FT_AutoHinter</a> hinter, <a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f82e1fc8ba762df81bacba263999fcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f82e1fc8ba762df81bacba263999fcb">&#9670;&nbsp;</a></span>FT_AutoHinter_GlyphLoadFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(* FT_AutoHinter_GlyphLoadFunc) (<a class="el" href="autohint_8h.html#a9277b7b6326ea2e0bf5d42e9f5a73a53">FT_AutoHinter</a> hinter, <a class="el" href="freetype_8h.html#a768daa0d9c3fa499e6c37034ee9f2ca3">FT_GlyphSlot</a> slot, <a class="el" href="freetype_8h.html#a791d0ff3273ca9628a523efd98d138c1">FT_Size</a> size, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> glyph_index, FT_Int32 load_flags)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a06d5a712cb96585035bbf45393c0bea6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06d5a712cb96585035bbf45393c0bea6">&#9670;&nbsp;</a></span>FT_AutoHinter_Interface</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_f_t___auto_hinter___interface_rec__.html">FT_AutoHinter_InterfaceRec_</a> * <a class="el" href="autohint_8h.html#a06d5a712cb96585035bbf45393c0bea6">FT_AutoHinter_Interface</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac088a06c8327a7a1e08a271fc29c5837"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac088a06c8327a7a1e08a271fc29c5837">&#9670;&nbsp;</a></span>FT_AutoHinter_InterfaceRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_f_t___auto_hinter___interface_rec__.html">FT_AutoHinter_InterfaceRec_</a> <a class="el" href="autohint_8h.html#ac088a06c8327a7a1e08a271fc29c5837">FT_AutoHinter_InterfaceRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<div class="ttc" id="astruct_f_t___auto_hinter___interface_rec___html"><div class="ttname"><a href="struct_f_t___auto_hinter___interface_rec__.html">FT_AutoHinter_InterfaceRec_</a></div><div class="ttdef"><b>Definition:</b> autohint.h:201</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

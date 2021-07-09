@@ -1,0 +1,170 @@
+\hypertarget{struct_t1___builder_rec__}{}\doxysection{T1\+\_\+\+Builder\+Rec\+\_\+ 構造体}
+\label{struct_t1___builder_rec__}\index{T1\_BuilderRec\_@{T1\_BuilderRec\_}}
+
+
+{\ttfamily \#include $<$psaux.\+h$>$}
+
+
+
+T1\+\_\+\+Builder\+Rec\+\_\+ 連携図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_t1___builder_rec____coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} \mbox{\hyperlink{struct_t1___builder_rec___abc49339af219c2a6310d16a19d277df3}{memory}}
+\item 
+\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} \mbox{\hyperlink{struct_t1___builder_rec___a63764b21488527a39316aebeee9f98a2}{face}}
+\item 
+\mbox{\hyperlink{freetype_8h_a768daa0d9c3fa499e6c37034ee9f2ca3}{F\+T\+\_\+\+Glyph\+Slot}} \mbox{\hyperlink{struct_t1___builder_rec___a2382a6bc2256513f70bf959180f56e4c}{glyph}}
+\item 
+\mbox{\hyperlink{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}{F\+T\+\_\+\+Glyph\+Loader}} \mbox{\hyperlink{struct_t1___builder_rec___ae2202eaee7c0937435419d559374bd3c}{loader}}
+\item 
+\mbox{\hyperlink{ftimage_8h_a6b64eb35252e8829024c12c98cce37d4}{F\+T\+\_\+\+Outline}} $\ast$ \mbox{\hyperlink{struct_t1___builder_rec___a6096f6eba85f91c3ac6dc270d8af464c}{base}}
+\item 
+\mbox{\hyperlink{ftimage_8h_a6b64eb35252e8829024c12c98cce37d4}{F\+T\+\_\+\+Outline}} $\ast$ \mbox{\hyperlink{struct_t1___builder_rec___a6cabaa34c7f020e871a73a1b54371f98}{current}}
+\item 
+\mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} \mbox{\hyperlink{struct_t1___builder_rec___ad3e29097d00fa1941ac17273c1310a92}{pos\+\_\+x}}
+\item 
+\mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} \mbox{\hyperlink{struct_t1___builder_rec___ad389bf0d5182b677ed3dba05a9612530}{pos\+\_\+y}}
+\item 
+\mbox{\hyperlink{ftimage_8h_abfcb941b4b81f3a922d4ae57c620db27}{F\+T\+\_\+\+Vector}} \mbox{\hyperlink{struct_t1___builder_rec___a86247b8fd87873ef93aecf0e27e4b6dc}{left\+\_\+bearing}}
+\item 
+\mbox{\hyperlink{ftimage_8h_abfcb941b4b81f3a922d4ae57c620db27}{F\+T\+\_\+\+Vector}} \mbox{\hyperlink{struct_t1___builder_rec___a48575715ea96f16bdc7077996013ef9e}{advance}}
+\item 
+\mbox{\hyperlink{ftimage_8h_a1e1422cfbeb7c3992d5d7b8f85732efd}{F\+T\+\_\+\+B\+Box}} \mbox{\hyperlink{struct_t1___builder_rec___a534c6d954f8cf791a94489350314a8f7}{bbox}}
+\item 
+\mbox{\hyperlink{psaux_8h_aa4032696616a13d020bb86f460ee80d6}{T1\+\_\+\+Parse\+State}} \mbox{\hyperlink{struct_t1___builder_rec___afaa675cc3601ed05ed86bc474153094b}{parse\+\_\+state}}
+\item 
+\mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} \mbox{\hyperlink{struct_t1___builder_rec___acaf59a770471bf90b5b7d9f72e97e64e}{load\+\_\+points}}
+\item 
+\mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} \mbox{\hyperlink{struct_t1___builder_rec___a0369f22bec404666e1c7dc6bb648ac28}{no\+\_\+recurse}}
+\item 
+\mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} \mbox{\hyperlink{struct_t1___builder_rec___ab4c509b363e5a5f4da25460413e9364f}{metrics\+\_\+only}}
+\item 
+void $\ast$ \mbox{\hyperlink{struct_t1___builder_rec___aeed4b5ebe5256cc07e31159b4a4a95ff}{hints\+\_\+funcs}}
+\item 
+void $\ast$ \mbox{\hyperlink{struct_t1___builder_rec___ae94605dc79c1d54c1b59423046b38671}{hints\+\_\+globals}}
+\item 
+\mbox{\hyperlink{psaux_8h_ae82f1eae40f3b91789a38ecd2267f979}{T1\+\_\+\+Builder\+\_\+\+Funcs\+Rec}} \mbox{\hyperlink{struct_t1___builder_rec___acecf3c6c134bccd36a1d30e10147ca54}{funcs}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{struct_t1___builder_rec___a48575715ea96f16bdc7077996013ef9e}\label{struct_t1___builder_rec___a48575715ea96f16bdc7077996013ef9e}} 
+\index{T1\_BuilderRec\_@{T1\_BuilderRec\_}!advance@{advance}}
+\index{advance@{advance}!T1\_BuilderRec\_@{T1\_BuilderRec\_}}
+\doxysubsubsection{\texorpdfstring{advance}{advance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ftimage_8h_abfcb941b4b81f3a922d4ae57c620db27}{F\+T\+\_\+\+Vector}} T1\+\_\+\+Builder\+Rec\+\_\+\+::advance}
+
+\mbox{\Hypertarget{struct_t1___builder_rec___a6096f6eba85f91c3ac6dc270d8af464c}\label{struct_t1___builder_rec___a6096f6eba85f91c3ac6dc270d8af464c}} 
+\index{T1\_BuilderRec\_@{T1\_BuilderRec\_}!base@{base}}
+\index{base@{base}!T1\_BuilderRec\_@{T1\_BuilderRec\_}}
+\doxysubsubsection{\texorpdfstring{base}{base}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ftimage_8h_a6b64eb35252e8829024c12c98cce37d4}{F\+T\+\_\+\+Outline}}$\ast$ T1\+\_\+\+Builder\+Rec\+\_\+\+::base}
+
+\mbox{\Hypertarget{struct_t1___builder_rec___a534c6d954f8cf791a94489350314a8f7}\label{struct_t1___builder_rec___a534c6d954f8cf791a94489350314a8f7}} 
+\index{T1\_BuilderRec\_@{T1\_BuilderRec\_}!bbox@{bbox}}
+\index{bbox@{bbox}!T1\_BuilderRec\_@{T1\_BuilderRec\_}}
+\doxysubsubsection{\texorpdfstring{bbox}{bbox}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ftimage_8h_a1e1422cfbeb7c3992d5d7b8f85732efd}{F\+T\+\_\+\+B\+Box}} T1\+\_\+\+Builder\+Rec\+\_\+\+::bbox}
+
+\mbox{\Hypertarget{struct_t1___builder_rec___a6cabaa34c7f020e871a73a1b54371f98}\label{struct_t1___builder_rec___a6cabaa34c7f020e871a73a1b54371f98}} 
+\index{T1\_BuilderRec\_@{T1\_BuilderRec\_}!current@{current}}
+\index{current@{current}!T1\_BuilderRec\_@{T1\_BuilderRec\_}}
+\doxysubsubsection{\texorpdfstring{current}{current}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ftimage_8h_a6b64eb35252e8829024c12c98cce37d4}{F\+T\+\_\+\+Outline}}$\ast$ T1\+\_\+\+Builder\+Rec\+\_\+\+::current}
+
+\mbox{\Hypertarget{struct_t1___builder_rec___a63764b21488527a39316aebeee9f98a2}\label{struct_t1___builder_rec___a63764b21488527a39316aebeee9f98a2}} 
+\index{T1\_BuilderRec\_@{T1\_BuilderRec\_}!face@{face}}
+\index{face@{face}!T1\_BuilderRec\_@{T1\_BuilderRec\_}}
+\doxysubsubsection{\texorpdfstring{face}{face}}
+{\footnotesize\ttfamily \mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} T1\+\_\+\+Builder\+Rec\+\_\+\+::face}
+
+\mbox{\Hypertarget{struct_t1___builder_rec___acecf3c6c134bccd36a1d30e10147ca54}\label{struct_t1___builder_rec___acecf3c6c134bccd36a1d30e10147ca54}} 
+\index{T1\_BuilderRec\_@{T1\_BuilderRec\_}!funcs@{funcs}}
+\index{funcs@{funcs}!T1\_BuilderRec\_@{T1\_BuilderRec\_}}
+\doxysubsubsection{\texorpdfstring{funcs}{funcs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{psaux_8h_ae82f1eae40f3b91789a38ecd2267f979}{T1\+\_\+\+Builder\+\_\+\+Funcs\+Rec}} T1\+\_\+\+Builder\+Rec\+\_\+\+::funcs}
+
+\mbox{\Hypertarget{struct_t1___builder_rec___a2382a6bc2256513f70bf959180f56e4c}\label{struct_t1___builder_rec___a2382a6bc2256513f70bf959180f56e4c}} 
+\index{T1\_BuilderRec\_@{T1\_BuilderRec\_}!glyph@{glyph}}
+\index{glyph@{glyph}!T1\_BuilderRec\_@{T1\_BuilderRec\_}}
+\doxysubsubsection{\texorpdfstring{glyph}{glyph}}
+{\footnotesize\ttfamily \mbox{\hyperlink{freetype_8h_a768daa0d9c3fa499e6c37034ee9f2ca3}{F\+T\+\_\+\+Glyph\+Slot}} T1\+\_\+\+Builder\+Rec\+\_\+\+::glyph}
+
+\mbox{\Hypertarget{struct_t1___builder_rec___aeed4b5ebe5256cc07e31159b4a4a95ff}\label{struct_t1___builder_rec___aeed4b5ebe5256cc07e31159b4a4a95ff}} 
+\index{T1\_BuilderRec\_@{T1\_BuilderRec\_}!hints\_funcs@{hints\_funcs}}
+\index{hints\_funcs@{hints\_funcs}!T1\_BuilderRec\_@{T1\_BuilderRec\_}}
+\doxysubsubsection{\texorpdfstring{hints\_funcs}{hints\_funcs}}
+{\footnotesize\ttfamily void$\ast$ T1\+\_\+\+Builder\+Rec\+\_\+\+::hints\+\_\+funcs}
+
+\mbox{\Hypertarget{struct_t1___builder_rec___ae94605dc79c1d54c1b59423046b38671}\label{struct_t1___builder_rec___ae94605dc79c1d54c1b59423046b38671}} 
+\index{T1\_BuilderRec\_@{T1\_BuilderRec\_}!hints\_globals@{hints\_globals}}
+\index{hints\_globals@{hints\_globals}!T1\_BuilderRec\_@{T1\_BuilderRec\_}}
+\doxysubsubsection{\texorpdfstring{hints\_globals}{hints\_globals}}
+{\footnotesize\ttfamily void$\ast$ T1\+\_\+\+Builder\+Rec\+\_\+\+::hints\+\_\+globals}
+
+\mbox{\Hypertarget{struct_t1___builder_rec___a86247b8fd87873ef93aecf0e27e4b6dc}\label{struct_t1___builder_rec___a86247b8fd87873ef93aecf0e27e4b6dc}} 
+\index{T1\_BuilderRec\_@{T1\_BuilderRec\_}!left\_bearing@{left\_bearing}}
+\index{left\_bearing@{left\_bearing}!T1\_BuilderRec\_@{T1\_BuilderRec\_}}
+\doxysubsubsection{\texorpdfstring{left\_bearing}{left\_bearing}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ftimage_8h_abfcb941b4b81f3a922d4ae57c620db27}{F\+T\+\_\+\+Vector}} T1\+\_\+\+Builder\+Rec\+\_\+\+::left\+\_\+bearing}
+
+\mbox{\Hypertarget{struct_t1___builder_rec___acaf59a770471bf90b5b7d9f72e97e64e}\label{struct_t1___builder_rec___acaf59a770471bf90b5b7d9f72e97e64e}} 
+\index{T1\_BuilderRec\_@{T1\_BuilderRec\_}!load\_points@{load\_points}}
+\index{load\_points@{load\_points}!T1\_BuilderRec\_@{T1\_BuilderRec\_}}
+\doxysubsubsection{\texorpdfstring{load\_points}{load\_points}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} T1\+\_\+\+Builder\+Rec\+\_\+\+::load\+\_\+points}
+
+\mbox{\Hypertarget{struct_t1___builder_rec___ae2202eaee7c0937435419d559374bd3c}\label{struct_t1___builder_rec___ae2202eaee7c0937435419d559374bd3c}} 
+\index{T1\_BuilderRec\_@{T1\_BuilderRec\_}!loader@{loader}}
+\index{loader@{loader}!T1\_BuilderRec\_@{T1\_BuilderRec\_}}
+\doxysubsubsection{\texorpdfstring{loader}{loader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ftgloadr_8h_acc111e45f809e9672ade51c86da07351}{F\+T\+\_\+\+Glyph\+Loader}} T1\+\_\+\+Builder\+Rec\+\_\+\+::loader}
+
+\mbox{\Hypertarget{struct_t1___builder_rec___abc49339af219c2a6310d16a19d277df3}\label{struct_t1___builder_rec___abc49339af219c2a6310d16a19d277df3}} 
+\index{T1\_BuilderRec\_@{T1\_BuilderRec\_}!memory@{memory}}
+\index{memory@{memory}!T1\_BuilderRec\_@{T1\_BuilderRec\_}}
+\doxysubsubsection{\texorpdfstring{memory}{memory}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} T1\+\_\+\+Builder\+Rec\+\_\+\+::memory}
+
+\mbox{\Hypertarget{struct_t1___builder_rec___ab4c509b363e5a5f4da25460413e9364f}\label{struct_t1___builder_rec___ab4c509b363e5a5f4da25460413e9364f}} 
+\index{T1\_BuilderRec\_@{T1\_BuilderRec\_}!metrics\_only@{metrics\_only}}
+\index{metrics\_only@{metrics\_only}!T1\_BuilderRec\_@{T1\_BuilderRec\_}}
+\doxysubsubsection{\texorpdfstring{metrics\_only}{metrics\_only}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} T1\+\_\+\+Builder\+Rec\+\_\+\+::metrics\+\_\+only}
+
+\mbox{\Hypertarget{struct_t1___builder_rec___a0369f22bec404666e1c7dc6bb648ac28}\label{struct_t1___builder_rec___a0369f22bec404666e1c7dc6bb648ac28}} 
+\index{T1\_BuilderRec\_@{T1\_BuilderRec\_}!no\_recurse@{no\_recurse}}
+\index{no\_recurse@{no\_recurse}!T1\_BuilderRec\_@{T1\_BuilderRec\_}}
+\doxysubsubsection{\texorpdfstring{no\_recurse}{no\_recurse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fttypes_8h_a1a832a256bb5a7e6e884afaa1a07f3ae}{F\+T\+\_\+\+Bool}} T1\+\_\+\+Builder\+Rec\+\_\+\+::no\+\_\+recurse}
+
+\mbox{\Hypertarget{struct_t1___builder_rec___afaa675cc3601ed05ed86bc474153094b}\label{struct_t1___builder_rec___afaa675cc3601ed05ed86bc474153094b}} 
+\index{T1\_BuilderRec\_@{T1\_BuilderRec\_}!parse\_state@{parse\_state}}
+\index{parse\_state@{parse\_state}!T1\_BuilderRec\_@{T1\_BuilderRec\_}}
+\doxysubsubsection{\texorpdfstring{parse\_state}{parse\_state}}
+{\footnotesize\ttfamily \mbox{\hyperlink{psaux_8h_aa4032696616a13d020bb86f460ee80d6}{T1\+\_\+\+Parse\+State}} T1\+\_\+\+Builder\+Rec\+\_\+\+::parse\+\_\+state}
+
+\mbox{\Hypertarget{struct_t1___builder_rec___ad3e29097d00fa1941ac17273c1310a92}\label{struct_t1___builder_rec___ad3e29097d00fa1941ac17273c1310a92}} 
+\index{T1\_BuilderRec\_@{T1\_BuilderRec\_}!pos\_x@{pos\_x}}
+\index{pos\_x@{pos\_x}!T1\_BuilderRec\_@{T1\_BuilderRec\_}}
+\doxysubsubsection{\texorpdfstring{pos\_x}{pos\_x}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} T1\+\_\+\+Builder\+Rec\+\_\+\+::pos\+\_\+x}
+
+\mbox{\Hypertarget{struct_t1___builder_rec___ad389bf0d5182b677ed3dba05a9612530}\label{struct_t1___builder_rec___ad389bf0d5182b677ed3dba05a9612530}} 
+\index{T1\_BuilderRec\_@{T1\_BuilderRec\_}!pos\_y@{pos\_y}}
+\index{pos\_y@{pos\_y}!T1\_BuilderRec\_@{T1\_BuilderRec\_}}
+\doxysubsubsection{\texorpdfstring{pos\_y}{pos\_y}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ftimage_8h_af5f230f4b253d4c7715fd2e595614c90}{F\+T\+\_\+\+Pos}} T1\+\_\+\+Builder\+Rec\+\_\+\+::pos\+\_\+y}
+
+
+
+この構造体詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+freetype/internal/\mbox{\hyperlink{psaux_8h}{psaux.\+h}}\end{DoxyCompactItemize}

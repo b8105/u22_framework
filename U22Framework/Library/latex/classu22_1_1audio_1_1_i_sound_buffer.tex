@@ -1,0 +1,246 @@
+\hypertarget{classu22_1_1audio_1_1_i_sound_buffer}{}\doxysection{u22\+::audio\+::I\+Sound\+Buffer クラス}
+\label{classu22_1_1audio_1_1_i_sound_buffer}\index{u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}}
+
+
+{\ttfamily \#include $<$I\+Sound\+Buffer.\+h$>$}
+
+
+
+u22\+::audio\+::I\+Sound\+Buffer の継承関係図\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classu22_1_1audio_1_1_i_sound_buffer__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classu22_1_1audio_1_1_i_sound_buffer_a7423ffc5e174d908bfac8580975ac1a4}{I\+Sound\+Buffer}} ()=default
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classu22_1_1audio_1_1_i_sound_buffer_a47c5ccc1f9b3030c05de7d51125f44e3}{$\sim$\+I\+Sound\+Buffer}} ()=default
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classu22_1_1audio_1_1_i_sound_buffer_ae83695244a3846b30e7f960047b768e9}{Set\+Volume}} (float volume)=0
+\begin{DoxyCompactList}\small\item\em セッター \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classu22_1_1audio_1_1_i_sound_buffer_aa8b249bb423588dbd48b41bbc7ecc756}{Set\+Pitch}} (float pitch)=0
+\begin{DoxyCompactList}\small\item\em セッター \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classu22_1_1audio_1_1_i_sound_buffer_a449a823465c7bb4fd51659a0b18a04df}{Set\+Loop}} (bool loop)=0
+\begin{DoxyCompactList}\small\item\em セッター \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classu22_1_1audio_1_1_i_sound_buffer_aff6f9191fc9dda512d021f6ed5ec89e3}{Is\+End}} (void) const =0
+\begin{DoxyCompactList}\small\item\em 判定 \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classu22_1_1audio_1_1_i_sound_buffer_a9a59d2366b492d63c24d2ec37fef9ce4}{Load}} (const char $\ast$path)=0
+\begin{DoxyCompactList}\small\item\em 読み込み \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classu22_1_1audio_1_1_i_sound_buffer_a5fb067d493981d24ddfe6ca99d250a65}{Update}} (void)=0
+\begin{DoxyCompactList}\small\item\em 更新 \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classu22_1_1audio_1_1_i_sound_buffer_a11e9427f0ebbf188f5ca31564091490f}{Release}} (void)=0
+\begin{DoxyCompactList}\small\item\em 解放 \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classu22_1_1audio_1_1_i_sound_buffer_a600077f00974f45f2c3125ac99128633}{Play}} (void) const =0
+\begin{DoxyCompactList}\small\item\em 再生 \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classu22_1_1audio_1_1_i_sound_buffer_a1c573f266e9bd45109126abde4f1747f}{Stop}} (void) const =0
+\begin{DoxyCompactList}\small\item\em 停止 \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classu22_1_1audio_1_1_i_sound_buffer_a5589f3fababcf93c42e2e1974014ef14}{Rewind}} (void)=0
+\begin{DoxyCompactList}\small\item\em 巻き戻し \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{classu22_1_1audio_1_1_i_sound_buffer_a7423ffc5e174d908bfac8580975ac1a4}\label{classu22_1_1audio_1_1_i_sound_buffer_a7423ffc5e174d908bfac8580975ac1a4}} 
+\index{u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}!ISoundBuffer@{ISoundBuffer}}
+\index{ISoundBuffer@{ISoundBuffer}!u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}}
+\doxysubsubsection{\texorpdfstring{ISoundBuffer()}{ISoundBuffer()}}
+{\footnotesize\ttfamily u22\+::audio\+::\+I\+Sound\+Buffer\+::\+I\+Sound\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+コンストラクタ 
+
+\mbox{\Hypertarget{classu22_1_1audio_1_1_i_sound_buffer_a47c5ccc1f9b3030c05de7d51125f44e3}\label{classu22_1_1audio_1_1_i_sound_buffer_a47c5ccc1f9b3030c05de7d51125f44e3}} 
+\index{u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}!````~ISoundBuffer@{$\sim$ISoundBuffer}}
+\index{````~ISoundBuffer@{$\sim$ISoundBuffer}!u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}}
+\doxysubsubsection{\texorpdfstring{$\sim$ISoundBuffer()}{~ISoundBuffer()}}
+{\footnotesize\ttfamily virtual u22\+::audio\+::\+I\+Sound\+Buffer\+::$\sim$\+I\+Sound\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+デストラクタ 
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{classu22_1_1audio_1_1_i_sound_buffer_aff6f9191fc9dda512d021f6ed5ec89e3}\label{classu22_1_1audio_1_1_i_sound_buffer_aff6f9191fc9dda512d021f6ed5ec89e3}} 
+\index{u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}!IsEnd@{IsEnd}}
+\index{IsEnd@{IsEnd}!u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}}
+\doxysubsubsection{\texorpdfstring{IsEnd()}{IsEnd()}}
+{\footnotesize\ttfamily virtual bool u22\+::audio\+::\+I\+Sound\+Buffer\+::\+Is\+End (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+判定 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classu22_1_1audio_1_1_sound_stream_buffer_ac5f7b67278f8eb423cf4dc61587785b6}{u22\+::audio\+::\+Sound\+Stream\+Buffer}}で実装されています。
+
+\mbox{\Hypertarget{classu22_1_1audio_1_1_i_sound_buffer_a9a59d2366b492d63c24d2ec37fef9ce4}\label{classu22_1_1audio_1_1_i_sound_buffer_a9a59d2366b492d63c24d2ec37fef9ce4}} 
+\index{u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}!Load@{Load}}
+\index{Load@{Load}!u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily virtual bool u22\+::audio\+::\+I\+Sound\+Buffer\+::\+Load (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+読み込み 
+
+
+\begin{DoxyParams}{引数}
+{\em path} & パス\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classu22_1_1audio_1_1_sound_stream_buffer_af0829da4b04fa8d57dd871b0048fb73c}{u22\+::audio\+::\+Sound\+Stream\+Buffer}}で実装されています。
+
+\mbox{\Hypertarget{classu22_1_1audio_1_1_i_sound_buffer_a600077f00974f45f2c3125ac99128633}\label{classu22_1_1audio_1_1_i_sound_buffer_a600077f00974f45f2c3125ac99128633}} 
+\index{u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}!Play@{Play}}
+\index{Play@{Play}!u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}}
+\doxysubsubsection{\texorpdfstring{Play()}{Play()}}
+{\footnotesize\ttfamily virtual bool u22\+::audio\+::\+I\+Sound\+Buffer\+::\+Play (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+再生 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classu22_1_1audio_1_1_sound_stream_buffer_ac61078b129964c0fb70ec442945104c1}{u22\+::audio\+::\+Sound\+Stream\+Buffer}}で実装されています。
+
+\mbox{\Hypertarget{classu22_1_1audio_1_1_i_sound_buffer_a11e9427f0ebbf188f5ca31564091490f}\label{classu22_1_1audio_1_1_i_sound_buffer_a11e9427f0ebbf188f5ca31564091490f}} 
+\index{u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}!Release@{Release}}
+\index{Release@{Release}!u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily virtual bool u22\+::audio\+::\+I\+Sound\+Buffer\+::\+Release (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+解放 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classu22_1_1audio_1_1_sound_stream_buffer_a3689e9725272b3c1bcb8dfbbb920ddf1}{u22\+::audio\+::\+Sound\+Stream\+Buffer}}で実装されています。
+
+\mbox{\Hypertarget{classu22_1_1audio_1_1_i_sound_buffer_a5589f3fababcf93c42e2e1974014ef14}\label{classu22_1_1audio_1_1_i_sound_buffer_a5589f3fababcf93c42e2e1974014ef14}} 
+\index{u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}!Rewind@{Rewind}}
+\index{Rewind@{Rewind}!u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}}
+\doxysubsubsection{\texorpdfstring{Rewind()}{Rewind()}}
+{\footnotesize\ttfamily virtual bool u22\+::audio\+::\+I\+Sound\+Buffer\+::\+Rewind (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+巻き戻し 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1audio_1_1_i_sound_buffer_a449a823465c7bb4fd51659a0b18a04df}\label{classu22_1_1audio_1_1_i_sound_buffer_a449a823465c7bb4fd51659a0b18a04df}} 
+\index{u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}!SetLoop@{SetLoop}}
+\index{SetLoop@{SetLoop}!u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}}
+\doxysubsubsection{\texorpdfstring{SetLoop()}{SetLoop()}}
+{\footnotesize\ttfamily virtual void u22\+::audio\+::\+I\+Sound\+Buffer\+::\+Set\+Loop (\begin{DoxyParamCaption}\item[{bool}]{loop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+セッター 
+
+
+\begin{DoxyParams}{引数}
+{\em loop} & \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{classu22_1_1audio_1_1_sound_stream_buffer_aed9285edf0b6e87e35fc73b8acad566d}{u22\+::audio\+::\+Sound\+Stream\+Buffer}}で実装されています。
+
+\mbox{\Hypertarget{classu22_1_1audio_1_1_i_sound_buffer_aa8b249bb423588dbd48b41bbc7ecc756}\label{classu22_1_1audio_1_1_i_sound_buffer_aa8b249bb423588dbd48b41bbc7ecc756}} 
+\index{u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}!SetPitch@{SetPitch}}
+\index{SetPitch@{SetPitch}!u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}}
+\doxysubsubsection{\texorpdfstring{SetPitch()}{SetPitch()}}
+{\footnotesize\ttfamily virtual void u22\+::audio\+::\+I\+Sound\+Buffer\+::\+Set\+Pitch (\begin{DoxyParamCaption}\item[{float}]{pitch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+セッター 
+
+
+\begin{DoxyParams}{引数}
+{\em pitch} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classu22_1_1audio_1_1_i_sound_buffer_ae83695244a3846b30e7f960047b768e9}\label{classu22_1_1audio_1_1_i_sound_buffer_ae83695244a3846b30e7f960047b768e9}} 
+\index{u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}!SetVolume@{SetVolume}}
+\index{SetVolume@{SetVolume}!u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}}
+\doxysubsubsection{\texorpdfstring{SetVolume()}{SetVolume()}}
+{\footnotesize\ttfamily virtual void u22\+::audio\+::\+I\+Sound\+Buffer\+::\+Set\+Volume (\begin{DoxyParamCaption}\item[{float}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+セッター 
+
+
+\begin{DoxyParams}{引数}
+{\em volume} & \\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{classu22_1_1audio_1_1_sound_stream_buffer_adf3d1b870293e41f478878d58a01333c}{u22\+::audio\+::\+Sound\+Stream\+Buffer}}で実装されています。
+
+\mbox{\Hypertarget{classu22_1_1audio_1_1_i_sound_buffer_a1c573f266e9bd45109126abde4f1747f}\label{classu22_1_1audio_1_1_i_sound_buffer_a1c573f266e9bd45109126abde4f1747f}} 
+\index{u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}!Stop@{Stop}}
+\index{Stop@{Stop}!u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}}
+\doxysubsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily virtual bool u22\+::audio\+::\+I\+Sound\+Buffer\+::\+Stop (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+停止 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classu22_1_1audio_1_1_sound_stream_buffer_a896a44f57544acac33cc19cb3fa198ae}{u22\+::audio\+::\+Sound\+Stream\+Buffer}}で実装されています。
+
+\mbox{\Hypertarget{classu22_1_1audio_1_1_i_sound_buffer_a5fb067d493981d24ddfe6ca99d250a65}\label{classu22_1_1audio_1_1_i_sound_buffer_a5fb067d493981d24ddfe6ca99d250a65}} 
+\index{u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}!Update@{Update}}
+\index{Update@{Update}!u22::audio::ISoundBuffer@{u22::audio::ISoundBuffer}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual bool u22\+::audio\+::\+I\+Sound\+Buffer\+::\+Update (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+更新 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+
+
+\mbox{\hyperlink{classu22_1_1audio_1_1_sound_stream_buffer_a05f4fe8de65589f426371ead75f902e0}{u22\+::audio\+::\+Sound\+Stream\+Buffer}}で実装されています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+Audio/\mbox{\hyperlink{_i_sound_buffer_8h}{I\+Sound\+Buffer.\+h}}\end{DoxyCompactItemize}

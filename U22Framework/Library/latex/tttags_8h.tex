@@ -1,0 +1,632 @@
+\hypertarget{tttags_8h}{}\doxysection{freetype/tttags.h ファイル}
+\label{tttags_8h}\index{freetype/tttags.h@{freetype/tttags.h}}
+{\ttfamily \#include $<$freetype/freetype.\+h$>$}\newline
+tttags.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tttags_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a21340c924fc20d2a9846ccb6a09e56b0}{T\+T\+A\+G\+\_\+avar}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}a\textquotesingle{}, \textquotesingle{}v\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}r\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a99da009e917188d89762a59cce498eba}{T\+T\+A\+G\+\_\+\+B\+A\+SE}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}B\textquotesingle{}, \textquotesingle{}A\textquotesingle{}, \textquotesingle{}S\textquotesingle{}, \textquotesingle{}E\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a7309b81c99c51964fcb284c82c5c98c6}{T\+T\+A\+G\+\_\+bdat}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}b\textquotesingle{}, \textquotesingle{}d\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}t\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_ae344e9dc1421df50d76f2460963b225e}{T\+T\+A\+G\+\_\+\+B\+DF}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}B\textquotesingle{}, \textquotesingle{}D\textquotesingle{}, \textquotesingle{}F\textquotesingle{}, \textquotesingle{} \textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_ac39d0a7f4220aa34e0577a8d503a6d11}{T\+T\+A\+G\+\_\+bhed}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}b\textquotesingle{}, \textquotesingle{}h\textquotesingle{}, \textquotesingle{}e\textquotesingle{}, \textquotesingle{}d\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_adb71429de1008eb4af7d588638eb85a9}{T\+T\+A\+G\+\_\+bloc}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}b\textquotesingle{}, \textquotesingle{}l\textquotesingle{}, \textquotesingle{}o\textquotesingle{}, \textquotesingle{}c\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a23fd7120e229838b442f6d5cbb6f4903}{T\+T\+A\+G\+\_\+bsln}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}b\textquotesingle{}, \textquotesingle{}s\textquotesingle{}, \textquotesingle{}l\textquotesingle{}, \textquotesingle{}n\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a7da23be8da805f2e1952ed4ad7799dbf}{T\+T\+A\+G\+\_\+\+C\+B\+DT}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_ac4cf4b2ab929bd23951a8676eeac086b}{C}}\textquotesingle{}, \textquotesingle{}B\textquotesingle{}, \textquotesingle{}D\textquotesingle{}, \textquotesingle{}T\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a8024cdedcbfc5931a34b46bed24a02c9}{T\+T\+A\+G\+\_\+\+C\+B\+LC}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_ac4cf4b2ab929bd23951a8676eeac086b}{C}}\textquotesingle{}, \textquotesingle{}B\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_aa73214aa5f2f94f63d90bb4e3d99fe53}{L}}\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_ac4cf4b2ab929bd23951a8676eeac086b}{C}}\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_ae7cc88098aa81fb4ed951c28c0d16db0}{T\+T\+A\+G\+\_\+\+C\+FF}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_ac4cf4b2ab929bd23951a8676eeac086b}{C}}\textquotesingle{}, \textquotesingle{}F\textquotesingle{}, \textquotesingle{}F\textquotesingle{}, \textquotesingle{} \textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_aa7c8e8ee7d81fa9f63c5284736c162f8}{T\+T\+A\+G\+\_\+\+C\+F\+F2}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_ac4cf4b2ab929bd23951a8676eeac086b}{C}}\textquotesingle{}, \textquotesingle{}F\textquotesingle{}, \textquotesingle{}F\textquotesingle{}, \textquotesingle{}2\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a3fb2363dcca2cbb72ae32ca6faa1c227}{T\+T\+A\+G\+\_\+\+C\+ID}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_ac4cf4b2ab929bd23951a8676eeac086b}{C}}\textquotesingle{}, \textquotesingle{}I\textquotesingle{}, \textquotesingle{}D\textquotesingle{}, \textquotesingle{} \textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a5bc7da5c2e5ab4710495e2b9f0ea93f2}{T\+T\+A\+G\+\_\+cmap}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}c\textquotesingle{}, \textquotesingle{}m\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}p\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a0acbf930026b4c542c773caab7d5aba3}{T\+T\+A\+G\+\_\+\+C\+O\+LR}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_ac4cf4b2ab929bd23951a8676eeac086b}{C}}\textquotesingle{}, \textquotesingle{}O\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_aa73214aa5f2f94f63d90bb4e3d99fe53}{L}}\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_a5c71a5e59a53413cd6c270266d63b031}{R}}\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a00b38c32bb4ec5ed975daadfbd9eaf42}{T\+T\+A\+G\+\_\+\+C\+P\+AL}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_ac4cf4b2ab929bd23951a8676eeac086b}{C}}\textquotesingle{}, \textquotesingle{}P\textquotesingle{}, \textquotesingle{}A\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_aa73214aa5f2f94f63d90bb4e3d99fe53}{L}}\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a891ae6a30f61ad519ca9dbfe0fb7bc5a}{T\+T\+A\+G\+\_\+cvar}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}c\textquotesingle{}, \textquotesingle{}v\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}r\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a81f49a2ade62161036a0dd485e8381bc}{T\+T\+A\+G\+\_\+cvt}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}c\textquotesingle{}, \textquotesingle{}v\textquotesingle{}, \textquotesingle{}t\textquotesingle{}, \textquotesingle{} \textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a94502b4684107b6852db17141b03de70}{T\+T\+A\+G\+\_\+\+D\+S\+IG}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}D\textquotesingle{}, \textquotesingle{}S\textquotesingle{}, \textquotesingle{}I\textquotesingle{}, \textquotesingle{}G\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a45f20d51cf2a646a8e30ac6451ac374e}{T\+T\+A\+G\+\_\+\+E\+B\+DT}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}E\textquotesingle{}, \textquotesingle{}B\textquotesingle{}, \textquotesingle{}D\textquotesingle{}, \textquotesingle{}T\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a3e1fc9b6e08ab0ef466cfc4b70a1eb69}{T\+T\+A\+G\+\_\+\+E\+B\+LC}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}E\textquotesingle{}, \textquotesingle{}B\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_aa73214aa5f2f94f63d90bb4e3d99fe53}{L}}\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_ac4cf4b2ab929bd23951a8676eeac086b}{C}}\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a532c2b42ebcc201f2408ffb93de1e938}{T\+T\+A\+G\+\_\+\+E\+B\+SC}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}E\textquotesingle{}, \textquotesingle{}B\textquotesingle{}, \textquotesingle{}S\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_ac4cf4b2ab929bd23951a8676eeac086b}{C}}\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_afb355d97944fd738356ceca1dcce75bd}{T\+T\+A\+G\+\_\+feat}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}f\textquotesingle{}, \textquotesingle{}e\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}t\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_acfe8a443c618a8b2b3c57623033bfed3}{T\+T\+A\+G\+\_\+\+F\+O\+ND}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}F\textquotesingle{}, \textquotesingle{}O\textquotesingle{}, \textquotesingle{}N\textquotesingle{}, \textquotesingle{}D\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_ad8779de3c35f1d12e08f685c1b7760a4}{T\+T\+A\+G\+\_\+fpgm}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}f\textquotesingle{}, \textquotesingle{}p\textquotesingle{}, \textquotesingle{}g\textquotesingle{}, \textquotesingle{}m\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a664250b47e17458483f6a9bd9fbd37b3}{T\+T\+A\+G\+\_\+fvar}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}f\textquotesingle{}, \textquotesingle{}v\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}r\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a195b23bba535727ad3f4061abe242df2}{T\+T\+A\+G\+\_\+gasp}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}g\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}s\textquotesingle{}, \textquotesingle{}p\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a1f069155d6734bcf49c0cbc83f0b3075}{T\+T\+A\+G\+\_\+\+G\+D\+EF}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}G\textquotesingle{}, \textquotesingle{}D\textquotesingle{}, \textquotesingle{}E\textquotesingle{}, \textquotesingle{}F\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_ad6e498d87ac53c9427def60602d89ac3}{T\+T\+A\+G\+\_\+glyf}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}g\textquotesingle{}, \textquotesingle{}l\textquotesingle{}, \textquotesingle{}y\textquotesingle{}, \textquotesingle{}f\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a61b5f1e2890ded070fab334c0461c7b8}{T\+T\+A\+G\+\_\+\+G\+P\+OS}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}G\textquotesingle{}, \textquotesingle{}P\textquotesingle{}, \textquotesingle{}O\textquotesingle{}, \textquotesingle{}S\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a78525161975934e931fb5fbe1ddd5bbc}{T\+T\+A\+G\+\_\+\+G\+S\+UB}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}G\textquotesingle{}, \textquotesingle{}S\textquotesingle{}, \textquotesingle{}U\textquotesingle{}, \textquotesingle{}B\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a85d4ddff619da9b7ed07fdb3e31a02f4}{T\+T\+A\+G\+\_\+gvar}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}g\textquotesingle{}, \textquotesingle{}v\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}r\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a80e1e4f32bd9781ae903ab21526c4957}{T\+T\+A\+G\+\_\+\+H\+V\+AR}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}H\textquotesingle{}, \textquotesingle{}V\textquotesingle{}, \textquotesingle{}A\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_a5c71a5e59a53413cd6c270266d63b031}{R}}\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a0c6db65be06ebe52a8fd8a261ce6ebb5}{T\+T\+A\+G\+\_\+hdmx}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}h\textquotesingle{}, \textquotesingle{}d\textquotesingle{}, \textquotesingle{}m\textquotesingle{}, \textquotesingle{}x\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_aac5439507313962a59007c974150695f}{T\+T\+A\+G\+\_\+head}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}h\textquotesingle{}, \textquotesingle{}e\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}d\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a6a529d12f5b47070f869629656ae7d00}{T\+T\+A\+G\+\_\+hhea}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}h\textquotesingle{}, \textquotesingle{}h\textquotesingle{}, \textquotesingle{}e\textquotesingle{}, \textquotesingle{}a\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a5e38929b5b630c8c09b6397a70f66df7}{T\+T\+A\+G\+\_\+hmtx}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}h\textquotesingle{}, \textquotesingle{}m\textquotesingle{}, \textquotesingle{}t\textquotesingle{}, \textquotesingle{}x\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a185ece08724e4bc3b65347b3fa27c253}{T\+T\+A\+G\+\_\+\+J\+S\+TF}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}J\textquotesingle{}, \textquotesingle{}S\textquotesingle{}, \textquotesingle{}T\textquotesingle{}, \textquotesingle{}F\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a1b6233220f5708b27a6a9a61203764ca}{T\+T\+A\+G\+\_\+just}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}j\textquotesingle{}, \textquotesingle{}u\textquotesingle{}, \textquotesingle{}s\textquotesingle{}, \textquotesingle{}t\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a98536c98cc71e021d401e16e0c8fb26b}{T\+T\+A\+G\+\_\+kern}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}k\textquotesingle{}, \textquotesingle{}e\textquotesingle{}, \textquotesingle{}r\textquotesingle{}, \textquotesingle{}n\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_ae55714c739715c15f77e4ae3519de1af}{T\+T\+A\+G\+\_\+lcar}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}l\textquotesingle{}, \textquotesingle{}c\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}r\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_af1757e4f885d72b651abf3a1a2dd29e6}{T\+T\+A\+G\+\_\+loca}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}l\textquotesingle{}, \textquotesingle{}o\textquotesingle{}, \textquotesingle{}c\textquotesingle{}, \textquotesingle{}a\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a7eb39b66c4fd99b5309c7017b71a0fae}{T\+T\+A\+G\+\_\+\+L\+T\+SH}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_aa73214aa5f2f94f63d90bb4e3d99fe53}{L}}\textquotesingle{}, \textquotesingle{}T\textquotesingle{}, \textquotesingle{}S\textquotesingle{}, \textquotesingle{}H\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a1b2c34092bb55ed705c2d88b11830144}{T\+T\+A\+G\+\_\+\+L\+W\+FN}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_aa73214aa5f2f94f63d90bb4e3d99fe53}{L}}\textquotesingle{}, \textquotesingle{}W\textquotesingle{}, \textquotesingle{}F\textquotesingle{}, \textquotesingle{}N\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a9fda22e2cd49626b31c5a17732d4f126}{T\+T\+A\+G\+\_\+\+M\+A\+TH}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}M\textquotesingle{}, \textquotesingle{}A\textquotesingle{}, \textquotesingle{}T\textquotesingle{}, \textquotesingle{}H\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_ae8dea09a58e6c28061b6ba16d4564dd0}{T\+T\+A\+G\+\_\+maxp}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}m\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}x\textquotesingle{}, \textquotesingle{}p\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a9339b7e15d6d9c4e034f4e5b3a25fd8a}{T\+T\+A\+G\+\_\+\+M\+E\+TA}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}M\textquotesingle{}, \textquotesingle{}E\textquotesingle{}, \textquotesingle{}T\textquotesingle{}, \textquotesingle{}A\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a87e07fa76813490133f1edf9444925a9}{T\+T\+A\+G\+\_\+\+M\+M\+FX}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}M\textquotesingle{}, \textquotesingle{}M\textquotesingle{}, \textquotesingle{}F\textquotesingle{}, \textquotesingle{}X\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_af5aea673446e8079e94271508ed2d135}{T\+T\+A\+G\+\_\+\+M\+M\+SD}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}M\textquotesingle{}, \textquotesingle{}M\textquotesingle{}, \textquotesingle{}S\textquotesingle{}, \textquotesingle{}D\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a8c9e57955ab6ed6f3e709a66e6dee49d}{T\+T\+A\+G\+\_\+mort}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}m\textquotesingle{}, \textquotesingle{}o\textquotesingle{}, \textquotesingle{}r\textquotesingle{}, \textquotesingle{}t\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_ac651f468e62ba3b1a76847dabc9d1a2a}{T\+T\+A\+G\+\_\+morx}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}m\textquotesingle{}, \textquotesingle{}o\textquotesingle{}, \textquotesingle{}r\textquotesingle{}, \textquotesingle{}x\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_ae60080a8d4f701a1fffa6ddb21d760cd}{T\+T\+A\+G\+\_\+\+M\+V\+AR}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}M\textquotesingle{}, \textquotesingle{}V\textquotesingle{}, \textquotesingle{}A\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_a5c71a5e59a53413cd6c270266d63b031}{R}}\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_ac273b14d53e6f5e1b57310a359d46b27}{T\+T\+A\+G\+\_\+name}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}n\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}m\textquotesingle{}, \textquotesingle{}e\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a98eb0453e03f3a3c3d6ea1d6fe8130fb}{T\+T\+A\+G\+\_\+opbd}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}o\textquotesingle{}, \textquotesingle{}p\textquotesingle{}, \textquotesingle{}b\textquotesingle{}, \textquotesingle{}d\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a2d84e5e6daeaf7ba6c21718835834aa2}{T\+T\+A\+G\+\_\+\+O\+S2}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}O\textquotesingle{}, \textquotesingle{}S\textquotesingle{}, \textquotesingle{}/\textquotesingle{}, \textquotesingle{}2\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a78e9bac64e70eff443de5d021338b3b8}{T\+T\+A\+G\+\_\+\+O\+T\+TO}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}O\textquotesingle{}, \textquotesingle{}T\textquotesingle{}, \textquotesingle{}T\textquotesingle{}, \textquotesingle{}O\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_ae4599a0d8d0d2f6cee7a38eb08b162ef}{T\+T\+A\+G\+\_\+\+P\+C\+LT}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}P\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_ac4cf4b2ab929bd23951a8676eeac086b}{C}}\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_aa73214aa5f2f94f63d90bb4e3d99fe53}{L}}\textquotesingle{}, \textquotesingle{}T\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_af90b07f9116aafa547812c20d76c36c2}{T\+T\+A\+G\+\_\+\+P\+O\+ST}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}P\textquotesingle{}, \textquotesingle{}O\textquotesingle{}, \textquotesingle{}S\textquotesingle{}, \textquotesingle{}T\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_ad4459ae55b1f8485fb64c43f51e1ce59}{T\+T\+A\+G\+\_\+post}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}p\textquotesingle{}, \textquotesingle{}o\textquotesingle{}, \textquotesingle{}s\textquotesingle{}, \textquotesingle{}t\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a25914659175372941cfb463b6f0119d9}{T\+T\+A\+G\+\_\+prep}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}p\textquotesingle{}, \textquotesingle{}r\textquotesingle{}, \textquotesingle{}e\textquotesingle{}, \textquotesingle{}p\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_ad4077770da122c9dd4a53b9c13b140f7}{T\+T\+A\+G\+\_\+prop}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}p\textquotesingle{}, \textquotesingle{}r\textquotesingle{}, \textquotesingle{}o\textquotesingle{}, \textquotesingle{}p\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a932bd2be423bd680b1ed1d2cd5d6f067}{T\+T\+A\+G\+\_\+sbix}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}s\textquotesingle{}, \textquotesingle{}b\textquotesingle{}, \textquotesingle{}i\textquotesingle{}, \textquotesingle{}x\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a749234c473a43c7d9a9db68a847bfaeb}{T\+T\+A\+G\+\_\+sfnt}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}s\textquotesingle{}, \textquotesingle{}f\textquotesingle{}, \textquotesingle{}n\textquotesingle{}, \textquotesingle{}t\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_ae0aeaa863b28a118d9a57749bd11c442}{T\+T\+A\+G\+\_\+\+S\+I\+NG}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}S\textquotesingle{}, \textquotesingle{}I\textquotesingle{}, \textquotesingle{}N\textquotesingle{}, \textquotesingle{}G\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a398c14ed5045a54f21d85b7674083a4d}{T\+T\+A\+G\+\_\+trak}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}t\textquotesingle{}, \textquotesingle{}r\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}k\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a07d6b63e2965a6e51e1faea2f1ef8d14}{T\+T\+A\+G\+\_\+true}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}t\textquotesingle{}, \textquotesingle{}r\textquotesingle{}, \textquotesingle{}u\textquotesingle{}, \textquotesingle{}e\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a2056a4fde3c0cf1b675d3567bd31e1d5}{T\+T\+A\+G\+\_\+ttc}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}t\textquotesingle{}, \textquotesingle{}t\textquotesingle{}, \textquotesingle{}c\textquotesingle{}, \textquotesingle{} \textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a96910e5d80cfd4584b9311385bf2020c}{T\+T\+A\+G\+\_\+ttcf}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}t\textquotesingle{}, \textquotesingle{}t\textquotesingle{}, \textquotesingle{}c\textquotesingle{}, \textquotesingle{}f\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a719dcbae370578a545cdbe08c7fc37e9}{T\+T\+A\+G\+\_\+\+T\+Y\+P1}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}T\textquotesingle{}, \textquotesingle{}Y\textquotesingle{}, \textquotesingle{}P\textquotesingle{}, \textquotesingle{}1\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a7fbb3f0a456b2d6bae9b1dc9cb4c8845}{T\+T\+A\+G\+\_\+typ1}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}t\textquotesingle{}, \textquotesingle{}y\textquotesingle{}, \textquotesingle{}p\textquotesingle{}, \textquotesingle{}1\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_aff8e85eb658ea4c8661c8c222833a9ab}{T\+T\+A\+G\+\_\+\+V\+D\+MX}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}V\textquotesingle{}, \textquotesingle{}D\textquotesingle{}, \textquotesingle{}M\textquotesingle{}, \textquotesingle{}X\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_ad01a6d9970676179f94f74244a7b555e}{T\+T\+A\+G\+\_\+vhea}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}v\textquotesingle{}, \textquotesingle{}h\textquotesingle{}, \textquotesingle{}e\textquotesingle{}, \textquotesingle{}a\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_ad326fc258065410eb30bd7596faf3849}{T\+T\+A\+G\+\_\+vmtx}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}v\textquotesingle{}, \textquotesingle{}m\textquotesingle{}, \textquotesingle{}t\textquotesingle{}, \textquotesingle{}x\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_ac774ca0e57c51c41568cb5c15cc782d5}{T\+T\+A\+G\+\_\+\+V\+V\+AR}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}V\textquotesingle{}, \textquotesingle{}V\textquotesingle{}, \textquotesingle{}A\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_a5c71a5e59a53413cd6c270266d63b031}{R}}\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a7c34204240adf2efc2e2f4349ade9813}{T\+T\+A\+G\+\_\+w\+O\+FF}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}w\textquotesingle{}, \textquotesingle{}O\textquotesingle{}, \textquotesingle{}F\textquotesingle{}, \textquotesingle{}F\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_ae770b3405d66cab42e75d64b01a0a5ae}{T\+T\+A\+G\+\_\+w\+O\+F2}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}w\textquotesingle{}, \textquotesingle{}O\textquotesingle{}, \textquotesingle{}F\textquotesingle{}, \textquotesingle{}2\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a3a1f95360ffff9e7839f52747729f074}{T\+T\+A\+G\+\_\+0x\+A5kbd}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( 0x\+A5, \textquotesingle{}k\textquotesingle{}, \textquotesingle{}b\textquotesingle{}, \textquotesingle{}d\textquotesingle{} )
+\item 
+\#define \mbox{\hyperlink{tttags_8h_a5655f8adc36115556bade980d34e69da}{T\+T\+A\+G\+\_\+0x\+A5lst}}~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( 0x\+A5, \textquotesingle{}l\textquotesingle{}, \textquotesingle{}s\textquotesingle{}, \textquotesingle{}t\textquotesingle{} )
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{tttags_8h_a3a1f95360ffff9e7839f52747729f074}\label{tttags_8h_a3a1f95360ffff9e7839f52747729f074}} 
+\index{tttags.h@{tttags.h}!TTAG\_0xA5kbd@{TTAG\_0xA5kbd}}
+\index{TTAG\_0xA5kbd@{TTAG\_0xA5kbd}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_0xA5kbd}{TTAG\_0xA5kbd}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+0x\+A5kbd~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( 0x\+A5, \textquotesingle{}k\textquotesingle{}, \textquotesingle{}b\textquotesingle{}, \textquotesingle{}d\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a5655f8adc36115556bade980d34e69da}\label{tttags_8h_a5655f8adc36115556bade980d34e69da}} 
+\index{tttags.h@{tttags.h}!TTAG\_0xA5lst@{TTAG\_0xA5lst}}
+\index{TTAG\_0xA5lst@{TTAG\_0xA5lst}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_0xA5lst}{TTAG\_0xA5lst}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+0x\+A5lst~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( 0x\+A5, \textquotesingle{}l\textquotesingle{}, \textquotesingle{}s\textquotesingle{}, \textquotesingle{}t\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a21340c924fc20d2a9846ccb6a09e56b0}\label{tttags_8h_a21340c924fc20d2a9846ccb6a09e56b0}} 
+\index{tttags.h@{tttags.h}!TTAG\_avar@{TTAG\_avar}}
+\index{TTAG\_avar@{TTAG\_avar}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_avar}{TTAG\_avar}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+avar~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}a\textquotesingle{}, \textquotesingle{}v\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}r\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a99da009e917188d89762a59cce498eba}\label{tttags_8h_a99da009e917188d89762a59cce498eba}} 
+\index{tttags.h@{tttags.h}!TTAG\_BASE@{TTAG\_BASE}}
+\index{TTAG\_BASE@{TTAG\_BASE}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_BASE}{TTAG\_BASE}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+B\+A\+SE~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}B\textquotesingle{}, \textquotesingle{}A\textquotesingle{}, \textquotesingle{}S\textquotesingle{}, \textquotesingle{}E\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a7309b81c99c51964fcb284c82c5c98c6}\label{tttags_8h_a7309b81c99c51964fcb284c82c5c98c6}} 
+\index{tttags.h@{tttags.h}!TTAG\_bdat@{TTAG\_bdat}}
+\index{TTAG\_bdat@{TTAG\_bdat}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_bdat}{TTAG\_bdat}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+bdat~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}b\textquotesingle{}, \textquotesingle{}d\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}t\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_ae344e9dc1421df50d76f2460963b225e}\label{tttags_8h_ae344e9dc1421df50d76f2460963b225e}} 
+\index{tttags.h@{tttags.h}!TTAG\_BDF@{TTAG\_BDF}}
+\index{TTAG\_BDF@{TTAG\_BDF}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_BDF}{TTAG\_BDF}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+B\+DF~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}B\textquotesingle{}, \textquotesingle{}D\textquotesingle{}, \textquotesingle{}F\textquotesingle{}, \textquotesingle{} \textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_ac39d0a7f4220aa34e0577a8d503a6d11}\label{tttags_8h_ac39d0a7f4220aa34e0577a8d503a6d11}} 
+\index{tttags.h@{tttags.h}!TTAG\_bhed@{TTAG\_bhed}}
+\index{TTAG\_bhed@{TTAG\_bhed}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_bhed}{TTAG\_bhed}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+bhed~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}b\textquotesingle{}, \textquotesingle{}h\textquotesingle{}, \textquotesingle{}e\textquotesingle{}, \textquotesingle{}d\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_adb71429de1008eb4af7d588638eb85a9}\label{tttags_8h_adb71429de1008eb4af7d588638eb85a9}} 
+\index{tttags.h@{tttags.h}!TTAG\_bloc@{TTAG\_bloc}}
+\index{TTAG\_bloc@{TTAG\_bloc}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_bloc}{TTAG\_bloc}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+bloc~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}b\textquotesingle{}, \textquotesingle{}l\textquotesingle{}, \textquotesingle{}o\textquotesingle{}, \textquotesingle{}c\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a23fd7120e229838b442f6d5cbb6f4903}\label{tttags_8h_a23fd7120e229838b442f6d5cbb6f4903}} 
+\index{tttags.h@{tttags.h}!TTAG\_bsln@{TTAG\_bsln}}
+\index{TTAG\_bsln@{TTAG\_bsln}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_bsln}{TTAG\_bsln}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+bsln~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}b\textquotesingle{}, \textquotesingle{}s\textquotesingle{}, \textquotesingle{}l\textquotesingle{}, \textquotesingle{}n\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a7da23be8da805f2e1952ed4ad7799dbf}\label{tttags_8h_a7da23be8da805f2e1952ed4ad7799dbf}} 
+\index{tttags.h@{tttags.h}!TTAG\_CBDT@{TTAG\_CBDT}}
+\index{TTAG\_CBDT@{TTAG\_CBDT}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_CBDT}{TTAG\_CBDT}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+C\+B\+DT~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_ac4cf4b2ab929bd23951a8676eeac086b}{C}}\textquotesingle{}, \textquotesingle{}B\textquotesingle{}, \textquotesingle{}D\textquotesingle{}, \textquotesingle{}T\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a8024cdedcbfc5931a34b46bed24a02c9}\label{tttags_8h_a8024cdedcbfc5931a34b46bed24a02c9}} 
+\index{tttags.h@{tttags.h}!TTAG\_CBLC@{TTAG\_CBLC}}
+\index{TTAG\_CBLC@{TTAG\_CBLC}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_CBLC}{TTAG\_CBLC}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+C\+B\+LC~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_ac4cf4b2ab929bd23951a8676eeac086b}{C}}\textquotesingle{}, \textquotesingle{}B\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_aa73214aa5f2f94f63d90bb4e3d99fe53}{L}}\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_ac4cf4b2ab929bd23951a8676eeac086b}{C}}\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_ae7cc88098aa81fb4ed951c28c0d16db0}\label{tttags_8h_ae7cc88098aa81fb4ed951c28c0d16db0}} 
+\index{tttags.h@{tttags.h}!TTAG\_CFF@{TTAG\_CFF}}
+\index{TTAG\_CFF@{TTAG\_CFF}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_CFF}{TTAG\_CFF}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+C\+FF~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_ac4cf4b2ab929bd23951a8676eeac086b}{C}}\textquotesingle{}, \textquotesingle{}F\textquotesingle{}, \textquotesingle{}F\textquotesingle{}, \textquotesingle{} \textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_aa7c8e8ee7d81fa9f63c5284736c162f8}\label{tttags_8h_aa7c8e8ee7d81fa9f63c5284736c162f8}} 
+\index{tttags.h@{tttags.h}!TTAG\_CFF2@{TTAG\_CFF2}}
+\index{TTAG\_CFF2@{TTAG\_CFF2}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_CFF2}{TTAG\_CFF2}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+C\+F\+F2~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_ac4cf4b2ab929bd23951a8676eeac086b}{C}}\textquotesingle{}, \textquotesingle{}F\textquotesingle{}, \textquotesingle{}F\textquotesingle{}, \textquotesingle{}2\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a3fb2363dcca2cbb72ae32ca6faa1c227}\label{tttags_8h_a3fb2363dcca2cbb72ae32ca6faa1c227}} 
+\index{tttags.h@{tttags.h}!TTAG\_CID@{TTAG\_CID}}
+\index{TTAG\_CID@{TTAG\_CID}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_CID}{TTAG\_CID}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+C\+ID~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_ac4cf4b2ab929bd23951a8676eeac086b}{C}}\textquotesingle{}, \textquotesingle{}I\textquotesingle{}, \textquotesingle{}D\textquotesingle{}, \textquotesingle{} \textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a5bc7da5c2e5ab4710495e2b9f0ea93f2}\label{tttags_8h_a5bc7da5c2e5ab4710495e2b9f0ea93f2}} 
+\index{tttags.h@{tttags.h}!TTAG\_cmap@{TTAG\_cmap}}
+\index{TTAG\_cmap@{TTAG\_cmap}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_cmap}{TTAG\_cmap}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+cmap~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}c\textquotesingle{}, \textquotesingle{}m\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}p\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a0acbf930026b4c542c773caab7d5aba3}\label{tttags_8h_a0acbf930026b4c542c773caab7d5aba3}} 
+\index{tttags.h@{tttags.h}!TTAG\_COLR@{TTAG\_COLR}}
+\index{TTAG\_COLR@{TTAG\_COLR}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_COLR}{TTAG\_COLR}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+C\+O\+LR~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_ac4cf4b2ab929bd23951a8676eeac086b}{C}}\textquotesingle{}, \textquotesingle{}O\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_aa73214aa5f2f94f63d90bb4e3d99fe53}{L}}\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_a5c71a5e59a53413cd6c270266d63b031}{R}}\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a00b38c32bb4ec5ed975daadfbd9eaf42}\label{tttags_8h_a00b38c32bb4ec5ed975daadfbd9eaf42}} 
+\index{tttags.h@{tttags.h}!TTAG\_CPAL@{TTAG\_CPAL}}
+\index{TTAG\_CPAL@{TTAG\_CPAL}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_CPAL}{TTAG\_CPAL}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+C\+P\+AL~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_ac4cf4b2ab929bd23951a8676eeac086b}{C}}\textquotesingle{}, \textquotesingle{}P\textquotesingle{}, \textquotesingle{}A\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_aa73214aa5f2f94f63d90bb4e3d99fe53}{L}}\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a891ae6a30f61ad519ca9dbfe0fb7bc5a}\label{tttags_8h_a891ae6a30f61ad519ca9dbfe0fb7bc5a}} 
+\index{tttags.h@{tttags.h}!TTAG\_cvar@{TTAG\_cvar}}
+\index{TTAG\_cvar@{TTAG\_cvar}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_cvar}{TTAG\_cvar}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+cvar~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}c\textquotesingle{}, \textquotesingle{}v\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}r\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a81f49a2ade62161036a0dd485e8381bc}\label{tttags_8h_a81f49a2ade62161036a0dd485e8381bc}} 
+\index{tttags.h@{tttags.h}!TTAG\_cvt@{TTAG\_cvt}}
+\index{TTAG\_cvt@{TTAG\_cvt}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_cvt}{TTAG\_cvt}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+cvt~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}c\textquotesingle{}, \textquotesingle{}v\textquotesingle{}, \textquotesingle{}t\textquotesingle{}, \textquotesingle{} \textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a94502b4684107b6852db17141b03de70}\label{tttags_8h_a94502b4684107b6852db17141b03de70}} 
+\index{tttags.h@{tttags.h}!TTAG\_DSIG@{TTAG\_DSIG}}
+\index{TTAG\_DSIG@{TTAG\_DSIG}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_DSIG}{TTAG\_DSIG}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+D\+S\+IG~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}D\textquotesingle{}, \textquotesingle{}S\textquotesingle{}, \textquotesingle{}I\textquotesingle{}, \textquotesingle{}G\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a45f20d51cf2a646a8e30ac6451ac374e}\label{tttags_8h_a45f20d51cf2a646a8e30ac6451ac374e}} 
+\index{tttags.h@{tttags.h}!TTAG\_EBDT@{TTAG\_EBDT}}
+\index{TTAG\_EBDT@{TTAG\_EBDT}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_EBDT}{TTAG\_EBDT}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+E\+B\+DT~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}E\textquotesingle{}, \textquotesingle{}B\textquotesingle{}, \textquotesingle{}D\textquotesingle{}, \textquotesingle{}T\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a3e1fc9b6e08ab0ef466cfc4b70a1eb69}\label{tttags_8h_a3e1fc9b6e08ab0ef466cfc4b70a1eb69}} 
+\index{tttags.h@{tttags.h}!TTAG\_EBLC@{TTAG\_EBLC}}
+\index{TTAG\_EBLC@{TTAG\_EBLC}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_EBLC}{TTAG\_EBLC}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+E\+B\+LC~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}E\textquotesingle{}, \textquotesingle{}B\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_aa73214aa5f2f94f63d90bb4e3d99fe53}{L}}\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_ac4cf4b2ab929bd23951a8676eeac086b}{C}}\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a532c2b42ebcc201f2408ffb93de1e938}\label{tttags_8h_a532c2b42ebcc201f2408ffb93de1e938}} 
+\index{tttags.h@{tttags.h}!TTAG\_EBSC@{TTAG\_EBSC}}
+\index{TTAG\_EBSC@{TTAG\_EBSC}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_EBSC}{TTAG\_EBSC}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+E\+B\+SC~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}E\textquotesingle{}, \textquotesingle{}B\textquotesingle{}, \textquotesingle{}S\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_ac4cf4b2ab929bd23951a8676eeac086b}{C}}\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_afb355d97944fd738356ceca1dcce75bd}\label{tttags_8h_afb355d97944fd738356ceca1dcce75bd}} 
+\index{tttags.h@{tttags.h}!TTAG\_feat@{TTAG\_feat}}
+\index{TTAG\_feat@{TTAG\_feat}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_feat}{TTAG\_feat}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+feat~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}f\textquotesingle{}, \textquotesingle{}e\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}t\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_acfe8a443c618a8b2b3c57623033bfed3}\label{tttags_8h_acfe8a443c618a8b2b3c57623033bfed3}} 
+\index{tttags.h@{tttags.h}!TTAG\_FOND@{TTAG\_FOND}}
+\index{TTAG\_FOND@{TTAG\_FOND}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_FOND}{TTAG\_FOND}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+F\+O\+ND~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}F\textquotesingle{}, \textquotesingle{}O\textquotesingle{}, \textquotesingle{}N\textquotesingle{}, \textquotesingle{}D\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_ad8779de3c35f1d12e08f685c1b7760a4}\label{tttags_8h_ad8779de3c35f1d12e08f685c1b7760a4}} 
+\index{tttags.h@{tttags.h}!TTAG\_fpgm@{TTAG\_fpgm}}
+\index{TTAG\_fpgm@{TTAG\_fpgm}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_fpgm}{TTAG\_fpgm}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+fpgm~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}f\textquotesingle{}, \textquotesingle{}p\textquotesingle{}, \textquotesingle{}g\textquotesingle{}, \textquotesingle{}m\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a664250b47e17458483f6a9bd9fbd37b3}\label{tttags_8h_a664250b47e17458483f6a9bd9fbd37b3}} 
+\index{tttags.h@{tttags.h}!TTAG\_fvar@{TTAG\_fvar}}
+\index{TTAG\_fvar@{TTAG\_fvar}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_fvar}{TTAG\_fvar}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+fvar~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}f\textquotesingle{}, \textquotesingle{}v\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}r\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a195b23bba535727ad3f4061abe242df2}\label{tttags_8h_a195b23bba535727ad3f4061abe242df2}} 
+\index{tttags.h@{tttags.h}!TTAG\_gasp@{TTAG\_gasp}}
+\index{TTAG\_gasp@{TTAG\_gasp}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_gasp}{TTAG\_gasp}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+gasp~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}g\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}s\textquotesingle{}, \textquotesingle{}p\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a1f069155d6734bcf49c0cbc83f0b3075}\label{tttags_8h_a1f069155d6734bcf49c0cbc83f0b3075}} 
+\index{tttags.h@{tttags.h}!TTAG\_GDEF@{TTAG\_GDEF}}
+\index{TTAG\_GDEF@{TTAG\_GDEF}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_GDEF}{TTAG\_GDEF}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+G\+D\+EF~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}G\textquotesingle{}, \textquotesingle{}D\textquotesingle{}, \textquotesingle{}E\textquotesingle{}, \textquotesingle{}F\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_ad6e498d87ac53c9427def60602d89ac3}\label{tttags_8h_ad6e498d87ac53c9427def60602d89ac3}} 
+\index{tttags.h@{tttags.h}!TTAG\_glyf@{TTAG\_glyf}}
+\index{TTAG\_glyf@{TTAG\_glyf}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_glyf}{TTAG\_glyf}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+glyf~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}g\textquotesingle{}, \textquotesingle{}l\textquotesingle{}, \textquotesingle{}y\textquotesingle{}, \textquotesingle{}f\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a61b5f1e2890ded070fab334c0461c7b8}\label{tttags_8h_a61b5f1e2890ded070fab334c0461c7b8}} 
+\index{tttags.h@{tttags.h}!TTAG\_GPOS@{TTAG\_GPOS}}
+\index{TTAG\_GPOS@{TTAG\_GPOS}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_GPOS}{TTAG\_GPOS}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+G\+P\+OS~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}G\textquotesingle{}, \textquotesingle{}P\textquotesingle{}, \textquotesingle{}O\textquotesingle{}, \textquotesingle{}S\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a78525161975934e931fb5fbe1ddd5bbc}\label{tttags_8h_a78525161975934e931fb5fbe1ddd5bbc}} 
+\index{tttags.h@{tttags.h}!TTAG\_GSUB@{TTAG\_GSUB}}
+\index{TTAG\_GSUB@{TTAG\_GSUB}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_GSUB}{TTAG\_GSUB}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+G\+S\+UB~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}G\textquotesingle{}, \textquotesingle{}S\textquotesingle{}, \textquotesingle{}U\textquotesingle{}, \textquotesingle{}B\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a85d4ddff619da9b7ed07fdb3e31a02f4}\label{tttags_8h_a85d4ddff619da9b7ed07fdb3e31a02f4}} 
+\index{tttags.h@{tttags.h}!TTAG\_gvar@{TTAG\_gvar}}
+\index{TTAG\_gvar@{TTAG\_gvar}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_gvar}{TTAG\_gvar}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+gvar~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}g\textquotesingle{}, \textquotesingle{}v\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}r\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a0c6db65be06ebe52a8fd8a261ce6ebb5}\label{tttags_8h_a0c6db65be06ebe52a8fd8a261ce6ebb5}} 
+\index{tttags.h@{tttags.h}!TTAG\_hdmx@{TTAG\_hdmx}}
+\index{TTAG\_hdmx@{TTAG\_hdmx}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_hdmx}{TTAG\_hdmx}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+hdmx~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}h\textquotesingle{}, \textquotesingle{}d\textquotesingle{}, \textquotesingle{}m\textquotesingle{}, \textquotesingle{}x\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_aac5439507313962a59007c974150695f}\label{tttags_8h_aac5439507313962a59007c974150695f}} 
+\index{tttags.h@{tttags.h}!TTAG\_head@{TTAG\_head}}
+\index{TTAG\_head@{TTAG\_head}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_head}{TTAG\_head}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+head~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}h\textquotesingle{}, \textquotesingle{}e\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}d\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a6a529d12f5b47070f869629656ae7d00}\label{tttags_8h_a6a529d12f5b47070f869629656ae7d00}} 
+\index{tttags.h@{tttags.h}!TTAG\_hhea@{TTAG\_hhea}}
+\index{TTAG\_hhea@{TTAG\_hhea}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_hhea}{TTAG\_hhea}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+hhea~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}h\textquotesingle{}, \textquotesingle{}h\textquotesingle{}, \textquotesingle{}e\textquotesingle{}, \textquotesingle{}a\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a5e38929b5b630c8c09b6397a70f66df7}\label{tttags_8h_a5e38929b5b630c8c09b6397a70f66df7}} 
+\index{tttags.h@{tttags.h}!TTAG\_hmtx@{TTAG\_hmtx}}
+\index{TTAG\_hmtx@{TTAG\_hmtx}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_hmtx}{TTAG\_hmtx}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+hmtx~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}h\textquotesingle{}, \textquotesingle{}m\textquotesingle{}, \textquotesingle{}t\textquotesingle{}, \textquotesingle{}x\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a80e1e4f32bd9781ae903ab21526c4957}\label{tttags_8h_a80e1e4f32bd9781ae903ab21526c4957}} 
+\index{tttags.h@{tttags.h}!TTAG\_HVAR@{TTAG\_HVAR}}
+\index{TTAG\_HVAR@{TTAG\_HVAR}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_HVAR}{TTAG\_HVAR}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+H\+V\+AR~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}H\textquotesingle{}, \textquotesingle{}V\textquotesingle{}, \textquotesingle{}A\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_a5c71a5e59a53413cd6c270266d63b031}{R}}\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a185ece08724e4bc3b65347b3fa27c253}\label{tttags_8h_a185ece08724e4bc3b65347b3fa27c253}} 
+\index{tttags.h@{tttags.h}!TTAG\_JSTF@{TTAG\_JSTF}}
+\index{TTAG\_JSTF@{TTAG\_JSTF}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_JSTF}{TTAG\_JSTF}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+J\+S\+TF~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}J\textquotesingle{}, \textquotesingle{}S\textquotesingle{}, \textquotesingle{}T\textquotesingle{}, \textquotesingle{}F\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a1b6233220f5708b27a6a9a61203764ca}\label{tttags_8h_a1b6233220f5708b27a6a9a61203764ca}} 
+\index{tttags.h@{tttags.h}!TTAG\_just@{TTAG\_just}}
+\index{TTAG\_just@{TTAG\_just}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_just}{TTAG\_just}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+just~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}j\textquotesingle{}, \textquotesingle{}u\textquotesingle{}, \textquotesingle{}s\textquotesingle{}, \textquotesingle{}t\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a98536c98cc71e021d401e16e0c8fb26b}\label{tttags_8h_a98536c98cc71e021d401e16e0c8fb26b}} 
+\index{tttags.h@{tttags.h}!TTAG\_kern@{TTAG\_kern}}
+\index{TTAG\_kern@{TTAG\_kern}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_kern}{TTAG\_kern}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+kern~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}k\textquotesingle{}, \textquotesingle{}e\textquotesingle{}, \textquotesingle{}r\textquotesingle{}, \textquotesingle{}n\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_ae55714c739715c15f77e4ae3519de1af}\label{tttags_8h_ae55714c739715c15f77e4ae3519de1af}} 
+\index{tttags.h@{tttags.h}!TTAG\_lcar@{TTAG\_lcar}}
+\index{TTAG\_lcar@{TTAG\_lcar}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_lcar}{TTAG\_lcar}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+lcar~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}l\textquotesingle{}, \textquotesingle{}c\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}r\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_af1757e4f885d72b651abf3a1a2dd29e6}\label{tttags_8h_af1757e4f885d72b651abf3a1a2dd29e6}} 
+\index{tttags.h@{tttags.h}!TTAG\_loca@{TTAG\_loca}}
+\index{TTAG\_loca@{TTAG\_loca}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_loca}{TTAG\_loca}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+loca~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}l\textquotesingle{}, \textquotesingle{}o\textquotesingle{}, \textquotesingle{}c\textquotesingle{}, \textquotesingle{}a\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a7eb39b66c4fd99b5309c7017b71a0fae}\label{tttags_8h_a7eb39b66c4fd99b5309c7017b71a0fae}} 
+\index{tttags.h@{tttags.h}!TTAG\_LTSH@{TTAG\_LTSH}}
+\index{TTAG\_LTSH@{TTAG\_LTSH}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_LTSH}{TTAG\_LTSH}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+L\+T\+SH~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_aa73214aa5f2f94f63d90bb4e3d99fe53}{L}}\textquotesingle{}, \textquotesingle{}T\textquotesingle{}, \textquotesingle{}S\textquotesingle{}, \textquotesingle{}H\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a1b2c34092bb55ed705c2d88b11830144}\label{tttags_8h_a1b2c34092bb55ed705c2d88b11830144}} 
+\index{tttags.h@{tttags.h}!TTAG\_LWFN@{TTAG\_LWFN}}
+\index{TTAG\_LWFN@{TTAG\_LWFN}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_LWFN}{TTAG\_LWFN}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+L\+W\+FN~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_aa73214aa5f2f94f63d90bb4e3d99fe53}{L}}\textquotesingle{}, \textquotesingle{}W\textquotesingle{}, \textquotesingle{}F\textquotesingle{}, \textquotesingle{}N\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a9fda22e2cd49626b31c5a17732d4f126}\label{tttags_8h_a9fda22e2cd49626b31c5a17732d4f126}} 
+\index{tttags.h@{tttags.h}!TTAG\_MATH@{TTAG\_MATH}}
+\index{TTAG\_MATH@{TTAG\_MATH}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_MATH}{TTAG\_MATH}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+M\+A\+TH~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}M\textquotesingle{}, \textquotesingle{}A\textquotesingle{}, \textquotesingle{}T\textquotesingle{}, \textquotesingle{}H\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_ae8dea09a58e6c28061b6ba16d4564dd0}\label{tttags_8h_ae8dea09a58e6c28061b6ba16d4564dd0}} 
+\index{tttags.h@{tttags.h}!TTAG\_maxp@{TTAG\_maxp}}
+\index{TTAG\_maxp@{TTAG\_maxp}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_maxp}{TTAG\_maxp}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+maxp~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}m\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}x\textquotesingle{}, \textquotesingle{}p\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a9339b7e15d6d9c4e034f4e5b3a25fd8a}\label{tttags_8h_a9339b7e15d6d9c4e034f4e5b3a25fd8a}} 
+\index{tttags.h@{tttags.h}!TTAG\_META@{TTAG\_META}}
+\index{TTAG\_META@{TTAG\_META}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_META}{TTAG\_META}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+M\+E\+TA~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}M\textquotesingle{}, \textquotesingle{}E\textquotesingle{}, \textquotesingle{}T\textquotesingle{}, \textquotesingle{}A\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a87e07fa76813490133f1edf9444925a9}\label{tttags_8h_a87e07fa76813490133f1edf9444925a9}} 
+\index{tttags.h@{tttags.h}!TTAG\_MMFX@{TTAG\_MMFX}}
+\index{TTAG\_MMFX@{TTAG\_MMFX}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_MMFX}{TTAG\_MMFX}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+M\+M\+FX~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}M\textquotesingle{}, \textquotesingle{}M\textquotesingle{}, \textquotesingle{}F\textquotesingle{}, \textquotesingle{}X\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_af5aea673446e8079e94271508ed2d135}\label{tttags_8h_af5aea673446e8079e94271508ed2d135}} 
+\index{tttags.h@{tttags.h}!TTAG\_MMSD@{TTAG\_MMSD}}
+\index{TTAG\_MMSD@{TTAG\_MMSD}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_MMSD}{TTAG\_MMSD}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+M\+M\+SD~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}M\textquotesingle{}, \textquotesingle{}M\textquotesingle{}, \textquotesingle{}S\textquotesingle{}, \textquotesingle{}D\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a8c9e57955ab6ed6f3e709a66e6dee49d}\label{tttags_8h_a8c9e57955ab6ed6f3e709a66e6dee49d}} 
+\index{tttags.h@{tttags.h}!TTAG\_mort@{TTAG\_mort}}
+\index{TTAG\_mort@{TTAG\_mort}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_mort}{TTAG\_mort}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+mort~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}m\textquotesingle{}, \textquotesingle{}o\textquotesingle{}, \textquotesingle{}r\textquotesingle{}, \textquotesingle{}t\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_ac651f468e62ba3b1a76847dabc9d1a2a}\label{tttags_8h_ac651f468e62ba3b1a76847dabc9d1a2a}} 
+\index{tttags.h@{tttags.h}!TTAG\_morx@{TTAG\_morx}}
+\index{TTAG\_morx@{TTAG\_morx}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_morx}{TTAG\_morx}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+morx~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}m\textquotesingle{}, \textquotesingle{}o\textquotesingle{}, \textquotesingle{}r\textquotesingle{}, \textquotesingle{}x\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_ae60080a8d4f701a1fffa6ddb21d760cd}\label{tttags_8h_ae60080a8d4f701a1fffa6ddb21d760cd}} 
+\index{tttags.h@{tttags.h}!TTAG\_MVAR@{TTAG\_MVAR}}
+\index{TTAG\_MVAR@{TTAG\_MVAR}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_MVAR}{TTAG\_MVAR}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+M\+V\+AR~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}M\textquotesingle{}, \textquotesingle{}V\textquotesingle{}, \textquotesingle{}A\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_a5c71a5e59a53413cd6c270266d63b031}{R}}\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_ac273b14d53e6f5e1b57310a359d46b27}\label{tttags_8h_ac273b14d53e6f5e1b57310a359d46b27}} 
+\index{tttags.h@{tttags.h}!TTAG\_name@{TTAG\_name}}
+\index{TTAG\_name@{TTAG\_name}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_name}{TTAG\_name}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+name~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}n\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}m\textquotesingle{}, \textquotesingle{}e\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a98eb0453e03f3a3c3d6ea1d6fe8130fb}\label{tttags_8h_a98eb0453e03f3a3c3d6ea1d6fe8130fb}} 
+\index{tttags.h@{tttags.h}!TTAG\_opbd@{TTAG\_opbd}}
+\index{TTAG\_opbd@{TTAG\_opbd}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_opbd}{TTAG\_opbd}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+opbd~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}o\textquotesingle{}, \textquotesingle{}p\textquotesingle{}, \textquotesingle{}b\textquotesingle{}, \textquotesingle{}d\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a2d84e5e6daeaf7ba6c21718835834aa2}\label{tttags_8h_a2d84e5e6daeaf7ba6c21718835834aa2}} 
+\index{tttags.h@{tttags.h}!TTAG\_OS2@{TTAG\_OS2}}
+\index{TTAG\_OS2@{TTAG\_OS2}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_OS2}{TTAG\_OS2}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+O\+S2~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}O\textquotesingle{}, \textquotesingle{}S\textquotesingle{}, \textquotesingle{}/\textquotesingle{}, \textquotesingle{}2\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a78e9bac64e70eff443de5d021338b3b8}\label{tttags_8h_a78e9bac64e70eff443de5d021338b3b8}} 
+\index{tttags.h@{tttags.h}!TTAG\_OTTO@{TTAG\_OTTO}}
+\index{TTAG\_OTTO@{TTAG\_OTTO}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_OTTO}{TTAG\_OTTO}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+O\+T\+TO~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}O\textquotesingle{}, \textquotesingle{}T\textquotesingle{}, \textquotesingle{}T\textquotesingle{}, \textquotesingle{}O\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_ae4599a0d8d0d2f6cee7a38eb08b162ef}\label{tttags_8h_ae4599a0d8d0d2f6cee7a38eb08b162ef}} 
+\index{tttags.h@{tttags.h}!TTAG\_PCLT@{TTAG\_PCLT}}
+\index{TTAG\_PCLT@{TTAG\_PCLT}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_PCLT}{TTAG\_PCLT}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+P\+C\+LT~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}P\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_ac4cf4b2ab929bd23951a8676eeac086b}{C}}\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_aa73214aa5f2f94f63d90bb4e3d99fe53}{L}}\textquotesingle{}, \textquotesingle{}T\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_af90b07f9116aafa547812c20d76c36c2}\label{tttags_8h_af90b07f9116aafa547812c20d76c36c2}} 
+\index{tttags.h@{tttags.h}!TTAG\_POST@{TTAG\_POST}}
+\index{TTAG\_POST@{TTAG\_POST}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_POST}{TTAG\_POST}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+P\+O\+ST~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}P\textquotesingle{}, \textquotesingle{}O\textquotesingle{}, \textquotesingle{}S\textquotesingle{}, \textquotesingle{}T\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_ad4459ae55b1f8485fb64c43f51e1ce59}\label{tttags_8h_ad4459ae55b1f8485fb64c43f51e1ce59}} 
+\index{tttags.h@{tttags.h}!TTAG\_post@{TTAG\_post}}
+\index{TTAG\_post@{TTAG\_post}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_post}{TTAG\_post}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+post~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}p\textquotesingle{}, \textquotesingle{}o\textquotesingle{}, \textquotesingle{}s\textquotesingle{}, \textquotesingle{}t\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a25914659175372941cfb463b6f0119d9}\label{tttags_8h_a25914659175372941cfb463b6f0119d9}} 
+\index{tttags.h@{tttags.h}!TTAG\_prep@{TTAG\_prep}}
+\index{TTAG\_prep@{TTAG\_prep}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_prep}{TTAG\_prep}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+prep~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}p\textquotesingle{}, \textquotesingle{}r\textquotesingle{}, \textquotesingle{}e\textquotesingle{}, \textquotesingle{}p\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_ad4077770da122c9dd4a53b9c13b140f7}\label{tttags_8h_ad4077770da122c9dd4a53b9c13b140f7}} 
+\index{tttags.h@{tttags.h}!TTAG\_prop@{TTAG\_prop}}
+\index{TTAG\_prop@{TTAG\_prop}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_prop}{TTAG\_prop}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+prop~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}p\textquotesingle{}, \textquotesingle{}r\textquotesingle{}, \textquotesingle{}o\textquotesingle{}, \textquotesingle{}p\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a932bd2be423bd680b1ed1d2cd5d6f067}\label{tttags_8h_a932bd2be423bd680b1ed1d2cd5d6f067}} 
+\index{tttags.h@{tttags.h}!TTAG\_sbix@{TTAG\_sbix}}
+\index{TTAG\_sbix@{TTAG\_sbix}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_sbix}{TTAG\_sbix}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+sbix~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}s\textquotesingle{}, \textquotesingle{}b\textquotesingle{}, \textquotesingle{}i\textquotesingle{}, \textquotesingle{}x\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a749234c473a43c7d9a9db68a847bfaeb}\label{tttags_8h_a749234c473a43c7d9a9db68a847bfaeb}} 
+\index{tttags.h@{tttags.h}!TTAG\_sfnt@{TTAG\_sfnt}}
+\index{TTAG\_sfnt@{TTAG\_sfnt}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_sfnt}{TTAG\_sfnt}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+sfnt~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}s\textquotesingle{}, \textquotesingle{}f\textquotesingle{}, \textquotesingle{}n\textquotesingle{}, \textquotesingle{}t\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_ae0aeaa863b28a118d9a57749bd11c442}\label{tttags_8h_ae0aeaa863b28a118d9a57749bd11c442}} 
+\index{tttags.h@{tttags.h}!TTAG\_SING@{TTAG\_SING}}
+\index{TTAG\_SING@{TTAG\_SING}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_SING}{TTAG\_SING}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+S\+I\+NG~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}S\textquotesingle{}, \textquotesingle{}I\textquotesingle{}, \textquotesingle{}N\textquotesingle{}, \textquotesingle{}G\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a398c14ed5045a54f21d85b7674083a4d}\label{tttags_8h_a398c14ed5045a54f21d85b7674083a4d}} 
+\index{tttags.h@{tttags.h}!TTAG\_trak@{TTAG\_trak}}
+\index{TTAG\_trak@{TTAG\_trak}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_trak}{TTAG\_trak}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+trak~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}t\textquotesingle{}, \textquotesingle{}r\textquotesingle{}, \textquotesingle{}a\textquotesingle{}, \textquotesingle{}k\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a07d6b63e2965a6e51e1faea2f1ef8d14}\label{tttags_8h_a07d6b63e2965a6e51e1faea2f1ef8d14}} 
+\index{tttags.h@{tttags.h}!TTAG\_true@{TTAG\_true}}
+\index{TTAG\_true@{TTAG\_true}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_true}{TTAG\_true}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+true~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}t\textquotesingle{}, \textquotesingle{}r\textquotesingle{}, \textquotesingle{}u\textquotesingle{}, \textquotesingle{}e\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a2056a4fde3c0cf1b675d3567bd31e1d5}\label{tttags_8h_a2056a4fde3c0cf1b675d3567bd31e1d5}} 
+\index{tttags.h@{tttags.h}!TTAG\_ttc@{TTAG\_ttc}}
+\index{TTAG\_ttc@{TTAG\_ttc}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_ttc}{TTAG\_ttc}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+ttc~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}t\textquotesingle{}, \textquotesingle{}t\textquotesingle{}, \textquotesingle{}c\textquotesingle{}, \textquotesingle{} \textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a96910e5d80cfd4584b9311385bf2020c}\label{tttags_8h_a96910e5d80cfd4584b9311385bf2020c}} 
+\index{tttags.h@{tttags.h}!TTAG\_ttcf@{TTAG\_ttcf}}
+\index{TTAG\_ttcf@{TTAG\_ttcf}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_ttcf}{TTAG\_ttcf}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+ttcf~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}t\textquotesingle{}, \textquotesingle{}t\textquotesingle{}, \textquotesingle{}c\textquotesingle{}, \textquotesingle{}f\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a719dcbae370578a545cdbe08c7fc37e9}\label{tttags_8h_a719dcbae370578a545cdbe08c7fc37e9}} 
+\index{tttags.h@{tttags.h}!TTAG\_TYP1@{TTAG\_TYP1}}
+\index{TTAG\_TYP1@{TTAG\_TYP1}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_TYP1}{TTAG\_TYP1}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+T\+Y\+P1~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}T\textquotesingle{}, \textquotesingle{}Y\textquotesingle{}, \textquotesingle{}P\textquotesingle{}, \textquotesingle{}1\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a7fbb3f0a456b2d6bae9b1dc9cb4c8845}\label{tttags_8h_a7fbb3f0a456b2d6bae9b1dc9cb4c8845}} 
+\index{tttags.h@{tttags.h}!TTAG\_typ1@{TTAG\_typ1}}
+\index{TTAG\_typ1@{TTAG\_typ1}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_typ1}{TTAG\_typ1}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+typ1~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}t\textquotesingle{}, \textquotesingle{}y\textquotesingle{}, \textquotesingle{}p\textquotesingle{}, \textquotesingle{}1\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_aff8e85eb658ea4c8661c8c222833a9ab}\label{tttags_8h_aff8e85eb658ea4c8661c8c222833a9ab}} 
+\index{tttags.h@{tttags.h}!TTAG\_VDMX@{TTAG\_VDMX}}
+\index{TTAG\_VDMX@{TTAG\_VDMX}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_VDMX}{TTAG\_VDMX}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+V\+D\+MX~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}V\textquotesingle{}, \textquotesingle{}D\textquotesingle{}, \textquotesingle{}M\textquotesingle{}, \textquotesingle{}X\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_ad01a6d9970676179f94f74244a7b555e}\label{tttags_8h_ad01a6d9970676179f94f74244a7b555e}} 
+\index{tttags.h@{tttags.h}!TTAG\_vhea@{TTAG\_vhea}}
+\index{TTAG\_vhea@{TTAG\_vhea}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_vhea}{TTAG\_vhea}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+vhea~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}v\textquotesingle{}, \textquotesingle{}h\textquotesingle{}, \textquotesingle{}e\textquotesingle{}, \textquotesingle{}a\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_ad326fc258065410eb30bd7596faf3849}\label{tttags_8h_ad326fc258065410eb30bd7596faf3849}} 
+\index{tttags.h@{tttags.h}!TTAG\_vmtx@{TTAG\_vmtx}}
+\index{TTAG\_vmtx@{TTAG\_vmtx}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_vmtx}{TTAG\_vmtx}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+vmtx~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}v\textquotesingle{}, \textquotesingle{}m\textquotesingle{}, \textquotesingle{}t\textquotesingle{}, \textquotesingle{}x\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_ac774ca0e57c51c41568cb5c15cc782d5}\label{tttags_8h_ac774ca0e57c51c41568cb5c15cc782d5}} 
+\index{tttags.h@{tttags.h}!TTAG\_VVAR@{TTAG\_VVAR}}
+\index{TTAG\_VVAR@{TTAG\_VVAR}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_VVAR}{TTAG\_VVAR}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+\+V\+V\+AR~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}V\textquotesingle{}, \textquotesingle{}V\textquotesingle{}, \textquotesingle{}A\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{stb__vorbis_8c_a5c71a5e59a53413cd6c270266d63b031}{R}}\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_ae770b3405d66cab42e75d64b01a0a5ae}\label{tttags_8h_ae770b3405d66cab42e75d64b01a0a5ae}} 
+\index{tttags.h@{tttags.h}!TTAG\_wOF2@{TTAG\_wOF2}}
+\index{TTAG\_wOF2@{TTAG\_wOF2}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_wOF2}{TTAG\_wOF2}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+w\+O\+F2~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}w\textquotesingle{}, \textquotesingle{}O\textquotesingle{}, \textquotesingle{}F\textquotesingle{}, \textquotesingle{}2\textquotesingle{} )}
+
+\mbox{\Hypertarget{tttags_8h_a7c34204240adf2efc2e2f4349ade9813}\label{tttags_8h_a7c34204240adf2efc2e2f4349ade9813}} 
+\index{tttags.h@{tttags.h}!TTAG\_wOFF@{TTAG\_wOFF}}
+\index{TTAG\_wOFF@{TTAG\_wOFF}!tttags.h@{tttags.h}}
+\doxysubsubsection{\texorpdfstring{TTAG\_wOFF}{TTAG\_wOFF}}
+{\footnotesize\ttfamily \#define T\+T\+A\+G\+\_\+w\+O\+FF~\mbox{\hyperlink{fttypes_8h_ae115fc8c5f7280f599d1b2ae713f6db0}{F\+T\+\_\+\+M\+A\+K\+E\+\_\+\+T\+AG}}( \textquotesingle{}w\textquotesingle{}, \textquotesingle{}O\textquotesingle{}, \textquotesingle{}F\textquotesingle{}, \textquotesingle{}F\textquotesingle{} )}
+

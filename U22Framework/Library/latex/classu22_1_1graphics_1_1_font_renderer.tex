@@ -1,0 +1,141 @@
+\hypertarget{classu22_1_1graphics_1_1_font_renderer}{}\doxysection{u22\+::graphics\+::Font\+Renderer クラス}
+\label{classu22_1_1graphics_1_1_font_renderer}\index{u22::graphics::FontRenderer@{u22::graphics::FontRenderer}}
+
+
+{\ttfamily \#include $<$Font\+Renderer.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classu22_1_1graphics_1_1_font_renderer_adbf932283ba72ba7d2e0616a48451a6a}{Font\+Renderer}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classu22_1_1graphics_1_1_font_renderer_a0858c5c0f39973d4fdfd9c026b35cd20}{$\sim$\+Font\+Renderer}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classu22_1_1graphics_1_1_font_renderer_aaa4d6cf05d2268fbda9d216772d48878}{Set\+Shader}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classu22_1_1graphics_1_1_effect_shader}{u22\+::graphics\+::\+Effect\+Shader}} $>$ \&ptr)
+\begin{DoxyCompactList}\small\item\em ~\newline
+ セッター \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1graphics_1_1_font_renderer_a8b3aa22c4453096b3465d6f5faa380f5}{Load}} (const char $\ast$path, uint32\+\_\+t size=16)
+\begin{DoxyCompactList}\small\item\em 読み込み \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1graphics_1_1_font_renderer_a3d23b263d50d2a316b9b31e11270b94d}{Render}} (const \mbox{\hyperlink{namespaceu22_1_1math_abd3e525891449648c8321ac9495844db}{u22\+::math\+::\+Vector2F}} \&position, const \mbox{\hyperlink{namespaceu22_1_1math_a4d1e97ba7f1e8c8170c4e2ba3f60f834}{u22\+::math\+::\+Vector4F}} \&color, const std\+::string \&text, const \mbox{\hyperlink{classu22_1_1graphics_1_1_camera}{u22\+::graphics\+::\+Camera}} \&camera)
+\begin{DoxyCompactList}\small\item\em 描画 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1graphics_1_1_font_renderer_a8116d17dde94945a0ad0f1a5e78aa9c7}{Release}} (void)
+\begin{DoxyCompactList}\small\item\em 解放 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_font_renderer_adbf932283ba72ba7d2e0616a48451a6a}\label{classu22_1_1graphics_1_1_font_renderer_adbf932283ba72ba7d2e0616a48451a6a}} 
+\index{u22::graphics::FontRenderer@{u22::graphics::FontRenderer}!FontRenderer@{FontRenderer}}
+\index{FontRenderer@{FontRenderer}!u22::graphics::FontRenderer@{u22::graphics::FontRenderer}}
+\doxysubsubsection{\texorpdfstring{FontRenderer()}{FontRenderer()}}
+{\footnotesize\ttfamily u22\+::graphics\+::\+Font\+Renderer\+::\+Font\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+コンストラクタ 
+
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_font_renderer_a0858c5c0f39973d4fdfd9c026b35cd20}\label{classu22_1_1graphics_1_1_font_renderer_a0858c5c0f39973d4fdfd9c026b35cd20}} 
+\index{u22::graphics::FontRenderer@{u22::graphics::FontRenderer}!````~FontRenderer@{$\sim$FontRenderer}}
+\index{````~FontRenderer@{$\sim$FontRenderer}!u22::graphics::FontRenderer@{u22::graphics::FontRenderer}}
+\doxysubsubsection{\texorpdfstring{$\sim$FontRenderer()}{~FontRenderer()}}
+{\footnotesize\ttfamily u22\+::graphics\+::\+Font\+Renderer\+::$\sim$\+Font\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+デストラクタ 
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_font_renderer_a8b3aa22c4453096b3465d6f5faa380f5}\label{classu22_1_1graphics_1_1_font_renderer_a8b3aa22c4453096b3465d6f5faa380f5}} 
+\index{u22::graphics::FontRenderer@{u22::graphics::FontRenderer}!Load@{Load}}
+\index{Load@{Load}!u22::graphics::FontRenderer@{u22::graphics::FontRenderer}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily bool u22\+::graphics\+::\+Font\+Renderer\+::\+Load (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path,  }\item[{uint32\+\_\+t}]{size = {\ttfamily 16} }\end{DoxyParamCaption})}
+
+
+
+読み込み 
+
+
+\begin{DoxyParams}{引数}
+{\em path} & パス\\
+\hline
+{\em size} & サイズ\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classu22_1_1graphics_1_1_font_renderer_a8b3aa22c4453096b3465d6f5faa380f5_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classu22_1_1graphics_1_1_font_renderer_a8b3aa22c4453096b3465d6f5faa380f5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_font_renderer_a8116d17dde94945a0ad0f1a5e78aa9c7}\label{classu22_1_1graphics_1_1_font_renderer_a8116d17dde94945a0ad0f1a5e78aa9c7}} 
+\index{u22::graphics::FontRenderer@{u22::graphics::FontRenderer}!Release@{Release}}
+\index{Release@{Release}!u22::graphics::FontRenderer@{u22::graphics::FontRenderer}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily bool u22\+::graphics\+::\+Font\+Renderer\+::\+Release (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+解放 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_font_renderer_a3d23b263d50d2a316b9b31e11270b94d}\label{classu22_1_1graphics_1_1_font_renderer_a3d23b263d50d2a316b9b31e11270b94d}} 
+\index{u22::graphics::FontRenderer@{u22::graphics::FontRenderer}!Render@{Render}}
+\index{Render@{Render}!u22::graphics::FontRenderer@{u22::graphics::FontRenderer}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily bool u22\+::graphics\+::\+Font\+Renderer\+::\+Render (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceu22_1_1math_abd3e525891449648c8321ac9495844db}{u22\+::math\+::\+Vector2F}} \&}]{position,  }\item[{const \mbox{\hyperlink{namespaceu22_1_1math_a4d1e97ba7f1e8c8170c4e2ba3f60f834}{u22\+::math\+::\+Vector4F}} \&}]{color,  }\item[{const std\+::string \&}]{text,  }\item[{const \mbox{\hyperlink{classu22_1_1graphics_1_1_camera}{u22\+::graphics\+::\+Camera}} \&}]{camera }\end{DoxyParamCaption})}
+
+
+
+描画 
+
+
+\begin{DoxyParams}{引数}
+{\em position} & ウインドウ座標\\
+\hline
+{\em color} & 色正規化\\
+\hline
+{\em text} & 文字列\\
+\hline
+{\em text} & カメラ\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_font_renderer_aaa4d6cf05d2268fbda9d216772d48878}\label{classu22_1_1graphics_1_1_font_renderer_aaa4d6cf05d2268fbda9d216772d48878}} 
+\index{u22::graphics::FontRenderer@{u22::graphics::FontRenderer}!SetShader@{SetShader}}
+\index{SetShader@{SetShader}!u22::graphics::FontRenderer@{u22::graphics::FontRenderer}}
+\doxysubsubsection{\texorpdfstring{SetShader()}{SetShader()}}
+{\footnotesize\ttfamily void u22\+::graphics\+::\+Font\+Renderer\+::\+Set\+Shader (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classu22_1_1graphics_1_1_effect_shader}{u22\+::graphics\+::\+Effect\+Shader}} $>$ \&}]{ptr }\end{DoxyParamCaption})}
+
+
+
+~\newline
+ セッター 
+
+
+\begin{DoxyParams}{引数}
+{\em ptr} & \\
+\hline
+\end{DoxyParams}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+Graphics/\mbox{\hyperlink{_font_renderer_8h}{Font\+Renderer.\+h}}\item 
+Graphics/\mbox{\hyperlink{_font_renderer_8cpp}{Font\+Renderer.\+cpp}}\end{DoxyCompactItemize}

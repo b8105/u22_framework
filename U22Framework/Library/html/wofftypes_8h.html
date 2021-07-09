@@ -1,0 +1,408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: freetype/internal/wofftypes.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_981d57b2e11530428c66a192ba91cfc7.html">freetype</a></li><li class="navelem"><a class="el" href="dir_ac174dc64ad36850d6be9a69f636b6c2.html">internal</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#typedef-members">型定義</a>  </div>
+  <div class="headertitle">
+<div class="title">wofftypes.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="tttables_8h_source.html">freetype/tttables.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ftobjs_8h_source.html">freetype/internal/ftobjs.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+wofftypes.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="wofftypes_8h__incl.png" border="0" usemap="#afreetype_2internal_2wofftypes_8h" alt=""/></div>
+<map name="freetype_2internal_2wofftypes_8h" id="freetype_2internal_2wofftypes_8h">
+<area shape="rect" title=" " alt="" coords="320,5,503,32"/>
+<area shape="rect" href="tttables_8h.html" title=" " alt="" coords="264,80,391,107"/>
+<area shape="rect" href="ftobjs_8h.html" title=" " alt="" coords="652,80,812,107"/>
+<area shape="rect" href="freetype_8h.html" title=" " alt="" coords="610,311,739,338"/>
+<area shape="rect" href="ft2build_8h.html" title=" " alt="" coords="1236,468,1310,495"/>
+<area shape="rect" href="fttypes_8h.html" title=" " alt="" coords="1416,393,1538,420"/>
+<area shape="rect" href="fterrors_8h.html" title=" " alt="" coords="613,393,736,420"/>
+<area shape="rect" href="ftheader_8h.html" title=" " alt="" coords="1190,543,1356,569"/>
+<area shape="rect" href="ftsystem_8h.html" title=" " alt="" coords="1334,468,1468,495"/>
+<area shape="rect" href="ftimage_8h.html" title=" " alt="" coords="1492,468,1617,495"/>
+<area shape="rect" title=" " alt="" coords="1642,468,1710,495"/>
+<area shape="rect" href="ftmoderr_8h.html" title=" " alt="" coords="534,468,665,495"/>
+<area shape="rect" href="fterrdef_8h.html" title=" " alt="" coords="689,468,812,495"/>
+<area shape="rect" href="ftrender_8h.html" title=" " alt="" coords="668,155,795,181"/>
+<area shape="rect" href="ftsizes_8h.html" title=" " alt="" coords="35,229,156,256"/>
+<area shape="rect" href="ftlcdfil_8h.html" title=" " alt="" coords="294,155,410,181"/>
+<area shape="rect" href="ftmemory_8h.html" title=" " alt="" coords="1414,155,1596,181"/>
+<area shape="rect" href="compiler-macros_8h.html" title=" " alt="" coords="1138,229,1267,256"/>
+<area shape="rect" href="ftgloadr_8h.html" title=" " alt="" coords="589,229,760,256"/>
+<area shape="rect" href="ftdrv_8h.html" title=" " alt="" coords="820,155,972,181"/>
+<area shape="rect" href="autohint_8h.html" title=" " alt="" coords="390,229,564,256"/>
+<area shape="rect" href="ftserv_8h.html" title=" " alt="" coords="1231,155,1390,181"/>
+<area shape="rect" href="ftcalc_8h.html" title=" " alt="" coords="996,155,1156,181"/>
+<area shape="rect" href="ftmodapi_8h.html" title=" " alt="" coords="930,229,1062,256"/>
+<area shape="rect" href="ftglyph_8h.html" title=" " alt="" coords="784,229,906,256"/>
+<area shape="rect" href="ftparams_8h.html" title=" " alt="" coords="181,229,314,256"/>
+<area shape="rect" href="public-macros_8h.html" title=" " alt="" coords="1130,304,1274,345"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="wofftypes_8h__dep__incl.png" border="0" usemap="#afreetype_2internal_2wofftypes_8hdep" alt=""/></div>
+<map name="freetype_2internal_2wofftypes_8hdep" id="freetype_2internal_2wofftypes_8hdep">
+<area shape="rect" title=" " alt="" coords="5,5,188,32"/>
+<area shape="rect" href="sfnt_8h.html" title=" " alt="" coords="21,80,172,107"/>
+</map>
+</div>
+</div>
+<p><a href="wofftypes_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_w_o_f_f___header_rec__.html">WOFF_HeaderRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_w_o_f_f___table_rec__.html">WOFF_TableRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_w_o_f_f2___ttc_font_rec__.html">WOFF2_TtcFontRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_w_o_f_f2___header_rec__.html">WOFF2_HeaderRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_w_o_f_f2___table_rec__.html">WOFF2_TableRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_w_o_f_f2___info_rec__.html">WOFF2_InfoRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_w_o_f_f2___substream_rec__.html">WOFF2_SubstreamRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_w_o_f_f2___point_rec__.html">WOFF2_PointRec_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:a6fad95b2939773d867cd7334c78da4d7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="public-macros_8h.html#a72ee5814b3ae378ebb7fd3a8e3ddec14">FT_BEGIN_HEADER</a> struct <a class="el" href="struct_w_o_f_f___header_rec__.html">WOFF_HeaderRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wofftypes_8h.html#a6fad95b2939773d867cd7334c78da4d7">WOFF_HeaderRec</a></td></tr>
+<tr class="separator:a6fad95b2939773d867cd7334c78da4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bc5798e35c8362b0b064c90fb623afe"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="public-macros_8h.html#a72ee5814b3ae378ebb7fd3a8e3ddec14">FT_BEGIN_HEADER</a> struct <a class="el" href="struct_w_o_f_f___header_rec__.html">WOFF_HeaderRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wofftypes_8h.html#a5bc5798e35c8362b0b064c90fb623afe">WOFF_Header</a></td></tr>
+<tr class="separator:a5bc5798e35c8362b0b064c90fb623afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f25e0d0af7f5f243c95b3c78613970"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_w_o_f_f___table_rec__.html">WOFF_TableRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wofftypes_8h.html#a36f25e0d0af7f5f243c95b3c78613970">WOFF_TableRec</a></td></tr>
+<tr class="separator:a36f25e0d0af7f5f243c95b3c78613970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab98ded8549fb113503e693c88e05d4fb"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_w_o_f_f___table_rec__.html">WOFF_TableRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wofftypes_8h.html#ab98ded8549fb113503e693c88e05d4fb">WOFF_Table</a></td></tr>
+<tr class="separator:ab98ded8549fb113503e693c88e05d4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a711f591f0f401d26c1144ab5ca94f76d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_w_o_f_f2___ttc_font_rec__.html">WOFF2_TtcFontRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wofftypes_8h.html#a711f591f0f401d26c1144ab5ca94f76d">WOFF2_TtcFontRec</a></td></tr>
+<tr class="separator:a711f591f0f401d26c1144ab5ca94f76d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2af00f934ebda4021c27bf4a2a9e70c8"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_w_o_f_f2___ttc_font_rec__.html">WOFF2_TtcFontRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wofftypes_8h.html#a2af00f934ebda4021c27bf4a2a9e70c8">WOFF2_TtcFont</a></td></tr>
+<tr class="separator:a2af00f934ebda4021c27bf4a2a9e70c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfbeaa2a6e40ca4f12e0d03b47fbd660"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_w_o_f_f2___header_rec__.html">WOFF2_HeaderRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wofftypes_8h.html#abfbeaa2a6e40ca4f12e0d03b47fbd660">WOFF2_HeaderRec</a></td></tr>
+<tr class="separator:abfbeaa2a6e40ca4f12e0d03b47fbd660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d4018cfbdc6a94de2f423b2e70f147"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_w_o_f_f2___header_rec__.html">WOFF2_HeaderRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wofftypes_8h.html#a57d4018cfbdc6a94de2f423b2e70f147">WOFF2_Header</a></td></tr>
+<tr class="separator:a57d4018cfbdc6a94de2f423b2e70f147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8007e6ad0e35533ef9d0f5abba56273"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_w_o_f_f2___table_rec__.html">WOFF2_TableRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wofftypes_8h.html#ad8007e6ad0e35533ef9d0f5abba56273">WOFF2_TableRec</a></td></tr>
+<tr class="separator:ad8007e6ad0e35533ef9d0f5abba56273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1abefd580c961fee6bb372adfb44455b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_w_o_f_f2___table_rec__.html">WOFF2_TableRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wofftypes_8h.html#a1abefd580c961fee6bb372adfb44455b">WOFF2_Table</a></td></tr>
+<tr class="separator:a1abefd580c961fee6bb372adfb44455b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7256fb1740b9f88395bff4b6838957d8"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_w_o_f_f2___info_rec__.html">WOFF2_InfoRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wofftypes_8h.html#a7256fb1740b9f88395bff4b6838957d8">WOFF2_InfoRec</a></td></tr>
+<tr class="separator:a7256fb1740b9f88395bff4b6838957d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3199553e4c10bd100ba5654f915809a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_w_o_f_f2___info_rec__.html">WOFF2_InfoRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wofftypes_8h.html#ad3199553e4c10bd100ba5654f915809a">WOFF2_Info</a></td></tr>
+<tr class="separator:ad3199553e4c10bd100ba5654f915809a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2cec66ab6640e7e52dbab529c7dd9d6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_w_o_f_f2___substream_rec__.html">WOFF2_SubstreamRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wofftypes_8h.html#aa2cec66ab6640e7e52dbab529c7dd9d6">WOFF2_SubstreamRec</a></td></tr>
+<tr class="separator:aa2cec66ab6640e7e52dbab529c7dd9d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac236e540c1490f31884469f09b13c100"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_w_o_f_f2___substream_rec__.html">WOFF2_SubstreamRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wofftypes_8h.html#ac236e540c1490f31884469f09b13c100">WOFF2_Substream</a></td></tr>
+<tr class="separator:ac236e540c1490f31884469f09b13c100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62339a4c3f59c27734566eed634c3333"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_w_o_f_f2___point_rec__.html">WOFF2_PointRec_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wofftypes_8h.html#a62339a4c3f59c27734566eed634c3333">WOFF2_PointRec</a></td></tr>
+<tr class="separator:a62339a4c3f59c27734566eed634c3333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab51304a6fd860bb05efbf5aa10b338ba"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_w_o_f_f2___point_rec__.html">WOFF2_PointRec_</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wofftypes_8h.html#ab51304a6fd860bb05efbf5aa10b338ba">WOFF2_Point</a></td></tr>
+<tr class="separator:ab51304a6fd860bb05efbf5aa10b338ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">型定義詳解</h2>
+<a id="a57d4018cfbdc6a94de2f423b2e70f147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57d4018cfbdc6a94de2f423b2e70f147">&#9670;&nbsp;</a></span>WOFF2_Header</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_w_o_f_f2___header_rec__.html">WOFF2_HeaderRec_</a> * <a class="el" href="wofftypes_8h.html#a57d4018cfbdc6a94de2f423b2e70f147">WOFF2_Header</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abfbeaa2a6e40ca4f12e0d03b47fbd660"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfbeaa2a6e40ca4f12e0d03b47fbd660">&#9670;&nbsp;</a></span>WOFF2_HeaderRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_w_o_f_f2___header_rec__.html">WOFF2_HeaderRec_</a> <a class="el" href="wofftypes_8h.html#abfbeaa2a6e40ca4f12e0d03b47fbd660">WOFF2_HeaderRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3199553e4c10bd100ba5654f915809a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3199553e4c10bd100ba5654f915809a">&#9670;&nbsp;</a></span>WOFF2_Info</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_w_o_f_f2___info_rec__.html">WOFF2_InfoRec_</a> * <a class="el" href="wofftypes_8h.html#ad3199553e4c10bd100ba5654f915809a">WOFF2_Info</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7256fb1740b9f88395bff4b6838957d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7256fb1740b9f88395bff4b6838957d8">&#9670;&nbsp;</a></span>WOFF2_InfoRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_w_o_f_f2___info_rec__.html">WOFF2_InfoRec_</a> <a class="el" href="wofftypes_8h.html#a7256fb1740b9f88395bff4b6838957d8">WOFF2_InfoRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab51304a6fd860bb05efbf5aa10b338ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab51304a6fd860bb05efbf5aa10b338ba">&#9670;&nbsp;</a></span>WOFF2_Point</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_w_o_f_f2___point_rec__.html">WOFF2_PointRec_</a> * <a class="el" href="wofftypes_8h.html#ab51304a6fd860bb05efbf5aa10b338ba">WOFF2_Point</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a62339a4c3f59c27734566eed634c3333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62339a4c3f59c27734566eed634c3333">&#9670;&nbsp;</a></span>WOFF2_PointRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_w_o_f_f2___point_rec__.html">WOFF2_PointRec_</a> <a class="el" href="wofftypes_8h.html#a62339a4c3f59c27734566eed634c3333">WOFF2_PointRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac236e540c1490f31884469f09b13c100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac236e540c1490f31884469f09b13c100">&#9670;&nbsp;</a></span>WOFF2_Substream</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_w_o_f_f2___substream_rec__.html">WOFF2_SubstreamRec_</a> * <a class="el" href="wofftypes_8h.html#ac236e540c1490f31884469f09b13c100">WOFF2_Substream</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2cec66ab6640e7e52dbab529c7dd9d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2cec66ab6640e7e52dbab529c7dd9d6">&#9670;&nbsp;</a></span>WOFF2_SubstreamRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_w_o_f_f2___substream_rec__.html">WOFF2_SubstreamRec_</a> <a class="el" href="wofftypes_8h.html#aa2cec66ab6640e7e52dbab529c7dd9d6">WOFF2_SubstreamRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1abefd580c961fee6bb372adfb44455b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1abefd580c961fee6bb372adfb44455b">&#9670;&nbsp;</a></span>WOFF2_Table</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_w_o_f_f2___table_rec__.html">WOFF2_TableRec_</a> * <a class="el" href="wofftypes_8h.html#a1abefd580c961fee6bb372adfb44455b">WOFF2_Table</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8007e6ad0e35533ef9d0f5abba56273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8007e6ad0e35533ef9d0f5abba56273">&#9670;&nbsp;</a></span>WOFF2_TableRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_w_o_f_f2___table_rec__.html">WOFF2_TableRec_</a> <a class="el" href="wofftypes_8h.html#ad8007e6ad0e35533ef9d0f5abba56273">WOFF2_TableRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2af00f934ebda4021c27bf4a2a9e70c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2af00f934ebda4021c27bf4a2a9e70c8">&#9670;&nbsp;</a></span>WOFF2_TtcFont</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_w_o_f_f2___ttc_font_rec__.html">WOFF2_TtcFontRec_</a> * <a class="el" href="wofftypes_8h.html#a2af00f934ebda4021c27bf4a2a9e70c8">WOFF2_TtcFont</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a711f591f0f401d26c1144ab5ca94f76d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a711f591f0f401d26c1144ab5ca94f76d">&#9670;&nbsp;</a></span>WOFF2_TtcFontRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_w_o_f_f2___ttc_font_rec__.html">WOFF2_TtcFontRec_</a> <a class="el" href="wofftypes_8h.html#a711f591f0f401d26c1144ab5ca94f76d">WOFF2_TtcFontRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5bc5798e35c8362b0b064c90fb623afe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bc5798e35c8362b0b064c90fb623afe">&#9670;&nbsp;</a></span>WOFF_Header</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="public-macros_8h.html#a72ee5814b3ae378ebb7fd3a8e3ddec14">FT_BEGIN_HEADER</a> struct <a class="el" href="struct_w_o_f_f___header_rec__.html">WOFF_HeaderRec_</a> * <a class="el" href="wofftypes_8h.html#a5bc5798e35c8362b0b064c90fb623afe">WOFF_Header</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6fad95b2939773d867cd7334c78da4d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fad95b2939773d867cd7334c78da4d7">&#9670;&nbsp;</a></span>WOFF_HeaderRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="public-macros_8h.html#a72ee5814b3ae378ebb7fd3a8e3ddec14">FT_BEGIN_HEADER</a> struct <a class="el" href="struct_w_o_f_f___header_rec__.html">WOFF_HeaderRec_</a> <a class="el" href="wofftypes_8h.html#a6fad95b2939773d867cd7334c78da4d7">WOFF_HeaderRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab98ded8549fb113503e693c88e05d4fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab98ded8549fb113503e693c88e05d4fb">&#9670;&nbsp;</a></span>WOFF_Table</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_w_o_f_f___table_rec__.html">WOFF_TableRec_</a> * <a class="el" href="wofftypes_8h.html#ab98ded8549fb113503e693c88e05d4fb">WOFF_Table</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36f25e0d0af7f5f243c95b3c78613970"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36f25e0d0af7f5f243c95b3c78613970">&#9670;&nbsp;</a></span>WOFF_TableRec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_w_o_f_f___table_rec__.html">WOFF_TableRec_</a> <a class="el" href="wofftypes_8h.html#a36f25e0d0af7f5f243c95b3c78613970">WOFF_TableRec</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

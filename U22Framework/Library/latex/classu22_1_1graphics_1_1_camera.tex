@@ -1,0 +1,182 @@
+\hypertarget{classu22_1_1graphics_1_1_camera}{}\doxysection{u22\+::graphics\+::Camera クラス}
+\label{classu22_1_1graphics_1_1_camera}\index{u22::graphics::Camera@{u22::graphics::Camera}}
+
+
+{\ttfamily \#include $<$Camera.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classu22_1_1graphics_1_1_camera_a909d90b6ebb9cdeab26144177bb277b2}{Camera}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classu22_1_1graphics_1_1_camera_a4ec9caeeeb294369db5bcd61eadd94ae}{$\sim$\+Camera}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classu22_1_1graphics_1_1_camera_ac11a1a68958771c1ae1b981814e7de01}{Set\+Position}} (\mbox{\hyperlink{namespaceu22_1_1math_a7541a7b83d972aaa30344cb4ee2192f1}{u22\+::math\+::\+Vector3F}} pos)
+\begin{DoxyCompactList}\small\item\em セッター \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceu22_1_1math_a7541a7b83d972aaa30344cb4ee2192f1}{u22\+::math\+::\+Vector3F}} \mbox{\hyperlink{classu22_1_1graphics_1_1_camera_a59a7eb629611d342ce5d8ad121f1660f}{Get\+Position}} (void) const
+\begin{DoxyCompactList}\small\item\em ゲッター \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__core__matrix_gac54cbc572f1349a255fe476ca6a42a7b}{glm\+::mat4}} \mbox{\hyperlink{classu22_1_1graphics_1_1_camera_a32216d5eb79ddf311531343ad68d9475}{Get\+View\+Matrix}} (void) const
+\begin{DoxyCompactList}\small\item\em ゲッター \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__core__matrix_gac54cbc572f1349a255fe476ca6a42a7b}{glm\+::mat4}} \mbox{\hyperlink{classu22_1_1graphics_1_1_camera_a45fe2717ad6f099b6fd129fb6e1f6081}{Get\+Projection\+Matrix}} (void) const
+\begin{DoxyCompactList}\small\item\em ゲッター \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__core__matrix_gac54cbc572f1349a255fe476ca6a42a7b}{glm\+::mat4}} \mbox{\hyperlink{classu22_1_1graphics_1_1_camera_aae795c05e9a9200053108a6f7e93bf55}{Get\+View\+Projection\+Matrix}} (void) const
+\begin{DoxyCompactList}\small\item\em ゲッター \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1graphics_1_1_camera_a912540d072769f4060f49a3403b4f3fe}{Initalize2\+D\+Camera}} (void)
+\begin{DoxyCompactList}\small\item\em 初期化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classu22_1_1graphics_1_1_camera_aa4faea2f518114cfe6491b727e862022}{Update}} (void)
+\begin{DoxyCompactList}\small\item\em 更新 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classu22_1_1graphics_1_1_camera_aba574149d16fb6cdc83f8aebde6fcd06}{Create2D}} (int width, int height)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_camera_a909d90b6ebb9cdeab26144177bb277b2}\label{classu22_1_1graphics_1_1_camera_a909d90b6ebb9cdeab26144177bb277b2}} 
+\index{u22::graphics::Camera@{u22::graphics::Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!u22::graphics::Camera@{u22::graphics::Camera}}
+\doxysubsubsection{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily u22\+::graphics\+::\+Camera\+::\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+コンストラクタ 
+
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_camera_a4ec9caeeeb294369db5bcd61eadd94ae}\label{classu22_1_1graphics_1_1_camera_a4ec9caeeeb294369db5bcd61eadd94ae}} 
+\index{u22::graphics::Camera@{u22::graphics::Camera}!````~Camera@{$\sim$Camera}}
+\index{````~Camera@{$\sim$Camera}!u22::graphics::Camera@{u22::graphics::Camera}}
+\doxysubsubsection{\texorpdfstring{$\sim$Camera()}{~Camera()}}
+{\footnotesize\ttfamily u22\+::graphics\+::\+Camera\+::$\sim$\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+デストラクタ 
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_camera_aba574149d16fb6cdc83f8aebde6fcd06}\label{classu22_1_1graphics_1_1_camera_aba574149d16fb6cdc83f8aebde6fcd06}} 
+\index{u22::graphics::Camera@{u22::graphics::Camera}!Create2D@{Create2D}}
+\index{Create2D@{Create2D}!u22::graphics::Camera@{u22::graphics::Camera}}
+\doxysubsubsection{\texorpdfstring{Create2D()}{Create2D()}}
+{\footnotesize\ttfamily void u22\+::graphics\+::\+Camera\+::\+Create2D (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{引数}
+{\em width} & \\
+\hline
+{\em height} & \\
+\hline
+\end{DoxyParams}
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classu22_1_1graphics_1_1_camera_aba574149d16fb6cdc83f8aebde6fcd06_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_camera_a59a7eb629611d342ce5d8ad121f1660f}\label{classu22_1_1graphics_1_1_camera_a59a7eb629611d342ce5d8ad121f1660f}} 
+\index{u22::graphics::Camera@{u22::graphics::Camera}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!u22::graphics::Camera@{u22::graphics::Camera}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceu22_1_1math_a7541a7b83d972aaa30344cb4ee2192f1}{u22\+::math\+::\+Vector3F}} u22\+::graphics\+::\+Camera\+::\+Get\+Position (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+ゲッター 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_camera_a45fe2717ad6f099b6fd129fb6e1f6081}\label{classu22_1_1graphics_1_1_camera_a45fe2717ad6f099b6fd129fb6e1f6081}} 
+\index{u22::graphics::Camera@{u22::graphics::Camera}!GetProjectionMatrix@{GetProjectionMatrix}}
+\index{GetProjectionMatrix@{GetProjectionMatrix}!u22::graphics::Camera@{u22::graphics::Camera}}
+\doxysubsubsection{\texorpdfstring{GetProjectionMatrix()}{GetProjectionMatrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__core__matrix_gac54cbc572f1349a255fe476ca6a42a7b}{glm\+::mat4}} u22\+::graphics\+::\+Camera\+::\+Get\+Projection\+Matrix (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+ゲッター 
+
+\begin{DoxyReturn}{戻り値}
+プロジェクション
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_camera_a32216d5eb79ddf311531343ad68d9475}\label{classu22_1_1graphics_1_1_camera_a32216d5eb79ddf311531343ad68d9475}} 
+\index{u22::graphics::Camera@{u22::graphics::Camera}!GetViewMatrix@{GetViewMatrix}}
+\index{GetViewMatrix@{GetViewMatrix}!u22::graphics::Camera@{u22::graphics::Camera}}
+\doxysubsubsection{\texorpdfstring{GetViewMatrix()}{GetViewMatrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__core__matrix_gac54cbc572f1349a255fe476ca6a42a7b}{glm\+::mat4}} u22\+::graphics\+::\+Camera\+::\+Get\+View\+Matrix (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+ゲッター 
+
+\begin{DoxyReturn}{戻り値}
+ビュー
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_camera_aae795c05e9a9200053108a6f7e93bf55}\label{classu22_1_1graphics_1_1_camera_aae795c05e9a9200053108a6f7e93bf55}} 
+\index{u22::graphics::Camera@{u22::graphics::Camera}!GetViewProjectionMatrix@{GetViewProjectionMatrix}}
+\index{GetViewProjectionMatrix@{GetViewProjectionMatrix}!u22::graphics::Camera@{u22::graphics::Camera}}
+\doxysubsubsection{\texorpdfstring{GetViewProjectionMatrix()}{GetViewProjectionMatrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__core__matrix_gac54cbc572f1349a255fe476ca6a42a7b}{glm\+::mat4}} u22\+::graphics\+::\+Camera\+::\+Get\+View\+Projection\+Matrix (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+ゲッター 
+
+\begin{DoxyReturn}{戻り値}
+ビュープロジェクション
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_camera_a912540d072769f4060f49a3403b4f3fe}\label{classu22_1_1graphics_1_1_camera_a912540d072769f4060f49a3403b4f3fe}} 
+\index{u22::graphics::Camera@{u22::graphics::Camera}!Initalize2DCamera@{Initalize2DCamera}}
+\index{Initalize2DCamera@{Initalize2DCamera}!u22::graphics::Camera@{u22::graphics::Camera}}
+\doxysubsubsection{\texorpdfstring{Initalize2DCamera()}{Initalize2DCamera()}}
+{\footnotesize\ttfamily bool u22\+::graphics\+::\+Camera\+::\+Initalize2\+D\+Camera (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+初期化 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classu22_1_1graphics_1_1_camera_a912540d072769f4060f49a3403b4f3fe_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_camera_ac11a1a68958771c1ae1b981814e7de01}\label{classu22_1_1graphics_1_1_camera_ac11a1a68958771c1ae1b981814e7de01}} 
+\index{u22::graphics::Camera@{u22::graphics::Camera}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!u22::graphics::Camera@{u22::graphics::Camera}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void u22\+::graphics\+::\+Camera\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceu22_1_1math_a7541a7b83d972aaa30344cb4ee2192f1}{u22\+::math\+::\+Vector3F}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+セッター 
+
+
+\begin{DoxyParams}{引数}
+{\em pos} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_camera_aa4faea2f518114cfe6491b727e862022}\label{classu22_1_1graphics_1_1_camera_aa4faea2f518114cfe6491b727e862022}} 
+\index{u22::graphics::Camera@{u22::graphics::Camera}!Update@{Update}}
+\index{Update@{Update}!u22::graphics::Camera@{u22::graphics::Camera}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void u22\+::graphics\+::\+Camera\+::\+Update (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+更新 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+Graphics/\mbox{\hyperlink{_camera_8h}{Camera.\+h}}\item 
+Graphics/\mbox{\hyperlink{_camera_8cpp}{Camera.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: Input/Keycode.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e540aa96518235b344e655c4cbbe7889.html">Input</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Keycode.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_keycode_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef U22_INPUT_KEYCODE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define U22_INPUT_KEYCODE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../Common/Common.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceu22_1_1input.html">u22::input</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// glfw keycode</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespaceu22_1_1input.html#a49c48d72760f3356307f8290de5ed483">   12</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="namespaceu22_1_1input.html#a49c48d72760f3356307f8290de5ed483">KeyCode</a> : int {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    Return = <a class="code" href="group__keys.html#ga9555a92ecbecdbc1f3435219c571d667">GLFW_KEY_ENTER</a>,</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    Enter = KeyCode::Return,</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    Key0 = <a class="code" href="group__keys.html#ga50391730e9d7112ad4fd42d0bd1597c1">GLFW_KEY_0</a>,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    Key1 = <a class="code" href="group__keys.html#ga05e4cae9ddb8d40cf6d82c8f11f2502f">GLFW_KEY_1</a>,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    Key2 = <a class="code" href="group__keys.html#gadc8e66b3a4c4b5c39ad1305cf852863c">GLFW_KEY_2</a>,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Key3 = <a class="code" href="group__keys.html#ga812f0273fe1a981e1fa002ae73e92271">GLFW_KEY_3</a>,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    Key4 = <a class="code" href="group__keys.html#ga9e14b6975a9cc8f66cdd5cb3d3861356">GLFW_KEY_4</a>,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    Key5 = <a class="code" href="group__keys.html#ga4d74ddaa5d4c609993b4d4a15736c924">GLFW_KEY_5</a>,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    Key6 = <a class="code" href="group__keys.html#ga9ea4ab80c313a227b14d0a7c6f810b5d">GLFW_KEY_6</a>,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    Key7 = <a class="code" href="group__keys.html#gab79b1cfae7bd630cfc4604c1f263c666">GLFW_KEY_7</a>,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    Key8 = <a class="code" href="group__keys.html#gadeaa109a0f9f5afc94fe4a108e686f6f">GLFW_KEY_8</a>,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    Key9 = <a class="code" href="group__keys.html#ga2924cb5349ebbf97c8987f3521c44f39">GLFW_KEY_9</a>,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="namespaceu22_1_1input.html#a49c48d72760f3356307f8290de5ed483a7fc56270e7a70fa81a5935b72eacbe29">A</a> = <a class="code" href="group__keys.html#ga03e842608e1ea323370889d33b8f70ff">GLFW_KEY_A</a>,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="namespaceu22_1_1input.html#a49c48d72760f3356307f8290de5ed483a9d5ed678fe57bcca610140957afab571">B</a> = <a class="code" href="group__keys.html#ga8e3fb647ff3aca9e8dbf14fe66332941">GLFW_KEY_B</a>,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="namespaceu22_1_1input.html#a49c48d72760f3356307f8290de5ed483a0d61f8370cad1d412f80b84d143e1257">C</a> = <a class="code" href="group__keys.html#ga00ccf3475d9ee2e679480d540d554669">GLFW_KEY_C</a>,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    D = <a class="code" href="group__keys.html#ga011f7cdc9a654da984a2506479606933">GLFW_KEY_D</a>,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    E = <a class="code" href="group__keys.html#gabf48fcc3afbe69349df432b470c96ef2">GLFW_KEY_E</a>,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    F = <a class="code" href="group__keys.html#ga5df402e02aca08444240058fd9b42a55">GLFW_KEY_F</a>,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    G = <a class="code" href="group__keys.html#gae74ecddf7cc96104ab23989b1cdab536">GLFW_KEY_G</a>,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    H = <a class="code" href="group__keys.html#gad4cc98fc8f35f015d9e2fb94bf136076">GLFW_KEY_H</a>,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    I = <a class="code" href="group__keys.html#ga274655c8bfe39742684ca393cf8ed093">GLFW_KEY_I</a>,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    J = <a class="code" href="group__keys.html#ga65ff2aedb129a3149ad9cb3e4159a75f">GLFW_KEY_J</a>,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    K = <a class="code" href="group__keys.html#ga4ae8debadf6d2a691badae0b53ea3ba0">GLFW_KEY_K</a>,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a> = <a class="code" href="group__keys.html#gaaa8b54a13f6b1eed85ac86f82d550db2">GLFW_KEY_L</a>,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    M = <a class="code" href="group__keys.html#ga4d7f0260c82e4ea3d6ebc7a21d6e3716">GLFW_KEY_M</a>,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    N = <a class="code" href="group__keys.html#gae00856dfeb5d13aafebf59d44de5cdda">GLFW_KEY_N</a>,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    O = <a class="code" href="group__keys.html#gaecbbb79130df419d58dd7f09a169efe9">GLFW_KEY_O</a>,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    P = <a class="code" href="group__keys.html#ga8fc15819c1094fb2afa01d84546b33e1">GLFW_KEY_P</a>,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    Q = <a class="code" href="group__keys.html#gafdd01e38b120d67cf51e348bb47f3964">GLFW_KEY_Q</a>,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="stb__vorbis_8c.html#a5c71a5e59a53413cd6c270266d63b031">R</a> = <a class="code" href="group__keys.html#ga4ce6c70a0c98c50b3fe4ab9a728d4d36">GLFW_KEY_R</a>,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    S = <a class="code" href="group__keys.html#ga1570e2ccaab036ea82bed66fc1dab2a9">GLFW_KEY_S</a>,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    T = <a class="code" href="group__keys.html#ga90e0560422ec7a30e7f3f375bc9f37f9">GLFW_KEY_T</a>,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    U = <a class="code" href="group__keys.html#gacad52f3bf7d378fc0ffa72a76769256d">GLFW_KEY_U</a>,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    V = <a class="code" href="group__keys.html#ga22c7763899ecf7788862e5f90eacce6b">GLFW_KEY_V</a>,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    W = <a class="code" href="group__keys.html#gaa06a712e6202661fc03da5bdb7b6e545">GLFW_KEY_W</a>,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    X = <a class="code" href="group__keys.html#gac1c42c0bf4192cea713c55598b06b744">GLFW_KEY_X</a>,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    Y = <a class="code" href="group__keys.html#gafd9f115a549effdf8e372a787c360313">GLFW_KEY_Y</a>,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    Z = <a class="code" href="group__keys.html#gac489e208c26afda8d4938ed88718760a">GLFW_KEY_Z</a>,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    Right = <a class="code" href="group__keys.html#ga06ba07662e8c291a4a84535379ffc7ac">GLFW_KEY_RIGHT</a>,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="namespaceu22_1_1input.html#a38074ea61858009575d7336c43be8515a92b09c7c48c520c3c55e497875da437c">Left</a> = <a class="code" href="group__keys.html#gae12a010d33c309a67ab9460c51eb2462">GLFW_KEY_LEFT</a>,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    Up = <a class="code" href="group__keys.html#ga2f3342b194020d3544c67e3506b6f144">GLFW_KEY_UP</a>,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    Down = <a class="code" href="group__keys.html#gae2e3958c71595607416aa7bf082be2f9">GLFW_KEY_DOWN</a>,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    Space = <a class="code" href="group__keys.html#gaddb2c23772b97fd7e26e8ee66f1ad014">GLFW_KEY_SPACE</a>,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    Escape = <a class="code" href="group__keys.html#gaac6596c350b635c245113b81c2123b93">GLFW_KEY_ESCAPE</a>,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="namespaceu22_1_1input.html#a49c48d72760f3356307f8290de5ed483a988fd738de9c6d177440c5dcf69e73ce">CountMax</a>,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="namespaceu22_1_1input.html#a38074ea61858009575d7336c43be8515">   59</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="namespaceu22_1_1input.html#a38074ea61858009575d7336c43be8515">MouseButton</a> : int {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    Right = <a class="code" href="group__buttons.html#ga3e2f2cf3c4942df73cc094247d275e74">GLFW_MOUSE_BUTTON_RIGHT</a>,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="namespaceu22_1_1input.html#a38074ea61858009575d7336c43be8515a92b09c7c48c520c3c55e497875da437c">Left</a> = <a class="code" href="group__buttons.html#gaf37100431dcd5082d48f95ee8bc8cd56">GLFW_MOUSE_BUTTON_LEFT</a>,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> ToRawCode(<span class="keyword">const</span> <a class="code" href="namespaceu22_1_1input.html#a49c48d72760f3356307f8290de5ed483">u22::input::KeyCode</a> code) noexcept {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::underlying_type&lt;u22::input::KeyCode&gt;::type<span class="keyword">&gt;</span>(code);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> ToRawCode(<span class="keyword">const</span> <a class="code" href="namespaceu22_1_1input.html#a38074ea61858009575d7336c43be8515">u22::input::MouseButton</a> code) noexcept {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::underlying_type&lt;u22::input::MouseButton&gt;::type<span class="keyword">&gt;</span>(code);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif // !U22_INPUT_KEYCODE_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="agroup__keys_html_ga274655c8bfe39742684ca393cf8ed093"><div class="ttname"><a href="group__keys.html#ga274655c8bfe39742684ca393cf8ed093">GLFW_KEY_I</a></div><div class="ttdeci">#define GLFW_KEY_I</div><div class="ttdef"><b>Definition:</b> glfw3.h:331</div></div>
+<div class="ttc" id="astb__vorbis_8c_html_aa73214aa5f2f94f63d90bb4e3d99fe53"><div class="ttname"><a href="stb__vorbis_8c.html#aa73214aa5f2f94f63d90bb4e3d99fe53">L</a></div><div class="ttdeci">#define L</div><div class="ttdef"><b>Definition:</b> stb_vorbis.c:5037</div></div>
+<div class="ttc" id="agroup__keys_html_ga9ea4ab80c313a227b14d0a7c6f810b5d"><div class="ttname"><a href="group__keys.html#ga9ea4ab80c313a227b14d0a7c6f810b5d">GLFW_KEY_6</a></div><div class="ttdeci">#define GLFW_KEY_6</div><div class="ttdef"><b>Definition:</b> glfw3.h:317</div></div>
+<div class="ttc" id="agroup__keys_html_gacad52f3bf7d378fc0ffa72a76769256d"><div class="ttname"><a href="group__keys.html#gacad52f3bf7d378fc0ffa72a76769256d">GLFW_KEY_U</a></div><div class="ttdeci">#define GLFW_KEY_U</div><div class="ttdef"><b>Definition:</b> glfw3.h:343</div></div>
+<div class="ttc" id="agroup__keys_html_gadc8e66b3a4c4b5c39ad1305cf852863c"><div class="ttname"><a href="group__keys.html#gadc8e66b3a4c4b5c39ad1305cf852863c">GLFW_KEY_2</a></div><div class="ttdeci">#define GLFW_KEY_2</div><div class="ttdef"><b>Definition:</b> glfw3.h:313</div></div>
+<div class="ttc" id="agroup__keys_html_ga90e0560422ec7a30e7f3f375bc9f37f9"><div class="ttname"><a href="group__keys.html#ga90e0560422ec7a30e7f3f375bc9f37f9">GLFW_KEY_T</a></div><div class="ttdeci">#define GLFW_KEY_T</div><div class="ttdef"><b>Definition:</b> glfw3.h:342</div></div>
+<div class="ttc" id="agroup__keys_html_ga8e3fb647ff3aca9e8dbf14fe66332941"><div class="ttname"><a href="group__keys.html#ga8e3fb647ff3aca9e8dbf14fe66332941">GLFW_KEY_B</a></div><div class="ttdeci">#define GLFW_KEY_B</div><div class="ttdef"><b>Definition:</b> glfw3.h:324</div></div>
+<div class="ttc" id="agroup__keys_html_ga011f7cdc9a654da984a2506479606933"><div class="ttname"><a href="group__keys.html#ga011f7cdc9a654da984a2506479606933">GLFW_KEY_D</a></div><div class="ttdeci">#define GLFW_KEY_D</div><div class="ttdef"><b>Definition:</b> glfw3.h:326</div></div>
+<div class="ttc" id="agroup__keys_html_gafd9f115a549effdf8e372a787c360313"><div class="ttname"><a href="group__keys.html#gafd9f115a549effdf8e372a787c360313">GLFW_KEY_Y</a></div><div class="ttdeci">#define GLFW_KEY_Y</div><div class="ttdef"><b>Definition:</b> glfw3.h:347</div></div>
+<div class="ttc" id="agroup__keys_html_ga4ae8debadf6d2a691badae0b53ea3ba0"><div class="ttname"><a href="group__keys.html#ga4ae8debadf6d2a691badae0b53ea3ba0">GLFW_KEY_K</a></div><div class="ttdeci">#define GLFW_KEY_K</div><div class="ttdef"><b>Definition:</b> glfw3.h:333</div></div>
+<div class="ttc" id="agroup__keys_html_ga1570e2ccaab036ea82bed66fc1dab2a9"><div class="ttname"><a href="group__keys.html#ga1570e2ccaab036ea82bed66fc1dab2a9">GLFW_KEY_S</a></div><div class="ttdeci">#define GLFW_KEY_S</div><div class="ttdef"><b>Definition:</b> glfw3.h:341</div></div>
+<div class="ttc" id="agroup__keys_html_ga2f3342b194020d3544c67e3506b6f144"><div class="ttname"><a href="group__keys.html#ga2f3342b194020d3544c67e3506b6f144">GLFW_KEY_UP</a></div><div class="ttdeci">#define GLFW_KEY_UP</div><div class="ttdef"><b>Definition:</b> glfw3.h:366</div></div>
+<div class="ttc" id="agroup__keys_html_ga65ff2aedb129a3149ad9cb3e4159a75f"><div class="ttname"><a href="group__keys.html#ga65ff2aedb129a3149ad9cb3e4159a75f">GLFW_KEY_J</a></div><div class="ttdeci">#define GLFW_KEY_J</div><div class="ttdef"><b>Definition:</b> glfw3.h:332</div></div>
+<div class="ttc" id="anamespaceu22_1_1input_html_a49c48d72760f3356307f8290de5ed483a7fc56270e7a70fa81a5935b72eacbe29"><div class="ttname"><a href="namespaceu22_1_1input.html#a49c48d72760f3356307f8290de5ed483a7fc56270e7a70fa81a5935b72eacbe29">u22::input::KeyCode::A</a></div><div class="ttdeci">@ A</div></div>
+<div class="ttc" id="agroup__keys_html_gaa06a712e6202661fc03da5bdb7b6e545"><div class="ttname"><a href="group__keys.html#gaa06a712e6202661fc03da5bdb7b6e545">GLFW_KEY_W</a></div><div class="ttdeci">#define GLFW_KEY_W</div><div class="ttdef"><b>Definition:</b> glfw3.h:345</div></div>
+<div class="ttc" id="agroup__keys_html_gaaa8b54a13f6b1eed85ac86f82d550db2"><div class="ttname"><a href="group__keys.html#gaaa8b54a13f6b1eed85ac86f82d550db2">GLFW_KEY_L</a></div><div class="ttdeci">#define GLFW_KEY_L</div><div class="ttdef"><b>Definition:</b> glfw3.h:334</div></div>
+<div class="ttc" id="agroup__keys_html_gaddb2c23772b97fd7e26e8ee66f1ad014"><div class="ttname"><a href="group__keys.html#gaddb2c23772b97fd7e26e8ee66f1ad014">GLFW_KEY_SPACE</a></div><div class="ttdeci">#define GLFW_KEY_SPACE</div><div class="ttdef"><b>Definition:</b> glfw3.h:305</div></div>
+<div class="ttc" id="agroup__keys_html_ga06ba07662e8c291a4a84535379ffc7ac"><div class="ttname"><a href="group__keys.html#ga06ba07662e8c291a4a84535379ffc7ac">GLFW_KEY_RIGHT</a></div><div class="ttdeci">#define GLFW_KEY_RIGHT</div><div class="ttdef"><b>Definition:</b> glfw3.h:363</div></div>
+<div class="ttc" id="agroup__keys_html_ga9e14b6975a9cc8f66cdd5cb3d3861356"><div class="ttname"><a href="group__keys.html#ga9e14b6975a9cc8f66cdd5cb3d3861356">GLFW_KEY_4</a></div><div class="ttdeci">#define GLFW_KEY_4</div><div class="ttdef"><b>Definition:</b> glfw3.h:315</div></div>
+<div class="ttc" id="agroup__keys_html_gabf48fcc3afbe69349df432b470c96ef2"><div class="ttname"><a href="group__keys.html#gabf48fcc3afbe69349df432b470c96ef2">GLFW_KEY_E</a></div><div class="ttdeci">#define GLFW_KEY_E</div><div class="ttdef"><b>Definition:</b> glfw3.h:327</div></div>
+<div class="ttc" id="agroup__keys_html_ga2924cb5349ebbf97c8987f3521c44f39"><div class="ttname"><a href="group__keys.html#ga2924cb5349ebbf97c8987f3521c44f39">GLFW_KEY_9</a></div><div class="ttdeci">#define GLFW_KEY_9</div><div class="ttdef"><b>Definition:</b> glfw3.h:320</div></div>
+<div class="ttc" id="anamespaceu22_1_1input_html_a49c48d72760f3356307f8290de5ed483"><div class="ttname"><a href="namespaceu22_1_1input.html#a49c48d72760f3356307f8290de5ed483">u22::input::KeyCode</a></div><div class="ttdeci">KeyCode</div><div class="ttdef"><b>Definition:</b> Keycode.h:12</div></div>
+<div class="ttc" id="agroup__keys_html_gab79b1cfae7bd630cfc4604c1f263c666"><div class="ttname"><a href="group__keys.html#gab79b1cfae7bd630cfc4604c1f263c666">GLFW_KEY_7</a></div><div class="ttdeci">#define GLFW_KEY_7</div><div class="ttdef"><b>Definition:</b> glfw3.h:318</div></div>
+<div class="ttc" id="agroup__keys_html_ga22c7763899ecf7788862e5f90eacce6b"><div class="ttname"><a href="group__keys.html#ga22c7763899ecf7788862e5f90eacce6b">GLFW_KEY_V</a></div><div class="ttdeci">#define GLFW_KEY_V</div><div class="ttdef"><b>Definition:</b> glfw3.h:344</div></div>
+<div class="ttc" id="agroup__keys_html_ga03e842608e1ea323370889d33b8f70ff"><div class="ttname"><a href="group__keys.html#ga03e842608e1ea323370889d33b8f70ff">GLFW_KEY_A</a></div><div class="ttdeci">#define GLFW_KEY_A</div><div class="ttdef"><b>Definition:</b> glfw3.h:323</div></div>
+<div class="ttc" id="anamespaceu22_1_1input_html_a49c48d72760f3356307f8290de5ed483a988fd738de9c6d177440c5dcf69e73ce"><div class="ttname"><a href="namespaceu22_1_1input.html#a49c48d72760f3356307f8290de5ed483a988fd738de9c6d177440c5dcf69e73ce">u22::input::KeyCode::Return</a></div><div class="ttdeci">@ Return</div></div>
+<div class="ttc" id="anamespaceu22_1_1input_html_a38074ea61858009575d7336c43be8515a92b09c7c48c520c3c55e497875da437c"><div class="ttname"><a href="namespaceu22_1_1input.html#a38074ea61858009575d7336c43be8515a92b09c7c48c520c3c55e497875da437c">u22::input::MouseButton::Right</a></div><div class="ttdeci">@ Right</div></div>
+<div class="ttc" id="agroup__keys_html_ga05e4cae9ddb8d40cf6d82c8f11f2502f"><div class="ttname"><a href="group__keys.html#ga05e4cae9ddb8d40cf6d82c8f11f2502f">GLFW_KEY_1</a></div><div class="ttdeci">#define GLFW_KEY_1</div><div class="ttdef"><b>Definition:</b> glfw3.h:312</div></div>
+<div class="ttc" id="anamespaceu22_1_1input_html_a38074ea61858009575d7336c43be8515"><div class="ttname"><a href="namespaceu22_1_1input.html#a38074ea61858009575d7336c43be8515">u22::input::MouseButton</a></div><div class="ttdeci">MouseButton</div><div class="ttdef"><b>Definition:</b> Keycode.h:59</div></div>
+<div class="ttc" id="agroup__keys_html_gae2e3958c71595607416aa7bf082be2f9"><div class="ttname"><a href="group__keys.html#gae2e3958c71595607416aa7bf082be2f9">GLFW_KEY_DOWN</a></div><div class="ttdeci">#define GLFW_KEY_DOWN</div><div class="ttdef"><b>Definition:</b> glfw3.h:365</div></div>
+<div class="ttc" id="agroup__keys_html_ga4d7f0260c82e4ea3d6ebc7a21d6e3716"><div class="ttname"><a href="group__keys.html#ga4d7f0260c82e4ea3d6ebc7a21d6e3716">GLFW_KEY_M</a></div><div class="ttdeci">#define GLFW_KEY_M</div><div class="ttdef"><b>Definition:</b> glfw3.h:335</div></div>
+<div class="ttc" id="agroup__keys_html_gae74ecddf7cc96104ab23989b1cdab536"><div class="ttname"><a href="group__keys.html#gae74ecddf7cc96104ab23989b1cdab536">GLFW_KEY_G</a></div><div class="ttdeci">#define GLFW_KEY_G</div><div class="ttdef"><b>Definition:</b> glfw3.h:329</div></div>
+<div class="ttc" id="agroup__keys_html_gafdd01e38b120d67cf51e348bb47f3964"><div class="ttname"><a href="group__keys.html#gafdd01e38b120d67cf51e348bb47f3964">GLFW_KEY_Q</a></div><div class="ttdeci">#define GLFW_KEY_Q</div><div class="ttdef"><b>Definition:</b> glfw3.h:339</div></div>
+<div class="ttc" id="agroup__keys_html_ga4ce6c70a0c98c50b3fe4ab9a728d4d36"><div class="ttname"><a href="group__keys.html#ga4ce6c70a0c98c50b3fe4ab9a728d4d36">GLFW_KEY_R</a></div><div class="ttdeci">#define GLFW_KEY_R</div><div class="ttdef"><b>Definition:</b> glfw3.h:340</div></div>
+<div class="ttc" id="agroup__keys_html_ga8fc15819c1094fb2afa01d84546b33e1"><div class="ttname"><a href="group__keys.html#ga8fc15819c1094fb2afa01d84546b33e1">GLFW_KEY_P</a></div><div class="ttdeci">#define GLFW_KEY_P</div><div class="ttdef"><b>Definition:</b> glfw3.h:338</div></div>
+<div class="ttc" id="agroup__buttons_html_gaf37100431dcd5082d48f95ee8bc8cd56"><div class="ttname"><a href="group__buttons.html#gaf37100431dcd5082d48f95ee8bc8cd56">GLFW_MOUSE_BUTTON_LEFT</a></div><div class="ttdeci">#define GLFW_MOUSE_BUTTON_LEFT</div><div class="ttdef"><b>Definition:</b> glfw3.h:469</div></div>
+<div class="ttc" id="agroup__keys_html_gaecbbb79130df419d58dd7f09a169efe9"><div class="ttname"><a href="group__keys.html#gaecbbb79130df419d58dd7f09a169efe9">GLFW_KEY_O</a></div><div class="ttdeci">#define GLFW_KEY_O</div><div class="ttdef"><b>Definition:</b> glfw3.h:337</div></div>
+<div class="ttc" id="agroup__keys_html_ga9555a92ecbecdbc1f3435219c571d667"><div class="ttname"><a href="group__keys.html#ga9555a92ecbecdbc1f3435219c571d667">GLFW_KEY_ENTER</a></div><div class="ttdeci">#define GLFW_KEY_ENTER</div><div class="ttdef"><b>Definition:</b> glfw3.h:358</div></div>
+<div class="ttc" id="agroup__keys_html_gae00856dfeb5d13aafebf59d44de5cdda"><div class="ttname"><a href="group__keys.html#gae00856dfeb5d13aafebf59d44de5cdda">GLFW_KEY_N</a></div><div class="ttdeci">#define GLFW_KEY_N</div><div class="ttdef"><b>Definition:</b> glfw3.h:336</div></div>
+<div class="ttc" id="agroup__keys_html_ga812f0273fe1a981e1fa002ae73e92271"><div class="ttname"><a href="group__keys.html#ga812f0273fe1a981e1fa002ae73e92271">GLFW_KEY_3</a></div><div class="ttdeci">#define GLFW_KEY_3</div><div class="ttdef"><b>Definition:</b> glfw3.h:314</div></div>
+<div class="ttc" id="agroup__keys_html_gaac6596c350b635c245113b81c2123b93"><div class="ttname"><a href="group__keys.html#gaac6596c350b635c245113b81c2123b93">GLFW_KEY_ESCAPE</a></div><div class="ttdeci">#define GLFW_KEY_ESCAPE</div><div class="ttdef"><b>Definition:</b> glfw3.h:357</div></div>
+<div class="ttc" id="agroup__keys_html_gadeaa109a0f9f5afc94fe4a108e686f6f"><div class="ttname"><a href="group__keys.html#gadeaa109a0f9f5afc94fe4a108e686f6f">GLFW_KEY_8</a></div><div class="ttdeci">#define GLFW_KEY_8</div><div class="ttdef"><b>Definition:</b> glfw3.h:319</div></div>
+<div class="ttc" id="agroup__keys_html_ga00ccf3475d9ee2e679480d540d554669"><div class="ttname"><a href="group__keys.html#ga00ccf3475d9ee2e679480d540d554669">GLFW_KEY_C</a></div><div class="ttdeci">#define GLFW_KEY_C</div><div class="ttdef"><b>Definition:</b> glfw3.h:325</div></div>
+<div class="ttc" id="agroup__keys_html_gad4cc98fc8f35f015d9e2fb94bf136076"><div class="ttname"><a href="group__keys.html#gad4cc98fc8f35f015d9e2fb94bf136076">GLFW_KEY_H</a></div><div class="ttdeci">#define GLFW_KEY_H</div><div class="ttdef"><b>Definition:</b> glfw3.h:330</div></div>
+<div class="ttc" id="agroup__keys_html_gae12a010d33c309a67ab9460c51eb2462"><div class="ttname"><a href="group__keys.html#gae12a010d33c309a67ab9460c51eb2462">GLFW_KEY_LEFT</a></div><div class="ttdeci">#define GLFW_KEY_LEFT</div><div class="ttdef"><b>Definition:</b> glfw3.h:364</div></div>
+<div class="ttc" id="agroup__keys_html_ga4d74ddaa5d4c609993b4d4a15736c924"><div class="ttname"><a href="group__keys.html#ga4d74ddaa5d4c609993b4d4a15736c924">GLFW_KEY_5</a></div><div class="ttdeci">#define GLFW_KEY_5</div><div class="ttdef"><b>Definition:</b> glfw3.h:316</div></div>
+<div class="ttc" id="agroup__buttons_html_ga3e2f2cf3c4942df73cc094247d275e74"><div class="ttname"><a href="group__buttons.html#ga3e2f2cf3c4942df73cc094247d275e74">GLFW_MOUSE_BUTTON_RIGHT</a></div><div class="ttdeci">#define GLFW_MOUSE_BUTTON_RIGHT</div><div class="ttdef"><b>Definition:</b> glfw3.h:470</div></div>
+<div class="ttc" id="anamespaceu22_1_1input_html"><div class="ttname"><a href="namespaceu22_1_1input.html">u22::input</a></div><div class="ttdef"><b>Definition:</b> Input.h:13</div></div>
+<div class="ttc" id="agroup__keys_html_ga5df402e02aca08444240058fd9b42a55"><div class="ttname"><a href="group__keys.html#ga5df402e02aca08444240058fd9b42a55">GLFW_KEY_F</a></div><div class="ttdeci">#define GLFW_KEY_F</div><div class="ttdef"><b>Definition:</b> glfw3.h:328</div></div>
+<div class="ttc" id="agroup__keys_html_gac1c42c0bf4192cea713c55598b06b744"><div class="ttname"><a href="group__keys.html#gac1c42c0bf4192cea713c55598b06b744">GLFW_KEY_X</a></div><div class="ttdeci">#define GLFW_KEY_X</div><div class="ttdef"><b>Definition:</b> glfw3.h:346</div></div>
+<div class="ttc" id="astb__vorbis_8c_html_a5c71a5e59a53413cd6c270266d63b031"><div class="ttname"><a href="stb__vorbis_8c.html#a5c71a5e59a53413cd6c270266d63b031">R</a></div><div class="ttdeci">#define R</div><div class="ttdef"><b>Definition:</b> stb_vorbis.c:5039</div></div>
+<div class="ttc" id="anamespaceu22_1_1input_html_a49c48d72760f3356307f8290de5ed483a0d61f8370cad1d412f80b84d143e1257"><div class="ttname"><a href="namespaceu22_1_1input.html#a49c48d72760f3356307f8290de5ed483a0d61f8370cad1d412f80b84d143e1257">u22::input::KeyCode::C</a></div><div class="ttdeci">@ C</div></div>
+<div class="ttc" id="agroup__keys_html_gac489e208c26afda8d4938ed88718760a"><div class="ttname"><a href="group__keys.html#gac489e208c26afda8d4938ed88718760a">GLFW_KEY_Z</a></div><div class="ttdeci">#define GLFW_KEY_Z</div><div class="ttdef"><b>Definition:</b> glfw3.h:348</div></div>
+<div class="ttc" id="anamespaceu22_1_1input_html_a49c48d72760f3356307f8290de5ed483a9d5ed678fe57bcca610140957afab571"><div class="ttname"><a href="namespaceu22_1_1input.html#a49c48d72760f3356307f8290de5ed483a9d5ed678fe57bcca610140957afab571">u22::input::KeyCode::B</a></div><div class="ttdeci">@ B</div></div>
+<div class="ttc" id="agroup__keys_html_ga50391730e9d7112ad4fd42d0bd1597c1"><div class="ttname"><a href="group__keys.html#ga50391730e9d7112ad4fd42d0bd1597c1">GLFW_KEY_0</a></div><div class="ttdeci">#define GLFW_KEY_0</div><div class="ttdef"><b>Definition:</b> glfw3.h:311</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

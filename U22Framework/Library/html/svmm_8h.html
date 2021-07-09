@@ -1,0 +1,448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: freetype/internal/services/svmm.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_981d57b2e11530428c66a192ba91cfc7.html">freetype</a></li><li class="navelem"><a class="el" href="dir_ac174dc64ad36850d6be9a69f636b6c2.html">internal</a></li><li class="navelem"><a class="el" href="dir_35a0bb54f7f16cba82b70b986a88ff93.html">services</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#typedef-members">型定義</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">svmm.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="ftserv_8h_source.html">freetype/internal/ftserv.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+svmm.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="svmm_8h__incl.png" border="0" usemap="#afreetype_2internal_2services_2svmm_8h" alt=""/></div>
+<map name="freetype_2internal_2services_2svmm_8h" id="freetype_2internal_2services_2svmm_8h">
+<area shape="rect" title=" " alt="" coords="5,5,171,47"/>
+<area shape="rect" href="ftserv_8h.html" title=" " alt="" coords="9,95,167,121"/>
+<area shape="rect" href="compiler-macros_8h.html" title=" " alt="" coords="23,169,153,196"/>
+<area shape="rect" href="public-macros_8h.html" title=" " alt="" coords="16,244,160,285"/>
+</map>
+</div>
+</div>
+<p><a href="svmm_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a63a030aa0c4eb0547881486ae48b92f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svmm_8h.html#a63a030aa0c4eb0547881486ae48b92f8">FT_SERVICE_ID_MULTI_MASTERS</a>&#160;&#160;&#160;&quot;multi-masters&quot;</td></tr>
+<tr class="separator:a63a030aa0c4eb0547881486ae48b92f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaca8964b60f37ad18213fd5cea6e26f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svmm_8h.html#aaca8964b60f37ad18213fd5cea6e26f0">FT_DEFINE_SERVICE_MULTIMASTERSREC</a>(class_,  get_mm_,  set_mm_design_,  set_mm_blend_,  get_mm_blend_,  get_mm_var_,  set_var_design_,  get_var_design_,  set_instance_,  set_weightvector_,  get_weightvector_,  get_var_blend_,  done_blend_)</td></tr>
+<tr class="separator:aaca8964b60f37ad18213fd5cea6e26f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:a146dcefb9222ba94dc66bd46afd4e935"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svmm_8h.html#a146dcefb9222ba94dc66bd46afd4e935">FT_Get_MM_Func</a>) (<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face, <a class="el" href="ftmm_8h.html#a1526d6544240c5c3c714f513dcc42b60">FT_Multi_Master</a> *master)</td></tr>
+<tr class="separator:a146dcefb9222ba94dc66bd46afd4e935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a546a8329ae21885fc5010a8a3f780d5b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svmm_8h.html#a546a8329ae21885fc5010a8a3f780d5b">FT_Get_MM_Var_Func</a>) (<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face, <a class="el" href="ftmm_8h.html#a73d7469ac82ad9c90faee58ef36ccbdc">FT_MM_Var</a> **master)</td></tr>
+<tr class="separator:a546a8329ae21885fc5010a8a3f780d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d35ea2d443a734f3cd5810366dbc67b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svmm_8h.html#a3d35ea2d443a734f3cd5810366dbc67b">FT_Set_MM_Design_Func</a>) (<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> num_coords, <a class="el" href="fttypes_8h.html#a7fa72a1f0e79fb1860c5965789024d6f">FT_Long</a> *coords)</td></tr>
+<tr class="separator:a3d35ea2d443a734f3cd5810366dbc67b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff307b45628209bd9960c53576341aa7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svmm_8h.html#aff307b45628209bd9960c53576341aa7">FT_Set_Var_Design_Func</a>) (<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> num_coords, <a class="el" href="fttypes_8h.html#a5f5a679cc09f758efdd0d1c5feed3c3d">FT_Fixed</a> *coords)</td></tr>
+<tr class="separator:aff307b45628209bd9960c53576341aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ec4b0855287f182b2940634ac5a35b8"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svmm_8h.html#a0ec4b0855287f182b2940634ac5a35b8">FT_Set_MM_Blend_Func</a>) (<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> num_coords, <a class="el" href="fttypes_8h.html#a7fa72a1f0e79fb1860c5965789024d6f">FT_Long</a> *coords)</td></tr>
+<tr class="separator:a0ec4b0855287f182b2940634ac5a35b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac18adafe8a1ac8241c5f89547500ef0c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svmm_8h.html#ac18adafe8a1ac8241c5f89547500ef0c">FT_Get_Var_Design_Func</a>) (<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> num_coords, <a class="el" href="fttypes_8h.html#a5f5a679cc09f758efdd0d1c5feed3c3d">FT_Fixed</a> *coords)</td></tr>
+<tr class="separator:ac18adafe8a1ac8241c5f89547500ef0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ce4a74436a14fa64ca1576b2cba6389"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svmm_8h.html#a0ce4a74436a14fa64ca1576b2cba6389">FT_Set_Instance_Func</a>) (<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> instance_index)</td></tr>
+<tr class="separator:a0ce4a74436a14fa64ca1576b2cba6389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58cef410142e3b6e48d97967ff4987e2"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svmm_8h.html#a58cef410142e3b6e48d97967ff4987e2">FT_Get_MM_Blend_Func</a>) (<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> num_coords, <a class="el" href="fttypes_8h.html#a7fa72a1f0e79fb1860c5965789024d6f">FT_Long</a> *coords)</td></tr>
+<tr class="separator:a58cef410142e3b6e48d97967ff4987e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d3b7469f5080dfbb52c0ac968c00641"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svmm_8h.html#a9d3b7469f5080dfbb52c0ac968c00641">FT_Get_Var_Blend_Func</a>) (<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> *num_coords, <a class="el" href="fttypes_8h.html#a5f5a679cc09f758efdd0d1c5feed3c3d">FT_Fixed</a> **coords, <a class="el" href="fttypes_8h.html#a5f5a679cc09f758efdd0d1c5feed3c3d">FT_Fixed</a> **normalizedcoords, <a class="el" href="ftmm_8h.html#a73d7469ac82ad9c90faee58ef36ccbdc">FT_MM_Var</a> **mm_var)</td></tr>
+<tr class="separator:a9d3b7469f5080dfbb52c0ac968c00641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a05fd22c0fcd137058f932ff671ab86"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svmm_8h.html#a7a05fd22c0fcd137058f932ff671ab86">FT_Done_Blend_Func</a>) (<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a>)</td></tr>
+<tr class="separator:a7a05fd22c0fcd137058f932ff671ab86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af911fbdf406f1ac9b42c15e9ffc7565c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svmm_8h.html#af911fbdf406f1ac9b42c15e9ffc7565c">FT_Set_MM_WeightVector_Func</a>) (<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> len, <a class="el" href="fttypes_8h.html#a5f5a679cc09f758efdd0d1c5feed3c3d">FT_Fixed</a> *weight_vector)</td></tr>
+<tr class="separator:af911fbdf406f1ac9b42c15e9ffc7565c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6f20bc4e075992dfdc8336d5253c57a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svmm_8h.html#af6f20bc4e075992dfdc8336d5253c57a">FT_Get_MM_WeightVector_Func</a>) (<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> *len, <a class="el" href="fttypes_8h.html#a5f5a679cc09f758efdd0d1c5feed3c3d">FT_Fixed</a> *weight_vector)</td></tr>
+<tr class="separator:af6f20bc4e075992dfdc8336d5253c57a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:af642d95ec3f75607f3352218c50f8338"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="svmm_8h.html#af642d95ec3f75607f3352218c50f8338">FT_DEFINE_SERVICE</a> (MultiMasters)</td></tr>
+<tr class="separator:af642d95ec3f75607f3352218c50f8338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">マクロ定義詳解</h2>
+<a id="aaca8964b60f37ad18213fd5cea6e26f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaca8964b60f37ad18213fd5cea6e26f0">&#9670;&nbsp;</a></span>FT_DEFINE_SERVICE_MULTIMASTERSREC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_DEFINE_SERVICE_MULTIMASTERSREC</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">class_, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">get_mm_, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">set_mm_design_, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">set_mm_blend_, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">get_mm_blend_, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">get_mm_var_, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">set_var_design_, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">get_var_design_, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">set_instance_, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">set_weightvector_, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">get_weightvector_, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">get_var_blend_, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">done_blend_&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">  <span class="keyword">static</span> <span class="keyword">const</span> FT_Service_MultiMastersRec  class_ =           \</div>
+<div class="line">  {                                                           \</div>
+<div class="line">    get_mm_,                                                  \</div>
+<div class="line">    set_mm_design_,                                           \</div>
+<div class="line">    set_mm_blend_,                                            \</div>
+<div class="line">    get_mm_blend_,                                            \</div>
+<div class="line">    get_mm_var_,                                              \</div>
+<div class="line">    set_var_design_,                                          \</div>
+<div class="line">    get_var_design_,                                          \</div>
+<div class="line">    set_instance_,                                            \</div>
+<div class="line">    set_weightvector_,                                        \</div>
+<div class="line">    get_weightvector_,                                        \</div>
+<div class="line">    get_var_blend_,                                           \</div>
+<div class="line">    done_blend_                                               \</div>
+<div class="line">  };</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a63a030aa0c4eb0547881486ae48b92f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63a030aa0c4eb0547881486ae48b92f8">&#9670;&nbsp;</a></span>FT_SERVICE_ID_MULTI_MASTERS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_SERVICE_ID_MULTI_MASTERS&#160;&#160;&#160;&quot;multi-masters&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">型定義詳解</h2>
+<a id="a7a05fd22c0fcd137058f932ff671ab86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a05fd22c0fcd137058f932ff671ab86">&#9670;&nbsp;</a></span>FT_Done_Blend_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* FT_Done_Blend_Func) (<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58cef410142e3b6e48d97967ff4987e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58cef410142e3b6e48d97967ff4987e2">&#9670;&nbsp;</a></span>FT_Get_MM_Blend_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(* FT_Get_MM_Blend_Func) (<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> num_coords, <a class="el" href="fttypes_8h.html#a7fa72a1f0e79fb1860c5965789024d6f">FT_Long</a> *coords)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a146dcefb9222ba94dc66bd46afd4e935"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a146dcefb9222ba94dc66bd46afd4e935">&#9670;&nbsp;</a></span>FT_Get_MM_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(* FT_Get_MM_Func) (<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face, <a class="el" href="ftmm_8h.html#a1526d6544240c5c3c714f513dcc42b60">FT_Multi_Master</a> *master)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a546a8329ae21885fc5010a8a3f780d5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a546a8329ae21885fc5010a8a3f780d5b">&#9670;&nbsp;</a></span>FT_Get_MM_Var_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(* FT_Get_MM_Var_Func) (<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face, <a class="el" href="ftmm_8h.html#a73d7469ac82ad9c90faee58ef36ccbdc">FT_MM_Var</a> **master)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af6f20bc4e075992dfdc8336d5253c57a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6f20bc4e075992dfdc8336d5253c57a">&#9670;&nbsp;</a></span>FT_Get_MM_WeightVector_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(* FT_Get_MM_WeightVector_Func) (<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> *len, <a class="el" href="fttypes_8h.html#a5f5a679cc09f758efdd0d1c5feed3c3d">FT_Fixed</a> *weight_vector)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d3b7469f5080dfbb52c0ac968c00641"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d3b7469f5080dfbb52c0ac968c00641">&#9670;&nbsp;</a></span>FT_Get_Var_Blend_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(* FT_Get_Var_Blend_Func) (<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> *num_coords, <a class="el" href="fttypes_8h.html#a5f5a679cc09f758efdd0d1c5feed3c3d">FT_Fixed</a> **coords, <a class="el" href="fttypes_8h.html#a5f5a679cc09f758efdd0d1c5feed3c3d">FT_Fixed</a> **normalizedcoords, <a class="el" href="ftmm_8h.html#a73d7469ac82ad9c90faee58ef36ccbdc">FT_MM_Var</a> **mm_var)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac18adafe8a1ac8241c5f89547500ef0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac18adafe8a1ac8241c5f89547500ef0c">&#9670;&nbsp;</a></span>FT_Get_Var_Design_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(* FT_Get_Var_Design_Func) (<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> num_coords, <a class="el" href="fttypes_8h.html#a5f5a679cc09f758efdd0d1c5feed3c3d">FT_Fixed</a> *coords)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ce4a74436a14fa64ca1576b2cba6389"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ce4a74436a14fa64ca1576b2cba6389">&#9670;&nbsp;</a></span>FT_Set_Instance_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(* FT_Set_Instance_Func) (<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> instance_index)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ec4b0855287f182b2940634ac5a35b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ec4b0855287f182b2940634ac5a35b8">&#9670;&nbsp;</a></span>FT_Set_MM_Blend_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(* FT_Set_MM_Blend_Func) (<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> num_coords, <a class="el" href="fttypes_8h.html#a7fa72a1f0e79fb1860c5965789024d6f">FT_Long</a> *coords)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d35ea2d443a734f3cd5810366dbc67b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d35ea2d443a734f3cd5810366dbc67b">&#9670;&nbsp;</a></span>FT_Set_MM_Design_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(* FT_Set_MM_Design_Func) (<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> num_coords, <a class="el" href="fttypes_8h.html#a7fa72a1f0e79fb1860c5965789024d6f">FT_Long</a> *coords)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af911fbdf406f1ac9b42c15e9ffc7565c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af911fbdf406f1ac9b42c15e9ffc7565c">&#9670;&nbsp;</a></span>FT_Set_MM_WeightVector_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(* FT_Set_MM_WeightVector_Func) (<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> len, <a class="el" href="fttypes_8h.html#a5f5a679cc09f758efdd0d1c5feed3c3d">FT_Fixed</a> *weight_vector)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff307b45628209bd9960c53576341aa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff307b45628209bd9960c53576341aa7">&#9670;&nbsp;</a></span>FT_Set_Var_Design_Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="fttypes_8h.html#a64c8060bdb3d6eec844a1bf670e06bdd">FT_Error</a>(* FT_Set_Var_Design_Func) (<a class="el" href="freetype_8h.html#a7eba045ee20968354fa1bff0f69740fa">FT_Face</a> face, <a class="el" href="fttypes_8h.html#abcb8db4dbf35d2b55a9e8c7b0926dc52">FT_UInt</a> num_coords, <a class="el" href="fttypes_8h.html#a5f5a679cc09f758efdd0d1c5feed3c3d">FT_Fixed</a> *coords)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="af642d95ec3f75607f3352218c50f8338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af642d95ec3f75607f3352218c50f8338">&#9670;&nbsp;</a></span>FT_DEFINE_SERVICE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FT_DEFINE_SERVICE </td>
+          <td>(</td>
+          <td class="paramtype">MultiMasters&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

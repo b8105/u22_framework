@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: Math/Vector3.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_5bce4665f02041fc00c7e7e07b63c945.html">Math</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Vector3.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_vector3_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef U22_MATH_VECTOR3_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define U22_MATH_VECTOR3_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../Common/Common.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_vector2_8h.html">Vector2.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceu22_1_1math.html">u22::math</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classu22_1_1math_1_1_vector3.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classu22_1_1math_1_1_vector3.html">Vector3</a> : <span class="keyword">public</span> <a class="code" href="structglm_1_1vec.html">glm::vec3</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classu22_1_1math_1_1_vector3.html#ac85fc154b4fc06cd06f9ba5f647a9aa8">   13</a></span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span>&gt; <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classu22_1_1math_1_1_vector3.html">Vector3</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;};</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classu22_1_1math_1_1_vector3_3_01float_01_4.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classu22_1_1math_1_1_vector3.html">Vector3</a>&lt;float&gt; : <span class="keyword">public</span> <a class="code" href="structglm_1_1vec.html">glm::vec3</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">using</span> <a class="code" href="structglm_1_1vec.html">super</a> = <a class="code" href="group__core__vector.html#ga4320b87e41013b7e875f845f439fc498">glm::vec3</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">using</span> <a class="code" href="group__core__vector.html#ga4320b87e41013b7e875f845f439fc498">glm::vec3::vec3</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classu22_1_1math_1_1_vector3_3_01float_01_4.html#a5a3159928cf6ece23162d178c3fecba5">   23</a></span>&#160;    <span class="keyword">operator</span> <a class="code" href="structglm_1_1vec.html">super</a>() {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structglm_1_1vec.html">super</a>(x, y, z);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classu22_1_1math_1_1_vector3_3_01float_01_4.html#a0c181b4daac13347cb0987ce7bd36af2">   26</a></span>&#160;    <span class="keyword">operator</span> <span class="keyword">const</span> <a class="code" href="structglm_1_1vec.html">super</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structglm_1_1vec.html">super</a>(x, y, z);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classu22_1_1math_1_1_vector3_3_01float_01_4.html#a92a64899e01a08ec5c2230048e08810c">   29</a></span>&#160;    <a class="code" href="classu22_1_1math_1_1_vector3_3_01float_01_4.html#a92a64899e01a08ec5c2230048e08810c">Vector3</a>(<span class="keyword">const</span> <a class="code" href="structglm_1_1vec.html">super</a>&amp; v) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        x = v.x;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        y = v.y;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        z = v.z;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classu22_1_1math_1_1_vector3_3_01float_01_4.html#adade455f42b49a842b2a84106aaf78f2">   34</a></span>&#160;    <a class="code" href="classu22_1_1math_1_1_vector3.html">Vector3</a>&amp; <a class="code" href="classu22_1_1math_1_1_vector3_3_01float_01_4.html#adade455f42b49a842b2a84106aaf78f2">operator=</a>(<span class="keyword">const</span> <a class="code" href="structglm_1_1vec.html">super</a>&amp; v) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        x = v.x;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        y = v.y;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        z = v.z;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classu22_1_1math_1_1_vector3_3_01float_01_4.html#ae1b6f9d3d911e13c204ba4922c57d4d6">   42</a></span>&#160;    <a class="code" href="classu22_1_1math_1_1_vector3_3_01float_01_4.html#ae1b6f9d3d911e13c204ba4922c57d4d6">Vector3</a>(<span class="keyword">const</span> <a class="code" href="classu22_1_1math_1_1_vector2_3_01float_01_4.html">Vector2&lt;float&gt;</a>&amp; v) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        x = v.x;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        y = v.y;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        z = 0.0f;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classu22_1_1math_1_1_vector3_3_01float_01_4.html#a97856167e14b02531b73355d22dab873">   47</a></span>&#160;    <a class="code" href="classu22_1_1math_1_1_vector3.html">Vector3</a>&amp; <a class="code" href="classu22_1_1math_1_1_vector3_3_01float_01_4.html#a97856167e14b02531b73355d22dab873">operator=</a>(<span class="keyword">const</span> <a class="code" href="classu22_1_1math_1_1_vector2_3_01float_01_4.html">Vector2&lt;float&gt;</a>&amp; v) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        x = v.x;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        y = v.y;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        z = 0.0f;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classu22_1_1math_1_1_vector3_3_01int_01_4.html">   56</a></span>&#160;<span class="keyword">class </span><a class="code" href="classu22_1_1math_1_1_vector3.html">Vector3</a>&lt;int&gt; : <span class="keyword">public</span> <a class="code" href="structglm_1_1vec.html">glm::ivec3</a> {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">using</span> <a class="code" href="structglm_1_1vec.html">super</a> = <a class="code" href="group__core__vector.html#gaeaaefdf2b8fdd8c9f430514afd51d1ce">glm::ivec3</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">using</span> <a class="code" href="group__core__vector.html#gaeaaefdf2b8fdd8c9f430514afd51d1ce">glm::ivec3::ivec3</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classu22_1_1math_1_1_vector3_3_01int_01_4.html#a7dde7a7a8e741fed07941810eb11827c">   61</a></span>&#160;    <span class="keyword">operator</span> <a class="code" href="structglm_1_1vec.html">super</a>() {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structglm_1_1vec.html">super</a>(x, y, z);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classu22_1_1math_1_1_vector3_3_01int_01_4.html#a772a2712bbda91ca6a4121f8a0168a6d">   64</a></span>&#160;    <span class="keyword">operator</span> <span class="keyword">const</span> <a class="code" href="structglm_1_1vec.html">super</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structglm_1_1vec.html">super</a>(x, y, z);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classu22_1_1math_1_1_vector3_3_01int_01_4.html#ac05449658402a5c51605007587442e64">   67</a></span>&#160;    <a class="code" href="classu22_1_1math_1_1_vector3_3_01int_01_4.html#ac05449658402a5c51605007587442e64">Vector3</a>(<span class="keyword">const</span> <a class="code" href="structglm_1_1vec.html">super</a>&amp; v) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        x = v.x;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        y = v.y;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        z = v.z;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classu22_1_1math_1_1_vector3_3_01int_01_4.html#a4d2b018f730dd5c29c18976f41d07f7f">   72</a></span>&#160;    <a class="code" href="classu22_1_1math_1_1_vector3.html">Vector3</a>&amp; <a class="code" href="classu22_1_1math_1_1_vector3_3_01int_01_4.html#a4d2b018f730dd5c29c18976f41d07f7f">operator=</a>(<span class="keyword">const</span> <a class="code" href="structglm_1_1vec.html">super</a>&amp; v) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        x = v.x;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        y = v.y;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        z = v.z;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="namespaceu22_1_1math.html#a4eb47e570744e1aac71ea458d3a114b7">   80</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classu22_1_1math_1_1_vector3_3_01int_01_4.html">Vector3I</a> = <a class="code" href="classu22_1_1math_1_1_vector3_3_01int_01_4.html">Vector3&lt;int&gt;</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="namespaceu22_1_1math.html#a7541a7b83d972aaa30344cb4ee2192f1">   81</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classu22_1_1math_1_1_vector3_3_01float_01_4.html">Vector3F</a> = <a class="code" href="classu22_1_1math_1_1_vector3_3_01float_01_4.html">Vector3&lt;float&gt;</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif // !U22_MATH_VECTOR3_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassu22_1_1math_1_1_vector2_3_01float_01_4_html"><div class="ttname"><a href="classu22_1_1math_1_1_vector2_3_01float_01_4.html">u22::math::Vector2&lt; float &gt;</a></div><div class="ttdef"><b>Definition:</b> Vector2.h:16</div></div>
+<div class="ttc" id="agroup__core__vector_html_ga4320b87e41013b7e875f845f439fc498"><div class="ttname"><a href="group__core__vector.html#ga4320b87e41013b7e875f845f439fc498">glm::vec3</a></div><div class="ttdeci">vec&lt; 3, float, defaultp &gt; vec3</div><div class="ttdef"><b>Definition:</b> vector_float3.hpp:15</div></div>
+<div class="ttc" id="aclassu22_1_1math_1_1_vector3_3_01float_01_4_html"><div class="ttname"><a href="classu22_1_1math_1_1_vector3_3_01float_01_4.html">u22::math::Vector3&lt; float &gt;</a></div><div class="ttdef"><b>Definition:</b> Vector3.h:18</div></div>
+<div class="ttc" id="a_vector2_8h_html"><div class="ttname"><a href="_vector2_8h.html">Vector2.h</a></div></div>
+<div class="ttc" id="aclassu22_1_1math_1_1_vector3_3_01int_01_4_html_ac05449658402a5c51605007587442e64"><div class="ttname"><a href="classu22_1_1math_1_1_vector3_3_01int_01_4.html#ac05449658402a5c51605007587442e64">u22::math::Vector3&lt; int &gt;::Vector3</a></div><div class="ttdeci">Vector3(const super &amp;v)</div><div class="ttdef"><b>Definition:</b> Vector3.h:67</div></div>
+<div class="ttc" id="agroup__core__vector_html_gaeaaefdf2b8fdd8c9f430514afd51d1ce"><div class="ttname"><a href="group__core__vector.html#gaeaaefdf2b8fdd8c9f430514afd51d1ce">glm::ivec3</a></div><div class="ttdeci">vec&lt; 3, int, defaultp &gt; ivec3</div><div class="ttdef"><b>Definition:</b> vector_int3.hpp:15</div></div>
+<div class="ttc" id="aclassu22_1_1math_1_1_vector3_3_01int_01_4_html"><div class="ttname"><a href="classu22_1_1math_1_1_vector3_3_01int_01_4.html">u22::math::Vector3&lt; int &gt;</a></div><div class="ttdef"><b>Definition:</b> Vector3.h:56</div></div>
+<div class="ttc" id="aclassu22_1_1math_1_1_vector3_3_01float_01_4_html_a97856167e14b02531b73355d22dab873"><div class="ttname"><a href="classu22_1_1math_1_1_vector3_3_01float_01_4.html#a97856167e14b02531b73355d22dab873">u22::math::Vector3&lt; float &gt;::operator=</a></div><div class="ttdeci">Vector3 &amp; operator=(const Vector2&lt; float &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> Vector3.h:47</div></div>
+<div class="ttc" id="aclassu22_1_1math_1_1_vector3_html"><div class="ttname"><a href="classu22_1_1math_1_1_vector3.html">u22::math::Vector3</a></div><div class="ttdef"><b>Definition:</b> Vector3.h:12</div></div>
+<div class="ttc" id="astructglm_1_1vec_html"><div class="ttname"><a href="structglm_1_1vec.html">glm::vec</a></div><div class="ttdef"><b>Definition:</b> qualifier.hpp:35</div></div>
+<div class="ttc" id="aclassu22_1_1math_1_1_vector3_3_01float_01_4_html_adade455f42b49a842b2a84106aaf78f2"><div class="ttname"><a href="classu22_1_1math_1_1_vector3_3_01float_01_4.html#adade455f42b49a842b2a84106aaf78f2">u22::math::Vector3&lt; float &gt;::operator=</a></div><div class="ttdeci">Vector3 &amp; operator=(const super &amp;v)</div><div class="ttdef"><b>Definition:</b> Vector3.h:34</div></div>
+<div class="ttc" id="anamespaceu22_1_1math_html"><div class="ttname"><a href="namespaceu22_1_1math.html">u22::math</a></div><div class="ttdef"><b>Definition:</b> MathDefine.h:10</div></div>
+<div class="ttc" id="aclassu22_1_1math_1_1_vector3_3_01float_01_4_html_ae1b6f9d3d911e13c204ba4922c57d4d6"><div class="ttname"><a href="classu22_1_1math_1_1_vector3_3_01float_01_4.html#ae1b6f9d3d911e13c204ba4922c57d4d6">u22::math::Vector3&lt; float &gt;::Vector3</a></div><div class="ttdeci">Vector3(const Vector2&lt; float &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> Vector3.h:42</div></div>
+<div class="ttc" id="aclassu22_1_1math_1_1_vector3_3_01float_01_4_html_a92a64899e01a08ec5c2230048e08810c"><div class="ttname"><a href="classu22_1_1math_1_1_vector3_3_01float_01_4.html#a92a64899e01a08ec5c2230048e08810c">u22::math::Vector3&lt; float &gt;::Vector3</a></div><div class="ttdeci">Vector3(const super &amp;v)</div><div class="ttdef"><b>Definition:</b> Vector3.h:29</div></div>
+<div class="ttc" id="aclassu22_1_1math_1_1_vector3_3_01int_01_4_html_a4d2b018f730dd5c29c18976f41d07f7f"><div class="ttname"><a href="classu22_1_1math_1_1_vector3_3_01int_01_4.html#a4d2b018f730dd5c29c18976f41d07f7f">u22::math::Vector3&lt; int &gt;::operator=</a></div><div class="ttdeci">Vector3 &amp; operator=(const super &amp;v)</div><div class="ttdef"><b>Definition:</b> Vector3.h:72</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

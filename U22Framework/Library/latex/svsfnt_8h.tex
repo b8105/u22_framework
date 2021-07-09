@@ -1,0 +1,85 @@
+\hypertarget{svsfnt_8h}{}\doxysection{freetype/internal/services/svsfnt.h ファイル}
+\label{svsfnt_8h}\index{freetype/internal/services/svsfnt.h@{freetype/internal/services/svsfnt.h}}
+{\ttfamily \#include $<$freetype/internal/ftserv.\+h$>$}\newline
+{\ttfamily \#include $<$freetype/tttables.\+h$>$}\newline
+svsfnt.\+h の依存先関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{svsfnt_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{svsfnt_8h_a9186ff3c1dadbf14da5a4cb5c5f1f2ea}{F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+S\+F\+N\+T\+\_\+\+T\+A\+B\+LE}}~\char`\"{}sfnt-\/table\char`\"{}
+\item 
+\#define \mbox{\hyperlink{svsfnt_8h_a0c93b3f820d5536ed0c34ec0b9e75663}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+S\+F\+N\+T\+\_\+\+T\+A\+B\+L\+E\+R\+EC}}(class\+\_\+,  load\+\_\+,  get\+\_\+,  info\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{型定義}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svsfnt_8h_a63a08abfde25ec7b416b7a3c8f5f4817}{F\+T\+\_\+\+S\+F\+N\+T\+\_\+\+Table\+Load\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} tag, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} offset, \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} $\ast$buffer, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$length)
+\item 
+typedef void $\ast$($\ast$ \mbox{\hyperlink{svsfnt_8h_a29d04c6b88fa8956b9f9bf32e7ed8263}{F\+T\+\_\+\+S\+F\+N\+T\+\_\+\+Table\+Get\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{tttables_8h_ab91f6a59a0d32105d60dde14f2173f92}{F\+T\+\_\+\+Sfnt\+\_\+\+Tag}} tag)
+\item 
+typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ \mbox{\hyperlink{svsfnt_8h_aab80d8bbe728faa89aab24278b63490a}{F\+T\+\_\+\+S\+F\+N\+T\+\_\+\+Table\+Info\+Func}}) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} idx, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$tag, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$offset, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$length)
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{svsfnt_8h_acdb9ade7ac1115cd4b0a414583a7b591}{F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE}} (S\+F\+N\+T\+\_\+\+Table)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{svsfnt_8h_a0c93b3f820d5536ed0c34ec0b9e75663}\label{svsfnt_8h_a0c93b3f820d5536ed0c34ec0b9e75663}} 
+\index{svsfnt.h@{svsfnt.h}!FT\_DEFINE\_SERVICE\_SFNT\_TABLEREC@{FT\_DEFINE\_SERVICE\_SFNT\_TABLEREC}}
+\index{FT\_DEFINE\_SERVICE\_SFNT\_TABLEREC@{FT\_DEFINE\_SERVICE\_SFNT\_TABLEREC}!svsfnt.h@{svsfnt.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE\_SFNT\_TABLEREC}{FT\_DEFINE\_SERVICE\_SFNT\_TABLEREC}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+S\+F\+N\+T\+\_\+\+T\+A\+B\+L\+E\+R\+EC(\begin{DoxyParamCaption}\item[{}]{class\+\_\+,  }\item[{}]{load\+\_\+,  }\item[{}]{get\+\_\+,  }\item[{}]{info\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries 値\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{static} \textcolor{keyword}{const} FT\_Service\_SFNT\_TableRec  class\_ =                      \(\backslash\)}
+\DoxyCodeLine{  \{                                                                    \(\backslash\)}
+\DoxyCodeLine{    load\_, get\_, info\_                                                 \(\backslash\)}
+\DoxyCodeLine{  \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{svsfnt_8h_a9186ff3c1dadbf14da5a4cb5c5f1f2ea}\label{svsfnt_8h_a9186ff3c1dadbf14da5a4cb5c5f1f2ea}} 
+\index{svsfnt.h@{svsfnt.h}!FT\_SERVICE\_ID\_SFNT\_TABLE@{FT\_SERVICE\_ID\_SFNT\_TABLE}}
+\index{FT\_SERVICE\_ID\_SFNT\_TABLE@{FT\_SERVICE\_ID\_SFNT\_TABLE}!svsfnt.h@{svsfnt.h}}
+\doxysubsubsection{\texorpdfstring{FT\_SERVICE\_ID\_SFNT\_TABLE}{FT\_SERVICE\_ID\_SFNT\_TABLE}}
+{\footnotesize\ttfamily \#define F\+T\+\_\+\+S\+E\+R\+V\+I\+C\+E\+\_\+\+I\+D\+\_\+\+S\+F\+N\+T\+\_\+\+T\+A\+B\+LE~\char`\"{}sfnt-\/table\char`\"{}}
+
+
+
+\doxysubsection{型定義詳解}
+\mbox{\Hypertarget{svsfnt_8h_a29d04c6b88fa8956b9f9bf32e7ed8263}\label{svsfnt_8h_a29d04c6b88fa8956b9f9bf32e7ed8263}} 
+\index{svsfnt.h@{svsfnt.h}!FT\_SFNT\_TableGetFunc@{FT\_SFNT\_TableGetFunc}}
+\index{FT\_SFNT\_TableGetFunc@{FT\_SFNT\_TableGetFunc}!svsfnt.h@{svsfnt.h}}
+\doxysubsubsection{\texorpdfstring{FT\_SFNT\_TableGetFunc}{FT\_SFNT\_TableGetFunc}}
+{\footnotesize\ttfamily typedef void$\ast$($\ast$ F\+T\+\_\+\+S\+F\+N\+T\+\_\+\+Table\+Get\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{tttables_8h_ab91f6a59a0d32105d60dde14f2173f92}{F\+T\+\_\+\+Sfnt\+\_\+\+Tag}} tag)}
+
+\mbox{\Hypertarget{svsfnt_8h_aab80d8bbe728faa89aab24278b63490a}\label{svsfnt_8h_aab80d8bbe728faa89aab24278b63490a}} 
+\index{svsfnt.h@{svsfnt.h}!FT\_SFNT\_TableInfoFunc@{FT\_SFNT\_TableInfoFunc}}
+\index{FT\_SFNT\_TableInfoFunc@{FT\_SFNT\_TableInfoFunc}!svsfnt.h@{svsfnt.h}}
+\doxysubsubsection{\texorpdfstring{FT\_SFNT\_TableInfoFunc}{FT\_SFNT\_TableInfoFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+S\+F\+N\+T\+\_\+\+Table\+Info\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_abcb8db4dbf35d2b55a9e8c7b0926dc52}{F\+T\+\_\+\+U\+Int}} idx, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$tag, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$offset, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$length)}
+
+\mbox{\Hypertarget{svsfnt_8h_a63a08abfde25ec7b416b7a3c8f5f4817}\label{svsfnt_8h_a63a08abfde25ec7b416b7a3c8f5f4817}} 
+\index{svsfnt.h@{svsfnt.h}!FT\_SFNT\_TableLoadFunc@{FT\_SFNT\_TableLoadFunc}}
+\index{FT\_SFNT\_TableLoadFunc@{FT\_SFNT\_TableLoadFunc}!svsfnt.h@{svsfnt.h}}
+\doxysubsubsection{\texorpdfstring{FT\_SFNT\_TableLoadFunc}{FT\_SFNT\_TableLoadFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{fttypes_8h_a64c8060bdb3d6eec844a1bf670e06bdd}{F\+T\+\_\+\+Error}}($\ast$ F\+T\+\_\+\+S\+F\+N\+T\+\_\+\+Table\+Load\+Func) (\mbox{\hyperlink{freetype_8h_a7eba045ee20968354fa1bff0f69740fa}{F\+T\+\_\+\+Face}} face, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} tag, \mbox{\hyperlink{fttypes_8h_a7fa72a1f0e79fb1860c5965789024d6f}{F\+T\+\_\+\+Long}} offset, \mbox{\hyperlink{fttypes_8h_a51f26183ca0c9f4af958939648caeccd}{F\+T\+\_\+\+Byte}} $\ast$buffer, \mbox{\hyperlink{fttypes_8h_a4fac88bdba78eb76b505efa6e4fbf3f5}{F\+T\+\_\+\+U\+Long}} $\ast$length)}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{svsfnt_8h_acdb9ade7ac1115cd4b0a414583a7b591}\label{svsfnt_8h_acdb9ade7ac1115cd4b0a414583a7b591}} 
+\index{svsfnt.h@{svsfnt.h}!FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}}
+\index{FT\_DEFINE\_SERVICE@{FT\_DEFINE\_SERVICE}!svsfnt.h@{svsfnt.h}}
+\doxysubsubsection{\texorpdfstring{FT\_DEFINE\_SERVICE()}{FT\_DEFINE\_SERVICE()}}
+{\footnotesize\ttfamily F\+T\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+S\+E\+R\+V\+I\+CE (\begin{DoxyParamCaption}\item[{S\+F\+N\+T\+\_\+\+Table}]{ }\end{DoxyParamCaption})}
+

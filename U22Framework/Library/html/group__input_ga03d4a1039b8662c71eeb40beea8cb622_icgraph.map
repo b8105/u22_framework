@@ -1,0 +1,5 @@
+<map id="glfwGetTime" name="glfwGetTime">
+<area shape="rect" id="node1" title="Returns the value of the GLFW timer." alt="" coords="208,35,301,61"/>
+<area shape="rect" id="node2" href="$classu22_1_1clock_1_1_clock.html#ad8f385d47d13a5e934f6b409591873b6" title="時間を進める" alt="" coords="5,5,160,32"/>
+<area shape="rect" id="node3" href="$classu22_1_1clock_1_1_clock.html#a7a7d6016d0f7a0ae9a676cf1fbca52cd" title="更新" alt="" coords="17,57,148,98"/>
+</map>

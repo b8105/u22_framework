@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>U22Framework: freetype/ftlcdfil.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">U22Framework
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_981d57b2e11530428c66a192ba91cfc7.html">freetype</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#typedef-members">型定義</a> &#124;
+<a href="#enum-members">列挙型</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">ftlcdfil.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="freetype_8h_source.html">freetype/freetype.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ftparams_8h_source.html">freetype/ftparams.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+ftlcdfil.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="ftlcdfil_8h__incl.png" border="0" usemap="#afreetype_2ftlcdfil_8h" alt=""/></div>
+<map name="freetype_2ftlcdfil_8h" id="freetype_2ftlcdfil_8h">
+<area shape="rect" title=" " alt="" coords="235,5,351,32"/>
+<area shape="rect" href="freetype_8h.html" title=" " alt="" coords="228,155,357,181"/>
+<area shape="rect" href="ftparams_8h.html" title=" " alt="" coords="278,80,411,107"/>
+<area shape="rect" href="ft2build_8h.html" title=" " alt="" coords="51,304,126,331"/>
+<area shape="rect" href="fttypes_8h.html" title=" " alt="" coords="231,229,354,256"/>
+<area shape="rect" href="fterrors_8h.html" title=" " alt="" coords="554,229,677,256"/>
+<area shape="rect" href="ftheader_8h.html" title=" " alt="" coords="5,379,172,405"/>
+<area shape="rect" href="ftsystem_8h.html" title=" " alt="" coords="150,304,283,331"/>
+<area shape="rect" href="ftimage_8h.html" title=" " alt="" coords="307,304,433,331"/>
+<area shape="rect" title=" " alt="" coords="457,304,525,331"/>
+<area shape="rect" href="ftmoderr_8h.html" title=" " alt="" coords="550,304,681,331"/>
+<area shape="rect" href="fterrdef_8h.html" title=" " alt="" coords="705,304,827,331"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="ftlcdfil_8h__dep__incl.png" border="0" usemap="#afreetype_2ftlcdfil_8hdep" alt=""/></div>
+<map name="freetype_2ftlcdfil_8hdep" id="freetype_2ftlcdfil_8hdep">
+<area shape="rect" title=" " alt="" coords="714,5,830,32"/>
+<area shape="rect" href="ftobjs_8h.html" title=" " alt="" coords="692,80,852,107"/>
+<area shape="rect" href="cffotypes_8h.html" title=" " alt="" coords="408,415,589,442"/>
+<area shape="rect" href="psaux_8h.html" title=" " alt="" coords="258,497,422,524"/>
+<area shape="rect" href="ftrfork_8h.html" title=" " alt="" coords="498,162,659,189"/>
+<area shape="rect" href="ftstream_8h.html" title=" " alt="" coords="684,162,860,189"/>
+<area shape="rect" href="svpscmap_8h.html" title=" " alt="" coords="229,155,395,196"/>
+<area shape="rect" href="tttypes_8h.html" title=" " alt="" coords="885,162,1054,189"/>
+<area shape="rect" href="wofftypes_8h.html" title=" " alt="" coords="1078,162,1261,189"/>
+<area shape="rect" href="cfftypes_8h.html" title=" " alt="" coords="225,326,399,353"/>
+<area shape="rect" href="t1types_8h.html" title=" " alt="" coords="66,244,238,271"/>
+<area shape="rect" href="svcfftl_8h.html" title=" " alt="" coords="219,408,384,449"/>
+<area shape="rect" href="svpsinfo_8h.html" title=" " alt="" coords="35,319,200,360"/>
+<area shape="rect" href="sfnt_8h.html" title=" " alt="" coords="994,244,1145,271"/>
+</map>
+</div>
+</div>
+<p><a href="ftlcdfil_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a7c6ed9b6c4e9a1efd92ef16c987bea89"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftlcdfil_8h.html#a7c6ed9b6c4e9a1efd92ef16c987bea89">FT_LCD_FILTER_FIVE_TAPS</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:a7c6ed9b6c4e9a1efd92ef16c987bea89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:aa063aecb411a78f6a7b603d94aab4102"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="public-macros_8h.html#a72ee5814b3ae378ebb7fd3a8e3ddec14">FT_BEGIN_HEADER</a> enum <a class="el" href="ftlcdfil_8h.html#a050b6cfffcf53795587eb8eae7147577">FT_LcdFilter_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftlcdfil_8h.html#aa063aecb411a78f6a7b603d94aab4102">FT_LcdFilter</a></td></tr>
+<tr class="separator:aa063aecb411a78f6a7b603d94aab4102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad84df0eb14f9896e340ea965328fead"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="fttypes_8h.html#a51f26183ca0c9f4af958939648caeccd">FT_Byte</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftlcdfil_8h.html#aad84df0eb14f9896e340ea965328fead">FT_LcdFiveTapFilter</a>[<a class="el" href="ftlcdfil_8h.html#a7c6ed9b6c4e9a1efd92ef16c987bea89">FT_LCD_FILTER_FIVE_TAPS</a>]</td></tr>
+<tr class="separator:aad84df0eb14f9896e340ea965328fead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:a050b6cfffcf53795587eb8eae7147577"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftlcdfil_8h.html#a050b6cfffcf53795587eb8eae7147577">FT_LcdFilter_</a> { <br />
+&#160;&#160;<a class="el" href="ftlcdfil_8h.html#a050b6cfffcf53795587eb8eae7147577ae6fa91add012c5bf6d570188e5b239c4">FT_LCD_FILTER_NONE</a> = 0, 
+<a class="el" href="ftlcdfil_8h.html#a050b6cfffcf53795587eb8eae7147577ab606094a9ccac39d5431519a6c4055e3">FT_LCD_FILTER_DEFAULT</a> = 1, 
+<a class="el" href="ftlcdfil_8h.html#a050b6cfffcf53795587eb8eae7147577a104fce3f715c045ad3b11f0155abe2b9">FT_LCD_FILTER_LIGHT</a> = 2, 
+<a class="el" href="ftlcdfil_8h.html#a050b6cfffcf53795587eb8eae7147577a146b1e510ec55ea1037aa4f66bada7cc">FT_LCD_FILTER_LEGACY1</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="ftlcdfil_8h.html#a050b6cfffcf53795587eb8eae7147577aace329ea0f5d6bcbf45f6b77a038b492">FT_LCD_FILTER_LEGACY</a> = 16, 
+<a class="el" href="ftlcdfil_8h.html#a050b6cfffcf53795587eb8eae7147577a8130ccb414d2e49441cadedf857b2704">FT_LCD_FILTER_MAX</a>
+<br />
+ }</td></tr>
+<tr class="separator:a050b6cfffcf53795587eb8eae7147577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a230881dc8a783c68ef48fec0bdf37f7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftlcdfil_8h.html#a230881dc8a783c68ef48fec0bdf37f7a">FT_Library_SetLcdFilter</a> (<a class="el" href="freetype_8h.html#a92857f8bf079b7b9ef5d3ce74cf89ef5">FT_Library</a> library, <a class="el" href="ftlcdfil_8h.html#aa063aecb411a78f6a7b603d94aab4102">FT_LcdFilter</a> filter)</td></tr>
+<tr class="separator:a230881dc8a783c68ef48fec0bdf37f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8400fa1c5a65e92e71de810d48ee646f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftlcdfil_8h.html#a8400fa1c5a65e92e71de810d48ee646f">FT_Library_SetLcdFilterWeights</a> (<a class="el" href="freetype_8h.html#a92857f8bf079b7b9ef5d3ce74cf89ef5">FT_Library</a> library, unsigned char *weights)</td></tr>
+<tr class="separator:a8400fa1c5a65e92e71de810d48ee646f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a0ea9b4aa9069c36c87fc65fc0308a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ftlcdfil_8h.html#a3a0ea9b4aa9069c36c87fc65fc0308a2">FT_Library_SetLcdGeometry</a> (<a class="el" href="freetype_8h.html#a92857f8bf079b7b9ef5d3ce74cf89ef5">FT_Library</a> library, <a class="el" href="ftimage_8h.html#abfcb941b4b81f3a922d4ae57c620db27">FT_Vector</a> sub[3])</td></tr>
+<tr class="separator:a3a0ea9b4aa9069c36c87fc65fc0308a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">マクロ定義詳解</h2>
+<a id="a7c6ed9b6c4e9a1efd92ef16c987bea89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c6ed9b6c4e9a1efd92ef16c987bea89">&#9670;&nbsp;</a></span>FT_LCD_FILTER_FIVE_TAPS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FT_LCD_FILTER_FIVE_TAPS&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">型定義詳解</h2>
+<a id="aa063aecb411a78f6a7b603d94aab4102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa063aecb411a78f6a7b603d94aab4102">&#9670;&nbsp;</a></span>FT_LcdFilter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="public-macros_8h.html#a72ee5814b3ae378ebb7fd3a8e3ddec14">FT_BEGIN_HEADER</a> enum <a class="el" href="ftlcdfil_8h.html#a050b6cfffcf53795587eb8eae7147577">FT_LcdFilter_</a> <a class="el" href="ftlcdfil_8h.html#aa063aecb411a78f6a7b603d94aab4102">FT_LcdFilter</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad84df0eb14f9896e340ea965328fead"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad84df0eb14f9896e340ea965328fead">&#9670;&nbsp;</a></span>FT_LcdFiveTapFilter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="fttypes_8h.html#a51f26183ca0c9f4af958939648caeccd">FT_Byte</a> FT_LcdFiveTapFilter[<a class="el" href="ftlcdfil_8h.html#a7c6ed9b6c4e9a1efd92ef16c987bea89">FT_LCD_FILTER_FIVE_TAPS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">列挙型詳解</h2>
+<a id="a050b6cfffcf53795587eb8eae7147577"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a050b6cfffcf53795587eb8eae7147577">&#9670;&nbsp;</a></span>FT_LcdFilter_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="ftlcdfil_8h.html#a050b6cfffcf53795587eb8eae7147577">FT_LcdFilter_</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a050b6cfffcf53795587eb8eae7147577ae6fa91add012c5bf6d570188e5b239c4"></a>FT_LCD_FILTER_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a050b6cfffcf53795587eb8eae7147577ab606094a9ccac39d5431519a6c4055e3"></a>FT_LCD_FILTER_DEFAULT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a050b6cfffcf53795587eb8eae7147577a104fce3f715c045ad3b11f0155abe2b9"></a>FT_LCD_FILTER_LIGHT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a050b6cfffcf53795587eb8eae7147577a146b1e510ec55ea1037aa4f66bada7cc"></a>FT_LCD_FILTER_LEGACY1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a050b6cfffcf53795587eb8eae7147577aace329ea0f5d6bcbf45f6b77a038b492"></a>FT_LCD_FILTER_LEGACY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a050b6cfffcf53795587eb8eae7147577a8130ccb414d2e49441cadedf857b2704"></a>FT_LCD_FILTER_MAX&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a230881dc8a783c68ef48fec0bdf37f7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a230881dc8a783c68ef48fec0bdf37f7a">&#9670;&nbsp;</a></span>FT_Library_SetLcdFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FT_Library_SetLcdFilter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="freetype_8h.html#a92857f8bf079b7b9ef5d3ce74cf89ef5">FT_Library</a>&#160;</td>
+          <td class="paramname"><em>library</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ftlcdfil_8h.html#aa063aecb411a78f6a7b603d94aab4102">FT_LcdFilter</a>&#160;</td>
+          <td class="paramname"><em>filter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8400fa1c5a65e92e71de810d48ee646f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8400fa1c5a65e92e71de810d48ee646f">&#9670;&nbsp;</a></span>FT_Library_SetLcdFilterWeights()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FT_Library_SetLcdFilterWeights </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="freetype_8h.html#a92857f8bf079b7b9ef5d3ce74cf89ef5">FT_Library</a>&#160;</td>
+          <td class="paramname"><em>library</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>weights</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a0ea9b4aa9069c36c87fc65fc0308a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a0ea9b4aa9069c36c87fc65fc0308a2">&#9670;&nbsp;</a></span>FT_Library_SetLcdGeometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FT_Library_SetLcdGeometry </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="freetype_8h.html#a92857f8bf079b7b9ef5d3ce74cf89ef5">FT_Library</a>&#160;</td>
+          <td class="paramname"><em>library</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ftimage_8h.html#abfcb941b4b81f3a922d4ae57c620db27">FT_Vector</a>&#160;</td>
+          <td class="paramname"><em>sub</em>[3]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

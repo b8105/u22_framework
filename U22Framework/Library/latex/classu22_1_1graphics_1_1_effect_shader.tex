@@ -1,0 +1,230 @@
+\hypertarget{classu22_1_1graphics_1_1_effect_shader}{}\doxysection{u22\+::graphics\+::Effect\+Shader クラス}
+\label{classu22_1_1graphics_1_1_effect_shader}\index{u22::graphics::EffectShader@{u22::graphics::EffectShader}}
+
+
+{\ttfamily \#include $<$Effect\+Shader.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classu22_1_1graphics_1_1_effect_shader_a0f4cf9cb36e9c14ba40e9409fed199e7}{Effect\+Shader}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classu22_1_1graphics_1_1_effect_shader_acb1e1d4837efed028b3c0c070a9a65ad}{$\sim$\+Effect\+Shader}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{glew_8h_aa311c7f0d6ec4f1a33f9235c3651b86b}{G\+Luint}} \mbox{\hyperlink{classu22_1_1graphics_1_1_effect_shader_a6642fa94d5cbf236e2a5068f7625a7a4}{Get\+ID}} (void) const
+\begin{DoxyCompactList}\small\item\em ゲッター \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1graphics_1_1_effect_shader_a4f955674032892330d2996073f3b0188}{Load}} (const char $\ast$vert\+\_\+path, const char $\ast$frag\+\_\+path)
+\begin{DoxyCompactList}\small\item\em 読み込み \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classu22_1_1graphics_1_1_effect_shader_a84115f536a51fc44eed51b23d92b036a}{Release}} (void)
+\begin{DoxyCompactList}\small\item\em 解放 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classu22_1_1graphics_1_1_effect_shader_acbc6705be1bbc14e18bcf9a382a7d3b2}{Transfer\+Uniform}} (const char $\ast$name, const float \&value)
+\begin{DoxyCompactList}\small\item\em 転送 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classu22_1_1graphics_1_1_effect_shader_aa4d7837437640be2488bbb0c646ad8b8}{Transfer\+Uniform}} (const char $\ast$name, const \mbox{\hyperlink{namespaceu22_1_1math_abd3e525891449648c8321ac9495844db}{u22\+::math\+::\+Vector2F}} \&vector2)
+\begin{DoxyCompactList}\small\item\em 転送 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classu22_1_1graphics_1_1_effect_shader_af5fdd5bf56b0128454a6fa8b86707d53}{Transfer\+Uniform}} (const char $\ast$name, const \mbox{\hyperlink{namespaceu22_1_1math_a4d1e97ba7f1e8c8170c4e2ba3f60f834}{u22\+::math\+::\+Vector4F}} \&vector4)
+\begin{DoxyCompactList}\small\item\em 転送 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classu22_1_1graphics_1_1_effect_shader_a3f28dd7a3b0f04c4573bb099c2f0dd0a}{Transfer\+Uniform}} (const char $\ast$name, const \mbox{\hyperlink{group__core__matrix_gac54cbc572f1349a255fe476ca6a42a7b}{glm\+::mat4}} \&matrix, bool transpose=false)
+\begin{DoxyCompactList}\small\item\em 転送 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classu22_1_1graphics_1_1_effect_shader_a9db6da858e4c237d2381446c280ade81}{Attach}} (void)
+\begin{DoxyCompactList}\small\item\em 追加 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classu22_1_1graphics_1_1_effect_shader_addde7ebadaa795464b7bf96e897942e1}{Link}} (void)
+\begin{DoxyCompactList}\small\item\em リンク \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classu22_1_1graphics_1_1_effect_shader_af80cfd309d7d8bd3585cd4d05a857094}{Enable}} (void)
+\begin{DoxyCompactList}\small\item\em 有効化 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classu22_1_1graphics_1_1_effect_shader_a4bd1d603ec17a29434a5e33b56645144}{Disable}} (void)
+\begin{DoxyCompactList}\small\item\em 無効化 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_effect_shader_a0f4cf9cb36e9c14ba40e9409fed199e7}\label{classu22_1_1graphics_1_1_effect_shader_a0f4cf9cb36e9c14ba40e9409fed199e7}} 
+\index{u22::graphics::EffectShader@{u22::graphics::EffectShader}!EffectShader@{EffectShader}}
+\index{EffectShader@{EffectShader}!u22::graphics::EffectShader@{u22::graphics::EffectShader}}
+\doxysubsubsection{\texorpdfstring{EffectShader()}{EffectShader()}}
+{\footnotesize\ttfamily u22\+::graphics\+::\+Effect\+Shader\+::\+Effect\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+コンストラクタ 
+
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_effect_shader_acb1e1d4837efed028b3c0c070a9a65ad}\label{classu22_1_1graphics_1_1_effect_shader_acb1e1d4837efed028b3c0c070a9a65ad}} 
+\index{u22::graphics::EffectShader@{u22::graphics::EffectShader}!````~EffectShader@{$\sim$EffectShader}}
+\index{````~EffectShader@{$\sim$EffectShader}!u22::graphics::EffectShader@{u22::graphics::EffectShader}}
+\doxysubsubsection{\texorpdfstring{$\sim$EffectShader()}{~EffectShader()}}
+{\footnotesize\ttfamily u22\+::graphics\+::\+Effect\+Shader\+::$\sim$\+Effect\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+デストラクタ 
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_effect_shader_a9db6da858e4c237d2381446c280ade81}\label{classu22_1_1graphics_1_1_effect_shader_a9db6da858e4c237d2381446c280ade81}} 
+\index{u22::graphics::EffectShader@{u22::graphics::EffectShader}!Attach@{Attach}}
+\index{Attach@{Attach}!u22::graphics::EffectShader@{u22::graphics::EffectShader}}
+\doxysubsubsection{\texorpdfstring{Attach()}{Attach()}}
+{\footnotesize\ttfamily void u22\+::graphics\+::\+Effect\+Shader\+::\+Attach (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+追加 
+
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_effect_shader_a4bd1d603ec17a29434a5e33b56645144}\label{classu22_1_1graphics_1_1_effect_shader_a4bd1d603ec17a29434a5e33b56645144}} 
+\index{u22::graphics::EffectShader@{u22::graphics::EffectShader}!Disable@{Disable}}
+\index{Disable@{Disable}!u22::graphics::EffectShader@{u22::graphics::EffectShader}}
+\doxysubsubsection{\texorpdfstring{Disable()}{Disable()}}
+{\footnotesize\ttfamily void u22\+::graphics\+::\+Effect\+Shader\+::\+Disable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+無効化 
+
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_effect_shader_af80cfd309d7d8bd3585cd4d05a857094}\label{classu22_1_1graphics_1_1_effect_shader_af80cfd309d7d8bd3585cd4d05a857094}} 
+\index{u22::graphics::EffectShader@{u22::graphics::EffectShader}!Enable@{Enable}}
+\index{Enable@{Enable}!u22::graphics::EffectShader@{u22::graphics::EffectShader}}
+\doxysubsubsection{\texorpdfstring{Enable()}{Enable()}}
+{\footnotesize\ttfamily void u22\+::graphics\+::\+Effect\+Shader\+::\+Enable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+有効化 
+
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_effect_shader_a6642fa94d5cbf236e2a5068f7625a7a4}\label{classu22_1_1graphics_1_1_effect_shader_a6642fa94d5cbf236e2a5068f7625a7a4}} 
+\index{u22::graphics::EffectShader@{u22::graphics::EffectShader}!GetID@{GetID}}
+\index{GetID@{GetID}!u22::graphics::EffectShader@{u22::graphics::EffectShader}}
+\doxysubsubsection{\texorpdfstring{GetID()}{GetID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{glew_8h_aa311c7f0d6ec4f1a33f9235c3651b86b}{G\+Luint}} u22\+::graphics\+::\+Effect\+Shader\+::\+Get\+ID (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+ゲッター 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_effect_shader_addde7ebadaa795464b7bf96e897942e1}\label{classu22_1_1graphics_1_1_effect_shader_addde7ebadaa795464b7bf96e897942e1}} 
+\index{u22::graphics::EffectShader@{u22::graphics::EffectShader}!Link@{Link}}
+\index{Link@{Link}!u22::graphics::EffectShader@{u22::graphics::EffectShader}}
+\doxysubsubsection{\texorpdfstring{Link()}{Link()}}
+{\footnotesize\ttfamily void u22\+::graphics\+::\+Effect\+Shader\+::\+Link (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+リンク 
+
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_effect_shader_a4f955674032892330d2996073f3b0188}\label{classu22_1_1graphics_1_1_effect_shader_a4f955674032892330d2996073f3b0188}} 
+\index{u22::graphics::EffectShader@{u22::graphics::EffectShader}!Load@{Load}}
+\index{Load@{Load}!u22::graphics::EffectShader@{u22::graphics::EffectShader}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily bool u22\+::graphics\+::\+Effect\+Shader\+::\+Load (\begin{DoxyParamCaption}\item[{const char $\ast$}]{vert\+\_\+path,  }\item[{const char $\ast$}]{frag\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+読み込み 
+
+
+\begin{DoxyParams}{引数}
+{\em vert\+\_\+path} & パス\\
+\hline
+{\em frag\+\_\+path} & パス\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+成功
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_effect_shader_a84115f536a51fc44eed51b23d92b036a}\label{classu22_1_1graphics_1_1_effect_shader_a84115f536a51fc44eed51b23d92b036a}} 
+\index{u22::graphics::EffectShader@{u22::graphics::EffectShader}!Release@{Release}}
+\index{Release@{Release}!u22::graphics::EffectShader@{u22::graphics::EffectShader}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily bool u22\+::graphics\+::\+Effect\+Shader\+::\+Release (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+解放 
+
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_effect_shader_acbc6705be1bbc14e18bcf9a382a7d3b2}\label{classu22_1_1graphics_1_1_effect_shader_acbc6705be1bbc14e18bcf9a382a7d3b2}} 
+\index{u22::graphics::EffectShader@{u22::graphics::EffectShader}!TransferUniform@{TransferUniform}}
+\index{TransferUniform@{TransferUniform}!u22::graphics::EffectShader@{u22::graphics::EffectShader}}
+\doxysubsubsection{\texorpdfstring{TransferUniform()}{TransferUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void u22\+::graphics\+::\+Effect\+Shader\+::\+Transfer\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const float \&}]{value }\end{DoxyParamCaption})}
+
+
+
+転送 
+
+
+\begin{DoxyParams}{引数}
+{\em name} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_effect_shader_a3f28dd7a3b0f04c4573bb099c2f0dd0a}\label{classu22_1_1graphics_1_1_effect_shader_a3f28dd7a3b0f04c4573bb099c2f0dd0a}} 
+\index{u22::graphics::EffectShader@{u22::graphics::EffectShader}!TransferUniform@{TransferUniform}}
+\index{TransferUniform@{TransferUniform}!u22::graphics::EffectShader@{u22::graphics::EffectShader}}
+\doxysubsubsection{\texorpdfstring{TransferUniform()}{TransferUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void u22\+::graphics\+::\+Effect\+Shader\+::\+Transfer\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const \mbox{\hyperlink{group__core__matrix_gac54cbc572f1349a255fe476ca6a42a7b}{glm\+::mat4}} \&}]{matrix,  }\item[{bool}]{transpose = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+転送 
+
+
+\begin{DoxyParams}{引数}
+{\em name} & \\
+\hline
+{\em matrix} & \\
+\hline
+{\em transpose} & \\
+\hline
+\end{DoxyParams}
+呼び出し関係図\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classu22_1_1graphics_1_1_effect_shader_a3f28dd7a3b0f04c4573bb099c2f0dd0a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_effect_shader_aa4d7837437640be2488bbb0c646ad8b8}\label{classu22_1_1graphics_1_1_effect_shader_aa4d7837437640be2488bbb0c646ad8b8}} 
+\index{u22::graphics::EffectShader@{u22::graphics::EffectShader}!TransferUniform@{TransferUniform}}
+\index{TransferUniform@{TransferUniform}!u22::graphics::EffectShader@{u22::graphics::EffectShader}}
+\doxysubsubsection{\texorpdfstring{TransferUniform()}{TransferUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void u22\+::graphics\+::\+Effect\+Shader\+::\+Transfer\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const \mbox{\hyperlink{namespaceu22_1_1math_abd3e525891449648c8321ac9495844db}{u22\+::math\+::\+Vector2F}} \&}]{vector2 }\end{DoxyParamCaption})}
+
+
+
+転送 
+
+
+\begin{DoxyParams}{引数}
+{\em name} & \\
+\hline
+{\em vector2} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classu22_1_1graphics_1_1_effect_shader_af5fdd5bf56b0128454a6fa8b86707d53}\label{classu22_1_1graphics_1_1_effect_shader_af5fdd5bf56b0128454a6fa8b86707d53}} 
+\index{u22::graphics::EffectShader@{u22::graphics::EffectShader}!TransferUniform@{TransferUniform}}
+\index{TransferUniform@{TransferUniform}!u22::graphics::EffectShader@{u22::graphics::EffectShader}}
+\doxysubsubsection{\texorpdfstring{TransferUniform()}{TransferUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void u22\+::graphics\+::\+Effect\+Shader\+::\+Transfer\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const \mbox{\hyperlink{namespaceu22_1_1math_a4d1e97ba7f1e8c8170c4e2ba3f60f834}{u22\+::math\+::\+Vector4F}} \&}]{vector4 }\end{DoxyParamCaption})}
+
+
+
+転送 
+
+
+\begin{DoxyParams}{引数}
+{\em name} & \\
+\hline
+{\em vector4} & \\
+\hline
+\end{DoxyParams}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+Graphics/\mbox{\hyperlink{_effect_shader_8h}{Effect\+Shader.\+h}}\item 
+Graphics/\mbox{\hyperlink{_effect_shader_8cpp}{Effect\+Shader.\+cpp}}\end{DoxyCompactItemize}
