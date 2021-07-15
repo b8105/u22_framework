@@ -59,6 +59,10 @@ bool u22::Window::Destroy(void) {
     return true;
 }
 
+void u22::Window::Close(void) const {
+    glfwSetWindowShouldClose(_handle, 1);
+}
+
 void u22::Window::Present(void) const {
     ::glfwSwapBuffers(_handle);
 }

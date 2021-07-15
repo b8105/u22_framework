@@ -74,6 +74,12 @@ public:
     /// <returns></returns>
     bool Destroy(void);
     /// <summary>
+    /// •Â‚¶‚é
+    /// </summary>
+    /// <param name=""></param>
+    /// <returns></returns>
+    void Close(void) const;
+    /// <summary>
     /// ƒtƒŠƒbƒv
     /// </summary>
     void Present(void) const;

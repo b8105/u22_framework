@@ -52,10 +52,8 @@ bool InitializeSpriteSample(void) {
 
     _position = Vector3(100.0f, 300.0f, 0.0f);
 
-    if (!_texture.Load("../Resource/texture/player.png")) {
-    if (!_texture.Load("Resource/texture/player.png")) {
+    if (!_texture.Load("texture/player.png")) {
         return false;
-    } // if
     } // if
 
     SpriteAnimationCreate anim[] = {
@@ -108,12 +106,8 @@ bool InitializeSpriteSample(void) {
 bool InitializeSoundSample(void) {
     using namespace sound_sample;
 
-    if (!_se.Load("../Resource/se/se_enter.wav")) {
-        _se.Load("Resource/se/se_enter.wav");
-    } // if
-    if (!_bgm.Load("../Resource/bgm/shiningstar.ogg")) {
-        _bgm.Load("Resource/bgm/shiningstar.ogg");
-    } // if
+    _se.Load("se/se_enter.wav");
+    _bgm.Load("bgm/shiningstar.ogg");
 
     _bgm.SetVolume(volume);
     _se.SetVolume(volume);
@@ -279,8 +273,9 @@ u22::GameApplication::~GameApplication() {
 
 bool u22::GameApplication::Initialize(void) {
     using namespace general;
+    SetCurrentPath("Resource");
     camera.Initalize2DCamera();
-
+    
     InitializeSpriteSample();
     InitializeSoundSample();
     return true;
@@ -288,7 +283,7 @@ bool u22::GameApplication::Initialize(void) {
 
 bool u22::GameApplication::Update(void) {
     if (g_pInput->IsHold(u22::input::KeyCode::Escape)) {
-        ::PostQuitMessage(0);
+        g_pFramework->WindowClose();
     } // if
 
     Input();
